@@ -1,0 +1,129 @@
+{
+ "doi": "10.48550/arxiv.2608.22830",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.22830",
+ "identifiers": [
+  {
+   "identifier": "2608.22830",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.22830"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Gwimm, Kate",
+   "nameType": "Personal",
+   "givenName": "Kate",
+   "familyName": "Gwimm",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Eisenach, Carson",
+   "nameType": "Personal",
+   "givenName": "Carson",
+   "familyName": "Eisenach",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-24T05:47:55Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-25T01:18:25Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Deploying LLMs for enterprise Text-to-SQL is bottlenecked less by the model than by what context reaches it: business logic spans thousands of tables, and no model can ingest a full catalog at once. We argue that the most effective place to intervene is therefore the \\emph{knowledge-base context} the model consumes, and that this context should be \\emph{constructed} from historical usage rather than tuned for as a fixed input. Using a query-DAG decomposition--the same family of intermediates that enterprise benchmarks like BEAVER annotate, here recovered from production SQL--we compare the value of oracle query graphs versus retrieved knowledge-base context. In this ablation, retrieved knowledge-base context provides the largest marginal improvement when added to the full oracle graph. Building on this, we optimize a distillation procedure that turns historical query profiles into reusable SQL reference cards. On a benchmark of 5176 production queries from a major online retailer, optimizing these context artifacts yields larger gains (${\\sim}12$--$25\\%$ AST similarity) than optimizing the retrieval harness (${\\sim}3$--$12\\%$). On the public BEAVER benchmark, which lacks the production-usage signals available in our internal setting, the picture is more mixed: table cards alone perform about the same as raw historical SQL. The best optimized variant retrieves both cards and raw SQL, scoring $9.00\\%$ versus $6.33\\%$ (p-value $0.12$) for the comparable baseline on a held-out $N{=}300$ subset, using retrieved context and harness changes but no agentic loop.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjIyODMwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4yMjgzMDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Hd2ltbSwgS2F0ZTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S2F0ZTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Hd2ltbTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5FaXNlbmFjaCwgQ2Fyc29uPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5DYXJzb248L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RWlzZW5hY2g8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkJleW9uZCB0aGUgSGFybmVzczogRW5kLXRvLUVuZCBPcHRpbWl6YXRpb24gb2YgQ29udGV4dCBBcnRpZmFjdHMgZm9yIEVudGVycHJpc2UgVGV4dC10by1TUUw8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0yNFQwNTo0Nzo1NVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0yNVQwMToxODoyNVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5EZXBsb3lpbmcgTExNcyBmb3IgZW50ZXJwcmlzZSBUZXh0LXRvLVNRTCBpcyBib3R0bGVuZWNrZWQgbGVzcyBieSB0aGUgbW9kZWwgdGhhbiBieSB3aGF0IGNvbnRleHQgcmVhY2hlcyBpdDogYnVzaW5lc3MgbG9naWMgc3BhbnMgdGhvdXNhbmRzIG9mIHRhYmxlcywgYW5kIG5vIG1vZGVsIGNhbiBpbmdlc3QgYSBmdWxsIGNhdGFsb2cgYXQgb25jZS4gV2UgYXJndWUgdGhhdCB0aGUgbW9zdCBlZmZlY3RpdmUgcGxhY2UgdG8gaW50ZXJ2ZW5lIGlzIHRoZXJlZm9yZSB0aGUgXGVtcGh7a25vd2xlZGdlLWJhc2UgY29udGV4dH0gdGhlIG1vZGVsIGNvbnN1bWVzLCBhbmQgdGhhdCB0aGlzIGNvbnRleHQgc2hvdWxkIGJlIFxlbXBoe2NvbnN0cnVjdGVkfSBmcm9tIGhpc3RvcmljYWwgdXNhZ2UgcmF0aGVyIHRoYW4gdHVuZWQgZm9yIGFzIGEgZml4ZWQgaW5wdXQuIFVzaW5nIGEgcXVlcnktREFHIGRlY29tcG9zaXRpb24tLXRoZSBzYW1lIGZhbWlseSBvZiBpbnRlcm1lZGlhdGVzIHRoYXQgZW50ZXJwcmlzZSBiZW5jaG1hcmtzIGxpa2UgQkVBVkVSIGFubm90YXRlLCBoZXJlIHJlY292ZXJlZCBmcm9tIHByb2R1Y3Rpb24gU1FMLS13ZSBjb21wYXJlIHRoZSB2YWx1ZSBvZiBvcmFjbGUgcXVlcnkgZ3JhcGhzIHZlcnN1cyByZXRyaWV2ZWQga25vd2xlZGdlLWJhc2UgY29udGV4dC4gSW4gdGhpcyBhYmxhdGlvbiwgcmV0cmlldmVkIGtub3dsZWRnZS1iYXNlIGNvbnRleHQgcHJvdmlkZXMgdGhlIGxhcmdlc3QgbWFyZ2luYWwgaW1wcm92ZW1lbnQgd2hlbiBhZGRlZCB0byB0aGUgZnVsbCBvcmFjbGUgZ3JhcGguIEJ1aWxkaW5nIG9uIHRoaXMsIHdlIG9wdGltaXplIGEgZGlzdGlsbGF0aW9uIHByb2NlZHVyZSB0aGF0IHR1cm5zIGhpc3RvcmljYWwgcXVlcnkgcHJvZmlsZXMgaW50byByZXVzYWJsZSBTUUwgcmVmZXJlbmNlIGNhcmRzLiBPbiBhIGJlbmNobWFyayBvZiA1MTc2IHByb2R1Y3Rpb24gcXVlcmllcyBmcm9tIGEgbWFqb3Igb25saW5lIHJldGFpbGVyLCBvcHRpbWl6aW5nIHRoZXNlIGNvbnRleHQgYXJ0aWZhY3RzIHlpZWxkcyBsYXJnZXIgZ2FpbnMgKCR7XHNpbX0xMiQtLSQyNVwlJCBBU1Qgc2ltaWxhcml0eSkgdGhhbiBvcHRpbWl6aW5nIHRoZSByZXRyaWV2YWwgaGFybmVzcyAoJHtcc2ltfTMkLS0kMTJcJSQpLiBPbiB0aGUgcHVibGljIEJFQVZFUiBiZW5jaG1hcmssIHdoaWNoIGxhY2tzIHRoZSBwcm9kdWN0aW9uLXVzYWdlIHNpZ25hbHMgYXZhaWxhYmxlIGluIG91ciBpbnRlcm5hbCBzZXR0aW5nLCB0aGUgcGljdHVyZSBpcyBtb3JlIG1peGVkOiB0YWJsZSBjYXJkcyBhbG9uZSBwZXJmb3JtIGFib3V0IHRoZSBzYW1lIGFzIHJhdyBoaXN0b3JpY2FsIFNRTC4gVGhlIGJlc3Qgb3B0aW1pemVkIHZhcmlhbnQgcmV0cmlldmVzIGJvdGggY2FyZHMgYW5kIHJhdyBTUUwsIHNjb3JpbmcgJDkuMDBcJSQgdmVyc3VzICQ2LjMzXCUkIChwLXZhbHVlICQwLjEyJCkgZm9yIHRoZSBjb21wYXJhYmxlIGJhc2VsaW5lIG9uIGEgaGVsZC1vdXQgJE57PX0zMDAkIHN1YnNldCwgdXNpbmcgcmV0cmlldmVkIGNvbnRleHQgYW5kIGhhcm5lc3MgY2hhbmdlcyBidXQgbm8gYWdlbnRpYyBsb29wLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2608.22830",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-25T03:27:59.000Z",
+ "registered": "2026-08-25T03:28:00.000Z",
+ "published": "2026",
+ "updated": "2026-08-25T03:28:00.000Z"
+}

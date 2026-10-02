@@ -1,0 +1,165 @@
+{
+ "doi": "10.48550/arxiv.2609.09115",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2609.09115",
+ "identifiers": [
+  {
+   "identifier": "2609.09115",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2609.09115"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Yang, Boyu",
+   "nameType": "Personal",
+   "givenName": "Boyu",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Sun, Jiazheng",
+   "nameType": "Personal",
+   "givenName": "Jiazheng",
+   "familyName": "Sun",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Lu, Zilong",
+   "nameType": "Personal",
+   "givenName": "Zilong",
+   "familyName": "Lu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Qiu, Zhi",
+   "nameType": "Personal",
+   "givenName": "Zhi",
+   "familyName": "Qiu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Peng, Xin",
+   "nameType": "Personal",
+   "givenName": "Xin",
+   "familyName": "Peng",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zheng, Jun",
+   "nameType": "Personal",
+   "givenName": "Jun",
+   "familyName": "Zheng",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "MeClear: Cooperative Game-Theoretic Attribution and Risk-Aware Memory Clearance for Long-Horizon LLM Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Software Engineering (cs.SE)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-09-08T17:46:00Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09-09T03:00:09Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Long horizon Large Language Model (LLM) agents rely on external memory systems to preserve user preferences and task knowledge across extended interactions. Conventional retrieval mechanisms optimize semantic compatibility rather than downstream utility, frequently introducing outdated, misleading, or conflicting evidence into the active context. We present MeClear, a task conditioned memory clearance framework that identifies memories featuring negative downstream utility through cooperative attribution and selectively suppresses them from agent execution. MeClear combines Leave One Out screening with sampled cooperative Shapley attribution to distribute utility across interacting evidence, effectively resolving redundant conflict masking where single removal evaluations fail. Utilizing attribution rankings, MeClear executes a query scoped minimal clearance strategy over a nested filtration, verifying task recovery on the cleared context without permanently altering the persistent memory bank. Comprehensive experimental evaluations across ten long dialogue memory pools demonstrate that MeClear achieves a target recall of 85.9% and an overall task recovery rate of 82.3%, representing a 25.5 percentage point improvement over Leave One Out (LOO) baselines.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "15 pages, 12 figures",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA5LjA5MTE1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOS4wOTExNTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZYW5nLCBCb3l1PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Cb3l1PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPllhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+U3VuLCBKaWF6aGVuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Smlhemhlbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U3VuPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkx1LCBaaWxvbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlppbG9uZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5RaXUsIFpoaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmhpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlFpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5QZW5nLCBYaW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlhpbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5QZW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoZW5nLCBKdW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkp1bjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5aaGVuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TWVDbGVhcjogQ29vcGVyYXRpdmUgR2FtZS1UaGVvcmV0aWMgQXR0cmlidXRpb24gYW5kIFJpc2stQXdhcmUgTWVtb3J5IENsZWFyYW5jZSBmb3IgTG9uZy1Ib3Jpem9uIExMTSBBZ2VudHM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+U29mdHdhcmUgRW5naW5lZXJpbmcgKGNzLlNFKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDktMDhUMTc6NDY6MDBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDktMDlUMDM6MDA6MDlaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TG9uZyBob3Jpem9uIExhcmdlIExhbmd1YWdlIE1vZGVsIChMTE0pIGFnZW50cyByZWx5IG9uIGV4dGVybmFsIG1lbW9yeSBzeXN0ZW1zIHRvIHByZXNlcnZlIHVzZXIgcHJlZmVyZW5jZXMgYW5kIHRhc2sga25vd2xlZGdlIGFjcm9zcyBleHRlbmRlZCBpbnRlcmFjdGlvbnMuIENvbnZlbnRpb25hbCByZXRyaWV2YWwgbWVjaGFuaXNtcyBvcHRpbWl6ZSBzZW1hbnRpYyBjb21wYXRpYmlsaXR5IHJhdGhlciB0aGFuIGRvd25zdHJlYW0gdXRpbGl0eSwgZnJlcXVlbnRseSBpbnRyb2R1Y2luZyBvdXRkYXRlZCwgbWlzbGVhZGluZywgb3IgY29uZmxpY3RpbmcgZXZpZGVuY2UgaW50byB0aGUgYWN0aXZlIGNvbnRleHQuIFdlIHByZXNlbnQgTWVDbGVhciwgYSB0YXNrIGNvbmRpdGlvbmVkIG1lbW9yeSBjbGVhcmFuY2UgZnJhbWV3b3JrIHRoYXQgaWRlbnRpZmllcyBtZW1vcmllcyBmZWF0dXJpbmcgbmVnYXRpdmUgZG93bnN0cmVhbSB1dGlsaXR5IHRocm91Z2ggY29vcGVyYXRpdmUgYXR0cmlidXRpb24gYW5kIHNlbGVjdGl2ZWx5IHN1cHByZXNzZXMgdGhlbSBmcm9tIGFnZW50IGV4ZWN1dGlvbi4gTWVDbGVhciBjb21iaW5lcyBMZWF2ZSBPbmUgT3V0IHNjcmVlbmluZyB3aXRoIHNhbXBsZWQgY29vcGVyYXRpdmUgU2hhcGxleSBhdHRyaWJ1dGlvbiB0byBkaXN0cmlidXRlIHV0aWxpdHkgYWNyb3NzIGludGVyYWN0aW5nIGV2aWRlbmNlLCBlZmZlY3RpdmVseSByZXNvbHZpbmcgcmVkdW5kYW50IGNvbmZsaWN0IG1hc2tpbmcgd2hlcmUgc2luZ2xlIHJlbW92YWwgZXZhbHVhdGlvbnMgZmFpbC4gVXRpbGl6aW5nIGF0dHJpYnV0aW9uIHJhbmtpbmdzLCBNZUNsZWFyIGV4ZWN1dGVzIGEgcXVlcnkgc2NvcGVkIG1pbmltYWwgY2xlYXJhbmNlIHN0cmF0ZWd5IG92ZXIgYSBuZXN0ZWQgZmlsdHJhdGlvbiwgdmVyaWZ5aW5nIHRhc2sgcmVjb3Zlcnkgb24gdGhlIGNsZWFyZWQgY29udGV4dCB3aXRob3V0IHBlcm1hbmVudGx5IGFsdGVyaW5nIHRoZSBwZXJzaXN0ZW50IG1lbW9yeSBiYW5rLiBDb21wcmVoZW5zaXZlIGV4cGVyaW1lbnRhbCBldmFsdWF0aW9ucyBhY3Jvc3MgdGVuIGxvbmcgZGlhbG9ndWUgbWVtb3J5IHBvb2xzIGRlbW9uc3RyYXRlIHRoYXQgTWVDbGVhciBhY2hpZXZlcyBhIHRhcmdldCByZWNhbGwgb2YgODUuOSUgYW5kIGFuIG92ZXJhbGwgdGFzayByZWNvdmVyeSByYXRlIG9mIDgyLjMlLCByZXByZXNlbnRpbmcgYSAyNS41IHBlcmNlbnRhZ2UgcG9pbnQgaW1wcm92ZW1lbnQgb3ZlciBMZWF2ZSBPbmUgT3V0IChMT08pIGJhc2VsaW5lcy48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPjE1IHBhZ2VzLCAxMiBmaWd1cmVzPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2609.09115",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-09-09T05:44:46.000Z",
+ "registered": "2026-09-09T05:44:46.000Z",
+ "published": "2026",
+ "updated": "2026-09-09T05:44:46.000Z"
+}

@@ -1,0 +1,151 @@
+{
+ "doi": "10.48550/arxiv.2607.22683",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2607.22683",
+ "identifiers": [
+  {
+   "identifier": "2607.22683",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2607.22683"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Wu, Chentian",
+   "nameType": "Personal",
+   "givenName": "Chentian",
+   "familyName": "Wu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yang, Shengyuan",
+   "nameType": "Personal",
+   "givenName": "Shengyuan",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Murali, Adithya",
+   "nameType": "Personal",
+   "givenName": "Adithya",
+   "familyName": "Murali",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Imprompt: A Language Framework for Prompt Programming"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Programming Languages (cs.PL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "lang": "en",
+   "subject": "D.3.1; D.3.2; I.2.7",
+   "subjectScheme": "ACM"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-07-13T05:02:43Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07-28T00:02:37Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "With the unprecedented success of Language Models (LMs), the science of Prompt Engineering has evolved the powerful idea of Prompt Programming, where prompts are treated as a programmable control surface for describing complex tasks and leveraging LM capabilities. However, existing prompt programming frameworks suffer from various complexities and inelegances, which make them hard to utilize in practice for effectively describing tasks. We propose Imprompt, a new language framework for the study and practice of prompt programming. We undertake a foundational investigation of prompt programming, and contend that prompt programs must contain only the task descriptions and must be decoupled from lower-level 'execution' details. We further develop this position by illustrating structured prompting as a combination of prompt programming and prompt program 'compilation'. We exemplify this view by formally defining two compilers for Imprompt programs. We then explore the idea of typing for prompt programs and draw a correspondence between type checking and constrained decoding. Finally, we implement our compilers and type checkers and evaluate them on a variety of case studies. We believe our work contributes programming-language foundations toward the emerging area of prompt programming.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "28 pages, 24 figures, 2 tables",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA3LjIyNjgzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNy4yMjY4MzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5XdSwgQ2hlbnRpYW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkNoZW50aWFuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPld1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPllhbmcsIFNoZW5neXVhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2hlbmd5dWFuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPllhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TXVyYWxpLCBBZGl0aHlhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5BZGl0aHlhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk11cmFsaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+SW1wcm9tcHQ6IEEgTGFuZ3VhZ2UgRnJhbWV3b3JrIGZvciBQcm9tcHQgUHJvZ3JhbW1pbmc8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Qcm9ncmFtbWluZyBMYW5ndWFnZXMgKGNzLlBMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iQUNNIj5ELjMuMTsgRC4zLjI7IEkuMi43PC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNy0xM1QwNTowMjo0M1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNy0yOFQwMDowMjozN1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA3PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5XaXRoIHRoZSB1bnByZWNlZGVudGVkIHN1Y2Nlc3Mgb2YgTGFuZ3VhZ2UgTW9kZWxzIChMTXMpLCB0aGUgc2NpZW5jZSBvZiBQcm9tcHQgRW5naW5lZXJpbmcgaGFzIGV2b2x2ZWQgdGhlIHBvd2VyZnVsIGlkZWEgb2YgUHJvbXB0IFByb2dyYW1taW5nLCB3aGVyZSBwcm9tcHRzIGFyZSB0cmVhdGVkIGFzIGEgcHJvZ3JhbW1hYmxlIGNvbnRyb2wgc3VyZmFjZSBmb3IgZGVzY3JpYmluZyBjb21wbGV4IHRhc2tzIGFuZCBsZXZlcmFnaW5nIExNIGNhcGFiaWxpdGllcy4gSG93ZXZlciwgZXhpc3RpbmcgcHJvbXB0IHByb2dyYW1taW5nIGZyYW1ld29ya3Mgc3VmZmVyIGZyb20gdmFyaW91cyBjb21wbGV4aXRpZXMgYW5kIGluZWxlZ2FuY2VzLCB3aGljaCBtYWtlIHRoZW0gaGFyZCB0byB1dGlsaXplIGluIHByYWN0aWNlIGZvciBlZmZlY3RpdmVseSBkZXNjcmliaW5nIHRhc2tzLiBXZSBwcm9wb3NlIEltcHJvbXB0LCBhIG5ldyBsYW5ndWFnZSBmcmFtZXdvcmsgZm9yIHRoZSBzdHVkeSBhbmQgcHJhY3RpY2Ugb2YgcHJvbXB0IHByb2dyYW1taW5nLiBXZSB1bmRlcnRha2UgYSBmb3VuZGF0aW9uYWwgaW52ZXN0aWdhdGlvbiBvZiBwcm9tcHQgcHJvZ3JhbW1pbmcsIGFuZCBjb250ZW5kIHRoYXQgcHJvbXB0IHByb2dyYW1zIG11c3QgY29udGFpbiBvbmx5IHRoZSB0YXNrIGRlc2NyaXB0aW9ucyBhbmQgbXVzdCBiZSBkZWNvdXBsZWQgZnJvbSBsb3dlci1sZXZlbCAnZXhlY3V0aW9uJyBkZXRhaWxzLiBXZSBmdXJ0aGVyIGRldmVsb3AgdGhpcyBwb3NpdGlvbiBieSBpbGx1c3RyYXRpbmcgc3RydWN0dXJlZCBwcm9tcHRpbmcgYXMgYSBjb21iaW5hdGlvbiBvZiBwcm9tcHQgcHJvZ3JhbW1pbmcgYW5kIHByb21wdCBwcm9ncmFtICdjb21waWxhdGlvbicuIFdlIGV4ZW1wbGlmeSB0aGlzIHZpZXcgYnkgZm9ybWFsbHkgZGVmaW5pbmcgdHdvIGNvbXBpbGVycyBmb3IgSW1wcm9tcHQgcHJvZ3JhbXMuIFdlIHRoZW4gZXhwbG9yZSB0aGUgaWRlYSBvZiB0eXBpbmcgZm9yIHByb21wdCBwcm9ncmFtcyBhbmQgZHJhdyBhIGNvcnJlc3BvbmRlbmNlIGJldHdlZW4gdHlwZSBjaGVja2luZyBhbmQgY29uc3RyYWluZWQgZGVjb2RpbmcuIEZpbmFsbHksIHdlIGltcGxlbWVudCBvdXIgY29tcGlsZXJzIGFuZCB0eXBlIGNoZWNrZXJzIGFuZCBldmFsdWF0ZSB0aGVtIG9uIGEgdmFyaWV0eSBvZiBjYXNlIHN0dWRpZXMuIFdlIGJlbGlldmUgb3VyIHdvcmsgY29udHJpYnV0ZXMgcHJvZ3JhbW1pbmctbGFuZ3VhZ2UgZm91bmRhdGlvbnMgdG93YXJkIHRoZSBlbWVyZ2luZyBhcmVhIG9mIHByb21wdCBwcm9ncmFtbWluZy48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPjI4IHBhZ2VzLCAyNCBmaWd1cmVzLCAyIHRhYmxlczwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2607.22683",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-07-28T02:55:40.000Z",
+ "registered": "2026-07-28T02:55:41.000Z",
+ "published": "2026",
+ "updated": "2026-07-28T02:55:41.000Z"
+}

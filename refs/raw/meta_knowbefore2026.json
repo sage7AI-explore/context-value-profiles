@@ -1,0 +1,162 @@
+{
+ "doi": "10.48550/arxiv.2606.29959",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2606.29959",
+ "identifiers": [
+  {
+   "identifier": "2606.29959",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2606.29959"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Dong, Zhe",
+   "nameType": "Personal",
+   "givenName": "Zhe",
+   "familyName": "Dong",
+   "affiliation": [
+    "University of Maine at Presque Isle"
+   ],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Qin, Fang",
+   "nameType": "Personal",
+   "givenName": "Fang",
+   "familyName": "Qin",
+   "affiliation": [
+    "Stanford University"
+   ],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Shah, Manish",
+   "nameType": "Personal",
+   "givenName": "Manish",
+   "familyName": "Shah",
+   "affiliation": [
+    "Independent Researcher"
+   ],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Yicheng",
+   "nameType": "Personal",
+   "givenName": "Yicheng",
+   "familyName": "Wang",
+   "affiliation": [
+    "Independent Researcher"
+   ],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Know Before You Fetch: Calibrated Retrieval-Budget Allocation for Retrieval-Augmented Generation"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Information Retrieval (cs.IR)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "lang": "en",
+   "subject": "H.3.3; I.2.7",
+   "subjectScheme": "ACM"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-06-29T08:36:33Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-06-30T01:37:54Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-06",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Retrieval-augmented generation (RAG) typically retrieves a fixed number of passages for every query. This is wasteful when the reader already knows the answer, and it can be harmful when irrelevant or partially relevant passages distract the reader. We formulate adaptive RAG as calibrated retrieval-budget allocation: given a query, decide whether to answer closed-book, retrieve a compact context (k=1), retrieve a full context (k=5), or abstain. The contribution is a probability interface rather than a new raw uncertainty signal. We calibrate sequence log-probability and prefix-logit uncertainty signals into probabilities of correctness, then use these probabilities for graded context selection, selective abstention, and explicit latency/token trade-offs. Across core QA experiments on TriviaQA, Natural Questions, and MS MARCO, with auxiliary PopQA motivation and Qwen/Llama family checks, diagnostic out-of-fold calibration improves probability quality dramatically: for sequence log-probability, ECE drops from 0.275 to 0.062 on TriviaQA, 0.643 to 0.009 on NQ, and 0.711 to 0.031 on MS MARCO. Graded retrieval improves full-context and passage-budget frontiers for both our signal and TARG-style prefix entropy/margin, while retrieval-call AUC remains essentially tied with binary gating because k=1 is still a retrieval call. Held-out train/validation/test threshold experiments report deployable operating points. At matched-accuracy frontier operating points, a measured cost model reveals that gating is not universally faster: it increases latency by about 27% on Qwen3-8B but saves about 8% on Qwen3-32B. These results support a nuanced view of adaptive RAG: calibrated confidence is best understood as a reusable interface for allocating retrieval budget under task and system constraints.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "17 pages, 9 figures",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA2LjI5OTU5PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNi4yOTk1OTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Eb25nLCBaaGU8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpoZTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Eb25nPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+VW5pdmVyc2l0eSBvZiBNYWluZSBhdCBQcmVzcXVlIElzbGU8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlFpbiwgRmFuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RmFuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5RaW48L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbj5TdGFuZm9yZCBVbml2ZXJzaXR5PC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TaGFoLCBNYW5pc2g8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk1hbmlzaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TaGFoPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+SW5kZXBlbmRlbnQgUmVzZWFyY2hlcjwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2FuZywgWWljaGVuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WWljaGVuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24+SW5kZXBlbmRlbnQgUmVzZWFyY2hlcjwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPktub3cgQmVmb3JlIFlvdSBGZXRjaDogQ2FsaWJyYXRlZCBSZXRyaWV2YWwtQnVkZ2V0IEFsbG9jYXRpb24gZm9yIFJldHJpZXZhbC1BdWdtZW50ZWQgR2VuZXJhdGlvbjwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkluZm9ybWF0aW9uIFJldHJpZXZhbCAoY3MuSVIpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9IkFDTSI+SC4zLjM7IEkuMi43PC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNi0yOVQwODozNjozM1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNi0zMFQwMTozNzo1NFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA2PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5SZXRyaWV2YWwtYXVnbWVudGVkIGdlbmVyYXRpb24gKFJBRykgdHlwaWNhbGx5IHJldHJpZXZlcyBhIGZpeGVkIG51bWJlciBvZiBwYXNzYWdlcyBmb3IgZXZlcnkgcXVlcnkuIFRoaXMgaXMgd2FzdGVmdWwgd2hlbiB0aGUgcmVhZGVyIGFscmVhZHkga25vd3MgdGhlIGFuc3dlciwgYW5kIGl0IGNhbiBiZSBoYXJtZnVsIHdoZW4gaXJyZWxldmFudCBvciBwYXJ0aWFsbHkgcmVsZXZhbnQgcGFzc2FnZXMgZGlzdHJhY3QgdGhlIHJlYWRlci4gV2UgZm9ybXVsYXRlIGFkYXB0aXZlIFJBRyBhcyBjYWxpYnJhdGVkIHJldHJpZXZhbC1idWRnZXQgYWxsb2NhdGlvbjogZ2l2ZW4gYSBxdWVyeSwgZGVjaWRlIHdoZXRoZXIgdG8gYW5zd2VyIGNsb3NlZC1ib29rLCByZXRyaWV2ZSBhIGNvbXBhY3QgY29udGV4dCAoaz0xKSwgcmV0cmlldmUgYSBmdWxsIGNvbnRleHQgKGs9NSksIG9yIGFic3RhaW4uIFRoZSBjb250cmlidXRpb24gaXMgYSBwcm9iYWJpbGl0eSBpbnRlcmZhY2UgcmF0aGVyIHRoYW4gYSBuZXcgcmF3IHVuY2VydGFpbnR5IHNpZ25hbC4gV2UgY2FsaWJyYXRlIHNlcXVlbmNlIGxvZy1wcm9iYWJpbGl0eSBhbmQgcHJlZml4LWxvZ2l0IHVuY2VydGFpbnR5IHNpZ25hbHMgaW50byBwcm9iYWJpbGl0aWVzIG9mIGNvcnJlY3RuZXNzLCB0aGVuIHVzZSB0aGVzZSBwcm9iYWJpbGl0aWVzIGZvciBncmFkZWQgY29udGV4dCBzZWxlY3Rpb24sIHNlbGVjdGl2ZSBhYnN0ZW50aW9uLCBhbmQgZXhwbGljaXQgbGF0ZW5jeS90b2tlbiB0cmFkZS1vZmZzLiBBY3Jvc3MgY29yZSBRQSBleHBlcmltZW50cyBvbiBUcml2aWFRQSwgTmF0dXJhbCBRdWVzdGlvbnMsIGFuZCBNUyBNQVJDTywgd2l0aCBhdXhpbGlhcnkgUG9wUUEgbW90aXZhdGlvbiBhbmQgUXdlbi9MbGFtYSBmYW1pbHkgY2hlY2tzLCBkaWFnbm9zdGljIG91dC1vZi1mb2xkIGNhbGlicmF0aW9uIGltcHJvdmVzIHByb2JhYmlsaXR5IHF1YWxpdHkgZHJhbWF0aWNhbGx5OiBmb3Igc2VxdWVuY2UgbG9nLXByb2JhYmlsaXR5LCBFQ0UgZHJvcHMgZnJvbSAwLjI3NSB0byAwLjA2MiBvbiBUcml2aWFRQSwgMC42NDMgdG8gMC4wMDkgb24gTlEsIGFuZCAwLjcxMSB0byAwLjAzMSBvbiBNUyBNQVJDTy4gR3JhZGVkIHJldHJpZXZhbCBpbXByb3ZlcyBmdWxsLWNvbnRleHQgYW5kIHBhc3NhZ2UtYnVkZ2V0IGZyb250aWVycyBmb3IgYm90aCBvdXIgc2lnbmFsIGFuZCBUQVJHLXN0eWxlIHByZWZpeCBlbnRyb3B5L21hcmdpbiwgd2hpbGUgcmV0cmlldmFsLWNhbGwgQVVDIHJlbWFpbnMgZXNzZW50aWFsbHkgdGllZCB3aXRoIGJpbmFyeSBnYXRpbmcgYmVjYXVzZSBrPTEgaXMgc3RpbGwgYSByZXRyaWV2YWwgY2FsbC4gSGVsZC1vdXQgdHJhaW4vdmFsaWRhdGlvbi90ZXN0IHRocmVzaG9sZCBleHBlcmltZW50cyByZXBvcnQgZGVwbG95YWJsZSBvcGVyYXRpbmcgcG9pbnRzLiBBdCBtYXRjaGVkLWFjY3VyYWN5IGZyb250aWVyIG9wZXJhdGluZyBwb2ludHMsIGEgbWVhc3VyZWQgY29zdCBtb2RlbCByZXZlYWxzIHRoYXQgZ2F0aW5nIGlzIG5vdCB1bml2ZXJzYWxseSBmYXN0ZXI6IGl0IGluY3JlYXNlcyBsYXRlbmN5IGJ5IGFib3V0IDI3JSBvbiBRd2VuMy04QiBidXQgc2F2ZXMgYWJvdXQgOCUgb24gUXdlbjMtMzJCLiBUaGVzZSByZXN1bHRzIHN1cHBvcnQgYSBudWFuY2VkIHZpZXcgb2YgYWRhcHRpdmUgUkFHOiBjYWxpYnJhdGVkIGNvbmZpZGVuY2UgaXMgYmVzdCB1bmRlcnN0b29kIGFzIGEgcmV1c2FibGUgaW50ZXJmYWNlIGZvciBhbGxvY2F0aW5nIHJldHJpZXZhbCBidWRnZXQgdW5kZXIgdGFzayBhbmQgc3lzdGVtIGNvbnN0cmFpbnRzLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+MTcgcGFnZXMsIDkgZmlndXJlczwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2606.29959",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-06-30T03:48:25.000Z",
+ "registered": "2026-06-30T03:48:26.000Z",
+ "published": "2026",
+ "updated": "2026-06-30T03:48:26.000Z"
+}

@@ -1,0 +1,187 @@
+{
+ "doi": "10.48550/arxiv.2410.10813",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2410.10813",
+ "identifiers": [
+  {
+   "identifier": "2410.10813",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2410.10813"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Wu, Di",
+   "nameType": "Personal",
+   "givenName": "Di",
+   "familyName": "Wu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Hongwei",
+   "nameType": "Personal",
+   "givenName": "Hongwei",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yu, Wenhao",
+   "nameType": "Personal",
+   "givenName": "Wenhao",
+   "familyName": "Yu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Yuwei",
+   "nameType": "Personal",
+   "givenName": "Yuwei",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Chang, Kai-Wei",
+   "nameType": "Personal",
+   "givenName": "Kai-Wei",
+   "familyName": "Chang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yu, Dong",
+   "nameType": "Personal",
+   "givenName": "Dong",
+   "familyName": "Yu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2024,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2024-10-14T17:59:44Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-10-15T02:14:52Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025-03-04T22:19:41Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-03-06T01:08:31Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2024-10",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Recent large language model (LLM)-driven chat assistant systems have integrated memory components to track user-assistant chat histories, enabling more accurate and personalized responses. However, their long-term memory capabilities in sustained interactions remain underexplored. We introduce LongMemEval, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. With 500 meticulously curated questions embedded within freely scalable user-assistant chat histories, LongMemEval presents a significant challenge to existing long-term memory systems, with commercial chat assistants and long-context LLMs showing a 30% accuracy drop on memorizing information across sustained interactions. We then present a unified framework that breaks down the long-term memory design into three stages: indexing, retrieval, and reading. Built upon key experimental insights, we propose several memory design optimizations including session decomposition for value granularity, fact-augmented key expansion for indexing, and time-aware query expansion for refining the search scope. Extensive experiments show that these optimizations greatly improve both memory recall and downstream question answering on LongMemEval. Overall, our study provides valuable resources and guidance for advancing the long-term memory capabilities of LLM-based chat assistants, paving the way toward more personalized and reliable conversational AI. Our benchmark and code are publicly available at https://github.com/xiaowu0162/LongMemEval.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "ICLR 2025",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNDEwLjEwODEzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjQxMC4xMDgxMzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5XdSwgRGk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkRpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPld1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPldhbmcsIEhvbmd3ZWk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkhvbmd3ZWk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+V2FuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZdSwgV2VuaGFvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5XZW5oYW88L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WXU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+WmhhbmcsIFl1d2VpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5ZdXdlaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5aaGFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5DaGFuZywgS2FpLVdlaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S2FpLVdlaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5DaGFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZdSwgRG9uZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RG9uZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5ZdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TG9uZ01lbUV2YWw6IEJlbmNobWFya2luZyBDaGF0IEFzc2lzdGFudHMgb24gTG9uZy1UZXJtIEludGVyYWN0aXZlIE1lbW9yeTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNDwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0xMC0xNFQxNzo1OTo0NFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0xMC0xNVQwMjoxNDo1Mlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAzLTA0VDIyOjE5OjQxWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAzLTA2VDAxOjA4OjMxWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjQtMTA8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MjwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5SZWNlbnQgbGFyZ2UgbGFuZ3VhZ2UgbW9kZWwgKExMTSktZHJpdmVuIGNoYXQgYXNzaXN0YW50IHN5c3RlbXMgaGF2ZSBpbnRlZ3JhdGVkIG1lbW9yeSBjb21wb25lbnRzIHRvIHRyYWNrIHVzZXItYXNzaXN0YW50IGNoYXQgaGlzdG9yaWVzLCBlbmFibGluZyBtb3JlIGFjY3VyYXRlIGFuZCBwZXJzb25hbGl6ZWQgcmVzcG9uc2VzLiBIb3dldmVyLCB0aGVpciBsb25nLXRlcm0gbWVtb3J5IGNhcGFiaWxpdGllcyBpbiBzdXN0YWluZWQgaW50ZXJhY3Rpb25zIHJlbWFpbiB1bmRlcmV4cGxvcmVkLiBXZSBpbnRyb2R1Y2UgTG9uZ01lbUV2YWwsIGEgY29tcHJlaGVuc2l2ZSBiZW5jaG1hcmsgZGVzaWduZWQgdG8gZXZhbHVhdGUgZml2ZSBjb3JlIGxvbmctdGVybSBtZW1vcnkgYWJpbGl0aWVzIG9mIGNoYXQgYXNzaXN0YW50czogaW5mb3JtYXRpb24gZXh0cmFjdGlvbiwgbXVsdGktc2Vzc2lvbiByZWFzb25pbmcsIHRlbXBvcmFsIHJlYXNvbmluZywga25vd2xlZGdlIHVwZGF0ZXMsIGFuZCBhYnN0ZW50aW9uLiBXaXRoIDUwMCBtZXRpY3Vsb3VzbHkgY3VyYXRlZCBxdWVzdGlvbnMgZW1iZWRkZWQgd2l0aGluIGZyZWVseSBzY2FsYWJsZSB1c2VyLWFzc2lzdGFudCBjaGF0IGhpc3RvcmllcywgTG9uZ01lbUV2YWwgcHJlc2VudHMgYSBzaWduaWZpY2FudCBjaGFsbGVuZ2UgdG8gZXhpc3RpbmcgbG9uZy10ZXJtIG1lbW9yeSBzeXN0ZW1zLCB3aXRoIGNvbW1lcmNpYWwgY2hhdCBhc3Npc3RhbnRzIGFuZCBsb25nLWNvbnRleHQgTExNcyBzaG93aW5nIGEgMzAlIGFjY3VyYWN5IGRyb3Agb24gbWVtb3JpemluZyBpbmZvcm1hdGlvbiBhY3Jvc3Mgc3VzdGFpbmVkIGludGVyYWN0aW9ucy4gV2UgdGhlbiBwcmVzZW50IGEgdW5pZmllZCBmcmFtZXdvcmsgdGhhdCBicmVha3MgZG93biB0aGUgbG9uZy10ZXJtIG1lbW9yeSBkZXNpZ24gaW50byB0aHJlZSBzdGFnZXM6IGluZGV4aW5nLCByZXRyaWV2YWwsIGFuZCByZWFkaW5nLiBCdWlsdCB1cG9uIGtleSBleHBlcmltZW50YWwgaW5zaWdodHMsIHdlIHByb3Bvc2Ugc2V2ZXJhbCBtZW1vcnkgZGVzaWduIG9wdGltaXphdGlvbnMgaW5jbHVkaW5nIHNlc3Npb24gZGVjb21wb3NpdGlvbiBmb3IgdmFsdWUgZ3JhbnVsYXJpdHksIGZhY3QtYXVnbWVudGVkIGtleSBleHBhbnNpb24gZm9yIGluZGV4aW5nLCBhbmQgdGltZS1hd2FyZSBxdWVyeSBleHBhbnNpb24gZm9yIHJlZmluaW5nIHRoZSBzZWFyY2ggc2NvcGUuIEV4dGVuc2l2ZSBleHBlcmltZW50cyBzaG93IHRoYXQgdGhlc2Ugb3B0aW1pemF0aW9ucyBncmVhdGx5IGltcHJvdmUgYm90aCBtZW1vcnkgcmVjYWxsIGFuZCBkb3duc3RyZWFtIHF1ZXN0aW9uIGFuc3dlcmluZyBvbiBMb25nTWVtRXZhbC4gT3ZlcmFsbCwgb3VyIHN0dWR5IHByb3ZpZGVzIHZhbHVhYmxlIHJlc291cmNlcyBhbmQgZ3VpZGFuY2UgZm9yIGFkdmFuY2luZyB0aGUgbG9uZy10ZXJtIG1lbW9yeSBjYXBhYmlsaXRpZXMgb2YgTExNLWJhc2VkIGNoYXQgYXNzaXN0YW50cywgcGF2aW5nIHRoZSB3YXkgdG93YXJkIG1vcmUgcGVyc29uYWxpemVkIGFuZCByZWxpYWJsZSBjb252ZXJzYXRpb25hbCBBSS4gT3VyIGJlbmNobWFyayBhbmQgY29kZSBhcmUgcHVibGljbHkgYXZhaWxhYmxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS94aWFvd3UwMTYyL0xvbmdNZW1FdmFsLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+SUNMUiAyMDI1PC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2410.10813",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 4,
+ "citationsOverTime": [
+  {
+   "year": "2026",
+   "total": 4
+  }
+ ],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2024-10-15T05:00:10.000Z",
+ "registered": "2024-10-15T05:00:14.000Z",
+ "published": "2024",
+ "updated": "2025-03-06T03:18:05.000Z"
+}

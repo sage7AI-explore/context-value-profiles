@@ -1,0 +1,614 @@
+{
+ "indexed": {
+  "date-parts": [
+   [
+    2026,
+    10,
+    1
+   ]
+  ],
+  "date-time": "2026-10-01T16:09:06Z",
+  "timestamp": 1790870946657,
+  "version": "4.1.0"
+ },
+ "reference-count": 46,
+ "publisher": "MIT Press",
+ "license": [
+  {
+   "start": {
+    "date-parts": [
+     [
+      2022,
+      5,
+      5
+     ]
+    ],
+    "date-time": "2022-05-05T00:00:00Z",
+    "timestamp": 1651708800000
+   },
+   "content-version": "vor",
+   "delay-in-days": 124,
+   "URL": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "content-domain": {
+  "domain": [
+   "direct.mit.edu"
+  ],
+  "crossmark-restriction": true
+ },
+ "short-container-title": [],
+ "published-print": {
+  "date-parts": [
+   [
+    2022,
+    5,
+    4
+   ]
+  ]
+ },
+ "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Multihop reasoning remains an elusive goal as existing multihop benchmarks are known to be largely solvable via shortcuts. Can we create a question answering (QA) dataset that, by construction, requires proper multihop reasoning? To this end, we introduce a bottom\u2013up approach that systematically selects composable pairs of single-hop questions that are connected, that is, where one reasoning step critically relies on information from another. This bottom\u2013up methodology lets us explore a vast space of questions and add stringent filters as well as other mechanisms targeting connected reasoning. It provides fine-grained control over the construction process and the properties of the resulting k-hop questions. We use this methodology to create MuSiQue-Ans, a new multihop QA dataset with 25K 2\u20134 hop questions. Relative to existing datasets, MuSiQue-Ans is more difficult overall (3\u00d7 increase in human\u2013machine gap), and harder to cheat via disconnected reasoning (e.g., a single-hop model has a 30-point drop in F1). We further add unanswerable contrast questions to produce a more stringent dataset, MuSiQue-Full. We hope our datasets will help the NLP community develop models that perform genuine multihop reasoning.1</jats:p>",
+ "DOI": "10.1162/tacl_a_00475",
+ "type": "journal-article",
+ "created": {
+  "date-parts": [
+   [
+    2022,
+    5,
+    5
+   ]
+  ],
+  "date-time": "2022-05-05T15:11:53Z",
+  "timestamp": 1651763513000
+ },
+ "page": "539-554",
+ "update-policy": "https://doi.org/10.1162/mitpressjournals.corrections.policy",
+ "source": "Crossref",
+ "is-referenced-by-count": 247,
+ "title": [
+  "\u266b MuSiQue: Multihop Questions via Single-hop Question Composition"
+ ],
+ "prefix": "10.1162",
+ "volume": "10",
+ "author": [
+  {
+   "given": "Harsh",
+   "family": "Trivedi",
+   "sequence": "first",
+   "affiliation": [
+    {
+     "name": "Stony Brook University, Stony Brook, USA. hjtrivedi@cs.stonybrook.edu"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Niranjan",
+   "family": "Balasubramanian",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Stony Brook University, Stony Brook, USA. niranjan@cs.stonybrook.edu"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Tushar",
+   "family": "Khot",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Allen Institute for AI, Seattle, USA .tushark@allenai.org"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Ashish",
+   "family": "Sabharwal",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Allen Institute for AI, Seattle, USA. ashishs@allenai.org"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  }
+ ],
+ "member": "281",
+ "published-online": {
+  "date-parts": [
+   [
+    2022,
+    5,
+    4
+   ]
+  ]
+ },
+ "reference": [
+  {
+   "key": "2022050519113839300_bib1",
+   "article-title": "Longformer: The long-document transformer",
+   "author": "Iz",
+   "year": "2020",
+   "journal-title": "arXiv:2004.05150"
+  },
+  {
+   "key": "2022050519113839300_bib2",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/N19-1405",
+   "article-title": "Understanding dataset design choices for multi-hop reasoning",
+   "volume-title": "NAACL-HLT",
+   "author": "Chen",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib3",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.findings-emnlp.91",
+   "article-title": "Hybridqa: A dataset of multi-hop question answering over tabular and textual data",
+   "author": "Chen",
+   "year": "2020",
+   "journal-title": "Findings of EMNLP 2020"
+  },
+  {
+   "key": "2022050519113839300_bib4",
+   "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+   "volume-title": "NAACL",
+   "author": "Devlin",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib5",
+   "article-title": "DROP: A reading comprehension benchmark requiring discrete reasoning over paragraphs",
+   "volume-title": "NAACL",
+   "author": "Dua",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib6",
+   "article-title": "T-REx: A large scale alignment of natural language with knowledge base triples",
+   "volume-title": "LREC",
+   "author": "ElSahar",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib7",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.emnlp-main.86",
+   "article-title": "IIRC: A dataset of incomplete information reading comprehension questions",
+   "volume-title": "EMNLP",
+   "author": "Ferguson",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib8",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.findings-emnlp.117",
+   "article-title": "Evaluating models\u2019 local decision boundaries via contrast sets",
+   "volume-title": "Findings of EMNLP",
+   "author": "Gardner",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib9",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/W18-2501",
+   "article-title": "AllenNLP: A deep semantic natural language processing platform",
+   "author": "Gardner",
+   "year": "2017",
+   "journal-title": "arXiv preprint arXiv:1803.07640"
+  },
+  {
+   "key": "2022050519113839300_bib10",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1162/tacl_a_00370",
+   "article-title": "Did Aristotle use a laptop? A question answering benchmark with implicit reasoning strategies",
+   "author": "Geva",
+   "year": "2021",
+   "journal-title": "TACL"
+  },
+  {
+   "key": "2022050519113839300_bib11",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.emnlp-main.711",
+   "article-title": "A simple yet strong pipeline for HotpotQA",
+   "volume-title": "EMNLP",
+   "author": "Groeneveld",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib12",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/2020.coling-main.580",
+   "article-title": "Constructing a multi-hop QA dataset for comprehensive evaluation of reasoning steps",
+   "volume-title": "COLING",
+   "author": "Ho",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib13",
+   "unstructured": "Matthew\n              Honnibal\n            , InesMontani, Sofie VanLandeghem, and AdrianeBoyd. 2020. SpaCy: Industrial-strength natural language processing in Python. 10.5281/zenodo.1212303"
+  },
+  {
+   "key": "2022050519113839300_bib14",
+   "article-title": "WorldTree: A corpus of explanation graphs for elementary science questions supporting multi-hop inference",
+   "volume-title": "Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)",
+   "author": "Jansen",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib15",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.findings-emnlp.309",
+   "article-title": "HoVer: A dataset for many-hop fact extraction and claim verification",
+   "volume-title": "EMNLP",
+   "author": "Jiang",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib16",
+   "article-title": "Learning the difference that makes a difference with counterfactually- augmented data",
+   "volume-title": "ICLR",
+   "author": "Kaushik",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib17",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/D18-1546",
+   "article-title": "How much reading does reading comprehension require? A critical investigation of popular benchmarks",
+   "volume-title": "EMNLP",
+   "author": "Kaushik",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib18",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/N18-1023",
+   "article-title": "Looking beyond the surface: A challenge set for reading comprehension over multiple sentences",
+   "volume-title": "NAACL",
+   "author": "Khashabi",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib19",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.findings-emnlp.171",
+   "article-title": "UnifiedQA: Crossing format boundaries with a single QA system",
+   "author": "Khashabi",
+   "year": "2020",
+   "journal-title": "Findings of EMNLP"
+  },
+  {
+   "key": "2022050519113839300_bib20",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1609/aaai.v34i05.6319",
+   "article-title": "QASC: A dataset for question answering via sentence composition",
+   "volume-title": "AAAI",
+   "author": "Khot",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib21",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.naacl-main.99",
+   "article-title": "Text modular networks: Learning to decompose tasks in the language of existing models",
+   "volume-title": "NAACL",
+   "author": "Khot",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib22",
+   "doi-asserted-by": "publisher",
+   "first-page": "453",
+   "DOI": "10.1162/tacl_a_00276",
+   "article-title": "Natural questions: A benchmark for question answering research",
+   "volume": "7",
+   "author": "Kwiatkowski",
+   "year": "2019",
+   "journal-title": "TACL"
+  },
+  {
+   "key": "2022050519113839300_bib23",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/K17-1034",
+   "article-title": "Zero-shot relation extraction via reading comprehension",
+   "volume-title": "CoNLL",
+   "author": "Levy",
+   "year": "2017"
+  },
+  {
+   "key": "2022050519113839300_bib24",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.acl-main.703",
+   "article-title": "BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+   "volume-title": "ACL",
+   "author": "Lewis",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib25",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.acl-main.653",
+   "article-title": "MLQA: Evaluating cross-lingual extractive question answering",
+   "volume-title": "ACL",
+   "author": "Lewis",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib26",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.eacl-main.86",
+   "article-title": "Question and answer test-train overlap in open-domain question answering datasets",
+   "volume-title": "EACL",
+   "author": "Lewis",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib27",
+   "article-title": "RoBERTa: A robustly optimized bert pretraining approach",
+   "author": "Liu",
+   "year": "2019",
+   "journal-title": "arXiv preprint arXiv:1907.11692"
+  },
+  {
+   "key": "2022050519113839300_bib28",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P19-1416",
+   "article-title": "Compositional questions do not necessitate multi-hop reasoning",
+   "volume-title": "ACL",
+   "author": "Min",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib29",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/P19-1613",
+   "article-title": "Multi-hop reading comprehension through question decomposition and rescoring",
+   "volume-title": "ACL",
+   "author": "Min",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib30",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/2021.naacl-main.469",
+   "article-title": "Unsupervised multi-hop question answering by question generation",
+   "volume-title": "NAACL",
+   "author": "Pan",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib31",
+   "first-page": "8024",
+   "article-title": "PyTorch: An imperative style, high-performance deep learning library",
+   "volume-title": "NeurIPS",
+   "author": "Paszke",
+   "year": "2019"
+  },
+  {
+   "key": "2022050519113839300_bib32",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.naacl-main.200",
+   "article-title": "KILT: A benchmark for knowledge intensive language tasks",
+   "volume-title": "NAACL",
+   "author": "Petroni",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib33",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/2021.emnlp-main.292",
+   "article-title": "Answering open-domain questions of varying reasoning steps from text",
+   "volume-title": "EMNLP",
+   "author": "Qi",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib34",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P18-2124",
+   "article-title": "Know what you don\u2019t know: Unanswerable questions for SQuAD",
+   "volume-title": "ACL",
+   "author": "Rajpurkar",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib35",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/D16-1264",
+   "article-title": "SQuAD: 100, 000+ questions for machine comprehension of text",
+   "volume-title": "EMNLP",
+   "author": "Rajpurkar",
+   "year": "2016"
+  },
+  {
+   "key": "2022050519113839300_bib36",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/N18-1059",
+   "article-title": "The web as a knowledge-base for answering complex questions",
+   "volume-title": "NAACL",
+   "author": "Talmor",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib37",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/N18-1059",
+   "article-title": "MultiModalQA: Complex question answering over text, tables and images",
+   "volume-title": "ICLR",
+   "author": "Talmor",
+   "year": "2021"
+  },
+  {
+   "key": "2022050519113839300_bib38",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.emnlp-main.712",
+   "article-title": "Is multihop QA in DiRe condition? Measuring and reducing disconnected reasoning",
+   "volume-title": "EMNLP",
+   "author": "Trivedi",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib39",
+   "article-title": "Select, answer and explain: Interpretable multihop reading comprehension over multiple documents",
+   "volume-title": "AAAI",
+   "author": "Ming",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib40",
+   "first-page": "5998",
+   "article-title": "Attention is all you need",
+   "volume-title": "NeurIPS",
+   "author": "Vaswani",
+   "year": "2017"
+  },
+  {
+   "key": "2022050519113839300_bib41",
+   "doi-asserted-by": "publisher",
+   "first-page": "287",
+   "DOI": "10.1162/tacl_a_00021",
+   "article-title": "Constructing datasets for multihop reading comprehension across documents",
+   "volume": "6",
+   "author": "Welbl",
+   "year": "2018",
+   "journal-title": "TACL"
+  },
+  {
+   "key": "2022050519113839300_bib42",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.emnlp-demos.6",
+   "article-title": "Huggingface\u2019s transformers: State-of-the-art natural language processing",
+   "author": "Wolf",
+   "year": "2019",
+   "journal-title": "ArXiv"
+  },
+  {
+   "key": "2022050519113839300_bib43",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1162/tacl_a_00309",
+   "article-title": "Break it down: A question understanding benchmark",
+   "author": "Wolfson",
+   "year": "2020",
+   "journal-title": "TACL"
+  },
+  {
+   "key": "2022050519113839300_bib44",
+   "article-title": "Zero-shot entity linking with dense entity retrieval",
+   "volume-title": "EMNLP",
+   "author": "Ledell",
+   "year": "2020"
+  },
+  {
+   "key": "2022050519113839300_bib45",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/D18-1259",
+   "article-title": "HotpotQA: A dataset for diverse, explainable multihop question answering",
+   "volume-title": "EMNLP",
+   "author": "Yang",
+   "year": "2018"
+  },
+  {
+   "key": "2022050519113839300_bib46",
+   "article-title": "Turning tables: Generating examples from semi-structured tables for endowing language models with reasoning skills",
+   "author": "Yoran",
+   "year": "2021",
+   "journal-title": "arXiv preprint arXiv:2107.07261"
+  }
+ ],
+ "container-title": [
+  "Transactions of the Association for Computational Linguistics"
+ ],
+ "original-title": [],
+ "language": "en",
+ "link": [
+  {
+   "URL": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00475/2020694/tacl_a_00475.pdf",
+   "content-type": "application/pdf",
+   "content-version": "vor",
+   "intended-application": "syndication"
+  },
+  {
+   "URL": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00475/2020694/tacl_a_00475.pdf",
+   "content-type": "unspecified",
+   "content-version": "vor",
+   "intended-application": "similarity-checking"
+  }
+ ],
+ "deposited": {
+  "date-parts": [
+   [
+    2022,
+    5,
+    5
+   ]
+  ],
+  "date-time": "2022-05-05T15:12:08Z",
+  "timestamp": 1651763528000
+ },
+ "score": 1,
+ "resource": {
+  "primary": {
+   "URL": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00475/110996/MuSiQue-Multihop-Questions-via-Single-hop-Question"
+  }
+ },
+ "subtitle": [],
+ "short-title": [],
+ "issued": {
+  "date-parts": [
+   [
+    2022
+   ]
+  ]
+ },
+ "references-count": 46,
+ "URL": "https://doi.org/10.1162/tacl_a_00475",
+ "relation": {},
+ "ISSN": [
+  "2307-387X"
+ ],
+ "issn-type": [
+  {
+   "value": "2307-387X",
+   "type": "electronic"
+  }
+ ],
+ "subject": [],
+ "published-other": {
+  "date-parts": [
+   [
+    2022
+   ]
+  ]
+ },
+ "published": {
+  "date-parts": [
+   [
+    2022
+   ]
+  ]
+ }
+}

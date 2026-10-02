@@ -1,0 +1,236 @@
+{
+ "doi": "10.48550/arxiv.2310.03714",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2310.03714",
+ "identifiers": [
+  {
+   "identifier": "2310.03714",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2310.03714"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Khattab, Omar",
+   "nameType": "Personal",
+   "givenName": "Omar",
+   "familyName": "Khattab",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Singhvi, Arnav",
+   "nameType": "Personal",
+   "givenName": "Arnav",
+   "familyName": "Singhvi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Maheshwari, Paridhi",
+   "nameType": "Personal",
+   "givenName": "Paridhi",
+   "familyName": "Maheshwari",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Zhiyuan",
+   "nameType": "Personal",
+   "givenName": "Zhiyuan",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Santhanam, Keshav",
+   "nameType": "Personal",
+   "givenName": "Keshav",
+   "familyName": "Santhanam",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Vardhamanan, Sri",
+   "nameType": "Personal",
+   "givenName": "Sri",
+   "familyName": "Vardhamanan",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Haq, Saiful",
+   "nameType": "Personal",
+   "givenName": "Saiful",
+   "familyName": "Haq",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Sharma, Ashutosh",
+   "nameType": "Personal",
+   "givenName": "Ashutosh",
+   "familyName": "Sharma",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Joshi, Thomas T.",
+   "nameType": "Personal",
+   "givenName": "Thomas T.",
+   "familyName": "Joshi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Moazam, Hanna",
+   "nameType": "Personal",
+   "givenName": "Hanna",
+   "familyName": "Moazam",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Miller, Heather",
+   "nameType": "Personal",
+   "givenName": "Heather",
+   "familyName": "Miller",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zaharia, Matei",
+   "nameType": "Personal",
+   "givenName": "Matei",
+   "familyName": "Zaharia",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Potts, Christopher",
+   "nameType": "Personal",
+   "givenName": "Christopher",
+   "familyName": "Potts",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2023,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Information Retrieval (cs.IR)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2023-10-05T17:37:25Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2023-10-06T00:29:36Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2023-10",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2023",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "The ML community is rapidly exploring techniques for prompting language models (LMs) and for stacking them into pipelines that solve complex tasks. Unfortunately, existing LM pipelines are typically implemented using hard-coded \"prompt templates\", i.e. lengthy strings discovered via trial and error. Toward a more systematic approach for developing and optimizing LM pipelines, we introduce DSPy, a programming model that abstracts LM pipelines as text transformation graphs, i.e. imperative computational graphs where LMs are invoked through declarative modules. DSPy modules are parameterized, meaning they can learn (by creating and collecting demonstrations) how to apply compositions of prompting, finetuning, augmentation, and reasoning techniques. We design a compiler that will optimize any DSPy pipeline to maximize a given metric. We conduct two case studies, showing that succinct DSPy programs can express and optimize sophisticated LM pipelines that reason about math word problems, tackle multi-hop retrieval, answer complex questions, and control agent loops. Within minutes of compiling, a few lines of DSPy allow GPT-3.5 and llama2-13b-chat to self-bootstrap pipelines that outperform standard few-shot prompting (generally by over 25% and 65%, respectively) and pipelines with expert-created demonstrations (by up to 5-46% and 16-40%, respectively). On top of that, DSPy programs compiled to open and relatively small LMs like 770M-parameter T5 and llama2-13b-chat are competitive with approaches that rely on expert-written prompt chains for proprietary GPT-3.5. DSPy is available at https://github.com/stanfordnlp/dspy",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yMzEwLjAzNzE0PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjMxMC4wMzcxNDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5LaGF0dGFiLCBPbWFyPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5PbWFyPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPktoYXR0YWI8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+U2luZ2h2aSwgQXJuYXY8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFybmF2PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNpbmdodmk8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TWFoZXNod2FyaSwgUGFyaWRoaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+UGFyaWRoaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5NYWhlc2h3YXJpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoYW5nLCBaaGl5dWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5aaGl5dWFuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlNhbnRoYW5hbSwgS2VzaGF2PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LZXNoYXY8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U2FudGhhbmFtPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlZhcmRoYW1hbmFuLCBTcmk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlNyaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5WYXJkaGFtYW5hbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5IYXEsIFNhaWZ1bDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2FpZnVsPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkhhcTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TaGFybWEsIEFzaHV0b3NoPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Bc2h1dG9zaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TaGFybWE8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Sm9zaGksIFRob21hcyBULjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VGhvbWFzIFQuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkpvc2hpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk1vYXphbSwgSGFubmE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkhhbm5hPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk1vYXphbTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NaWxsZXIsIEhlYXRoZXI8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkhlYXRoZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWlsbGVyPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlphaGFyaWEsIE1hdGVpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NYXRlaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5aYWhhcmlhPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlBvdHRzLCBDaHJpc3RvcGhlcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Q2hyaXN0b3BoZXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UG90dHM8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRTUHk6IENvbXBpbGluZyBEZWNsYXJhdGl2ZSBMYW5ndWFnZSBNb2RlbCBDYWxscyBpbnRvIFNlbGYtSW1wcm92aW5nIFBpcGVsaW5lczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkluZm9ybWF0aW9uIFJldHJpZXZhbCAoY3MuSVIpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyMy0xMC0wNVQxNzozNzoyNVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyMy0xMC0wNlQwMDoyOTozNlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDIzLTEwPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgTUwgY29tbXVuaXR5IGlzIHJhcGlkbHkgZXhwbG9yaW5nIHRlY2huaXF1ZXMgZm9yIHByb21wdGluZyBsYW5ndWFnZSBtb2RlbHMgKExNcykgYW5kIGZvciBzdGFja2luZyB0aGVtIGludG8gcGlwZWxpbmVzIHRoYXQgc29sdmUgY29tcGxleCB0YXNrcy4gVW5mb3J0dW5hdGVseSwgZXhpc3RpbmcgTE0gcGlwZWxpbmVzIGFyZSB0eXBpY2FsbHkgaW1wbGVtZW50ZWQgdXNpbmcgaGFyZC1jb2RlZCAicHJvbXB0IHRlbXBsYXRlcyIsIGkuZS4gbGVuZ3RoeSBzdHJpbmdzIGRpc2NvdmVyZWQgdmlhIHRyaWFsIGFuZCBlcnJvci4gVG93YXJkIGEgbW9yZSBzeXN0ZW1hdGljIGFwcHJvYWNoIGZvciBkZXZlbG9waW5nIGFuZCBvcHRpbWl6aW5nIExNIHBpcGVsaW5lcywgd2UgaW50cm9kdWNlIERTUHksIGEgcHJvZ3JhbW1pbmcgbW9kZWwgdGhhdCBhYnN0cmFjdHMgTE0gcGlwZWxpbmVzIGFzIHRleHQgdHJhbnNmb3JtYXRpb24gZ3JhcGhzLCBpLmUuIGltcGVyYXRpdmUgY29tcHV0YXRpb25hbCBncmFwaHMgd2hlcmUgTE1zIGFyZSBpbnZva2VkIHRocm91Z2ggZGVjbGFyYXRpdmUgbW9kdWxlcy4gRFNQeSBtb2R1bGVzIGFyZSBwYXJhbWV0ZXJpemVkLCBtZWFuaW5nIHRoZXkgY2FuIGxlYXJuIChieSBjcmVhdGluZyBhbmQgY29sbGVjdGluZyBkZW1vbnN0cmF0aW9ucykgaG93IHRvIGFwcGx5IGNvbXBvc2l0aW9ucyBvZiBwcm9tcHRpbmcsIGZpbmV0dW5pbmcsIGF1Z21lbnRhdGlvbiwgYW5kIHJlYXNvbmluZyB0ZWNobmlxdWVzLiBXZSBkZXNpZ24gYSBjb21waWxlciB0aGF0IHdpbGwgb3B0aW1pemUgYW55IERTUHkgcGlwZWxpbmUgdG8gbWF4aW1pemUgYSBnaXZlbiBtZXRyaWMuIFdlIGNvbmR1Y3QgdHdvIGNhc2Ugc3R1ZGllcywgc2hvd2luZyB0aGF0IHN1Y2NpbmN0IERTUHkgcHJvZ3JhbXMgY2FuIGV4cHJlc3MgYW5kIG9wdGltaXplIHNvcGhpc3RpY2F0ZWQgTE0gcGlwZWxpbmVzIHRoYXQgcmVhc29uIGFib3V0IG1hdGggd29yZCBwcm9ibGVtcywgdGFja2xlIG11bHRpLWhvcCByZXRyaWV2YWwsIGFuc3dlciBjb21wbGV4IHF1ZXN0aW9ucywgYW5kIGNvbnRyb2wgYWdlbnQgbG9vcHMuIFdpdGhpbiBtaW51dGVzIG9mIGNvbXBpbGluZywgYSBmZXcgbGluZXMgb2YgRFNQeSBhbGxvdyBHUFQtMy41IGFuZCBsbGFtYTItMTNiLWNoYXQgdG8gc2VsZi1ib290c3RyYXAgcGlwZWxpbmVzIHRoYXQgb3V0cGVyZm9ybSBzdGFuZGFyZCBmZXctc2hvdCBwcm9tcHRpbmcgKGdlbmVyYWxseSBieSBvdmVyIDI1JSBhbmQgNjUlLCByZXNwZWN0aXZlbHkpIGFuZCBwaXBlbGluZXMgd2l0aCBleHBlcnQtY3JlYXRlZCBkZW1vbnN0cmF0aW9ucyAoYnkgdXAgdG8gNS00NiUgYW5kIDE2LTQwJSwgcmVzcGVjdGl2ZWx5KS4gT24gdG9wIG9mIHRoYXQsIERTUHkgcHJvZ3JhbXMgY29tcGlsZWQgdG8gb3BlbiBhbmQgcmVsYXRpdmVseSBzbWFsbCBMTXMgbGlrZSA3NzBNLXBhcmFtZXRlciBUNSBhbmQgbGxhbWEyLTEzYi1jaGF0IGFyZSBjb21wZXRpdGl2ZSB3aXRoIGFwcHJvYWNoZXMgdGhhdCByZWx5IG9uIGV4cGVydC13cml0dGVuIHByb21wdCBjaGFpbnMgZm9yIHByb3ByaWV0YXJ5IEdQVC0zLjUuIERTUHkgaXMgYXZhaWxhYmxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9zdGFuZm9yZG5scC9kc3B5PC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2310.03714",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2023-10-06T02:15:32.000Z",
+ "registered": "2023-10-06T02:15:32.000Z",
+ "published": "2023",
+ "updated": "2023-10-06T02:15:32.000Z"
+}

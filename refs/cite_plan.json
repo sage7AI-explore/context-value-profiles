@@ -1,3 +1,19 @@
 {
- "_comment": "bibkey -> {doi | arxiv}. Fill in Phase 1, run scripts/fetch_refs.py --fetch-abstracts, READ every abstract, then scripts/fetch_refs.py."
+ "_comment": "bibkey -> {doi | arxiv}. Every key's abstract is fetched to refs/abstracts/ and read before citing.",
+ "pacms2026": {"arxiv": "2606.20047"}, "contextpipe2026": {"arxiv": "2609.00749"}, "contextrender2026": {"arxiv": "2609.37743"},
+ "ace2025": {"arxiv": "2510.04618"}, "controlledvar2026": {"arxiv": "2607.25408"}, "contextevo2026": {"arxiv": "2609.34649"},
+ "dspy2023": {"arxiv": "2310.03714"}, "toolschema2026": {"arxiv": "2605.26165"}, "attribot2024": {"arxiv": "2411.15102"},
+ "cesurvey2025": {"arxiv": "2507.13334"}, "imprompt2026": {"arxiv": "2607.22683"}, "budgetbench2026": {"arxiv": "2609.13149"},
+ "ctxenv2026": {"arxiv": "2608.21690"}, "taubench2024": {"arxiv": "2406.12045"}, "contextcite2024": {"arxiv": "2409.00729"},
+ "llmlingua2_2024": {"arxiv": "2403.12968"}, "lostmiddle2024": {"doi": "10.1162/tacl_a_00638"},
+ "hotpotqa2018": {"arxiv": "1809.09600"}, "musique2022": {"doi": "10.1162/tacl_a_00475"},
+ "longmemeval2024": {"arxiv": "2410.10813"},
+ "skillsv2026": {"arxiv": "2608.04562"}, "civalue2025": {"arxiv": "2509.21359"}, "demoshapley2024": {"arxiv": "2410.07523"},
+ "promptshapley2023": {"arxiv": "2312.15395"}, "drsr2026": {"arxiv": "2609.27276"}, "meclear2026": {"arxiv": "2609.09115"},
+ "skillsinjector2026": {"arxiv": "2605.29794"}, "kernelsurrogate2026": {"arxiv": "2602.03783"}, "ctxfiles2026": {"arxiv": "2607.27250"},
+ "cicl2026": {"arxiv": "2606.08151"}, "ctxalloc2026": {"arxiv": "2608.23252"}, "comi2026": {"arxiv": "2602.01719"},
+ "beyondharness2026": {"arxiv": "2608.22830"}, "skillselect2026": {"arxiv": "2608.19993"}, "contextweaver2026": {"arxiv": "2604.23069"},
+ "knowbefore2026": {"arxiv": "2606.29959"}, "gorilla2023": {"arxiv": "2305.15334"}, "nomicembed2024": {"arxiv": "2402.01613"},
+ "datashapley2019": {"arxiv": "1904.02868"}, "recallnotenough2026": {"arxiv": "2607.00725"},
+ "compressiontrial2026": {"arxiv": "2603.23525"}, "controlcompression2026": {"arxiv": "2608.01056"}
 }

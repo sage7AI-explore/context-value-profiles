@@ -1,0 +1,133 @@
+{
+ "doi": "10.48550/arxiv.2609.13149",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2609.13149",
+ "identifiers": [
+  {
+   "identifier": "2609.13149",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2609.13149"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Rao, Aditya Karnam Gururaj",
+   "nameType": "Personal",
+   "givenName": "Aditya Karnam Gururaj",
+   "familyName": "Rao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Jaggi, Arjun",
+   "nameType": "Personal",
+   "givenName": "Arjun",
+   "familyName": "Jaggi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-07-01T19:15:46Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09-15T00:00:08Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "For local large language model agents, active context is a scarce resource: memory capacity, prefill latency, cache growth, and service objectives all constrain how many input tokens each call can afford. We present BudgetBench, an active-budget protocol and reference harness that treats the per-call input-token budget as the independent variable when comparing memory strategies. Holding the model, task, sampler, and decoding fixed, it sweeps budgets over 2K, 4K, 8K, 16K, and 32K tokens and records quality, budget utilization, latency, and, as a first-class outcome, budget-violation rates. The core contribution is this reusable measurement surface: a swappable MemoryStrategy contract, explicit budget enforcement, deterministic or versioned graders, prompt-audit metadata, and reproducibility artifacts, released at https://github.com/aviskaar/budgetbench.\n We substantiate the protocol with pilot studies rather than final rankings. Across a local qwen2.5:1.5b pilot (89 items each on SWE-bench Verified and LongBench v2), a hosted 50-item Qwen3 30B-A3B LongBench replication with exact tokenization, and a 500-item LongMemEval oracle study scored by the official GPT-4o evaluator, the harness exposes budget-compliance failures, non-monotonic quality curves, and operating points that single-budget evaluation hides. The budgeted-versus-full-context direction remains unresolved: the local slice is near-null and the hosted replication favors full context in point estimate. We report results transparently, including that the early pilot's tokenizer approximation undercounts some served-model prompts, so its violation rows are tokenizer-approximation diagnostics, not claim-bearing results; all timings are operational diagnostics. The reusable contribution is the protocol, harness, and failure-reporting discipline needed to scale fixed-budget memory-strategy evaluation.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "44 pages, 4 figures. Code and artifacts: https://github.com/aviskaar/budgetbench",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA5LjEzMTQ5PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOS4xMzE0OTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5SYW8sIEFkaXR5YSBLYXJuYW0gR3VydXJhajwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QWRpdHlhIEthcm5hbSBHdXJ1cmFqPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlJhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5KYWdnaSwgQXJqdW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFyanVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkphZ2dpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5CdWRnZXRCZW5jaDogQSBCdWRnZXQtVGllcmVkIFByb3RvY29sIGFuZCBQaWxvdCBIYXJuZXNzIGZvciBNZW1vcnkgU3RyYXRlZ3kgRXZhbHVhdGlvbiBpbiBMb2NhbCBMYXJnZSBMYW5ndWFnZSBNb2RlbCBBZ2VudHM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5NYWNoaW5lIExlYXJuaW5nIChjcy5MRyk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMDFUMTk6MTU6NDZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDktMTVUMDA6MDA6MDhaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Rm9yIGxvY2FsIGxhcmdlIGxhbmd1YWdlIG1vZGVsIGFnZW50cywgYWN0aXZlIGNvbnRleHQgaXMgYSBzY2FyY2UgcmVzb3VyY2U6IG1lbW9yeSBjYXBhY2l0eSwgcHJlZmlsbCBsYXRlbmN5LCBjYWNoZSBncm93dGgsIGFuZCBzZXJ2aWNlIG9iamVjdGl2ZXMgYWxsIGNvbnN0cmFpbiBob3cgbWFueSBpbnB1dCB0b2tlbnMgZWFjaCBjYWxsIGNhbiBhZmZvcmQuIFdlIHByZXNlbnQgQnVkZ2V0QmVuY2gsIGFuIGFjdGl2ZS1idWRnZXQgcHJvdG9jb2wgYW5kIHJlZmVyZW5jZSBoYXJuZXNzIHRoYXQgdHJlYXRzIHRoZSBwZXItY2FsbCBpbnB1dC10b2tlbiBidWRnZXQgYXMgdGhlIGluZGVwZW5kZW50IHZhcmlhYmxlIHdoZW4gY29tcGFyaW5nIG1lbW9yeSBzdHJhdGVnaWVzLiBIb2xkaW5nIHRoZSBtb2RlbCwgdGFzaywgc2FtcGxlciwgYW5kIGRlY29kaW5nIGZpeGVkLCBpdCBzd2VlcHMgYnVkZ2V0cyBvdmVyIDJLLCA0SywgOEssIDE2SywgYW5kIDMySyB0b2tlbnMgYW5kIHJlY29yZHMgcXVhbGl0eSwgYnVkZ2V0IHV0aWxpemF0aW9uLCBsYXRlbmN5LCBhbmQsIGFzIGEgZmlyc3QtY2xhc3Mgb3V0Y29tZSwgYnVkZ2V0LXZpb2xhdGlvbiByYXRlcy4gVGhlIGNvcmUgY29udHJpYnV0aW9uIGlzIHRoaXMgcmV1c2FibGUgbWVhc3VyZW1lbnQgc3VyZmFjZTogYSBzd2FwcGFibGUgTWVtb3J5U3RyYXRlZ3kgY29udHJhY3QsIGV4cGxpY2l0IGJ1ZGdldCBlbmZvcmNlbWVudCwgZGV0ZXJtaW5pc3RpYyBvciB2ZXJzaW9uZWQgZ3JhZGVycywgcHJvbXB0LWF1ZGl0IG1ldGFkYXRhLCBhbmQgcmVwcm9kdWNpYmlsaXR5IGFydGlmYWN0cywgcmVsZWFzZWQgYXQgaHR0cHM6Ly9naXRodWIuY29tL2F2aXNrYWFyL2J1ZGdldGJlbmNoLgogIFdlIHN1YnN0YW50aWF0ZSB0aGUgcHJvdG9jb2wgd2l0aCBwaWxvdCBzdHVkaWVzIHJhdGhlciB0aGFuIGZpbmFsIHJhbmtpbmdzLiBBY3Jvc3MgYSBsb2NhbCBxd2VuMi41OjEuNWIgcGlsb3QgKDg5IGl0ZW1zIGVhY2ggb24gU1dFLWJlbmNoIFZlcmlmaWVkIGFuZCBMb25nQmVuY2ggdjIpLCBhIGhvc3RlZCA1MC1pdGVtIFF3ZW4zIDMwQi1BM0IgTG9uZ0JlbmNoIHJlcGxpY2F0aW9uIHdpdGggZXhhY3QgdG9rZW5pemF0aW9uLCBhbmQgYSA1MDAtaXRlbSBMb25nTWVtRXZhbCBvcmFjbGUgc3R1ZHkgc2NvcmVkIGJ5IHRoZSBvZmZpY2lhbCBHUFQtNG8gZXZhbHVhdG9yLCB0aGUgaGFybmVzcyBleHBvc2VzIGJ1ZGdldC1jb21wbGlhbmNlIGZhaWx1cmVzLCBub24tbW9ub3RvbmljIHF1YWxpdHkgY3VydmVzLCBhbmQgb3BlcmF0aW5nIHBvaW50cyB0aGF0IHNpbmdsZS1idWRnZXQgZXZhbHVhdGlvbiBoaWRlcy4gVGhlIGJ1ZGdldGVkLXZlcnN1cy1mdWxsLWNvbnRleHQgZGlyZWN0aW9uIHJlbWFpbnMgdW5yZXNvbHZlZDogdGhlIGxvY2FsIHNsaWNlIGlzIG5lYXItbnVsbCBhbmQgdGhlIGhvc3RlZCByZXBsaWNhdGlvbiBmYXZvcnMgZnVsbCBjb250ZXh0IGluIHBvaW50IGVzdGltYXRlLiBXZSByZXBvcnQgcmVzdWx0cyB0cmFuc3BhcmVudGx5LCBpbmNsdWRpbmcgdGhhdCB0aGUgZWFybHkgcGlsb3QncyB0b2tlbml6ZXIgYXBwcm94aW1hdGlvbiB1bmRlcmNvdW50cyBzb21lIHNlcnZlZC1tb2RlbCBwcm9tcHRzLCBzbyBpdHMgdmlvbGF0aW9uIHJvd3MgYXJlIHRva2VuaXplci1hcHByb3hpbWF0aW9uIGRpYWdub3N0aWNzLCBub3QgY2xhaW0tYmVhcmluZyByZXN1bHRzOyBhbGwgdGltaW5ncyBhcmUgb3BlcmF0aW9uYWwgZGlhZ25vc3RpY3MuIFRoZSByZXVzYWJsZSBjb250cmlidXRpb24gaXMgdGhlIHByb3RvY29sLCBoYXJuZXNzLCBhbmQgZmFpbHVyZS1yZXBvcnRpbmcgZGlzY2lwbGluZSBuZWVkZWQgdG8gc2NhbGUgZml4ZWQtYnVkZ2V0IG1lbW9yeS1zdHJhdGVneSBldmFsdWF0aW9uLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+NDQgcGFnZXMsIDQgZmlndXJlcy4gQ29kZSBhbmQgYXJ0aWZhY3RzOiBodHRwczovL2dpdGh1Yi5jb20vYXZpc2thYXIvYnVkZ2V0YmVuY2g8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2609.13149",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-09-15T03:31:17.000Z",
+ "registered": "2026-09-15T03:31:18.000Z",
+ "published": "2026",
+ "updated": "2026-09-15T03:31:18.000Z"
+}

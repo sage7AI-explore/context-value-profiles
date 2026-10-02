@@ -1,0 +1,147 @@
+{
+ "doi": "10.48550/arxiv.2603.23525",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2603.23525",
+ "identifiers": [
+  {
+   "identifier": "2603.23525",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2603.23525"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Johnson, Warren",
+   "nameType": "Personal",
+   "givenName": "Warren",
+   "familyName": "Johnson",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Lee, Charles",
+   "nameType": "Personal",
+   "givenName": "Charles",
+   "familyName": "Lee",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Prompt Compression in Production Task Orchestration: A Pre-Registered Randomized Trial"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "lang": "en",
+   "subject": "I.2.7",
+   "subjectScheme": "ACM"
+  },
+  {
+   "lang": "en",
+   "subject": "68T50",
+   "subjectScheme": "MSC"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-03-06T21:47:34Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-03-26T00:00:42Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-03",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "The economics of prompt compression depend not only on reducing input tokens but on how compression changes output length, which is typically priced several times higher. We evaluate this in a pre-registered six-arm randomized controlled trial of prompt compression on production multi-agent task-orchestration, analyzing 358 successful Claude Sonnet 4.5 runs (59-61 per arm) drawn from a randomized corpus of 1,199 real orchestration instructions. We compare an uncompressed control with three uniform retention rates (r=0.8, 0.5, 0.2) and two structure-aware strategies (entropy-adaptive and recency-weighted), measuring total inference cost (input+output) and embedding-based response similarity. Moderate compression (r=0.5) reduced mean total cost by 27.9%, while aggressive compression (r=0.2) increased mean cost by 1.8% despite substantial input reduction, consistent with small mean output expansion (1.03x vs. control) and heavy-tailed uncertainty. Recency-weighted compression achieved 23.5% savings and, together with moderate compression, occupied the empirical cost-similarity Pareto frontier, whereas aggressive compression was dominated on both cost and similarity. These results show that \"compress more\" is not a reliable production heuristic and that output tokens must be treated as a first-class outcome when designing compression policies.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "28 pages, 9 tables, 1 CONSORT figure; pre-registered randomized controlled trial on production orchestration prompts",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjAzLjIzNTI1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwMy4yMzUyNTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Kb2huc29uLCBXYXJyZW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPldhcnJlbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Kb2huc29uPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxlZSwgQ2hhcmxlczwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Q2hhcmxlczwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MZWU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlByb21wdCBDb21wcmVzc2lvbiBpbiBQcm9kdWN0aW9uIFRhc2sgT3JjaGVzdHJhdGlvbjogQSBQcmUtUmVnaXN0ZXJlZCBSYW5kb21pemVkIFRyaWFsPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9IkFDTSI+SS4yLjc8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9Ik1TQyI+NjhUNTA8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAzLTA2VDIxOjQ3OjM0WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAzLTI2VDAwOjAwOjQyWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDM8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vYXJ4aXYub3JnL2xpY2Vuc2VzL25vbmV4Y2x1c2l2ZS1kaXN0cmliLzEuMC8iPmFyWGl2Lm9yZyBwZXJwZXR1YWwsIG5vbi1leGNsdXNpdmUgbGljZW5zZTwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBlY29ub21pY3Mgb2YgcHJvbXB0IGNvbXByZXNzaW9uIGRlcGVuZCBub3Qgb25seSBvbiByZWR1Y2luZyBpbnB1dCB0b2tlbnMgYnV0IG9uIGhvdyBjb21wcmVzc2lvbiBjaGFuZ2VzIG91dHB1dCBsZW5ndGgsIHdoaWNoIGlzIHR5cGljYWxseSBwcmljZWQgc2V2ZXJhbCB0aW1lcyBoaWdoZXIuIFdlIGV2YWx1YXRlIHRoaXMgaW4gYSBwcmUtcmVnaXN0ZXJlZCBzaXgtYXJtIHJhbmRvbWl6ZWQgY29udHJvbGxlZCB0cmlhbCBvZiBwcm9tcHQgY29tcHJlc3Npb24gb24gcHJvZHVjdGlvbiBtdWx0aS1hZ2VudCB0YXNrLW9yY2hlc3RyYXRpb24sIGFuYWx5emluZyAzNTggc3VjY2Vzc2Z1bCBDbGF1ZGUgU29ubmV0IDQuNSBydW5zICg1OS02MSBwZXIgYXJtKSBkcmF3biBmcm9tIGEgcmFuZG9taXplZCBjb3JwdXMgb2YgMSwxOTkgcmVhbCBvcmNoZXN0cmF0aW9uIGluc3RydWN0aW9ucy4gV2UgY29tcGFyZSBhbiB1bmNvbXByZXNzZWQgY29udHJvbCB3aXRoIHRocmVlIHVuaWZvcm0gcmV0ZW50aW9uIHJhdGVzIChyPTAuOCwgMC41LCAwLjIpIGFuZCB0d28gc3RydWN0dXJlLWF3YXJlIHN0cmF0ZWdpZXMgKGVudHJvcHktYWRhcHRpdmUgYW5kIHJlY2VuY3ktd2VpZ2h0ZWQpLCBtZWFzdXJpbmcgdG90YWwgaW5mZXJlbmNlIGNvc3QgKGlucHV0K291dHB1dCkgYW5kIGVtYmVkZGluZy1iYXNlZCByZXNwb25zZSBzaW1pbGFyaXR5LiBNb2RlcmF0ZSBjb21wcmVzc2lvbiAocj0wLjUpIHJlZHVjZWQgbWVhbiB0b3RhbCBjb3N0IGJ5IDI3LjklLCB3aGlsZSBhZ2dyZXNzaXZlIGNvbXByZXNzaW9uIChyPTAuMikgaW5jcmVhc2VkIG1lYW4gY29zdCBieSAxLjglIGRlc3BpdGUgc3Vic3RhbnRpYWwgaW5wdXQgcmVkdWN0aW9uLCBjb25zaXN0ZW50IHdpdGggc21hbGwgbWVhbiBvdXRwdXQgZXhwYW5zaW9uICgxLjAzeCB2cy4gY29udHJvbCkgYW5kIGhlYXZ5LXRhaWxlZCB1bmNlcnRhaW50eS4gUmVjZW5jeS13ZWlnaHRlZCBjb21wcmVzc2lvbiBhY2hpZXZlZCAyMy41JSBzYXZpbmdzIGFuZCwgdG9nZXRoZXIgd2l0aCBtb2RlcmF0ZSBjb21wcmVzc2lvbiwgb2NjdXBpZWQgdGhlIGVtcGlyaWNhbCBjb3N0LXNpbWlsYXJpdHkgUGFyZXRvIGZyb250aWVyLCB3aGVyZWFzIGFnZ3Jlc3NpdmUgY29tcHJlc3Npb24gd2FzIGRvbWluYXRlZCBvbiBib3RoIGNvc3QgYW5kIHNpbWlsYXJpdHkuIFRoZXNlIHJlc3VsdHMgc2hvdyB0aGF0ICJjb21wcmVzcyBtb3JlIiBpcyBub3QgYSByZWxpYWJsZSBwcm9kdWN0aW9uIGhldXJpc3RpYyBhbmQgdGhhdCBvdXRwdXQgdG9rZW5zIG11c3QgYmUgdHJlYXRlZCBhcyBhIGZpcnN0LWNsYXNzIG91dGNvbWUgd2hlbiBkZXNpZ25pbmcgY29tcHJlc3Npb24gcG9saWNpZXMuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj4yOCBwYWdlcywgOSB0YWJsZXMsIDEgQ09OU09SVCBmaWd1cmU7IHByZS1yZWdpc3RlcmVkIHJhbmRvbWl6ZWQgY29udHJvbGxlZCB0cmlhbCBvbiBwcm9kdWN0aW9uIG9yY2hlc3RyYXRpb24gcHJvbXB0czwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2603.23525",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-03-26T01:55:57.000Z",
+ "registered": "2026-03-26T01:55:57.000Z",
+ "published": "2026",
+ "updated": "2026-03-26T01:55:57.000Z"
+}

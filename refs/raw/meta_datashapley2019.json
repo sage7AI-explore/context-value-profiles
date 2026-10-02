@@ -1,0 +1,153 @@
+{
+ "doi": "10.48550/arxiv.1904.02868",
+ "prefix": "10.48550",
+ "suffix": "arxiv.1904.02868",
+ "identifiers": [
+  {
+   "identifier": "1904.02868",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "1904.02868"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Ghorbani, Amirata",
+   "nameType": "Personal",
+   "givenName": "Amirata",
+   "familyName": "Ghorbani",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zou, James",
+   "nameType": "Personal",
+   "givenName": "James",
+   "familyName": "Zou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Data Shapley: Equitable Valuation of Data for Machine Learning"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2019,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Machine Learning (stat.ML)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2019-04-05T04:54:10Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2019-04-08T00:07:23Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2019-06-10T08:10:40Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2019-06-11T00:23:34Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2019-04",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2019",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "As data becomes the fuel driving technological and economic growth, a fundamental challenge is how to quantify the value of data in algorithmic predictions and decisions. For example, in healthcare and consumer markets, it has been suggested that individuals should be compensated for the data that they generate, but it is not clear what is an equitable valuation for individual data. In this work, we develop a principled framework to address data valuation in the context of supervised machine learning. Given a learning algorithm trained on $n$ data points to produce a predictor, we propose data Shapley as a metric to quantify the value of each training datum to the predictor performance. Data Shapley value uniquely satisfies several natural properties of equitable data valuation. We develop Monte Carlo and gradient-based methods to efficiently estimate data Shapley values in practical settings where complex learning algorithms, including neural networks, are trained on large datasets. In addition to being equitable, extensive experiments across biomedical, image and synthetic data demonstrate that data Shapley has several other benefits: 1) it is more powerful than the popular leave-one-out or leverage score in providing insight on what data is more valuable for a given learning task; 2) low Shapley value data effectively capture outliers and corruptions; 3) high Shapley value data inform what type of new data to acquire to improve the predictor.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4xOTA0LjAyODY4PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MTkwNC4wMjg2ODwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HaG9yYmFuaSwgQW1pcmF0YTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QW1pcmF0YTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HaG9yYmFuaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ab3UsIEphbWVzPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KYW1lczwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5ab3U8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkRhdGEgU2hhcGxleTogRXF1aXRhYmxlIFZhbHVhdGlvbiBvZiBEYXRhIGZvciBNYWNoaW5lIExlYXJuaW5nPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE5PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoc3RhdC5NTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxOS0wNC0wNVQwNDo1NDoxMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxOS0wNC0wOFQwMDowNzoyM1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDE5LTA2LTEwVDA4OjEwOjQwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDE5LTA2LTExVDAwOjIzOjM0WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMTktMDQ8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MjwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vYXJ4aXYub3JnL2xpY2Vuc2VzL25vbmV4Y2x1c2l2ZS1kaXN0cmliLzEuMC8iPmFyWGl2Lm9yZyBwZXJwZXR1YWwsIG5vbi1leGNsdXNpdmUgbGljZW5zZTwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFzIGRhdGEgYmVjb21lcyB0aGUgZnVlbCBkcml2aW5nIHRlY2hub2xvZ2ljYWwgYW5kIGVjb25vbWljIGdyb3d0aCwgYSBmdW5kYW1lbnRhbCBjaGFsbGVuZ2UgaXMgaG93IHRvIHF1YW50aWZ5IHRoZSB2YWx1ZSBvZiBkYXRhIGluIGFsZ29yaXRobWljIHByZWRpY3Rpb25zIGFuZCBkZWNpc2lvbnMuIEZvciBleGFtcGxlLCBpbiBoZWFsdGhjYXJlIGFuZCBjb25zdW1lciBtYXJrZXRzLCBpdCBoYXMgYmVlbiBzdWdnZXN0ZWQgdGhhdCBpbmRpdmlkdWFscyBzaG91bGQgYmUgY29tcGVuc2F0ZWQgZm9yIHRoZSBkYXRhIHRoYXQgdGhleSBnZW5lcmF0ZSwgYnV0IGl0IGlzIG5vdCBjbGVhciB3aGF0IGlzIGFuIGVxdWl0YWJsZSB2YWx1YXRpb24gZm9yIGluZGl2aWR1YWwgZGF0YS4gSW4gdGhpcyB3b3JrLCB3ZSBkZXZlbG9wIGEgcHJpbmNpcGxlZCBmcmFtZXdvcmsgdG8gYWRkcmVzcyBkYXRhIHZhbHVhdGlvbiBpbiB0aGUgY29udGV4dCBvZiBzdXBlcnZpc2VkIG1hY2hpbmUgbGVhcm5pbmcuIEdpdmVuIGEgbGVhcm5pbmcgYWxnb3JpdGhtIHRyYWluZWQgb24gJG4kIGRhdGEgcG9pbnRzIHRvIHByb2R1Y2UgYSBwcmVkaWN0b3IsIHdlIHByb3Bvc2UgZGF0YSBTaGFwbGV5IGFzIGEgbWV0cmljIHRvIHF1YW50aWZ5IHRoZSB2YWx1ZSBvZiBlYWNoIHRyYWluaW5nIGRhdHVtIHRvIHRoZSBwcmVkaWN0b3IgcGVyZm9ybWFuY2UuIERhdGEgU2hhcGxleSB2YWx1ZSB1bmlxdWVseSBzYXRpc2ZpZXMgc2V2ZXJhbCBuYXR1cmFsIHByb3BlcnRpZXMgb2YgZXF1aXRhYmxlIGRhdGEgdmFsdWF0aW9uLiBXZSBkZXZlbG9wIE1vbnRlIENhcmxvIGFuZCBncmFkaWVudC1iYXNlZCBtZXRob2RzIHRvIGVmZmljaWVudGx5IGVzdGltYXRlIGRhdGEgU2hhcGxleSB2YWx1ZXMgaW4gcHJhY3RpY2FsIHNldHRpbmdzIHdoZXJlIGNvbXBsZXggbGVhcm5pbmcgYWxnb3JpdGhtcywgaW5jbHVkaW5nIG5ldXJhbCBuZXR3b3JrcywgYXJlIHRyYWluZWQgb24gbGFyZ2UgZGF0YXNldHMuIEluIGFkZGl0aW9uIHRvIGJlaW5nIGVxdWl0YWJsZSwgZXh0ZW5zaXZlIGV4cGVyaW1lbnRzIGFjcm9zcyBiaW9tZWRpY2FsLCBpbWFnZSBhbmQgc3ludGhldGljIGRhdGEgZGVtb25zdHJhdGUgdGhhdCBkYXRhIFNoYXBsZXkgaGFzIHNldmVyYWwgb3RoZXIgYmVuZWZpdHM6IDEpIGl0IGlzIG1vcmUgcG93ZXJmdWwgdGhhbiB0aGUgcG9wdWxhciBsZWF2ZS1vbmUtb3V0IG9yIGxldmVyYWdlIHNjb3JlIGluIHByb3ZpZGluZyBpbnNpZ2h0IG9uIHdoYXQgZGF0YSBpcyBtb3JlIHZhbHVhYmxlIGZvciBhIGdpdmVuIGxlYXJuaW5nIHRhc2s7IDIpIGxvdyBTaGFwbGV5IHZhbHVlIGRhdGEgZWZmZWN0aXZlbHkgY2FwdHVyZSBvdXRsaWVycyBhbmQgY29ycnVwdGlvbnM7IDMpIGhpZ2ggU2hhcGxleSB2YWx1ZSBkYXRhIGluZm9ybSB3aGF0IHR5cGUgb2YgbmV3IGRhdGEgdG8gYWNxdWlyZSB0byBpbXByb3ZlIHRoZSBwcmVkaWN0b3IuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/1904.02868",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2022-02-28T06:29:16.000Z",
+ "registered": "2022-02-28T06:29:19.000Z",
+ "published": "2019",
+ "updated": "2022-02-28T06:29:19.000Z"
+}

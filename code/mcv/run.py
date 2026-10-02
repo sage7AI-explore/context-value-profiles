@@ -116,7 +116,8 @@ def _load_profile(model: str, family: str):
 
 
 def evaluate(model: str, family: str, policies: list, budgets: list, profile_model: str | None, limit: int | None,
-             run_name: str, seed: int = 0, variants: bool = True, deps: bool = True, split: str = "test") -> None:
+             run_name: str, seed: int = 0, variants: bool = True, deps: bool = True, split: str = "test",
+             offset: int = 0) -> None:
     run = RAW / run_name
     _manifest(run, {"cmd": "eval", "model": model, "family": family, "policies": policies, "budgets": budgets,
                     "profile_model": profile_model, "limit": limit, "variants": variants, "deps": deps, "split": split})
@@ -124,7 +125,7 @@ def evaluate(model: str, family: str, policies: list, budgets: list, profile_mod
     done = _done(out, lambda r: (r["iid"], r["policy"], r["budget"], r["seed"]))
     counter = TokenCounter(model)
     cache = Cache(ROOT / "results/cache/responses.sqlite")
-    insts = load(split, family)
+    insts = load(split, family)[offset:]
     insts = insts[:limit] if limit else insts
     with httpx.Client() as http:
         ctx = {"embedder": Embedder(ROOT / "results/cache/embeddings.sqlite", http), "variants": variants, "deps": deps}
@@ -184,6 +185,7 @@ def main() -> None:
     ap.add_argument("--split", default="test")
     ap.add_argument("--no-variants", action="store_true")
     ap.add_argument("--no-deps", action="store_true")
+    ap.add_argument("--offset", type=int, default=0)
     a = ap.parse_args()
     if a.cmd == "profile":
         profile(a.model, a.family, a.limit, a.pad)
@@ -192,7 +194,7 @@ def main() -> None:
     else:
         evaluate(a.model, a.family, a.policies.split(","), [int(x) for x in a.budgets.split(",")], a.profile_model,
                  a.limit, a.run or f"eval_{a.model.replace(':', '-')}", variants=not a.no_variants,
-                 deps=not a.no_deps, split=a.split)
+                 deps=not a.no_deps, split=a.split, offset=a.offset)
 
 
 if __name__ == "__main__":

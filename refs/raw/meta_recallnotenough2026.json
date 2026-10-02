@@ -1,0 +1,138 @@
+{
+ "doi": "10.48550/arxiv.2607.00725",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2607.00725",
+ "identifiers": [
+  {
+   "identifier": "2607.00725",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2607.00725"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Bala, Ananto Nayan",
+   "nameType": "Personal",
+   "givenName": "Ananto Nayan",
+   "familyName": "Bala",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Recall Is Not Enough: A Reader-Context Diagnostic for Budget-Constrained Retrieval-Augmented Generation"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Information Retrieval (cs.IR)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-07-01T10:12:15Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07-02T00:41:57Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-05T11:48:36Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-08-06T00:41:18Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-07",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Retrieval-augmented generation under a fixed context budget forces a selection problem: only a fraction of the retrieved evidence fits in front of the reader. The field's standard metric, recall@k, is scored on the retrieved set, but the reader consumes the packed context - and once packing must discard evidence, the two come apart. We introduce answer-in-context, a diagnostic that measures whether a gold answer survives into the packed context, and argue it is the quantity budgeted RAG should be optimizing. It carries substantial information beyond retrieval, adding Delta R^2 = 0.17-0.27 over recall across three multi-hop datasets; even among questions where all gold was retrieved, whether packing keeps the answer separates exact match by 4.6x. Two independent interventions confirm the mediation: a packing change that raises document coverage without raising answer-in-context leaves accuracy flat, and prompt compression that destroys the answer span lowers both together. A graded variant extends the diagnostic to free-form answers, where no verbatim span exists. We then show the diagnostic is actionable. Casting reader-context construction as budgeted submodular maximization gives a packer that beats both deployed top-k truncation and LLMLingua-2 compression - across three reader families, four scales, and four budgets, at equal-or-lower token cost. Against a hand-tuned query-focused heuristic, which we show approximates the same objective, it reaches parity, winning outright only where evidence density is the binding constraint. Throughout, one variable predicts what helps and what cannot.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "Under review at EACL 2027",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA3LjAwNzI1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNy4wMDcyNTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5CYWxhLCBBbmFudG8gTmF5YW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFuYW50byBOYXlhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5CYWxhPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5SZWNhbGwgSXMgTm90IEVub3VnaDogQSBSZWFkZXItQ29udGV4dCBEaWFnbm9zdGljIGZvciBCdWRnZXQtQ29uc3RyYWluZWQgUmV0cmlldmFsLUF1Z21lbnRlZCBHZW5lcmF0aW9uPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5JbmZvcm1hdGlvbiBSZXRyaWV2YWwgKGNzLklSKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMDFUMTA6MTI6MTVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMDJUMDA6NDE6NTdaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wOC0wNVQxMTo0ODozNlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wOC0wNlQwMDo0MToxOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA3PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0iU1BEWCIgcmlnaHRzSWRlbnRpZmllcj0iQ0MtQlktNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+UmV0cmlldmFsLWF1Z21lbnRlZCBnZW5lcmF0aW9uIHVuZGVyIGEgZml4ZWQgY29udGV4dCBidWRnZXQgZm9yY2VzIGEgc2VsZWN0aW9uIHByb2JsZW06IG9ubHkgYSBmcmFjdGlvbiBvZiB0aGUgcmV0cmlldmVkIGV2aWRlbmNlIGZpdHMgaW4gZnJvbnQgb2YgdGhlIHJlYWRlci4gVGhlIGZpZWxkJ3Mgc3RhbmRhcmQgbWV0cmljLCByZWNhbGxAaywgaXMgc2NvcmVkIG9uIHRoZSByZXRyaWV2ZWQgc2V0LCBidXQgdGhlIHJlYWRlciBjb25zdW1lcyB0aGUgcGFja2VkIGNvbnRleHQgLSBhbmQgb25jZSBwYWNraW5nIG11c3QgZGlzY2FyZCBldmlkZW5jZSwgdGhlIHR3byBjb21lIGFwYXJ0LiBXZSBpbnRyb2R1Y2UgYW5zd2VyLWluLWNvbnRleHQsIGEgZGlhZ25vc3RpYyB0aGF0IG1lYXN1cmVzIHdoZXRoZXIgYSBnb2xkIGFuc3dlciBzdXJ2aXZlcyBpbnRvIHRoZSBwYWNrZWQgY29udGV4dCwgYW5kIGFyZ3VlIGl0IGlzIHRoZSBxdWFudGl0eSBidWRnZXRlZCBSQUcgc2hvdWxkIGJlIG9wdGltaXppbmcuIEl0IGNhcnJpZXMgc3Vic3RhbnRpYWwgaW5mb3JtYXRpb24gYmV5b25kIHJldHJpZXZhbCwgYWRkaW5nIERlbHRhIFJeMiA9IDAuMTctMC4yNyBvdmVyIHJlY2FsbCBhY3Jvc3MgdGhyZWUgbXVsdGktaG9wIGRhdGFzZXRzOyBldmVuIGFtb25nIHF1ZXN0aW9ucyB3aGVyZSBhbGwgZ29sZCB3YXMgcmV0cmlldmVkLCB3aGV0aGVyIHBhY2tpbmcga2VlcHMgdGhlIGFuc3dlciBzZXBhcmF0ZXMgZXhhY3QgbWF0Y2ggYnkgNC42eC4gVHdvIGluZGVwZW5kZW50IGludGVydmVudGlvbnMgY29uZmlybSB0aGUgbWVkaWF0aW9uOiBhIHBhY2tpbmcgY2hhbmdlIHRoYXQgcmFpc2VzIGRvY3VtZW50IGNvdmVyYWdlIHdpdGhvdXQgcmFpc2luZyBhbnN3ZXItaW4tY29udGV4dCBsZWF2ZXMgYWNjdXJhY3kgZmxhdCwgYW5kIHByb21wdCBjb21wcmVzc2lvbiB0aGF0IGRlc3Ryb3lzIHRoZSBhbnN3ZXIgc3BhbiBsb3dlcnMgYm90aCB0b2dldGhlci4gQSBncmFkZWQgdmFyaWFudCBleHRlbmRzIHRoZSBkaWFnbm9zdGljIHRvIGZyZWUtZm9ybSBhbnN3ZXJzLCB3aGVyZSBubyB2ZXJiYXRpbSBzcGFuIGV4aXN0cy4gV2UgdGhlbiBzaG93IHRoZSBkaWFnbm9zdGljIGlzIGFjdGlvbmFibGUuIENhc3RpbmcgcmVhZGVyLWNvbnRleHQgY29uc3RydWN0aW9uIGFzIGJ1ZGdldGVkIHN1Ym1vZHVsYXIgbWF4aW1pemF0aW9uIGdpdmVzIGEgcGFja2VyIHRoYXQgYmVhdHMgYm90aCBkZXBsb3llZCB0b3AtayB0cnVuY2F0aW9uIGFuZCBMTE1MaW5ndWEtMiBjb21wcmVzc2lvbiAtIGFjcm9zcyB0aHJlZSByZWFkZXIgZmFtaWxpZXMsIGZvdXIgc2NhbGVzLCBhbmQgZm91ciBidWRnZXRzLCBhdCBlcXVhbC1vci1sb3dlciB0b2tlbiBjb3N0LiBBZ2FpbnN0IGEgaGFuZC10dW5lZCBxdWVyeS1mb2N1c2VkIGhldXJpc3RpYywgd2hpY2ggd2Ugc2hvdyBhcHByb3hpbWF0ZXMgdGhlIHNhbWUgb2JqZWN0aXZlLCBpdCByZWFjaGVzIHBhcml0eSwgd2lubmluZyBvdXRyaWdodCBvbmx5IHdoZXJlIGV2aWRlbmNlIGRlbnNpdHkgaXMgdGhlIGJpbmRpbmcgY29uc3RyYWludC4gVGhyb3VnaG91dCwgb25lIHZhcmlhYmxlIHByZWRpY3RzIHdoYXQgaGVscHMgYW5kIHdoYXQgY2Fubm90LjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+VW5kZXIgcmV2aWV3IGF0IEVBQ0wgMjAyNzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2607.00725",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-07-02T01:57:26.000Z",
+ "registered": "2026-07-02T01:57:26.000Z",
+ "published": "2026",
+ "updated": "2026-08-06T02:19:35.000Z"
+}

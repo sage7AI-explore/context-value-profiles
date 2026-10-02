@@ -1,0 +1,168 @@
+{
+ "doi": "10.48550/arxiv.2609.34649",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2609.34649",
+ "identifiers": [
+  {
+   "identifier": "2609.34649",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2609.34649"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Li, Weiyuan",
+   "nameType": "Personal",
+   "givenName": "Weiyuan",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Xu, Jinghan",
+   "nameType": "Personal",
+   "givenName": "Jinghan",
+   "familyName": "Xu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Chen, Aili",
+   "nameType": "Personal",
+   "givenName": "Aili",
+   "familyName": "Chen",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Xintao",
+   "nameType": "Personal",
+   "givenName": "Xintao",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liang, Shuang",
+   "nameType": "Personal",
+   "givenName": "Shuang",
+   "familyName": "Liang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liang, Jiaqing",
+   "nameType": "Personal",
+   "givenName": "Jiaqing",
+   "familyName": "Liang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yang, Deqing",
+   "nameType": "Personal",
+   "givenName": "Deqing",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Beyond Skill Evolution: Self-Evolving Context Management Policies for Long-Horizon Agent Harnesses"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-09-28T08:57:52Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09-29T02:30:55Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Harness evolution improves LLM agents by learning from execution trajectories, but existing experience- and skill-based methods are less effective on long-horizon tasks. As interactions grow, useful evidence can be buried by redundant or outdated context, making context management itself a key bottleneck. We introduce ContextEvo, a framework that learns a context policy from long-horizon trajectories. ContextEvo reconstructs the model-visible context at key decision points, identifies context-related failures, and applies targeted policy updates. Starting from the open-source Pi-agent harness, ContextEvo improves performance across three long-horizon task benchmarks, achieving results comparable to or better than several prominent agent harnesses, including Codex, OpenCode, and OpenClaw. Additional analyses show that fixed or locally evolved context strategies can fall short under long-horizon information pressure, while our methods adapt to the information demands of each environment.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "27 pages, 6 figures",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA5LjM0NjQ5PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOS4zNDY0OTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgV2VpeXVhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+V2VpeXVhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5YdSwgSmluZ2hhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmluZ2hhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5YdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5DaGVuLCBBaWxpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5BaWxpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNoZW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2FuZywgWGludGFvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YaW50YW88L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+V2FuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaWFuZywgU2h1YW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5TaHVhbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGlhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGlhbmcsIEppYXFpbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkppYXFpbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGlhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+WWFuZywgRGVxaW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5EZXFpbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WWFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+QmV5b25kIFNraWxsIEV2b2x1dGlvbjogU2VsZi1Fdm9sdmluZyBDb250ZXh0IE1hbmFnZW1lbnQgUG9saWNpZXMgZm9yIExvbmctSG9yaXpvbiBBZ2VudCBIYXJuZXNzZXM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOS0yOFQwODo1Nzo1Mlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOS0yOVQwMjozMDo1NVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA5PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5IYXJuZXNzIGV2b2x1dGlvbiBpbXByb3ZlcyBMTE0gYWdlbnRzIGJ5IGxlYXJuaW5nIGZyb20gZXhlY3V0aW9uIHRyYWplY3RvcmllcywgYnV0IGV4aXN0aW5nIGV4cGVyaWVuY2UtIGFuZCBza2lsbC1iYXNlZCBtZXRob2RzIGFyZSBsZXNzIGVmZmVjdGl2ZSBvbiBsb25nLWhvcml6b24gdGFza3MuIEFzIGludGVyYWN0aW9ucyBncm93LCB1c2VmdWwgZXZpZGVuY2UgY2FuIGJlIGJ1cmllZCBieSByZWR1bmRhbnQgb3Igb3V0ZGF0ZWQgY29udGV4dCwgbWFraW5nIGNvbnRleHQgbWFuYWdlbWVudCBpdHNlbGYgYSBrZXkgYm90dGxlbmVjay4gV2UgaW50cm9kdWNlIENvbnRleHRFdm8sIGEgZnJhbWV3b3JrIHRoYXQgbGVhcm5zIGEgY29udGV4dCBwb2xpY3kgZnJvbSBsb25nLWhvcml6b24gdHJhamVjdG9yaWVzLiBDb250ZXh0RXZvIHJlY29uc3RydWN0cyB0aGUgbW9kZWwtdmlzaWJsZSBjb250ZXh0IGF0IGtleSBkZWNpc2lvbiBwb2ludHMsIGlkZW50aWZpZXMgY29udGV4dC1yZWxhdGVkIGZhaWx1cmVzLCBhbmQgYXBwbGllcyB0YXJnZXRlZCBwb2xpY3kgdXBkYXRlcy4gU3RhcnRpbmcgZnJvbSB0aGUgb3Blbi1zb3VyY2UgUGktYWdlbnQgaGFybmVzcywgQ29udGV4dEV2byBpbXByb3ZlcyBwZXJmb3JtYW5jZSBhY3Jvc3MgdGhyZWUgbG9uZy1ob3Jpem9uIHRhc2sgYmVuY2htYXJrcywgYWNoaWV2aW5nIHJlc3VsdHMgY29tcGFyYWJsZSB0byBvciBiZXR0ZXIgdGhhbiBzZXZlcmFsIHByb21pbmVudCBhZ2VudCBoYXJuZXNzZXMsIGluY2x1ZGluZyBDb2RleCwgT3BlbkNvZGUsIGFuZCBPcGVuQ2xhdy4gQWRkaXRpb25hbCBhbmFseXNlcyBzaG93IHRoYXQgZml4ZWQgb3IgbG9jYWxseSBldm9sdmVkIGNvbnRleHQgc3RyYXRlZ2llcyBjYW4gZmFsbCBzaG9ydCB1bmRlciBsb25nLWhvcml6b24gaW5mb3JtYXRpb24gcHJlc3N1cmUsIHdoaWxlIG91ciBtZXRob2RzIGFkYXB0IHRvIHRoZSBpbmZvcm1hdGlvbiBkZW1hbmRzIG9mIGVhY2ggZW52aXJvbm1lbnQuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj4yNyBwYWdlcywgNiBmaWd1cmVzPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2609.34649",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-09-29T06:24:20.000Z",
+ "registered": "2026-09-29T06:24:21.000Z",
+ "published": "2026",
+ "updated": "2026-09-29T06:24:21.000Z"
+}

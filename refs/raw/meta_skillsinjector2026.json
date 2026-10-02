@@ -1,0 +1,181 @@
+{
+ "doi": "10.48550/arxiv.2605.29794",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2605.29794",
+ "identifiers": [
+  {
+   "identifier": "2605.29794",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2605.29794"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Li, Yanchao",
+   "nameType": "Personal",
+   "givenName": "Yanchao",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Wanhao",
+   "nameType": "Personal",
+   "givenName": "Wanhao",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Gao, Ben",
+   "nameType": "Personal",
+   "givenName": "Ben",
+   "familyName": "Gao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Xie, Jiaqing",
+   "nameType": "Personal",
+   "givenName": "Jiaqing",
+   "familyName": "Xie",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ai, Zhehong",
+   "nameType": "Personal",
+   "givenName": "Zhehong",
+   "familyName": "Ai",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zou, Na",
+   "nameType": "Personal",
+   "givenName": "Na",
+   "familyName": "Zou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Li, Yuqiang",
+   "nameType": "Personal",
+   "givenName": "Yuqiang",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Fu, Tianfan",
+   "nameType": "Personal",
+   "givenName": "Tianfan",
+   "familyName": "Fu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "SkillsInjector: Dynamic Skill Context Construction for LLM Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-05-28T11:44:32Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-05-29T00:58:00Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-05",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "LLM agents now draw on growing skill libraries to handle complex tasks. However, injecting more skills does not always improve task completion and can even degrade it. Existing methods still treat skill injection as a static step, selecting skills with fixed criteria, fixing the budget in advance, and leaving descriptions unchanged. We argue that this static treatment can undermine the utility of skills, because which skills are exposed, how many are included, and how they are presented all affect downstream performance. We propose SkillsInjector, a two-stage adaptive method that jointly addresses these decisions. First, a context planner learns execution-grounded skill preferences and admits an adaptive number of skills for each task. A set-aware renderer then tailors how selected descriptions are presented relative to their co-injected neighbors. Across tau2-bench, SkillsBench, and ALFWorld, SkillsInjector achieves the highest score, improving over the strongest baseline by 3.9, 6.1, and 7.3 percentage points, respectively. Ablation studies show that skill selection, adaptive budgeting, and set-aware rendering each contribute to the gain. These results show that skill-augmented agents benefit from optimizing the injected context itself. Code will be released upon publication",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA1LjI5Nzk0PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNS4yOTc5NDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgWWFuY2hhbzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WWFuY2hhbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIFdhbmhhbzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+V2FuaGFvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HYW8sIEJlbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QmVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkdhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5YaWUsIEppYXFpbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkppYXFpbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WGllPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkFpLCBaaGVob25nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5aaGVob25nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkFpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpvdSwgTmE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk5hPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpvdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgWXVxaWFuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WXVxaWFuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GdSwgVGlhbmZhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VGlhbmZhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5GdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+U2tpbGxzSW5qZWN0b3I6IER5bmFtaWMgU2tpbGwgQ29udGV4dCBDb25zdHJ1Y3Rpb24gZm9yIExMTSBBZ2VudHM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNS0yOFQxMTo0NDozMlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNS0yOVQwMDo1ODowMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA1PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5MTE0gYWdlbnRzIG5vdyBkcmF3IG9uIGdyb3dpbmcgc2tpbGwgbGlicmFyaWVzIHRvIGhhbmRsZSBjb21wbGV4IHRhc2tzLiBIb3dldmVyLCBpbmplY3RpbmcgbW9yZSBza2lsbHMgZG9lcyBub3QgYWx3YXlzIGltcHJvdmUgdGFzayBjb21wbGV0aW9uIGFuZCBjYW4gZXZlbiBkZWdyYWRlIGl0LiBFeGlzdGluZyBtZXRob2RzIHN0aWxsIHRyZWF0IHNraWxsIGluamVjdGlvbiBhcyBhIHN0YXRpYyBzdGVwLCBzZWxlY3Rpbmcgc2tpbGxzIHdpdGggZml4ZWQgY3JpdGVyaWEsIGZpeGluZyB0aGUgYnVkZ2V0IGluIGFkdmFuY2UsIGFuZCBsZWF2aW5nIGRlc2NyaXB0aW9ucyB1bmNoYW5nZWQuIFdlIGFyZ3VlIHRoYXQgdGhpcyBzdGF0aWMgdHJlYXRtZW50IGNhbiB1bmRlcm1pbmUgdGhlIHV0aWxpdHkgb2Ygc2tpbGxzLCBiZWNhdXNlIHdoaWNoIHNraWxscyBhcmUgZXhwb3NlZCwgaG93IG1hbnkgYXJlIGluY2x1ZGVkLCBhbmQgaG93IHRoZXkgYXJlIHByZXNlbnRlZCBhbGwgYWZmZWN0IGRvd25zdHJlYW0gcGVyZm9ybWFuY2UuIFdlIHByb3Bvc2UgU2tpbGxzSW5qZWN0b3IsIGEgdHdvLXN0YWdlIGFkYXB0aXZlIG1ldGhvZCB0aGF0IGpvaW50bHkgYWRkcmVzc2VzIHRoZXNlIGRlY2lzaW9ucy4gRmlyc3QsIGEgY29udGV4dCBwbGFubmVyIGxlYXJucyBleGVjdXRpb24tZ3JvdW5kZWQgc2tpbGwgcHJlZmVyZW5jZXMgYW5kIGFkbWl0cyBhbiBhZGFwdGl2ZSBudW1iZXIgb2Ygc2tpbGxzIGZvciBlYWNoIHRhc2suIEEgc2V0LWF3YXJlIHJlbmRlcmVyIHRoZW4gdGFpbG9ycyBob3cgc2VsZWN0ZWQgZGVzY3JpcHRpb25zIGFyZSBwcmVzZW50ZWQgcmVsYXRpdmUgdG8gdGhlaXIgY28taW5qZWN0ZWQgbmVpZ2hib3JzLiBBY3Jvc3MgdGF1Mi1iZW5jaCwgU2tpbGxzQmVuY2gsIGFuZCBBTEZXb3JsZCwgU2tpbGxzSW5qZWN0b3IgYWNoaWV2ZXMgdGhlIGhpZ2hlc3Qgc2NvcmUsIGltcHJvdmluZyBvdmVyIHRoZSBzdHJvbmdlc3QgYmFzZWxpbmUgYnkgMy45LCA2LjEsIGFuZCA3LjMgcGVyY2VudGFnZSBwb2ludHMsIHJlc3BlY3RpdmVseS4gQWJsYXRpb24gc3R1ZGllcyBzaG93IHRoYXQgc2tpbGwgc2VsZWN0aW9uLCBhZGFwdGl2ZSBidWRnZXRpbmcsIGFuZCBzZXQtYXdhcmUgcmVuZGVyaW5nIGVhY2ggY29udHJpYnV0ZSB0byB0aGUgZ2Fpbi4gVGhlc2UgcmVzdWx0cyBzaG93IHRoYXQgc2tpbGwtYXVnbWVudGVkIGFnZW50cyBiZW5lZml0IGZyb20gb3B0aW1pemluZyB0aGUgaW5qZWN0ZWQgY29udGV4dCBpdHNlbGYuIENvZGUgd2lsbCBiZSByZWxlYXNlZCB1cG9uIHB1YmxpY2F0aW9uPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2605.29794",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-05-29T02:38:08.000Z",
+ "registered": "2026-05-29T02:38:09.000Z",
+ "published": "2026",
+ "updated": "2026-05-29T02:38:09.000Z"
+}

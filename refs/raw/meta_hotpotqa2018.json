@@ -1,0 +1,177 @@
+{
+ "doi": "10.48550/arxiv.1809.09600",
+ "prefix": "10.48550",
+ "suffix": "arxiv.1809.09600",
+ "identifiers": [
+  {
+   "identifier": "1809.09600",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "1809.09600"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Yang, Zhilin",
+   "nameType": "Personal",
+   "givenName": "Zhilin",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Qi, Peng",
+   "nameType": "Personal",
+   "givenName": "Peng",
+   "familyName": "Qi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Saizheng",
+   "nameType": "Personal",
+   "givenName": "Saizheng",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Bengio, Yoshua",
+   "nameType": "Personal",
+   "givenName": "Yoshua",
+   "familyName": "Bengio",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Cohen, William W.",
+   "nameType": "Personal",
+   "givenName": "William W.",
+   "familyName": "Cohen",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Salakhutdinov, Ruslan",
+   "nameType": "Personal",
+   "givenName": "Ruslan",
+   "familyName": "Salakhutdinov",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Manning, Christopher D.",
+   "nameType": "Personal",
+   "givenName": "Christopher D.",
+   "familyName": "Manning",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2018,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2018-09-25T17:28:20Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2018-09-26T00:17:41Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2018-09",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2018",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems' ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "EMNLP 2018 long paper. The first three authors contribute equally. Data, code, and blog posts available at https://hotpotqa.github.io/",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4xODA5LjA5NjAwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MTgwOS4wOTYwMDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZYW5nLCBaaGlsaW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpoaWxpbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5ZYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlFpLCBQZW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5QZW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlFpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoYW5nLCBTYWl6aGVuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2Fpemhlbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Wmhhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+QmVuZ2lvLCBZb3NodWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPllvc2h1YTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5CZW5naW88L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Q29oZW4sIFdpbGxpYW0gVy48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPldpbGxpYW0gVy48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Q29oZW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+U2FsYWtodXRkaW5vdiwgUnVzbGFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5SdXNsYW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U2FsYWtodXRkaW5vdjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NYW5uaW5nLCBDaHJpc3RvcGhlciBELjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Q2hyaXN0b3BoZXIgRC48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWFubmluZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+SG90cG90UUE6IEEgRGF0YXNldCBmb3IgRGl2ZXJzZSwgRXhwbGFpbmFibGUgTXVsdGktaG9wIFF1ZXN0aW9uIEFuc3dlcmluZzwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxODwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxOC0wOS0yNVQxNzoyODoyMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxOC0wOS0yNlQwMDoxNzo0MVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDE4LTA5PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5FeGlzdGluZyBxdWVzdGlvbiBhbnN3ZXJpbmcgKFFBKSBkYXRhc2V0cyBmYWlsIHRvIHRyYWluIFFBIHN5c3RlbXMgdG8gcGVyZm9ybSBjb21wbGV4IHJlYXNvbmluZyBhbmQgcHJvdmlkZSBleHBsYW5hdGlvbnMgZm9yIGFuc3dlcnMuIFdlIGludHJvZHVjZSBIb3Rwb3RRQSwgYSBuZXcgZGF0YXNldCB3aXRoIDExM2sgV2lraXBlZGlhLWJhc2VkIHF1ZXN0aW9uLWFuc3dlciBwYWlycyB3aXRoIGZvdXIga2V5IGZlYXR1cmVzOiAoMSkgdGhlIHF1ZXN0aW9ucyByZXF1aXJlIGZpbmRpbmcgYW5kIHJlYXNvbmluZyBvdmVyIG11bHRpcGxlIHN1cHBvcnRpbmcgZG9jdW1lbnRzIHRvIGFuc3dlcjsgKDIpIHRoZSBxdWVzdGlvbnMgYXJlIGRpdmVyc2UgYW5kIG5vdCBjb25zdHJhaW5lZCB0byBhbnkgcHJlLWV4aXN0aW5nIGtub3dsZWRnZSBiYXNlcyBvciBrbm93bGVkZ2Ugc2NoZW1hczsgKDMpIHdlIHByb3ZpZGUgc2VudGVuY2UtbGV2ZWwgc3VwcG9ydGluZyBmYWN0cyByZXF1aXJlZCBmb3IgcmVhc29uaW5nLCBhbGxvd2luZyBRQSBzeXN0ZW1zIHRvIHJlYXNvbiB3aXRoIHN0cm9uZyBzdXBlcnZpc2lvbiBhbmQgZXhwbGFpbiB0aGUgcHJlZGljdGlvbnM7ICg0KSB3ZSBvZmZlciBhIG5ldyB0eXBlIG9mIGZhY3RvaWQgY29tcGFyaXNvbiBxdWVzdGlvbnMgdG8gdGVzdCBRQSBzeXN0ZW1zJyBhYmlsaXR5IHRvIGV4dHJhY3QgcmVsZXZhbnQgZmFjdHMgYW5kIHBlcmZvcm0gbmVjZXNzYXJ5IGNvbXBhcmlzb24uIFdlIHNob3cgdGhhdCBIb3Rwb3RRQSBpcyBjaGFsbGVuZ2luZyBmb3IgdGhlIGxhdGVzdCBRQSBzeXN0ZW1zLCBhbmQgdGhlIHN1cHBvcnRpbmcgZmFjdHMgZW5hYmxlIG1vZGVscyB0byBpbXByb3ZlIHBlcmZvcm1hbmNlIGFuZCBtYWtlIGV4cGxhaW5hYmxlIHByZWRpY3Rpb25zLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+RU1OTFAgMjAxOCBsb25nIHBhcGVyLiBUaGUgZmlyc3QgdGhyZWUgYXV0aG9ycyBjb250cmlidXRlIGVxdWFsbHkuIERhdGEsIGNvZGUsIGFuZCBibG9nIHBvc3RzIGF2YWlsYWJsZSBhdCBodHRwczovL2hvdHBvdHFhLmdpdGh1Yi5pby88L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/1809.09600",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2022-03-02T00:20:07.000Z",
+ "registered": "2022-03-02T00:20:08.000Z",
+ "published": "2018",
+ "updated": "2022-03-02T00:20:08.000Z"
+}

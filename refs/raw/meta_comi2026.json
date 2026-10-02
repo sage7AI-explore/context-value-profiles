@@ -1,0 +1,197 @@
+{
+ "doi": "10.48550/arxiv.2602.01719",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2602.01719",
+ "identifiers": [
+  {
+   "identifier": "2602.01719",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2602.01719"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Tang, Jiwei",
+   "nameType": "Personal",
+   "givenName": "Jiwei",
+   "familyName": "Tang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Shilei",
+   "nameType": "Personal",
+   "givenName": "Shilei",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Zhicheng",
+   "nameType": "Personal",
+   "givenName": "Zhicheng",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yuan, Yujin",
+   "nameType": "Personal",
+   "givenName": "Yujin",
+   "familyName": "Yuan",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zheng, Libin",
+   "nameType": "Personal",
+   "givenName": "Libin",
+   "familyName": "Zheng",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Su, Wenbo",
+   "nameType": "Personal",
+   "givenName": "Wenbo",
+   "familyName": "Su",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zheng, Bo",
+   "nameType": "Personal",
+   "givenName": "Bo",
+   "familyName": "Zheng",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "COMI: Coarse-to-fine Context Compression via Marginal Information Gain"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-02-02T06:57:22Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-02-03T02:37:45Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-02-27T07:10:20Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-03-02T01:29:01Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-03-06T03:52:55Z",
+   "dateType": "Submitted",
+   "dateInformation": "v3"
+  },
+  {
+   "date": "2026-03-09T00:21:25Z",
+   "dateType": "Updated",
+   "dateInformation": "v3"
+  },
+  {
+   "date": "2026-02",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "3",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Large Language Models (LLMs) have demonstrated exceptional capabilities across diverse tasks. However, their deployment in long context scenarios remains hindered by computational inefficiency and information redundancy. Context compression methods address these challenges by significantly reducing input length and eliminating redundancy. We propose COMI, a coarse-to-fine adaptive context compression framework that jointly optimizes for semantic relevance and diversity under high compression rates. We introduce Marginal Information Gain (MIG), a metric defined as the relevance of a unit to the input query minus its semantic redundancy with other units, guiding the compression process to prioritize information that is both relevant and low redundant. The framework operates in two stages: (1) Coarse-Grained Group Reallocation, where the context is partitioned into groups and dynamically assigned compression rates based on inter-group MIG, ensuring compression budgets align with information value distribution; and (2) Fine-Grained Token Merging, where tokens within each group are fused via an intra-group MIG-based weighting mechanism, thereby preserving key semantics while avoiding the accumulation of redundancy. Extensive experiments across question-answering (e.g., NaturalQuestions, 2WikiMQA, HotpotQA and NarrativeQA), summarization (e.g., MultiNews) with various backbones (e.g., LLaMA-2-7B, Qwen2-7B) show that COMI outperforms existing baselines by a large margin, e.g., approximately 25-point Exact Match (EM) improvement under 32x compression constraint with Qwen2-7B on NaturalQuestions.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "Accepted at ICLR 2026",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjAyLjAxNzE5PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwMi4wMTcxOTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5UYW5nLCBKaXdlaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Sml3ZWk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+VGFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIFNoaWxlaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2hpbGVpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFuZywgWmhpY2hlbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpoaWNoZW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPll1YW4sIFl1amluPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5ZdWppbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5ZdWFuPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoZW5nLCBMaWJpbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TGliaW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Wmhlbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+U3UsIFdlbmJvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5XZW5ibzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGVuZywgQm88L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkJvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoZW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5DT01JOiBDb2Fyc2UtdG8tZmluZSBDb250ZXh0IENvbXByZXNzaW9uIHZpYSBNYXJnaW5hbCBJbmZvcm1hdGlvbiBHYWluPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyLTAyVDA2OjU3OjIyWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyLTAzVDAyOjM3OjQ1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjYtMDItMjdUMDc6MTA6MjBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjYtMDMtMDJUMDE6Mjk6MDFaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MyI+MjAyNi0wMy0wNlQwMzo1Mjo1NVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MyI+MjAyNi0wMy0wOVQwMDoyMToyNVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjM8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5MYXJnZSBMYW5ndWFnZSBNb2RlbHMgKExMTXMpIGhhdmUgZGVtb25zdHJhdGVkIGV4Y2VwdGlvbmFsIGNhcGFiaWxpdGllcyBhY3Jvc3MgZGl2ZXJzZSB0YXNrcy4gSG93ZXZlciwgdGhlaXIgZGVwbG95bWVudCBpbiBsb25nIGNvbnRleHQgc2NlbmFyaW9zIHJlbWFpbnMgaGluZGVyZWQgYnkgY29tcHV0YXRpb25hbCBpbmVmZmljaWVuY3kgYW5kIGluZm9ybWF0aW9uIHJlZHVuZGFuY3kuIENvbnRleHQgY29tcHJlc3Npb24gbWV0aG9kcyBhZGRyZXNzIHRoZXNlIGNoYWxsZW5nZXMgYnkgc2lnbmlmaWNhbnRseSByZWR1Y2luZyBpbnB1dCBsZW5ndGggYW5kIGVsaW1pbmF0aW5nIHJlZHVuZGFuY3kuIFdlIHByb3Bvc2UgQ09NSSwgYSBjb2Fyc2UtdG8tZmluZSBhZGFwdGl2ZSBjb250ZXh0IGNvbXByZXNzaW9uIGZyYW1ld29yayB0aGF0IGpvaW50bHkgb3B0aW1pemVzIGZvciBzZW1hbnRpYyByZWxldmFuY2UgYW5kIGRpdmVyc2l0eSB1bmRlciBoaWdoIGNvbXByZXNzaW9uIHJhdGVzLiBXZSBpbnRyb2R1Y2UgTWFyZ2luYWwgSW5mb3JtYXRpb24gR2FpbiAoTUlHKSwgYSBtZXRyaWMgZGVmaW5lZCBhcyB0aGUgcmVsZXZhbmNlIG9mIGEgdW5pdCB0byB0aGUgaW5wdXQgcXVlcnkgbWludXMgaXRzIHNlbWFudGljIHJlZHVuZGFuY3kgd2l0aCBvdGhlciB1bml0cywgZ3VpZGluZyB0aGUgY29tcHJlc3Npb24gcHJvY2VzcyB0byBwcmlvcml0aXplIGluZm9ybWF0aW9uIHRoYXQgaXMgYm90aCByZWxldmFudCBhbmQgbG93IHJlZHVuZGFudC4gVGhlIGZyYW1ld29yayBvcGVyYXRlcyBpbiB0d28gc3RhZ2VzOiAoMSkgQ29hcnNlLUdyYWluZWQgR3JvdXAgUmVhbGxvY2F0aW9uLCB3aGVyZSB0aGUgY29udGV4dCBpcyBwYXJ0aXRpb25lZCBpbnRvIGdyb3VwcyBhbmQgZHluYW1pY2FsbHkgYXNzaWduZWQgY29tcHJlc3Npb24gcmF0ZXMgYmFzZWQgb24gaW50ZXItZ3JvdXAgTUlHLCBlbnN1cmluZyBjb21wcmVzc2lvbiBidWRnZXRzIGFsaWduIHdpdGggaW5mb3JtYXRpb24gdmFsdWUgZGlzdHJpYnV0aW9uOyBhbmQgKDIpIEZpbmUtR3JhaW5lZCBUb2tlbiBNZXJnaW5nLCB3aGVyZSB0b2tlbnMgd2l0aGluIGVhY2ggZ3JvdXAgYXJlIGZ1c2VkIHZpYSBhbiBpbnRyYS1ncm91cCBNSUctYmFzZWQgd2VpZ2h0aW5nIG1lY2hhbmlzbSwgdGhlcmVieSBwcmVzZXJ2aW5nIGtleSBzZW1hbnRpY3Mgd2hpbGUgYXZvaWRpbmcgdGhlIGFjY3VtdWxhdGlvbiBvZiByZWR1bmRhbmN5LiBFeHRlbnNpdmUgZXhwZXJpbWVudHMgYWNyb3NzIHF1ZXN0aW9uLWFuc3dlcmluZyAoZS5nLiwgTmF0dXJhbFF1ZXN0aW9ucywgMldpa2lNUUEsIEhvdHBvdFFBIGFuZCBOYXJyYXRpdmVRQSksIHN1bW1hcml6YXRpb24gKGUuZy4sIE11bHRpTmV3cykgd2l0aCB2YXJpb3VzIGJhY2tib25lcyAoZS5nLiwgTExhTUEtMi03QiwgUXdlbjItN0IpIHNob3cgdGhhdCBDT01JIG91dHBlcmZvcm1zIGV4aXN0aW5nIGJhc2VsaW5lcyBieSBhIGxhcmdlIG1hcmdpbiwgZS5nLiwgYXBwcm94aW1hdGVseSAyNS1wb2ludCBFeGFjdCBNYXRjaCAoRU0pIGltcHJvdmVtZW50IHVuZGVyIDMyeCBjb21wcmVzc2lvbiBjb25zdHJhaW50IHdpdGggUXdlbjItN0Igb24gTmF0dXJhbFF1ZXN0aW9ucy48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPkFjY2VwdGVkIGF0IElDTFIgMjAyNjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2602.01719",
+ "contentUrl": null,
+ "metadataVersion": 2,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-02-03T05:07:10.000Z",
+ "registered": "2026-02-03T05:07:11.000Z",
+ "published": "2026",
+ "updated": "2026-03-09T02:12:31.000Z"
+}

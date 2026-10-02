@@ -1,0 +1,162 @@
+{
+ "doi": "10.48550/arxiv.2406.12045",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2406.12045",
+ "identifiers": [
+  {
+   "identifier": "2406.12045",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2406.12045"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Yao, Shunyu",
+   "nameType": "Personal",
+   "givenName": "Shunyu",
+   "familyName": "Yao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Shinn, Noah",
+   "nameType": "Personal",
+   "givenName": "Noah",
+   "familyName": "Shinn",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Razavi, Pedram",
+   "nameType": "Personal",
+   "givenName": "Pedram",
+   "familyName": "Razavi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Narasimhan, Karthik",
+   "nameType": "Personal",
+   "givenName": "Karthik",
+   "familyName": "Narasimhan",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "$\u03c4$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2024,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2024-06-17T19:33:08Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-06-19T00:09:04Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-06",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Existing benchmarks do not test language agents on their interaction with human users or ability to follow domain-specific rules, both of which are vital for deploying them in real world applications. We propose $\u03c4$-bench, a benchmark emulating dynamic conversations between a user (simulated by language models) and a language agent provided with domain-specific API tools and policy guidelines. We employ an efficient and faithful evaluation process that compares the database state at the end of a conversation with the annotated goal state. We also propose a new metric (pass^k) to evaluate the reliability of agent behavior over multiple trials. Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on &lt;50% of the tasks, and are quite inconsistent (pass^8 &lt;25% in retail). Our findings point to the need for methods that can improve the ability of agents to act consistently and follow rules reliably.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNDA2LjEyMDQ1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjQwNi4xMjA0NTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZYW8sIFNodW55dTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2h1bnl1PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPllhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TaGlubiwgTm9haDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Tm9haDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TaGlubjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5SYXphdmksIFBlZHJhbTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+UGVkcmFtPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlJhemF2aTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5OYXJhc2ltaGFuLCBLYXJ0aGlrPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LYXJ0aGlrPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk5hcmFzaW1oYW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPiTPhCQtYmVuY2g6IEEgQmVuY2htYXJrIGZvciBUb29sLUFnZW50LVVzZXIgSW50ZXJhY3Rpb24gaW4gUmVhbC1Xb3JsZCBEb21haW5zPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0wNi0xN1QxOTozMzowOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0wNi0xOVQwMDowOTowNFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI0LTA2PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0iU1BEWCIgcmlnaHRzSWRlbnRpZmllcj0iQ0MtQlktNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+RXhpc3RpbmcgYmVuY2htYXJrcyBkbyBub3QgdGVzdCBsYW5ndWFnZSBhZ2VudHMgb24gdGhlaXIgaW50ZXJhY3Rpb24gd2l0aCBodW1hbiB1c2VycyBvciBhYmlsaXR5IHRvIGZvbGxvdyBkb21haW4tc3BlY2lmaWMgcnVsZXMsIGJvdGggb2Ygd2hpY2ggYXJlIHZpdGFsIGZvciBkZXBsb3lpbmcgdGhlbSBpbiByZWFsIHdvcmxkIGFwcGxpY2F0aW9ucy4gV2UgcHJvcG9zZSAkz4QkLWJlbmNoLCBhIGJlbmNobWFyayBlbXVsYXRpbmcgZHluYW1pYyBjb252ZXJzYXRpb25zIGJldHdlZW4gYSB1c2VyIChzaW11bGF0ZWQgYnkgbGFuZ3VhZ2UgbW9kZWxzKSBhbmQgYSBsYW5ndWFnZSBhZ2VudCBwcm92aWRlZCB3aXRoIGRvbWFpbi1zcGVjaWZpYyBBUEkgdG9vbHMgYW5kIHBvbGljeSBndWlkZWxpbmVzLiBXZSBlbXBsb3kgYW4gZWZmaWNpZW50IGFuZCBmYWl0aGZ1bCBldmFsdWF0aW9uIHByb2Nlc3MgdGhhdCBjb21wYXJlcyB0aGUgZGF0YWJhc2Ugc3RhdGUgYXQgdGhlIGVuZCBvZiBhIGNvbnZlcnNhdGlvbiB3aXRoIHRoZSBhbm5vdGF0ZWQgZ29hbCBzdGF0ZS4gV2UgYWxzbyBwcm9wb3NlIGEgbmV3IG1ldHJpYyAocGFzc15rKSB0byBldmFsdWF0ZSB0aGUgcmVsaWFiaWxpdHkgb2YgYWdlbnQgYmVoYXZpb3Igb3ZlciBtdWx0aXBsZSB0cmlhbHMuIE91ciBleHBlcmltZW50cyBzaG93IHRoYXQgZXZlbiBzdGF0ZS1vZi10aGUtYXJ0IGZ1bmN0aW9uIGNhbGxpbmcgYWdlbnRzIChsaWtlIGdwdC00bykgc3VjY2VlZCBvbiAmbHQ7NTAlIG9mIHRoZSB0YXNrcywgYW5kIGFyZSBxdWl0ZSBpbmNvbnNpc3RlbnQgKHBhc3NeOCAmbHQ7MjUlIGluIHJldGFpbCkuIE91ciBmaW5kaW5ncyBwb2ludCB0byB0aGUgbmVlZCBmb3IgbWV0aG9kcyB0aGF0IGNhbiBpbXByb3ZlIHRoZSBhYmlsaXR5IG9mIGFnZW50cyB0byBhY3QgY29uc2lzdGVudGx5IGFuZCBmb2xsb3cgcnVsZXMgcmVsaWFibHkuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2406.12045",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 4,
+ "citationsOverTime": [
+  {
+   "year": "2026",
+   "total": 4
+  }
+ ],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2024-06-19T02:02:51.000Z",
+ "registered": "2024-06-19T02:02:52.000Z",
+ "published": "2024",
+ "updated": "2024-06-19T02:02:52.000Z"
+}

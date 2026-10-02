@@ -1,0 +1,646 @@
+{
+ "indexed": {
+  "date-parts": [
+   [
+    2026,
+    10,
+    2
+   ]
+  ],
+  "date-time": "2026-10-02T12:50:28Z",
+  "timestamp": 1790945428132,
+  "version": "4.1.0"
+ },
+ "reference-count": 47,
+ "publisher": "MIT Press",
+ "license": [
+  {
+   "start": {
+    "date-parts": [
+     [
+      2024,
+      2,
+      16
+     ]
+    ],
+    "date-time": "2024-02-16T00:00:00Z",
+    "timestamp": 1708041600000
+   },
+   "content-version": "vor",
+   "delay-in-days": 46,
+   "URL": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "content-domain": {
+  "domain": [
+   "direct.mit.edu"
+  ],
+  "crossmark-restriction": true
+ },
+ "short-container-title": [],
+ "published-print": {
+  "date-parts": [
+   [
+    2024,
+    2,
+    23
+   ]
+  ]
+ },
+ "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>While recent language models have the ability to take long contexts as input, relatively little is known about how well they use longer context. We analyze the performance of language models on two tasks that require identifying relevant information in their input contexts: multi-document question answering and key-value retrieval. We find that performance can degrade significantly when changing the position of relevant information, indicating that current language models do not robustly make use of information in long input contexts. In particular, we observe that performance is often highest when relevant information occurs at the beginning or end of the input context, and significantly degrades when models must access relevant information in the middle of long contexts, even for explicitly long-context models. Our analysis provides a better understanding of how language models use their input context and provides new evaluation protocols for future long-context language models.</jats:p>",
+ "DOI": "10.1162/tacl_a_00638",
+ "type": "journal-article",
+ "created": {
+  "date-parts": [
+   [
+    2024,
+    2,
+    16
+   ]
+  ],
+  "date-time": "2024-02-16T14:38:37Z",
+  "timestamp": 1708094317000
+ },
+ "page": "157-173",
+ "update-policy": "https://doi.org/10.1162/mitpressjournals.corrections.policy",
+ "source": "Crossref",
+ "is-referenced-by-count": 1434,
+ "title": [
+  "Lost in the Middle: How Language Models Use Long Contexts"
+ ],
+ "prefix": "10.1162",
+ "volume": "12",
+ "author": [
+  {
+   "given": "Nelson F.",
+   "family": "Liu",
+   "sequence": "first",
+   "affiliation": [
+    {
+     "name": "Stanford University, USA. nfliu@cs.stanford.edu"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Kevin",
+   "family": "Lin",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "University of California, Berkeley, USA"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "John",
+   "family": "Hewitt",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Stanford University, USA"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Ashwin",
+   "family": "Paranjape",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Samaya AI, UK"
+    },
+    {
+     "name": "Samaya AI, USA"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Michele",
+   "family": "Bevilacqua",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Samaya AI, UK"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Fabio",
+   "family": "Petroni",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Samaya AI, UK"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  },
+  {
+   "given": "Percy",
+   "family": "Liang",
+   "sequence": "additional",
+   "affiliation": [
+    {
+     "name": "Stanford University, USA"
+    }
+   ],
+   "role": [
+    {
+     "vocabulary": "crossref",
+     "role": "author"
+    }
+   ]
+  }
+ ],
+ "member": "281",
+ "published-online": {
+  "date-parts": [
+   [
+    2024,
+    2,
+    23
+   ]
+  ]
+ },
+ "reference": [
+  {
+   "key": "2024021619382373100_bib1",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1145/1571941.1572031",
+   "article-title": "Where to stop reading a ranked list? Threshold optimization using truncated score distributions",
+   "volume-title": "Proceedings of SIGIR",
+   "author": "Arampatzis",
+   "year": "2009"
+  },
+  {
+   "key": "2024021619382373100_bib2",
+   "article-title": "Longformer: The long-document transformer",
+   "author": "Iz",
+   "year": "2020",
+   "journal-title": "ArXiv:2004.05150"
+  },
+  {
+   "key": "2024021619382373100_bib3",
+   "article-title": "Scaling instruction-finetuned language models",
+   "author": "Chung",
+   "year": "2022",
+   "journal-title": "ArXiv:2210.11416"
+  },
+  {
+   "key": "2024021619382373100_bib4",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P19-1285",
+   "article-title": "Transformer-XL: Attentive language models beyond a fixed-length context",
+   "volume-title": "Proceedings of ACL",
+   "author": "Dai",
+   "year": "2019"
+  },
+  {
+   "key": "2024021619382373100_bib5",
+   "article-title": "Frustratingly short attention spans in neural language modeling",
+   "volume-title": "Proceedings of ICLR",
+   "author": "Daniluk",
+   "year": "2017"
+  },
+  {
+   "key": "2024021619382373100_bib6",
+   "article-title": "FlashAttention: Fast and memory-efficient exact attention with IO-awareness",
+   "author": "Dao",
+   "year": "2022",
+   "journal-title": "ArXiv:2205.14135"
+  },
+  {
+   "key": "2024021619382373100_bib7",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1037/10011-000",
+   "article-title": "Memory: A contribution to experimental psychology",
+   "author": "Ebbinghaus",
+   "year": "1913",
+   "journal-title": "H. A. Ruger & C. E. Bussenius, Trans."
+  },
+  {
+   "key": "2024021619382373100_bib8",
+   "article-title": "Efficiently modeling long sequences with structured state spaces",
+   "volume-title": "Proceedings of ICLR",
+   "author": "Albert",
+   "year": "2022"
+  },
+  {
+   "key": "2024021619382373100_bib9",
+   "doi-asserted-by": "publisher",
+   "first-page": "284",
+   "DOI": "10.1162/tacl_a_00547",
+   "article-title": "Efficient long-text understanding with short-text models",
+   "volume": "11",
+   "author": "Ivgi",
+   "year": "2023",
+   "journal-title": "Transactions of the Association for Computational Linguistics"
+  },
+  {
+   "key": "2024021619382373100_bib10",
+   "article-title": "Unsupervised dense information retrieval with contrastive learning",
+   "author": "Izacard",
+   "year": "2021",
+   "journal-title": "ArXiv:2112.09118"
+  },
+  {
+   "key": "2024021619382373100_bib11",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.eacl-main.74",
+   "article-title": "Leveraging passage retrieval with generative models for open domain question answering",
+   "volume-title": "Proceedings of EACL",
+   "author": "Izacard",
+   "year": "2021"
+  },
+  {
+   "key": "2024021619382373100_bib12",
+   "article-title": "Large language models struggle to learn long-tail knowledge",
+   "author": "Kandpal",
+   "year": "2022",
+   "journal-title": "ArXiv:2211.08411"
+  },
+  {
+   "key": "2024021619382373100_bib13",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P18-1027",
+   "article-title": "Sharp nearby, fuzzy far away: How neural language models use context",
+   "author": "Khandelwal",
+   "year": "2018",
+   "journal-title": "Proceedings of ACL"
+  },
+  {
+   "key": "2024021619382373100_bib14",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2022.emnlp-main.15",
+   "article-title": "RankGen: Improving text generation with large ranking models",
+   "volume-title": "Proceedings of EMNLP",
+   "author": "Krishna",
+   "year": "2022"
+  },
+  {
+   "key": "2024021619382373100_bib15",
+   "doi-asserted-by": "publisher",
+   "first-page": "452",
+   "DOI": "10.1162/tacl_a_00276",
+   "article-title": "Natural Questions: A benchmark for question answering research",
+   "volume": "7",
+   "author": "Kwiatkowski",
+   "year": "2019",
+   "journal-title": "Transactions of the Association for Computational Linguistics"
+  },
+  {
+   "key": "2024021619382373100_bib16",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P19-1612",
+   "article-title": "Latent retrieval for weakly supervised open domain question answering",
+   "volume-title": "Proceedings of ACL",
+   "author": "Lee",
+   "year": "2019"
+  },
+  {
+   "key": "2024021619382373100_bib17",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1145/3491102.3502030",
+   "article-title": "CoAuthor: Designing a human-AI collaborative writing dataset for exploring language model capabilities",
+   "volume-title": "Proceedings of CHI",
+   "author": "Lee",
+   "year": "2022"
+  },
+  {
+   "key": "2024021619382373100_bib18",
+   "article-title": "How long can open-source LLMs truly promise on context length?",
+   "author": "Li",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib19",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2023.acl-long.546",
+   "article-title": "When not to trust language models: Investigating effectiveness of parametric and non-parametric memories",
+   "volume-title": "Proceedings of ACL",
+   "author": "Mallen",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib20",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2020.emnlp-main.466",
+   "article-title": "AmbigQA: Answering ambiguous open-domain questions",
+   "volume-title": "Proceedings of EMNLP",
+   "author": "Min",
+   "year": "2020"
+  },
+  {
+   "issue": "5",
+   "key": "2024021619382373100_bib21",
+   "doi-asserted-by": "publisher",
+   "first-page": "482",
+   "DOI": "10.1037/h0045106",
+   "article-title": "The serial position effect of free recall.",
+   "volume": "64",
+   "author": "Murdock Jr",
+   "year": "1962",
+   "journal-title": "Journal of Experimental Psychology"
+  },
+  {
+   "key": "2024021619382373100_bib22",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.acl-long.70",
+   "article-title": "What context features can Transformer language models use?",
+   "volume-title": "Proceedings of ACL",
+   "author": "O\u2019Connor",
+   "year": "2021"
+  },
+  {
+   "key": "2024021619382373100_bib23",
+   "article-title": "A little retrieval test for large language models",
+   "author": "Papailiopoulos",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib24",
+   "article-title": "RWKV-LM",
+   "author": "Bo",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib25",
+   "article-title": "Random feature attention",
+   "volume-title": "Proceedings of ICLR",
+   "author": "Peng",
+   "year": "2021"
+  },
+  {
+   "key": "2024021619382373100_bib26",
+   "article-title": "How context affects language models\u2019 factual predictions",
+   "volume-title": "Proceedings of AKBC",
+   "author": "Petroni",
+   "year": "2020"
+  },
+  {
+   "key": "2024021619382373100_bib27",
+   "article-title": "Hyena hierarchy: Towards larger convolutional language models",
+   "volume-title": "Proceedings of ICML",
+   "author": "Poli",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib28",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2021.acl-long.427",
+   "article-title": "Shortformer: Better language modeling using shorter inputs",
+   "volume-title": "Proceedings of ACL",
+   "author": "Press",
+   "year": "2021"
+  },
+  {
+   "key": "2024021619382373100_bib29",
+   "article-title": "Train short, test long: Attention with linear biases enables input length extrapolation",
+   "volume-title": "Proceedings of ICLR",
+   "author": "Press",
+   "year": "2022"
+  },
+  {
+   "key": "2024021619382373100_bib30",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2023.eacl-main.273",
+   "article-title": "The NLP task effectiveness of long-range transformers",
+   "volume-title": "Proceedings of EACL",
+   "author": "Qin",
+   "year": "2023"
+  },
+  {
+   "issue": "140",
+   "key": "2024021619382373100_bib31",
+   "first-page": "1",
+   "article-title": "Exploring the limits of transfer learning with a unified text-to-text Transformer",
+   "volume": "21",
+   "author": "Raffel",
+   "year": "2020",
+   "journal-title": "Journal of Machine Learning Research"
+  },
+  {
+   "key": "2024021619382373100_bib32",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.1162/tacl_a_00605",
+   "article-title": "In-context retrieval-augmented language models",
+   "author": "Ram",
+   "year": "2023",
+   "journal-title": "ArXiv:2302.00083"
+  },
+  {
+   "key": "2024021619382373100_bib33",
+   "article-title": "Long-range language modeling with self-retrieval",
+   "author": "Rubin",
+   "year": "2023",
+   "journal-title": "ArXiv:2306.13421"
+  },
+  {
+   "key": "2024021619382373100_bib34",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/P19-1004",
+   "article-title": "Do neural dialog systems use the conversation history effectively? An empirical study",
+   "volume-title": "Proceedings of ACL",
+   "author": "Sankar",
+   "year": "2019"
+  },
+  {
+   "key": "2024021619382373100_bib35",
+   "article-title": "Toolformer: Language models can teach themselves to use tools",
+   "author": "Schick",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib36",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/2023.findings-emnlp.536",
+   "article-title": "ZeroSCROLLS: A zero-shot benchmark for long text understanding",
+   "author": "Shaham",
+   "year": "2023",
+   "journal-title": "ArXiv:2305.14196"
+  },
+  {
+   "key": "2024021619382373100_bib37",
+   "doi-asserted-by": "publisher",
+   "DOI": "10.18653/v1/K18-3013",
+   "article-title": "Prediction with a short memory",
+   "volume-title": "Proceedings of STOC",
+   "author": "Sharan",
+   "year": "2018"
+  },
+  {
+   "key": "2024021619382373100_bib38",
+   "article-title": "REPLUG: Retrieval-augmented black-box language models",
+   "author": "Shi",
+   "year": "2023",
+   "journal-title": "ArXiv:2301.12652"
+  },
+  {
+   "key": "2024021619382373100_bib39",
+   "unstructured": "Kurt\n              Shuster\n            , JingXu, MojtabaKomeili, DaJu, Eric MichaelSmith, StephenRoller, MeganUng, MoyaChen, KushalArora, JoshuaLane, MortezaBehrooz, WilliamNgan, SpencerPoff, NamanGoyal, ArthurSzlam, Y-LanBoureau, MelanieKambadur, and JasonWeston. 2022. BlenderBot 3: A deployed conversational agent that continually learns to responsibly engage. ArXiv:2208.03188."
+  },
+  {
+   "key": "2024021619382373100_bib40",
+   "doi-asserted-by": "crossref",
+   "DOI": "10.18653/v1/2021.emnlp-main.62",
+   "article-title": "Do long-range language models actually use long-range context?",
+   "volume-title": "Proceedings of EMNLP",
+   "author": "Sun",
+   "year": "2021"
+  },
+  {
+   "key": "2024021619382373100_bib41",
+   "article-title": "UL2: Unifying language learning paradigms",
+   "author": "Yi",
+   "year": "2023",
+   "journal-title": "ArXiv:2205.05131"
+  },
+  {
+   "key": "2024021619382373100_bib42",
+   "article-title": "LaMDA: Language models for dialog applications",
+   "author": "Thoppilan",
+   "year": "2022",
+   "journal-title": "ArXiv:2201.08239"
+  },
+  {
+   "key": "2024021619382373100_bib43",
+   "article-title": "LLaMA: Open and efficient foundation language models",
+   "author": "Touvron",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib44",
+   "article-title": "Llama 2: Open foundation and fine-tuned chat models",
+   "author": "Touvron",
+   "year": "2023"
+  },
+  {
+   "key": "2024021619382373100_bib45",
+   "article-title": "Attention is all you need",
+   "volume-title": "Proceedings of NeurIPS",
+   "author": "Vaswani",
+   "year": "2017"
+  },
+  {
+   "key": "2024021619382373100_bib46",
+   "article-title": "Linformer: Self-attention with linear complexity",
+   "author": "Wang",
+   "year": "2020",
+   "journal-title": "ArXiv:2006.04768"
+  },
+  {
+   "key": "2024021619382373100_bib47",
+   "article-title": "Big Bird: Transformers for longer sequences",
+   "volume-title": "Proceedings of NeurIPS",
+   "author": "Zaheer",
+   "year": "2020"
+  }
+ ],
+ "container-title": [
+  "Transactions of the Association for Computational Linguistics"
+ ],
+ "original-title": [],
+ "language": "en",
+ "link": [
+  {
+   "URL": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00638/2336043/tacl_a_00638.pdf",
+   "content-type": "application/pdf",
+   "content-version": "vor",
+   "intended-application": "syndication"
+  },
+  {
+   "URL": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00638/2336043/tacl_a_00638.pdf",
+   "content-type": "unspecified",
+   "content-version": "vor",
+   "intended-application": "similarity-checking"
+  }
+ ],
+ "deposited": {
+  "date-parts": [
+   [
+    2024,
+    2,
+    16
+   ]
+  ],
+  "date-time": "2024-02-16T14:38:53Z",
+  "timestamp": 1708094333000
+ },
+ "score": 1,
+ "resource": {
+  "primary": {
+   "URL": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00638/119630/Lost-in-the-Middle-How-Language-Models-Use-Long"
+  }
+ },
+ "subtitle": [],
+ "short-title": [],
+ "issued": {
+  "date-parts": [
+   [
+    2024
+   ]
+  ]
+ },
+ "references-count": 47,
+ "URL": "https://doi.org/10.1162/tacl_a_00638",
+ "relation": {},
+ "ISSN": [
+  "2307-387X"
+ ],
+ "issn-type": [
+  {
+   "value": "2307-387X",
+   "type": "electronic"
+  }
+ ],
+ "subject": [],
+ "published-other": {
+  "date-parts": [
+   [
+    2024
+   ]
+  ]
+ },
+ "published": {
+  "date-parts": [
+   [
+    2024
+   ]
+  ]
+ }
+}

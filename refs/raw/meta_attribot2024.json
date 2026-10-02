@@ -1,0 +1,168 @@
+{
+ "doi": "10.48550/arxiv.2411.15102",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2411.15102",
+ "identifiers": [
+  {
+   "identifier": "2411.15102",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2411.15102"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Liu, Fengyuan",
+   "nameType": "Personal",
+   "givenName": "Fengyuan",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Kandpal, Nikhil",
+   "nameType": "Personal",
+   "givenName": "Nikhil",
+   "familyName": "Kandpal",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Raffel, Colin",
+   "nameType": "Personal",
+   "givenName": "Colin",
+   "familyName": "Raffel",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2024,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2024-11-22T18:06:14Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-11-25T01:49:21Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025-01-14T14:07:55Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-01-15T01:42:28Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-03-21T15:47:53Z",
+   "dateType": "Submitted",
+   "dateInformation": "v3"
+  },
+  {
+   "date": "2025-03-24T00:58:21Z",
+   "dateType": "Updated",
+   "dateInformation": "v3"
+  },
+  {
+   "date": "2024-11",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "3",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "The influence of contextual input on the behavior of large language models (LLMs) has prompted the development of context attribution methods that aim to quantify each context span's effect on an LLM's generations. The leave-one-out (LOO) error, which measures the change in the likelihood of the LLM's response when a given span of the context is removed, provides a principled way to perform context attribution, but can be prohibitively expensive to compute for large models. In this work, we introduce AttriBoT, a series of novel techniques for efficiently computing an approximation of the LOO error for context attribution. Specifically, AttriBoT uses cached activations to avoid redundant operations, performs hierarchical attribution to reduce computation, and emulates the behavior of large target models with smaller proxy models. Taken together, AttriBoT can provide a &gt;300x speedup while remaining more faithful to a target model's LOO error than prior context attribution methods. This stark increase in performance makes computing context attributions for a given response 30x faster than generating the response itself, empowering real-world applications that require computing attributions at scale. We release a user-friendly and efficient implementation of AttriBoT to enable efficient LLM interpretability as well as encourage future development of efficient context attribution methods.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "24 pages, 11 figures, ICLR 2025",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNDExLjE1MTAyPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjQxMS4xNTEwMjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIEZlbmd5dWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5GZW5neXVhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaXU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+S2FuZHBhbCwgTmlraGlsPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5OaWtoaWw8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+S2FuZHBhbDwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5SYWZmZWwsIENvbGluPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Db2xpbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5SYWZmZWw8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkF0dHJpQm9UOiBBIEJhZyBvZiBUcmlja3MgZm9yIEVmZmljaWVudGx5IEFwcHJveGltYXRpbmcgTGVhdmUtT25lLU91dCBDb250ZXh0IEF0dHJpYnV0aW9uPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0xMS0yMlQxODowNjoxNFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0xMS0yNVQwMTo0OToyMVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAxLTE0VDE0OjA3OjU1WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAxLTE1VDAxOjQyOjI4WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjMiPjIwMjUtMDMtMjFUMTU6NDc6NTNaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjMiPjIwMjUtMDMtMjRUMDA6NTg6MjFaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0xMTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4zPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8iIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHJpZ2h0c0lkZW50aWZpZXI9IkNDLUJZLTQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBpbmZsdWVuY2Ugb2YgY29udGV4dHVhbCBpbnB1dCBvbiB0aGUgYmVoYXZpb3Igb2YgbGFyZ2UgbGFuZ3VhZ2UgbW9kZWxzIChMTE1zKSBoYXMgcHJvbXB0ZWQgdGhlIGRldmVsb3BtZW50IG9mIGNvbnRleHQgYXR0cmlidXRpb24gbWV0aG9kcyB0aGF0IGFpbSB0byBxdWFudGlmeSBlYWNoIGNvbnRleHQgc3BhbidzIGVmZmVjdCBvbiBhbiBMTE0ncyBnZW5lcmF0aW9ucy4gVGhlIGxlYXZlLW9uZS1vdXQgKExPTykgZXJyb3IsIHdoaWNoIG1lYXN1cmVzIHRoZSBjaGFuZ2UgaW4gdGhlIGxpa2VsaWhvb2Qgb2YgdGhlIExMTSdzIHJlc3BvbnNlIHdoZW4gYSBnaXZlbiBzcGFuIG9mIHRoZSBjb250ZXh0IGlzIHJlbW92ZWQsIHByb3ZpZGVzIGEgcHJpbmNpcGxlZCB3YXkgdG8gcGVyZm9ybSBjb250ZXh0IGF0dHJpYnV0aW9uLCBidXQgY2FuIGJlIHByb2hpYml0aXZlbHkgZXhwZW5zaXZlIHRvIGNvbXB1dGUgZm9yIGxhcmdlIG1vZGVscy4gSW4gdGhpcyB3b3JrLCB3ZSBpbnRyb2R1Y2UgQXR0cmlCb1QsIGEgc2VyaWVzIG9mIG5vdmVsIHRlY2huaXF1ZXMgZm9yIGVmZmljaWVudGx5IGNvbXB1dGluZyBhbiBhcHByb3hpbWF0aW9uIG9mIHRoZSBMT08gZXJyb3IgZm9yIGNvbnRleHQgYXR0cmlidXRpb24uIFNwZWNpZmljYWxseSwgQXR0cmlCb1QgdXNlcyBjYWNoZWQgYWN0aXZhdGlvbnMgdG8gYXZvaWQgcmVkdW5kYW50IG9wZXJhdGlvbnMsIHBlcmZvcm1zIGhpZXJhcmNoaWNhbCBhdHRyaWJ1dGlvbiB0byByZWR1Y2UgY29tcHV0YXRpb24sIGFuZCBlbXVsYXRlcyB0aGUgYmVoYXZpb3Igb2YgbGFyZ2UgdGFyZ2V0IG1vZGVscyB3aXRoIHNtYWxsZXIgcHJveHkgbW9kZWxzLiBUYWtlbiB0b2dldGhlciwgQXR0cmlCb1QgY2FuIHByb3ZpZGUgYSAmZ3Q7MzAweCBzcGVlZHVwIHdoaWxlIHJlbWFpbmluZyBtb3JlIGZhaXRoZnVsIHRvIGEgdGFyZ2V0IG1vZGVsJ3MgTE9PIGVycm9yIHRoYW4gcHJpb3IgY29udGV4dCBhdHRyaWJ1dGlvbiBtZXRob2RzLiBUaGlzIHN0YXJrIGluY3JlYXNlIGluIHBlcmZvcm1hbmNlIG1ha2VzIGNvbXB1dGluZyBjb250ZXh0IGF0dHJpYnV0aW9ucyBmb3IgYSBnaXZlbiByZXNwb25zZSAzMHggZmFzdGVyIHRoYW4gZ2VuZXJhdGluZyB0aGUgcmVzcG9uc2UgaXRzZWxmLCBlbXBvd2VyaW5nIHJlYWwtd29ybGQgYXBwbGljYXRpb25zIHRoYXQgcmVxdWlyZSBjb21wdXRpbmcgYXR0cmlidXRpb25zIGF0IHNjYWxlLiBXZSByZWxlYXNlIGEgdXNlci1mcmllbmRseSBhbmQgZWZmaWNpZW50IGltcGxlbWVudGF0aW9uIG9mIEF0dHJpQm9UIHRvIGVuYWJsZSBlZmZpY2llbnQgTExNIGludGVycHJldGFiaWxpdHkgYXMgd2VsbCBhcyBlbmNvdXJhZ2UgZnV0dXJlIGRldmVsb3BtZW50IG9mIGVmZmljaWVudCBjb250ZXh0IGF0dHJpYnV0aW9uIG1ldGhvZHMuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj4yNCBwYWdlcywgMTEgZmlndXJlcywgSUNMUiAyMDI1PC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2411.15102",
+ "contentUrl": null,
+ "metadataVersion": 2,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2024-11-25T02:48:59.000Z",
+ "registered": "2024-11-25T02:48:59.000Z",
+ "published": "2024",
+ "updated": "2025-03-24T02:19:07.000Z"
+}

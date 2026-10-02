@@ -1,0 +1,185 @@
+{
+ "doi": "10.48550/arxiv.2312.15395",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2312.15395",
+ "identifiers": [
+  {
+   "identifier": "2312.15395",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2312.15395"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Liu, Hanxi",
+   "nameType": "Personal",
+   "givenName": "Hanxi",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Mao, Xiaokai",
+   "nameType": "Personal",
+   "givenName": "Xiaokai",
+   "familyName": "Mao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Xia, Haocheng",
+   "nameType": "Personal",
+   "givenName": "Haocheng",
+   "familyName": "Xia",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Lou, Jian",
+   "nameType": "Personal",
+   "givenName": "Jian",
+   "familyName": "Lou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Jinfei",
+   "nameType": "Personal",
+   "givenName": "Jinfei",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ren, Kui",
+   "nameType": "Personal",
+   "givenName": "Kui",
+   "familyName": "Ren",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Prompt Valuation Based on Shapley Values"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2023,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Databases (cs.DB)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2023-12-24T03:37:11Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2023-12-27T01:24:52Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-12-16T08:57:29Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2024-12-17T02:22:10Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2023-12",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2023",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Large language models (LLMs) excel on new tasks without additional training, simply by providing natural language prompts that demonstrate how the task should be performed. Prompt ensemble methods comprehensively harness the knowledge of LLMs while mitigating individual biases and errors and further enhancing performance. However, more prompts do not necessarily lead to better results, and not all prompts are beneficial. A small number of high-quality prompts often outperform many low-quality prompts. Currently, there is a lack of a suitable method for evaluating the impact of prompts on the results. In this paper, we utilize the Shapley value to fairly quantify the contributions of prompts, helping to identify beneficial or detrimental prompts, and potentially guiding prompt valuation in data markets. Through extensive experiments employing various ensemble methods and utility functions on diverse tasks, we validate the effectiveness of using the Shapley value method for prompts as it effectively distinguishes and quantifies the contributions of each prompt.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yMzEyLjE1Mzk1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjMxMi4xNTM5NTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIEhhbnhpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5IYW54aTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaXU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TWFvLCBYaWFva2FpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YaWFva2FpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk1hbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5YaWEsIEhhb2NoZW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5IYW9jaGVuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5YaWE8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TG91LCBKaWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KaWFuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxvdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIEppbmZlaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmluZmVpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5SZW4sIEt1aTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S3VpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlJlbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+UHJvbXB0IFZhbHVhdGlvbiBCYXNlZCBvbiBTaGFwbGV5IFZhbHVlczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+RGF0YWJhc2VzIChjcy5EQik8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5NYWNoaW5lIExlYXJuaW5nIChjcy5MRyk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDIzLTEyLTI0VDAzOjM3OjExWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDIzLTEyLTI3VDAxOjI0OjUyWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjQtMTItMTZUMDg6NTc6MjlaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjIiPjIwMjQtMTItMTdUMDI6MjI6MTBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyMy0xMjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4yPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TGFyZ2UgbGFuZ3VhZ2UgbW9kZWxzIChMTE1zKSBleGNlbCBvbiBuZXcgdGFza3Mgd2l0aG91dCBhZGRpdGlvbmFsIHRyYWluaW5nLCBzaW1wbHkgYnkgcHJvdmlkaW5nIG5hdHVyYWwgbGFuZ3VhZ2UgcHJvbXB0cyB0aGF0IGRlbW9uc3RyYXRlIGhvdyB0aGUgdGFzayBzaG91bGQgYmUgcGVyZm9ybWVkLiBQcm9tcHQgZW5zZW1ibGUgbWV0aG9kcyBjb21wcmVoZW5zaXZlbHkgaGFybmVzcyB0aGUga25vd2xlZGdlIG9mIExMTXMgd2hpbGUgbWl0aWdhdGluZyBpbmRpdmlkdWFsIGJpYXNlcyBhbmQgZXJyb3JzIGFuZCBmdXJ0aGVyIGVuaGFuY2luZyBwZXJmb3JtYW5jZS4gSG93ZXZlciwgbW9yZSBwcm9tcHRzIGRvIG5vdCBuZWNlc3NhcmlseSBsZWFkIHRvIGJldHRlciByZXN1bHRzLCBhbmQgbm90IGFsbCBwcm9tcHRzIGFyZSBiZW5lZmljaWFsLiBBIHNtYWxsIG51bWJlciBvZiBoaWdoLXF1YWxpdHkgcHJvbXB0cyBvZnRlbiBvdXRwZXJmb3JtIG1hbnkgbG93LXF1YWxpdHkgcHJvbXB0cy4gQ3VycmVudGx5LCB0aGVyZSBpcyBhIGxhY2sgb2YgYSBzdWl0YWJsZSBtZXRob2QgZm9yIGV2YWx1YXRpbmcgdGhlIGltcGFjdCBvZiBwcm9tcHRzIG9uIHRoZSByZXN1bHRzLiBJbiB0aGlzIHBhcGVyLCB3ZSB1dGlsaXplIHRoZSBTaGFwbGV5IHZhbHVlIHRvIGZhaXJseSBxdWFudGlmeSB0aGUgY29udHJpYnV0aW9ucyBvZiBwcm9tcHRzLCBoZWxwaW5nIHRvIGlkZW50aWZ5IGJlbmVmaWNpYWwgb3IgZGV0cmltZW50YWwgcHJvbXB0cywgYW5kIHBvdGVudGlhbGx5IGd1aWRpbmcgcHJvbXB0IHZhbHVhdGlvbiBpbiBkYXRhIG1hcmtldHMuIFRocm91Z2ggZXh0ZW5zaXZlIGV4cGVyaW1lbnRzIGVtcGxveWluZyB2YXJpb3VzIGVuc2VtYmxlIG1ldGhvZHMgYW5kIHV0aWxpdHkgZnVuY3Rpb25zIG9uIGRpdmVyc2UgdGFza3MsIHdlIHZhbGlkYXRlIHRoZSBlZmZlY3RpdmVuZXNzIG9mIHVzaW5nIHRoZSBTaGFwbGV5IHZhbHVlIG1ldGhvZCBmb3IgcHJvbXB0cyBhcyBpdCBlZmZlY3RpdmVseSBkaXN0aW5ndWlzaGVzIGFuZCBxdWFudGlmaWVzIHRoZSBjb250cmlidXRpb25zIG9mIGVhY2ggcHJvbXB0LjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2312.15395",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2023-12-27T03:31:53.000Z",
+ "registered": "2023-12-27T03:31:54.000Z",
+ "published": "2023",
+ "updated": "2024-12-17T04:53:53.000Z"
+}

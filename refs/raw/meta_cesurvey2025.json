@@ -1,0 +1,251 @@
+{
+ "doi": "10.48550/arxiv.2507.13334",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2507.13334",
+ "identifiers": [
+  {
+   "identifier": "2507.13334",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2507.13334"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Mei, Lingrui",
+   "nameType": "Personal",
+   "givenName": "Lingrui",
+   "familyName": "Mei",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yao, Jiayu",
+   "nameType": "Personal",
+   "givenName": "Jiayu",
+   "familyName": "Yao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ge, Yuyao",
+   "nameType": "Personal",
+   "givenName": "Yuyao",
+   "familyName": "Ge",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Yiwei",
+   "nameType": "Personal",
+   "givenName": "Yiwei",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Bi, Baolong",
+   "nameType": "Personal",
+   "givenName": "Baolong",
+   "familyName": "Bi",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Cai, Yujun",
+   "nameType": "Personal",
+   "givenName": "Yujun",
+   "familyName": "Cai",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Jiazhi",
+   "nameType": "Personal",
+   "givenName": "Jiazhi",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Li, Mingyu",
+   "nameType": "Personal",
+   "givenName": "Mingyu",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Li, Zhong-Zhi",
+   "nameType": "Personal",
+   "givenName": "Zhong-Zhi",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Duzhen",
+   "nameType": "Personal",
+   "givenName": "Duzhen",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhou, Chenlin",
+   "nameType": "Personal",
+   "givenName": "Chenlin",
+   "familyName": "Zhou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Mao, Jiayi",
+   "nameType": "Personal",
+   "givenName": "Jiayi",
+   "familyName": "Mao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Xia, Tianze",
+   "nameType": "Personal",
+   "givenName": "Tianze",
+   "familyName": "Xia",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Guo, Jiafeng",
+   "nameType": "Personal",
+   "givenName": "Jiafeng",
+   "familyName": "Guo",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Shenghua",
+   "nameType": "Personal",
+   "givenName": "Shenghua",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "A Survey of Context Engineering for Large Language Models"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2025,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2025-07-17T17:50:36Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025-07-18T00:51:52Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025-07-21T17:48:18Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-07-22T01:34:34Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-07",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "The performance of Large Language Models (LLMs) is fundamentally determined by the contextual information provided during inference. This survey introduces Context Engineering, a formal discipline that transcends simple prompt design to encompass the systematic optimization of information payloads for LLMs. We present a comprehensive taxonomy decomposing Context Engineering into its foundational components and the sophisticated implementations that integrate them into intelligent systems. We first examine the foundational components: context retrieval and generation, context processing and context management. We then explore how these components are architecturally integrated to create sophisticated system implementations: retrieval-augmented generation (RAG), memory systems and tool-integrated reasoning, and multi-agent systems. Through this systematic analysis of over 1400 research papers, our survey not only establishes a technical roadmap for the field but also reveals a critical research gap: a fundamental asymmetry exists between model capabilities. While current models, augmented by advanced context engineering, demonstrate remarkable proficiency in understanding complex contexts, they exhibit pronounced limitations in generating equally sophisticated, long-form outputs. Addressing this gap is a defining priority for future research. Ultimately, this survey provides a unified framework for both researchers and engineers advancing context-aware AI.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "ongoing work; 166 pages, 1411 citations",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNTA3LjEzMzM0PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjUwNy4xMzMzNDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NZWksIExpbmdydWk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkxpbmdydWk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWVpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPllhbywgSmlheXU8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkppYXl1PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPllhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HZSwgWXV5YW88L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPll1eWFvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkdlPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPldhbmcsIFlpd2VpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5ZaXdlaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkJpLCBCYW9sb25nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5CYW9sb25nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkJpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNhaSwgWXVqdW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPll1anVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNhaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIEppYXpoaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmlhemhpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgTWluZ3l1PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NaW5neXU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGk8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGksIFpob25nLVpoaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmhvbmctWmhpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoYW5nLCBEdXpoZW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkR1emhlbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5aaGFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaG91LCBDaGVubGluPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5DaGVubGluPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpob3U8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TWFvLCBKaWF5aTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmlheWk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWFvPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlhpYSwgVGlhbnplPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5UaWFuemU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WGlhPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkd1bywgSmlhZmVuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmlhZmVuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HdW88L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGl1LCBTaGVuZ2h1YTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2hlbmdodWE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGl1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5BIFN1cnZleSBvZiBDb250ZXh0IEVuZ2luZWVyaW5nIGZvciBMYXJnZSBMYW5ndWFnZSBNb2RlbHM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjU8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjUtMDctMTdUMTc6NTA6MzZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjUtMDctMThUMDA6NTE6NTJaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNS0wNy0yMVQxNzo0ODoxOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNS0wNy0yMlQwMTozNDozNFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI1LTA3PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgcGVyZm9ybWFuY2Ugb2YgTGFyZ2UgTGFuZ3VhZ2UgTW9kZWxzIChMTE1zKSBpcyBmdW5kYW1lbnRhbGx5IGRldGVybWluZWQgYnkgdGhlIGNvbnRleHR1YWwgaW5mb3JtYXRpb24gcHJvdmlkZWQgZHVyaW5nIGluZmVyZW5jZS4gVGhpcyBzdXJ2ZXkgaW50cm9kdWNlcyBDb250ZXh0IEVuZ2luZWVyaW5nLCBhIGZvcm1hbCBkaXNjaXBsaW5lIHRoYXQgdHJhbnNjZW5kcyBzaW1wbGUgcHJvbXB0IGRlc2lnbiB0byBlbmNvbXBhc3MgdGhlIHN5c3RlbWF0aWMgb3B0aW1pemF0aW9uIG9mIGluZm9ybWF0aW9uIHBheWxvYWRzIGZvciBMTE1zLiBXZSBwcmVzZW50IGEgY29tcHJlaGVuc2l2ZSB0YXhvbm9teSBkZWNvbXBvc2luZyBDb250ZXh0IEVuZ2luZWVyaW5nIGludG8gaXRzIGZvdW5kYXRpb25hbCBjb21wb25lbnRzIGFuZCB0aGUgc29waGlzdGljYXRlZCBpbXBsZW1lbnRhdGlvbnMgdGhhdCBpbnRlZ3JhdGUgdGhlbSBpbnRvIGludGVsbGlnZW50IHN5c3RlbXMuIFdlIGZpcnN0IGV4YW1pbmUgdGhlIGZvdW5kYXRpb25hbCBjb21wb25lbnRzOiBjb250ZXh0IHJldHJpZXZhbCBhbmQgZ2VuZXJhdGlvbiwgY29udGV4dCBwcm9jZXNzaW5nIGFuZCBjb250ZXh0IG1hbmFnZW1lbnQuIFdlIHRoZW4gZXhwbG9yZSBob3cgdGhlc2UgY29tcG9uZW50cyBhcmUgYXJjaGl0ZWN0dXJhbGx5IGludGVncmF0ZWQgdG8gY3JlYXRlIHNvcGhpc3RpY2F0ZWQgc3lzdGVtIGltcGxlbWVudGF0aW9uczogcmV0cmlldmFsLWF1Z21lbnRlZCBnZW5lcmF0aW9uIChSQUcpLCBtZW1vcnkgc3lzdGVtcyBhbmQgdG9vbC1pbnRlZ3JhdGVkIHJlYXNvbmluZywgYW5kIG11bHRpLWFnZW50IHN5c3RlbXMuIFRocm91Z2ggdGhpcyBzeXN0ZW1hdGljIGFuYWx5c2lzIG9mIG92ZXIgMTQwMCByZXNlYXJjaCBwYXBlcnMsIG91ciBzdXJ2ZXkgbm90IG9ubHkgZXN0YWJsaXNoZXMgYSB0ZWNobmljYWwgcm9hZG1hcCBmb3IgdGhlIGZpZWxkIGJ1dCBhbHNvIHJldmVhbHMgYSBjcml0aWNhbCByZXNlYXJjaCBnYXA6IGEgZnVuZGFtZW50YWwgYXN5bW1ldHJ5IGV4aXN0cyBiZXR3ZWVuIG1vZGVsIGNhcGFiaWxpdGllcy4gV2hpbGUgY3VycmVudCBtb2RlbHMsIGF1Z21lbnRlZCBieSBhZHZhbmNlZCBjb250ZXh0IGVuZ2luZWVyaW5nLCBkZW1vbnN0cmF0ZSByZW1hcmthYmxlIHByb2ZpY2llbmN5IGluIHVuZGVyc3RhbmRpbmcgY29tcGxleCBjb250ZXh0cywgdGhleSBleGhpYml0IHByb25vdW5jZWQgbGltaXRhdGlvbnMgaW4gZ2VuZXJhdGluZyBlcXVhbGx5IHNvcGhpc3RpY2F0ZWQsIGxvbmctZm9ybSBvdXRwdXRzLiBBZGRyZXNzaW5nIHRoaXMgZ2FwIGlzIGEgZGVmaW5pbmcgcHJpb3JpdHkgZm9yIGZ1dHVyZSByZXNlYXJjaC4gVWx0aW1hdGVseSwgdGhpcyBzdXJ2ZXkgcHJvdmlkZXMgYSB1bmlmaWVkIGZyYW1ld29yayBmb3IgYm90aCByZXNlYXJjaGVycyBhbmQgZW5naW5lZXJzIGFkdmFuY2luZyBjb250ZXh0LWF3YXJlIEFJLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+b25nb2luZyB3b3JrOyAxNjYgcGFnZXMsIDE0MTEgY2l0YXRpb25zPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+ "url": "https://arxiv.org/abs/2507.13334",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2025-07-18T01:44:34.000Z",
+ "registered": "2025-07-18T01:44:34.000Z",
+ "published": "2025",
+ "updated": "2025-07-22T03:28:05.000Z"
+}

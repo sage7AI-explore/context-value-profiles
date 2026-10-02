@@ -1,0 +1,161 @@
+{
+ "doi": "10.48550/arxiv.2606.20047",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2606.20047",
+ "identifiers": [
+  {
+   "identifier": "2606.20047",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2606.20047"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Ghulyani, Manu",
+   "nameType": "Personal",
+   "givenName": "Manu",
+   "familyName": "Ghulyani",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Singh, Arunabh",
+   "nameType": "Personal",
+   "givenName": "Arunabh",
+   "familyName": "Singh",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Bharadwaj, Karan",
+   "nameType": "Personal",
+   "givenName": "Karan",
+   "familyName": "Bharadwaj",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Nath, Ankit",
+   "nameType": "Personal",
+   "givenName": "Ankit",
+   "familyName": "Nath",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Goswami, Suranjan",
+   "nameType": "Personal",
+   "givenName": "Suranjan",
+   "familyName": "Goswami",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Information Retrieval (cs.IR)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-06-18T10:22:57Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-06-19T00:41:34Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09-03T08:04:27Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-09-04T00:35:11Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-06",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-nc-sa-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Conversational and tool-using LLM agents operate over a context window that fills from several directions simultaneously. As a session proceeds, the agent accumulates user and assistant turns, entries drawn from a persistent memory store, and often largest of all, the verbatim outputs of tool calls such as file reads, search results, and API responses. Once the cumulative context exceeds the model's token budget, the framework must decide what to keep.\n The prevailing mechanism is recency truncation, sometimes paired with periodic summarization. This is topic-blind: a fact established early in a session is discarded simply because it is old, even when the current user query is about exactly that fact; conversely, verbose but irrelevant recent material is retained. Agents that must recall information across many turns, the defining case for memory, are precisely where recency truncation fails.\n Existing alternatives sit outside the agent's assembly step. Retrieval augmented generation fetches external documents into the prompt but does not arbitrate the agent's \\emph{already-present} pooled context. Context-compression methods reduce token count by rewriting or pruning text, but operate query-blind and lossily. Neither treats memory entries, conversation turns, and tool outputs as a single candidate pool to be selected from by relevance at the moment the prompt is assembled.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA2LjIwMDQ3PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNi4yMDA0NzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5HaHVseWFuaSwgTWFudTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWFudTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5HaHVseWFuaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TaW5naCwgQXJ1bmFiaDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QXJ1bmFiaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TaW5naDwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5CaGFyYWR3YWosIEthcmFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LYXJhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5CaGFyYWR3YWo8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TmF0aCwgQW5raXQ8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFua2l0PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk5hdGg8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+R29zd2FtaSwgU3VyYW5qYW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlN1cmFuamFuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkdvc3dhbWk8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlBBQ01TOiBTdWJtb2R1bGFyIENvbnRleHQgU2VsZWN0aW9uIGFzIGEgUGx1Z2dhYmxlIEVuZ2luZSBmb3IgTExNIEFnZW50czwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkluZm9ybWF0aW9uIFJldHJpZXZhbCAoY3MuSVIpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNi0xOFQxMDoyMjo1N1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNi0xOVQwMDo0MTozNFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI2LTA5LTAzVDA4OjA0OjI3WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI2LTA5LTA0VDAwOjM1OjExWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDY8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MjwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1uYy1zYS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS1OQy1TQS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gTm9uIENvbW1lcmNpYWwgU2hhcmUgQWxpa2UgNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5Db252ZXJzYXRpb25hbCBhbmQgdG9vbC11c2luZyBMTE0gYWdlbnRzIG9wZXJhdGUgb3ZlciBhIGNvbnRleHQgd2luZG93IHRoYXQgZmlsbHMgZnJvbSBzZXZlcmFsIGRpcmVjdGlvbnMgc2ltdWx0YW5lb3VzbHkuIEFzIGEgc2Vzc2lvbiBwcm9jZWVkcywgdGhlIGFnZW50IGFjY3VtdWxhdGVzIHVzZXIgYW5kIGFzc2lzdGFudCB0dXJucywgZW50cmllcyBkcmF3biBmcm9tIGEgcGVyc2lzdGVudCBtZW1vcnkgc3RvcmUsIGFuZCBvZnRlbiBsYXJnZXN0IG9mIGFsbCwgdGhlIHZlcmJhdGltIG91dHB1dHMgb2YgdG9vbCBjYWxscyBzdWNoIGFzIGZpbGUgcmVhZHMsIHNlYXJjaCByZXN1bHRzLCBhbmQgQVBJIHJlc3BvbnNlcy4gT25jZSB0aGUgY3VtdWxhdGl2ZSBjb250ZXh0IGV4Y2VlZHMgdGhlIG1vZGVsJ3MgdG9rZW4gYnVkZ2V0LCB0aGUgZnJhbWV3b3JrIG11c3QgZGVjaWRlIHdoYXQgdG8ga2VlcC4KICBUaGUgcHJldmFpbGluZyBtZWNoYW5pc20gaXMgcmVjZW5jeSB0cnVuY2F0aW9uLCBzb21ldGltZXMgcGFpcmVkIHdpdGggcGVyaW9kaWMgc3VtbWFyaXphdGlvbi4gVGhpcyBpcyB0b3BpYy1ibGluZDogYSBmYWN0IGVzdGFibGlzaGVkIGVhcmx5IGluIGEgc2Vzc2lvbiBpcyBkaXNjYXJkZWQgc2ltcGx5IGJlY2F1c2UgaXQgaXMgb2xkLCBldmVuIHdoZW4gdGhlIGN1cnJlbnQgdXNlciBxdWVyeSBpcyBhYm91dCBleGFjdGx5IHRoYXQgZmFjdDsgY29udmVyc2VseSwgdmVyYm9zZSBidXQgaXJyZWxldmFudCByZWNlbnQgbWF0ZXJpYWwgaXMgcmV0YWluZWQuIEFnZW50cyB0aGF0IG11c3QgcmVjYWxsIGluZm9ybWF0aW9uIGFjcm9zcyBtYW55IHR1cm5zLCB0aGUgZGVmaW5pbmcgY2FzZSBmb3IgbWVtb3J5LCBhcmUgcHJlY2lzZWx5IHdoZXJlIHJlY2VuY3kgdHJ1bmNhdGlvbiBmYWlscy4KICBFeGlzdGluZyBhbHRlcm5hdGl2ZXMgc2l0IG91dHNpZGUgdGhlIGFnZW50J3MgYXNzZW1ibHkgc3RlcC4gUmV0cmlldmFsIGF1Z21lbnRlZCBnZW5lcmF0aW9uIGZldGNoZXMgZXh0ZXJuYWwgZG9jdW1lbnRzIGludG8gdGhlIHByb21wdCBidXQgZG9lcyBub3QgYXJiaXRyYXRlIHRoZSBhZ2VudCdzIFxlbXBoe2FscmVhZHktcHJlc2VudH0gcG9vbGVkIGNvbnRleHQuIENvbnRleHQtY29tcHJlc3Npb24gbWV0aG9kcyByZWR1Y2UgdG9rZW4gY291bnQgYnkgcmV3cml0aW5nIG9yIHBydW5pbmcgdGV4dCwgYnV0IG9wZXJhdGUgcXVlcnktYmxpbmQgYW5kIGxvc3NpbHkuIE5laXRoZXIgdHJlYXRzIG1lbW9yeSBlbnRyaWVzLCBjb252ZXJzYXRpb24gdHVybnMsIGFuZCB0b29sIG91dHB1dHMgYXMgYSBzaW5nbGUgY2FuZGlkYXRlIHBvb2wgdG8gYmUgc2VsZWN0ZWQgZnJvbSBieSByZWxldmFuY2UgYXQgdGhlIG1vbWVudCB0aGUgcHJvbXB0IGlzIGFzc2VtYmxlZC48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2606.20047",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-06-19T02:02:23.000Z",
+ "registered": "2026-06-19T02:02:23.000Z",
+ "published": "2026",
+ "updated": "2026-09-04T02:44:23.000Z"
+}

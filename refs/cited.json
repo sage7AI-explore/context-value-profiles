@@ -1,0 +1,254 @@
+{
+ "pacms2026": {
+  "doi": "10.48550/arXiv.2606.20047",
+  "source": "datacite",
+  "title": "PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents",
+  "arxiv": "2606.20047"
+ },
+ "contextpipe2026": {
+  "doi": "10.48550/arXiv.2609.00749",
+  "source": "datacite",
+  "title": "ContextPipe: Database-Inspired Context Assembly for Long-Horizon Agents",
+  "arxiv": "2609.00749"
+ },
+ "contextrender2026": {
+  "doi": "10.48550/arXiv.2609.37743",
+  "source": "datacite",
+  "title": "ContextRender: From Execution Dependencies to Agent Context",
+  "arxiv": "2609.37743"
+ },
+ "ace2025": {
+  "doi": "10.48550/arXiv.2510.04618",
+  "source": "datacite",
+  "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+  "arxiv": "2510.04618"
+ },
+ "controlledvar2026": {
+  "doi": "10.48550/arXiv.2607.25408",
+  "source": "datacite",
+  "title": "Context Assembly as the Controlled Variable: A Control-Theoretic View of Harness Policies for Frozen LLM Agents",
+  "arxiv": "2607.25408"
+ },
+ "contextevo2026": {
+  "doi": "10.48550/arXiv.2609.34649",
+  "source": "datacite",
+  "title": "Beyond Skill Evolution: Self-Evolving Context Management Policies for Long-Horizon Agent Harnesses",
+  "arxiv": "2609.34649"
+ },
+ "dspy2023": {
+  "doi": "10.48550/arXiv.2310.03714",
+  "source": "datacite",
+  "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+  "arxiv": "2310.03714"
+ },
+ "toolschema2026": {
+  "doi": "10.48550/arXiv.2605.26165",
+  "source": "datacite",
+  "title": "Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets",
+  "arxiv": "2605.26165"
+ },
+ "attribot2024": {
+  "doi": "10.48550/arXiv.2411.15102",
+  "source": "datacite",
+  "title": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+  "arxiv": "2411.15102"
+ },
+ "cesurvey2025": {
+  "doi": "10.48550/arXiv.2507.13334",
+  "source": "datacite",
+  "title": "A Survey of Context Engineering for Large Language Models",
+  "arxiv": "2507.13334"
+ },
+ "imprompt2026": {
+  "doi": "10.48550/arXiv.2607.22683",
+  "source": "datacite",
+  "title": "Imprompt: A Language Framework for Prompt Programming",
+  "arxiv": "2607.22683"
+ },
+ "budgetbench2026": {
+  "doi": "10.48550/arXiv.2609.13149",
+  "source": "datacite",
+  "title": "BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents",
+  "arxiv": "2609.13149"
+ },
+ "ctxenv2026": {
+  "doi": "10.48550/arXiv.2608.21690",
+  "source": "datacite",
+  "title": "Context as an Environment: Programmatic Context Management for Long-Horizon Agents",
+  "arxiv": "2608.21690"
+ },
+ "taubench2024": {
+  "doi": "10.48550/arXiv.2406.12045",
+  "source": "datacite",
+  "title": "$\u03c4$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+  "arxiv": "2406.12045"
+ },
+ "contextcite2024": {
+  "doi": "10.48550/arXiv.2409.00729",
+  "source": "datacite",
+  "title": "ContextCite: Attributing Model Generation to Context",
+  "arxiv": "2409.00729"
+ },
+ "llmlingua2_2024": {
+  "doi": "10.48550/arXiv.2403.12968",
+  "source": "datacite",
+  "title": "LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+  "arxiv": "2403.12968"
+ },
+ "lostmiddle2024": {
+  "doi": "10.1162/tacl_a_00638",
+  "source": "crossref",
+  "title": "Lost in the Middle: How Language Models Use Long Contexts",
+  "arxiv": null
+ },
+ "hotpotqa2018": {
+  "doi": "10.48550/arXiv.1809.09600",
+  "source": "datacite",
+  "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+  "arxiv": "1809.09600"
+ },
+ "musique2022": {
+  "doi": "10.1162/tacl_a_00475",
+  "source": "crossref",
+  "title": "\u266b MuSiQue: Multihop Questions via Single-hop Question Composition",
+  "arxiv": null
+ },
+ "longmemeval2024": {
+  "doi": "10.48550/arXiv.2410.10813",
+  "source": "datacite",
+  "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+  "arxiv": "2410.10813"
+ },
+ "skillsv2026": {
+  "doi": "10.48550/arXiv.2608.04562",
+  "source": "datacite",
+  "title": "What Is a Skill Worth? Structure-Aware Shapley Valuation of Agent Skills",
+  "arxiv": "2608.04562"
+ },
+ "civalue2025": {
+  "doi": "10.48550/arXiv.2509.21359",
+  "source": "datacite",
+  "title": "Influence Guided Context Selection for Effective Retrieval-Augmented Generation",
+  "arxiv": "2509.21359"
+ },
+ "demoshapley2024": {
+  "doi": "10.48550/arXiv.2410.07523",
+  "source": "datacite",
+  "title": "DemoShapley: Valuation of Demonstrations for In-Context Learning",
+  "arxiv": "2410.07523"
+ },
+ "promptshapley2023": {
+  "doi": "10.48550/arXiv.2312.15395",
+  "source": "datacite",
+  "title": "Prompt Valuation Based on Shapley Values",
+  "arxiv": "2312.15395"
+ },
+ "drsr2026": {
+  "doi": "10.48550/arXiv.2609.27276",
+  "source": "datacite",
+  "title": "DRSR: Learning Set-Level Deletion Risk for Efficient Long-Horizon Agents",
+  "arxiv": "2609.27276"
+ },
+ "meclear2026": {
+  "doi": "10.48550/arXiv.2609.09115",
+  "source": "datacite",
+  "title": "MeClear: Cooperative Game-Theoretic Attribution and Risk-Aware Memory Clearance for Long-Horizon LLM Agents",
+  "arxiv": "2609.09115"
+ },
+ "skillsinjector2026": {
+  "doi": "10.48550/arXiv.2605.29794",
+  "source": "datacite",
+  "title": "SkillsInjector: Dynamic Skill Context Construction for LLM Agents",
+  "arxiv": "2605.29794"
+ },
+ "kernelsurrogate2026": {
+  "doi": "10.48550/arXiv.2602.03783",
+  "source": "datacite",
+  "title": "Efficient Estimation of Kernel Surrogate Models for Task Attribution",
+  "arxiv": "2602.03783"
+ },
+ "ctxfiles2026": {
+  "doi": "10.48550/arXiv.2607.27250",
+  "source": "datacite",
+  "title": "Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories",
+  "arxiv": "2607.27250"
+ },
+ "cicl2026": {
+  "doi": "10.48550/arXiv.2606.08151",
+  "source": "datacite",
+  "title": "Decision-Aware Memory Cards: Counterfactual-Inspired Context Selection and Compression for Tool-Using LLM Agents",
+  "arxiv": "2606.08151"
+ },
+ "ctxalloc2026": {
+  "doi": "10.48550/arXiv.2608.23252",
+  "source": "datacite",
+  "title": "The Laws of Context Allocation: Causal Measurement and Closed-Loop Orchestration in Generative Search",
+  "arxiv": "2608.23252"
+ },
+ "comi2026": {
+  "doi": "10.48550/arXiv.2602.01719",
+  "source": "datacite",
+  "title": "COMI: Coarse-to-fine Context Compression via Marginal Information Gain",
+  "arxiv": "2602.01719"
+ },
+ "beyondharness2026": {
+  "doi": "10.48550/arXiv.2608.22830",
+  "source": "datacite",
+  "title": "Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL",
+  "arxiv": "2608.22830"
+ },
+ "skillselect2026": {
+  "doi": "10.48550/arXiv.2608.19993",
+  "source": "datacite",
+  "title": "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees",
+  "arxiv": "2608.19993"
+ },
+ "contextweaver2026": {
+  "doi": "10.48550/arXiv.2604.23069",
+  "source": "datacite",
+  "title": "ContextWeaver: Selective and Dependency-Structured Memory Construction for LLM Agents",
+  "arxiv": "2604.23069"
+ },
+ "knowbefore2026": {
+  "doi": "10.48550/arXiv.2606.29959",
+  "source": "datacite",
+  "title": "Know Before You Fetch: Calibrated Retrieval-Budget Allocation for Retrieval-Augmented Generation",
+  "arxiv": "2606.29959"
+ },
+ "gorilla2023": {
+  "doi": "10.48550/arXiv.2305.15334",
+  "source": "datacite",
+  "title": "Gorilla: Large Language Model Connected with Massive APIs",
+  "arxiv": "2305.15334"
+ },
+ "nomicembed2024": {
+  "doi": "10.48550/arXiv.2402.01613",
+  "source": "datacite",
+  "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+  "arxiv": "2402.01613"
+ },
+ "datashapley2019": {
+  "doi": "10.48550/arXiv.1904.02868",
+  "source": "datacite",
+  "title": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+  "arxiv": "1904.02868"
+ },
+ "recallnotenough2026": {
+  "doi": "10.48550/arXiv.2607.00725",
+  "source": "datacite",
+  "title": "Recall Is Not Enough: A Reader-Context Diagnostic for Budget-Constrained Retrieval-Augmented Generation",
+  "arxiv": "2607.00725"
+ },
+ "compressiontrial2026": {
+  "doi": "10.48550/arXiv.2603.23525",
+  "source": "datacite",
+  "title": "Prompt Compression in Production Task Orchestration: A Pre-Registered Randomized Trial",
+  "arxiv": "2603.23525"
+ },
+ "controlcompression2026": {
+  "doi": "10.48550/arXiv.2608.01056",
+  "source": "datacite",
+  "title": "Control Under Compression: Reliability Frontiers for Tool-Using Agents",
+  "arxiv": "2608.01056"
+ }
+}

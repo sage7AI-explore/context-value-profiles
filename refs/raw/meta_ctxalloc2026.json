@@ -1,0 +1,153 @@
+{
+ "doi": "10.48550/arxiv.2608.23252",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.23252",
+ "identifiers": [
+  {
+   "identifier": "2608.23252",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.23252"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Liu, Peiyang",
+   "nameType": "Personal",
+   "givenName": "Peiyang",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Xi",
+   "nameType": "Personal",
+   "givenName": "Xi",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liang, Di",
+   "nameType": "Personal",
+   "givenName": "Di",
+   "familyName": "Liang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ye, Wei",
+   "nameType": "Personal",
+   "givenName": "Wei",
+   "familyName": "Ye",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "The Laws of Context Allocation: Causal Measurement and Closed-Loop Orchestration in Generative Search"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Information Retrieval (cs.IR)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-24T13:44:11Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-25T01:40:40Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "As Retrieval-Augmented Generation (RAG) shifts toward diverse portfolio generation, it is stymied by two critical bottlenecks: flawed measurement of evidence utilization, and suboptimal context budget allocation. We resolve both sequentially.\n To resolve measurement, we expose a pervasive ``diagnostic illusion'': standard relevance proxies fail catastrophically on hard negatives. We replace them with an efficient causal leave-one-out probe that accurately isolates generative reliance and formally calibrates the structural dilution of LLM attention.\n To resolve allocation, we deploy this causal probe in a deconfounded factorial grid. We prove that the prevailing strategy of monolithic context widening is an architectural trap penalized by relevance decay. Instead, allocating compute iteratively across multiple sequential generations drives transformative portfolio recall gains of 16.7--20.5 absolute percentage points, scaling robustly up to 32B models.\n Finally, we unify these solutions into a deployable closed-loop submodular scheduler. Augmented by an attribution-steered contrastive decoder to override LLM attention inertia, our architecture systematically forces fresh evidence integration. By dominating classical open-loop baselines, we establish sequential, feedback-driven orchestration as the definitive paradigm for generative search. Our code, data, and causal measurement instruments are available at https://github.com/PeiYangLiu/ascp.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjIzMjUyPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4yMzI1MjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaXUsIFBlaXlhbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlBlaXlhbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGl1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPldhbmcsIFhpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpYW5nLCBEaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RGk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGlhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+WWUsIFdlaTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+V2VpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlllPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5UaGUgTGF3cyBvZiBDb250ZXh0IEFsbG9jYXRpb246IENhdXNhbCBNZWFzdXJlbWVudCBhbmQgQ2xvc2VkLUxvb3AgT3JjaGVzdHJhdGlvbiBpbiBHZW5lcmF0aXZlIFNlYXJjaDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPk1hY2hpbmUgTGVhcm5pbmcgKGNzLkxHKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+SW5mb3JtYXRpb24gUmV0cmlldmFsIChjcy5JUik8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4LTI0VDEzOjQ0OjExWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4LTI1VDAxOjQwOjQwWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDg8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5BcyBSZXRyaWV2YWwtQXVnbWVudGVkIEdlbmVyYXRpb24gKFJBRykgc2hpZnRzIHRvd2FyZCBkaXZlcnNlIHBvcnRmb2xpbyBnZW5lcmF0aW9uLCBpdCBpcyBzdHltaWVkIGJ5IHR3byBjcml0aWNhbCBib3R0bGVuZWNrczogZmxhd2VkIG1lYXN1cmVtZW50IG9mIGV2aWRlbmNlIHV0aWxpemF0aW9uLCBhbmQgc3Vib3B0aW1hbCBjb250ZXh0IGJ1ZGdldCBhbGxvY2F0aW9uLiBXZSByZXNvbHZlIGJvdGggc2VxdWVudGlhbGx5LgogIFRvIHJlc29sdmUgbWVhc3VyZW1lbnQsIHdlIGV4cG9zZSBhIHBlcnZhc2l2ZSBgYGRpYWdub3N0aWMgaWxsdXNpb24nJzogc3RhbmRhcmQgcmVsZXZhbmNlIHByb3hpZXMgZmFpbCBjYXRhc3Ryb3BoaWNhbGx5IG9uIGhhcmQgbmVnYXRpdmVzLiBXZSByZXBsYWNlIHRoZW0gd2l0aCBhbiBlZmZpY2llbnQgY2F1c2FsIGxlYXZlLW9uZS1vdXQgcHJvYmUgdGhhdCBhY2N1cmF0ZWx5IGlzb2xhdGVzIGdlbmVyYXRpdmUgcmVsaWFuY2UgYW5kIGZvcm1hbGx5IGNhbGlicmF0ZXMgdGhlIHN0cnVjdHVyYWwgZGlsdXRpb24gb2YgTExNIGF0dGVudGlvbi4KICBUbyByZXNvbHZlIGFsbG9jYXRpb24sIHdlIGRlcGxveSB0aGlzIGNhdXNhbCBwcm9iZSBpbiBhIGRlY29uZm91bmRlZCBmYWN0b3JpYWwgZ3JpZC4gV2UgcHJvdmUgdGhhdCB0aGUgcHJldmFpbGluZyBzdHJhdGVneSBvZiBtb25vbGl0aGljIGNvbnRleHQgd2lkZW5pbmcgaXMgYW4gYXJjaGl0ZWN0dXJhbCB0cmFwIHBlbmFsaXplZCBieSByZWxldmFuY2UgZGVjYXkuIEluc3RlYWQsIGFsbG9jYXRpbmcgY29tcHV0ZSBpdGVyYXRpdmVseSBhY3Jvc3MgbXVsdGlwbGUgc2VxdWVudGlhbCBnZW5lcmF0aW9ucyBkcml2ZXMgdHJhbnNmb3JtYXRpdmUgcG9ydGZvbGlvIHJlY2FsbCBnYWlucyBvZiAxNi43LS0yMC41IGFic29sdXRlIHBlcmNlbnRhZ2UgcG9pbnRzLCBzY2FsaW5nIHJvYnVzdGx5IHVwIHRvIDMyQiBtb2RlbHMuCiAgRmluYWxseSwgd2UgdW5pZnkgdGhlc2Ugc29sdXRpb25zIGludG8gYSBkZXBsb3lhYmxlIGNsb3NlZC1sb29wIHN1Ym1vZHVsYXIgc2NoZWR1bGVyLiBBdWdtZW50ZWQgYnkgYW4gYXR0cmlidXRpb24tc3RlZXJlZCBjb250cmFzdGl2ZSBkZWNvZGVyIHRvIG92ZXJyaWRlIExMTSBhdHRlbnRpb24gaW5lcnRpYSwgb3VyIGFyY2hpdGVjdHVyZSBzeXN0ZW1hdGljYWxseSBmb3JjZXMgZnJlc2ggZXZpZGVuY2UgaW50ZWdyYXRpb24uIEJ5IGRvbWluYXRpbmcgY2xhc3NpY2FsIG9wZW4tbG9vcCBiYXNlbGluZXMsIHdlIGVzdGFibGlzaCBzZXF1ZW50aWFsLCBmZWVkYmFjay1kcml2ZW4gb3JjaGVzdHJhdGlvbiBhcyB0aGUgZGVmaW5pdGl2ZSBwYXJhZGlnbSBmb3IgZ2VuZXJhdGl2ZSBzZWFyY2guIE91ciBjb2RlLCBkYXRhLCBhbmQgY2F1c2FsIG1lYXN1cmVtZW50IGluc3RydW1lbnRzIGFyZSBhdmFpbGFibGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL1BlaVlhbmdMaXUvYXNjcC48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2608.23252",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-25T03:37:30.000Z",
+ "registered": "2026-08-25T03:37:30.000Z",
+ "published": "2026",
+ "updated": "2026-08-25T03:37:30.000Z"
+}

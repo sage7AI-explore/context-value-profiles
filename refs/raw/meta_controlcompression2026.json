@@ -1,0 +1,133 @@
+{
+ "doi": "10.48550/arxiv.2608.01056",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.01056",
+ "identifiers": [
+  {
+   "identifier": "2608.01056",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.01056"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Hou, Yinghan",
+   "nameType": "Personal",
+   "givenName": "Yinghan",
+   "familyName": "Hou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yang, Zongyou",
+   "nameType": "Personal",
+   "givenName": "Zongyou",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Control Under Compression: Reliability Frontiers for Tool-Using Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-02T07:43:44Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-04T00:59:10Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Tool-using language-model agents are governed not only by task prompts but also by persistent system-side instructions that specify tools, arguments, policies, execution protocols, and recovery. Compressing these agent control contexts (ACCs) can reduce input cost and context use, yet existing prompt-compression evaluations do not reveal whether the resulting control remains operationally reliable. We introduce CompressAgent, an environment-verified benchmark for ACC compression across nine independently constructed ACCs, three task families, three fixed Qwen API model identifiers, six retained-context budgets, and 15,525 runs. We uncover a nonlinear, method-dependent reliability frontier. At 75% retained context, generic rewriting and section-based compression achieve 92.7% and 92.4% success, close to the 93.8% full-context baseline. Between 50% and 35%, methods diverge sharply; at 35%, section-based, obligation-aware, and generic rewriting achieve 47.0%, 39.0%, and 19.9%. At retained-context budgets from 25% to 10%, executable protocols become fragile. Reliability also varies substantially across ACCs, making universal compressor rankings inappropriate and motivating per-context qualification. Failure analysis shows that compression primarily surfaces as tool-execution and action-parsing errors. These findings recast ACC compression from token reduction into a runtime-reliability problem that must be evaluated through executable outcomes.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "12 pages, 5 figures; includes an appendix",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjAxMDU2PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4wMTA1NjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Ib3UsIFlpbmdoYW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPllpbmdoYW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+SG91PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPllhbmcsIFpvbmd5b3U8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpvbmd5b3U8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WWFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+Q29udHJvbCBVbmRlciBDb21wcmVzc2lvbjogUmVsaWFiaWxpdHkgRnJvbnRpZXJzIGZvciBUb29sLVVzaW5nIEFnZW50czwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDgtMDJUMDc6NDM6NDRaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDgtMDRUMDA6NTk6MTBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wODwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VG9vbC11c2luZyBsYW5ndWFnZS1tb2RlbCBhZ2VudHMgYXJlIGdvdmVybmVkIG5vdCBvbmx5IGJ5IHRhc2sgcHJvbXB0cyBidXQgYWxzbyBieSBwZXJzaXN0ZW50IHN5c3RlbS1zaWRlIGluc3RydWN0aW9ucyB0aGF0IHNwZWNpZnkgdG9vbHMsIGFyZ3VtZW50cywgcG9saWNpZXMsIGV4ZWN1dGlvbiBwcm90b2NvbHMsIGFuZCByZWNvdmVyeS4gQ29tcHJlc3NpbmcgdGhlc2UgYWdlbnQgY29udHJvbCBjb250ZXh0cyAoQUNDcykgY2FuIHJlZHVjZSBpbnB1dCBjb3N0IGFuZCBjb250ZXh0IHVzZSwgeWV0IGV4aXN0aW5nIHByb21wdC1jb21wcmVzc2lvbiBldmFsdWF0aW9ucyBkbyBub3QgcmV2ZWFsIHdoZXRoZXIgdGhlIHJlc3VsdGluZyBjb250cm9sIHJlbWFpbnMgb3BlcmF0aW9uYWxseSByZWxpYWJsZS4gV2UgaW50cm9kdWNlIENvbXByZXNzQWdlbnQsIGFuIGVudmlyb25tZW50LXZlcmlmaWVkIGJlbmNobWFyayBmb3IgQUNDIGNvbXByZXNzaW9uIGFjcm9zcyBuaW5lIGluZGVwZW5kZW50bHkgY29uc3RydWN0ZWQgQUNDcywgdGhyZWUgdGFzayBmYW1pbGllcywgdGhyZWUgZml4ZWQgUXdlbiBBUEkgbW9kZWwgaWRlbnRpZmllcnMsIHNpeCByZXRhaW5lZC1jb250ZXh0IGJ1ZGdldHMsIGFuZCAxNSw1MjUgcnVucy4gV2UgdW5jb3ZlciBhIG5vbmxpbmVhciwgbWV0aG9kLWRlcGVuZGVudCByZWxpYWJpbGl0eSBmcm9udGllci4gQXQgNzUlIHJldGFpbmVkIGNvbnRleHQsIGdlbmVyaWMgcmV3cml0aW5nIGFuZCBzZWN0aW9uLWJhc2VkIGNvbXByZXNzaW9uIGFjaGlldmUgOTIuNyUgYW5kIDkyLjQlIHN1Y2Nlc3MsIGNsb3NlIHRvIHRoZSA5My44JSBmdWxsLWNvbnRleHQgYmFzZWxpbmUuIEJldHdlZW4gNTAlIGFuZCAzNSUsIG1ldGhvZHMgZGl2ZXJnZSBzaGFycGx5OyBhdCAzNSUsIHNlY3Rpb24tYmFzZWQsIG9ibGlnYXRpb24tYXdhcmUsIGFuZCBnZW5lcmljIHJld3JpdGluZyBhY2hpZXZlIDQ3LjAlLCAzOS4wJSwgYW5kIDE5LjklLiBBdCByZXRhaW5lZC1jb250ZXh0IGJ1ZGdldHMgZnJvbSAyNSUgdG8gMTAlLCBleGVjdXRhYmxlIHByb3RvY29scyBiZWNvbWUgZnJhZ2lsZS4gUmVsaWFiaWxpdHkgYWxzbyB2YXJpZXMgc3Vic3RhbnRpYWxseSBhY3Jvc3MgQUNDcywgbWFraW5nIHVuaXZlcnNhbCBjb21wcmVzc29yIHJhbmtpbmdzIGluYXBwcm9wcmlhdGUgYW5kIG1vdGl2YXRpbmcgcGVyLWNvbnRleHQgcXVhbGlmaWNhdGlvbi4gRmFpbHVyZSBhbmFseXNpcyBzaG93cyB0aGF0IGNvbXByZXNzaW9uIHByaW1hcmlseSBzdXJmYWNlcyBhcyB0b29sLWV4ZWN1dGlvbiBhbmQgYWN0aW9uLXBhcnNpbmcgZXJyb3JzLiBUaGVzZSBmaW5kaW5ncyByZWNhc3QgQUNDIGNvbXByZXNzaW9uIGZyb20gdG9rZW4gcmVkdWN0aW9uIGludG8gYSBydW50aW1lLXJlbGlhYmlsaXR5IHByb2JsZW0gdGhhdCBtdXN0IGJlIGV2YWx1YXRlZCB0aHJvdWdoIGV4ZWN1dGFibGUgb3V0Y29tZXMuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj4xMiBwYWdlcywgNSBmaWd1cmVzOyBpbmNsdWRlcyBhbiBhcHBlbmRpeDwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2608.01056",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-04T03:53:30.000Z",
+ "registered": "2026-08-04T03:53:31.000Z",
+ "published": "2026",
+ "updated": "2026-08-04T03:53:31.000Z"
+}

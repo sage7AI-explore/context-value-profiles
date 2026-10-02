@@ -1,0 +1,123 @@
+{
+ "doi": "10.48550/arxiv.2607.25408",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2607.25408",
+ "identifiers": [
+  {
+   "identifier": "2607.25408",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2607.25408"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Paul, Debjyoti",
+   "nameType": "Personal",
+   "givenName": "Debjyoti",
+   "familyName": "Paul",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Context Assembly as the Controlled Variable: A Control-Theoretic View of Harness Policies for Frozen LLM Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-07-28T08:07:06Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07-29T00:33:55Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "A growing body of 2026 work applies control theory to LLM agents: Lyapunov-certified stability for tool-mediated controllers (Prinos et al., \"Stable Agentic Control\", 2026), sample-complexity bounds for sparse policies over massive discrete tool universes (Majumdar, \"Sparse Agentic Control\", 2026), and regulatory-control decompositions of multi-agent systems into auditable feedback loops (Nogueira and Skogestad, 2026). We do not claim to introduce control theory to LLM agents -- that ship has sailed. Our narrower claim is about what the controlled variable is. Prior work controls tool selection, inter-agent message routing, or the agent's raw action stream. We instead treat context assembly itself -- which prompt template, which few-shot demonstrations, how much retrieved context, how many planning/verification passes -- as the controlled variable, learned online by a contextual bandit or REINFORCE policy sitting outside a frozen model. This paper develops the formal decomposition (inner frozen policy $\u03c0_\u03b8$, outer context policy $\u03c0_\u03d5$), gives a stability argument for the online controller in the sense used by Zhang et al. (2026) (non-decreasing expected reward under bounded policy change), and reports an uncertainty-calibration analysis of the controller's own confidence against realized task outcomes. The applied counterpart to this paper instantiates the same controller across three domains and two model providers and releases the dataset, trajectory logs, and a deployment recipe; here we focus on the formal framing and the stability/uncertainty evidence a control-theoretic claim requires.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "6 pages, 2 figures, 1 table. Code and companion paper's data: https://github.com/dpaul0501/context-optimization-rl",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA3LjI1NDA4PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNy4yNTQwODwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5QYXVsLCBEZWJqeW90aTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RGVianlvdGk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UGF1bDwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+Q29udGV4dCBBc3NlbWJseSBhcyB0aGUgQ29udHJvbGxlZCBWYXJpYWJsZTogQSBDb250cm9sLVRoZW9yZXRpYyBWaWV3IG9mIEhhcm5lc3MgUG9saWNpZXMgZm9yIEZyb3plbiBMTE0gQWdlbnRzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMjhUMDg6MDc6MDZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMjlUMDA6MzM6NTVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNzwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8iIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHJpZ2h0c0lkZW50aWZpZXI9IkNDLUJZLTQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkEgZ3Jvd2luZyBib2R5IG9mIDIwMjYgd29yayBhcHBsaWVzIGNvbnRyb2wgdGhlb3J5IHRvIExMTSBhZ2VudHM6IEx5YXB1bm92LWNlcnRpZmllZCBzdGFiaWxpdHkgZm9yIHRvb2wtbWVkaWF0ZWQgY29udHJvbGxlcnMgKFByaW5vcyBldCBhbC4sICJTdGFibGUgQWdlbnRpYyBDb250cm9sIiwgMjAyNiksIHNhbXBsZS1jb21wbGV4aXR5IGJvdW5kcyBmb3Igc3BhcnNlIHBvbGljaWVzIG92ZXIgbWFzc2l2ZSBkaXNjcmV0ZSB0b29sIHVuaXZlcnNlcyAoTWFqdW1kYXIsICJTcGFyc2UgQWdlbnRpYyBDb250cm9sIiwgMjAyNiksIGFuZCByZWd1bGF0b3J5LWNvbnRyb2wgZGVjb21wb3NpdGlvbnMgb2YgbXVsdGktYWdlbnQgc3lzdGVtcyBpbnRvIGF1ZGl0YWJsZSBmZWVkYmFjayBsb29wcyAoTm9ndWVpcmEgYW5kIFNrb2dlc3RhZCwgMjAyNikuIFdlIGRvIG5vdCBjbGFpbSB0byBpbnRyb2R1Y2UgY29udHJvbCB0aGVvcnkgdG8gTExNIGFnZW50cyAtLSB0aGF0IHNoaXAgaGFzIHNhaWxlZC4gT3VyIG5hcnJvd2VyIGNsYWltIGlzIGFib3V0IHdoYXQgdGhlIGNvbnRyb2xsZWQgdmFyaWFibGUgaXMuIFByaW9yIHdvcmsgY29udHJvbHMgdG9vbCBzZWxlY3Rpb24sIGludGVyLWFnZW50IG1lc3NhZ2Ugcm91dGluZywgb3IgdGhlIGFnZW50J3MgcmF3IGFjdGlvbiBzdHJlYW0uIFdlIGluc3RlYWQgdHJlYXQgY29udGV4dCBhc3NlbWJseSBpdHNlbGYgLS0gd2hpY2ggcHJvbXB0IHRlbXBsYXRlLCB3aGljaCBmZXctc2hvdCBkZW1vbnN0cmF0aW9ucywgaG93IG11Y2ggcmV0cmlldmVkIGNvbnRleHQsIGhvdyBtYW55IHBsYW5uaW5nL3ZlcmlmaWNhdGlvbiBwYXNzZXMgLS0gYXMgdGhlIGNvbnRyb2xsZWQgdmFyaWFibGUsIGxlYXJuZWQgb25saW5lIGJ5IGEgY29udGV4dHVhbCBiYW5kaXQgb3IgUkVJTkZPUkNFIHBvbGljeSBzaXR0aW5nIG91dHNpZGUgYSBmcm96ZW4gbW9kZWwuIFRoaXMgcGFwZXIgZGV2ZWxvcHMgdGhlIGZvcm1hbCBkZWNvbXBvc2l0aW9uIChpbm5lciBmcm96ZW4gcG9saWN5ICTPgF/OuCQsIG91dGVyIGNvbnRleHQgcG9saWN5ICTPgF/PlSQpLCBnaXZlcyBhIHN0YWJpbGl0eSBhcmd1bWVudCBmb3IgdGhlIG9ubGluZSBjb250cm9sbGVyIGluIHRoZSBzZW5zZSB1c2VkIGJ5IFpoYW5nIGV0IGFsLiAoMjAyNikgKG5vbi1kZWNyZWFzaW5nIGV4cGVjdGVkIHJld2FyZCB1bmRlciBib3VuZGVkIHBvbGljeSBjaGFuZ2UpLCBhbmQgcmVwb3J0cyBhbiB1bmNlcnRhaW50eS1jYWxpYnJhdGlvbiBhbmFseXNpcyBvZiB0aGUgY29udHJvbGxlcidzIG93biBjb25maWRlbmNlIGFnYWluc3QgcmVhbGl6ZWQgdGFzayBvdXRjb21lcy4gVGhlIGFwcGxpZWQgY291bnRlcnBhcnQgdG8gdGhpcyBwYXBlciBpbnN0YW50aWF0ZXMgdGhlIHNhbWUgY29udHJvbGxlciBhY3Jvc3MgdGhyZWUgZG9tYWlucyBhbmQgdHdvIG1vZGVsIHByb3ZpZGVycyBhbmQgcmVsZWFzZXMgdGhlIGRhdGFzZXQsIHRyYWplY3RvcnkgbG9ncywgYW5kIGEgZGVwbG95bWVudCByZWNpcGU7IGhlcmUgd2UgZm9jdXMgb24gdGhlIGZvcm1hbCBmcmFtaW5nIGFuZCB0aGUgc3RhYmlsaXR5L3VuY2VydGFpbnR5IGV2aWRlbmNlIGEgY29udHJvbC10aGVvcmV0aWMgY2xhaW0gcmVxdWlyZXMuPC9kZXNjcmlwdGlvbj4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9Ik90aGVyIj42IHBhZ2VzLCAyIGZpZ3VyZXMsIDEgdGFibGUuIENvZGUgYW5kIGNvbXBhbmlvbiBwYXBlcidzIGRhdGE6IGh0dHBzOi8vZ2l0aHViLmNvbS9kcGF1bDA1MDEvY29udGV4dC1vcHRpbWl6YXRpb24tcmw8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2607.25408",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-07-29T02:09:12.000Z",
+ "registered": "2026-07-29T02:09:13.000Z",
+ "published": "2026",
+ "updated": "2026-07-29T02:09:13.000Z"
+}

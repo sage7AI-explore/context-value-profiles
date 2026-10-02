@@ -1,0 +1,171 @@
+{
+ "doi": "10.48550/arxiv.2402.01613",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2402.01613",
+ "identifiers": [
+  {
+   "identifier": "2402.01613",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2402.01613"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Nussbaum, Zach",
+   "nameType": "Personal",
+   "givenName": "Zach",
+   "familyName": "Nussbaum",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Morris, John X.",
+   "nameType": "Personal",
+   "givenName": "John X.",
+   "familyName": "Morris",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Duderstadt, Brandon",
+   "nameType": "Personal",
+   "givenName": "Brandon",
+   "familyName": "Duderstadt",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Mulyar, Andriy",
+   "nameType": "Personal",
+   "givenName": "Andriy",
+   "familyName": "Mulyar",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2024,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2024-02-02T18:23:18Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-02-05T01:33:47Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2025-02-03T22:26:56Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2025-02-05T01:11:32Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2024-02",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "This technical report describes the training of nomic-embed-text-v1, the first fully reproducible, open-source, open-weights, open-data, 8192 context length English text embedding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an Apache 2.0 license. In contrast with other open-source models, we release the full curated training data and code that allows for full replication of nomic-embed-text-v1. You can find code and data to replicate the model at https://github.com/nomic-ai/contrastors.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "Accepted to TMLR https://openreview.net/forum?id=IPmzyQSiQE",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNDAyLjAxNjEzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjQwMi4wMTYxMzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5OdXNzYmF1bSwgWmFjaDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WmFjaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5OdXNzYmF1bTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Nb3JyaXMsIEpvaG4gWC48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkpvaG4gWC48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TW9ycmlzPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkR1ZGVyc3RhZHQsIEJyYW5kb248L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkJyYW5kb248L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RHVkZXJzdGFkdDwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NdWx5YXIsIEFuZHJpeTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QW5kcml5PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk11bHlhcjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+Tm9taWMgRW1iZWQ6IFRyYWluaW5nIGEgUmVwcm9kdWNpYmxlIExvbmcgQ29udGV4dCBUZXh0IEVtYmVkZGVyPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+Q29tcHV0YXRpb24gYW5kIExhbmd1YWdlIChjcy5DTCk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0wMi0wMlQxODoyMzoxOFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNC0wMi0wNVQwMTozMzo0N1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAyLTAzVDIyOjI2OjU2WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYyIj4yMDI1LTAyLTA1VDAxOjExOjMyWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjQtMDI8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MjwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIiByaWdodHNJZGVudGlmaWVyU2NoZW1lPSJTUERYIiByaWdodHNJZGVudGlmaWVyPSJDQy1CWS00LjAiPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGlzIHRlY2huaWNhbCByZXBvcnQgZGVzY3JpYmVzIHRoZSB0cmFpbmluZyBvZiBub21pYy1lbWJlZC10ZXh0LXYxLCB0aGUgZmlyc3QgZnVsbHkgcmVwcm9kdWNpYmxlLCBvcGVuLXNvdXJjZSwgb3Blbi13ZWlnaHRzLCBvcGVuLWRhdGEsIDgxOTIgY29udGV4dCBsZW5ndGggRW5nbGlzaCB0ZXh0IGVtYmVkZGluZyBtb2RlbCB0aGF0IG91dHBlcmZvcm1zIGJvdGggT3BlbkFJIEFkYS0wMDIgYW5kIE9wZW5BSSB0ZXh0LWVtYmVkZGluZy0zLXNtYWxsIG9uIHRoZSBzaG9ydC1jb250ZXh0IE1URUIgYmVuY2htYXJrIGFuZCB0aGUgbG9uZyBjb250ZXh0IExvQ28gYmVuY2htYXJrLiBXZSByZWxlYXNlIHRoZSB0cmFpbmluZyBjb2RlIGFuZCBtb2RlbCB3ZWlnaHRzIHVuZGVyIGFuIEFwYWNoZSAyLjAgbGljZW5zZS4gSW4gY29udHJhc3Qgd2l0aCBvdGhlciBvcGVuLXNvdXJjZSBtb2RlbHMsIHdlIHJlbGVhc2UgdGhlIGZ1bGwgY3VyYXRlZCB0cmFpbmluZyBkYXRhIGFuZCBjb2RlIHRoYXQgYWxsb3dzIGZvciBmdWxsIHJlcGxpY2F0aW9uIG9mIG5vbWljLWVtYmVkLXRleHQtdjEuIFlvdSBjYW4gZmluZCBjb2RlIGFuZCBkYXRhIHRvIHJlcGxpY2F0ZSB0aGUgbW9kZWwgYXQgaHR0cHM6Ly9naXRodWIuY29tL25vbWljLWFpL2NvbnRyYXN0b3JzLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+QWNjZXB0ZWQgdG8gVE1MUiBodHRwczovL29wZW5yZXZpZXcubmV0L2ZvcnVtP2lkPUlQbXp5UVNpUUU8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2402.01613",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2024-02-05T02:25:11.000Z",
+ "registered": "2024-02-05T02:25:11.000Z",
+ "published": "2024",
+ "updated": "2025-02-05T03:15:18.000Z"
+}

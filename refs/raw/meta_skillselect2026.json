@@ -1,0 +1,161 @@
+{
+ "doi": "10.48550/arxiv.2608.19993",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.19993",
+ "identifiers": [
+  {
+   "identifier": "2608.19993",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.19993"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Chen, Yu",
+   "nameType": "Personal",
+   "givenName": "Yu",
+   "familyName": "Chen",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Chen, Ruishuo",
+   "nameType": "Personal",
+   "givenName": "Ruishuo",
+   "familyName": "Chen",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Xun",
+   "nameType": "Personal",
+   "givenName": "Xun",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Li, Zhuoran",
+   "nameType": "Personal",
+   "givenName": "Zhuoran",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Huang, Longbo",
+   "nameType": "Personal",
+   "givenName": "Longbo",
+   "familyName": "Huang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-20T13:08:17Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-21T00:45:25Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-09-28T14:13:46Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-09-29T03:03:09Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution Non Commercial Share Alike 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-nc-sa-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Loading reusable skill documents into a bounded context window has become a primary way large language model (LLM) agents acquire task-specific capabilities, which makes skill selection a first-order determinant of task performance and token cost. Yet current agents score skills independently by semantic relevance and assemble the set by top-$k$ or greedy packing, with no quality guarantee or cost awareness on the selected set. Redundant or poorly chosen skills then waste scarce context tokens and can even degrade performance. In this paper, we present a theory-grounded and practical framework for budgeted skill selection. We give the first model of how skill sets shape execution outcomes, capturing complementary capability coverage and diminishing returns from redundancy through a monotone submodular benefit, while accounting for context degradation with a linear token penalty under a hard budget. Based on this model, we develop Best Prefix Selection (BPS), a polynomial-time algorithm, and prove, to our knowledge, the first performance guarantee for skill selection: a bicriteria $(1-1/e,1)$ approximation whose benefit coefficient is optimal in polynomial time. We construct a controlled testbed based on BigCodeBench to isolate the effect of skill selection on execution success. On it, BPS with a learned capability encoder reaches a success rate of 0.65, and the strongest baselines need at least 28% more tokens to reach 0.60.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjE5OTkzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4xOTk5MzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5DaGVuLCBZdTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WXU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Q2hlbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5DaGVuLCBSdWlzaHVvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5SdWlzaHVvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkNoZW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+V2FuZywgWHVuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YdW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+V2FuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgWmh1b3JhbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Wmh1b3JhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5IdWFuZywgTG9uZ2JvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Mb25nYm88L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+SHVhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPk9wdGltYWwgU2tpbGwgU2VsZWN0aW9uIGZvciBMTE0gQWdlbnRzIHdpdGggUHJvdmFibGUgQmljcml0ZXJpYSBHdWFyYW50ZWVzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDgtMjBUMTM6MDg6MTdaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDgtMjFUMDA6NDU6MjVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wOS0yOFQxNDoxMzo0Nlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wOS0yOVQwMzowMzowOVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktbmMtc2EvNC4wLyIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0iU1BEWCIgcmlnaHRzSWRlbnRpZmllcj0iQ0MtQlktTkMtU0EtNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbiBDb21tZXJjaWFsIFNoYXJlIEFsaWtlIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TG9hZGluZyByZXVzYWJsZSBza2lsbCBkb2N1bWVudHMgaW50byBhIGJvdW5kZWQgY29udGV4dCB3aW5kb3cgaGFzIGJlY29tZSBhIHByaW1hcnkgd2F5IGxhcmdlIGxhbmd1YWdlIG1vZGVsIChMTE0pIGFnZW50cyBhY3F1aXJlIHRhc2stc3BlY2lmaWMgY2FwYWJpbGl0aWVzLCB3aGljaCBtYWtlcyBza2lsbCBzZWxlY3Rpb24gYSBmaXJzdC1vcmRlciBkZXRlcm1pbmFudCBvZiB0YXNrIHBlcmZvcm1hbmNlIGFuZCB0b2tlbiBjb3N0LiBZZXQgY3VycmVudCBhZ2VudHMgc2NvcmUgc2tpbGxzIGluZGVwZW5kZW50bHkgYnkgc2VtYW50aWMgcmVsZXZhbmNlIGFuZCBhc3NlbWJsZSB0aGUgc2V0IGJ5IHRvcC0kayQgb3IgZ3JlZWR5IHBhY2tpbmcsIHdpdGggbm8gcXVhbGl0eSBndWFyYW50ZWUgb3IgY29zdCBhd2FyZW5lc3Mgb24gdGhlIHNlbGVjdGVkIHNldC4gUmVkdW5kYW50IG9yIHBvb3JseSBjaG9zZW4gc2tpbGxzIHRoZW4gd2FzdGUgc2NhcmNlIGNvbnRleHQgdG9rZW5zIGFuZCBjYW4gZXZlbiBkZWdyYWRlIHBlcmZvcm1hbmNlLiBJbiB0aGlzIHBhcGVyLCB3ZSBwcmVzZW50IGEgdGhlb3J5LWdyb3VuZGVkIGFuZCBwcmFjdGljYWwgZnJhbWV3b3JrIGZvciBidWRnZXRlZCBza2lsbCBzZWxlY3Rpb24uIFdlIGdpdmUgdGhlIGZpcnN0IG1vZGVsIG9mIGhvdyBza2lsbCBzZXRzIHNoYXBlIGV4ZWN1dGlvbiBvdXRjb21lcywgY2FwdHVyaW5nIGNvbXBsZW1lbnRhcnkgY2FwYWJpbGl0eSBjb3ZlcmFnZSBhbmQgZGltaW5pc2hpbmcgcmV0dXJucyBmcm9tIHJlZHVuZGFuY3kgdGhyb3VnaCBhIG1vbm90b25lIHN1Ym1vZHVsYXIgYmVuZWZpdCwgd2hpbGUgYWNjb3VudGluZyBmb3IgY29udGV4dCBkZWdyYWRhdGlvbiB3aXRoIGEgbGluZWFyIHRva2VuIHBlbmFsdHkgdW5kZXIgYSBoYXJkIGJ1ZGdldC4gQmFzZWQgb24gdGhpcyBtb2RlbCwgd2UgZGV2ZWxvcCBCZXN0IFByZWZpeCBTZWxlY3Rpb24gKEJQUyksIGEgcG9seW5vbWlhbC10aW1lIGFsZ29yaXRobSwgYW5kIHByb3ZlLCB0byBvdXIga25vd2xlZGdlLCB0aGUgZmlyc3QgcGVyZm9ybWFuY2UgZ3VhcmFudGVlIGZvciBza2lsbCBzZWxlY3Rpb246IGEgYmljcml0ZXJpYSAkKDEtMS9lLDEpJCBhcHByb3hpbWF0aW9uIHdob3NlIGJlbmVmaXQgY29lZmZpY2llbnQgaXMgb3B0aW1hbCBpbiBwb2x5bm9taWFsIHRpbWUuIFdlIGNvbnN0cnVjdCBhIGNvbnRyb2xsZWQgdGVzdGJlZCBiYXNlZCBvbiBCaWdDb2RlQmVuY2ggdG8gaXNvbGF0ZSB0aGUgZWZmZWN0IG9mIHNraWxsIHNlbGVjdGlvbiBvbiBleGVjdXRpb24gc3VjY2Vzcy4gT24gaXQsIEJQUyB3aXRoIGEgbGVhcm5lZCBjYXBhYmlsaXR5IGVuY29kZXIgcmVhY2hlcyBhIHN1Y2Nlc3MgcmF0ZSBvZiAwLjY1LCBhbmQgdGhlIHN0cm9uZ2VzdCBiYXNlbGluZXMgbmVlZCBhdCBsZWFzdCAyOCUgbW9yZSB0b2tlbnMgdG8gcmVhY2ggMC42MC48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2608.19993",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-21T02:07:22.000Z",
+ "registered": "2026-08-21T02:07:23.000Z",
+ "published": "2026",
+ "updated": "2026-09-29T07:17:48.000Z"
+}

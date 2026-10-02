@@ -1,0 +1,168 @@
+{
+ "doi": "10.48550/arxiv.2602.03783",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2602.03783",
+ "identifiers": [
+  {
+   "identifier": "2602.03783",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2602.03783"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Zhang, Zhenshuo",
+   "nameType": "Personal",
+   "givenName": "Zhenshuo",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Duan, Minxuan",
+   "nameType": "Personal",
+   "givenName": "Minxuan",
+   "familyName": "Duan",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Hongyang R.",
+   "nameType": "Personal",
+   "givenName": "Hongyang R.",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Efficient Estimation of Kernel Surrogate Models for Task Attribution"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-02-03T17:43:48Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-02-04T02:16:05Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-05-10T21:29:30Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-05-12T01:29:54Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2026-02",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Modern AI agents such as large language models are trained on diverse tasks -- translation, code generation, mathematical reasoning, and text prediction -- simultaneously. A key question is how to quantify the influence of each individual training task on performance on a target task, a problem we refer to as task attribution. The direct approach, leave-one-out retraining, measures the effect of removing each task, but is computationally infeasible at scale. An alternative approach that builds surrogate models to predict the performance on a target task for any subset of training tasks has emerged in the recent literature. Prior work focuses on linear surrogate models, which capture first-order relationships but miss nonlinear interactions such as XOR-type effects. In this paper, we first consider a unified task-weighting framework for analyzing task-attribution methods and establish a new connection between linear surrogate models and influence functions via a second-order analysis. Then, we introduce kernel surrogate models, which more effectively represent second-order task interactions. To efficiently learn the kernel surrogate, we develop a gradient-based estimation procedure that leverages a first-order approximation of pretrained models; empirically, this yields accurate surrogate estimates with less than $2\\%$ relative error without repeated retraining. Experiments across multiple settings -- including mathematical reasoning in transformers, in-context learning, and multi-objective reinforcement learning -- demonstrate the effectiveness of kernel surrogate models. They achieve a $25\\%$ higher correlation with the leave-one-out ground truth than linear surrogates and influence-function baselines, enabling more accurate and scalable task attribution. When used for downstream data selection, kernel surrogate models further yield a $40\\%$ improvement in the aforementioned settings.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "27 pages. Appeared in ICLR 2026",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjAyLjAzNzgzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwMi4wMzc4MzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFuZywgWmhlbnNodW88L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpoZW5zaHVvPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkR1YW4sIE1pbnh1YW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPk1pbnh1YW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RHVhbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFuZywgSG9uZ3lhbmcgUi48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkhvbmd5YW5nIFIuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5FZmZpY2llbnQgRXN0aW1hdGlvbiBvZiBLZXJuZWwgU3Vycm9nYXRlIE1vZGVscyBmb3IgVGFzayBBdHRyaWJ1dGlvbjwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPk1hY2hpbmUgTGVhcm5pbmcgKGNzLkxHKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDItMDNUMTc6NDM6NDhaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDItMDRUMDI6MTY6MDVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wNS0xMFQyMToyOTozMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNi0wNS0xMlQwMToyOTo1NFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTAyPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0iU1BEWCIgcmlnaHRzSWRlbnRpZmllcj0iQ0MtQlktNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TW9kZXJuIEFJIGFnZW50cyBzdWNoIGFzIGxhcmdlIGxhbmd1YWdlIG1vZGVscyBhcmUgdHJhaW5lZCBvbiBkaXZlcnNlIHRhc2tzIC0tIHRyYW5zbGF0aW9uLCBjb2RlIGdlbmVyYXRpb24sIG1hdGhlbWF0aWNhbCByZWFzb25pbmcsIGFuZCB0ZXh0IHByZWRpY3Rpb24gLS0gc2ltdWx0YW5lb3VzbHkuIEEga2V5IHF1ZXN0aW9uIGlzIGhvdyB0byBxdWFudGlmeSB0aGUgaW5mbHVlbmNlIG9mIGVhY2ggaW5kaXZpZHVhbCB0cmFpbmluZyB0YXNrIG9uIHBlcmZvcm1hbmNlIG9uIGEgdGFyZ2V0IHRhc2ssIGEgcHJvYmxlbSB3ZSByZWZlciB0byBhcyB0YXNrIGF0dHJpYnV0aW9uLiBUaGUgZGlyZWN0IGFwcHJvYWNoLCBsZWF2ZS1vbmUtb3V0IHJldHJhaW5pbmcsIG1lYXN1cmVzIHRoZSBlZmZlY3Qgb2YgcmVtb3ZpbmcgZWFjaCB0YXNrLCBidXQgaXMgY29tcHV0YXRpb25hbGx5IGluZmVhc2libGUgYXQgc2NhbGUuIEFuIGFsdGVybmF0aXZlIGFwcHJvYWNoIHRoYXQgYnVpbGRzIHN1cnJvZ2F0ZSBtb2RlbHMgdG8gcHJlZGljdCB0aGUgcGVyZm9ybWFuY2Ugb24gYSB0YXJnZXQgdGFzayBmb3IgYW55IHN1YnNldCBvZiB0cmFpbmluZyB0YXNrcyBoYXMgZW1lcmdlZCBpbiB0aGUgcmVjZW50IGxpdGVyYXR1cmUuIFByaW9yIHdvcmsgZm9jdXNlcyBvbiBsaW5lYXIgc3Vycm9nYXRlIG1vZGVscywgd2hpY2ggY2FwdHVyZSBmaXJzdC1vcmRlciByZWxhdGlvbnNoaXBzIGJ1dCBtaXNzIG5vbmxpbmVhciBpbnRlcmFjdGlvbnMgc3VjaCBhcyBYT1ItdHlwZSBlZmZlY3RzLiBJbiB0aGlzIHBhcGVyLCB3ZSBmaXJzdCBjb25zaWRlciBhIHVuaWZpZWQgdGFzay13ZWlnaHRpbmcgZnJhbWV3b3JrIGZvciBhbmFseXppbmcgdGFzay1hdHRyaWJ1dGlvbiBtZXRob2RzIGFuZCBlc3RhYmxpc2ggYSBuZXcgY29ubmVjdGlvbiBiZXR3ZWVuIGxpbmVhciBzdXJyb2dhdGUgbW9kZWxzIGFuZCBpbmZsdWVuY2UgZnVuY3Rpb25zIHZpYSBhIHNlY29uZC1vcmRlciBhbmFseXNpcy4gVGhlbiwgd2UgaW50cm9kdWNlIGtlcm5lbCBzdXJyb2dhdGUgbW9kZWxzLCB3aGljaCBtb3JlIGVmZmVjdGl2ZWx5IHJlcHJlc2VudCBzZWNvbmQtb3JkZXIgdGFzayBpbnRlcmFjdGlvbnMuIFRvIGVmZmljaWVudGx5IGxlYXJuIHRoZSBrZXJuZWwgc3Vycm9nYXRlLCB3ZSBkZXZlbG9wIGEgZ3JhZGllbnQtYmFzZWQgZXN0aW1hdGlvbiBwcm9jZWR1cmUgdGhhdCBsZXZlcmFnZXMgYSBmaXJzdC1vcmRlciBhcHByb3hpbWF0aW9uIG9mIHByZXRyYWluZWQgbW9kZWxzOyBlbXBpcmljYWxseSwgdGhpcyB5aWVsZHMgYWNjdXJhdGUgc3Vycm9nYXRlIGVzdGltYXRlcyB3aXRoIGxlc3MgdGhhbiAkMlwlJCByZWxhdGl2ZSBlcnJvciB3aXRob3V0IHJlcGVhdGVkIHJldHJhaW5pbmcuIEV4cGVyaW1lbnRzIGFjcm9zcyBtdWx0aXBsZSBzZXR0aW5ncyAtLSBpbmNsdWRpbmcgbWF0aGVtYXRpY2FsIHJlYXNvbmluZyBpbiB0cmFuc2Zvcm1lcnMsIGluLWNvbnRleHQgbGVhcm5pbmcsIGFuZCBtdWx0aS1vYmplY3RpdmUgcmVpbmZvcmNlbWVudCBsZWFybmluZyAtLSBkZW1vbnN0cmF0ZSB0aGUgZWZmZWN0aXZlbmVzcyBvZiBrZXJuZWwgc3Vycm9nYXRlIG1vZGVscy4gVGhleSBhY2hpZXZlIGEgJDI1XCUkIGhpZ2hlciBjb3JyZWxhdGlvbiB3aXRoIHRoZSBsZWF2ZS1vbmUtb3V0IGdyb3VuZCB0cnV0aCB0aGFuIGxpbmVhciBzdXJyb2dhdGVzIGFuZCBpbmZsdWVuY2UtZnVuY3Rpb24gYmFzZWxpbmVzLCBlbmFibGluZyBtb3JlIGFjY3VyYXRlIGFuZCBzY2FsYWJsZSB0YXNrIGF0dHJpYnV0aW9uLiBXaGVuIHVzZWQgZm9yIGRvd25zdHJlYW0gZGF0YSBzZWxlY3Rpb24sIGtlcm5lbCBzdXJyb2dhdGUgbW9kZWxzIGZ1cnRoZXIgeWllbGQgYSAkNDBcJSQgaW1wcm92ZW1lbnQgaW4gdGhlIGFmb3JlbWVudGlvbmVkIHNldHRpbmdzLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+MjcgcGFnZXMuIEFwcGVhcmVkIGluIElDTFIgMjAyNjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2602.03783",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-02-04T03:32:17.000Z",
+ "registered": "2026-02-04T03:32:17.000Z",
+ "published": "2026",
+ "updated": "2026-05-12T05:11:16.000Z"
+}

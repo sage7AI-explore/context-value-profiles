@@ -1,0 +1,172 @@
+{
+ "doi": "10.48550/arxiv.2608.04562",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.04562",
+ "identifiers": [
+  {
+   "identifier": "2608.04562",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.04562"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Li, Tao",
+   "nameType": "Personal",
+   "givenName": "Tao",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Junfeng",
+   "nameType": "Personal",
+   "givenName": "Junfeng",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhao, Qinghua",
+   "nameType": "Personal",
+   "givenName": "Qinghua",
+   "familyName": "Zhao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Li, Yifan",
+   "nameType": "Personal",
+   "givenName": "Yifan",
+   "familyName": "Li",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wang, Lei",
+   "nameType": "Personal",
+   "givenName": "Lei",
+   "familyName": "Wang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Shao, Bo",
+   "nameType": "Personal",
+   "givenName": "Bo",
+   "familyName": "Shao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Liu, Xuejun",
+   "nameType": "Personal",
+   "givenName": "Xuejun",
+   "familyName": "Liu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Shou, Linjun",
+   "nameType": "Personal",
+   "givenName": "Linjun",
+   "familyName": "Shou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "What Is a Skill Worth? Structure-Aware Shapley Valuation of Agent Skills"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-05T07:56:26Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-06T00:31:17Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Agent skills are increasingly optimized by automated feedback loops, producing long structured artifacts whose internal value remains unclear. We study skill valuation: assigning credit to the internal units of a fixed skill, such as rules, examples, scripts, and heuristics, under a fixed agent and held-out task distribution. Skill valuation differs from data or prompt-span valuation because skill units are structured: they may depend on other units, belong to a document hierarchy, trigger agent behavior, and consume limited prompt context. We introduce SkillSV, a structure-aware Shapley-style framework for skill valuation. SkillSV compiles a skill into units, dependencies, and hierarchy, so that only valid counterfactual skills are evaluated. It uses paired deletion and length-neutral padding to separate content value from context cost, and estimates the resulting values with a rollout-budgeted estimator for noisy agent evaluations. On four agentic benchmarks, we assess the faithfulness, actionability, and explanation of SkillSV: it recovers unit interactions, preserves aggregate skill lift, and guides safe pruning and compression.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjA0NTYyPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4wNDU2MjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgVGFvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5UYW88L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGk8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGl1LCBKdW5mZW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KdW5mZW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpdTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFvLCBRaW5naHVhPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5RaW5naHVhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW88L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGksIFlpZmFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5ZaWZhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5XYW5nLCBMZWk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkxlaTwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlNoYW8sIEJvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5CbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5TaGFvPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpdSwgWHVlanVuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YdWVqdW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGl1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlNob3UsIExpbmp1bjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TGluanVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNob3U8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPldoYXQgSXMgYSBTa2lsbCBXb3J0aD8gU3RydWN0dXJlLUF3YXJlIFNoYXBsZXkgVmFsdWF0aW9uIG9mIEFnZW50IFNraWxsczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4LTA1VDA3OjU2OjI2WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4LTA2VDAwOjMxOjE3WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDg8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vYXJ4aXYub3JnL2xpY2Vuc2VzL25vbmV4Y2x1c2l2ZS1kaXN0cmliLzEuMC8iPmFyWGl2Lm9yZyBwZXJwZXR1YWwsIG5vbi1leGNsdXNpdmUgbGljZW5zZTwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFnZW50IHNraWxscyBhcmUgaW5jcmVhc2luZ2x5IG9wdGltaXplZCBieSBhdXRvbWF0ZWQgZmVlZGJhY2sgbG9vcHMsIHByb2R1Y2luZyBsb25nIHN0cnVjdHVyZWQgYXJ0aWZhY3RzIHdob3NlIGludGVybmFsIHZhbHVlIHJlbWFpbnMgdW5jbGVhci4gV2Ugc3R1ZHkgc2tpbGwgdmFsdWF0aW9uOiBhc3NpZ25pbmcgY3JlZGl0IHRvIHRoZSBpbnRlcm5hbCB1bml0cyBvZiBhIGZpeGVkIHNraWxsLCBzdWNoIGFzIHJ1bGVzLCBleGFtcGxlcywgc2NyaXB0cywgYW5kIGhldXJpc3RpY3MsIHVuZGVyIGEgZml4ZWQgYWdlbnQgYW5kIGhlbGQtb3V0IHRhc2sgZGlzdHJpYnV0aW9uLiBTa2lsbCB2YWx1YXRpb24gZGlmZmVycyBmcm9tIGRhdGEgb3IgcHJvbXB0LXNwYW4gdmFsdWF0aW9uIGJlY2F1c2Ugc2tpbGwgdW5pdHMgYXJlIHN0cnVjdHVyZWQ6IHRoZXkgbWF5IGRlcGVuZCBvbiBvdGhlciB1bml0cywgYmVsb25nIHRvIGEgZG9jdW1lbnQgaGllcmFyY2h5LCB0cmlnZ2VyIGFnZW50IGJlaGF2aW9yLCBhbmQgY29uc3VtZSBsaW1pdGVkIHByb21wdCBjb250ZXh0LiBXZSBpbnRyb2R1Y2UgU2tpbGxTViwgYSBzdHJ1Y3R1cmUtYXdhcmUgU2hhcGxleS1zdHlsZSBmcmFtZXdvcmsgZm9yIHNraWxsIHZhbHVhdGlvbi4gU2tpbGxTViBjb21waWxlcyBhIHNraWxsIGludG8gdW5pdHMsIGRlcGVuZGVuY2llcywgYW5kIGhpZXJhcmNoeSwgc28gdGhhdCBvbmx5IHZhbGlkIGNvdW50ZXJmYWN0dWFsIHNraWxscyBhcmUgZXZhbHVhdGVkLiBJdCB1c2VzIHBhaXJlZCBkZWxldGlvbiBhbmQgbGVuZ3RoLW5ldXRyYWwgcGFkZGluZyB0byBzZXBhcmF0ZSBjb250ZW50IHZhbHVlIGZyb20gY29udGV4dCBjb3N0LCBhbmQgZXN0aW1hdGVzIHRoZSByZXN1bHRpbmcgdmFsdWVzIHdpdGggYSByb2xsb3V0LWJ1ZGdldGVkIGVzdGltYXRvciBmb3Igbm9pc3kgYWdlbnQgZXZhbHVhdGlvbnMuIE9uIGZvdXIgYWdlbnRpYyBiZW5jaG1hcmtzLCB3ZSBhc3Nlc3MgdGhlIGZhaXRoZnVsbmVzcywgYWN0aW9uYWJpbGl0eSwgYW5kIGV4cGxhbmF0aW9uIG9mIFNraWxsU1Y6IGl0IHJlY292ZXJzIHVuaXQgaW50ZXJhY3Rpb25zLCBwcmVzZXJ2ZXMgYWdncmVnYXRlIHNraWxsIGxpZnQsIGFuZCBndWlkZXMgc2FmZSBwcnVuaW5nIGFuZCBjb21wcmVzc2lvbi48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2608.04562",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-06T01:55:37.000Z",
+ "registered": "2026-08-06T01:55:38.000Z",
+ "published": "2026",
+ "updated": "2026-08-06T01:55:38.000Z"
+}

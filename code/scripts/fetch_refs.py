@@ -71,7 +71,7 @@ def meta_for(doi: str) -> dict:
 
 
 def arxiv_abstract(aid: str) -> str:
-    xml = get(f"http://export.arxiv.org/api/query?id_list={aid}", as_json=False)
+    xml = get(f"https://export.arxiv.org/api/query?id_list={aid}", as_json=False)
     ns = {"a": "http://www.w3.org/2005/Atom"}
     e = ET.fromstring(xml).find("a:entry", ns)
     return "" if e is None else re.sub(r"\s+", " ", e.findtext("a:summary", "", ns)).strip()

@@ -1,0 +1,245 @@
+{
+ "doi": "10.48550/arxiv.2403.12968",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2403.12968",
+ "identifiers": [
+  {
+   "identifier": "2403.12968",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2403.12968"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Pan, Zhuoshi",
+   "nameType": "Personal",
+   "givenName": "Zhuoshi",
+   "familyName": "Pan",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Wu, Qianhui",
+   "nameType": "Personal",
+   "givenName": "Qianhui",
+   "familyName": "Wu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Jiang, Huiqiang",
+   "nameType": "Personal",
+   "givenName": "Huiqiang",
+   "familyName": "Jiang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Xia, Menglin",
+   "nameType": "Personal",
+   "givenName": "Menglin",
+   "familyName": "Xia",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Luo, Xufang",
+   "nameType": "Personal",
+   "givenName": "Xufang",
+   "familyName": "Luo",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Jue",
+   "nameType": "Personal",
+   "givenName": "Jue",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Lin, Qingwei",
+   "nameType": "Personal",
+   "givenName": "Qingwei",
+   "familyName": "Lin",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "R\u00fchle, Victor",
+   "nameType": "Personal",
+   "givenName": "Victor",
+   "familyName": "R\u00fchle",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Yang, Yuqing",
+   "nameType": "Personal",
+   "givenName": "Yuqing",
+   "familyName": "Yang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Lin, Chin-Yew",
+   "nameType": "Personal",
+   "givenName": "Chin-Yew",
+   "familyName": "Lin",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhao, H. Vicky",
+   "nameType": "Personal",
+   "givenName": "H. Vicky",
+   "familyName": "Zhao",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Qiu, Lili",
+   "nameType": "Personal",
+   "givenName": "Lili",
+   "familyName": "Qiu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhang, Dongmei",
+   "nameType": "Personal",
+   "givenName": "Dongmei",
+   "familyName": "Zhang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2024,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Computation and Language (cs.CL)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Machine Learning (cs.LG)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2024-03-19T17:59:56Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-03-20T01:28:18Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024-08-12T04:48:11Z",
+   "dateType": "Submitted",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2024-08-13T00:53:19Z",
+   "dateType": "Updated",
+   "dateInformation": "v2"
+  },
+  {
+   "date": "2024-03",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2024",
+   "dateType": "Issued"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "2",
+ "rightsList": [
+  {
+   "rights": "arXiv.org perpetual, non-exclusive license",
+   "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "This paper focuses on task-agnostic prompt compression for better generalizability and efficiency. Considering the redundancy in natural language, existing approaches compress prompts by removing tokens or lexical units according to their information entropy obtained from a causal language model such as LLaMa-7B. The challenge is that information entropy may be a suboptimal compression metric: (i) it only leverages unidirectional context and may fail to capture all essential information needed for prompt compression; (ii) it is not aligned with the prompt compression objective.\n To address these issues, we propose a data distillation procedure to derive knowledge from an LLM to compress prompts without losing crucial information, and meantime, introduce an extractive text compression dataset. We formulate prompt compression as a token classification problem to guarantee the faithfulness of the compressed prompt to the original one, and use a Transformer encoder as the base architecture to capture all essential information for prompt compression from the full bidirectional context. Our approach leads to lower latency by explicitly learning the compression objective with smaller models such as XLM-RoBERTa-large and mBERT.\n We evaluate our method on both in-domain and out-of-domain datasets, including MeetingBank, LongBench, ZeroScrolls, GSM8K, and BBH. Despite its small size, our model shows significant performance gains over strong baselines and demonstrates robust generalization ability across different LLMs. Additionally, our model is 3x-6x faster than existing prompt compression methods, while accelerating the end-to-end latency by 1.6x-2.9x with compression ratios of 2x-5x. Our code is available at https://aka.ms/LLMLingua-2.",
+   "descriptionType": "Abstract"
+  },
+  {
+   "description": "Accepted at Findings of ACL 2024",
+   "descriptionType": "Other"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNDAzLjEyOTY4PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjQwMy4xMjk2ODwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5QYW4sIFpodW9zaGk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpodW9zaGk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UGFuPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPld1LCBRaWFuaHVpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5RaWFuaHVpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPld1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkppYW5nLCBIdWlxaWFuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SHVpcWlhbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Smlhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+WGlhLCBNZW5nbGluPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NZW5nbGluPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlhpYTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MdW8sIFh1ZmFuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WHVmYW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkx1bzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFuZywgSnVlPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KdWU8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Wmhhbmc8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TGluLCBRaW5nd2VpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5RaW5nd2VpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5Sw7xobGUsIFZpY3RvcjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+VmljdG9yPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlLDvGhsZTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZYW5nLCBZdXFpbmc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPll1cWluZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5ZYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpbiwgQ2hpbi1ZZXc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkNoaW4tWWV3PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaGFvLCBILiBWaWNreTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SC4gVmlja3k8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WmhhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5RaXUsIExpbGk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkxpbGk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UWl1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpoYW5nLCBEb25nbWVpPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5Eb25nbWVpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpoYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5MTE1MaW5ndWEtMjogRGF0YSBEaXN0aWxsYXRpb24gZm9yIEVmZmljaWVudCBhbmQgRmFpdGhmdWwgVGFzay1BZ25vc3RpYyBQcm9tcHQgQ29tcHJlc3Npb248L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjQ8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRhdGlvbiBhbmQgTGFuZ3VhZ2UgKGNzLkNMKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPk1hY2hpbmUgTGVhcm5pbmcgKGNzLkxHKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjQtMDMtMTlUMTc6NTk6NTZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjQtMDMtMjBUMDE6Mjg6MThaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNC0wOC0xMlQwNDo0ODoxMVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAyNC0wOC0xM1QwMDo1MzoxOVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI0LTAzPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjI8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGlzIHBhcGVyIGZvY3VzZXMgb24gdGFzay1hZ25vc3RpYyBwcm9tcHQgY29tcHJlc3Npb24gZm9yIGJldHRlciBnZW5lcmFsaXphYmlsaXR5IGFuZCBlZmZpY2llbmN5LiBDb25zaWRlcmluZyB0aGUgcmVkdW5kYW5jeSBpbiBuYXR1cmFsIGxhbmd1YWdlLCBleGlzdGluZyBhcHByb2FjaGVzIGNvbXByZXNzIHByb21wdHMgYnkgcmVtb3ZpbmcgdG9rZW5zIG9yIGxleGljYWwgdW5pdHMgYWNjb3JkaW5nIHRvIHRoZWlyIGluZm9ybWF0aW9uIGVudHJvcHkgb2J0YWluZWQgZnJvbSBhIGNhdXNhbCBsYW5ndWFnZSBtb2RlbCBzdWNoIGFzIExMYU1hLTdCLiBUaGUgY2hhbGxlbmdlIGlzIHRoYXQgaW5mb3JtYXRpb24gZW50cm9weSBtYXkgYmUgYSBzdWJvcHRpbWFsIGNvbXByZXNzaW9uIG1ldHJpYzogKGkpIGl0IG9ubHkgbGV2ZXJhZ2VzIHVuaWRpcmVjdGlvbmFsIGNvbnRleHQgYW5kIG1heSBmYWlsIHRvIGNhcHR1cmUgYWxsIGVzc2VudGlhbCBpbmZvcm1hdGlvbiBuZWVkZWQgZm9yIHByb21wdCBjb21wcmVzc2lvbjsgKGlpKSBpdCBpcyBub3QgYWxpZ25lZCB3aXRoIHRoZSBwcm9tcHQgY29tcHJlc3Npb24gb2JqZWN0aXZlLgogIFRvIGFkZHJlc3MgdGhlc2UgaXNzdWVzLCB3ZSBwcm9wb3NlIGEgZGF0YSBkaXN0aWxsYXRpb24gcHJvY2VkdXJlIHRvIGRlcml2ZSBrbm93bGVkZ2UgZnJvbSBhbiBMTE0gdG8gY29tcHJlc3MgcHJvbXB0cyB3aXRob3V0IGxvc2luZyBjcnVjaWFsIGluZm9ybWF0aW9uLCBhbmQgbWVhbnRpbWUsIGludHJvZHVjZSBhbiBleHRyYWN0aXZlIHRleHQgY29tcHJlc3Npb24gZGF0YXNldC4gV2UgZm9ybXVsYXRlIHByb21wdCBjb21wcmVzc2lvbiBhcyBhIHRva2VuIGNsYXNzaWZpY2F0aW9uIHByb2JsZW0gdG8gZ3VhcmFudGVlIHRoZSBmYWl0aGZ1bG5lc3Mgb2YgdGhlIGNvbXByZXNzZWQgcHJvbXB0IHRvIHRoZSBvcmlnaW5hbCBvbmUsIGFuZCB1c2UgYSBUcmFuc2Zvcm1lciBlbmNvZGVyIGFzIHRoZSBiYXNlIGFyY2hpdGVjdHVyZSB0byBjYXB0dXJlIGFsbCBlc3NlbnRpYWwgaW5mb3JtYXRpb24gZm9yIHByb21wdCBjb21wcmVzc2lvbiBmcm9tIHRoZSBmdWxsIGJpZGlyZWN0aW9uYWwgY29udGV4dC4gT3VyIGFwcHJvYWNoIGxlYWRzIHRvIGxvd2VyIGxhdGVuY3kgYnkgZXhwbGljaXRseSBsZWFybmluZyB0aGUgY29tcHJlc3Npb24gb2JqZWN0aXZlIHdpdGggc21hbGxlciBtb2RlbHMgc3VjaCBhcyBYTE0tUm9CRVJUYS1sYXJnZSBhbmQgbUJFUlQuCiAgV2UgZXZhbHVhdGUgb3VyIG1ldGhvZCBvbiBib3RoIGluLWRvbWFpbiBhbmQgb3V0LW9mLWRvbWFpbiBkYXRhc2V0cywgaW5jbHVkaW5nIE1lZXRpbmdCYW5rLCBMb25nQmVuY2gsIFplcm9TY3JvbGxzLCBHU004SywgYW5kIEJCSC4gRGVzcGl0ZSBpdHMgc21hbGwgc2l6ZSwgb3VyIG1vZGVsIHNob3dzIHNpZ25pZmljYW50IHBlcmZvcm1hbmNlIGdhaW5zIG92ZXIgc3Ryb25nIGJhc2VsaW5lcyBhbmQgZGVtb25zdHJhdGVzIHJvYnVzdCBnZW5lcmFsaXphdGlvbiBhYmlsaXR5IGFjcm9zcyBkaWZmZXJlbnQgTExNcy4gQWRkaXRpb25hbGx5LCBvdXIgbW9kZWwgaXMgM3gtNnggZmFzdGVyIHRoYW4gZXhpc3RpbmcgcHJvbXB0IGNvbXByZXNzaW9uIG1ldGhvZHMsIHdoaWxlIGFjY2VsZXJhdGluZyB0aGUgZW5kLXRvLWVuZCBsYXRlbmN5IGJ5IDEuNngtMi45eCB3aXRoIGNvbXByZXNzaW9uIHJhdGlvcyBvZiAyeC01eC4gT3VyIGNvZGUgaXMgYXZhaWxhYmxlIGF0IGh0dHBzOi8vYWthLm1zL0xMTUxpbmd1YS0yLjwvZGVzY3JpcHRpb24+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJPdGhlciI+QWNjZXB0ZWQgYXQgRmluZGluZ3Mgb2YgQUNMIDIwMjQ8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+ "url": "https://arxiv.org/abs/2403.12968",
+ "contentUrl": null,
+ "metadataVersion": 1,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 4,
+ "citationsOverTime": [
+  {
+   "year": "2026",
+   "total": 4
+  }
+ ],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2024-03-20T02:45:21.000Z",
+ "registered": "2024-03-20T02:45:22.000Z",
+ "published": "2024",
+ "updated": "2024-08-13T03:00:15.000Z"
+}

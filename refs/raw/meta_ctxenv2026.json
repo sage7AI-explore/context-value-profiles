@@ -1,0 +1,151 @@
+{
+ "doi": "10.48550/arxiv.2608.21690",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2608.21690",
+ "identifiers": [
+  {
+   "identifier": "2608.21690",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2608.21690"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Lin, Yin",
+   "nameType": "Personal",
+   "givenName": "Yin",
+   "familyName": "Lin",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ang, Elaine",
+   "nameType": "Personal",
+   "givenName": "Elaine",
+   "familyName": "Ang",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhu, Erkang",
+   "nameType": "Personal",
+   "givenName": "Erkang",
+   "familyName": "Zhu",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Ding, Bolin",
+   "nameType": "Personal",
+   "givenName": "Bolin",
+   "familyName": "Ding",
+   "affiliation": [],
+   "nameIdentifiers": []
+  },
+  {
+   "name": "Zhou, Jingren",
+   "nameType": "Personal",
+   "givenName": "Jingren",
+   "familyName": "Zhou",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Context as an Environment: Programmatic Context Management for Long-Horizon Agents"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-08-21T23:39:19Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08-25T00:12:53Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-08",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "LLM agents increasingly take on long-running tasks whose history grows far beyond a single model context window. Existing approaches compress earlier interactions or extract selected information into fixed memory representations, committing to what to preserve before future needs are known. We present Scroll, a context manager that treats each agent session as an executable Session Environment. The environment is backed by an append-only Event Log and a sandboxed, persistent Python kernel. The kernel maintains a typed namespace across model calls, allowing tool outputs, retrieved history, and derived state to be bound to variables rather than serialized into the prompt at each call. Model-written code searches, materializes, and transforms session state through exec; only explicitly printed projections enter the model's working view for the next call. Context management thus becomes a programming task that inherits the improving coding abilities of LLMs, while the Event Log preserves lossless historical ground truth. As the working view approaches its budget, stale spans are evicted but remain recoverable: an eviction index keeps compact landmarks tied to exact Event Log addresses, so that the agent navigates directly to evicted regions instead of searching the full log. With Qwen3.8-Max as the backbone, Scroll achieves 94.8% on LongMemEval_S; 73.1% on BEAM_10M, surpassing the best published memory system by 5.1 points; and 86.7% on LOCA_256K, exceeding the best published long-horizon agent by 37.4 points.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjIxNjkwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4yMTY5MDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaW4sIFlpbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+WWluPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkxpbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5BbmcsIEVsYWluZTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RWxhaW5lPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkFuZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaHUsIEVya2FuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RXJrYW5nPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpodTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5EaW5nLCBCb2xpbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Qm9saW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RGluZzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5aaG91LCBKaW5ncmVuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KaW5ncmVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlpob3U8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkNvbnRleHQgYXMgYW4gRW52aXJvbm1lbnQ6IFByb2dyYW1tYXRpYyBDb250ZXh0IE1hbmFnZW1lbnQgZm9yIExvbmctSG9yaXpvbiBBZ2VudHM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5BcnRpZmljaWFsIEludGVsbGlnZW5jZSAoY3MuQUkpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0yMVQyMzozOToxOVo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0yNVQwMDoxMjo1M1o8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyIgcmlnaHRzSWRlbnRpZmllclNjaGVtZT0iU1BEWCIgcmlnaHRzSWRlbnRpZmllcj0iQ0MtQlktNC4wIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIDQuMCBJbnRlcm5hdGlvbmFsPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+TExNIGFnZW50cyBpbmNyZWFzaW5nbHkgdGFrZSBvbiBsb25nLXJ1bm5pbmcgdGFza3Mgd2hvc2UgaGlzdG9yeSBncm93cyBmYXIgYmV5b25kIGEgc2luZ2xlIG1vZGVsIGNvbnRleHQgd2luZG93LiBFeGlzdGluZyBhcHByb2FjaGVzIGNvbXByZXNzIGVhcmxpZXIgaW50ZXJhY3Rpb25zIG9yIGV4dHJhY3Qgc2VsZWN0ZWQgaW5mb3JtYXRpb24gaW50byBmaXhlZCBtZW1vcnkgcmVwcmVzZW50YXRpb25zLCBjb21taXR0aW5nIHRvIHdoYXQgdG8gcHJlc2VydmUgYmVmb3JlIGZ1dHVyZSBuZWVkcyBhcmUga25vd24uIFdlIHByZXNlbnQgU2Nyb2xsLCBhIGNvbnRleHQgbWFuYWdlciB0aGF0IHRyZWF0cyBlYWNoIGFnZW50IHNlc3Npb24gYXMgYW4gZXhlY3V0YWJsZSBTZXNzaW9uIEVudmlyb25tZW50LiBUaGUgZW52aXJvbm1lbnQgaXMgYmFja2VkIGJ5IGFuIGFwcGVuZC1vbmx5IEV2ZW50IExvZyBhbmQgYSBzYW5kYm94ZWQsIHBlcnNpc3RlbnQgUHl0aG9uIGtlcm5lbC4gVGhlIGtlcm5lbCBtYWludGFpbnMgYSB0eXBlZCBuYW1lc3BhY2UgYWNyb3NzIG1vZGVsIGNhbGxzLCBhbGxvd2luZyB0b29sIG91dHB1dHMsIHJldHJpZXZlZCBoaXN0b3J5LCBhbmQgZGVyaXZlZCBzdGF0ZSB0byBiZSBib3VuZCB0byB2YXJpYWJsZXMgcmF0aGVyIHRoYW4gc2VyaWFsaXplZCBpbnRvIHRoZSBwcm9tcHQgYXQgZWFjaCBjYWxsLiBNb2RlbC13cml0dGVuIGNvZGUgc2VhcmNoZXMsIG1hdGVyaWFsaXplcywgYW5kIHRyYW5zZm9ybXMgc2Vzc2lvbiBzdGF0ZSB0aHJvdWdoIGV4ZWM7IG9ubHkgZXhwbGljaXRseSBwcmludGVkIHByb2plY3Rpb25zIGVudGVyIHRoZSBtb2RlbCdzIHdvcmtpbmcgdmlldyBmb3IgdGhlIG5leHQgY2FsbC4gQ29udGV4dCBtYW5hZ2VtZW50IHRodXMgYmVjb21lcyBhIHByb2dyYW1taW5nIHRhc2sgdGhhdCBpbmhlcml0cyB0aGUgaW1wcm92aW5nIGNvZGluZyBhYmlsaXRpZXMgb2YgTExNcywgd2hpbGUgdGhlIEV2ZW50IExvZyBwcmVzZXJ2ZXMgbG9zc2xlc3MgaGlzdG9yaWNhbCBncm91bmQgdHJ1dGguIEFzIHRoZSB3b3JraW5nIHZpZXcgYXBwcm9hY2hlcyBpdHMgYnVkZ2V0LCBzdGFsZSBzcGFucyBhcmUgZXZpY3RlZCBidXQgcmVtYWluIHJlY292ZXJhYmxlOiBhbiBldmljdGlvbiBpbmRleCBrZWVwcyBjb21wYWN0IGxhbmRtYXJrcyB0aWVkIHRvIGV4YWN0IEV2ZW50IExvZyBhZGRyZXNzZXMsIHNvIHRoYXQgdGhlIGFnZW50IG5hdmlnYXRlcyBkaXJlY3RseSB0byBldmljdGVkIHJlZ2lvbnMgaW5zdGVhZCBvZiBzZWFyY2hpbmcgdGhlIGZ1bGwgbG9nLiBXaXRoIFF3ZW4zLjgtTWF4IGFzIHRoZSBiYWNrYm9uZSwgU2Nyb2xsIGFjaGlldmVzIDk0LjglIG9uIExvbmdNZW1FdmFsX1M7IDczLjElIG9uIEJFQU1fMTBNLCBzdXJwYXNzaW5nIHRoZSBiZXN0IHB1Ymxpc2hlZCBtZW1vcnkgc3lzdGVtIGJ5IDUuMSBwb2ludHM7IGFuZCA4Ni43JSBvbiBMT0NBXzI1NkssIGV4Y2VlZGluZyB0aGUgYmVzdCBwdWJsaXNoZWQgbG9uZy1ob3Jpem9uIGFnZW50IGJ5IDM3LjQgcG9pbnRzLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2608.21690",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-08-25T03:02:21.000Z",
+ "registered": "2026-08-25T03:02:22.000Z",
+ "published": "2026",
+ "updated": "2026-08-25T03:02:22.000Z"
+}

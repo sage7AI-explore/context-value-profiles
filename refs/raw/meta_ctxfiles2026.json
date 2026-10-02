@@ -1,0 +1,124 @@
+{
+ "doi": "10.48550/arxiv.2607.27250",
+ "prefix": "10.48550",
+ "suffix": "arxiv.2607.27250",
+ "identifiers": [
+  {
+   "identifier": "2607.27250",
+   "identifierType": "arXiv"
+  }
+ ],
+ "alternateIdentifiers": [
+  {
+   "alternateIdentifierType": "arXiv",
+   "alternateIdentifier": "2607.27250"
+  }
+ ],
+ "creators": [
+  {
+   "name": "Khatri, Prakhar",
+   "nameType": "Personal",
+   "givenName": "Prakhar",
+   "familyName": "Khatri",
+   "affiliation": [],
+   "nameIdentifiers": []
+  }
+ ],
+ "titles": [
+  {
+   "title": "Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories"
+  }
+ ],
+ "publisher": "arXiv",
+ "container": {},
+ "publicationYear": 2026,
+ "subjects": [
+  {
+   "lang": "en",
+   "subject": "Software Engineering (cs.SE)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "lang": "en",
+   "subject": "Artificial Intelligence (cs.AI)",
+   "subjectScheme": "arXiv"
+  },
+  {
+   "subject": "FOS: Computer and information sciences",
+   "subjectScheme": "Fields of Science and Technology (FOS)"
+  }
+ ],
+ "contributors": [],
+ "dates": [
+  {
+   "date": "2026-07-28T11:07:53Z",
+   "dateType": "Submitted",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07-31T00:00:46Z",
+   "dateType": "Updated",
+   "dateInformation": "v1"
+  },
+  {
+   "date": "2026-07",
+   "dateType": "Available",
+   "dateInformation": "v1"
+  }
+ ],
+ "language": null,
+ "types": {
+  "ris": "GEN",
+  "bibtex": "misc",
+  "citeproc": "article",
+  "schemaOrg": "CreativeWork",
+  "resourceType": "Article",
+  "resourceTypeGeneral": "Preprint"
+ },
+ "relatedIdentifiers": [],
+ "relatedItems": [],
+ "sizes": [],
+ "formats": [],
+ "version": "1",
+ "rightsList": [
+  {
+   "rights": "Creative Commons Attribution 4.0 International",
+   "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+   "schemeUri": "https://spdx.org/licenses/",
+   "rightsIdentifier": "cc-by-4.0",
+   "rightsIdentifierScheme": "SPDX"
+  }
+ ],
+ "descriptions": [
+  {
+   "description": "Persistent context files (AGENTS.md, CLAUDE.md) are standard practice for guiding AI coding agents, yet evidence for their effectiveness is contradictory. We present a controlled ablation of context-injection strategy across two frontier agents (Claude Code and Codex), 17 real tasks from 3 repositories (15 shared + 2 Codex-only), and 288 evaluated runs with gold-test evaluation. Context strategy does not measurably move correctness on either agent (bounded to &lt;=10-15pp via equivalence testing). A failure-mode triage reveals why: agents fail on implementation skill---feature design, pattern selection, exact wiring---not missing repository knowledge that a context file could supply; a manipulation probe confirms the real AGENTS.md never converts a near-miss to a pass on either agent. We further show that borderline task difficulty is agent-specific (Spearman rho=0.75), offering a candidate explanation for prior contradictions: single-agent studies draw tasks from different agents' informative bands. We release all code, data, and analysis.",
+   "descriptionType": "Abstract"
+  }
+ ],
+ "geoLocations": [],
+ "fundingReferences": [],
+ "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA3LjI3MjUwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwNy4yNzI1MDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5LaGF0cmksIFByYWtoYXI8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlByYWtoYXI8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+S2hhdHJpPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5EbyBDb250ZXh0IEZpbGVzIEhlbHAgQ29kaW5nIEFnZW50cz8gQSBUd28tQWdlbnQgQWJsYXRpb24gU3R1ZHkgb24gUmVhbCBSZXBvc2l0b3JpZXM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Tb2Z0d2FyZSBFbmdpbmVlcmluZyAoY3MuU0UpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMjhUMTE6MDc6NTNaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDctMzFUMDA6MDA6NDZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wNzwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8iIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHJpZ2h0c0lkZW50aWZpZXI9IkNDLUJZLTQuMCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiA0LjAgSW50ZXJuYXRpb25hbDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlBlcnNpc3RlbnQgY29udGV4dCBmaWxlcyAoQUdFTlRTLm1kLCBDTEFVREUubWQpIGFyZSBzdGFuZGFyZCBwcmFjdGljZSBmb3IgZ3VpZGluZyBBSSBjb2RpbmcgYWdlbnRzLCB5ZXQgZXZpZGVuY2UgZm9yIHRoZWlyIGVmZmVjdGl2ZW5lc3MgaXMgY29udHJhZGljdG9yeS4gV2UgcHJlc2VudCBhIGNvbnRyb2xsZWQgYWJsYXRpb24gb2YgY29udGV4dC1pbmplY3Rpb24gc3RyYXRlZ3kgYWNyb3NzIHR3byBmcm9udGllciBhZ2VudHMgKENsYXVkZSBDb2RlIGFuZCBDb2RleCksIDE3IHJlYWwgdGFza3MgZnJvbSAzIHJlcG9zaXRvcmllcyAoMTUgc2hhcmVkICsgMiBDb2RleC1vbmx5KSwgYW5kIDI4OCBldmFsdWF0ZWQgcnVucyB3aXRoIGdvbGQtdGVzdCBldmFsdWF0aW9uLiBDb250ZXh0IHN0cmF0ZWd5IGRvZXMgbm90IG1lYXN1cmFibHkgbW92ZSBjb3JyZWN0bmVzcyBvbiBlaXRoZXIgYWdlbnQgKGJvdW5kZWQgdG8gJmx0Oz0xMC0xNXBwIHZpYSBlcXVpdmFsZW5jZSB0ZXN0aW5nKS4gQSBmYWlsdXJlLW1vZGUgdHJpYWdlIHJldmVhbHMgd2h5OiBhZ2VudHMgZmFpbCBvbiBpbXBsZW1lbnRhdGlvbiBza2lsbC0tLWZlYXR1cmUgZGVzaWduLCBwYXR0ZXJuIHNlbGVjdGlvbiwgZXhhY3Qgd2lyaW5nLS0tbm90IG1pc3NpbmcgcmVwb3NpdG9yeSBrbm93bGVkZ2UgdGhhdCBhIGNvbnRleHQgZmlsZSBjb3VsZCBzdXBwbHk7IGEgbWFuaXB1bGF0aW9uIHByb2JlIGNvbmZpcm1zIHRoZSByZWFsIEFHRU5UUy5tZCBuZXZlciBjb252ZXJ0cyBhIG5lYXItbWlzcyB0byBhIHBhc3Mgb24gZWl0aGVyIGFnZW50LiBXZSBmdXJ0aGVyIHNob3cgdGhhdCBib3JkZXJsaW5lIHRhc2sgZGlmZmljdWx0eSBpcyBhZ2VudC1zcGVjaWZpYyAoU3BlYXJtYW4gcmhvPTAuNzUpLCBvZmZlcmluZyBhIGNhbmRpZGF0ZSBleHBsYW5hdGlvbiBmb3IgcHJpb3IgY29udHJhZGljdGlvbnM6IHNpbmdsZS1hZ2VudCBzdHVkaWVzIGRyYXcgdGFza3MgZnJvbSBkaWZmZXJlbnQgYWdlbnRzJyBpbmZvcm1hdGl2ZSBiYW5kcy4gV2UgcmVsZWFzZSBhbGwgY29kZSwgZGF0YSwgYW5kIGFuYWx5c2lzLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+ "url": "https://arxiv.org/abs/2607.27250",
+ "contentUrl": null,
+ "metadataVersion": 0,
+ "schemaVersion": "http://datacite.org/schema/kernel-4",
+ "source": "mds",
+ "isActive": true,
+ "state": "findable",
+ "reason": null,
+ "viewCount": 0,
+ "viewsOverTime": [],
+ "downloadCount": 0,
+ "downloadsOverTime": [],
+ "referenceCount": 0,
+ "citationCount": 0,
+ "citationsOverTime": [],
+ "partCount": 0,
+ "partOfCount": 0,
+ "versionCount": 0,
+ "versionOfCount": 0,
+ "created": "2026-07-31T01:57:47.000Z",
+ "registered": "2026-07-31T01:57:48.000Z",
+ "published": "2026",
+ "updated": "2026-07-31T01:57:48.000Z"
+}
