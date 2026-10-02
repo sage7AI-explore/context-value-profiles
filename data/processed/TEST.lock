@@ -1,0 +1,18 @@
+{
+ "instances_sha256": "86d748303479a1b1d10a3aa41040f14f86a5b7c50c3a5f7298413cdb17a91924",
+ "test_ids_sha256": "4b70085f75b9ada6e9161d4a50adf1851229a6f89fd22ddde95a2dd01e2b8bd9",
+ "families": {
+  "tool": {
+   "n": 300,
+   "dev": 60
+  },
+  "facts": {
+   "n": 300,
+   "dev": 60
+  },
+  "history": {
+   "n": 300,
+   "dev": 60
+  }
+ }
+}
