@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/R5n6OACnvtNQWW9cAodcqaeN1uE</id>
+  <title>arXiv Query: search_query=all:marginal AND all:value AND all:context AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:48Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:marginal+AND+(all:value+AND+(all:context+AND+all:LLM))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>28</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.22830v1</id>
+    <title>Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL</title>
+    <updated>2026-08-24T05:47:55Z</updated>
+    <link href="https://arxiv.org/abs/2608.22830v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.22830v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying LLMs for enterprise Text-to-SQL is bottlenecked less by the model than by what context reaches it: business logic spans thousands of tables, and no model can ingest a full catalog at once. We argue that the most effective place to intervene is therefore the \emph{knowledge-base context} the model consumes, and that this context should be \emph{constructed} from historical usage rather than tuned for as a fixed input. Using a query-DAG decomposition--the same family of intermediates that enterprise benchmarks like BEAVER annotate, here recovered from production SQL--we compare the value of oracle query graphs versus retrieved knowledge-base context. In this ablation, retrieved knowledge-base context provides the largest marginal improvement when added to the full oracle graph. Building on this, we optimize a distillation procedure that turns historical query profiles into reusable SQL reference cards. On a benchmark of 5176 production queries from a major online retailer, optimizing these context artifacts yields larger gains (${\sim}12$--$25\%$ AST similarity) than optimizing the retrieval harness (${\sim}3$--$12\%$). On the public BEAVER benchmark, which lacks the production-usage signals available in our internal setting, the picture is more mixed: table cards alone perform about the same as raw historical SQL. The best optimized variant retrieves both cards and raw SQL, scoring $9.00\%$ versus $6.33\%$ (p-value $0.12$) for the comparable baseline on a held-out $N{=}300$ subset, using retrieved context and harness changes but no agentic loop.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-24T05:47:55Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>COLM 2026 Workshop - Context Beyond the Window</arxiv:journal_ref>
+    <author>
+      <name>Kate Gwimm</name>
+    </author>
+    <author>
+      <name>Carson Eisenach</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.01719v3</id>
+    <title>COMI: Coarse-to-fine Context Compression via Marginal Information Gain</title>
+    <updated>2026-03-06T03:52:55Z</updated>
+    <link href="https://arxiv.org/abs/2602.01719v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.01719v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have demonstrated exceptional capabilities across diverse tasks. However, their deployment in long context scenarios remains hindered by computational inefficiency and information redundancy. Context compression methods address these challenges by significantly reducing input length and eliminating redundancy. We propose COMI, a coarse-to-fine adaptive context compression framework that jointly optimizes for semantic relevance and diversity under high compression rates. We introduce Marginal Information Gain (MIG), a metric defined as the relevance of a unit to the input query minus its semantic redundancy with other units, guiding the compression process to prioritize information that is both relevant and low redundant. The framework operates in two stages: (1) Coarse-Grained Group Reallocation, where the context is partitioned into groups and dynamically assigned compression rates based on inter-group MIG, ensuring compression budgets align with information value distribution; and (2) Fine-Grained Token Merging, where tokens within each group are fused via an intra-group MIG-based weighting mechanism, thereby preserving key semantics while avoiding the accumulation of redundancy. Extensive experiments across question-answering (e.g., NaturalQuestions, 2WikiMQA, HotpotQA and NarrativeQA), summarization (e.g., MultiNews) with various backbones (e.g., LLaMA-2-7B, Qwen2-7B) show that COMI outperforms existing baselines by a large margin, e.g., approximately 25-point Exact Match (EM) improvement under 32x compression constraint with Qwen2-7B on NaturalQuestions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T06:57:22Z</published>
+    <arxiv:comment>Accepted at ICLR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiwei Tang</name>
+    </author>
+    <author>
+      <name>Shilei Liu</name>
+    </author>
+    <author>
+      <name>Zhicheng Zhang</name>
+    </author>
+    <author>
+      <name>Yujin Yuan</name>
+    </author>
+    <author>
+      <name>Libin Zheng</name>
+    </author>
+    <author>
+      <name>Wenbo Su</name>
+    </author>
+    <author>
+      <name>Bo Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.09823v1</id>
+    <title>AMEND: Audited Margins Enable Nonblocking Drops in GPU-PIM LLM Decoding</title>
+    <updated>2026-09-09T07:25:14Z</updated>
+    <link href="https://arxiv.org/abs/2609.09823v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.09823v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autoregressive large language model (LLM) decoding re-reads a growing key-value (KV) cache at every step, so long-context attention is bound by graphics processing unit (GPU) memory bandwidth. Block-sparse attention skips low-contribution KV blocks, but a selector that decides after the current query-key (QK) product, such as max-relative block thresholding (BLASST), still reads every K block, and a processing-in-memory (PIM) filter that decides from the current query places a serial PIM stage on the critical path. We present AMEND, a GPU-PIM attention design that removes both dependencies. AMEND predicts each block's BLASST verdict from margins audited at earlier steps, so the GPU fetches only predicted survivors while near-bank PIM units in high-bandwidth memory (HBM) concurrently score the omitted complement. A stack-level controller merges both observations, updates the predictor, and eagerly generates the next step's mask, so every predicted drop is re-observed without blocking the current token. Operating points are selected offline by constrained Bayesian optimization under a false-drop budget. Across LongBench and RULER runs, AMEND preserves near-baseline task quality; in simulation at batch size 8, it achieves $1.40$-$3.63\times$ end-to-end decode speedup and 28-66% lower dynamic decode energy than dense attention across 8K-64K contexts.</summary>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-09T07:25:14Z</published>
+    <arxiv:comment>17 pages, including appendices and references</arxiv:comment>
+    <arxiv:primary_category term="cs.AR"/>
+    <author>
+      <name>Zuxiong Tan</name>
+    </author>
+    <author>
+      <name>Will Wei-Jen Wang</name>
+    </author>
+    <author>
+      <name>Wei Shao</name>
+    </author>
+    <author>
+      <name>Ali Karkehabadi</name>
+    </author>
+    <author>
+      <name>Houman Homayoun</name>
+    </author>
+    <author>
+      <name>Avesta Sasan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.17417v2</id>
+    <title>Is Your LLM-as-a-Recommender Agent Trustable? LLMs' Recommendation is Easily Hacked by Biases (Preferences)</title>
+    <updated>2026-03-20T13:11:53Z</updated>
+    <link href="https://arxiv.org/abs/2603.17417v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.17417v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current Large Language Models (LLMs) are gradually exploited in practically valuable agentic workflows such as Deep Research, E-commerce recommendation, and job recruitment. In these applications, LLMs need to select some optimal solutions from massive candidates, which we term as \textit{LLM-as-a-Recommender} paradigm. However, the reliability of using LLM agents for recommendations is underexplored. In this work, we introduce a \textbf{Bias} \textbf{Rec}ommendation \textbf{Bench}mark (\textbf{BiasRecBench}) to highlight the critical vulnerability of such agents to biases in high-value real-world tasks. The benchmark includes three practical domains: paper review, e-commerce, and job recruitment. We construct a \textsc{Bias Synthesis Pipeline with Calibrated Quality Margins} that 1) synthesizes evaluation data by controlling the quality gap between optimal and sub-optimal options to provide a calibrated testbed to elicit the vulnerability to biases; 2) injects contextual biases that are logical and suitable for option contexts. Extensive experiments on both SOTA (Gemini-{2.5,3}-pro, GPT-4o, DeepSeek-R1) and small-scale LLMs reveal that agents frequently succumb to injected biases despite having sufficient reasoning capabilities to identify the ground truth. These findings expose a significant reliability bottleneck in current agentic workflows, calling for specialized alignment strategies for LLM-as-a-Recommender. The complete code and evaluation datasets will be made publicly available shortly.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T06:50:48Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Zichen Tang</name>
+    </author>
+    <author>
+      <name>Zirui Zhang</name>
+    </author>
+    <author>
+      <name>Qian Wang</name>
+    </author>
+    <author>
+      <name>Zhenheng Tang</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Xiaowen Chu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.07523v3</id>
+    <title>DemoShapley: Valuation of Demonstrations for In-Context Learning</title>
+    <updated>2025-11-21T21:39:00Z</updated>
+    <link href="https://arxiv.org/abs/2410.07523v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.07523v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) using in-context learning (ICL) excel in many tasks without task-specific fine-tuning. However, demonstration selection and ordering greatly impact ICL effectiveness. Focus on this issue, we propose DemoShapley, a Shapley-value based method that evaluates each demonstration's contribution by measuring its marginal effect across different prompt permutations. To further account for ICL's limited context windows and frequent low-shot settings, we introduce Beta-DemoShapley, a weighted extension that emphasizes the influence of smaller prompt sizes. Experiments on multiple benchmarks show that DemoShapley consistently outperforms existing influence-based selection strategies, while Beta-DemoShapley further improves performance in low-shot scenarios. Both methods also detect mislabeled data, enhance generalization to out-of-distribution tasks, and reduce demographic bias. Together, they provide a unified and robust framework for demonstration valuation in ICL.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-10T01:35:03Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shan Xie</name>
+    </author>
+    <author>
+      <name>Man Luo</name>
+    </author>
+    <author>
+      <name>Chadly Daniel Stern</name>
+    </author>
+    <author>
+      <name>Mengnan Du</name>
+    </author>
+    <author>
+      <name>Lu Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.23986v2</id>
+    <title>The Shadow Price of Intelligence: Quality Degradation in LLM Inference as a Supply Chain Problem</title>
+    <updated>2026-08-29T15:05:27Z</updated>
+    <link href="https://arxiv.org/abs/2608.23986v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.23986v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model providers are compute constrained, and their universal response to congestion is to degrade service: route queries to smaller models, cut reasoning effort, truncate context. The industry's accounting says this saves money. We show the accounting is wrong, because it prices a query when the customer buys an answer. A degraded answer fails with some probability, and a failed answer either returns as a retry, inflating arrivals when the system is most loaded, or departs as churn, destroying lifetime value on a ledger no cost dashboard displays. We model inference allocation with three classical primitives: a newsvendor whose stockout cost is churned lifetime value, a geometric retry multiplier in which the recycled product is dissatisfaction, and a two-regime transient queue whose arrival rate is made endogenous by retries. Statically, there is a nonempty, measurable regime in which a cheaper model saves energy per satisfied answer while consuming strictly more capacity per satisfied answer, so the discount inverts exactly when capacity binds. Dynamically, a reactive throttle fired during a surge can cross an ignition threshold beyond which it manufactures more traffic than it sheds, and a release rule set below the degraded equilibrium converts a transient surge into a permanent degraded regime. With heterogeneous customers, throttling is a transportation problem in retry-inflated load whose optimal policy rations intelligence by critical ratio, class by class, and whose dual, the shadow price of intelligence, prices a marginal query by class and by hour; closed-form trajectories make it computable in milliseconds. Stochastic analysis sharpens rather than erodes the thesis: the ignition boundary acquires a predicted width, and noise punishes the reactive policy that parks the system against it. Under congestion, throttling is not a cost lever but a demand lever.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PF" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T02:26:24Z</published>
+    <arxiv:comment>40 pages, 12 figures. Numerical instances calibrated to public benchmark data for five LLM providers</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Elioth Sanabria</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.00243v1</id>
+    <title>"OpenBloom": A Question-Based LLM Tool to Support Stigma Reduction in Reproductive Well-Being</title>
+    <updated>2026-01-30T19:05:35Z</updated>
+    <link href="https://arxiv.org/abs/2602.00243v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.00243v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reproductive well-being education remains widely stigmatized across diverse cultural contexts, constraining how individuals access and interpret reproductive health knowledge. We designed and evaluated OpenBloom, a stigma-sensitive, AI-mediated system that uses LLMs to transform reproductive health articles into reflective, question-based learning prompts. We employed OpenBloom as a design probe, aiming to explore the emerging challenges of reproductive well-being stigma through LLMs. Through surveys, semi-structured interviews, and focus group discussions, we examine how sociocultural stigma shapes participants' engagements with AI-generated questions and the opportunities of inquiry-based reproductive health education. Our findings identify key design considerations for stigma-sensitive LLM, including empathetic framing, inclusive language, values-based reflection, and explicit representation of marginalized identities. However, while current LLM outputs largely meet expectations for cultural sensitivity and non-offensiveness, they default to superficial rephrasing and factual recall rather than critical reflection. This guides well-being HCI design in sensitive health domains toward culturally grounded, participatory workflows.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-30T19:05:35Z</published>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Ashley Hua</name>
+    </author>
+    <author>
+      <name>Adya Daruka</name>
+    </author>
+    <author>
+      <name>Yang Hong</name>
+    </author>
+    <author>
+      <name>Sharifa Sultana</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.05176v1</id>
+    <title>Towards A Cultural Intelligence and Values Inferences Quality Benchmark for Community Values and Common Knowledge</title>
+    <updated>2025-12-04T17:15:47Z</updated>
+    <link href="https://arxiv.org/abs/2512.05176v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.05176v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have emerged as a powerful technology, and thus, we have seen widespread adoption and use on software engineering teams. Most often, LLMs are designed as "general purpose" technologies meant to represent the general population. Unfortunately, this often means alignment with predominantly Western Caucasian narratives and misalignment with other cultures and populations that engage in collaborative innovation. In response to this misalignment, there have been recent efforts centered on the development of "culturally-informed" LLMs, such as ChatBlackGPT, that are capable of better aligning with historically marginalized experiences and perspectives. Despite this progress, there has been little effort aimed at supporting our ability to develop and evaluate culturally-informed LLMs. A recent effort proposed an approach for developing a national alignment benchmark that emphasizes alignment with national social values and common knowledge. However, given the range of cultural identities present in the United States (U.S.), a national alignment benchmark is an ineffective goal for broader representation. To help fill this gap in this US context, we propose a replication study that translates the process used to develop KorNAT, a Korean National LLM alignment benchmark, to develop CIVIQ, a Cultural Intelligence and Values Inference Quality benchmark centered on alignment with community social values and common knowledge. Our work provides a critical foundation for research and development aimed at cultural alignment of AI technologies in practice.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-04T17:15:47Z</published>
+    <arxiv:comment>Under review</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Brittany Johnson</name>
+    </author>
+    <author>
+      <name>Erin Reddick</name>
+    </author>
+    <author>
+      <name>Angela D. R. Smith</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27600v1</id>
+    <title>Back from the Future: Key-Value Cache Management by Counter-Causal Surprise</title>
+    <updated>2026-07-30T02:42:51Z</updated>
+    <link href="https://arxiv.org/abs/2607.27600v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27600v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Key-value (KV) cache management through compression and eviction strategies has emerged as an important research direction in recent years. Computational demands of large language models (LLMs) and their multi-modal variants during output generation can be partially alleviated by caching previous key and value calculations needed by subsequent scaled dot-product attention operations. However, this leads to another problem: the size of the resulting KV cache grows linearly with context length and quickly consumes all available GPU memory when either the prompt or the generated output are long. KV cache management periodically prunes entries from the cache thereby reducing its memory footprint while attempting to retain sufficient information for accurate generation. A by-product is faster inference speed. We propose a simple yet effective KV eviction scheme motivated by the insight that past tokens which can be well-predicted from more recent tokens are redundant and their associated keys and values can be removed from the cache. To score entries for eviction we run the model on the tokens in their original order, reusing the key and value representations already stored in the KV cache, and applying a counter-causal attention mask so that each position attends only to its future context. This is in-distribution, tied directly to the actual cache contents, and requires no additional training. To further reduce cost, we additionally propose a fast single-layer approximation that restricts the counter-causal pass to the last transformer layer, achieving a significant speedup per refresh cycle at marginal accuracy cost. We evaluate our strategy on various open-source LLMs and benchmark datasets showing competitive or improved performance over other state-of-the-art methods. Reference code is available at https://github.com/metacognitionai/counter_causal.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T02:42:51Z</published>
+    <arxiv:comment>17 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Stephen Gould</name>
+    </author>
+    <author>
+      <name>Anton van den Hengel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08234v1</id>
+    <title>When Does Value-Aware KV Eviction Help? A Fixed-Contract Diagnostic for Non-Monotone Cache Compression</title>
+    <updated>2026-05-07T00:36:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.08234v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08234v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-context LLM inference is bottlenecked by the memory and bandwidth cost of reading large KV caches during decoding. KV compression reduces this cost by keeping only part of the cache, but task accuracy alone does not identify why a selector succeeds or fails. A selector can fail at three steps: it may miss the evidence future decoding needs, give high scores to tokens that do not affect the output, or break related evidence when fitting scores into a small cache. We introduce a fixed-contract diagnostic that holds the selector's setup fixed and changes one decision slot at a time. For value ranking, the probe combines a block's attention mass with the estimated output change from removing it. On LongBench across three models and two budgets, the probe is positive on 72.6% of positive-margin cells and 32.4% of nonpositive-margin cells. NeedleBench M-RT at 32k and a RULER 8k check probe support closure under branched retrieval, and a 264-cell sign evaluation separates support recovery and output-value ranking from leverage effects near the boundary. The resulting order is to recover decode-side evidence, rank its output value, and preserve coupled evidence during projection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-07T00:36:59Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ruijie Zhang</name>
+    </author>
+    <author>
+      <name>Haozhe Liang</name>
+    </author>
+    <author>
+      <name>Da Chang</name>
+    </author>
+    <author>
+      <name>Li Hu</name>
+    </author>
+    <author>
+      <name>Fanqi Kong</name>
+    </author>
+    <author>
+      <name>Huaxiao Yin</name>
+    </author>
+    <author>
+      <name>Yu Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.12599v4</id>
+    <title>Kimi k1.5: Scaling Reinforcement Learning with LLMs</title>
+    <updated>2025-06-03T02:14:54Z</updated>
+    <link href="https://arxiv.org/abs/2501.12599v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.12599v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language model pretraining with next token prediction has proved effective for scaling compute but is limited to the amount of available training data. Scaling reinforcement learning (RL) unlocks a new axis for the continued improvement of artificial intelligence, with the promise that large language models (LLMs) can scale their training data by learning to explore with rewards. However, prior published work has not produced competitive results. In light of this, we report on the training practice of Kimi k1.5, our latest multi-modal LLM trained with RL, including its RL training techniques, multi-modal data recipes, and infrastructure optimization. Long context scaling and improved policy optimization methods are key ingredients of our approach, which establishes a simplistic, effective RL framework without relying on more complex techniques such as Monte Carlo tree search, value functions, and process reward models. Notably, our system achieves state-of-the-art reasoning performance across multiple benchmarks and modalities -- e.g., 77.5 on AIME, 96.2 on MATH 500, 94-th percentile on Codeforces, 74.9 on MathVista -- matching OpenAI's o1. Moreover, we present effective long2short methods that use long-CoT techniques to improve short-CoT models, yielding state-of-the-art short-CoT reasoning results -- e.g., 60.8 on AIME, 94.6 on MATH500, 47.3 on LiveCodeBench -- outperforming existing short-CoT models such as GPT-4o and Claude Sonnet 3.5 by a large margin (up to +550%).</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-22T02:48:14Z</published>
+    <arxiv:comment>25 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name> Kimi Team</name>
+    </author>
+    <author>
+      <name>Angang Du</name>
+    </author>
+    <author>
+      <name>Bofei Gao</name>
+    </author>
+    <author>
+      <name>Bowei Xing</name>
+    </author>
+    <author>
+      <name>Changjiu Jiang</name>
+    </author>
+    <author>
+      <name>Cheng Chen</name>
+    </author>
+    <author>
+      <name>Cheng Li</name>
+    </author>
+    <author>
+      <name>Chenjun Xiao</name>
+    </author>
+    <author>
+      <name>Chenzhuang Du</name>
+    </author>
+    <author>
+      <name>Chonghua Liao</name>
+    </author>
+    <author>
+      <name>Chuning Tang</name>
+    </author>
+    <author>
+      <name>Congcong Wang</name>
+    </author>
+    <author>
+      <name>Dehao Zhang</name>
+    </author>
+    <author>
+      <name>Enming Yuan</name>
+    </author>
+    <author>
+      <name>Enzhe Lu</name>
+    </author>
+    <author>
+      <name>Fengxiang Tang</name>
+    </author>
+    <author>
+      <name>Flood Sung</name>
+    </author>
+    <author>
+      <name>Guangda Wei</name>
+    </author>
+    <author>
+      <name>Guokun Lai</name>
+    </author>
+    <author>
+      <name>Haiqing Guo</name>
+    </author>
+    <author>
+      <name>Han Zhu</name>
+    </author>
+    <author>
+      <name>Hao Ding</name>
+    </author>
+    <author>
+      <name>Hao Hu</name>
+    </author>
+    <author>
+      <name>Hao Yang</name>
+    </author>
+    <author>
+      <name>Hao Zhang</name>
+    </author>
+    <author>
+      <name>Haotian Yao</name>
+    </author>
+    <author>
+      <name>Haotian Zhao</name>
+    </author>
+    <author>
+      <name>Haoyu Lu</name>
+    </author>
+    <author>
+      <name>Haoze Li</name>
+    </author>
+    <author>
+      <name>Haozhen Yu</name>
+    </author>
+    <author>
+      <name>Hongcheng Gao</name>
+    </author>
+    <author>
+      <name>Huabin Zheng</name>
+    </author>
+    <author>
+      <name>Huan Yuan</name>
+    </author>
+    <author>
+      <name>Jia Chen</name>
+    </author>
+    <author>
+      <name>Jianhang Guo</name>
+    </author>
+    <author>
+      <name>Jianlin Su</name>
+    </author>
+    <author>
+      <name>Jianzhou Wang</name>
+    </author>
+    <author>
+      <name>Jie Zhao</name>
+    </author>
+    <author>
+      <name>Jin Zhang</name>
+    </author>
+    <author>
+      <name>Jingyuan Liu</name>
+    </author>
+    <author>
+      <name>Junjie Yan</name>
+    </author>
+    <author>
+      <name>Junyan Wu</name>
+    </author>
+    <author>
+      <name>Lidong Shi</name>
+    </author>
+    <author>
+      <name>Ling Ye</name>
+    </author>
+    <author>
+      <name>Longhui Yu</name>
+    </author>
+    <author>
+      <name>Mengnan Dong</name>
+    </author>
+    <author>
+      <name>Neo Zhang</name>
+    </author>
+    <author>
+      <name>Ningchen Ma</name>
+    </author>
+    <author>
+      <name>Qiwei Pan</name>
+    </author>
+    <author>
+      <name>Qucheng Gong</name>
+    </author>
+    <author>
+      <name>Shaowei Liu</name>
+    </author>
+    <author>
+      <name>Shengling Ma</name>
+    </author>
+    <author>
+      <name>Shupeng Wei</name>
+    </author>
+    <author>
+      <name>Sihan Cao</name>
+    </author>
+    <author>
+      <name>Siying Huang</name>
+    </author>
+    <author>
+      <name>Tao Jiang</name>
+    </author>
+    <author>
+      <name>Weihao Gao</name>
+    </author>
+    <author>
+      <name>Weimin Xiong</name>
+    </author>
+    <author>
+      <name>Weiran He</name>
+    </author>
+    <author>
+      <name>Weixiao Huang</name>
+    </author>
+    <author>
+      <name>Weixin Xu</name>
+    </author>
+    <author>
+      <name>Wenhao Wu</name>
+    </author>
+    <author>
+      <name>Wenyang He</name>
+    </author>
+    <author>
+      <name>Xianghui Wei</name>
+    </author>
+    <author>
+      <name>Xianqing Jia</name>
+    </author>
+    <author>
+      <name>Xingzhe Wu</name>
+    </author>
+    <author>
+      <name>Xinran Xu</name>
+    </author>
+    <author>
+      <name>Xinxing Zu</name>
+    </author>
+    <author>
+      <name>Xinyu Zhou</name>
+    </author>
+    <author>
+      <name>Xuehai Pan</name>
+    </author>
+    <author>
+      <name>Y. Charles</name>
+    </author>
+    <author>
+      <name>Yang Li</name>
+    </author>
+    <author>
+      <name>Yangyang Hu</name>
+    </author>
+    <author>
+      <name>Yangyang Liu</name>
+    </author>
+    <author>
+      <name>Yanru Chen</name>
+    </author>
+    <author>
+      <name>Yejie Wang</name>
+    </author>
+    <author>
+      <name>Yibo Liu</name>
+    </author>
+    <author>
+      <name>Yidao Qin</name>
+    </author>
+    <author>
+      <name>Yifeng Liu</name>
+    </author>
+    <author>
+      <name>Ying Yang</name>
+    </author>
+    <author>
+      <name>Yiping Bao</name>
+    </author>
+    <author>
+      <name>Yulun Du</name>
+    </author>
+    <author>
+      <name>Yuxin Wu</name>
+    </author>
+    <author>
+      <name>Yuzhi Wang</name>
+    </author>
+    <author>
+      <name>Zaida Zhou</name>
+    </author>
+    <author>
+      <name>Zhaoji Wang</name>
+    </author>
+    <author>
+      <name>Zhaowei Li</name>
+    </author>
+    <author>
+      <name>Zhen Zhu</name>
+    </author>
+    <author>
+      <name>Zheng Zhang</name>
+    </author>
+    <author>
+      <name>Zhexu Wang</name>
+    </author>
+    <author>
+      <name>Zhilin Yang</name>
+    </author>
+    <author>
+      <name>Zhiqi Huang</name>
+    </author>
+    <author>
+      <name>Zihao Huang</name>
+    </author>
+    <author>
+      <name>Ziyao Xu</name>
+    </author>
+    <author>
+      <name>Zonghan Yang</name>
+    </author>
+    <author>
+      <name>Zongyu Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20397v1</id>
+    <title>Nexus: Depth-Adaptive KV-Cache Splicing and Retrieval-Decoupled Tool Routing for Agentic LLMs on Unified Memory</title>
+    <updated>2026-07-01T18:49:45Z</updated>
+    <link href="https://arxiv.org/abs/2608.20397v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20397v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic large language models (LLMs) on the Model Context Protocol (MCP) re-encode verbose tool schemas every turn, so prefill - quadratic in sequence length - dominates time-to-first-token (TTFT) as the tool registry grows. Nexus's primary lever is to decouple routing from the schema-prefill cost: an INT8 semantic lookaside buffer (SLB) with a calibrated cross-encoder margin gate selects tools by retrieval, and arguments are generated over a compressed textual signature (median 19 tokens) rather than over spliced key/value (KV) cache. This path is depth-independent: routing accuracy stays near 89% as the registry scales to 250 tools - where a concatenate-all-schemas baseline overflows the context window entirely - and it reaches a first-argument token 1.66x sooner than a full-schema re-prefill at a ~80% main-context token saving. As a secondary, bounded lever we transplant a compiled schema KV block directly into the live context. This is fundamentally limited by rotary position embedding (RoPE) phase drift: an anchored splice is output-exact, but off-anchor placement corrupts attention, so beyond a threshold P=256 Nexus repairs the seam with a depth-adaptive suffix redecode that escalates to a full re-prefill. The resulting never-regress property is a guarantee on output fidelity (top-1 agreement, D_KL approx. 0) - not on latency, which can dip to 0.98x before converging to parity - alongside a 1.1-1.7x TTFT speedup at moderate depth that narrows to parity at deep context. Two negative results bound the design: the off-anchor RoPE fidelity boundary, and the failure of a reference-free drift gate to predict drift (Spearman rho = 0.193). All measurements are from one model tuple (Qwen2.5-14B-Instruct Q4_K_M) on Apple-silicon unified memory; the qualitative boundaries generalize, while the quantitative envelope is tuple-specific.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T18:49:45Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mustafa Arslan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.01672v2</id>
+    <title>Adaptive Information Control for Search-Augmented LLM Reasoning</title>
+    <updated>2026-06-03T03:49:17Z</updated>
+    <link href="https://arxiv.org/abs/2602.01672v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.01672v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Search-augmented reasoning agents interleave multi-step reasoning with external retrieval, but uncontrolled retrieval can introduce redundant evidence, saturate the context, and destabilize reinforcement learning (RL). Existing outcome-based RL methods provide only sparse terminal rewards, offering limited guidance for intermediate information-acquisition decisions. We propose DeepControl, an adaptive information-control framework based on information utility, a state-dependent estimate of the marginal value of retrieved evidence. The framework regulates information acquisition along two axes: extent, i.e., whether retrieval should continue, and resolution, i.e., how much retrieved detail should be exposed. It implements these controls through retrieval-continuation guidance, hierarchical granularity control, and an annealed control-forcing scheme. This enables the policy to internalize effective acquisition behavior during training and operate without external control at test time. Across seven benchmarks, DeepControl consistently outperforms strong RL and retrieval baselines without explicit information control; compared with Search-R1, it improves average performance by +9.4 and +8.6 points on Qwen2.5-7B and Qwen2.5-3B, respectively. Additional analyses show improved search effectiveness, training stability, and evidence utilization.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T05:40:38Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Siheng Xiong</name>
+    </author>
+    <author>
+      <name>Oguzhan Gungordu</name>
+    </author>
+    <author>
+      <name>James C. Kerce</name>
+    </author>
+    <author>
+      <name>Faramarz Fekri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.09960v3</id>
+    <title>A Latent Space Theory for Emergent Abilities in Large Language Models</title>
+    <updated>2023-09-13T18:52:02Z</updated>
+    <link href="https://arxiv.org/abs/2304.09960v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.09960v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Languages are not created randomly but rather to communicate information. There is a strong association between languages and their underlying meanings, resulting in a sparse joint distribution that is heavily peaked according to their correlations. Moreover, these peak values happen to match with the marginal distribution of languages due to the sparsity. With the advent of LLMs trained on big data and large models, we can now precisely assess the marginal distribution of languages, providing a convenient means of exploring the sparse structures in the joint distribution for effective inferences. In this paper, we categorize languages as either unambiguous or ε-ambiguous and present quantitative results to demonstrate that the emergent abilities of LLMs, such as language understanding, in-context learning, chain-of-thought prompting, and effective instruction fine-tuning, can all be attributed to Bayesian inference on the sparse joint distribution of languages.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-19T20:45:01Z</published>
+    <arxiv:comment>17 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hui Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.03917v1</id>
+    <title>KV Cache is 1 Bit Per Channel: Efficient Large Language Model Inference with Coupled Quantization</title>
+    <updated>2024-05-07T00:25:20Z</updated>
+    <link href="https://arxiv.org/abs/2405.03917v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.03917v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Efficient deployment of Large Language Models (LLMs) requires batching multiple requests together to improve throughput. As the batch size, context length, or model size increases, the size of the key and value (KV) cache can quickly become the main contributor to GPU memory usage and the bottleneck of inference latency. Quantization has emerged as an effective technique for KV cache compression, but existing methods still fail at very low bit widths. We observe that distinct channels of a key/value activation embedding are highly inter-dependent, and the joint entropy of multiple channels grows at a slower rate than the sum of their marginal entropies. Based on this insight, we propose Coupled Quantization (CQ), which couples multiple key/value channels together to exploit their inter-dependency and encode the activations in a more information-efficient manner. Extensive experiments reveal that CQ outperforms or is competitive with existing baselines in preserving model quality. Furthermore, we demonstrate that CQ can preserve model quality with KV cache quantized down to 1-bit.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-07T00:25:20Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tianyi Zhang</name>
+    </author>
+    <author>
+      <name>Jonah Yi</name>
+    </author>
+    <author>
+      <name>Zhaozhuo Xu</name>
+    </author>
+    <author>
+      <name>Anshumali Shrivastava</name>
+    </author>
+  </entry>
+</feed>

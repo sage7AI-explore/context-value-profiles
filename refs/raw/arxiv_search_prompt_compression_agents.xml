@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/+f5vdVq/9I7+iwL5Wif/G28U5PM</id>
+  <title>arXiv Query: search_query=all:"prompt compression" AND (all:agent OR all:tool)&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:40Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22prompt+compression%22+AND+(all:agent+OR+all:tool)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>29</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.00410v1</id>
+    <title>Agent Capsules: Quality-Gated Granularity Control for Multi-Agent LLM Pipelines</title>
+    <updated>2026-05-01T05:08:14Z</updated>
+    <link href="https://arxiv.org/abs/2605.00410v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.00410v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A multi-agent pipeline with N agents typically issues N LLM calls per run. Merging agents into fewer calls (compound execution) promises token savings, but naively merged calls silently degrade quality through tool loss and prompt compression. We present Agent Capsules, an adaptive execution runtime that treats multi-agent pipeline execution as an optimization problem with empirical quality constraints. The runtime instruments coordination overhead per group, scores composition opportunity, selects among three compound execution strategies, and gates every mode switch on rolling-mean output quality. A controlled negative result confirms that injecting more context into a merged call worsens compression rather than relieving it, so the framework's escalation ladder (standard, then two-phase, then sequential) recovers quality by moving toward per-agent dispatch rather than by rewriting merged prompts. On LLM-judged quality, the controller matches a hand-tuned oracle on every measured (model, group, mode) cell: routing compound whenever the oracle would, and reverting to fine whenever quality would fail the floor, without per-model configuration. Against a hand-crafted LangGraph implementation of a 14-agent competitive intelligence pipeline, Agent Capsules uses 51% fewer fine-mode input tokens and 42% fewer compound-mode input tokens, at +0.020 and +0.017 quality respectively. Against a DSPy implementation of a 5-agent due diligence pipeline, the framework uses 19% fewer tokens than uncompiled DSPy at quality parity, and 68% fewer tokens than MIPROv2 at +0.052 quality. Even before compound mode fires, the runtime delivers efficiency through automatic policy resolution, cache-aligned prompts, and topology-aware context injection, matching both hand-tuned and compile-time baselines without training data or per-pipeline engineering.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-01T05:08:14Z</published>
+    <arxiv:comment>17 pages, 7 figures. Code: https://github.com/aray-17/agent-capsules</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aninda Ray</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.22963v4</id>
+    <title>When Compression Becomes an Attack Surface: Black-Box Attacks on Prompt-Compressed LLM Agents</title>
+    <updated>2026-06-19T20:25:06Z</updated>
+    <link href="https://arxiv.org/abs/2510.22963v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.22963v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prompt compression is increasingly deployed in LLM agents to reduce latency and cost, but it also determines what the backend LLM ultimately sees. We show that, when trusted and untrusted inputs are compressed under a shared budget, this lossy transformation creates a new attack surface: by perturbing only untrusted inputs before compression, an adversary can cause the compressor to discard task-critical evidence or safety guardrails before inference. Unlike prompt injection, jailbreaks, or RAG poisoning, the attack target is the compressor rather than the backend LLM; the perturbation need not encode a meaningful instruction or survive compression. We formalize this vulnerability as adversarial information loss (AIL), the excess downstream distortion caused by adversarially steering a lossy compressor beyond benign compression alone. To exploit AIL, we present COMA, a transfer-based black-box attack that optimizes pre-compression perturbations using attacker-side surrogate compressors and backend LLMs. Across three tasks and six compressors, COMA achieves 0.71 average ASR, versus 0.21 for the strongest baseline, and transfers to two real-world agent case studies.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-27T03:37:41Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zesen Liu</name>
+    </author>
+    <author>
+      <name>Zhixiang Zhang</name>
+    </author>
+    <author>
+      <name>Yuchong Xie</name>
+    </author>
+    <author>
+      <name>Dongdong She</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.23525v1</id>
+    <title>Prompt Compression in Production Task Orchestration: A Pre-Registered Randomized Trial</title>
+    <updated>2026-03-06T21:47:34Z</updated>
+    <link href="https://arxiv.org/abs/2603.23525v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.23525v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The economics of prompt compression depend not only on reducing input tokens but on how compression changes output length, which is typically priced several times higher. We evaluate this in a pre-registered six-arm randomized controlled trial of prompt compression on production multi-agent task-orchestration, analyzing 358 successful Claude Sonnet 4.5 runs (59-61 per arm) drawn from a randomized corpus of 1,199 real orchestration instructions. We compare an uncompressed control with three uniform retention rates (r=0.8, 0.5, 0.2) and two structure-aware strategies (entropy-adaptive and recency-weighted), measuring total inference cost (input+output) and embedding-based response similarity. Moderate compression (r=0.5) reduced mean total cost by 27.9%, while aggressive compression (r=0.2) increased mean cost by 1.8% despite substantial input reduction, consistent with small mean output expansion (1.03x vs. control) and heavy-tailed uncertainty. Recency-weighted compression achieved 23.5% savings and, together with moderate compression, occupied the empirical cost-similarity Pareto frontier, whereas aggressive compression was dominated on both cost and similarity. These results show that "compress more" is not a reliable production heuristic and that output tokens must be treated as a first-class outcome when designing compression policies.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-06T21:47:34Z</published>
+    <arxiv:comment>28 pages, 9 tables, 1 CONSORT figure; pre-registered randomized controlled trial on production orchestration prompts</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Warren Johnson</name>
+    </author>
+    <author>
+      <name>Charles Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.00489v2</id>
+    <title>Prompt-SAW: Leveraging Relation-Aware Graphs for Textual Prompt Compression</title>
+    <updated>2024-10-17T15:20:23Z</updated>
+    <link href="https://arxiv.org/abs/2404.00489v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.00489v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have shown exceptional abilities for multiple different natural language processing tasks. While prompting is a crucial tool for LLM inference, we observe that there is a significant cost associated with exceedingly lengthy prompts. Existing attempts to compress lengthy prompts lead to substandard results in terms of readability/interpretability of the compressed prompt, with a detrimental impact on prompt utility. To address this, we propose PromptSAW: Prompt compresSion via Relation AWare graphs, an effective strategy for prompt compression over task-agnostic and task-aware prompts. Prompt-SAW uses the prompt's textual information to build a graph and later extracts key information elements in the graph to come up with the compressed prompt. We also propose GSM8K-aug, i.e., an extended version of the existing GSM8K benchmark for task-agnostic prompts in order to provide a comprehensive evaluation platform. Experimental evaluation using benchmark datasets shows that prompts compressed by Prompt-SAW are not only better in terms of readability, but they also outperform the best-performing baseline models by up to 10.1 and 77.1, respectively, for task-agnostic and task-aware settings while compressing the original prompt text by 34.9 and 56.7.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-30T23:07:58Z</published>
+    <arxiv:comment>16 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Muhammad Asif Ali</name>
+    </author>
+    <author>
+      <name>Zhengping Li</name>
+    </author>
+    <author>
+      <name>Shu Yang</name>
+    </author>
+    <author>
+      <name>Keyuan Cheng</name>
+    </author>
+    <author>
+      <name>Yang Cao</name>
+    </author>
+    <author>
+      <name>Tianhao Huang</name>
+    </author>
+    <author>
+      <name>Guimin Hu</name>
+    </author>
+    <author>
+      <name>Weimin Lyu</name>
+    </author>
+    <author>
+      <name>Lijie Hu</name>
+    </author>
+    <author>
+      <name>Lu Yu</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20571v1</id>
+    <title>Less is More: Lightweight Prompt Compression for Question Answering Applications on Edge Devices</title>
+    <updated>2026-04-27T16:11:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.20571v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20571v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In agent-driven question answering (QA) applications, retrieval-augmented generation (RAG) is commonly introduced to enhance the response accuracy of large language models (LLMs) by providing additional context. Due to the inherent noise in retrieval results and the coarse granularity of document-level retrieval, the retrieved context often contains substantial redundant information. In this setting, the agent prompt, consisting of the user query and the associated retrieved context, leads to unnecessary computational overhead during LLM inference. Existing prompt compression methods typically rely on auxiliary small language models (SLMs) to estimate context importance. However, such approaches introduce significant memory and computational overhead, which limits their deployment on resource-constrained edge devices. In this paper, we propose CORE, a two-stage sentence-level prompt compression method that eliminates the need for SLMs. In the first stage, CORE constructs an answer set via named entity recognition (NER) and a clue set via semantic matching. In the second stage, CORE refines the clue set using an orthogonal residual retrieval strategy and designs a spatial proximity-based metric to filter the answer set. The two sets are then combined to form the final compressed context. We implement CORE on an NVIDIA Jetson AGX Orin edge device and a Huawei Nova smartphone. Experimental results demonstrate that within a 2000-token budget, CORE improves accuracy by at least 30.19% compared to state-of-the-art baselines, while reducing memory usage by at least 50.47% and achieving at least 1.94 times speedup on the edge device. Moreover, compared to the state-of-the-art LLMLingua2 method, CORE achieves a substantial energy reduction of 95.74% on the smartphone, highlighting its practicality and generalizability for mobile deployments.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-27T16:11:28Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zihuai Xu</name>
+    </author>
+    <author>
+      <name>Ruofei Hou</name>
+    </author>
+    <author>
+      <name>Yang Xu</name>
+    </author>
+    <author>
+      <name>Hongli Xu</name>
+    </author>
+    <author>
+      <name>Yunming Liao</name>
+    </author>
+    <author>
+      <name>Ying Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.01056v1</id>
+    <title>Control Under Compression: Reliability Frontiers for Tool-Using Agents</title>
+    <updated>2026-08-02T07:43:44Z</updated>
+    <link href="https://arxiv.org/abs/2608.01056v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.01056v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using language-model agents are governed not only by task prompts but also by persistent system-side instructions that specify tools, arguments, policies, execution protocols, and recovery. Compressing these agent control contexts (ACCs) can reduce input cost and context use, yet existing prompt-compression evaluations do not reveal whether the resulting control remains operationally reliable. We introduce CompressAgent, an environment-verified benchmark for ACC compression across nine independently constructed ACCs, three task families, three fixed Qwen API model identifiers, six retained-context budgets, and 15,525 runs. We uncover a nonlinear, method-dependent reliability frontier. At 75% retained context, generic rewriting and section-based compression achieve 92.7% and 92.4% success, close to the 93.8% full-context baseline. Between 50% and 35%, methods diverge sharply; at 35%, section-based, obligation-aware, and generic rewriting achieve 47.0%, 39.0%, and 19.9%. At retained-context budgets from 25% to 10%, executable protocols become fragile. Reliability also varies substantially across ACCs, making universal compressor rankings inappropriate and motivating per-context qualification. Failure analysis shows that compression primarily surfaces as tool-execution and action-parsing errors. These findings recast ACC compression from token reduction into a runtime-reliability problem that must be evaluated through executable outcomes.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-02T07:43:44Z</published>
+    <arxiv:comment>12 pages, 5 figures; includes an appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yinghan Hou</name>
+    </author>
+    <author>
+      <name>Zongyou Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.09407v1</id>
+    <title>CAMPHOR: Collaborative Agents for Multi-input Planning and High-Order Reasoning On Device</title>
+    <updated>2024-10-12T07:28:10Z</updated>
+    <link href="https://arxiv.org/abs/2410.09407v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.09407v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While server-side Large Language Models (LLMs) demonstrate proficiency in function calling and complex reasoning, deploying Small Language Models (SLMs) directly on devices brings opportunities to improve latency and privacy but also introduces unique challenges for accuracy and memory. We introduce CAMPHOR, an innovative on-device SLM multi-agent framework designed to handle multiple user inputs and reason over personal context locally, ensuring privacy is maintained. CAMPHOR employs a hierarchical architecture where a high-order reasoning agent decomposes complex tasks and coordinates expert agents responsible for personal context retrieval, tool interaction, and dynamic plan generation. By implementing parameter sharing across agents and leveraging prompt compression, we significantly reduce model size, latency, and memory usage. To validate our approach, we present a novel dataset capturing multi-agent task trajectories centered on personalized mobile assistant use-cases. Our experiments reveal that fine-tuned SLM agents not only surpass closed-source LLMs in task completion F1 by~35\% but also eliminate the need for server-device communication, all while enhancing privacy.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-12T07:28:10Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yicheng Fu</name>
+    </author>
+    <author>
+      <name>Raviteja Anantha</name>
+    </author>
+    <author>
+      <name>Jianpeng Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.23069v1</id>
+    <title>ContextWeaver: Selective and Dependency-Structured Memory Construction for LLM Agents</title>
+    <updated>2026-04-24T23:39:49Z</updated>
+    <link href="https://arxiv.org/abs/2604.23069v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.23069v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents often struggle in long-context interactions. As the agent accumulates more interaction history, context management approaches such as sliding window and prompt compression may omit earlier structured information that later steps rely on. Recent retrieval-based memory systems surface relevant content but still overlook the causal and logical structure needed for multi-step reasoning. We introduce ContextWeaver, a selective and dependency-structured memory framework that organizes an agent's interaction trace into a graph of reasoning steps and selects the relevant context for future actions. Unlike prior context management approaches, ContextWeaver supports: (1) dependency-based construction and traversal that link each step to the earlier steps it relies on; (2) compact dependency summarization that condenses root-to-step reasoning paths into reusable units; and (3) a lightweight validation layer that incorporates execution feedback. On the SWE-Bench Verified and Lite benchmarks, ContextWeaver improves performance over a sliding-window baseline in pass@1, while reducing reasoning steps and token usage. Our observations suggest that modeling logical dependencies provides a stable and scalable memory mechanism for LLM agents that use tools.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-24T23:39:49Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yating Wu</name>
+    </author>
+    <author>
+      <name>Yuhao Zhang</name>
+    </author>
+    <author>
+      <name>Sayan Ghosh</name>
+    </author>
+    <author>
+      <name>Sourya Basu</name>
+    </author>
+    <author>
+      <name>Anoop Deoras</name>
+    </author>
+    <author>
+      <name>Jun Huan</name>
+    </author>
+    <author>
+      <name>Gaurav Gupta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09421v3</id>
+    <title>What Should a Skill Remember? Quality--Cost Trade-offs in Cost-Aware Skill Rewriting for Language Model Agents</title>
+    <updated>2026-07-17T09:08:17Z</updated>
+    <link href="https://arxiv.org/abs/2606.09421v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09421v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model agents increasingly rely on skills: reusable procedural documents encoding workflows, tool use, implementation patterns, validation checks, and domain rules. Skill rewriting is often treated as prompt compression, but shorter skills can make agents more expensive by removing sparse operational anchors that prevent exploration, debugging, and recovery. We study skill rewriting through this economic lens. Our controlled framework profiles skill structure, rewrites skills using information-preservation strategies, and evaluates the rewrites under fixed task instructions, environments, and verifiers. Experiments on SkillsBench reveal distinct quality--cost trade-offs across strategies: API/code anchoring, workflow guarding, and rule/formula anchoring benefit different task families, with no universally dominant template. In the main held-out evaluation, the learned policy reduces total cost by 7.0% and downstream agent-token cost by 6.0%; in frozen cross-model transfer, the corresponding reductions average 14.7% and 13.7%, while verifier quality is preserved. These results position skill design as cost-aware operational knowledge engineering rather than prompt compression. Resources: https://github.com/1Reminding/Skill_EE.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T12:36:51Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qinghua Xing</name>
+    </author>
+    <author>
+      <name>Yinda Chen</name>
+    </author>
+    <author>
+      <name>Yaping Jin</name>
+    </author>
+    <author>
+      <name>Zhenhe Wu</name>
+    </author>
+    <author>
+      <name>Bohan Lin</name>
+    </author>
+    <author>
+      <name>Hang Zhou</name>
+    </author>
+    <author>
+      <name>Xinghao Chen</name>
+    </author>
+    <author>
+      <name>Hanting Chen</name>
+    </author>
+    <author>
+      <name>Zhiwei Xiong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.21732v1</id>
+    <title>Safe to Check, Unsafe to Use: Relinking at the Compression Boundary of LLM Agents</title>
+    <updated>2026-06-19T20:43:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.21732v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.21732v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Summarization-based prompt compression is increasingly used by LLM agents to shorten long, distributed contexts, but it shifts the security boundary: filters inspect the pre-compression prompt while the backend acts on a newly generated compressed context. We identify relinking, a compression-boundary vulnerability where the compressor behaves as a confused deputy, summarizing distributed, locally benign fragments into a complete malicious instruction. Unlike prompt injection, relinking need not place an explicitly malicious payload in the source context. We show that relinking arises from summarization itself: attention makes separated fragments jointly available, pre-training makes compatible fragments plausible to connect, and post-training favors compact backend-actionable summaries. We formalize the attacker-induced form as adversarial relinking and present Relink, an automated DSL-based tool that splits malicious payloads into benign fragments while keeping the complete payload absent before compression. Across four long-context agent benchmarks, Relink achieves 86.9% Relink Rate and Backend Action Rate versus 17.0% for clean-split controls. Existing defenses fail to reliably capture adversarial relinking; our KBRA defense reduces residual Backend Action Rate to 0.0%.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-19T20:43:14Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zesen Liu</name>
+    </author>
+    <author>
+      <name>Zihan Zhang</name>
+    </author>
+    <author>
+      <name>Dongdong She</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.11588v1</id>
+    <title>Analyzing and Internalizing Complex Policy Documents for LLM Agents</title>
+    <updated>2025-10-13T16:30:07Z</updated>
+    <link href="https://arxiv.org/abs/2510.11588v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.11588v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM)-based agentic systems rely on in-context policy documents encoding diverse business rules. As requirements grow, these documents expand rapidly, causing high computational overhead. This motivates developing internalization methods that embed policy documents into model priors while preserving performance. Prior prompt compression work targets generic prompts, but agentic policy documents span multiple complexity levels and require deeper reasoning, making internalization harder. We introduce CC-Gen, an agentic benchmark generator with Controllable Complexity across four levels, enabling systematic evaluation of agents' ability to handle complexity and offering a unified framework for assessing policy internalization. Our analysis shows that complex policy specifications governing workflows pose major reasoning challenges. Supporting internalization with gold user agent interaction trajectories containing chain-of-thought (CoT) annotations via supervised fine-tuning (SFT) is data-intensive and degrades sharply as policy complexity increases. To mitigate data and reasoning burdens, we propose Category-Aware Policy Continued Pretraining (CAP-CPT). Our automated pipeline parses policy documents to extract key specifications, grouping them into factual, behavioral, and conditional categories, and isolating complex conditions that drive workflow complexity. This guides targeted data synthesis and enables agents to internalize policy information through an autoregressive pretraining loss. Experiments show CAP-CPT improves SFT baselines in all settings, with up to 41% and 22% gains on Qwen-3-32B, achieving 97.3% prompt length reduction on CC-Gen and further enhancing tau-Bench with minimal SFT data.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-13T16:30:07Z</published>
+    <arxiv:comment>42 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiateng Liu</name>
+    </author>
+    <author>
+      <name>Zhenhailong Wang</name>
+    </author>
+    <author>
+      <name>Xiaojiang Huang</name>
+    </author>
+    <author>
+      <name>Yingjie Li</name>
+    </author>
+    <author>
+      <name>Xing Fan</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Chenlei Guo</name>
+    </author>
+    <author>
+      <name>Ruhi Sarikaya</name>
+    </author>
+    <author>
+      <name>Heng Ji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.04875v1</id>
+    <title>Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents</title>
+    <updated>2026-09-04T08:31:40Z</updated>
+    <link href="https://arxiv.org/abs/2609.04875v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.04875v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-running LLM agents are stateful: beyond the transcript they accrete compressed summaries, plaintext memory, pending tool plans, and, under every serving API, a KV cache. Yet today's "forget" operations delete a plaintext memory record and stop, leaving every artifact derived from the revoked information intact. We formalize execution-state unlearning: after a forget request, the agent must behave as if it had never observed the target. Modeling the runtime as a deterministic transition system, we prove that the pre-target trajectory prefix is shared with this counterfactual world for free, that the post-target suffix is irreducibly tainted without token-level attribution, and that exact unlearning requires at least $T-τ+1$ recomputed transitions, where $τ$ is the target's injection step. Provenance-Guided Selective Replay attains this bound as a cross-layer contract spanning prompt, compressed memory, and cache: a provenance graph locates the injection point, checkpoint restoration reduces to cropping the KV cache, and sanitized replay regenerates the counterfactual suffix. Audited with elicitation, stochastic, and string-free behavioral tests across three agent suites, nine baselines, and three model families, memory deletion leaves leakage unchanged, instruction-based forgetting collapses under elicitation (Leak@probes = 1.00), and source redaction still acts on a revoked preference in 80% of episodes, while selective replay is indistinguishable from a full reset at up to 9x fewer recomputed tokens.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T08:31:40Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chao Yao</name>
+    </author>
+    <author>
+      <name>Yangbo Wei</name>
+    </author>
+    <author>
+      <name>Zhen Huang</name>
+    </author>
+    <author>
+      <name>Junhong Qian</name>
+    </author>
+    <author>
+      <name>Chenle Chen</name>
+    </author>
+    <author>
+      <name>Shaoqiang Lu</name>
+    </author>
+    <author>
+      <name>Chen Wu</name>
+    </author>
+    <author>
+      <name>Lei He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.19572v3</id>
+    <title>A Self-Evolving Framework for Efficient Terminal Agents via Observational Context Compression</title>
+    <updated>2026-05-15T13:11:00Z</updated>
+    <link href="https://arxiv.org/abs/2604.19572v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.19572v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As terminal agents scale to long-horizon, multi-turn workflows, a key bottleneck is not merely limited context length, but the accumulation of noisy terminal observations in the interaction history. Retaining raw observations preserves useful environment feedback, but also leads to context saturation and high token cost; conversely, naive compression may discard task-critical signals needed for subsequent actions. Because terminal environments are highly heterogeneous across repositories, commands, and execution states, heuristic-based or fixed-prompt compression methods are difficult to generalize. We propose TACO, a plug-and-play, training-free, self-evolving Terminal Agent Compression framework for existing terminal agents. TACO automatically discovers, refines, and reuses structured compression rules from interaction trajectories, enabling workflow-adaptive filtering of low-value terminal outputs while preserving task-relevant observations. Experiments on TerminalBench (TB 1.0 and TB 2.0) and four additional terminal-related benchmarks, including SWE-Bench Lite, CompileBench, DevEval, and CRUST-Bench, show that TACO consistently improves task performance and token efficiency across agent scaffolds and backbone models. On TerminalBench, TACO yields 1%-4% accuracy gains across strong agentic models and improves accuracy by around 2%-3% under the same token budget. On additional terminal-related benchmarks, it reduces total token consumption while maintaining or improving task success rates. These results suggest that self-evolving, workflow-adaptive observation compression is an effective path toward more reliable and efficient long-horizon terminal agents. The code is publicly available at https://github.com/multimodal-art-projection/TACO.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-21T15:25:54Z</published>
+    <arxiv:comment>27 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jincheng Ren</name>
+    </author>
+    <author>
+      <name>Siwei Wu</name>
+    </author>
+    <author>
+      <name>Yizhi Li</name>
+    </author>
+    <author>
+      <name>Kang Zhu</name>
+    </author>
+    <author>
+      <name>Shu Xu</name>
+    </author>
+    <author>
+      <name>Boyu Feng</name>
+    </author>
+    <author>
+      <name>Ruibin Yuan</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+    <author>
+      <name>Riza Batista-Navarro</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+    <author>
+      <name>Chenghua Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.09156v1</id>
+    <title>Agentic-KGR: Co-evolutionary Knowledge Graph Construction through Multi-Agent Reinforcement Learning</title>
+    <updated>2025-10-10T09:00:07Z</updated>
+    <link href="https://arxiv.org/abs/2510.09156v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.09156v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current knowledge-enhanced large language models (LLMs) rely on static, pre-constructed knowledge bases that suffer from coverage gaps and temporal obsolescence, limiting their effectiveness in dynamic information environments. We present Agentic-KGR, a novel framework enabling co-evolution between LLMs and knowledge graphs (KGs) through multi-round reinforcement learning (RL). Our approach introduces three key innovations: (1) a dynamic schema expansion mechanism that systematically extends graph ontologies beyond pre-defined boundaries during training; (2) a retrieval-augmented memory system enabling synergistic co-evolution between model parameters and knowledge structures through continuous optimization; (3) a learnable multi-scale prompt compression approach that preserves critical information while reducing computational complexity through adaptive sequence optimization. Experimental results demonstrate substantial improvements over supervised baselines and single-round RL approaches in knowledge extraction tasks. When integrated with GraphRAG, our method achieves superior performance in downstream QA tasks, with significant gains in both accuracy and knowledge coverage compared to existing methods.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-10T09:00:07Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jing Li</name>
+    </author>
+    <author>
+      <name>Zhijie Sun</name>
+    </author>
+    <author>
+      <name>Zhicheng Zhou</name>
+    </author>
+    <author>
+      <name>Suming Qiu</name>
+    </author>
+    <author>
+      <name>Junjie Huang</name>
+    </author>
+    <author>
+      <name>Haijia Sun</name>
+    </author>
+    <author>
+      <name>Linyuan Qiu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.12301v1</id>
+    <title>Local-Splitter: A Measurement Study of Seven Tactics for Reducing Cloud LLM Token Usage on Coding-Agent Workloads</title>
+    <updated>2026-04-14T05:19:33Z</updated>
+    <link href="https://arxiv.org/abs/2604.12301v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.12301v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a systematic measurement study of seven tactics for reducing cloud LLM token usage when a small local model can act as a triage layer in front of a frontier cloud model. The tactics are: (1) local routing, (2) prompt compression, (3) semantic caching, (4) local drafting with cloud review, (5) minimal-diff edits, (6) structured intent extraction, and (7) batching with vendor prompt caching. We implement all seven in an open-source shim that speaks both MCP and the OpenAI-compatible HTTP surface, supporting any local model via Ollama and any cloud model via an OpenAI-compatible endpoint. We evaluate each tactic individually, in pairs, and in a greedy-additive subset across four coding-agent workload classes (edit-heavy, explanation-heavy, general chat, RAG-heavy). We measure tokens saved, dollar cost, latency, and routing accuracy. Our headline finding is that T1 (local routing) combined with T2 (prompt compression) achieves 45-79% cloud token savings on edit-heavy and explanation-heavy workloads, while on RAG-heavy workloads the full tactic set including T4 (draft-review) achieves 51% savings. We observe that the optimal tactic subset is workload-dependent, which we believe is the most actionable finding for practitioners deploying coding agents today.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-14T05:19:33Z</published>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Justice Owusu Agyemang</name>
+    </author>
+    <author>
+      <name>Jerry John Kponyo</name>
+    </author>
+    <author>
+      <name>Elliot Amponsah</name>
+    </author>
+    <author>
+      <name>Godfred Manu Addo Boakye</name>
+    </author>
+    <author>
+      <name>Kwame Opuni-Boachie Obour Agyekum</name>
+    </author>
+  </entry>
+</feed>

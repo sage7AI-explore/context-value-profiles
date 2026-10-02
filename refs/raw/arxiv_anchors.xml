@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/3nYJJrMo0lrjgoma+dByEP+D7w4</id>
+  <title>arXiv Query: search_query=&amp;id_list=2606.20047,2609.00749,2609.37743,2510.04618,2607.25408,2609.34649,2310.03714,2605.26165,2411.15102,2507.13334,2607.22683,2609.13149,2608.21690,2406.12045,2409.00729,2403.12968,2307.03172,1809.09600,2108.00573,2410.10813&amp;start=0&amp;max_results=50</title>
+  <updated>2026-10-02T15:57:32Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=50&amp;id_list=2606.20047,2609.00749,2609.37743,2510.04618,2607.25408,2609.34649,2310.03714,2605.26165,2411.15102,2507.13334,2607.22683,2609.13149,2608.21690,2406.12045,2409.00729,2403.12968,2307.03172,1809.09600,2108.00573,2410.10813" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>20</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2307.03172v3</id>
+    <title>Lost in the Middle: How Language Models Use Long Contexts</title>
+    <updated>2023-11-20T23:09:34Z</updated>
+    <link href="https://arxiv.org/abs/2307.03172v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.03172v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While recent language models have the ability to take long contexts as input, relatively little is known about how well they use longer context. We analyze the performance of language models on two tasks that require identifying relevant information in their input contexts: multi-document question answering and key-value retrieval. We find that performance can degrade significantly when changing the position of relevant information, indicating that current language models do not robustly make use of information in long input contexts. In particular, we observe that performance is often highest when relevant information occurs at the beginning or end of the input context, and significantly degrades when models must access relevant information in the middle of long contexts, even for explicitly long-context models. Our analysis provides a better understanding of how language models use their input context and provides new evaluation protocols for future long-context language models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-06T17:54:11Z</published>
+    <arxiv:comment>18 pages, 16 figures. Accepted for publication in Transactions of the Association for Computational Linguistics (TACL), 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nelson F. Liu</name>
+    </author>
+    <author>
+      <name>Kevin Lin</name>
+    </author>
+    <author>
+      <name>John Hewitt</name>
+    </author>
+    <author>
+      <name>Ashwin Paranjape</name>
+    </author>
+    <author>
+      <name>Michele Bevilacqua</name>
+    </author>
+    <author>
+      <name>Fabio Petroni</name>
+    </author>
+    <author>
+      <name>Percy Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2108.00573v3</id>
+    <title>MuSiQue: Multihop Questions via Single-hop Question Composition</title>
+    <updated>2022-05-05T05:50:50Z</updated>
+    <link href="https://arxiv.org/abs/2108.00573v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2108.00573v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multihop reasoning remains an elusive goal as existing multihop benchmarks are known to be largely solvable via shortcuts. Can we create a question answering (QA) dataset that, by construction, \emph{requires} proper multihop reasoning? To this end, we introduce a bottom-up approach that systematically selects composable pairs of single-hop questions that are connected, i.e., where one reasoning step critically relies on information from another. This bottom-up methodology lets us explore a vast space of questions and add stringent filters as well as other mechanisms targeting connected reasoning. It provides fine-grained control over the construction process and the properties of the resulting $k$-hop questions. We use this methodology to create MuSiQue-Ans, a new multihop QA dataset with 25K 2-4 hop questions. Relative to existing datasets, MuSiQue-Ans is more difficult overall (3x increase in human-machine gap), and harder to cheat via disconnected reasoning (e.g., a single-hop model has a 30 point drop in F1). We further add unanswerable contrast questions to produce a more stringent dataset, MuSiQue-Full. We hope our datasets will help the NLP community develop models that perform genuine multihop reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-08-02T00:33:27Z</published>
+    <arxiv:comment>Accepted for publication in Transactions of the Association for Computational Linguistics (TACL), 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Harsh Trivedi</name>
+    </author>
+    <author>
+      <name>Niranjan Balasubramanian</name>
+    </author>
+    <author>
+      <name>Tushar Khot</name>
+    </author>
+    <author>
+      <name>Ashish Sabharwal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.12968v2</id>
+    <title>LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression</title>
+    <updated>2024-08-12T04:48:11Z</updated>
+    <link href="https://arxiv.org/abs/2403.12968v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.12968v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper focuses on task-agnostic prompt compression for better generalizability and efficiency. Considering the redundancy in natural language, existing approaches compress prompts by removing tokens or lexical units according to their information entropy obtained from a causal language model such as LLaMa-7B. The challenge is that information entropy may be a suboptimal compression metric: (i) it only leverages unidirectional context and may fail to capture all essential information needed for prompt compression; (ii) it is not aligned with the prompt compression objective.
+  To address these issues, we propose a data distillation procedure to derive knowledge from an LLM to compress prompts without losing crucial information, and meantime, introduce an extractive text compression dataset. We formulate prompt compression as a token classification problem to guarantee the faithfulness of the compressed prompt to the original one, and use a Transformer encoder as the base architecture to capture all essential information for prompt compression from the full bidirectional context. Our approach leads to lower latency by explicitly learning the compression objective with smaller models such as XLM-RoBERTa-large and mBERT.
+  We evaluate our method on both in-domain and out-of-domain datasets, including MeetingBank, LongBench, ZeroScrolls, GSM8K, and BBH. Despite its small size, our model shows significant performance gains over strong baselines and demonstrates robust generalization ability across different LLMs. Additionally, our model is 3x-6x faster than existing prompt compression methods, while accelerating the end-to-end latency by 1.6x-2.9x with compression ratios of 2x-5x. Our code is available at https://aka.ms/LLMLingua-2.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-19T17:59:56Z</published>
+    <arxiv:comment>Accepted at Findings of ACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhuoshi Pan</name>
+    </author>
+    <author>
+      <name>Qianhui Wu</name>
+    </author>
+    <author>
+      <name>Huiqiang Jiang</name>
+    </author>
+    <author>
+      <name>Menglin Xia</name>
+    </author>
+    <author>
+      <name>Xufang Luo</name>
+    </author>
+    <author>
+      <name>Jue Zhang</name>
+    </author>
+    <author>
+      <name>Qingwei Lin</name>
+    </author>
+    <author>
+      <name>Victor Rühle</name>
+    </author>
+    <author>
+      <name>Yuqing Yang</name>
+    </author>
+    <author>
+      <name>Chin-Yew Lin</name>
+    </author>
+    <author>
+      <name>H. Vicky Zhao</name>
+    </author>
+    <author>
+      <name>Lili Qiu</name>
+    </author>
+    <author>
+      <name>Dongmei Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.26165v1</id>
+    <title>Tool-Schema Compression Enables Agentic RAG Under Constrained Context Budgets</title>
+    <updated>2026-05-24T20:52:54Z</updated>
+    <link href="https://arxiv.org/abs/2605.26165v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.26165v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic RAG systems that equip language models with dozens to hundreds of tool definitions face a critical resource conflict: tool schemas consume the same context window needed for retrieval-augmented generation. We present the first systematic study of this tool-context trade-off, evaluating 14 models spanning 1.5B-32B local models plus one frontier API model across 6,566 controlled API calls at three context budgets (8K, 16K, 32K) with 28 tool definitions. Applying TSCG conservative-profile compression (44-50% schema token savings), we observe a binary enablement effect: at 8K tokens, JSON-schema tool definitions overflow the context window entirely, yielding near-zero EM (2.6% average), while compressed schemas restore RAG functionality with +20.5 pp average exact-match lift across all eight models (+24.7 pp among the six exhibiting full enablement). At 32K -- where both formats fit -- four of five tested models show delta &lt;= 1 pp, confirming the effect is purely budget-driven. External validation on HotpotQA (50 multi-hop questions) shows +48 pp EM under the same overflow scenario. Frontier scaling tests demonstrate that JSON schemas overflow at ~494 tools while compressed schemas remain operational beyond 800 tools. Our results establish tool-schema compression as a necessary infrastructure layer for agentic RAG in constrained-context deployments. All code, data, and checkpoints are publicly available.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-24T20:52:54Z</published>
+    <arxiv:comment>12 pages (8 main + 4 appendix), 7 tables, 2 figures. Code and data: https://github.com/SKZL-AI/tscg</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Furkan Sakizli</name>
+    </author>
+    <arxiv:doi>10.5281/zenodo.20369668</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.5281/zenodo.20369668" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.10813v2</id>
+    <title>LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory</title>
+    <updated>2025-03-04T22:19:41Z</updated>
+    <link href="https://arxiv.org/abs/2410.10813v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.10813v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent large language model (LLM)-driven chat assistant systems have integrated memory components to track user-assistant chat histories, enabling more accurate and personalized responses. However, their long-term memory capabilities in sustained interactions remain underexplored. We introduce LongMemEval, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. With 500 meticulously curated questions embedded within freely scalable user-assistant chat histories, LongMemEval presents a significant challenge to existing long-term memory systems, with commercial chat assistants and long-context LLMs showing a 30% accuracy drop on memorizing information across sustained interactions. We then present a unified framework that breaks down the long-term memory design into three stages: indexing, retrieval, and reading. Built upon key experimental insights, we propose several memory design optimizations including session decomposition for value granularity, fact-augmented key expansion for indexing, and time-aware query expansion for refining the search scope. Extensive experiments show that these optimizations greatly improve both memory recall and downstream question answering on LongMemEval. Overall, our study provides valuable resources and guidance for advancing the long-term memory capabilities of LLM-based chat assistants, paving the way toward more personalized and reliable conversational AI. Our benchmark and code are publicly available at https://github.com/xiaowu0162/LongMemEval.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-14T17:59:44Z</published>
+    <arxiv:comment>ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Hongwei Wang</name>
+    </author>
+    <author>
+      <name>Wenhao Yu</name>
+    </author>
+    <author>
+      <name>Yuwei Zhang</name>
+    </author>
+    <author>
+      <name>Kai-Wei Chang</name>
+    </author>
+    <author>
+      <name>Dong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13149v1</id>
+    <title>BudgetBench: A Budget-Tiered Protocol and Pilot Harness for Memory Strategy Evaluation in Local Large Language Model Agents</title>
+    <updated>2026-07-01T19:15:46Z</updated>
+    <link href="https://arxiv.org/abs/2609.13149v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13149v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For local large language model agents, active context is a scarce resource: memory capacity, prefill latency, cache growth, and service objectives all constrain how many input tokens each call can afford. We present BudgetBench, an active-budget protocol and reference harness that treats the per-call input-token budget as the independent variable when comparing memory strategies. Holding the model, task, sampler, and decoding fixed, it sweeps budgets over 2K, 4K, 8K, 16K, and 32K tokens and records quality, budget utilization, latency, and, as a first-class outcome, budget-violation rates. The core contribution is this reusable measurement surface: a swappable MemoryStrategy contract, explicit budget enforcement, deterministic or versioned graders, prompt-audit metadata, and reproducibility artifacts, released at https://github.com/aviskaar/budgetbench.
+  We substantiate the protocol with pilot studies rather than final rankings. Across a local qwen2.5:1.5b pilot (89 items each on SWE-bench Verified and LongBench v2), a hosted 50-item Qwen3 30B-A3B LongBench replication with exact tokenization, and a 500-item LongMemEval oracle study scored by the official GPT-4o evaluator, the harness exposes budget-compliance failures, non-monotonic quality curves, and operating points that single-budget evaluation hides. The budgeted-versus-full-context direction remains unresolved: the local slice is near-null and the hosted replication favors full context in point estimate. We report results transparently, including that the early pilot's tokenizer approximation undercounts some served-model prompts, so its violation rows are tokenizer-approximation diagnostics, not claim-bearing results; all timings are operational diagnostics. The reusable contribution is the protocol, harness, and failure-reporting discipline needed to scale fixed-budget memory-strategy evaluation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T19:15:46Z</published>
+    <arxiv:comment>44 pages, 4 figures. Code and artifacts: https://github.com/aviskaar/budgetbench</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aditya Karnam Gururaj Rao</name>
+    </author>
+    <author>
+      <name>Arjun Jaggi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.37743v1</id>
+    <title>ContextRender: From Execution Dependencies to Agent Context</title>
+    <updated>2026-09-29T14:57:00Z</updated>
+    <link href="https://arxiv.org/abs/2609.37743v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.37743v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents performing long-horizon tasks accumulate tool results that later steps may need. Passing the full history to every invocation is costly even when it fits within the context window, while reducing it risks omitting needed information. Existing context management methods can overlook how earlier tool results are used in subsequent execution, leaving needed information out of context. We introduce ContextRender, which manages context through a persistent graph of execution dependencies. We develop Tool-Flow Analysis to track how later operations reuse information from earlier tool results, providing a signal called observed reuse. A renderer combines this signal with recency and semantic relevance to select results within a fixed history budget, retaining omitted results for later use. Across AppWorld and 8-objective QA with three execution models, ContextRender outperforms the evaluated context management baselines using a 6K history budget, well below the models' maximum context windows. Within this budget, it achieves task performance close to or above that of passing the full history while reducing mean inference cost by 10.2%-32.2% relative to Full history. Ablations show that observed reuse improves task performance and retention of results reused later.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T14:57:00Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Savini Kashmira</name>
+    </author>
+    <author>
+      <name>Jayanaka L. Dantanarayana</name>
+    </author>
+    <author>
+      <name>Lingjia Tang</name>
+    </author>
+    <author>
+      <name>Jason Mars</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1809.09600v1</id>
+    <title>HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering</title>
+    <updated>2018-09-25T17:28:20Z</updated>
+    <link href="https://arxiv.org/abs/1809.09600v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1809.09600v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems' ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-09-25T17:28:20Z</published>
+    <arxiv:comment>EMNLP 2018 long paper. The first three authors contribute equally. Data, code, and blog posts available at https://hotpotqa.github.io/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhilin Yang</name>
+    </author>
+    <author>
+      <name>Peng Qi</name>
+    </author>
+    <author>
+      <name>Saizheng Zhang</name>
+    </author>
+    <author>
+      <name>Yoshua Bengio</name>
+    </author>
+    <author>
+      <name>William W. Cohen</name>
+    </author>
+    <author>
+      <name>Ruslan Salakhutdinov</name>
+    </author>
+    <author>
+      <name>Christopher D. Manning</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.00729v2</id>
+    <title>ContextCite: Attributing Model Generation to Context</title>
+    <updated>2024-09-13T20:26:40Z</updated>
+    <link href="https://arxiv.org/abs/2409.00729v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.00729v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>How do language models use information provided as context when generating a response? Can we infer whether a particular generated statement is actually grounded in the context, a misinterpretation, or fabricated? To help answer these questions, we introduce the problem of context attribution: pinpointing the parts of the context (if any) that led a model to generate a particular statement. We then present ContextCite, a simple and scalable method for context attribution that can be applied on top of any existing language model. Finally, we showcase the utility of ContextCite through three applications: (1) helping verify generated statements (2) improving response quality by pruning the context and (3) detecting poisoning attacks. We provide code for ContextCite at https://github.com/MadryLab/context-cite.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-01T14:36:36Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Benjamin Cohen-Wang</name>
+    </author>
+    <author>
+      <name>Harshay Shah</name>
+    </author>
+    <author>
+      <name>Kristian Georgiev</name>
+    </author>
+    <author>
+      <name>Aleksander Madry</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.03714v1</id>
+    <title>DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines</title>
+    <updated>2023-10-05T17:37:25Z</updated>
+    <link href="https://arxiv.org/abs/2310.03714v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.03714v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The ML community is rapidly exploring techniques for prompting language models (LMs) and for stacking them into pipelines that solve complex tasks. Unfortunately, existing LM pipelines are typically implemented using hard-coded "prompt templates", i.e. lengthy strings discovered via trial and error. Toward a more systematic approach for developing and optimizing LM pipelines, we introduce DSPy, a programming model that abstracts LM pipelines as text transformation graphs, i.e. imperative computational graphs where LMs are invoked through declarative modules. DSPy modules are parameterized, meaning they can learn (by creating and collecting demonstrations) how to apply compositions of prompting, finetuning, augmentation, and reasoning techniques. We design a compiler that will optimize any DSPy pipeline to maximize a given metric. We conduct two case studies, showing that succinct DSPy programs can express and optimize sophisticated LM pipelines that reason about math word problems, tackle multi-hop retrieval, answer complex questions, and control agent loops. Within minutes of compiling, a few lines of DSPy allow GPT-3.5 and llama2-13b-chat to self-bootstrap pipelines that outperform standard few-shot prompting (generally by over 25% and 65%, respectively) and pipelines with expert-created demonstrations (by up to 5-46% and 16-40%, respectively). On top of that, DSPy programs compiled to open and relatively small LMs like 770M-parameter T5 and llama2-13b-chat are competitive with approaches that rely on expert-written prompt chains for proprietary GPT-3.5. DSPy is available at https://github.com/stanfordnlp/dspy</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-05T17:37:25Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Omar Khattab</name>
+    </author>
+    <author>
+      <name>Arnav Singhvi</name>
+    </author>
+    <author>
+      <name>Paridhi Maheshwari</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zhang</name>
+    </author>
+    <author>
+      <name>Keshav Santhanam</name>
+    </author>
+    <author>
+      <name>Sri Vardhamanan</name>
+    </author>
+    <author>
+      <name>Saiful Haq</name>
+    </author>
+    <author>
+      <name>Ashutosh Sharma</name>
+    </author>
+    <author>
+      <name>Thomas T. Joshi</name>
+    </author>
+    <author>
+      <name>Hanna Moazam</name>
+    </author>
+    <author>
+      <name>Heather Miller</name>
+    </author>
+    <author>
+      <name>Matei Zaharia</name>
+    </author>
+    <author>
+      <name>Christopher Potts</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.15102v3</id>
+    <title>AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution</title>
+    <updated>2025-03-21T15:47:53Z</updated>
+    <link href="https://arxiv.org/abs/2411.15102v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.15102v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The influence of contextual input on the behavior of large language models (LLMs) has prompted the development of context attribution methods that aim to quantify each context span's effect on an LLM's generations. The leave-one-out (LOO) error, which measures the change in the likelihood of the LLM's response when a given span of the context is removed, provides a principled way to perform context attribution, but can be prohibitively expensive to compute for large models. In this work, we introduce AttriBoT, a series of novel techniques for efficiently computing an approximation of the LOO error for context attribution. Specifically, AttriBoT uses cached activations to avoid redundant operations, performs hierarchical attribution to reduce computation, and emulates the behavior of large target models with smaller proxy models. Taken together, AttriBoT can provide a &gt;300x speedup while remaining more faithful to a target model's LOO error than prior context attribution methods. This stark increase in performance makes computing context attributions for a given response 30x faster than generating the response itself, empowering real-world applications that require computing attributions at scale. We release a user-friendly and efficient implementation of AttriBoT to enable efficient LLM interpretability as well as encourage future development of efficient context attribution methods.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-22T18:06:14Z</published>
+    <arxiv:comment>24 pages, 11 figures, ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Fengyuan Liu</name>
+    </author>
+    <author>
+      <name>Nikhil Kandpal</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.04618v3</id>
+    <title>Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models</title>
+    <updated>2026-03-29T09:18:02Z</updated>
+    <link href="https://arxiv.org/abs/2510.04618v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.04618v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) applications such as agents and domain-specific reasoning increasingly rely on context adaptation: modifying inputs with instructions, strategies, or evidence, rather than weight updates. Prior approaches improve usability but often suffer from brevity bias, which drops domain insights for concise summaries, and from context collapse, where iterative rewriting erodes details over time. We introduce ACE (Agentic Context Engineering), a framework that treats contexts as evolving playbooks that accumulate, refine, and organize strategies through a modular process of generation, reflection, and curation. ACE prevents collapse with structured, incremental updates that preserve detailed knowledge and scale with long-context models. Across agent and domain-specific benchmarks, ACE optimizes contexts both offline (e.g., system prompts) and online (e.g., agent memory), consistently outperforming strong baselines: +10.6% on agents and +8.6% on finance, while significantly reducing adaptation latency and rollout cost. Notably, ACE could adapt effectively without labeled supervision and instead by leveraging natural execution feedback. On the AppWorld leaderboard, ACE matches the top-ranked production-level agent on the overall average and surpasses it on the harder test-challenge split, despite using a smaller open-source model. These results show that comprehensive, evolving contexts enable scalable, efficient, and self-improving LLM systems with low overhead.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-06T09:30:18Z</published>
+    <arxiv:comment>ICLR 2026; 32 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Qizheng Zhang</name>
+    </author>
+    <author>
+      <name>Changran Hu</name>
+    </author>
+    <author>
+      <name>Shubhangi Upasani</name>
+    </author>
+    <author>
+      <name>Boyuan Ma</name>
+    </author>
+    <author>
+      <name>Fenglu Hong</name>
+    </author>
+    <author>
+      <name>Vamsidhar Kamanuru</name>
+    </author>
+    <author>
+      <name>Jay Rainton</name>
+    </author>
+    <author>
+      <name>Chen Wu</name>
+    </author>
+    <author>
+      <name>Mengmeng Ji</name>
+    </author>
+    <author>
+      <name>Hanchen Li</name>
+    </author>
+    <author>
+      <name>Urmish Thakker</name>
+    </author>
+    <author>
+      <name>James Zou</name>
+    </author>
+    <author>
+      <name>Kunle Olukotun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.00749v1</id>
+    <title>ContextPipe: Database-Inspired Context Assembly for Long-Horizon Agents</title>
+    <updated>2026-09-01T05:27:38Z</updated>
+    <link href="https://arxiv.org/abs/2609.00749v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.00749v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-horizon large language model (LLM) agents require context assembly: the runtime must decide what to include in each prompt, in what order, and when to compact history under a hard context-window budget and a byte-sensitive prompt cache. In production agentic systems, this logic is scattered across prompt builders, ad hoc compaction routines, cache-break workarounds, and per-provider shims. We argue that context assembly is structurally isomorphic to query execution in a relational database: both execute under a hard budget, exploit a tiered cache, and leverage statistics. We adopt this discipline in ContextPipe: a five-phase pipeline (Plan Bind Optimize Execute Feedback) backed by a structured data-source catalog, a deterministic cache-aware optimizer, and an EXPLAIN ANALYZE trace. We show that context in ContextPipe is auditable, replayable, and failure-isolated. A preliminary evaluation using the SWE-bench Pro Qutebrowser subset shows that, compared with the append-only context construction policy, ContextPipe reduces total token volume by 31%, LLM calls by 23%, and response time by 9%, at the cost of a lower KV cache-hit ratio.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-01T05:27:38Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Peng Xu</name>
+    </author>
+    <author>
+      <name>Zuyu Zhang</name>
+    </author>
+    <author>
+      <name>Yuze Sun</name>
+    </author>
+    <author>
+      <name>Feng Tian</name>
+    </author>
+    <author>
+      <name>Long Wang</name>
+    </author>
+    <author>
+      <name>Chen Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20047v2</id>
+    <title>PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents</title>
+    <updated>2026-09-03T08:04:27Z</updated>
+    <link href="https://arxiv.org/abs/2606.20047v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20047v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conversational and tool-using LLM agents operate over a context window that fills from several directions simultaneously. As a session proceeds, the agent accumulates user and assistant turns, entries drawn from a persistent memory store, and often largest of all, the verbatim outputs of tool calls such as file reads, search results, and API responses. Once the cumulative context exceeds the model's token budget, the framework must decide what to keep.
+  The prevailing mechanism is recency truncation, sometimes paired with periodic summarization. This is topic-blind: a fact established early in a session is discarded simply because it is old, even when the current user query is about exactly that fact; conversely, verbose but irrelevant recent material is retained. Agents that must recall information across many turns, the defining case for memory, are precisely where recency truncation fails.
+  Existing alternatives sit outside the agent's assembly step. Retrieval augmented generation fetches external documents into the prompt but does not arbitrate the agent's \emph{already-present} pooled context. Context-compression methods reduce token count by rewriting or pruning text, but operate query-blind and lossily. Neither treats memory entries, conversation turns, and tool outputs as a single candidate pool to be selected from by relevance at the moment the prompt is assembled.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T10:22:57Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Manu Ghulyani</name>
+    </author>
+    <author>
+      <name>Arunabh Singh</name>
+    </author>
+    <author>
+      <name>Karan Bharadwaj</name>
+    </author>
+    <author>
+      <name>Ankit Nath</name>
+    </author>
+    <author>
+      <name>Suranjan Goswami</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.34649v1</id>
+    <title>Beyond Skill Evolution: Self-Evolving Context Management Policies for Long-Horizon Agent Harnesses</title>
+    <updated>2026-09-28T08:57:52Z</updated>
+    <link href="https://arxiv.org/abs/2609.34649v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.34649v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Harness evolution improves LLM agents by learning from execution trajectories, but existing experience- and skill-based methods are less effective on long-horizon tasks. As interactions grow, useful evidence can be buried by redundant or outdated context, making context management itself a key bottleneck. We introduce ContextEvo, a framework that learns a context policy from long-horizon trajectories. ContextEvo reconstructs the model-visible context at key decision points, identifies context-related failures, and applies targeted policy updates. Starting from the open-source Pi-agent harness, ContextEvo improves performance across three long-horizon task benchmarks, achieving results comparable to or better than several prominent agent harnesses, including Codex, OpenCode, and OpenClaw. Additional analyses show that fixed or locally evolved context strategies can fall short under long-horizon information pressure, while our methods adapt to the information demands of each environment.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-28T08:57:52Z</published>
+    <arxiv:comment>27 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Weiyuan Li</name>
+    </author>
+    <author>
+      <name>Jinghan Xu</name>
+    </author>
+    <author>
+      <name>Aili Chen</name>
+    </author>
+    <author>
+      <name>Xintao Wang</name>
+    </author>
+    <author>
+      <name>Shuang Liang</name>
+    </author>
+    <author>
+      <name>Jiaqing Liang</name>
+    </author>
+    <author>
+      <name>Deqing Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.12045v1</id>
+    <title>$τ$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains</title>
+    <updated>2024-06-17T19:33:08Z</updated>
+    <link href="https://arxiv.org/abs/2406.12045v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.12045v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing benchmarks do not test language agents on their interaction with human users or ability to follow domain-specific rules, both of which are vital for deploying them in real world applications. We propose $τ$-bench, a benchmark emulating dynamic conversations between a user (simulated by language models) and a language agent provided with domain-specific API tools and policy guidelines. We employ an efficient and faithful evaluation process that compares the database state at the end of a conversation with the annotated goal state. We also propose a new metric (pass^k) to evaluate the reliability of agent behavior over multiple trials. Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on &lt;50% of the tasks, and are quite inconsistent (pass^8 &lt;25% in retail). Our findings point to the need for methods that can improve the ability of agents to act consistently and follow rules reliably.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-17T19:33:08Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shunyu Yao</name>
+    </author>
+    <author>
+      <name>Noah Shinn</name>
+    </author>
+    <author>
+      <name>Pedram Razavi</name>
+    </author>
+    <author>
+      <name>Karthik Narasimhan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.13334v2</id>
+    <title>A Survey of Context Engineering for Large Language Models</title>
+    <updated>2025-07-21T17:48:18Z</updated>
+    <link href="https://arxiv.org/abs/2507.13334v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.13334v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of Large Language Models (LLMs) is fundamentally determined by the contextual information provided during inference. This survey introduces Context Engineering, a formal discipline that transcends simple prompt design to encompass the systematic optimization of information payloads for LLMs. We present a comprehensive taxonomy decomposing Context Engineering into its foundational components and the sophisticated implementations that integrate them into intelligent systems. We first examine the foundational components: context retrieval and generation, context processing and context management. We then explore how these components are architecturally integrated to create sophisticated system implementations: retrieval-augmented generation (RAG), memory systems and tool-integrated reasoning, and multi-agent systems. Through this systematic analysis of over 1400 research papers, our survey not only establishes a technical roadmap for the field but also reveals a critical research gap: a fundamental asymmetry exists between model capabilities. While current models, augmented by advanced context engineering, demonstrate remarkable proficiency in understanding complex contexts, they exhibit pronounced limitations in generating equally sophisticated, long-form outputs. Addressing this gap is a defining priority for future research. Ultimately, this survey provides a unified framework for both researchers and engineers advancing context-aware AI.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-17T17:50:36Z</published>
+    <arxiv:comment>ongoing work; 166 pages, 1411 citations</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lingrui Mei</name>
+    </author>
+    <author>
+      <name>Jiayu Yao</name>
+    </author>
+    <author>
+      <name>Yuyao Ge</name>
+    </author>
+    <author>
+      <name>Yiwei Wang</name>
+    </author>
+    <author>
+      <name>Baolong Bi</name>
+    </author>
+    <author>
+      <name>Yujun Cai</name>
+    </author>
+    <author>
+      <name>Jiazhi Liu</name>
+    </author>
+    <author>
+      <name>Mingyu Li</name>
+    </author>
+    <author>
+      <name>Zhong-Zhi Li</name>
+    </author>
+    <author>
+      <name>Duzhen Zhang</name>
+    </author>
+    <author>
+      <name>Chenlin Zhou</name>
+    </author>
+    <author>
+      <name>Jiayi Mao</name>
+    </author>
+    <author>
+      <name>Tianze Xia</name>
+    </author>
+    <author>
+      <name>Jiafeng Guo</name>
+    </author>
+    <author>
+      <name>Shenghua Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.25408v1</id>
+    <title>Context Assembly as the Controlled Variable: A Control-Theoretic View of Harness Policies for Frozen LLM Agents</title>
+    <updated>2026-07-28T08:07:06Z</updated>
+    <link href="https://arxiv.org/abs/2607.25408v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.25408v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A growing body of 2026 work applies control theory to LLM agents: Lyapunov-certified stability for tool-mediated controllers (Prinos et al., "Stable Agentic Control", 2026), sample-complexity bounds for sparse policies over massive discrete tool universes (Majumdar, "Sparse Agentic Control", 2026), and regulatory-control decompositions of multi-agent systems into auditable feedback loops (Nogueira and Skogestad, 2026). We do not claim to introduce control theory to LLM agents -- that ship has sailed. Our narrower claim is about what the controlled variable is. Prior work controls tool selection, inter-agent message routing, or the agent's raw action stream. We instead treat context assembly itself -- which prompt template, which few-shot demonstrations, how much retrieved context, how many planning/verification passes -- as the controlled variable, learned online by a contextual bandit or REINFORCE policy sitting outside a frozen model. This paper develops the formal decomposition (inner frozen policy $π_θ$, outer context policy $π_φ$), gives a stability argument for the online controller in the sense used by Zhang et al. (2026) (non-decreasing expected reward under bounded policy change), and reports an uncertainty-calibration analysis of the controller's own confidence against realized task outcomes. The applied counterpart to this paper instantiates the same controller across three domains and two model providers and releases the dataset, trajectory logs, and a deployment recipe; here we focus on the formal framing and the stability/uncertainty evidence a control-theoretic claim requires.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-28T08:07:06Z</published>
+    <arxiv:comment>6 pages, 2 figures, 1 table. Code and companion paper's data: https://github.com/dpaul0501/context-optimization-rl</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Debjyoti Paul</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21690v1</id>
+    <title>Context as an Environment: Programmatic Context Management for Long-Horizon Agents</title>
+    <updated>2026-08-21T23:39:19Z</updated>
+    <link href="https://arxiv.org/abs/2608.21690v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21690v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly take on long-running tasks whose history grows far beyond a single model context window. Existing approaches compress earlier interactions or extract selected information into fixed memory representations, committing to what to preserve before future needs are known. We present Scroll, a context manager that treats each agent session as an executable Session Environment. The environment is backed by an append-only Event Log and a sandboxed, persistent Python kernel. The kernel maintains a typed namespace across model calls, allowing tool outputs, retrieved history, and derived state to be bound to variables rather than serialized into the prompt at each call. Model-written code searches, materializes, and transforms session state through exec; only explicitly printed projections enter the model's working view for the next call. Context management thus becomes a programming task that inherits the improving coding abilities of LLMs, while the Event Log preserves lossless historical ground truth. As the working view approaches its budget, stale spans are evicted but remain recoverable: an eviction index keeps compact landmarks tied to exact Event Log addresses, so that the agent navigates directly to evicted regions instead of searching the full log. With Qwen3.8-Max as the backbone, Scroll achieves 94.8% on LongMemEval_S; 73.1% on BEAM_10M, surpassing the best published memory system by 5.1 points; and 86.7% on LOCA_256K, exceeding the best published long-horizon agent by 37.4 points.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T23:39:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yin Lin</name>
+    </author>
+    <author>
+      <name>Elaine Ang</name>
+    </author>
+    <author>
+      <name>Erkang Zhu</name>
+    </author>
+    <author>
+      <name>Bolin Ding</name>
+    </author>
+    <author>
+      <name>Jingren Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22683v1</id>
+    <title>Imprompt: A Language Framework for Prompt Programming</title>
+    <updated>2026-07-13T05:02:43Z</updated>
+    <link href="https://arxiv.org/abs/2607.22683v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22683v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the unprecedented success of Language Models (LMs), the science of Prompt Engineering has evolved the powerful idea of Prompt Programming, where prompts are treated as a programmable control surface for describing complex tasks and leveraging LM capabilities. However, existing prompt programming frameworks suffer from various complexities and inelegances, which make them hard to utilize in practice for effectively describing tasks. We propose Imprompt, a new language framework for the study and practice of prompt programming. We undertake a foundational investigation of prompt programming, and contend that prompt programs must contain only the task descriptions and must be decoupled from lower-level 'execution' details. We further develop this position by illustrating structured prompting as a combination of prompt programming and prompt program 'compilation'. We exemplify this view by formally defining two compilers for Imprompt programs. We then explore the idea of typing for prompt programs and draw a correspondence between type checking and constrained decoding. Finally, we implement our compilers and type checkers and evaluate them on a variety of case studies. We believe our work contributes programming-language foundations toward the emerging area of prompt programming.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T05:02:43Z</published>
+    <arxiv:comment>28 pages, 24 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Chentian Wu</name>
+    </author>
+    <author>
+      <name>Shengyuan Yang</name>
+    </author>
+    <author>
+      <name>Adithya Murali</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/FREDRE1B3Bw1VV6woPn56BLtsf4</id>
+  <title>arXiv Query: search_query=all:"context rot" OR all:"long context degradation"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:04Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22context+rot%22+OR+all:%22long+context+degradation%22&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>35</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.09090v1</id>
+    <title>Context Rot in AI-Assisted Software Development: Repurposing Documentation Consistency for AI Configuration Artifacts</title>
+    <updated>2026-06-08T06:36:38Z</updated>
+    <link href="https://arxiv.org/abs/2606.09090v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.09090v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Developers increasingly provide AI coding assistants with persistent context through configuration files such as CLAUDE.md, AGENTS.md, and .cursorrules. These files describe code elements, architecture, and development conventions, forming the context that guides AI tool behavior across sessions. As software evolves, this context can become stale, a phenomenon we call context rot. While AI configuration artifacts are new, the underlying consistency problem connects to decades of software documentation research. Researchers have built tools to check consistency between documentation and code, spanning README files, code comments, API documentation, architecture descriptions, and installation instructions. We argue that this existing toolbox is an immediate starting point for detecting context rot, and we present a research roadmap mapping documentation consistency approaches to corresponding problems in this new setting. As preliminary evidence, applying an existing README/wiki consistency checker to a statistically representative sample of 356 repositories identifies stale code element references in 23.0% of repositories, showing that traditional documentation consistency tools can already surface context rot.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-08T06:36:38Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Christoph Treude</name>
+    </author>
+    <author>
+      <name>Sebastian Baltes</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.29718v2</id>
+    <title>Diagnosing and Mitigating Context Rot in Long-horizon Search</title>
+    <updated>2026-08-04T16:37:54Z</updated>
+    <link href="https://arxiv.org/abs/2606.29718v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.29718v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Extensive context has become the norm as Large Language Models (LLMs) are increasingly deployed in long-horizon search tasks. The concern that increasing context length degrades model capabilities, known as context rot, has become a widely recognized issue for these applications. However, in deep search scenarios, it remains unclear how models actually fail under extensive context, and to what extent existing methods can mitigate such failures. Through a systematic study of four flagship models across three benchmarks, we identify a previously overlooked phenomenon, which we term premature termination: under extensive context, models give up or provide uncertain incorrect answers long before exhausting the context window. By controlling for query difficulty, we show that the premature termination rate is positively correlated with context length. Based on the findings, we revisit methods to mitigate context rot, including context management and parallel sampling. For context management, we analyze seven methods across three categories and show that they are inherently test-time scaling strategies that reduce the premature termination rate to enable more exploration, and we further provide model-dependent principles for method selection. For parallel sampling, we develop a behavior-aware filtering strategy and observe a performance gain of 2.6% to 4.9% across three aggregation methods.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-29T02:53:28Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Shijie Xia</name>
+    </author>
+    <author>
+      <name>Yikun Wang</name>
+    </author>
+    <author>
+      <name>Zhen Huang</name>
+    </author>
+    <author>
+      <name>Pengfei Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.17937v2</id>
+    <title>When and How Context Rot Appears in Coding Agents: A White-Box Study of Agent Skills in Code Auditing</title>
+    <updated>2026-08-01T11:46:05Z</updated>
+    <link href="https://arxiv.org/abs/2607.17937v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.17937v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent Skills package procedural instructions and checks for use by general-purpose agents, but loading a skill does not guarantee that every requirement remains active throughout a long tool-using trajectory. We study this problem in a production-derived, white-box code-audit workflow. Holding the task and 24 artifact checks fixed, we vary the surrounding context and classify where failures first become visible: lost requirements, editing drift, failed checking, or non-agent evaluator/runtime failures. Codex with gpt-5.4-mini passes 8/10 runs in a 10,991-character clean context but only 3/10 in both a 299,140-character relevant context and an equal-length irrelevant context. This 50-percentage-point difference is large but remains trend-level under two-sided Fisher tests (p = 0.0698). Requirement coverage nevertheless stays above 92% in both long conditions, showing that a few omissions can invalidate an otherwise complete artifact. A second task passes all clean and long runs, so the evidence does not support a universal context-length threshold. A detailed external checklist passes 10/10 runs, compared with 5/10 for a generic self-check (p = 0.0325). Coding-agent scaffolds may help by selecting a smaller working set, but they do not eliminate failures. We do not introduce context rot or a new general monitoring method; we provide a bounded failure classification and empirical case study for white-box code auditing.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T13:34:53Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Yue Xue</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12366v1</id>
+    <title>Classifier Context Rot: Monitor Performance Degrades with Context Length</title>
+    <updated>2026-05-12T16:34:03Z</updated>
+    <link href="https://arxiv.org/abs/2605.12366v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12366v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Monitoring coding agents for dangerous behavior using language models requires classifying transcripts that often exceed 500K tokens, but prior agent monitoring benchmarks rarely contain transcripts longer than 100K tokens. We show that when used as classifiers, current frontier models fail to notice dangerous actions more often in longer transcripts. In particular, on a dataset that requires identifying when a coding agent takes a subtly dangerous action, Opus 4.6, GPT 5.4, and Gemini 3.1 miss these actions $2\times$ to $30\times$ more often when they occur after 800K tokens of benign activity than when they occur on their own. We also show that these weaknesses can be partially mitigated with prompting techniques such as periodic reminders throughout the transcript and may be mitigated further with better post-training. Monitor evaluations that do not consider long-context degradation are likely overestimating monitor performance.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T16:34:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sam Martin</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.33485v1</id>
+    <title>DISCO: Distributed Long Context Scaling with Grounding-Reasoning Disaggregation</title>
+    <updated>2026-09-27T11:52:58Z</updated>
+    <link href="https://arxiv.org/abs/2609.33485v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.33485v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While Large Language Models (LLMs) advertise million-token context windows, reasoning quality often collapses as inputs grow -- a phenomenon termed context rot. This failure stems from a structural entanglement in monolithic architectures, where the massive search burden of contextual grounding exhausts the representational capacity needed for complex reasoning. To resolve this, we propose Grounding-Reasoning Disaggregation via DIStributed long COntext scaling (DISCO). Inspired by distributed computing frameworks like Apache Spark, DISCO partitions long context across a fleet of Worker LLMs dedicated exclusively to parallel, localized grounding. A central Driver LLM, trained via Reinforcement Learning (GRPO) to optimize planning, orchestrates execution by dynamically mapping queries into atomic extraction tasks and reducing the gathered evidence to synthesize a final answer. By isolating reasoning from raw context noise, DISCO effectively eliminates context rot. On RULER-QA (1M tokens), it maintains 78.4% accuracy where standard baselines collapse. Furthermore, it outperforms full-context models by up to 9.8 points on LongBench v2 and matches frontier models like Gemini-3-Pro-Preview while reducing inference costs by over 80%, establishing a highly efficient paradigm for robust long-context inference.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-27T11:52:58Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Guanzheng Chen</name>
+    </author>
+    <author>
+      <name>Viet Dac Lai</name>
+    </author>
+    <author>
+      <name>Subhojyoti Mukherjee</name>
+    </author>
+    <author>
+      <name>Branislav Kveton</name>
+    </author>
+    <author>
+      <name>Seunghyun Yoon</name>
+    </author>
+    <author>
+      <name>Franck Dernoncourt</name>
+    </author>
+    <author>
+      <name>Qizhe Xie</name>
+    </author>
+    <author>
+      <name>Trung Bui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20105v1</id>
+    <title>The $\mathbf{Y}$-Combinator for LLMs: Solving Long-Context Rot with $λ$-Calculus</title>
+    <updated>2026-03-20T16:29:51Z</updated>
+    <link href="https://arxiv.org/abs/2603.20105v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20105v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLMs are increasingly used as general-purpose reasoners, but long inputs remain bottlenecked by a fixed context window. Recursive Language Models (RLMs) address this by externalising the prompt and recursively solving subproblems. Yet existing RLMs depend on an open-ended read-eval-print loop (REPL) in which the model generates arbitrary control code, making execution difficult to verify, predict, and analyse.
+  We introduce $λ$-RLM, a framework for long-context reasoning that replaces free-form recursive code generation with a typed functional runtime grounded in $λ$-calculus. It executes a compact library of pre-verified combinators and uses neural inference only on bounded leaf subproblems, turning recursive reasoning into a structured functional program with explicit control flow. We show that $λ$-RLM admits formal guarantees absent from standard RLMs, including termination, closed-form cost bounds, controlled accuracy scaling with recursion depth, and an optimal partition rule under a simple cost model. Empirically, across four long-context reasoning tasks and nine base models, $λ$-RLM outperforms standard RLM in 29 of 36 model-task comparisons, improves average accuracy by up to +21.9 points across model tiers, and reduces latency by up to 4.1x. These results show that typed symbolic control yields a more reliable and efficient foundation for long-context reasoning than open-ended recursive code generation. The complete implementation of $λ$-RLM, is open-sourced for the community at: https://github.com/lambda-calculus-LLM/lambda-RLM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-20T16:29:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Amartya Roy</name>
+    </author>
+    <author>
+      <name>Rasul Tutunov</name>
+    </author>
+    <author>
+      <name>Xiaotong Ji</name>
+    </author>
+    <author>
+      <name>Matthieu Zimmer</name>
+    </author>
+    <author>
+      <name>Haitham Bou-Ammar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.10628v1</id>
+    <title>InSight-doc: Agentic Visual Perception for Long-Document Understanding</title>
+    <updated>2026-08-11T08:15:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.10628v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.10628v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-document understanding often requires reasoning over many visually rich pages, making inference costly and prone to context rot. In this work, we propose InSight-doc, an agentic visual perception framework that treats visual resolution as an adaptive reasoning-time resource. InSight-doc starts from low resolution and selectively zooms into high-resolution regions for finer evidence, without relying on any external retriever. To train such an agent, we construct an active-perception corpus of 17.9K high-quality SFT examples with region-level zoom-in trajectories, accompanied by 19.2K hard RL examples. Through SFT+RL, InSight-doc-8B improves the baseline by 4.3--16.4 accuracy points over document VQA benchmarks. On long documents, it reduces hallucination by more than 40% and inference latency by 41%--68% while maintaining an accuracy lead. Our code, datasets, and model are released at https://github.com/m-Just/InSight-doc .</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-11T08:15:16Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Kaican Li</name>
+    </author>
+    <author>
+      <name>Weiyan Xie</name>
+    </author>
+    <author>
+      <name>Lewei Yao</name>
+    </author>
+    <author>
+      <name>Jiannan Wu</name>
+    </author>
+    <author>
+      <name>Lanqing Hong</name>
+    </author>
+    <author>
+      <name>Yongxiang Huang</name>
+    </author>
+    <author>
+      <name>Nevin L. Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.12030v1</id>
+    <title>ARC: Active and Reflection-driven Context Management for Long-Horizon Information Seeking Agents</title>
+    <updated>2026-01-17T12:17:50Z</updated>
+    <link href="https://arxiv.org/abs/2601.12030v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.12030v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models are increasingly deployed as research agents for deep search and long-horizon information seeking, yet their performance often degrades as interaction histories grow. This degradation, known as context rot, reflects a failure to maintain coherent and task-relevant internal states over extended reasoning horizons. Existing approaches primarily manage context through raw accumulation or passive summarization, treating it as a static artifact and allowing early errors or misplaced emphasis to persist. Motivated by this perspective, we propose ARC, which is the first framework to systematically formulate context management as an active, reflection-driven process that treats context as a dynamic internal reasoning state during execution. ARC operationalizes this view through reflection-driven monitoring and revision, allowing agents to actively reorganize their working context when misalignment or degradation is detected. Experiments on challenging long-horizon information-seeking benchmarks show that ARC consistently outperforms passive context compression methods, achieving up to an 11% absolute improvement in accuracy on BrowseComp-ZH with Qwen2.5-32B-Instruct.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-17T12:17:50Z</published>
+    <arxiv:comment>15 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yilun Yao</name>
+    </author>
+    <author>
+      <name>Shan Huang</name>
+    </author>
+    <author>
+      <name>Elsie Dai</name>
+    </author>
+    <author>
+      <name>Zhewen Tan</name>
+    </author>
+    <author>
+      <name>Zhenyu Duan</name>
+    </author>
+    <author>
+      <name>Shousheng Jia</name>
+    </author>
+    <author>
+      <name>Yanbing Jiang</name>
+    </author>
+    <author>
+      <name>Tong Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.18743v1</id>
+    <title>RhinoInsight: Improving Deep Research through Control Mechanisms for Model Behavior and Context</title>
+    <updated>2025-11-24T04:12:41Z</updated>
+    <link href="https://arxiv.org/abs/2511.18743v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.18743v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models are evolving from single-turn responders into tool-using agents capable of sustained reasoning and decision-making for deep research. Prevailing systems adopt a linear pipeline of plan to search to write to a report, which suffers from error accumulation and context rot due to the lack of explicit control over both model behavior and context. We introduce RhinoInsight, a deep research framework that adds two control mechanisms to enhance robustness, traceability, and overall quality without parameter updates. First, a Verifiable Checklist module transforms user requirements into traceable and verifiable sub-goals, incorporates human or LLM critics for refinement, and compiles a hierarchical outline to anchor subsequent actions and prevent non-executable planning. Second, an Evidence Audit module structures search content, iteratively updates the outline, and prunes noisy context, while a critic ranks and binds high-quality evidence to drafted content to ensure verifiability and reduce hallucinations. Our experiments demonstrate that RhinoInsight achieves state-of-the-art performance on deep research tasks while remaining competitive on deep search tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-24T04:12:41Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yu Lei</name>
+    </author>
+    <author>
+      <name>Shuzheng Si</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Yifei Wu</name>
+    </author>
+    <author>
+      <name>Gang Chen</name>
+    </author>
+    <author>
+      <name>Fanchao Qi</name>
+    </author>
+    <author>
+      <name>Maosong Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27283v1</id>
+    <title>Benchmarking the Residual: What Long-Horizon Evaluations Add Beyond Matched Short-Task Performance</title>
+    <updated>2026-07-29T13:57:32Z</updated>
+    <link href="https://arxiv.org/abs/2607.27283v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27283v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-horizon benchmarks often show that agents fail more as tasks become longer. This observation is useful for deployment, but it does not by itself explain why failure occurs. More stages create more opportunities for ordinary errors to compound; longer tasks may also contain harder individual decisions or become harder as conversation history, tool outputs, and environment changes accumulate. We use trajectory-induced degradation to mean this last possibility: earlier execution makes later work harder. When the harmful accumulation is specifically the text visible to the model, it is often called context rot. In this position paper, we argue that to claim a "long-horizon failure", benchmarks must compare actual full-task success against a baseline prediction built from short, individual stages. We call the log-ratio between this prediction and actual success the horizon residual. The comparison must use the same agent configuration and specify in advance how stages, checkpoints, information, and budgets will be chosen. The residual shows that the full rollout differs from the chosen baseline; targeted experiments are still needed to explain why.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T13:57:32Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Chao Peng</name>
+    </author>
+    <author>
+      <name>Zhiheng Lyu</name>
+    </author>
+    <author>
+      <name>Peijie Dong</name>
+    </author>
+    <author>
+      <name>Hande Dong</name>
+    </author>
+    <author>
+      <name>Qiang Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.18768v1</id>
+    <title>ClinQueryAgent: A Conversational Agent for Population Health Management</title>
+    <updated>2026-04-13T10:07:03Z</updated>
+    <link href="https://arxiv.org/abs/2605.18768v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.18768v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we introduce ClinQueryAgent, a system for translating natural language population health questions into executable database queries using agents with access to both local and external knowledge bases. Our novel architecture enables the use of powerful cloud-based language models whilst ensuring that no patient data leaves the secure environment. To combat inaccuracies over the course of longer dialogues due to context rot, information retrieval is delegated to a sub-agent. We deploy the system via a chat window embedded within an existing population health management platform where it has been used by 128 staff from 15 healthcare practices covering a total of 148,319 patients in the UK's National Health Service (NHS). We evaluate the system's capacity to autonomously handle a range of health informatics tasks on a constructed dataset and via a beta-testing phase. Our results show that both analysts and clinicians are able to easily generate actionable information from patient health records using natural language requests requiring no programming expertise to verify. We make a public demo of the system available at: https://demo-899965260288.europe-west1.run.app/</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-13T10:07:03Z</published>
+    <arxiv:comment>11 pages, 4 figures. Submitted to ACL Systems Demonstrations</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Joseph S. Boyle</name>
+    </author>
+    <author>
+      <name>Anthony Dranfield</name>
+    </author>
+    <author>
+      <name>Mike O'Neil</name>
+    </author>
+    <author>
+      <name>Maria Liakata</name>
+    </author>
+    <author>
+      <name>Alison Q. Smithard</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.03664v1</id>
+    <title>Document-Level Numerical Reasoning across Single and Multiple Tables in Financial Reports</title>
+    <updated>2026-04-04T09:30:59Z</updated>
+    <link href="https://arxiv.org/abs/2604.03664v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.03664v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the strong language understanding abilities of large language models (LLMs), they still struggle with reliable question answering (QA) over long, structured documents, particularly for numerical reasoning. Financial annual reports exemplify this difficulty: financial statement analysis often hinges on accurate arithmetic, and analysts derive key indicators by integrating evidence scattered across multiple tables and narrative text. However, existing benchmarks focus largely on single-table settings, leaving cross-table document-level numerical reasoning underexplored. To address this gap, we introduce FinLongDocQA, a dataset for both single-table and cross-table financial numerical reasoning in long-context reports. Evaluating both closed-source and open-source LLMs on FinLongDocQA reveals two bottlenecks: (1) annual reports often exceed 129k tokens, exacerbating the context rot problem for locating relevant tables; and (2) even when relevant evidence is located, LLMs remain prone to errors in multi-step numerical reasoning. We propose FinLongDocAgent, a Multi-Agent Multi-Round Retrieval-Augmented Generation (RAG) approach that iteratively retrieves evidence, performs intermediate calculations, and verifies results across rounds. Experiments highlight the importance of iterative retrieval and verification for reliable numerical QA in long financial documents.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-04T09:30:59Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yi-Cheng Wang</name>
+    </author>
+    <author>
+      <name>Wei-An Wang</name>
+    </author>
+    <author>
+      <name>Chu-Song Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06370v1</id>
+    <title>The Bitter Lesson of Tool Calling</title>
+    <updated>2026-08-06T17:58:32Z</updated>
+    <link href="https://arxiv.org/abs/2608.06370v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06370v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool use transforms LLMs into agents that act beyond their training data, and for code-capable models, programmatic tool calling extends this further by replacing rigid JSON calls with scripts that chain and parallelize naturally. However, a systematic evaluation of tools as code on an established benchmark across current and prior model generations under real-world task conditions has not been conducted. In this work, we empirically compare programmatic tool calling (PTC) to native JSON tool calling across 14 language models on BFCL v4. In the programmatic tool calling paradigm, tools are exposed as typed Python stubs that the model invokes through code, with execution and results handled in a single agent turn. Programmatic tool calling matches or exceeds native JSON tool calling in 11 of 14 models on BFCL v4, with the GPT-5.6 family achieving a 10.6% improvement over the JSON tool calling baseline. Further, it matches or outperforms baseline in 13 of 14 models under parallel fan-out, and holds stable under context rot conditions where baseline degrades 2.3% on average. Our results demonstrate that programmatic tool calling is a viable and robust alternative to JSON tool calling, with performance tracking model capability across release generations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-06T17:58:32Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ishan Patel</name>
+    </author>
+    <author>
+      <name>Sahil Sen</name>
+    </author>
+    <author>
+      <name>Elias Lumer</name>
+    </author>
+    <author>
+      <name>Vamse Kumar Subbiah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.18496v2</id>
+    <title>DEEPMED: Building a Medical DeepResearch Agent via Multi-hop Med-Search Data and Turn-Controlled Agentic Training &amp; Inference</title>
+    <updated>2026-02-04T11:31:10Z</updated>
+    <link href="https://arxiv.org/abs/2601.18496v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.18496v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical reasoning models remain constrained by parametric knowledge and are thus susceptible to forgetting and hallucinations. DeepResearch (DR) models ground outputs in verifiable evidence from tools and perform strongly in general domains, but their direct transfer to medical field yields relatively limited gains. We attribute this to two gaps: task characteristic and tool-use scaling. Medical questions require evidence interpretation in a knowledge-intensive clinical context; while general DR models can retrieve information, they often lack clinical-context reasoning and thus "find it but fail to use it," leaving performance limited by medical abilities. Moreover, in medical scenarios, blindly scaling tool-call can inject noisy context, derailing sensitive medical reasoning and prompting repetitive evidence-seeking along incorrect paths. Therefore, we propose DeepMed. For data, we deploy a multi-hop med-search QA synthesis method supporting the model to apply the DR paradigm in medical contexts. For training, we introduce a difficulty-aware turn-penalty to suppress excessive tool-call growth. For inference, we bring a monitor to help validate hypotheses within a controlled number of steps and avoid context rot. Overall, on seven medical benchmarks, DeepMed improves its base model by 9.79\% on average and outperforms larger medical reasoning and DR models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-26T13:57:48Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zihan Wang</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Shi Feng</name>
+    </author>
+    <author>
+      <name>Xiaocui Yang</name>
+    </author>
+    <author>
+      <name>Daling Wang</name>
+    </author>
+    <author>
+      <name>Yiqun Zhang</name>
+    </author>
+    <author>
+      <name>Jinghao Lin</name>
+    </author>
+    <author>
+      <name>Haihua Yang</name>
+    </author>
+    <author>
+      <name>Xiaozhong Ji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.06843v3</id>
+    <title>United Minds or Isolated Agents? Exploring Coordination of LLMs under Cognitive Load Theory</title>
+    <updated>2026-06-21T16:09:48Z</updated>
+    <link href="https://arxiv.org/abs/2506.06843v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.06843v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) exhibit a notable performance ceiling on complex, multi-faceted tasks. As practitioners increasingly rely on heavy context engineering -- curating intricate instructions, tool schemas, and multi-turn histories -- the processing demands often exceed the LLM's effective attention budget, leading to context rot. Drawing an analogy to Cognitive Load Theory (CLT) in cognitive science, we propose that this bottleneck is functionally analogous to the bounded working memory of the human mind. Rather than relying on heuristic prompt engineering, we use CLT as a principled design lens for LLM system design. To operationalize this insight, we introduce CoThinker, an instantiation of a CLT-driven multi-agent framework. CoThinker operationalizes CLT principles by distributing intrinsic cognitive load through agent specialization and managing transactional load via structured communication and a collective working memory. We empirically evaluate CoThinker on complex problem-solving tasks and fabricated high cognitive load scenarios. Our results are consistent with a CLT-informed account of multi-agent coordination: gains concentrate on reasoning-heavy tasks where cognitive load is high, while coordination overhead dominates on low-intrinsic-load tasks such as instruction-following -- a boundary predicted by the cognitive-load-profile view. Our analysis reveals characteristic interaction patterns that cast insights from collective cognition and load management into a principled approach to agent system design.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-07T15:48:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>HaoYang Shang</name>
+    </author>
+    <author>
+      <name>Xuan Liu</name>
+    </author>
+    <author>
+      <name>Zi Liang</name>
+    </author>
+    <author>
+      <name>Jie Zhang</name>
+    </author>
+    <author>
+      <name>Haibo Hu</name>
+    </author>
+    <author>
+      <name>Song Guo</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/bK/QYPnicoYIjpj08LPPGtJ23i8</id>
+  <title>arXiv Query: search_query=all:"leave-one-out" AND all:context AND all:attribution&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:52Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22leave-one-out%22+AND+(all:context+AND+all:attribution)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>5</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2411.15102v3</id>
+    <title>AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution</title>
+    <updated>2025-03-21T15:47:53Z</updated>
+    <link href="https://arxiv.org/abs/2411.15102v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.15102v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The influence of contextual input on the behavior of large language models (LLMs) has prompted the development of context attribution methods that aim to quantify each context span's effect on an LLM's generations. The leave-one-out (LOO) error, which measures the change in the likelihood of the LLM's response when a given span of the context is removed, provides a principled way to perform context attribution, but can be prohibitively expensive to compute for large models. In this work, we introduce AttriBoT, a series of novel techniques for efficiently computing an approximation of the LOO error for context attribution. Specifically, AttriBoT uses cached activations to avoid redundant operations, performs hierarchical attribution to reduce computation, and emulates the behavior of large target models with smaller proxy models. Taken together, AttriBoT can provide a &gt;300x speedup while remaining more faithful to a target model's LOO error than prior context attribution methods. This stark increase in performance makes computing context attributions for a given response 30x faster than generating the response itself, empowering real-world applications that require computing attributions at scale. We release a user-friendly and efficient implementation of AttriBoT to enable efficient LLM interpretability as well as encourage future development of efficient context attribution methods.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-22T18:06:14Z</published>
+    <arxiv:comment>24 pages, 11 figures, ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Fengyuan Liu</name>
+    </author>
+    <author>
+      <name>Nikhil Kandpal</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.09115v1</id>
+    <title>MeClear: Cooperative Game-Theoretic Attribution and Risk-Aware Memory Clearance for Long-Horizon LLM Agents</title>
+    <updated>2026-09-08T17:46:00Z</updated>
+    <link href="https://arxiv.org/abs/2609.09115v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.09115v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long horizon Large Language Model (LLM) agents rely on external memory systems to preserve user preferences and task knowledge across extended interactions. Conventional retrieval mechanisms optimize semantic compatibility rather than downstream utility, frequently introducing outdated, misleading, or conflicting evidence into the active context. We present MeClear, a task conditioned memory clearance framework that identifies memories featuring negative downstream utility through cooperative attribution and selectively suppresses them from agent execution. MeClear combines Leave One Out screening with sampled cooperative Shapley attribution to distribute utility across interacting evidence, effectively resolving redundant conflict masking where single removal evaluations fail. Utilizing attribution rankings, MeClear executes a query scoped minimal clearance strategy over a nested filtration, verifying task recovery on the cleared context without permanently altering the persistent memory bank. Comprehensive experimental evaluations across ten long dialogue memory pools demonstrate that MeClear achieves a target recall of 85.9% and an overall task recovery rate of 82.3%, representing a 25.5 percentage point improvement over Leave One Out (LOO) baselines.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-08T17:46:00Z</published>
+    <arxiv:comment>15 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Boyu Yang</name>
+    </author>
+    <author>
+      <name>Jiazheng Sun</name>
+    </author>
+    <author>
+      <name>Zilong Lu</name>
+    </author>
+    <author>
+      <name>Zhi Qiu</name>
+    </author>
+    <author>
+      <name>Xin Peng</name>
+    </author>
+    <author>
+      <name>Jun Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.03783v2</id>
+    <title>Efficient Estimation of Kernel Surrogate Models for Task Attribution</title>
+    <updated>2026-05-10T21:29:30Z</updated>
+    <link href="https://arxiv.org/abs/2602.03783v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.03783v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern AI agents such as large language models are trained on diverse tasks -- translation, code generation, mathematical reasoning, and text prediction -- simultaneously. A key question is how to quantify the influence of each individual training task on performance on a target task, a problem we refer to as task attribution. The direct approach, leave-one-out retraining, measures the effect of removing each task, but is computationally infeasible at scale. An alternative approach that builds surrogate models to predict the performance on a target task for any subset of training tasks has emerged in the recent literature. Prior work focuses on linear surrogate models, which capture first-order relationships but miss nonlinear interactions such as XOR-type effects. In this paper, we first consider a unified task-weighting framework for analyzing task-attribution methods and establish a new connection between linear surrogate models and influence functions via a second-order analysis. Then, we introduce kernel surrogate models, which more effectively represent second-order task interactions. To efficiently learn the kernel surrogate, we develop a gradient-based estimation procedure that leverages a first-order approximation of pretrained models; empirically, this yields accurate surrogate estimates with less than $2\%$ relative error without repeated retraining. Experiments across multiple settings -- including mathematical reasoning in transformers, in-context learning, and multi-objective reinforcement learning -- demonstrate the effectiveness of kernel surrogate models. They achieve a $25\%$ higher correlation with the leave-one-out ground truth than linear surrogates and influence-function baselines, enabling more accurate and scalable task attribution. When used for downstream data selection, kernel surrogate models further yield a $40\%$ improvement in the aforementioned settings.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-03T17:43:48Z</published>
+    <arxiv:comment>27 pages. Appeared in ICLR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhenshuo Zhang</name>
+    </author>
+    <author>
+      <name>Minxuan Duan</name>
+    </author>
+    <author>
+      <name>Hongyang R. Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.23252v1</id>
+    <title>The Laws of Context Allocation: Causal Measurement and Closed-Loop Orchestration in Generative Search</title>
+    <updated>2026-08-24T13:44:11Z</updated>
+    <link href="https://arxiv.org/abs/2608.23252v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.23252v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As Retrieval-Augmented Generation (RAG) shifts toward diverse portfolio generation, it is stymied by two critical bottlenecks: flawed measurement of evidence utilization, and suboptimal context budget allocation. We resolve both sequentially.
+  To resolve measurement, we expose a pervasive ``diagnostic illusion'': standard relevance proxies fail catastrophically on hard negatives. We replace them with an efficient causal leave-one-out probe that accurately isolates generative reliance and formally calibrates the structural dilution of LLM attention.
+  To resolve allocation, we deploy this causal probe in a deconfounded factorial grid. We prove that the prevailing strategy of monolithic context widening is an architectural trap penalized by relevance decay. Instead, allocating compute iteratively across multiple sequential generations drives transformative portfolio recall gains of 16.7--20.5 absolute percentage points, scaling robustly up to 32B models.
+  Finally, we unify these solutions into a deployable closed-loop submodular scheduler. Augmented by an attribution-steered contrastive decoder to override LLM attention inertia, our architecture systematically forces fresh evidence integration. By dominating classical open-loop baselines, we establish sequential, feedback-driven orchestration as the definitive paradigm for generative search. Our code, data, and causal measurement instruments are available at https://github.com/PeiYangLiu/ascp.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-24T13:44:11Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Peiyang Liu</name>
+    </author>
+    <author>
+      <name>Xi Wang</name>
+    </author>
+    <author>
+      <name>Di Liang</name>
+    </author>
+    <author>
+      <name>Wei Ye</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11153v1</id>
+    <title>Decomposing Evolutionary Mixture-of-LoRA Architectures: The Routing Lever, the Lifecycle Penalty, and a Substrate-Conditional Boundary</title>
+    <updated>2026-05-11T18:59:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.11153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We decompose an evolutionary mixture-of-LoRA system on a from-scratch ~150M-parameter widened-D substrate (D=1536, V=32000; D/V approx 0.048; the "widened-1536" substrate) into three factors -- a router rewrite (parallel sigmoid gate with learnable per-adapter floor and bounded temperature anneal, fed post-stack hidden states rather than token-embedding means), a per-domain leave-one-out evaluation scope, and a lifecycle of death plus alpha-blend inheritance plus SVD mutation plus slot reallocation -- and report a 5-of-8 partial 2^3 factorial run at n=3 seeds and 25000 adaptation steps per cell. The attribution chain is sharp on this substrate: the router rewrite carries the entire +0.0426 nat balanced log-PPL improvement (Delta = log PPL_ref - log PPL_test, positive = improvement; t=12.86, p=0.006) attributed to "the full evolutionary system vs the static B3 baseline"; the headline full-system-vs-B3 balanced contrast itself is +0.015 nats, t=1.94, p=0.19 at n=3 and does not clear alpha=0.05. The per-domain evaluation scope is null at seed-resolution, and the lifecycle is a net drag of approx -0.028 nats (t=-4.46,p=0.047 in the primary chain). An auxiliary alpha=0 inheritance counterfactual at n=3 seeds is sign-inconsistent at the headline metric and underpowered for either an equivalence or load-bearing conclusion (corrected from an earlier arithmetic-mean aggregator that erroneously cleared inheritance; see Appendix B.11). A base-perturbation probe directionally refutes a "genomic-context" reframe of the lifecycle role. A controllable synthetic sandbox locates a substrate-conditional regime boundary: evolutionary search on the routing channel is load-bearing only when adapters are pre-aligned to the task; in every other regime tested it underperforms, ties, or actively degrades the gradient solution.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T18:59:11Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ramchand Kumaresan</name>
+    </author>
+  </entry>
+</feed>

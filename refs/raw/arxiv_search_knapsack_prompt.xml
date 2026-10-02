@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/I+ejOxXw1PLtgpACA9/2gFGE92M</id>
+  <title>arXiv Query: search_query=all:knapsack AND (all:prompt OR all:context) AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:56Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:knapsack+AND+((all:prompt+OR+all:context)+AND+all:LLM)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>13</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2602.20217v2</id>
+    <title>KnapSpec: Self-Speculative Decoding via Adaptive Layer Selection as a Knapsack Problem</title>
+    <updated>2026-06-02T05:58:09Z</updated>
+    <link href="https://arxiv.org/abs/2602.20217v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.20217v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Self-speculative decoding (SSD) accelerates LLM inference by skipping layers to create an efficient draft model, yet existing methods often rely on static heuristics that ignore the dynamic computational overhead of attention in long-context scenarios. We propose KnapSpec, a training-free framework that reformulates draft model selection as a knapsack problem to maximize tokens-per-time throughput. By decoupling Attention and MLP layers and modeling their hardware-specific latencies as functions of context length, KnapSpec adaptively identifies optimal draft configurations on the fly via a parallel dynamic programming algorithm. Furthermore, we provide the first rigorous theoretical analysis establishing cosine similarity between hidden states as a mathematically sound proxy for the token acceptance rate. This foundation allows our method to maintain high drafting faithfulness while navigating the shifting bottlenecks of real-world hardware. Our experiments on Qwen3 and Llama3 demonstrate that KnapSpec consistently outperforms state-of-the-art SSD baselines, achieving up to 1.47x wall-clock speedup across various benchmarks. Our plug-and-play approach ensures high-speed inference for long sequences without requiring additional training or compromising the target model's output distribution.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T08:13:03Z</published>
+    <arxiv:comment>Accepted to ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Seongjin Cha</name>
+    </author>
+    <author>
+      <name>Gyuwan Kim</name>
+    </author>
+    <author>
+      <name>Dongsu Han</name>
+    </author>
+    <author>
+      <name>Tao Yang</name>
+    </author>
+    <author>
+      <name>Insu Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.32474v1</id>
+    <title>PC-SubMax: Efficient Prompt Compression via Regularized Submodular Maximization</title>
+    <updated>2026-09-26T11:07:23Z</updated>
+    <link href="https://arxiv.org/abs/2609.32474v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.32474v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) are increasingly deployed in long-context scenarios, lengthy prompts can increase inference costs and latency and exacerbate the ``lost-in-the-middle'' phenomenon. Selective prompt compression offers a model-agnostic approach to alleviating these issues. However, methods based on fixed token- or sentence-level importance scores may overlook how content contributions change with the selected subset, limiting their ability to account for inter-sentence redundancy. Compression procedures that rely on autoregressive LLM scoring can also introduce substantial overhead. We propose PC-SubMax, a theoretically grounded framework that formulates selective prompt compression as regularized monotone submodular maximization under a knapsack constraint. The objective is $U(S)-\ell(S)$, where the monotone submodular utility $U$ combines information coverage, query relevance, and log-determinant diversity, and the non-negative modular penalty $\ell$ captures token cost. Through diminishing marginal returns, the objective evaluates each sentence's contribution relative to the selected content. To optimize this objective, we develop the Regularized Greedy+Max (RGM) algorithm, which deterministically returns a feasible set $Q$ satisfying $U(Q)-\ell(Q)\geq \frac{1}{2}U(O)-\ell(O)$, where $O$ is an optimal feasible solution to the regularized problem. RGM uses $O(nκ)$ value-oracle queries, where $n$ is the number of candidate sentences and $κ$ is the maximum feasible subset size. PC-SubMax uses encoder representations and avoids autoregressive LLM scoring during compression. Experiments across seven diverse benchmarks demonstrate competitive downstream performance with low compression overhead.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-26T11:07:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ziyi Zhang</name>
+    </author>
+    <author>
+      <name>Shuang Cui</name>
+    </author>
+    <author>
+      <name>Haotian Zhang</name>
+    </author>
+    <author>
+      <name>Xiaoyu Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.06502v2</id>
+    <title>DRAGON: LLM-Driven Decomposition and Reconstruction Agents for Large-Scale Combinatorial Optimization</title>
+    <updated>2026-03-02T05:25:58Z</updated>
+    <link href="https://arxiv.org/abs/2601.06502v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.06502v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have recently shown promise in addressing combinatorial optimization problems (COPs) through prompt-based strategies. However, their scalability and generalization remain limited, and their effectiveness diminishes as problem size increases, particularly in routing problems involving more than 30 nodes. We propose DRAGON, which stands for Decomposition and Reconstruction Agents Guided OptimizatioN, a novel framework that combines the strengths of metaheuristic design and LLM reasoning. Starting from an initial global solution, DRAGON autonomously identifies regions with high optimization potential and strategically decompose large-scale COPs into manageable subproblems. Each subproblem is then reformulated as a concise, localized optimization task and solved through targeted LLM prompting guided by accumulated experiences. Finally, the locally optimized solutions are systematically reintegrated into the original global context to yield a significantly improved overall outcome. By continuously interacting with the optimization environment and leveraging an adaptive experience memory, the agents iteratively learn from feedback, effectively coupling symbolic reasoning with heuristic search. Empirical results show that, unlike existing LLM-based solvers limited to small-scale instances, DRAGON consistently produces feasible solutions on TSPLIB, CVRPLIB, and Weibull-5k bin packing benchmarks, and achieves near-optimal results (0.16% gap) on knapsack problems with over 3M variables. This work shows the potential of feedback-driven language agents as a new paradigm for generalizable and interpretable large-scale optimization.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-10T09:31:40Z</published>
+    <arxiv:comment>This paper has been accepted for presentation and publication at the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026), source code: https://github.com/skychan/DARGON</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Shengkai Chen</name>
+    </author>
+    <author>
+      <name>Zhiguang Cao</name>
+    </author>
+    <author>
+      <name>Jianan Zhou</name>
+    </author>
+    <author>
+      <name>Yaoxin Wu</name>
+    </author>
+    <author>
+      <name>Senthilnath Jayavelu</name>
+    </author>
+    <author>
+      <name>Zhuoyi Lin</name>
+    </author>
+    <author>
+      <name>Xiaoli Li</name>
+    </author>
+    <author>
+      <name>Shili Xiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13776v2</id>
+    <title>A Knapsack by Any Other Name: Presentation impacts LLM performance on NP-hard problems</title>
+    <updated>2025-10-18T22:20:27Z</updated>
+    <link href="https://arxiv.org/abs/2502.13776v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.13776v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To investigate the effect of problem presentation on LLMs' ability to solve optimization problems, we introduce the dataset of Everyday Hard Optimization Problems (EHOP), a collection of NP-hard problems expressed in natural language. EHOP includes problem formulations that could be found in computer science textbooks (e.g., graph coloring), versions that are dressed up as problems that could arise in real life (e.g., party planning), and variants with inverted rules. We find that state-of-the-art LLMs, across multiple prompting strategies, systematically solve textbook problems more accurately than their real-life and inverted counterparts. While reasoning models are more capable, they nonetheless show high variance across problem presentations, suggesting they lack a truly robust reasoning mechanism. We argue that this constitutes evidence that LLMs are still heavily dependent on what was seen in training and struggle to generalize to novel problems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-19T14:39:59Z</published>
+    <arxiv:comment>24 pages, 6 figures, EMNLP 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Alex Duchnowski</name>
+    </author>
+    <author>
+      <name>Ellie Pavlick</name>
+    </author>
+    <author>
+      <name>Alexander Koller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.16979v1</id>
+    <title>Know the Ropes: A Heuristic Strategy for LLM-based Multi-Agent System Design</title>
+    <updated>2025-05-22T17:52:33Z</updated>
+    <link href="https://arxiv.org/abs/2505.16979v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.16979v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Single-agent LLMs hit hard limits--finite context, role overload, and brittle domain transfer. Conventional multi-agent fixes soften those edges yet expose fresh pains: ill-posed decompositions, fuzzy contracts, and verification overhead that blunts the gains. We therefore present Know-The-Ropes (KtR), a framework that converts domain priors into an algorithmic blueprint hierarchy, in which tasks are recursively split into typed, controller-mediated subtasks, each solved zero-shot or with the lightest viable boost (e.g., chain-of-thought, micro-tune, self-check). Grounded in the No-Free-Lunch theorem, KtR trades the chase for a universal prompt for disciplined decomposition. On the Knapsack problem (3-8 items), three GPT-4o-mini agents raise accuracy from 3% zero-shot to 95% on size-5 instances after patching a single bottleneck agent. On the tougher Task-Assignment problem (6-15 jobs), a six-agent o3-mini blueprint hits 100% up to size 10 and 84% on sizes 13-15, versus 11% zero-shot. Algorithm-aware decomposition plus targeted augmentation thus turns modest models into reliable collaborators--no ever-larger monoliths required.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T17:52:33Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhenkun Li</name>
+    </author>
+    <author>
+      <name>Lingyao Li</name>
+    </author>
+    <author>
+      <name>Shuhang Lin</name>
+    </author>
+    <author>
+      <name>Yongfeng Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26130v1</id>
+    <title>Agents Don't Paginate: First-Chunk Selection for LLM Tool Responses</title>
+    <updated>2026-06-23T19:10:22Z</updated>
+    <link href="https://arxiv.org/abs/2608.26130v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26130v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Coding agents built on large language models (LLMs), such as Claude Code, Cursor, OpenAI Codex, GitHub Copilot, and Aider, receive tool responses that routinely exceed the agent's per-turn token budget. The standard remedy, pagination, is available in every protocol that produced these responses; yet across the corpus of session logs from a public Model Context Protocol middleware we observed no agent-initiated requests for a second chunk. The first chunk is what the agent reads, so we ask how often the gold item (the one the agent needs) is placed first in it: the precision-at-1 rate $p_1$.
+  In a controlled offline benchmark we treat first-chunk selection as a 0/1 knapsack and compare six value functions on 500 SWE-bench Verified tasks, then test whether $p_1$ matters with a single-turn file-localisation probe on five language models (4,800 LLM calls; not an end-to-end resolve-rate test). Two pre-registered hypotheses did not hold and are our main findings. The central one is negative: raising $p_1$ does not systematically raise downstream accuracy. Per-model deltas stay under three percentage points (p.p.), are not consistently signed, and no model is significant; the agent recovers the gold from anywhere in the chunk, so what reaches its answer is first-chunk inclusion, not the gold's rank within it. The second: adding four file-metadata signals to a keyword scorer hurts $p_1$ by 4.8 p.p. (paired significance test, $p = 0.001$).
+  A parameter-free keyword scorer does raise $p_1$, from a 24.2% baseline to 35.0% (+10.8 p.p., far beyond chance; $p = 3.9 \times 10^{-8}$), and to 35.8% with a fallback to the tool's native ordering when no keyword matches. But by our central finding this is a rank-1 gain, and rank-1 is the part that does not reach the agent's answer: downstream accuracy does not move.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T19:10:22Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tatiana Petrova</name>
+    </author>
+    <author>
+      <name>Andrei Mazniak</name>
+    </author>
+    <author>
+      <name>Radu State</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21423v1</id>
+    <title>Agentic Security: A Systematization of Tools, Failure Modes, and Design Laws for LLM-Driven Penetration Testing</title>
+    <updated>2026-08-16T07:18:04Z</updated>
+    <link href="https://arxiv.org/abs/2608.21423v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21423v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic security uses large-language-model (LLM) agents to plan, dispatch, and interpret security tools. As these systems move from demonstrations to deployed products, practitioners repeatedly encounter the same operational failures. We systematize these failures through a hands-on evaluation of ten widely used static, dynamic, cloud, orchestration, and AI red-teaming tools for unattended pipelines. We introduce a four-dimensional Integration Friction Index that separates one-time engineering cost from recurring organisational, legal, and maintenance cost. We then derive quantitative regularities that explain recurring failure modes. Modelling an agentic security system as stochastic LLM policies wrapped by a deterministic mediator, we show that long-lived sessions lose resident evidence with phase count, while short-lived sub-agents extend the usable horizon according to the compression ratio between raw evidence and its summary. We show that a two-stage verdict cascade multiplies scorer likelihood ratios, but provides little benefit when scorer errors correlate. We show that treating unevaluable outcomes as attack failures biases downstream measurements toward evasive and severe responses. We formulate planner-versus-worker model routing as a knapsack problem and derive a closed-form execution cap for heavy-tailed tools, eta* = alpha v/c. Finally, we show why scope and budget enforcement cannot be delegated to system prompts: prompts do not constrain what actually executes. Inspectra, our implemented platform, serves as a worked instantiation, with mechanisms labelled shipped, partial, or planned, including those that did not work.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-16T07:18:04Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Israt Moyeen Noumi</name>
+    </author>
+    <author>
+      <name>Tarannum Ahmed Nowshin</name>
+    </author>
+    <author>
+      <name>Md. Mehedi Hasan Nipu</name>
+    </author>
+    <author>
+      <name>Mohammad Sakib Mahmood</name>
+    </author>
+    <author>
+      <name>Md. Jakir Hossain</name>
+    </author>
+    <author>
+      <name>M. F. Mridha</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.00662v1</id>
+    <title>Drift-Aware LLM Routing with Sparse Contexts and Shared Budgets</title>
+    <updated>2026-09-01T03:39:59Z</updated>
+    <link href="https://arxiv.org/abs/2609.00662v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.00662v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A multi-model language service must route each request while preserving workload-level budgets for compute, latency, memory, or monetary cost. Two features make this problem materially harder than static model selection. Prompt representations are high dimensional, so only a small subset of embedding directions may predict the incremental value of a model, and both the request mix and the model frontier drift after launches, fine-tunes, quantization changes, and system updates. We formulate nonstationary sparse contextual routing with multiple knapsack constraints and an optional shadow-audit stream that evaluates a small fraction of prompts on several models.
+  We propose Drift-Aware Sparse Routing (DRS). The policy estimates reward and resource use from a rolling audit window, routes using pessimistic reward and optimistic cost estimates, updates resource shadow prices online, and applies a hard meter before commitment. The analysis separates control from statistics. On any event with uniform prediction radii $\{β_t\}$, regret against a paced dynamic fluid benchmark is bounded by the sum of the radii, a capacity-buffer term, and an $O(\sqrt{T})$ pacing term. Under a sparse linear model and bounded drift $V_T$, rolling estimation gives \[ \widetilde O\left( T\sqrt{\frac{s}{ρW}}+WV_T+\sqrt{T} \right), \] where $s$ is sparsity, $ρ$ is the audit rate, and $W$ is the window length. Optimizing $W$ yields the usual stationary $O(\sqrt{sT/ρ})$ rate when $V_T=0$ and a $O(T^{2/3}(s/ρ)^{1/3}V_T^{1/3})$ adaptation term under drift.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-01T03:39:59Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Cheung Hao Lee</name>
+    </author>
+    <author>
+      <name>Patrick Wong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.04428v1</id>
+    <title>Submodular Ground-Set Pruning: Monotone Tightness and a Non-Monotone Separation</title>
+    <updated>2026-05-06T02:43:13Z</updated>
+    <link href="https://arxiv.org/abs/2605.04428v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.04428v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-scale subset selection asks for a small useful set of examples, features, sensors, seed users, or context passages from an enormous ground set. Submodular maximization is a canonical model for such diminishing-returns problems, but rapidly growing datasets make even linear-time algorithms ever costlier. We study \emph{containment pruning}: first reduce the ground set to a smaller core $P$, then require that $P$ contain a near-optimal feasible solution for every downstream budget up to~$k$. Prior work has formulated many heuristics, but the theoretical limits of this preprocessing problem are largely unknown. For monotone submodular objectives, we prove that $1-1/e$ is tight: greedy achieves this containment factor, and no algorithm can beat it even with a larger pruning budget. For non-monotone objectives, we give the first$1/2-\varepsilon$ containment algorithms under cardinality constraints and extend the approach to knapsack constraints. This $1/2$ factor exceeds the best known algorithmic ratio and the known hardness threshold for non-monotone maximization, showing that pruning can be provably easier than optimization. Empirically, pruning lets an exact IP solver run on the reduced MaxCut instance with a ${\approx}620\times$ speedup, and proof-of-concept experiments on LLM context selection demonstrate the utility of non-monotone submodular proxies and our proposed containment algorithms.</summary>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-06T02:43:13Z</published>
+    <arxiv:comment>39 pages, 0 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.DS"/>
+    <author>
+      <name>Alan Kuhnle</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.17137v1</id>
+    <title>Latent Heuristic Search: Continuous Optimization for Automated Algorithm Design</title>
+    <updated>2026-05-16T20:03:01Z</updated>
+    <link href="https://arxiv.org/abs/2605.17137v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.17137v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The integration of Large Language Models (LLMs) into evolutionary frameworks has established a new paradigm for automated heuristic discovery. Despite their promise, these methods typically search in the discrete space of program syntax, relying on stochastic sampling to navigate a highly non-convex optimization landscape. This work proposes a continuous heuristic discovery framework that shifts optimization to a learned latent manifold. We employ an encoder to map discrete programs into continuous embeddings and train a differentiable surrogate model to predict performance, enabling gradient-based search. To regularize the optimization trajectory, an invertible normalizing flow maps these embeddings to a structured Gaussian prior, where we perform gradient ascent. The resulting optimized latent vectors are projected through a learned mapper into soft prompts, which condition a frozen LLM to synthesize novel executable heuristics. We evaluate the proposed method on the Traveling Salesman Problem (TSP), the Capacitated Vehicle Routing Problem (CVRP), the Knapsack Problem (KSP), and Online Bin Packing (OBP). Empirical results demonstrate that continuous latent-space optimization achieves performance competitive with state-of-the-art discrete evolutionary baselines while offering a complementary methodological alternative for automated algorithm design. The implementation code is available at \url{https://github.com/cheikh025/LHS}.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-16T20:03:01Z</published>
+    <arxiv:comment>Accepted at LION 2026, The Learning and Intelligent Optimization Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Cheikh Ahmed</name>
+    </author>
+    <author>
+      <name>Mahdi Mostajabdaveh</name>
+    </author>
+    <author>
+      <name>Zirui Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.11052v1</id>
+    <title>ACCORD: Autoregressive Constraint-satisfying Generation for COmbinatorial Optimization with Routing and Dynamic attention</title>
+    <updated>2025-05-22T09:33:55Z</updated>
+    <link href="https://arxiv.org/abs/2506.11052v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.11052v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have demonstrated impressive reasoning capabilities, yet their direct application to NP-hard combinatorial problems (CPs) remains underexplored. In this work, we systematically investigate the reasoning abilities of LLMs on a variety of NP-hard combinatorial optimization tasks and introduce ACCORD: Autoregressive Constraint-satisfying generation for COmbinatorial optimization with Routing and Dynamic attention. ACCORD features a novel dataset representation and model architecture that leverage the autoregressive nature of LLMs to dynamically enforce feasibility constraints, coupled with attention-based routing to activate problem-specific LoRA modules. We also present the ACCORD-90k supervised dataset, covering six NP-hard combinatorial problems: TSP, VRP, Knapsack, FlowShop, JSSP, and BinPacking. Extensive experiments demonstrate that our ACCORD model, built on an 8B-parameter Llama backbone, consistently outperforms standard prompting and input-output methods, even when compared to much larger LLMs, such as gpt-4. Ablation studies further show that our output structure enhances solution feasibility. To the best of our knowledge, this is the first large-scale, end-to-end framework for exploring the applications of LLMs to a broad spectrum of combinatorial optimization problems. The codes are publicly available at https://github.com/starjob42/ACCORD</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T09:33:55Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Henrik Abgaryan</name>
+    </author>
+    <author>
+      <name>Tristan Cazenave</name>
+    </author>
+    <author>
+      <name>Ararat Harutyunyan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.00336v1</id>
+    <title>Budget-Aware Routing for Long Clinical Text</title>
+    <updated>2026-05-01T01:34:53Z</updated>
+    <link href="https://arxiv.org/abs/2605.00336v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.00336v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A key challenge for large language models is token cost per query and overall deployment cost. Clinical inputs are long, heterogeneous, and often redundant, while downstream tasks are short and high stakes. We study budgeted context selection, where a subset of document units is chosen under a strict token budget so an off-the-shelf generator can meet fixed cost and latency constraints. We cast this as a knapsack-constrained subset selection problem with two design choices, unitization that defines document segmentation and selection that determines which units are kept.
+  We propose \textbf{RCD}, a monotone submodular objective that balances relevance, coverage, and diversity. We compare sentence, section, window, and cluster-based unitization, and introduce a routing heuristic that adapts to the budget regime. Experiments on MIMIC discharge notes, Cochrane abstracts, and L-Eval show that optimal strategies depend on the evaluation setting. Positional heuristics perform best at low budgets in extractive tasks, while diversity-aware methods such as MMR improve LLM generation. Selector choice matters more than unitization, with cluster-based grouping reducing performance and other schemes behaving similarly. ROUGE saturates for LLM summaries, while BERTScore better reflects quality differences. We release our code at https://github.com/stone-technologies/ACL_budget_paper.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-01T01:34:53Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Khizar Qureshi</name>
+    </author>
+    <author>
+      <name>Geoffrey Martin</name>
+    </author>
+    <author>
+      <name>Yifan Peng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.18374v1</id>
+    <title>Beyond Inference-Time Search: Reinforcement Learning Synthesizes Reusable Solvers</title>
+    <updated>2026-05-18T13:21:40Z</updated>
+    <link href="https://arxiv.org/abs/2605.18374v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.18374v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) typically approach combinatorial optimization as an inference-time procedure, solving each instance separately through sampling, search, or repeated prompting. We ask whether reinforcement learning can instead shift part of this reasoning cost into the weights of a code LLM, so that the model synthesizes a reusable solver for an entire problem family. We study this question on Synergistic Dependency Selection (SDS), a controlled variant of constrained Quadratic Knapsack designed to expose a specific failure mode: local signals and strict feasibility constraints make greedy heuristics attractive but unreliable. Under identical scaffolding, Best-of-64 base-model sampling saturates at an approximately 28.7% gap to the global Virtual Best Solver (VBS); code audits show that the base model often retrieves Simulated Annealing templates but misimplements the Metropolis acceptance rule. We fine-tune Qwen2.5-Coder-14B-Instruct with Group Relative Policy Optimization (GRPO) using a feasibility-gated reward and light structural scaffolding. The resulting policy converges to a constraint-aware Simulated Annealing template in 99.8% of feasible SDS outputs, achieves a 5.0% gap to that VBS, and is 91 times cheaper in post-generation execution/search cost than cumulative Best-of-64 evaluation. A compile-once check shows that one best frozen solver per seed remains highly competitive when reused unchanged across the SDS test set, while an additional-domain evaluation on Job Shop Scheduling provides narrower but positive evidence that the scaffold transfers beyond SDS. Negative ablations reveal the limits of this recipe: standard stabilizers degrade performance, a soft feasibility gate fails, and results remain sensitive to reward normalization and domain-specific design choices.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T13:21:40Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Soheyl Massoudi</name>
+    </author>
+    <author>
+      <name>Gabriel Apaza</name>
+    </author>
+    <author>
+      <name>Milad Habibi</name>
+    </author>
+    <author>
+      <name>Mark Fuge</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/eeP3NTNE8FJXwtLzhrhwqBLmuZk</id>
+  <title>arXiv Query: search_query=all:tool AND all:schema AND (all:selection OR all:retrieval) AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:08Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:tool+AND+(all:schema+AND+((all:selection+OR+all:retrieval)+AND+all:LLM))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>113</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2506.01276v1</id>
+    <title>Schema as Parameterized Tools for Universal Information Extraction</title>
+    <updated>2025-06-02T03:12:44Z</updated>
+    <link href="https://arxiv.org/abs/2506.01276v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.01276v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Universal information extraction (UIE) primarily employs an extractive generation approach with large language models (LLMs), typically outputting structured information based on predefined schemas such as JSON or tables. UIE suffers from a lack of adaptability when selecting between predefined schemas and on-the-fly schema generation within the in-context learning paradigm, especially when there are numerous schemas to choose from. In this paper, we propose a unified adaptive text-to-structure generation framework, called Schema as Parameterized Tools (SPT), which reimagines the tool-calling capability of LLMs by treating predefined schemas as parameterized tools for tool selection and parameter filling. Specifically, our SPT method can be applied to unify closed, open, and on-demand IE tasks by adopting Schema Retrieval by fetching the relevant schemas from a predefined pool, Schema Filling by extracting information and filling slots as with tool parameters, or Schema Generation by synthesizing new schemas with uncovered cases. Experiments show that the SPT method can handle four distinct IE tasks adaptively, delivering robust schema retrieval and selection performance. SPT also achieves comparable extraction performance to LoRA baselines and current leading UIE systems with significantly fewer trainable parameters.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-02T03:12:44Z</published>
+    <arxiv:comment>12 pages, 7 figures, 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sheng Liang</name>
+    </author>
+    <author>
+      <name>Yongyue Zhang</name>
+    </author>
+    <author>
+      <name>Yaxiong Wu</name>
+    </author>
+    <author>
+      <name>Ruiming Tang</name>
+    </author>
+    <author>
+      <name>Yong Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.02650v1</id>
+    <title>HyperAgent: Planning and Acting over Tool-Schema Hypergraphs for Tool-Use LLM Agents</title>
+    <updated>2026-07-31T21:42:35Z</updated>
+    <link href="https://arxiv.org/abs/2608.02650v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.02650v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly rely on external tools to complete complex real-world tasks. However, reliable tool-use planning remains challenging due to the limitations of implicit reasoning and the evolving nature of real-world execution environments. Existing tool-use agents typically rely on LLMs to infer tool compositions from textual descriptions, which can lead to inefficient exploration and unreliable execution in complex tasks. To address these challenges, we model tool relations at the schema level and construct a directed Tool--Schema Hypergraph, in which tools are represented as hyperedges from their required input-schema nodes to their output-schema nodes. Furthermore, we propose HyperAgent, a Tool--Schema Hypergraph-guided framework for dynamic planning and execution. Given a task, HyperAgent first extracts a task-relevant tool context graph and uses it to guide the construction of a schema-aware Task DAG. During execution, HyperAgent dynamically realizes each subtask by constructing a state-conditioned tool support graph through deficit-oriented expansion, which identifies unresolved requirements and retrieves supporting producer tools according to the current agent state. Experiments on AppWorld demonstrate that HyperAgent improves task completion performance while reducing redundant API calls, LLM interactions, and token consumption compared with existing agent baselines.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T21:42:35Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zian Zhai</name>
+    </author>
+    <author>
+      <name>Xingyu Tan</name>
+    </author>
+    <author>
+      <name>Gaowang Zou</name>
+    </author>
+    <author>
+      <name>Xiaoyang Wang</name>
+    </author>
+    <author>
+      <name>Wenjie Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.13519v2</id>
+    <title>ToolSpec: Accelerating Tool Calling via Schema-Aware and Retrieval-Augmented Speculative Decoding</title>
+    <updated>2026-05-28T06:02:42Z</updated>
+    <link href="https://arxiv.org/abs/2604.13519v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.13519v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool calling has greatly expanded the practical utility of large language models (LLMs) by enabling them to interact with external applications. As LLM capabilities advance, effective tool use increasingly involves multi-step, multi-turn interactions to solve complex tasks. However, the resulting growth in tool interactions incurs substantial latency, posing a key challenge for real-time LLM serving. Through empirical analysis, we find that tool-calling traces are highly structured, conform to constrained schemas, and often exhibit recurring invocation patterns. Motivated by this, we propose ToolSpec, a schema-aware, retrieval-augmented speculative decoding method for accelerating tool calling. ToolSpec exploits predefined tool schemas to generate accurate drafts, using a finite-state machine to alternate between deterministic schema token filling and speculative generation for variable fields. In addition, ToolSpec retrieves similar historical tool invocations and reuses them as drafts to further improve efficiency. ToolSpec presents a plug-and-play solution that can be seamlessly integrated into existing LLM workflows. Experiments across multiple benchmarks demonstrate that ToolSpec achieves up to a 4.2x speedup, substantially outperforming existing training-free speculative decoding methods.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T06:05:11Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Heming Xia</name>
+    </author>
+    <author>
+      <name>Yongqi Li</name>
+    </author>
+    <author>
+      <name>Cunxiao Du</name>
+    </author>
+    <author>
+      <name>Mingbo Song</name>
+    </author>
+    <author>
+      <name>Wenjie Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.05415v1</id>
+    <title>Executable Schema Contracts: From Automatic Ingestion to Multi-Source Retrieval</title>
+    <updated>2026-06-03T20:28:36Z</updated>
+    <link href="https://arxiv.org/abs/2606.05415v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.05415v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Real-world data spans tables, documents, and semi-structured files with implicit semantics. Querying this data requires integrating evidence across inconsistent schemas and formats, yet existing approaches either demand costly manual engineering or bypass structure entirely. We present a system that automatically discovers an executable schema from raw multi-source data and uses it as a shared contract for knowledge graph construction and query-time retrieval. A closed-world field catalog constrains LLM-based schema discovery to attested fields; deterministic structural analysis infers identity keys, foreign keys, and source hierarchy; and the resulting schema drives extraction, deduplication, and cross-source linking into a provenance-aware knowledge graph. At query time the schema -- optionally extended via a monotonic protocol -- conditions a multi-tool agent routing retrieval across structured lookup, graph traversal, and vector search, returning grounded answers with traceable citations. In controlled zero-shot comparisons using the same LLM, data, and evaluation harness, the system improves over retrieval-only and decomposition-based baselines across four QA benchmarks, with ablations showing that schema-conditioned routing, structural intelligence, and schema-guided construction each contribute to the gains.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T20:28:36Z</published>
+    <arxiv:comment>9 pages, 4 figures, plus supplementary appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Padmaja Jonnalagedda</name>
+    </author>
+    <author>
+      <name>Yuguang Yao</name>
+    </author>
+    <author>
+      <name>Xiang Gao</name>
+    </author>
+    <author>
+      <name>Hilaf Hasson</name>
+    </author>
+    <author>
+      <name>Kamalika Das</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08151v4</id>
+    <title>Decision-Aware Memory Cards: Counterfactual-Inspired Context Selection and Compression for Tool-Using LLM Agents</title>
+    <updated>2026-09-21T11:44:59Z</updated>
+    <link href="https://arxiv.org/abs/2606.08151v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08151v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern large language model (LLM) agents do not simply need longer contexts; they need decision-relevant evidence at the moment of action. We study decision-aware context selection: ranking retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone. We present the Counterfactual-Inspired Context Layer (CICL), which builds an instance context graph, estimates decision-oriented utility for candidate units, and compresses selected evidence into typed memory cards. The same schema can be instantiated with hosted LLM judges, local surrogates, or lightweight rankers, making the selection protocol auditable across model choices. On 50 SWE-bench Verified file-retrieval instances, Qwen3.6-Plus reranking of BM25 top-50 candidates improves hit@1 from 0.58 to 0.78 and MRR@10 from 0.634 to 0.790, with all 2,500 judgments parseable. Controlled diagnostics show that CICL identifies action-critical evidence: removing the top-utility semantic unit reduces F1 from 0.245 to 0.000. In selected-then-compressed mode, memory cards save 44.93 tokens per query while preserving selected evidence. CICL provides a practical layer for measuring, ranking, and compressing decision-critical context for tool-using agents. Code is available at https://github.com/stephen-guan-researcher/CICL.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T13:02:28Z</published>
+    <arxiv:comment>Accepted at ICONIP 2026 for publication in Springer CCIS. 15 pages, 2 figures, 8 tables. Camera-ready update: revised figures and corrected retrieval recall metrics. Code: https://github.com/stephen-guan-researcher/CICL ; Qwen-QLoRA adapter: https://huggingface.co/XinyuGuan/CICL</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinyu Guan</name>
+    </author>
+    <author>
+      <name>Qianyang Zhao</name>
+    </author>
+    <author>
+      <name>Yuming Deng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.23826v2</id>
+    <title>Decomposing Queries into Tool Calls for Long-Video Keyframe Retrieval</title>
+    <updated>2026-07-06T23:24:40Z</updated>
+    <link href="https://arxiv.org/abs/2605.23826v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.23826v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Keyframe selection is a direct way to provide verifiable visual evidence for long-video question answering (QA). Queries differ in what they require, and finding the right frames depends on knowing what to look for. Existing keyframe selectors either score every frame against a single query, or decompose the query into a fixed schema evaluated by a single visual tool. We propose ToolMerge, a keyframe retrieval method based on decomposition and merging: an Large Language Model (LLM) based planner decomposes the query into tool calls and specifies how their per-tool rankings are merged using boolean operators. To evaluate retrieval directly, we construct Molmo-2 Moments (M2M), a benchmark in which every question is anchored to a specific time interval by construction. Across QA, question retrieval, and caption retrieval, ToolMerge is competitive with prior keyframe selectors, most notably on caption retrieval, outperforming other methods by 5%. Code and data can be found at https://github.com/michalsr/ToolMerge .</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-22T16:29:51Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Michal Shlapentokh-Rothman</name>
+    </author>
+    <author>
+      <name>Prachi Garg</name>
+    </author>
+    <author>
+      <name>Yu-Xiong Wang</name>
+    </author>
+    <author>
+      <name>Derek Hoiem</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.15189v2</id>
+    <title>ScrapeGraphAI-100k: Dataset for Schema-Constrained LLM Generation</title>
+    <updated>2026-05-08T08:59:17Z</updated>
+    <link href="https://arxiv.org/abs/2602.15189v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.15189v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Producing output that conforms to a specified JSON schema underlies tool use, structured extraction, and knowledge base construction in modern large language models. Despite this centrality, public datasets for the task remain small, synthetic, or text-only, and rarely pair real page content with the prompts and schemas used in practice. We introduce ScrapeGraphAI-100k, 93,695 schema-constrained extraction events collected via opt-in ScrapeGraphAI telemetry in Q2--Q3 2025, deduplicated and balanced by schema from 9M raw events. The corpus spans 18 000+ unique schemas across 15 named languages plus a long-tail Other category, with English and Traditional Chinese covering 88% of detected content, each instance pairs Markdown-converted page content with a prompt, schema, LLM response, and per-example jsonschema-rs structural conformance labels (semantic correctness is out of scope, and raw HTML is deferred beyond v1.0). We characterize structural diversity across the corpus and identify sharp failure thresholds as schema complexity grows. As a case study, a 1.7B student fine-tuned on this data closely tracks the output distribution of its GPT-5-nano teacher, though it still trails a 30B-A3B reference (3.3B active parameters) on schema compliance. We offer this distillation result as preliminary evidence that grounding schema-constrained generation in real practitioner workloads at scale enables training and benchmarking that prior synthetic or text-only corpora could not support.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T20:56:59Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>William Brach</name>
+    </author>
+    <author>
+      <name>Francesco Zuppichini</name>
+    </author>
+    <author>
+      <name>Marco Vinciguerra</name>
+    </author>
+    <author>
+      <name>Lorenzo Padoan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.09207v1</id>
+    <title>Pneuma: Leveraging LLMs for Tabular Data Representation and Retrieval in an End-to-End System</title>
+    <updated>2025-04-12T13:20:50Z</updated>
+    <link href="https://arxiv.org/abs/2504.09207v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.09207v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Finding relevant tables among databases, lakes, and repositories is the first step in extracting value from data. Such a task remains difficult because assessing whether a table is relevant to a problem does not always depend only on its content but also on the context, which is usually tribal knowledge known to the individual or team. While tools like data catalogs and academic data discovery systems target this problem, they rely on keyword search or more complex interfaces, limiting non-technical users' ability to find relevant data. The advent of large language models (LLMs) offers a unique opportunity for users to ask questions directly in natural language, making dataset discovery more intuitive, accessible, and efficient.
+  In this paper, we introduce Pneuma, a retrieval-augmented generation (RAG) system designed to efficiently and effectively discover tabular data. Pneuma leverages large language models (LLMs) for both table representation and table retrieval. For table representation, Pneuma preserves schema and row-level information to ensure comprehensive data understanding. For table retrieval, Pneuma augments LLMs with traditional information retrieval techniques, such as full-text and vector search, harnessing the strengths of both to improve retrieval performance. To evaluate Pneuma, we generate comprehensive benchmarks that simulate table discovery workload on six real-world datasets including enterprise data, scientific databases, warehousing data, and open data. Our results demonstrate that Pneuma outperforms widely used table search systems (such as full-text search and state-of-the-art RAG systems) in accuracy and resource efficiency.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-12T13:20:50Z</published>
+    <arxiv:comment>SIGMOD 2025 Paper</arxiv:comment>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Muhammad Imam Luthfi Balaka</name>
+    </author>
+    <author>
+      <name>David Alexander</name>
+    </author>
+    <author>
+      <name>Qiming Wang</name>
+    </author>
+    <author>
+      <name>Yue Gong</name>
+    </author>
+    <author>
+      <name>Adila Krisnadhi</name>
+    </author>
+    <author>
+      <name>Raul Castro Fernandez</name>
+    </author>
+    <arxiv:doi>10.1145/3725337</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3725337" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.01736v1</id>
+    <title>Harness Engineering in LLM Tool Use via Agent-Native Reusable Tool Primitives</title>
+    <updated>2026-09-01T18:07:09Z</updated>
+    <link href="https://arxiv.org/abs/2609.01736v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.01736v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) augmented with external tools have demonstrated remarkable capability in solving complex real-world tasks. However, existing approaches suffer from two key challenges: brittle multi-step and multi-turn reasoning caused by incompatible tool output types and API schemas, and performance degradation under large tool catalogues. To address these, we introduce \textbf{Tool Primitives}, a design that replaces rigid API schema-based invocation with natural language as the interface for tool calling, where each tool is wrapped with an LLM interface that handles schema resolution and execution internally, enabling natural inter-tool communication for nested and multi-turn tool calling. Building on Tool Primitives, we host \textbf{ToolFace}, a centralized repository of 25,519 functions from which LLMs dynamically retrieve only the relevant tools at inference time, eliminating the need to enumerate raw API schemas in context. To orchestrate Tool Primitives and ToolFace reliably in complex settings, we further propose \textbf{HEART}, a \textbf{H}arness \textbf{E}ngineering framework via \textbf{A}gent-native, \textbf{R}eusable \textbf{T}ool Primitives, comprising a Planner, Router, and Verifier that jointly support dynamic tool invocation planning, multi-step execution, and feedback-driven recovery.
+  Experiments on five benchmarks demonstrate that HEART outperforms SFT-based models by $10\%$ on average and surpasses GPT-5.4, Claude-4.6-Sonnet, and Gemini-3.1-Pro by $6\%$ on average while reducing API cost by up to $85\%$. On 50 real-world tasks, HEART achieves $84\%$ task completion, $3.8\times$ the average of three frontier commercial models ($22\%$).</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-01T18:07:09Z</published>
+    <arxiv:comment>21 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Haibo Jin</name>
+    </author>
+    <author>
+      <name>Suijin Wang</name>
+    </author>
+    <author>
+      <name>Xucheng Yu</name>
+    </author>
+    <author>
+      <name>Haojing Luo</name>
+    </author>
+    <author>
+      <name>Haohan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.16591v2</id>
+    <title>SING: Synthetic Intention Graph for Scalable Active Tool Discovery in LLM Agents</title>
+    <updated>2026-06-16T09:43:21Z</updated>
+    <link href="https://arxiv.org/abs/2606.16591v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.16591v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents increasingly rely on agent harnesses that manage context, tools, and multi-turn execution, making tools a central interface for acting in realistic digital environments. As harness-connected tool ecosystems expand to hundreds or thousands of APIs, services, and task-specific skills, exhaustive tool schema injection becomes costly and imposes a closed-world assumption that limits agents to a predefined static inventory. Retrieval-augmented tool selection offers a natural alternative, but existing one-shot retrieval methods often fail to align isolated tool descriptions with the agent's true task intention, especially in long-horizon tasks where required capabilities emerge through decomposition, observations, and newly induced subgoals. We propose SING, an intention-aware active tool discovery framework that builds an intention-tool graph linking user intentions, tool capabilities, and tool collaboration patterns, and dynamically retrieves tools according to evolving task states. Using a unified corpus of 7,471 tools, we evaluate SING on three real-world tool-use benchmarks. SING improves Global Recall@5 by up to 59.8% and downstream success rate by up to 28.9% over baselines, while reducing full-corpus tool-schema exposure by 99.8%, demonstrating that intention-aware graph structure enables more accurate and context-efficient tool discovery in large-scale agentic ecosystems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-15T11:37:37Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qiao Xiao</name>
+    </author>
+    <author>
+      <name>Haochen Shi</name>
+    </author>
+    <author>
+      <name>Yisen Gao</name>
+    </author>
+    <author>
+      <name>Wenbin Hu</name>
+    </author>
+    <author>
+      <name>Huihao Jing</name>
+    </author>
+    <author>
+      <name>Tianshi Zheng</name>
+    </author>
+    <author>
+      <name>Baixuan Xu</name>
+    </author>
+    <author>
+      <name>Ziheng Zhang</name>
+    </author>
+    <author>
+      <name>Weiqi Wang</name>
+    </author>
+    <author>
+      <name>Haoran Li</name>
+    </author>
+    <author>
+      <name>Jiaxin Bai</name>
+    </author>
+    <author>
+      <name>Yangqiu Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22642v1</id>
+    <title>CRAFT: Learn the Schema, Execute the Plan</title>
+    <updated>2026-06-24T00:12:03Z</updated>
+    <link href="https://arxiv.org/abs/2607.22642v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22642v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Enterprise coding agents translate natural-language analytical requests into executable code over proprietary APIs, schemas, and metric definitions. Yet the prevailing deployment pattern injecting exhaustive schema and tool documentation into each prompt increases inference overhead, complicates schema evolution, and undermines reliability in multi-turn analysis. We investigate whether stable schema knowledge and tool-use behavior can instead be acquired through post-training while preserving the consistency required for production-facing analytics. We present CRAFT, a two-stage post-training recipe for schema-grounded coding agents. First, schema-stripped PLAN supervised fine-tuning learns domain-structured plans and executable behaviors from validated trajectories without exhaustive prompt-time schema injection. Second, execution-shaped reinforcement learning aligns the policy for tool selection, code quality, plan-code consistency, and recovery from failed executions. Training trajectories are curated through a Tri-Gate filter combining execution validation, data-integrity checks, and LLM-judge reasoning audit. We evaluate CRAFT for planned rollout in advertising analytics, covering campaign performance analysis, metric drill-downs, entity-level performance analysis, and multi-turn analytical refinement. The enterprise evaluation environment incorporates beta APIs as the agent-facing tool surface and spans 25 schema-linked core entities and 30 agentic workflows. Relative to a schema-stuffed baseline, CRAFT improves composite Agent Score by +9.6 pp, consistency by +4.1 pp, and multi-turn coherence by +4.2 pp, while reducing input-token burden by approximately 9x and schema-discovery loops by up to 5x. We further report deployment tradeoffs, reward-shaping limitations, and training-infrastructure extensions required for multi-turn tool-use reinforcement learning in enterprise settings.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-24T00:12:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Aakash Kolekar</name>
+    </author>
+    <author>
+      <name>Sahika Genc</name>
+    </author>
+    <author>
+      <name>Shahriar Shariat</name>
+    </author>
+    <author>
+      <name>Bunyamin Sisman</name>
+    </author>
+    <author>
+      <name>Tibor Mezi</name>
+    </author>
+    <author>
+      <name>Barbara Poblete</name>
+    </author>
+    <author>
+      <name>Shree Vandana Kachroo</name>
+    </author>
+    <author>
+      <name>Calvin Chi</name>
+    </author>
+    <author>
+      <name>Parth Parmar</name>
+    </author>
+    <author>
+      <name>Ari Singer</name>
+    </author>
+    <author>
+      <name>Prayaas Jain</name>
+    </author>
+    <author>
+      <name>Cindy Barker</name>
+    </author>
+    <author>
+      <name>Benoit Dumoulin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.20397v1</id>
+    <title>Nexus: Depth-Adaptive KV-Cache Splicing and Retrieval-Decoupled Tool Routing for Agentic LLMs on Unified Memory</title>
+    <updated>2026-07-01T18:49:45Z</updated>
+    <link href="https://arxiv.org/abs/2608.20397v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.20397v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic large language models (LLMs) on the Model Context Protocol (MCP) re-encode verbose tool schemas every turn, so prefill - quadratic in sequence length - dominates time-to-first-token (TTFT) as the tool registry grows. Nexus's primary lever is to decouple routing from the schema-prefill cost: an INT8 semantic lookaside buffer (SLB) with a calibrated cross-encoder margin gate selects tools by retrieval, and arguments are generated over a compressed textual signature (median 19 tokens) rather than over spliced key/value (KV) cache. This path is depth-independent: routing accuracy stays near 89% as the registry scales to 250 tools - where a concatenate-all-schemas baseline overflows the context window entirely - and it reaches a first-argument token 1.66x sooner than a full-schema re-prefill at a ~80% main-context token saving. As a secondary, bounded lever we transplant a compiled schema KV block directly into the live context. This is fundamentally limited by rotary position embedding (RoPE) phase drift: an anchored splice is output-exact, but off-anchor placement corrupts attention, so beyond a threshold P=256 Nexus repairs the seam with a depth-adaptive suffix redecode that escalates to a full re-prefill. The resulting never-regress property is a guarantee on output fidelity (top-1 agreement, D_KL approx. 0) - not on latency, which can dip to 0.98x before converging to parity - alongside a 1.1-1.7x TTFT speedup at moderate depth that narrows to parity at deep context. Two negative results bound the design: the off-anchor RoPE fidelity boundary, and the failure of a reference-free drift gate to predict drift (Spearman rho = 0.193). All measurements are from one model tuple (Qwen2.5-14B-Instruct Q4_K_M) on Apple-silicon unified memory; the qualitative boundaries generalize, while the quantitative envelope is tuple-specific.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T18:49:45Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mustafa Arslan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.01056v4</id>
+    <title>MCP-Zero: Active Tool Discovery for Autonomous LLM Agents</title>
+    <updated>2025-06-24T06:27:29Z</updated>
+    <link href="https://arxiv.org/abs/2506.01056v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.01056v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>True intelligence requires active capability acquisition, yet current LLM agents inject pre-defined tool schemas into prompts, reducing models to passive selectors and falling short of robust general-purpose agency. We introduce MCP-Zero, an active agent framework that restores tool discovery autonomy to LLMs themselves. Instead of overwhelming models with all available tools, MCP-Zero enables agents to actively identify capability gaps, and request specific tools on-demand, transforming them from large-scale retrievers into genuine autonomous agents. The framework operates through three core mechanisms: (1) Active Tool Request, where models autonomously generate structured requests specifying their exact tool requirements; (2) Hierarchical Semantic Routing, a two-stage algorithm that matches requests to relevant servers and tools through improved semantic alignment; (3) Iterative Capability Extension, enabling agents to progressively build cross-domain toolchains while maintaining minimal context footprint. We construct MCP-tools, a comprehensive dataset of 308 MCP servers and 2,797 tools from the official Model-Context-Protocol repository. Experiments demonstrate that MCP-Zero preserves agent autonomy while achieving substantial efficiency gains: (i) accurate tool selection from nearly 3k candidates across 248.1k tokens; (ii) 98\% reduction in token consumption on APIBank while maintaining high accuracy; and (iii) consistent multi-turn performance that scales with tool ecosystem growth. This work establishes active tool discovery as a fundamental design pattern for scalable autonomous agent systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-01T15:48:53Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiang Fei</name>
+    </author>
+    <author>
+      <name>Xiawu Zheng</name>
+    </author>
+    <author>
+      <name>Hao Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.18012v1</id>
+    <title>DynaRAG: Bridging Static and Dynamic Knowledge in Retrieval-Augmented Generation</title>
+    <updated>2026-02-24T03:55:07Z</updated>
+    <link href="https://arxiv.org/abs/2603.18012v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.18012v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present DynaRAG, a retrieval-augmented generation (RAG) framework designed to handle both static and time-sensitive information needs through dynamic knowledge integration. Unlike traditional RAG pipelines that rely solely on static corpora, DynaRAG selectively invokes external APIs when retrieved documents are insufficient for answering a query. The system employs an LLM-based reranker to assess document relevance, a sufficiency classifier to determine when fallback is necessary, and Gorilla v2 -- a state-of-the-art API calling model -- for accurate tool invocation. We further enhance robustness by incorporating schema filtering via FAISS to guide API selection. Evaluations on the CRAG benchmark demonstrate that DynaRAG significantly improves accuracy on dynamic questions, while also reducing hallucinations. Our results highlight the importance of dynamic-aware routing and selective tool use in building reliable, real-world question-answering systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-24T03:55:07Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Penghao Liang</name>
+    </author>
+    <author>
+      <name>Mengwei Yuan</name>
+    </author>
+    <author>
+      <name>Jianan Liu</name>
+    </author>
+    <author>
+      <name>Jing Yang</name>
+    </author>
+    <author>
+      <name>Xianyou Li</name>
+    </author>
+    <author>
+      <name>Weiran Yan</name>
+    </author>
+    <author>
+      <name>Yichao Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.11390v1</id>
+    <title>TerraRepair: A Tool-Grounded LLM Agent for Infrastructure-as-Code Repair</title>
+    <updated>2026-07-13T10:54:38Z</updated>
+    <link href="https://arxiv.org/abs/2607.11390v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.11390v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Infrastructure-as-Code (IaC) scanners detect cloud misconfigurations in Terraform and other IaC languages before deployment, but repairing the flagged configurations remains largely manual. Recent Large Language Model (LLM)-based repair approaches can repair some findings, but may hallucinate unsupported constructs or suppress warnings without fixing the issue. Aims: We study whether tool grounding can improve LLM-based Terraform repair, and when a finding should be escalated because the required deploymnet-specific context is not availble. Method: We present TerraRepair, a prototype of a tool-grounded LLM agent for Terraform repair with structured escalation. TerraRepair retrieves dependency context from Terraform references, consults the installed provider schema, and re-runs the scanner before returning a candidate repair. Then teh required context is absent, TerraRepair escalates instead of fabricating a plausible fix. Results: We evaluate our tool on two vulnerable-by-design Terraform repositories using two IaC security scanners, Checkov and Trivy, across AWS, Azure, and GCP. On the combined AWS benchmark, TerraRepair improves scanner-verified fix rates from 26.6% to 78.4% on Checkov and from 44.8% to 72.4% on Trivy, compared with a controlled one-shot baseline. It repairs are labelled as correct under a majority-vote protocol. Conclusions: These emerging results show that tool grounding can substantially improve scanner-verified LLM-based IaC repair on the studied benchmarks, while missing deployment-specific context remains the main knowledge boundary for full autonomy.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-13T10:54:38Z</published>
+    <arxiv:comment>The paper has been peer reviewed and accepted for publication in the proceedings of the 20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Minase Mekete Mengistu</name>
+    </author>
+    <author>
+      <name>Juri Di Rocco</name>
+    </author>
+    <author>
+      <name>Phuong T. Nguyen</name>
+    </author>
+    <author>
+      <name>Davide Di Ruscio</name>
+    </author>
+  </entry>
+</feed>

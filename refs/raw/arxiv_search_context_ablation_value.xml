@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/xm43/XjPiEJUs+X3fXNWQWMAEOw</id>
+  <title>arXiv Query: search_query=all:context AND all:ablation AND all:value AND all:agent&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:16Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:context+AND+(all:ablation+AND+(all:value+AND+all:agent))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>26</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.22830v1</id>
+    <title>Beyond the Harness: End-to-End Optimization of Context Artifacts for Enterprise Text-to-SQL</title>
+    <updated>2026-08-24T05:47:55Z</updated>
+    <link href="https://arxiv.org/abs/2608.22830v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.22830v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying LLMs for enterprise Text-to-SQL is bottlenecked less by the model than by what context reaches it: business logic spans thousands of tables, and no model can ingest a full catalog at once. We argue that the most effective place to intervene is therefore the \emph{knowledge-base context} the model consumes, and that this context should be \emph{constructed} from historical usage rather than tuned for as a fixed input. Using a query-DAG decomposition--the same family of intermediates that enterprise benchmarks like BEAVER annotate, here recovered from production SQL--we compare the value of oracle query graphs versus retrieved knowledge-base context. In this ablation, retrieved knowledge-base context provides the largest marginal improvement when added to the full oracle graph. Building on this, we optimize a distillation procedure that turns historical query profiles into reusable SQL reference cards. On a benchmark of 5176 production queries from a major online retailer, optimizing these context artifacts yields larger gains (${\sim}12$--$25\%$ AST similarity) than optimizing the retrieval harness (${\sim}3$--$12\%$). On the public BEAVER benchmark, which lacks the production-usage signals available in our internal setting, the picture is more mixed: table cards alone perform about the same as raw historical SQL. The best optimized variant retrieves both cards and raw SQL, scoring $9.00\%$ versus $6.33\%$ (p-value $0.12$) for the comparable baseline on a held-out $N{=}300$ subset, using retrieved context and harness changes but no agentic loop.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-24T05:47:55Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>COLM 2026 Workshop - Context Beyond the Window</arxiv:journal_ref>
+    <author>
+      <name>Kate Gwimm</name>
+    </author>
+    <author>
+      <name>Carson Eisenach</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.26721v1</id>
+    <title>Knowledge-Based Pull Requests: A Trusted Workflow for Agent-Mediated Knowledge Collaboration</title>
+    <updated>2026-06-25T07:57:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.26721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.26721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI coding agents are changing the bottleneck in software collaboration: code is increasingly cheap, while understanding intent, negotiating scope, and governing long-term project responsibility remain costly. This paper proposes \emph{Knowledge-Based Pull Requests} (KPR), a trusted workflow for agent-mediated software collaboration across trust boundaries, including open source, enterprise, vendor, contractor, and customer-driven settings. In KPR, an external collaborator's local code, tests, and cleaned agent interaction trace are treated as knowledge sources rather than as the default merge candidate. Agents distill these sources into a human-confirmed knowledge package and render it into reviewer-facing forms such as design memos, risk checklists, test plans, or implementation briefs. A project-owned inner trusted coding agent then regenerates candidate code inside the receiving project's environment under repository context, engineering conventions, tests, and security policy. KPR therefore separates two decisions that traditional pull requests often collapse: whether the knowledge should enter the project, and whether a particular implementation should be merged. We contribute the KPR workflow, a candidate artifact schema, a cost-accounting view, a collaboration gateway architecture, a minimal controlled simulation pilot over seven merged public pull requests, and an evaluation agenda. The pilot shows that KPR packages can be instantiated from real PR material and stress-tested under description ablation, diff ablation, and synthetic poisoned-patch conditions. We position KPR as an empirically testable workflow: its value depends on whether auditable extraction, transformation, and project-side regeneration reduce the cost of understanding and reworking high-context external changes.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T07:57:33Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Xinyu Zhang</name>
+    </author>
+    <author>
+      <name>Weiwei Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.17025v3</id>
+    <title>Harness as an Asset: Enforcing Determinism via the Convergent AI Agent Framework (CAAF)</title>
+    <updated>2026-05-04T07:24:42Z</updated>
+    <link href="https://arxiv.org/abs/2604.17025v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.17025v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models produce a controllability gap in safety-critical engineering: even low rates of undetected constraint violations render a system undeployable. Current orchestration paradigms suffer from sycophantic compliance, context attention decay, and stochastic oscillation during self-correction.
+  We introduce the Convergent AI Agent Framework (CAAF), which transitions agentic workflows from open-loop generation to closed-loop fail-safe determinism via three pillars: (1) Recursive Atomic Decomposition with physical context firewalls; (2) Harness as an Asset, formalizing domain invariants into machine-readable registries enforced by a deterministic Unified Assertion Interface; and (3) Structured Semantic Gradients with State Locking for monotonic non-regression.
+  This paper makes two core claims. First, an industrialization thesis: once domain invariants are formalized as an executable Harness, the Harness itself becomes a first-class enterprise asset that compounds in value as foundation models commoditize, and CAAF's ability to deliver its reliability on commodity-tier models makes fully self-hosted, on-premises deployment architecturally feasible for regulated sectors where cloud APIs are not an option. Second, an architectural claim supported by ablation: CAAF's three pillars address complementary failure surfaces and none alone closes the controllability gap at commodity cost. The paper contributes entirely at the orchestration and industrialization layer. Evidence across two complementary benchmarks, three-tier UAI ablations, multi-agent baselines, and a closed-source commodity family replicated by two independent open-weight families, is reported in the body.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-18T15:15:09Z</published>
+    <arxiv:comment>47 pages, 13 figures. Code: https://github.com/TianbaoZhang001/OpenCAAF (Apache-2.0)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tianbao Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27806v3</id>
+    <title>Agent vs. Parametric World Models: Hybrid Planning for Reliable Language Agents</title>
+    <updated>2026-07-05T07:44:24Z</updated>
+    <link href="https://arxiv.org/abs/2606.27806v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27806v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language agents plan by generating not only actions but also implicit predictions of how the world will change. These imagined state updates make agents flexible, but they also create a distinct failure mode: hallucinated state claims can be written into context and propagated across subsequent decisions. In contrast, parametric world models provide measurable transition errors but are often weaker semantic planners. We study this tradeoff in graph-structured planning environments and introduce metrics for agent-world-model error, including hallucinated-state rate, propagation depth, and long-horizon error growth. We then propose Hybrid World-Model Planning (Hybrid-WM), which keeps the language model as the planner while using a small parametric transition model to predict action validity, state deltas, risk, and value. A consistency gate compares the agent's imagined delta with the parametric prediction and triggers targeted revision only under disagreement. Across four graph-structured planning benchmarks, Hybrid-WM improves success while reducing hallucinated state propagation. In live GPT-4o-mini evaluations, it reduces hallucinated-state rate from 0.176 to 0.035; in calibrated simulator ablations, it improves success from 0.668 to 0.838 with modest additional inference. These results suggest that lightweight parametric transition models can serve as effective grounding mechanisms for language-agent planning without replacing semantic reasoning.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-26T07:45:15Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xinyuan Song</name>
+    </author>
+    <author>
+      <name>Zekun Cai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.14780v1</id>
+    <title>The Stochastic Deputy: Structural Tenant Isolation for Tool-Using LLM Agents</title>
+    <updated>2026-09-13T20:40:11Z</updated>
+    <link href="https://arxiv.org/abs/2609.14780v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.14780v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-tenant tools commonly accept a tenant identifier and validate it against the caller's entitlement. For a large language model (LLM) agent, that pattern delegates resource selection to a process whose context may contain attacker controlled instructions. We formalize this stochastic deputy problem and present a structural defense: remove tenant identity from the Model Context Protocol (MCP) tool schema, bind scope to a verified credential, and enforce it below the agent. In a 373-trial ablation across eight model configurations and two transports, a correctly validated tenant parameter served every out-of-scope attempt: 26 of 26, or 26 of 41 plausible-pretext trials overall. With the parameter removed, no tool signature could express the read. Twelve of 56 trials instead escaped the interface by forging writable scope, showing that interface invariance requires cryptographically protected context. On a production dataset containing multiple GBs of data, set-valued scope caused a measured $57\times$ latency ratio under function-wrapped membership predicates; a JSON_TABLE lateral join recovered index access where the tenant key was indexed. The evaluation also exposes deployment limits, including an entitlement-size query-planner cliff and incomplete index coverage. The result is a tenant-isolation argument that depends on enforceable interfaces and credentials rather than model compliance.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-13T20:40:11Z</published>
+    <arxiv:comment>29 pages, 7 figures, 15 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Mirza Samad Ahmed Baig</name>
+    </author>
+    <author>
+      <name>Syeda Anshrah Gillani</name>
+    </author>
+    <author>
+      <name>Asher Ali</name>
+    </author>
+    <author>
+      <name>Muhammad Hamzah Siddiqui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.07398v1</id>
+    <title>AgentSys: Secure and Dynamic LLM Agents Through Explicit Hierarchical Memory Management</title>
+    <updated>2026-02-07T06:28:51Z</updated>
+    <link href="https://arxiv.org/abs/2602.07398v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.07398v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Indirect prompt injection threatens LLM agents by embedding malicious instructions in external content, enabling unauthorized actions and data theft. LLM agents maintain working memory through their context window, which stores interaction history for decision-making. Conventional agents indiscriminately accumulate all tool outputs and reasoning traces in this memory, creating two critical vulnerabilities: (1) injected instructions persist throughout the workflow, granting attackers multiple opportunities to manipulate behavior, and (2) verbose, non-essential content degrades decision-making capabilities. Existing defenses treat bloated memory as given and focus on remaining resilient, rather than reducing unnecessary accumulation to prevent the attack.
+  We present AgentSys, a framework that defends against indirect prompt injection through explicit memory management. Inspired by process memory isolation in operating systems, AgentSys organizes agents hierarchically: a main agent spawns worker agents for tool calls, each running in an isolated context and able to spawn nested workers for subtasks. External data and subtask traces never enter the main agent's memory; only schema-validated return values can cross boundaries through deterministic JSON parsing. Ablations show isolation alone cuts attack success to 2.19%, and adding a validator/sanitizer further improves defense with event-triggered checks whose overhead scales with operations rather than context length.
+  On AgentDojo and ASB, AgentSys achieves 0.78% and 4.25% attack success while slightly improving benign utility over undefended baselines. It remains robust to adaptive attackers and across multiple foundation models, showing that explicit memory management enables secure, dynamic LLM agent architectures. Our code is available at: https://github.com/ruoyaow/agentsys-memory.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-07T06:28:51Z</published>
+    <arxiv:comment>21 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ruoyao Wen</name>
+    </author>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Chaowei Xiao</name>
+    </author>
+    <author>
+      <name>Ning Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.17539v3</id>
+    <title>Breaking Single-Tester Limits: Multi-Agent LLMs for Multi-User Feature Testing</title>
+    <updated>2025-09-16T01:18:01Z</updated>
+    <link href="https://arxiv.org/abs/2506.17539v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.17539v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The growing dependence on mobile phones and their apps has made multi-user interactive features, like chat calls, live streaming, and video conferencing, indispensable for bridging the gaps in social connectivity caused by physical and situational barriers. However, automating these interactive features for testing is fraught with challenges, owing to their inherent need for timely, dynamic, and collaborative user interactions, which current automated testing methods inadequately address. Inspired by the concept of agents designed to autonomously and collaboratively tackle problems, we propose MAdroid, a novel multi-agent approach powered by the Large Language Models (LLMs) to automate the multi-user interactive task for app feature testing. Specifically, MAdroid employs two functional types of multi-agents: user agents (Operator) and supervisor agents (Coordinator and Observer). Each agent takes a specific role: the Coordinator directs the interactive task; the Operator mimics user interactions on the device; and the Observer monitors and reviews the task automation process. Our evaluation, which included 41 multi-user interactive tasks, demonstrates the effectiveness of our approach, achieving 82.9% of the tasks with 96.8% action similarity, outperforming the ablation studies and state-of-the-art baselines. Additionally, a preliminary investigation underscores MAdroid's practicality by helping identify 11 multi-user interactive bugs during regression app testing, confirming its potential value in real-world software development contexts.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-21T01:38:53Z</published>
+    <arxiv:comment>Accepted to International Conference on Software Engineering (ICSE 2026). arXiv admin note: substantial text overlap with arXiv:2504.15474</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Sidong Feng</name>
+    </author>
+    <author>
+      <name>Changhao Du</name>
+    </author>
+    <author>
+      <name>Huaxiao Liu</name>
+    </author>
+    <author>
+      <name>Qingnan Wang</name>
+    </author>
+    <author>
+      <name>Zhengwei Lv</name>
+    </author>
+    <author>
+      <name>Mengfei Wang</name>
+    </author>
+    <author>
+      <name>Chunyang Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.30947v4</id>
+    <title>Extending AI for Research to the Humanities: A Multi-Agent Framework for Evidence-Grounded Scholarship</title>
+    <updated>2026-08-31T07:04:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.30947v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.30947v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM-based research agents have advanced rapidly in science and engineering, where research is organized around executable experiments, code, and quantitative signals. Humanities scholarship, however, requires interpretive, evidence-grounded arguments over primary sources, whose value rests on faithful quotation, verifiable provenance, and deep interpretation. Existing research agents use general planning, tool use, and reflection, leaving these scholarly operations implicit. To address this gap, we introduce SPIRE (Scholarly-Primitives-Inspired Research Engine), a multi-agent framework that realizes Scholarly Primitives, a typology of basic humanities scholarship practices, as cooperating roles over a multi-scale close-reading substrate of passages, intra-context graph communities, and cross-context semantic clusters. On a benchmark of peer-reviewed papers in classical Chinese and Greco-Roman Latin scholarship, SPIRE recovers substantially more cited primary-source evidence and receives higher blind human and LLM ratings on four scholarly quality dimensions than LLM, RAG, and generic agentic baselines. Retrieval-tier and agent ablations, with retrieval-volume and answer-length controls, trace its advantage to targeted retrieval, structured evidence selection, and claim-evidence binding. Code and benchmark data are released at https://github.com/YatingPan/SPIRE.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-29T07:33:29Z</published>
+    <arxiv:comment>Accepted to the Main Conference of EMNLP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yating Pan</name>
+    </author>
+    <author>
+      <name>Jiajun Zhang</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <author>
+      <name>Qi Su</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.21481v1</id>
+    <title>The AI Committee: A Multi-Agent Framework for Automated Validation and Remediation of Web-Sourced Data</title>
+    <updated>2025-12-25T03:00:22Z</updated>
+    <link href="https://arxiv.org/abs/2512.21481v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.21481v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Many research areas rely on data from the web to gain insights and test their methods. However, collecting comprehensive research datasets often demands manually reviewing many web pages to identify and record relevant data points, which is labor-intensive and susceptible to error. While the emergence of large language models (LLM)-powered web agents has begun to automate parts of this process, they often struggle to ensure the validity of the data they collect. Indeed, these agents exhibit several recurring failure modes - including hallucinating or omitting values, misinterpreting page semantics, and failing to detect invalid information - which are subtle and difficult to detect and correct manually. To address this, we introduce the AI Committee, a novel model-agnostic multi-agent system that automates the process of validating and remediating web-sourced datasets. Each agent is specialized in a distinct task in the data quality assurance pipeline, from source scrutiny and fact-checking to data remediation and integrity validation. The AI Committee leverages various LLM capabilities - including in-context learning for dataset adaptation, chain-of-thought reasoning for complex semantic validation, and a self-correction loop for data remediation - all without task-specific training. We demonstrate the effectiveness of our system by applying it to three real-world datasets, showing that it generalizes across LLMs and significantly outperforms baseline approaches, achieving data completeness up to 78.7% and precision up to 100%. We additionally conduct an ablation study demonstrating the contribution of each agent to the Committee's performance. This work is released as an open-source tool for the research community.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-25T03:00:22Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Sunith Vallabhaneni</name>
+    </author>
+    <author>
+      <name>Thomas Berkane</name>
+    </author>
+    <author>
+      <name>Maimuna Majumder</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.00056v1</id>
+    <title>Agentic AI for Staged Three-Dimensional Finite-Element Tunnel Modelling</title>
+    <updated>2026-09-04T02:13:38Z</updated>
+    <link href="https://arxiv.org/abs/2610.00056v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.00056v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Three-dimensional finite-element (FE) analysis gives the most complete picture of tunnelling-induced ground movement, but it is slow: an engineer must drive the PLAXIS 3D interface through project set-up, stratigraphy, materials, structural elements, meshing and staged calculation. This paper presents a pipeline in which a large language model (LLM) drives PLAXIS 3D through the Model Context Protocol (MCP), with no human operating the interface. A purpose-built MCP server exposes the official remote-scripting API as 19 typed tools. Four agents share the work: orchestrator, geometry, calculation and verification. They draw on 15 inspectable domain-knowledge skill modules and a provenance-tagged intake stage. The verification agent is information-barriered, auditing every model against the raw specification at a pre-mesh checkpoint and again as a calculation gate. It was evaluated on 12 single-tunnel problems in Bangkok subsoil across four capability tiers, using a 15-arm ablation matrix; 13 automated arms and a manual expert baseline were executed, one run per cell. The full system built 12 of 12 models at a mean of 6.1 min with a clean audit on every one; the same models took 24.6 min by hand. Domain skills were decisive: with the complete architecture but all 15 modules withheld, no model was produced. Base-model capability acted as a threshold rather than a gradient. Fable 5, Opus 5 and Sonnet 5 each built 12 of 12, while Haiku 4.5 halted on all 12. Among models that built, agreement was exact: 107 of 111 comparable cells reproduced the reference mesh to the element, and 83 of 86 solved cells agreed with the hand-built expert model within 1.01 % in maximum settlement and 1.21 % in trough-width parameter. Every exception traced to a value misread at intake. The reliability problem in agentic FE automation therefore lies in specification reading, not in code generation.</summary>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T02:13:38Z</published>
+    <arxiv:primary_category term="cs.CE"/>
+    <author>
+      <name>Ochok Duangsano</name>
+    </author>
+    <author>
+      <name>Kuo-Chieh Chao</name>
+    </author>
+    <author>
+      <name>Sompote Youwai</name>
+    </author>
+    <author>
+      <name>Nattavich Sittiamornporn</name>
+    </author>
+    <author>
+      <name>Chana Phutthananon</name>
+    </author>
+    <author>
+      <name>Pornkasem Jongpradist</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.09506v3</id>
+    <title>Context-Nav: Context-Driven Exploration and Viewpoint-Aware 3D Spatial Reasoning for Instance Navigation</title>
+    <updated>2026-03-18T09:49:51Z</updated>
+    <link href="https://arxiv.org/abs/2603.09506v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.09506v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text-goal instance navigation (TGIN) asks an agent to resolve a single, free-form description into actions that reach the correct object instance among same-category distractors. We present \textit{Context-Nav}, which elevates long, contextual captions from a local matching cue to a global exploration prior and verifies candidates through 3D spatial reasoning. First, we compute dense text-image alignments for a value map that ranks frontiers -- guiding exploration toward regions consistent with the entire description rather than early detections. Second, upon observing a candidate, we perform a viewpoint-aware relation check: the agent samples plausible observer poses, aligns local frames, and accepts a target only if the spatial relations can be satisfied from at least one viewpoint. The pipeline requires no task-specific training or fine-tuning; we attain state-of-the-art performance on InstanceNav and CoIN-Bench. Ablations show that (i) encoding full captions into the value map avoids wasted motion and (ii) explicit, viewpoint-aware 3D verification prevents semantically plausible but incorrect stops. This suggests that geometry-grounded spatial reasoning is a scalable alternative to heavy policy training or human-in-the-loop interaction for fine-grained instance disambiguation in cluttered 3D scenes.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-10T11:08:35Z</published>
+    <arxiv:comment>Accepted to CVPR 2026. Code is available at https://github.com/AutoCompSysLab/ContextNav</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Won Shik Jang</name>
+    </author>
+    <author>
+      <name>Ue-Hwan Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.10582v1</id>
+    <title>MemDecay: Region-Aware KV Cache Eviction for Efficient LLM Agent Inference</title>
+    <updated>2026-07-12T05:35:26Z</updated>
+    <link href="https://arxiv.org/abs/2607.10582v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.10582v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents accumulate heterogeneous context, including system instructions, plans, user turns, retrieved documents, tool outputs, and intermediate reasoning, whose key-value (KV) cache can become a major memory bottleneck. Existing eviction policies generally apply the same attention- or recency-based rule to every token, ignoring semantic structure already available to the agent orchestrator.
+  We introduce MemDecay, a training-free, region-aware KV-cache eviction policy. MemDecay assigns tokens region-specific base priorities and decay rates, refreshes retention scores when tokens receive attention, and evicts the lowest-scoring pages under a fixed cache budget while allowing critical regions to be pinned. We also provide a procedure for calibrating decay rates from measured attention lifetimes.
+  We evaluate MemDecay at approximately 450 and 1,700 token contexts using Qwen2.5-1.5B and 3B. Across all settings, attention lifetimes differ by an order of magnitude across regions: system-token half-lives range from 148 to 189 decoding steps, compared with 14 to 16 for scratchpad tokens. Pinning preserves system-region facts at full-cache accuracy in every setting, while no baseline preserves more than 13 of 24. Region-aware retention remains effective as context grows, whereas recency-based retention collapses. Accumulated-attention retention performs better on unpinned content, however, and ablations identify attention-score normalization as the main limitation of the current formulation. These results establish semantic prompt structure as a robust signal for KV-cache management while clarifying how it should be combined with attention-based importance.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-12T05:35:26Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Venkatesha Matam</name>
+    </author>
+    <author>
+      <name>Keon Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.15294v4</id>
+    <title>A Multi-Memory Segment System for Generating High-Quality Long-Term Memory Content in Agents</title>
+    <updated>2026-05-08T05:43:33Z</updated>
+    <link href="https://arxiv.org/abs/2508.15294v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.15294v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the current field of agent memory, extensive explorations have been conducted in the area of memory retrieval, yet few studies have focused on exploring the memory content. Most research simply stores summarized versions of historical dialogues, as exemplified by methods like A-MEM and MemoryBank. However, when humans form long-term memories, the process involves multi-dimensional and multi-component generation, rather than merely creating simple summaries. The low-quality memory content generated by existing methods can adversely affect recall performance and response quality. In order to better construct high-quality long-term memory content, we have designed a multi-memory segment system (MMS) inspired by cognitive psychology theory. The system processes short-term memory into multiple long-term memory segments, and constructs retrieval memory units and contextual memory units based on these segments, with a one-to-one correspondence between the two. During the retrieval phase, MMS will match the most relevant retrieval memory units based on the user's query. Then, the corresponding contextual memory units is obtained as the context for the response stage to enhance knowledge, thereby effectively utilizing historical data. We conducted experiments on the LoCoMo dataset and further performed ablation experiments, experiments on the robustness regarding the number of input memories, and overhead experiments, which demonstrated the effectiveness and practical value of our method.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-21T06:29:42Z</published>
+    <arxiv:comment>The content has been significantly revised and the author has also changed. Therefore, the paper will be withdrawn for revision and then uploaded after the completion of the modifications</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Gaoke Zhang</name>
+    </author>
+    <author>
+      <name>Bo Wang</name>
+    </author>
+    <author>
+      <name>Yunlong Ma</name>
+    </author>
+    <author>
+      <name>Dongming Zhao</name>
+    </author>
+    <author>
+      <name>Zifei Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11039v1</id>
+    <title>The Granularity Mismatch in Agent Security: Argument-Level Provenance Solves Enforcement and Isolates the LLM Reasoning Bottleneck</title>
+    <updated>2026-05-11T04:09:11Z</updated>
+    <link href="https://arxiv.org/abs/2605.11039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents must act on untrusted webpages, emails, files, and API outputs while issuing privileged tool calls. Existing defenses often mediate trust at the granularity of an entire tool invocation, forcing a brittle choice in mixed-trust workflows: allow external content to influence a call and risk hijacked destinations or commands, or quarantine the call and block benign retrieval-then-act behavior. The key observation behind this paper is that indirect prompt injection becomes dangerous not when untrusted content appears in context, but when it determines an authority-bearing argument. We present \textsc{PACT} (\emph{Provenance-Aware Capability Contracts}), a runtime monitor that assigns semantic roles to tool arguments, tracks value provenance across replanning steps, and checks whether each argument's origin satisfies its role-specific trust contract. Under oracle provenance, \textsc{PACT} achieves 100\% utility and 100\% security on mixed-trust diagnostic suites, while flat invocation-level monitors incur false positives or false negatives. In full AgentDojo deployments across five models, \textsc{PACT} reaches 100\% security on the three strongest models while recovering 38.1--46.4\% utility, 8--16 percentage points above CaMeL at the same security level. Ablations show that both semantic roles and cross-step provenance are necessary. \textsc{PACT} reframes agent security as authority binding, and isolates the remaining deployment bottleneck to provenance inference and contract synthesis.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T04:09:11Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Linfeng Fan</name>
+    </author>
+    <author>
+      <name>Ziwei Li</name>
+    </author>
+    <author>
+      <name>Yuan Tian</name>
+    </author>
+    <author>
+      <name>Yichen Wang</name>
+    </author>
+    <author>
+      <name>Rongsheng Li</name>
+    </author>
+    <author>
+      <name>Xiong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.30657v1</id>
+    <title>Prompt Injection Detection for Email Agents Through Attack Chain Modeling</title>
+    <updated>2026-09-25T00:51:56Z</updated>
+    <link href="https://arxiv.org/abs/2609.30657v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.30657v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model email assistants are particularly vulnerable to indirect prompt injection because untrusted email content can be retrieved into the model context and influence subsequent tool use. Existing prompt injection detectors mainly formulate this problem as binary malicious text classification, which overlooks the important factor that harmful agent behavior often arises through a sequence of stages. We propose a detection framework that models this attack chain by combining a text detector, verifiers specific to each stage, explicit rule-based risk signals, user intent and action consistency analysis, and a logistic decision policy. To support this framework, we derive attack chain labels from prompt injection datasets, evaluate the proposed framework under random splits, temporal phase transfer, conditional stage transfer, cross-dataset transfer, and conduct ablation studies on multiple benchmarks. Results show that random train test splits substantially overestimate robustness under distribution shift, while later tool argument stages are more predictable than earlier stages in the framework. We also show that training on harmless emails that resemble attacks helps reduce false alarms while preserving the ability to detect real attacks. Across five binary benchmarks, our framework achieves a mean F1 score of 0.406 under the strict threshold setting policy, compared with 0.216 for the strongest of five pretrained detectors evaluated without additional training. These results highlight the value of combining attack stage predictions with checks for conflicts between the user's request and instructions in retrieved emails. Our experiments also demonstrate the importance of training with challenging benign examples to balance attack detection and false alarms.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T00:51:56Z</published>
+    <arxiv:comment>Accepted to IEEE ICTAI 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Ahmad Hashmi</name>
+    </author>
+    <author>
+      <name>Dhyey Patel</name>
+    </author>
+    <author>
+      <name>Yunting Yin</name>
+    </author>
+  </entry>
+</feed>

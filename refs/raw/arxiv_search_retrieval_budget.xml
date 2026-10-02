@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/hTfBdtrC/hMcE/ssBxLsJR2Ijss</id>
+  <title>arXiv Query: search_query=all:retrieval AND all:budget AND all:"retrieval-augmented"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:12Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:retrieval+AND+(all:budget+AND+all:%22retrieval-augmented%22)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>191</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2411.00744v2</id>
+    <title>CARROT: A Learned Cost-Constrained Retrieval Optimization System for RAG</title>
+    <updated>2026-03-12T11:55:58Z</updated>
+    <link href="https://arxiv.org/abs/2411.00744v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.00744v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have demonstrated impressive ability in generation and reasoning tasks but struggle with handling up-to-date knowledge, leading to inaccuracies or hallucinations. Retrieval-Augmented Generation (RAG) mitigates this by retrieving and incorporating external knowledge into input prompts. In particular, due to LLMs' context window limitations and long-context hallucinations, only the most relevant "chunks" are retrieved. However, current RAG systems face three key challenges: (1) chunks are often retrieved independently without considering their relationships, such as redundancy and ordering; (2) the utility of chunks is non-monotonic, as adding more chunks can degrade quality; and (3) retrieval strategies fail to adapt to the unique characteristics of different queries. To overcome these challenges, we design a cost-constrained retrieval optimization framework for RAG. We adopt a Monte Carlo Tree Search (MCTS) based strategy to find the optimal chunk combination order, which considers the chunks' correlations. In addition, to address the non-monotonicity of chunk utility, instead of treating budget exhaustion as the termination condition, we design a utility computation strategy to identify the optimal chunk combination without necessarily exhausting the budget. Furthermore, we propose a configuration agent that predicts optimal configurations for each query domain, improving our framework's adaptability and efficiency. Experimental results demonstrate up to a 30% improvement over baseline models, highlighting the framework's effectiveness, scalability, and suitability. Our source code has been released at https://github.com/wang0702/CARROT.</summary>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-01T17:11:16Z</published>
+    <arxiv:comment>Accepted to ICDE 2026. Updated title (previously "CORAG: A Cost-Constrained Retrieval Optimization System for Retrieval-Augmented Generation")</arxiv:comment>
+    <arxiv:primary_category term="cs.DB"/>
+    <author>
+      <name>Ziting Wang</name>
+    </author>
+    <author>
+      <name>Haitao Yuan</name>
+    </author>
+    <author>
+      <name>Wei Dong</name>
+    </author>
+    <author>
+      <name>Gao Cong</name>
+    </author>
+    <author>
+      <name>Feifei Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.29959v1</id>
+    <title>Know Before You Fetch: Calibrated Retrieval-Budget Allocation for Retrieval-Augmented Generation</title>
+    <updated>2026-06-29T08:36:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.29959v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.29959v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) typically retrieves a fixed number of passages for every query. This is wasteful when the reader already knows the answer, and it can be harmful when irrelevant or partially relevant passages distract the reader. We formulate adaptive RAG as calibrated retrieval-budget allocation: given a query, decide whether to answer closed-book, retrieve a compact context (k=1), retrieve a full context (k=5), or abstain. The contribution is a probability interface rather than a new raw uncertainty signal. We calibrate sequence log-probability and prefix-logit uncertainty signals into probabilities of correctness, then use these probabilities for graded context selection, selective abstention, and explicit latency/token trade-offs. Across core QA experiments on TriviaQA, Natural Questions, and MS MARCO, with auxiliary PopQA motivation and Qwen/Llama family checks, diagnostic out-of-fold calibration improves probability quality dramatically: for sequence log-probability, ECE drops from 0.275 to 0.062 on TriviaQA, 0.643 to 0.009 on NQ, and 0.711 to 0.031 on MS MARCO. Graded retrieval improves full-context and passage-budget frontiers for both our signal and TARG-style prefix entropy/margin, while retrieval-call AUC remains essentially tied with binary gating because k=1 is still a retrieval call. Held-out train/validation/test threshold experiments report deployable operating points. At matched-accuracy frontier operating points, a measured cost model reveals that gating is not universally faster: it increases latency by about 27% on Qwen3-8B but saves about 8% on Qwen3-32B. These results support a nuanced view of adaptive RAG: calibrated confidence is best understood as a reusable interface for allocating retrieval budget under task and system constraints.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-29T08:36:33Z</published>
+    <arxiv:comment>17 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Zhe Dong</name>
+      <arxiv:affiliation>University of Maine at Presque Isle</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Fang Qin</name>
+      <arxiv:affiliation>Stanford University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Manish Shah</name>
+      <arxiv:affiliation>Independent Researcher</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yicheng Wang</name>
+      <arxiv:affiliation>Independent Researcher</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.29090v1</id>
+    <title>AB-RAG: Adaptive Budgeted Retrieval-Augmented Generation for Reliable Question Answering</title>
+    <updated>2026-06-27T21:08:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.29090v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.29090v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) has become the standard way to ground large language models in external knowledge, yet most systems retrieve a fixed number of passages for every question regardless of its difficulty. This wastes computation on easy questions, starves hard ones, and gives no signal for when a generated answer can be trusted. With a growing share of question answering systems built on top of commercial language model APIs, a method that can decide how much to retrieve, and how far to trust its own answers, without retraining the underlying model, is of clear practical value. This paper presents AB-RAG (Adaptive Budgeted Retrieval-Augmented Generation), a training-free and backbone-agnostic framework that generates an answer, estimates its confidence from a combination of three signals, and then decides whether to stop or to retrieve more evidence, subject to a fixed retrieval budget. The estimator combines the model's own certainty, the agreement between the answer and the evidence, and the variance of the retrieval scores. For models that expose token probabilities the certainty signal is read directly; for closed APIs it is approximated by self-consistency, so the method works without access to model internals. Across three backbones and two datasets, the central result is that the confidence estimate reliably separates correct from incorrect answers on every backbone, reaching a clean split of 57.6% against 0% Exact Match between high- and low-confidence answers on a factoid dataset. The adaptive policy improves accuracy on capable backbones, and the study reports its negative and nuanced findings honestly, including a confidence signal that proved unsuitable for short answers and a retrieval signal whose sign was found and corrected through measurement. The entire study was carried out on a single consumer laptop with only a few dollars of API spend.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-27T21:08:14Z</published>
+    <arxiv:comment>16 pages, 9 figures, 12 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ansh Kamthan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.26981v1</id>
+    <title>Budget-Constrained Online Retrieval-Augmented Generation: The Chunk-as-a-Service Model</title>
+    <updated>2026-04-28T14:42:51Z</updated>
+    <link href="https://arxiv.org/abs/2604.26981v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.26981v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have revolutionized the field of natural language processing. However, they exhibit some limitations, including a lack of reliability and transparency: they may hallucinate and fail to provide sources that support the generated output. Retrieval-Augmented Generation (RAG) was introduced to address such limitations in LLMs. One popular implementation, RAG-as-a-Service (RaaS), has shortcomings that hinder its adoption and accessibility. For instance, RaaS pricing is based on the number of submitted prompts, without considering whether the prompts are enriched by relevant chunks, i.e., text segments retrieved from a vector database, or the quality of the utilized chunks (i.e., their degree of relevance). This results in an opaque and less cost-effective payment model. We propose Chunk-as-a-Service (CaaS) as a transparent and cost-effective alternative. CaaS includes two variants: Open-Budget CaaS (OB-CaaS) and Limited-Budget CaaS (LB-CaaS), which is enabled by our ``Utility-Cost Online Selection Algorithm (UCOSA)''. UCOSA further extends the cost-effectiveness and the accessibility of the OB-CaaS variant by enriching, in an online manner, a subset of the submitted prompts based on budget constraints and utility-cost tradeoff. Our experiments demonstrate the efficacy of the proposed UCOSA compared to both offline and relevance-greedy selection baselines. In terms of the performance metric-the number of enriched prompts (NEP) multiplied by the Average Relevance (AR)-UCOSA outperforms random selection by approximately 52% and achieves around 75% of the performance of offline selection methods. Additionally, in terms of budget utilization, LB-CaaS and OB-CaaS achieve higher performance-to-budget ratios of 140% and 86%, respectively, compared to RaaS, indicating their superior efficiency.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-28T14:42:51Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Shawqi Al-Maliki</name>
+    </author>
+    <author>
+      <name>Ammar Gharaibeh</name>
+    </author>
+    <author>
+      <name>Mohamed Rahouti</name>
+    </author>
+    <author>
+      <name>Mohammad Ruhul Amin</name>
+    </author>
+    <author>
+      <name>Mohamed Abdallah</name>
+    </author>
+    <author>
+      <name>Junaid Qadir</name>
+    </author>
+    <author>
+      <name>Ala Al-Fuqaha</name>
+    </author>
+    <arxiv:doi>10.1109/TAI.2026.3666170</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TAI.2026.3666170" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00725v2</id>
+    <title>Recall Is Not Enough: A Reader-Context Diagnostic for Budget-Constrained Retrieval-Augmented Generation</title>
+    <updated>2026-08-05T11:48:36Z</updated>
+    <link href="https://arxiv.org/abs/2607.00725v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.00725v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation under a fixed context budget forces a selection problem: only a fraction of the retrieved evidence fits in front of the reader. The field's standard metric, recall@k, is scored on the retrieved set, but the reader consumes the packed context - and once packing must discard evidence, the two come apart. We introduce answer-in-context, a diagnostic that measures whether a gold answer survives into the packed context, and argue it is the quantity budgeted RAG should be optimizing. It carries substantial information beyond retrieval, adding Delta R^2 = 0.17-0.27 over recall across three multi-hop datasets; even among questions where all gold was retrieved, whether packing keeps the answer separates exact match by 4.6x. Two independent interventions confirm the mediation: a packing change that raises document coverage without raising answer-in-context leaves accuracy flat, and prompt compression that destroys the answer span lowers both together. A graded variant extends the diagnostic to free-form answers, where no verbatim span exists. We then show the diagnostic is actionable. Casting reader-context construction as budgeted submodular maximization gives a packer that beats both deployed top-k truncation and LLMLingua-2 compression - across three reader families, four scales, and four budgets, at equal-or-lower token cost. Against a hand-tuned query-focused heuristic, which we show approximates the same objective, it reaches parity, winning outright only where evidence density is the binding constraint. Throughout, one variable predicts what helps and what cannot.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T10:12:15Z</published>
+    <arxiv:comment>Under review at EACL 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ananto Nayan Bala</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.03258v1</id>
+    <title>Enhancing Retrieval-Augmented Generation with Two-Stage Retrieval: FlashRank Reranking and Query Expansion</title>
+    <updated>2025-10-17T15:08:17Z</updated>
+    <link href="https://arxiv.org/abs/2601.03258v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.03258v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) couples a retriever with a large language model (LLM) to ground generated responses in external evidence. While this framework enhances factuality and domain adaptability, it faces a key bottleneck: balancing retrieval recall with limited LLM context. Retrieving too few passages risks missing critical context, while retrieving too many overwhelms the prompt window, diluting relevance and increasing cost.
+  We propose a two-stage retrieval pipeline that integrates LLM-driven query expansion to improve candidate recall and FlashRank, a fast marginal-utility reranker that dynamically selects an optimal subset of evidence under a token budget. FlashRank models document utility as a weighted combination of relevance, novelty, brevity, and cross-encoder evidence. Together, these modules form a generalizable solution that increases answer accuracy, faithfulness, and computational efficiency.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-17T15:08:17Z</published>
+    <arxiv:comment>3 pages, 1 figure, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Sherine George</name>
+    </author>
+    <arxiv:doi>10.13140/RG.2.2.12631.74408</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.13140/RG.2.2.12631.74408" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.26667v2</id>
+    <title>M-RAG: Semantic Key-Value Indexing for Retrieval-Augmented Generation</title>
+    <updated>2026-07-21T12:29:44Z</updated>
+    <link href="https://arxiv.org/abs/2603.26667v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.26667v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) turns external documents into evidence for large language models. In practice, this is also a data access problem: a system must decide what to index, what to retrieve, and what evidence to place in the context under a token budget. Most RAG pipelines use text chunks for both lookup and generation. This couples two different objectives. Retrieval benefits from compact and discriminative records, while generation needs contextual and faithful evidence. As a result, small chunks may fragment answer-bearing information, whereas large chunks may introduce noise and waste the context budget. We propose M-RAG, a semantic key-value indexing layer for budget-constrained RAG query processing. M-RAG extracts meta-markers from complete documents, where each record contains a retrieval key, an information value, and provenance pointers. Online retrieval operates over the key field, which can be searched by dense vector retrieval or sparse lexical retrieval; the paired values are returned as generation payloads and assembled under the token budget. Provenance pointers further support coverage validation and position-aware context ordering. This design separates the physical index entry from the evidence payload without changing the underlying retriever or generator. Experiments on LongBench QA subtasks show that M-RAG achieves competitive or better accuracy than representative chunk-based baselines, especially under tight token budgets. Further analyses show high document coverage, stronger robustness under expanding candidate corpora, and lower online retrieval latency. These results suggest that semantic key-value indexing is a practical access method for RAG workloads.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-06T15:14:54Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Xu Sun</name>
+    </author>
+    <author>
+      <name>Tongkai Xu</name>
+    </author>
+    <author>
+      <name>Baiheng Xie</name>
+    </author>
+    <author>
+      <name>Li Huang</name>
+    </author>
+    <author>
+      <name>Qiang Gao</name>
+    </author>
+    <author>
+      <name>Kunpeng Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.13647v2</id>
+    <title>SF-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Question Answering</title>
+    <updated>2026-03-18T07:31:06Z</updated>
+    <link href="https://arxiv.org/abs/2602.13647v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.13647v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Efficient question-answering (QA) over extensive scientific literature is essential for evidence-based engineering decision-making. Retrieval-augmented generation (RAG) is increasingly applied to question-answering over long academic papers, where accurate evidence allocation under a fixed token budget is critical. However, existing approaches flatten papers into unstructured chunks, destroying the native hierarchical structure and forcing retrieval to operate in a disordered space. This produces fragmented contexts, misallocates tokens to non-evidential regions, and increases the reasoning burden for downstream language models.To address these issues, we propose SF-RAG, an RAG framework that treats the native hierarchical structure of academic papers as a low-entropy retrieval prior.SF-RAG first inherits the native hierarchy to construct a structure-fidelity index, which prevents entropy increase at the source.It then designs a path-guided retrieval mechanism that aligns query semantics to relevant sections and selects high relevance root-to-leaf paths under a fixed token budget, yielding compact, coherent, and low-entropy retrieval contexts.In contrast to existing RAG approaches, SF-RAG avoids entropy increase caused by destructive preprocessing and provides a native low-entropy structural basis for subsequent retrieval. We further introduce entropy-based structural diagnostics to quantify retrieval fragmentation and evidence allocation accuracy.Evaluations across three QA benchmarks show that SF-RAG significantly reduces retrieval fragmentation and improves evidence allocation. These structural benefits drive superior answer quality, establishing a scalable foundation for intelligent engineering document systems and future applications in technical specifications.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-14T07:40:09Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Rui Yu</name>
+    </author>
+    <author>
+      <name>Tianyi Wang</name>
+    </author>
+    <author>
+      <name>Ruixia Liu</name>
+    </author>
+    <author>
+      <name>Yinglong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.04820v1</id>
+    <title>Fishing for Answers: Exploring One-shot vs. Iterative Retrieval Strategies for Retrieval Augmented Generation</title>
+    <updated>2025-09-05T05:44:50Z</updated>
+    <link href="https://arxiv.org/abs/2509.04820v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.04820v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) based on Large Language Models (LLMs) is a powerful solution to understand and query the industry's closed-source documents. However, basic RAG often struggles with complex QA tasks in legal and regulatory domains, particularly when dealing with numerous government documents. The top-$k$ strategy frequently misses golden chunks, leading to incomplete or inaccurate answers. To address these retrieval bottlenecks, we explore two strategies to improve evidence coverage and answer quality. The first is a One-SHOT retrieval method that adaptively selects chunks based on a token budget, allowing as much relevant content as possible to be included within the model's context window. Additionally, we design modules to further filter and refine the chunks. The second is an iterative retrieval strategy built on a Reasoning Agentic RAG framework, where a reasoning LLM dynamically issues search queries, evaluates retrieved results, and progressively refines the context over multiple turns. We identify query drift and retrieval laziness issues and further design two modules to tackle them. Through extensive experiments on a dataset of government documents, we aim to offer practical insights and guidance for real-world applications in legal and regulatory domains.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-05T05:44:50Z</published>
+    <arxiv:comment>under Review of EMNLP 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Huifeng Lin</name>
+    </author>
+    <author>
+      <name>Gang Su</name>
+    </author>
+    <author>
+      <name>Jintao Liang</name>
+    </author>
+    <author>
+      <name>You Wu</name>
+    </author>
+    <author>
+      <name>Rui Zhao</name>
+    </author>
+    <author>
+      <name>Ziyue Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02153v1</id>
+    <title>Scaling Retrieval Augmented Generation with RAG Fusion: Lessons from an Industry Deployment</title>
+    <updated>2026-03-02T18:15:09Z</updated>
+    <link href="https://arxiv.org/abs/2603.02153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) systems commonly adopt retrieval fusion techniques such as multi-query retrieval and reciprocal rank fusion (RRF) to increase document recall, under the assumption that higher recall leads to better answer quality. While these methods show consistent gains in isolated retrieval benchmarks, their effectiveness under realistic production constraints remains underexplored. In this work, we evaluate retrieval fusion in a production-style RAG pipeline operating over an enterprise knowledge base, with fixed retrieval depth, re-ranking budgets, and latency constraints.
+  Across multiple fusion configurations, we find that retrieval fusion does increase raw recall, but these gains are largely neutralized after re-ranking and truncation. In our setting, fusion variants fail to outperform single-query baselines on KB-level Top-$k$ accuracy, with Hit@10 decreasing from $0.51$ to $0.48$ in several configurations. Moreover, fusion introduces additional latency overhead due to query rewriting and larger candidate sets, without corresponding improvements in downstream effectiveness.
+  Our analysis suggests that recall-oriented fusion techniques exhibit diminishing returns once realistic re-ranking limits and context budgets are applied. We conclude that retrieval-level improvements do not reliably translate into end-to-end gains in production RAG systems, and argue for evaluation frameworks that jointly consider retrieval quality, system efficiency, and downstream impact.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-02T18:15:09Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Luigi Medrano</name>
+    </author>
+    <author>
+      <name>Arush Verma</name>
+    </author>
+    <author>
+      <name>Mukul Chhabra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.20286v1</id>
+    <title>Rethinking Retrieval-Augmentation as Synthesis: A Query-Aware Context Merging Approach</title>
+    <updated>2026-03-18T09:09:52Z</updated>
+    <link href="https://arxiv.org/abs/2603.20286v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.20286v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) enables Large Language Models (LLMs) to extend their existing knowledge by dynamically incorporating external information. However, practical deployment is fundamentally constrained by the LLM's finite context window, forcing a trade-off between information sufficiency and token consumption. Standard pipelines address this via a retrieve-then-select strategy, typically retaining only the top-k chunks based on relevance. Nevertheless, this approach is suboptimal: it inherently truncates critical bridging evidence located in the long tail of the relevance distribution, while simultaneously wasting the token budget on semantically redundant high-ranking chunks.
+  In this paper, we rethink retrieval-augmentation as a dynamic optimization problem aimed at maximizing information density. We propose MergeRAG, a novel framework that shifts the paradigm from static filtering to query-aware synthesis. MergeRAG employs a scoring agent to restructure retrieved contexts through a dual-pathway mechanism: 1) Symmetric Merging, which consolidates weak signals to recover lost bridging evidence; 2) Asymmetric Merging, which utilizes entropy-guided anchoring to eliminate redundancy without sacrificing semantic integrity. We further introduce a Hierarchical Parallel Merging strategy that mitigates information loss while maximizing computational parallelism. Extensive experiments on standard benchmarks demonstrate that MergeRAG significantly outperforms state-of-the-art RAG baselines, achieving up to 13.7 points improvement in F1 score and 11.5 points in Exact Match (EM), respectively.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-18T09:09:52Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Jiarui Guo</name>
+    </author>
+    <author>
+      <name>Yuemeng Xu</name>
+    </author>
+    <author>
+      <name>Zongwei Lv</name>
+    </author>
+    <author>
+      <name>Yangyujia Wang</name>
+    </author>
+    <author>
+      <name>Xiaolin Wang</name>
+    </author>
+    <author>
+      <name>Kan Liu</name>
+    </author>
+    <author>
+      <name>Tao Lan</name>
+    </author>
+    <author>
+      <name>Lin Qu</name>
+    </author>
+    <author>
+      <name>Tong Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.23508v1</id>
+    <title>Fast and Faithful: Real-Time Verification for Long-Document Retrieval-Augmented Generation Systems</title>
+    <updated>2026-03-04T12:53:21Z</updated>
+    <link href="https://arxiv.org/abs/2603.23508v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.23508v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) is increasingly deployed in enterprise search and document-centric assistants, where responses must be grounded in long and complex source materials. In practice, verifying that generated answers faithfully reflect retrieved documents is difficult: large language models can check long contexts but are too slow and costly for interactive services, while lightweight classifiers operate within strict context limits and frequently miss evidence outside truncated passages. We present the design of a real-time verification component integrated into a production RAG pipeline that enables full-document grounding under latency constraints. The system processes documents up to 32K tokens and employs adaptive inference strategies to balance response time and verification coverage across workloads. We describe the architectural decisions, operational trade-offs, and evaluation methodology used to deploy the verifier, and show that full-context verification substantially improves detection of unsupported responses compared with truncated validation. Our experience highlights when long-context verification is necessary, why chunk-based checking often fails in real documents, and how latency budgets shape model design. These findings provide practical guidance for practitioners building reliable large-scale retrieval-augmented applications. (Model, benchmark, and code: https://huggingface.co/llm-semantic-router)</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-04T12:53:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xunzhuo Liu</name>
+    </author>
+    <author>
+      <name>Bowei He</name>
+    </author>
+    <author>
+      <name>Xue Liu</name>
+    </author>
+    <author>
+      <name>Haichen Zhang</name>
+    </author>
+    <author>
+      <name>Huamin Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.05302v2</id>
+    <title>When More Retrieval Hurts: Retrieval-Augmented Code Review Generation</title>
+    <updated>2026-03-24T20:29:19Z</updated>
+    <link href="https://arxiv.org/abs/2511.05302v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.05302v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Code review generation can reduce developer effort by producing concise, reviewer-style feedback for a given code snippet or code change. However, generation-only models often produce generic or off-point reviews, while retrieval-only methods struggle to adapt well to new contexts. In this paper, we view retrieval augmentation for code review as retrieval-augmented in-context learning, where retrieved historical reviews are placed in the input context as examples that guide the model's output. Based on this view, we propose RARe (Retrieval-Augmented Code Reviewer), a framework that retrieves relevant historical reviews from a corpus and conditions a large language model on the retrieved in-context examples. Experiments on two public benchmarks show that RARe outperforms strong baselines and reaches BLEU-4 scores of 12.32 and 12.96. A key finding is that more retrieval can hurt: using only the top-1 retrieved example works best, while adding more retrieved items can degrade performance due to redundancy and conflicting cues under limited context budgets. Human evaluation and interpretability analysis further support that retrieval-augmented generation reduces generic outputs and improves review focus.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-07T15:02:42Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Qianru Meng</name>
+    </author>
+    <author>
+      <name>Xiao Zhang</name>
+    </author>
+    <author>
+      <name>Zhaochen Ren</name>
+    </author>
+    <author>
+      <name>Joost Visser</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.13010v2</id>
+    <title>RAGSieve: Self-Referenced Local Contrast for Knowledge-Poison Detection in Retrieval-Augmented Generation</title>
+    <updated>2026-09-08T06:10:17Z</updated>
+    <link href="https://arxiv.org/abs/2608.13010v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.13010v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation uses an external corpus as inference-time evidence, allowing an attacker to promote a false answer by injecting a handful of documents. Detection must distinguish this manipulation from ordinary relevance without knowing which queries or documents are targeted. Existing detectors use text irregularity, candidate consensus, or corpus-level graph structure, whose reliability varies with the attack and local context. We present RAGSieve, which constructs a reference matched to each detection scope. At query time, RAGSieve-Query (RSQ) compares generation candidates with the lower-ranked tail of the same retrieval, exposing answer-token concentration and carrier-payload seams. At corpus time, RAGSieve-Graph (RSG) compares each document's strongest semantic relations with its own neighborhood floor to measure coordinated density. Neither requires poison labels, a trusted corpus, or training. Across three QA datasets, three dense retrievers, and six poisoning constructions, RSQ reaches 95.2% AUROC and detects 82.2% of poison at a 5% clean-removal budget, against 81.1% and 52.5% for the strongest query-time baseline; RSG reaches 93.3% and 79.8% against 79.4% and 37.6% for the strongest corpus-time baseline, with a 79.6% versus 1.4% detection rate on camouflaged injections. Joint deployment cuts attack success from 67.4% to 16.1% while retaining unpoisoned-retrieval F1 at 41.0%, compared with 42.1% without filtering. Source code is available at https://github.com/XrazyMee/RAGSieve.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-13T09:29:48Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xinlong Xu</name>
+    </author>
+    <author>
+      <name>Yoshua Y. Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.35782v1</id>
+    <title>Financial Evidence Crowding: Diagnosing and Mitigating Constraint-Induced Displacement in Retrieval-Augmented Generation</title>
+    <updated>2026-08-06T09:12:31Z</updated>
+    <link href="https://arxiv.org/abs/2609.35782v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.35782v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-augmented generation (RAG) retrieves candidate evidence and sends only a limited top-ranked subset, the top-k context, to a generator. In financial question answering, passages can match a query's topic while conflicting with its period, segment, metric scope, or table scope. We study the resulting set-level ordering failure, which we call financial evidence crowding. FinDeCrowd-Stress isolates this failure through matched compatible and incompatible candidate pools while fixing the query, relevant evidence, ranking model, candidate count, and retrieval budget. On a FinDER test split containing companies unseen during training, incompatible pools reduce top-10 evidence inclusion (Recall@10) by 0.147 relative to equally difficult compatible pools. This gap shows that conflicting candidates consume limited context slots and displace answer-supporting evidence. We then introduce FinDeCrowd-RAG, a learned score correction that combines a fixed relevance score with typed compatibility and local lexical competition. A query-level identity gate applies the correction only when it predicts a better order; otherwise, it preserves the original ranking. On identical controlled candidates, FinDeCrowd-RAG raises top-10 evidence inclusion from 0.757 to 0.902 by recovering evidence already present in the candidate set. On a FinDER index built without query-specific candidate insertion, gated reranking raises this inclusion rate from 0.420 to 0.492, while top-100 retrieval coverage remains 0.743 by design. With a fixed generator, the same ordering change improves answer accuracy and citation recall on FinanceBench and FinQA. These results identify constraint-induced displacement as a measurable RAG evaluation target and show that identity-gated reranking can recover evidence already covered by first-stage retrieval.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-06T09:12:31Z</published>
+    <arxiv:comment>10 pages, 2 figures, 9 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Yixi Zhou</name>
+    </author>
+    <author>
+      <name>Jiayi Yin</name>
+    </author>
+    <author>
+      <name>Fan Zhang</name>
+    </author>
+    <author>
+      <name>Xiangyi He</name>
+    </author>
+    <author>
+      <name>Haipeng Zhang</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/2a9KYDsFIBr+HxfTtZEeYOijXF4</id>
+  <title>arXiv Query: search_query=all:"data valuation" AND (all:retrieval OR all:RAG OR all:context)&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:24Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22data+valuation%22+AND+(all:retrieval+OR+(all:RAG+OR+all:context))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>23</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2407.15546v1</id>
+    <title>Personalization of Dataset Retrieval Results using a Metadata-based Data Valuation Method</title>
+    <updated>2024-07-22T11:13:07Z</updated>
+    <link href="https://arxiv.org/abs/2407.15546v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.15546v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we propose a novel data valuation method for a Dataset Retrieval (DR) use case in Ireland's National mapping agency. To the best of our knowledge, data valuation has not yet been applied to Dataset Retrieval. By leveraging metadata and a user's preferences, we estimate the personal value of each dataset to facilitate dataset retrieval and filtering. We then validated the data value-based ranking against the stakeholders' ranking of the datasets. The proposed data valuation method and use case demonstrated that data valuation is promising for dataset retrieval. For instance, the outperforming dataset retrieval based on our approach obtained 0.8207 in terms of NDCG@5 (the truncated Normalized Discounted Cumulative Gain at 5). This study is unique in its exploration of a data valuation-based approach to dataset retrieval and stands out because, unlike most existing methods, our approach is validated using the stakeholders ranking of the datasets.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-22T11:13:07Z</published>
+    <arxiv:comment>5 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Malick Ebiele</name>
+    </author>
+    <author>
+      <name>Malika Bendechache</name>
+    </author>
+    <author>
+      <name>Eamonn Clinton</name>
+    </author>
+    <author>
+      <name>Rob Brennan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.23349v2</id>
+    <title>A case for data valuation transparency via DValCards</title>
+    <updated>2025-07-30T07:49:04Z</updated>
+    <link href="https://arxiv.org/abs/2506.23349v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.23349v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Following the rise in popularity of data-centric machine learning (ML), various data valuation methods have been proposed to quantify the contribution of each datapoint to desired ML model performance metrics (e.g., accuracy). Beyond the technical applications of data valuation methods (e.g., data cleaning, data acquisition, etc.), it has been suggested that within the context of data markets, data buyers might utilize such methods to fairly compensate data owners. Here we demonstrate that data valuation metrics are inherently biased and unstable under simple algorithmic design choices, resulting in both technical and ethical implications. By analyzing 9 tabular classification datasets and 6 data valuation methods, we illustrate how (1) common and inexpensive data pre-processing techniques can drastically alter estimated data values; (2) subsampling via data valuation metrics may increase class imbalance; and (3) data valuation metrics may undervalue underrepresented group data. Consequently, we argue in favor of increased transparency associated with data valuation in-the-wild and introduce the novel Data Valuation Cards (DValCards) framework towards this aim. The proliferation of DValCards will reduce misuse of data valuation metrics, including in data pricing, and build trust in responsible ML systems.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-29T17:53:00Z</published>
+    <arxiv:comment>To be published in the proceedings of the Eighth AAAI/ACM Conference on Artificial Intelligence, Ethics and Society (AIES-25)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Keziah Naggita</name>
+    </author>
+    <author>
+      <name>Julienne LaChance</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.11648v2</id>
+    <title>Lightweight Time Series Data Valuation on Time Series Foundation Models via In-Context Finetuning</title>
+    <updated>2026-03-10T04:18:55Z</updated>
+    <link href="https://arxiv.org/abs/2511.11648v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.11648v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Time series foundation models (TSFMs) have demonstrated increasing capabilities due to their extensive pretraining on large volumes of diverse time series data. Consequently, the quality of time series data is crucial to TSFM performance, rendering an accurate and efficient data valuation of time series for TSFMs indispensable. However, traditional data valuation methods, such as influence functions, face severe computational bottlenecks due to their poor scalability with growing TSFM model sizes and often fail to preserve temporal dependencies. In this paper, we propose LTSV, a Lightweight Time Series Valuation on TSFMS via in-context finetuning. Grounded in the theoretical evidence that in-context finetuning approximates the influence function, LTSV estimates a sample's contribution by measuring the change in context loss after in-context finetuning, leveraging the strong generalization capabilities of TSFMs to produce robust and transferable data valuations. To capture temporal dependencies, we introduce temporal block aggregation, which integrates per-block influence scores across overlapping time windows. Experiments across multiple time series datasets and models demonstrate that LTSV consistently provides reliable and strong valuation performance, while maintaining manageable computational requirements. Our results suggest that in-context finetuning on time series foundation models provides a practical and effective bridge between data attribution and model generalization in time series learning.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-10T13:06:46Z</published>
+    <arxiv:comment>Accepted as a full paper at DASFAA 2026 (The 31st International Conference on Database Systems for Advanced Applications)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Shunyu Wu</name>
+    </author>
+    <author>
+      <name>Tianyue Li</name>
+    </author>
+    <author>
+      <name>Yixuan Leng</name>
+    </author>
+    <author>
+      <name>Jingyi Suo</name>
+    </author>
+    <author>
+      <name>Jian Lou</name>
+    </author>
+    <author>
+      <name>Dan Li</name>
+    </author>
+    <author>
+      <name>See-Kiong Ng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.17464v2</id>
+    <title>Data Valuation by Fusing Global and Local Statistical Information</title>
+    <updated>2025-11-26T13:13:09Z</updated>
+    <link href="https://arxiv.org/abs/2405.17464v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.17464v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data valuation has garnered increasing attention in recent years, given the critical role of high-quality data in various applications. Among diverse data valuation approaches, Shapley value-based methods are predominant due to their strong theoretical grounding. However, the exact computation of Shapley values is often computationally prohibitive, prompting the development of numerous approximation techniques. Despite notable advancements, existing methods generally neglect the incorporation of value distribution information and fail to account for dynamic data conditions, thereby compromising their performance and application potential. In this paper, we highlight the crucial role of both global and local statistical properties of value distributions in the context of data valuation for machine learning. First, we conduct a comprehensive analysis of these distributions across various simulated and real-world datasets, uncovering valuable insights and key patterns. Second, we propose an enhanced data valuation method that fuses the explored distribution characteristics into two regularization terms to refine Shapley value estimation. The proposed regularizers can be seamlessly incorporated into various existing data valuation methods. Third, we introduce a novel approach for dynamic data valuation that infers updated data values without recomputing Shapley values, thereby significantly improving computational efficiency. Extensive experiments have been conducted across a range of tasks, including Shapley value estimation, value-based data addition and removal, mislabeled data detection, and dynamic data valuation. The results showcase the consistent effectiveness and efficiency of our proposed methodologies, affirming the significant potential of global and local value distributions in data valuation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-23T08:58:08Z</published>
+    <arxiv:comment>35 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xiaoling Zhou</name>
+    </author>
+    <author>
+      <name>Ou Wu</name>
+    </author>
+    <author>
+      <name>Michael K. Ng</name>
+    </author>
+    <author>
+      <name>Hao Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21359v2</id>
+    <title>Influence Guided Context Selection for Effective Retrieval-Augmented Generation</title>
+    <updated>2025-10-24T08:50:27Z</updated>
+    <link href="https://arxiv.org/abs/2509.21359v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21359v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) addresses large language model (LLM) hallucinations by grounding responses in external knowledge, but its effectiveness is compromised by poor-quality retrieved contexts containing irrelevant or noisy information. While existing approaches attempt to improve performance through context selection based on predefined context quality assessment metrics, they show limited gains over standard RAG. We attribute this limitation to their failure in holistically utilizing available information (query, context list, and generator) for comprehensive quality assessment. Inspired by recent advances in data selection, we reconceptualize context quality assessment as an inference-time data valuation problem and introduce the Contextual Influence Value (CI value). This novel metric quantifies context quality by measuring the performance degradation when removing each context from the list, effectively integrating query-aware relevance, list-aware uniqueness, and generator-aware alignment. Moreover, CI value eliminates complex selection hyperparameter tuning by simply retaining contexts with positive CI values. To address practical challenges of label dependency and computational overhead, we develop a parameterized surrogate model for CI value prediction during inference. The model employs a hierarchical architecture that captures both local query-context relevance and global inter-context interactions, trained through oracle CI value supervision and end-to-end generator feedback. Extensive experiments across 8 NLP tasks and multiple LLMs demonstrate that our context selection method significantly outperforms state-of-the-art baselines, effectively filtering poor-quality contexts while preserving critical information. Code is available at https://github.com/SJTU-DMTai/RAG-CSM.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-21T07:19:09Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiale Deng</name>
+    </author>
+    <author>
+      <name>Yanyan Shen</name>
+    </author>
+    <author>
+      <name>Ziyuan Pei</name>
+    </author>
+    <author>
+      <name>Youmin Chen</name>
+    </author>
+    <author>
+      <name>Linpeng Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.05304v3</id>
+    <title>Data Valuation and Detections in Federated Learning</title>
+    <updated>2024-05-09T07:40:35Z</updated>
+    <link href="https://arxiv.org/abs/2311.05304v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.05304v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Federated Learning (FL) enables collaborative model training while preserving the privacy of raw data. A challenge in this framework is the fair and efficient valuation of data, which is crucial for incentivizing clients to contribute high-quality data in the FL task. In scenarios involving numerous data clients within FL, it is often the case that only a subset of clients and datasets are pertinent to a specific learning task, while others might have either a negative or negligible impact on the model training process. This paper introduces a novel privacy-preserving method for evaluating client contributions and selecting relevant datasets without a pre-specified training algorithm in an FL task. Our proposed approach FedBary, utilizes Wasserstein distance within the federated context, offering a new solution for data valuation in the FL framework. This method ensures transparent data valuation and efficient computation of the Wasserstein barycenter and reduces the dependence on validation datasets. Through extensive empirical experiments and theoretical analyses, we demonstrate the potential of this data valuation method as a promising avenue for FL research.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-09T12:01:32Z</published>
+    <arxiv:comment>CVPR 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Wenqian Li</name>
+    </author>
+    <author>
+      <name>Shuran Fu</name>
+    </author>
+    <author>
+      <name>Fengrui Zhang</name>
+    </author>
+    <author>
+      <name>Yan Pang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.08364v3</id>
+    <title>Data Valuation for Vertical Federated Learning: A Model-free and Privacy-preserving Method</title>
+    <updated>2024-01-04T07:19:17Z</updated>
+    <link href="https://arxiv.org/abs/2112.08364v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.08364v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vertical Federated learning (VFL) is a promising paradigm for predictive analytics, empowering an organization (i.e., task party) to enhance its predictive models through collaborations with multiple data suppliers (i.e., data parties) in a decentralized and privacy-preserving way. Despite the fast-growing interest in VFL, the lack of effective and secure tools for assessing the value of data owned by data parties hinders the application of VFL in business contexts. In response, we propose FedValue, a privacy-preserving, task-specific but model-free data valuation method for VFL, which consists of a data valuation metric and a federated computation method. Specifically, we first introduce a novel data valuation metric, namely MShapley-CMI. The metric evaluates a data party's contribution to a predictive analytics task without the need of executing a machine learning model, making it well-suited for real-world applications of VFL. Next, we develop an innovative federated computation method that calculates the MShapley-CMI value for each data party in a privacy-preserving manner. Extensive experiments conducted on six public datasets validate the efficacy of FedValue for data valuation in the context of VFL. In addition, we illustrate the practical utility of FedValue with a case study involving federated movie recommendations.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-15T02:42:28Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xiao Han</name>
+    </author>
+    <author>
+      <name>Leye Wang</name>
+    </author>
+    <author>
+      <name>Junjie Wu</name>
+    </author>
+    <author>
+      <name>Xiao Fang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.10473v2</id>
+    <title>2D-Shapley: A Framework for Fragmented Data Valuation</title>
+    <updated>2023-07-27T02:53:41Z</updated>
+    <link href="https://arxiv.org/abs/2306.10473v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.10473v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data valuation -- quantifying the contribution of individual data sources to certain predictive behaviors of a model -- is of great importance to enhancing the transparency of machine learning and designing incentive systems for data sharing. Existing work has focused on evaluating data sources with the shared feature or sample space. How to valuate fragmented data sources of which each only contains partial features and samples remains an open question. We start by presenting a method to calculate the counterfactual of removing a fragment from the aggregated data matrix. Based on the counterfactual calculation, we further propose 2D-Shapley, a theoretical framework for fragmented data valuation that uniquely satisfies some appealing axioms in the fragmented data context. 2D-Shapley empowers a range of new use cases, such as selecting useful data fragments, providing interpretation for sample-wise data values, and fine-grained data issue diagnosis.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-18T04:30:12Z</published>
+    <arxiv:comment>25 pages, 13 figures, ICML 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhihong Liu</name>
+    </author>
+    <author>
+      <name>Hoang Anh Just</name>
+    </author>
+    <author>
+      <name>Xiangyu Chang</name>
+    </author>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Ruoxi Jia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.10622v1</id>
+    <title>Metrics, KPIs, and Taxonomy for Data Valuation and Monetisation -- Internal Processes Perspective</title>
+    <updated>2025-12-11T13:19:24Z</updated>
+    <link href="https://arxiv.org/abs/2512.10622v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.10622v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data valuation and monetisation are emerging as central challenges in data-driven economies, yet no unified framework exists to measure or manage data value across organisational contexts. This paper presents a systematic literature review of metrics and key performance indicators (KPIs) relevant to data valuation and monetisation, focusing on the Internal Processes Perspective of the Balanced Scorecard (BSC). As part of a broader effort to explore all four BSC perspectives, we identify, categorise, and interrelate hundreds of metrics within a comprehensive taxonomy structured around three core clusters: Data Quality, Governance &amp; Compliance, and Operational Efficiency. The taxonomy consolidates overlapping definitions, clarifies conceptual dependencies, and links technical, organisational, and regulatory indicators that underpin data value creation. By integrating these dimensions, it provides a foundation for the development of standardised and evidence-based valuation frameworks. Beyond its theoretical contribution, the taxonomy supports ongoing practical applications in decision-support systems and data valuation models, advancing the broader goal of establishing a coherent, dynamic approach to assessing and monetising data across industries.</summary>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-11T13:19:24Z</published>
+    <arxiv:primary_category term="cs.ET"/>
+    <author>
+      <name>Eduardo Vyhmeister</name>
+    </author>
+    <author>
+      <name>Bastien Pietropaoli</name>
+    </author>
+    <author>
+      <name>Alejando Martinez Molina</name>
+    </author>
+    <author>
+      <name>Montserrat Gonzalez-Ferreiro</name>
+    </author>
+    <author>
+      <name>Gabriel Gonzalez-Castane</name>
+    </author>
+    <author>
+      <name>Jordi Arjona Aroca</name>
+    </author>
+    <author>
+      <name>Andrea Visentin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.05563v2</id>
+    <title>Do Data Valuations Make Good Data Prices?</title>
+    <updated>2025-09-26T16:21:43Z</updated>
+    <link href="https://arxiv.org/abs/2504.05563v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.05563v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language models increasingly rely on external data sources, compensating data contributors has become a central concern. But how should these payments be devised? We revisit data valuations from a $\textit{market-design perspective}$ where payments serve to compensate data owners for the $\textit{private}$ heterogeneous costs they incur for collecting and sharing data. We show that popular valuation methods-such as Leave-One-Out and Data Shapley-make for poor payments. They fail to ensure truthful reporting of the costs, leading to $\textit{inefficient market}$ outcomes. To address this, we adapt well-established payment rules from mechanism design, namely Myerson and Vickrey-Clarke-Groves (VCG), to the data market setting. We show that Myerson payment is the minimal truthful mechanism, optimal from the buyer's perspective. Additionally, we identify a condition under which both data buyers and sellers are utility-satisfied, and the market achieves efficiency. Our findings highlight the importance of incorporating incentive compatibility into data valuation design, paving the way for more robust and efficient data markets. Our data market framework is readily applicable to real-world scenarios. We illustrate this with simulations of contributor compensation in an LLM based retrieval-augmented generation (RAG) marketplace tasked with challenging medical question answering.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-07T23:34:11Z</published>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Dongyang Fan</name>
+    </author>
+    <author>
+      <name>Tyler J. Rotello</name>
+    </author>
+    <author>
+      <name>Sai Praneeth Karimireddy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.00388v3</id>
+    <title>Towards Data Valuation via Asymmetric Data Shapley</title>
+    <updated>2025-11-19T07:21:42Z</updated>
+    <link href="https://arxiv.org/abs/2411.00388v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.00388v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As data emerges as a vital driver of technological and economic advancements, a key challenge is accurately quantifying its value in algorithmic decision-making. The Shapley value, a well-established concept from cooperative game theory, has been widely adopted to assess the contribution of individual data sources in supervised machine learning. However, its symmetry axiom assumes all players in the cooperative game are homogeneous, which overlooks the complex structures and dependencies present in real-world datasets. To address this limitation, we extend the traditional data Shapley framework to asymmetric data Shapley, making it flexible enough to incorporate inherent structures within the datasets for structure-aware data valuation. We also introduce an efficient $k$-nearest neighbor-based algorithm for its exact computation. We demonstrate the practical applicability of our framework across various machine learning tasks and data market contexts. The code is available at: https://github.com/xzheng01/Asymmetric-Data-Shapley.</summary>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-01T06:28:38Z</published>
+    <arxiv:comment>Please redirect to the updated version of this paper at arXiv:2511.12863</arxiv:comment>
+    <arxiv:primary_category term="cs.GT"/>
+    <author>
+      <name>Xi Zheng</name>
+    </author>
+    <author>
+      <name>Xiangyu Chang</name>
+    </author>
+    <author>
+      <name>Ruoxi Jia</name>
+    </author>
+    <author>
+      <name>Yong Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.22002v1</id>
+    <title>Monte Carlo Sampling for Analyzing In-Context Examples</title>
+    <updated>2025-03-27T21:37:40Z</updated>
+    <link href="https://arxiv.org/abs/2503.22002v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.22002v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prior works have shown that in-context learning is brittle to presentation factors such as the order, number, and choice of selected examples. However, ablation-based guidance on selecting the number of examples may ignore the interplay between different presentation factors. In this work we develop a Monte Carlo sampling-based method to study the impact of number of examples while explicitly accounting for effects from order and selected examples. We find that previous guidance on how many in-context examples to select does not always generalize across different sets of selected examples and orderings, and whether one-shot settings outperform zero-shot settings is highly dependent on the selected example. Additionally, inspired by data valuation, we apply our sampling method to in-context example selection to select examples that perform well across different orderings. We find a negative result, that while performance is robust to ordering and number of examples, there is an unexpected performance degradation compared to random sampling.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-27T21:37:40Z</published>
+    <arxiv:comment>Accepted to the Workshop for Insights from Negative Results (co-located with NAACL 2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Stephanie Schoch</name>
+    </author>
+    <author>
+      <name>Yangfeng Ji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.07949v1</id>
+    <title>Guixu: Valuation-Driven Data Discovery for Autonomous AI Agents with On-Chain Attestation</title>
+    <updated>2026-08-08T06:25:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.07949v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.07949v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous agents increasingly rely on external data to complete downstream tasks such as model training and decision support. However, existing data discovery systems remain largely retrieval-oriented: they surface candidate datasets from heterogeneous sources, but provide limited support for estimating task-specific utility, selecting cost-effective datasets under budget constraints, or incorporating trustworthy feedback from prior usage. This paper presents Guixu, a valuation-driven data discovery system for autonomous agents. Guixu employs a three-phase valuation pipeline with proxy-label propagation and multi-round knapsack optimization for task-aware data valuation. Guixu integrates agentic payment protocol to enable budget-constrained data procurement workflows. Guixu leverages on-chain data market and attestation signals for verifiable data discovery. Our demonstration highlights how Guixu enables an agent to move beyond keyword-based dataset retrieval toward task- and budget-aware, trustworthy data discovery and procurement. Attendees can interactively explore the full workflow, from NL task specification and multi-source search to data valuation and verifiable transaction feedback.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-08T06:25:16Z</published>
+    <arxiv:comment>This paper has been accepted for presentation at VLDB 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yifan Wu</name>
+    </author>
+    <author>
+      <name>Yuchen Peng</name>
+    </author>
+    <author>
+      <name>Jiaqi Chai</name>
+    </author>
+    <author>
+      <name>Yufei Qian</name>
+    </author>
+    <author>
+      <name>Xilin Li</name>
+    </author>
+    <author>
+      <name>Ke Chen</name>
+    </author>
+    <author>
+      <name>Lidan Shou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.12334v1</id>
+    <title>A Distributional Framework for Data Valuation</title>
+    <updated>2020-02-27T18:51:35Z</updated>
+    <link href="https://arxiv.org/abs/2002.12334v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.12334v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Shapley value is a classic notion from game theory, historically used to quantify the contributions of individuals within groups, and more recently applied to assign values to data points when training machine learning models. Despite its foundational role, a key limitation of the data Shapley framework is that it only provides valuations for points within a fixed data set. It does not account for statistical aspects of the data and does not give a way to reason about points outside the data set. To address these limitations, we propose a novel framework -- distributional Shapley -- where the value of a point is defined in the context of an underlying data distribution. We prove that distributional Shapley has several desirable statistical properties; for example, the values are stable under perturbations to the data points themselves and to the underlying data distribution. We leverage these properties to develop a new algorithm for estimating values from data, which comes with formal guarantees and runs two orders of magnitude faster than state-of-the-art algorithms for computing the (non-distributional) data Shapley values. We apply distributional Shapley to diverse data sets and demonstrate its utility in a data market setting.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-27T18:51:35Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Amirata Ghorbani</name>
+    </author>
+    <author>
+      <name>Michael P. Kim</name>
+    </author>
+    <author>
+      <name>James Zou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.07171v1</id>
+    <title>Shapley Value on Probabilistic Classifiers</title>
+    <updated>2023-06-12T15:09:13Z</updated>
+    <link href="https://arxiv.org/abs/2306.07171v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.07171v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data valuation has become an increasingly significant discipline in data science due to the economic value of data. In the context of machine learning (ML), data valuation methods aim to equitably measure the contribution of each data point to the utility of an ML model. One prevalent method is Shapley value, which helps identify data points that are beneficial or detrimental to an ML model. However, traditional Shapley-based data valuation methods may not effectively distinguish between beneficial and detrimental training data points for probabilistic classifiers. In this paper, we propose Probabilistic Shapley (P-Shapley) value by constructing a probability-wise utility function that leverages the predicted class probabilities of probabilistic classifiers rather than binarized prediction results in the traditional Shapley value. We also offer several activation functions for confidence calibration to effectively quantify the marginal contribution of each data point to the probabilistic classifiers. Extensive experiments on four real-world datasets demonstrate the effectiveness of our proposed P-Shapley value in evaluating the importance of data for building a high-usability and trustworthy ML model.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-12T15:09:13Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Haocheng Xia</name>
+    </author>
+    <author>
+      <name>Jinfei Liu</name>
+    </author>
+  </entry>
+</feed>

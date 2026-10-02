@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/DeEoaEkd62L9DjdA8rlOjou97z4</id>
+  <title>arXiv Query: search_query=all:"context engineering"&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:44Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22context+engineering%22&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>132</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.26493v1</id>
+    <title>Context Engineering 2.0: The Context of Context Engineering</title>
+    <updated>2025-10-30T13:43:10Z</updated>
+    <link href="https://arxiv.org/abs/2510.26493v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.26493v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Karl Marx once wrote that ``the human essence is the ensemble of social relations'', suggesting that individuals are not isolated entities but are fundamentally shaped by their interactions with other entities, within which contexts play a constitutive and essential role. With the advent of computers and artificial intelligence, these contexts are no longer limited to purely human--human interactions: human--machine interactions are included as well. Then a central question emerges: How can machines better understand our situations and purposes? To address this challenge, researchers have recently introduced the concept of context engineering. Although it is often regarded as a recent innovation of the agent era, we argue that related practices can be traced back more than twenty years. Since the early 1990s, the field has evolved through distinct historical phases, each shaped by the intelligence level of machines: from early human--computer interaction frameworks built around primitive computers, to today's human--agent interaction paradigms driven by intelligent agents, and potentially to human--level or superhuman intelligence in the future. In this paper, we situate context engineering, provide a systematic definition, outline its historical and conceptual landscape, and examine key design considerations for practice. By addressing these questions, we aim to offer a conceptual foundation for context engineering and sketch its promising future. This paper is a stepping stone for a broader community effort toward systematic context engineering in AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-30T13:43:10Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Qishuo Hua</name>
+    </author>
+    <author>
+      <name>Lyumanshan Ye</name>
+    </author>
+    <author>
+      <name>Dayuan Fu</name>
+    </author>
+    <author>
+      <name>Yang Xiao</name>
+    </author>
+    <author>
+      <name>Xiaojie Cai</name>
+    </author>
+    <author>
+      <name>Yunze Wu</name>
+    </author>
+    <author>
+      <name>Jifan Lin</name>
+    </author>
+    <author>
+      <name>Junfei Wang</name>
+    </author>
+    <author>
+      <name>Pengfei Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.07321v2</id>
+    <title>Wireless Context Engineering for Efficient Mobile Agentic AI and Edge General Intelligence</title>
+    <updated>2026-09-16T08:24:07Z</updated>
+    <link href="https://arxiv.org/abs/2602.07321v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.07321v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Future wireless networks demand increasingly powerful intelligence to support sensing, communication, and autonomous decision-making. While scaling laws suggest improving performance by enlarging model capacity, practical edge deployments are fundamentally constrained by latency, energy, and memory, making unlimited model scaling infeasible. This creates a critical need to maximize the utility of limited inference-time inputs by filtering redundant observations and focusing on high-impact data. In large language models and generative artificial intelligence (AI), context engineering has emerged as a key paradigm to guide inference by selectively structuring and injecting task-relevant information. Inspired by this success, we extend context engineering to wireless systems, providing a systematic way to enhance edge AI performance without increasing model complexity. In dynamic environments, for example, beam prediction can benefit from augmenting instantaneous channel measurements with contextual cues such as user mobility trends or environment-aware propagation priors. We formally introduce wireless context engineering and propose a Wireless Context Communication Framework (WCCF) to adaptively orchestrate wireless context under inference-time constraints. This work provides researchers with a foundational perspective and practical design dimensions to manage the wireless context of wireless edge intelligence. An ISAC-enabled beam prediction case study illustrates the effectiveness of the proposed paradigm under constrained sensing budgets.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-07T02:36:54Z</published>
+    <arxiv:comment>8 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Changyuan Zhao</name>
+    </author>
+    <author>
+      <name>Jiacheng Wang</name>
+    </author>
+    <author>
+      <name>Yunting Xu</name>
+    </author>
+    <author>
+      <name>Zan Li</name>
+    </author>
+    <author>
+      <name>Abbas Jamalipour</name>
+    </author>
+    <author>
+      <name>Dong In Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.29422v1</id>
+    <title>AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair</title>
+    <updated>2026-07-31T13:42:51Z</updated>
+    <link href="https://arxiv.org/abs/2607.29422v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.29422v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automated vulnerability repair aims to reduce the time and effort required to patch security flaws from a vulnerability triage report. Recent agentic AI approaches have shown promising results in automated program repair. However, vulnerability repair demands richer program context than general bug repair - context that security engineers routinely assemble in practice but that existing agentic approaches do not engineer. We identify three critical gaps: code-structure context capturing cross-file data flows and memory operation patterns, runtime-execution context revealing crash semantics and memory origins, and commit-history context recovering how fragile code patterns were introduced. We present AgenticRepair, an agentic vulnerability repair framework that addresses the gaps through multi-faceted program context engineering. AgenticRepair orchestrates three specialized LLM subagents to engineer the contexts, which are then embedded into the memory of a dedicated repair subagent for context-conditioned patch synthesis. Evaluated on SEC-Bench comprising 300 real-world instances with sanitizer-based patch verification, AgenticRepair achieves a 73% success rate, substantially outperforming the strongest baseline by 29%. Our ablation study confirms that the three context facets are mutually complementary, and that multi-agent scaffolding and base-model capacity each play an essential role. Collectively, these findings establish multi-faceted program context engineering as a promising design direction for agentic vulnerability repair.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-31T13:42:51Z</published>
+    <arxiv:comment>Under Review at IEEE TSE</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Michael Fu</name>
+    </author>
+    <author>
+      <name>Qiyue Mei</name>
+    </author>
+    <author>
+      <name>Patanamon Thongtanunam</name>
+    </author>
+    <author>
+      <name>Kla Tantithamthavorn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.11728v1</id>
+    <title>Reproducibility in the Age of Agentic AI: Context Engineering at the Timescale of a Codebase</title>
+    <updated>2026-09-10T15:43:34Z</updated>
+    <link href="https://arxiv.org/abs/2609.11728v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.11728v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reproducible research practices are context engineering for AI coding agents. I argue that agents lower the cost of maintaining tests, commit histories, repository structure, instructions, and decision records while making their benefits immediate. Researchers remain responsible for verifying these artifacts and the scientific judgments they encode.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-10T15:43:34Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Lorena A. Barba</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.05470v1</id>
+    <title>Everything is Context: Agentic File System Abstraction for Context Engineering</title>
+    <updated>2025-12-05T06:56:45Z</updated>
+    <link href="https://arxiv.org/abs/2512.05470v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.05470v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative AI (GenAI) has reshaped software system design by introducing foundation models as pre-trained subsystems that redefine architectures and operations. The emerging challenge is no longer model fine-tuning but context engineering-how systems capture, structure, and govern external knowledge, memory, tools, and human input to enable trustworthy reasoning. Existing practices such as prompt engineering, retrieval-augmented generation (RAG), and tool integration remain fragmented, producing transient artefacts that limit traceability and accountability. This paper proposes a file-system abstraction for context engineering, inspired by the Unix notion that 'everything is a file'. The abstraction offers a persistent, governed infrastructure for managing heterogeneous context artefacts through uniform mounting, metadata, and access control. Implemented within the open-source AIGNE framework, the architecture realises a verifiable context-engineering pipeline, comprising the Context Constructor, Loader, and Evaluator, that assembles, delivers, and validates context under token constraints. As GenAI becomes an active collaborator in decision support, humans play a central role as curators, verifiers, and co-reasoners. The proposed architecture establishes a reusable foundation for accountable and human-centred AI co-work, demonstrated through two exemplars: an agent with memory and an MCP-based GitHub assistant. The implementation within the AIGNE framework demonstrates how the architecture can be operationalised in developer and industrial settings, supporting verifiable, maintainable, and industry-ready GenAI systems.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-05T06:56:45Z</published>
+    <arxiv:comment>Submitted</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Xiwei Xu</name>
+    </author>
+    <author>
+      <name>Robert Mao</name>
+    </author>
+    <author>
+      <name>Quan Bai</name>
+    </author>
+    <author>
+      <name>Xuewu Gu</name>
+    </author>
+    <author>
+      <name>Yechao Li</name>
+    </author>
+    <author>
+      <name>Liming Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.03001v1</id>
+    <title>Invasive Context Engineering to Control Large Language Models</title>
+    <updated>2025-12-02T18:25:55Z</updated>
+    <link href="https://arxiv.org/abs/2512.03001v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.03001v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current research on operator control of Large Language Models improves model robustness against adversarial attacks and misbehavior by training on preference examples, prompting, and input/output filtering. Despite good results, LLMs remain susceptible to abuse, and jailbreak probability increases with context length. There is a need for robust LLM security guarantees in long-context situations. We propose control sentences inserted into the LLM context as invasive context engineering to partially solve the problem. We suggest this technique can be generalized to the Chain-of-Thought process to prevent scheming. Invasive Context Engineering does not rely on LLM training, avoiding data shortage pitfalls which arise in training models for long context situations.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-02T18:25:55Z</published>
+    <arxiv:comment>4 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Thomas Rivasseau</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15721v1</id>
+    <title>Contexting as Recommendation: Evolutionary Collaborative Filtering for Context Engineering</title>
+    <updated>2026-05-15T08:17:21Z</updated>
+    <link href="https://arxiv.org/abs/2605.15721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are highly sensitive to their input contexts, motivating the development of automated context engineering. However, existing methods predominantly treat this as a global search problem, seeking a single context strategy that maximizes average performance across a dataset. This restrictive assumption overlooks the fact that different inputs often require distinct guidance, leaving substantial instance-level performance gains untapped. In this paper, we propose a paradigm shift by formulating context engineering as a recommendation problem. We introduce \textbf{Neural Collaborative Context Engineering (NCCE)}, a framework that transitions optimization from a static global search to dynamic, instance-wise routing. NCCE first bootstraps a diverse catalog of anchor contexts and then employs a novel \textbf{Context-CF Co-Evolution} mechanism. This stage establishes a synergistic feedback loop: a lightweight Neural Collaborative Filtering (NCF) model learns instance-context preferences to guide the generation of specialized context variants, while the newly evaluated contexts continuously refine the NCF model's understanding of latent preferences. At inference time, the trained NCF model acts as a context router, dynamically assigning the most suitable context strategy to each unseen instance. Theoretical Proofs and comprehensive experiments demonstrate that by matching individual inputs with their optimal contexts, NCCE significantly improves task accuracy, highlighting the critical importance of personalization in LLM context engineering.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-15T08:17:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiachen Zhu</name>
+    </author>
+    <author>
+      <name>Zhuoying Ou</name>
+    </author>
+    <author>
+      <name>Congmin Zheng</name>
+    </author>
+    <author>
+      <name>Yuxiang Chen</name>
+    </author>
+    <author>
+      <name>Zeyu Zheng</name>
+    </author>
+    <author>
+      <name>Rong Shan</name>
+    </author>
+    <author>
+      <name>Lingyu Yang</name>
+    </author>
+    <author>
+      <name>Lionel Z. Wang</name>
+    </author>
+    <author>
+      <name>Weiwen Liu</name>
+    </author>
+    <author>
+      <name>Yong Yu</name>
+    </author>
+    <author>
+      <name>Weinan Zhang</name>
+    </author>
+    <author>
+      <name>Jianghao Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.20874v1</id>
+    <title>The Root Theorem of Context Engineering</title>
+    <updated>2026-03-29T20:41:58Z</updated>
+    <link href="https://arxiv.org/abs/2604.20874v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.20874v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Every system that maintains a large language model conversation beyond a single session faces two inescapable constraints: the context window is finite, and information quality degrades with accumulated volume. We formalize these constraints as axioms and derive a single governing principle -- the Root Theorem of Context Engineering: \emph{maximize signal-to-token ratio within bounded, lossy channels.} From this principle, we derive five consequences without additional assumptions: (1)~a quality function $F(P)$ that degrades monotonically with injected token volume, independent of window size; (2)~the independence of signal and token count as optimization variables; (3)~a necessary gate mechanism triggered by fidelity thresholds, not capacity limits; (4)~the inevitability of homeostatic persistence -- accumulate, compress, rewrite, shed -- as the only architecture that sustains understanding indefinitely; and (5)~the self-referential property that the compression mechanism operates inside the channel it compresses, requiring an external verification gate. We show that append-only systems necessarily exceed their effective window in finite time, that retrieval-augmented generation solves search but not continuity, and that the theorem's constraint structure converges with biological memory architecture through independent derivation from shared principles. Engineering proof is provided through a 60+-session persistent architecture demonstrating stable memory footprint under continuous operation -- the divergence prediction made concrete. The Root Theorem establishes context engineering as an information-theoretic discipline with formal foundations, distinct from prompt engineering in both scope and method. Shannon solved point-to-point transmission. Context engineering solves continuity.</summary>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-29T20:41:58Z</published>
+    <arxiv:comment>17 pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CC"/>
+    <author>
+      <name>Borja Odriozola Schick</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.27354v1</id>
+    <title>Constraint-Driven Context Engineering: Designing Domain Interfaces for AI Systems</title>
+    <updated>2026-09-23T04:53:47Z</updated>
+    <link href="https://arxiv.org/abs/2609.27354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.27354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative AI systems are increasingly deployed to address domain problems. These systems operate under technical, regulatory, institutional, and normative constraints that define acceptable AI behaviour and outcomes within their domains. We observe a recurring pattern in our industry engagement: partners often arrive with a functioning but relatively generic AI solution. The challenge is no longer to build an AI system from scratch, but to improve the quality and domain appropriateness of an AI-generated solution. In these settings, the limiting factor is often the quality, scope, and structure of the context available to the system. Yet, existing context engineering approaches primarily focus on supplying domain knowledge through retrieval, memory, and tools, with limited support for systematically identifying and operationalising the constraints that govern AI systems in their operational environments.
+  This paper proposes Constraint-Driven Context Engineering (CDCE), a design approach for engineering domain interfaces for AI systems. Drawing on software architecture design and Domain-Driven Design (DDD), CDCE treats domain constraints as first-class design drivers. It identifies and characterises constraints, determines the required context assets, and designs representations through which these assets are made available to AI systems.
+  We conducted a comparative multiple-case study with industry and public-sector partners across educational assessment, healthcare decision support, and financial-distress prediction. Depending on their characteristics, constraints can guide AI behaviour, enforce permissible boundaries, or support verification of AI-generated outcomes. The cases demonstrate CDCE's applicability across contrasting domains and show how constraint characteristics shape the resulting domain interfaces.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T04:53:47Z</published>
+    <arxiv:comment>submitted to conference</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Xiwei Xu</name>
+    </author>
+    <author>
+      <name>Chen Wang</name>
+    </author>
+    <author>
+      <name>Mengmeng Yang</name>
+    </author>
+    <author>
+      <name>Yipeng Zhang</name>
+    </author>
+    <author>
+      <name>Jacky Jiang</name>
+    </author>
+    <author>
+      <name>Suyu Ma</name>
+    </author>
+    <author>
+      <name>Youyang Qu</name>
+    </author>
+    <author>
+      <name>Ming Ding</name>
+    </author>
+    <author>
+      <name>Liming Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.10532v1</id>
+    <title>Implicit Fine-tuning via Context Engineering: A Curriculum Learning Framework for Multimodal Entity Alignment</title>
+    <updated>2026-07-12T02:01:40Z</updated>
+    <link href="https://arxiv.org/abs/2607.10532v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.10532v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Entity Alignment (MMEA) aims to identify equivalent entities across different modalities. While existing methods enhance MMEA performance through black-box context engineering strategies, their reliance on LLM parameter capacity and lack of theoretical interpretability remain unresolved. To this end, we first theoretically validate the mathematical equivalence between context engineering and model fine-tuning in MMEA tasks, demonstrating that prompt components simulate contrastive learning-based sequential fine-tuning in MMEA. Building on this foundation, we then propose PTFEA, a curriculum-learning-inspired framework that translates fine-tuning strategies into interpretable context engineering. Specifically, adaptive difficulty modulation dynamically adjusts information injection stages using confidence thresholds, establishing mathematical equivalence between curriculum learning weights and context sample selection; and three-stage progressive inference incorporates entity information from simple to complex cases, mirroring the gradient descent process in fine-tuning. Experiments on five public datasets demonstrate that PTFEA consistently outperforms strong baselines. In particular, on the ICWIKI dataset, PTFEA narrows the H@1 gap between Qwen2.5-72B and 14B to 0.6%. Moreover, compared with the representative context-engineering-based MMEA method MM-ChatAlign, PTFEA reduces the runtime of Qwen2.5-72B from 21 hours to 1 hour and lowers token consumption from 2200-3000 to 200-400, achieving over 80% reduction on the ICWIKI dataset. This work provides the first theoretical framework unifying context engineering and fine-tuning in MMEA, paving the way for future research that seeks to translate additional fine-tuning strategies into context engineering paradigms. Our code is available at https://github.com/DMiC-Lab-HFUT/PTFEA.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-12T02:01:40Z</published>
+    <arxiv:comment>Accepted by KDD 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <arxiv:journal_ref>SIGKDD 2026</arxiv:journal_ref>
+    <author>
+      <name>Yunpeng Hong</name>
+    </author>
+    <author>
+      <name>Chenyang Bu</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Yi He</name>
+    </author>
+    <author>
+      <name>Xindong Wu</name>
+    </author>
+    <arxiv:doi>10.1145/3770855.3817732</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3770855.3817732" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.13334v2</id>
+    <title>A Survey of Context Engineering for Large Language Models</title>
+    <updated>2025-07-21T17:48:18Z</updated>
+    <link href="https://arxiv.org/abs/2507.13334v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.13334v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of Large Language Models (LLMs) is fundamentally determined by the contextual information provided during inference. This survey introduces Context Engineering, a formal discipline that transcends simple prompt design to encompass the systematic optimization of information payloads for LLMs. We present a comprehensive taxonomy decomposing Context Engineering into its foundational components and the sophisticated implementations that integrate them into intelligent systems. We first examine the foundational components: context retrieval and generation, context processing and context management. We then explore how these components are architecturally integrated to create sophisticated system implementations: retrieval-augmented generation (RAG), memory systems and tool-integrated reasoning, and multi-agent systems. Through this systematic analysis of over 1400 research papers, our survey not only establishes a technical roadmap for the field but also reveals a critical research gap: a fundamental asymmetry exists between model capabilities. While current models, augmented by advanced context engineering, demonstrate remarkable proficiency in understanding complex contexts, they exhibit pronounced limitations in generating equally sophisticated, long-form outputs. Addressing this gap is a defining priority for future research. Ultimately, this survey provides a unified framework for both researchers and engineers advancing context-aware AI.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-17T17:50:36Z</published>
+    <arxiv:comment>ongoing work; 166 pages, 1411 citations</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lingrui Mei</name>
+    </author>
+    <author>
+      <name>Jiayu Yao</name>
+    </author>
+    <author>
+      <name>Yuyao Ge</name>
+    </author>
+    <author>
+      <name>Yiwei Wang</name>
+    </author>
+    <author>
+      <name>Baolong Bi</name>
+    </author>
+    <author>
+      <name>Yujun Cai</name>
+    </author>
+    <author>
+      <name>Jiazhi Liu</name>
+    </author>
+    <author>
+      <name>Mingyu Li</name>
+    </author>
+    <author>
+      <name>Zhong-Zhi Li</name>
+    </author>
+    <author>
+      <name>Duzhen Zhang</name>
+    </author>
+    <author>
+      <name>Chenlin Zhou</name>
+    </author>
+    <author>
+      <name>Jiayi Mao</name>
+    </author>
+    <author>
+      <name>Tianze Xia</name>
+    </author>
+    <author>
+      <name>Jiafeng Guo</name>
+    </author>
+    <author>
+      <name>Shenghua Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.21557v2</id>
+    <title>Meta Context Engineering via Agentic Skill Evolution</title>
+    <updated>2026-02-11T05:40:08Z</updated>
+    <link href="https://arxiv.org/abs/2601.21557v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.21557v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The operational efficacy of large language models relies heavily on their inference-time context. This has established Context Engineering (CE) as a formal discipline for optimizing these inputs. Current CE methods rely on manually crafted harnesses, such as rigid generation-reflection workflows and predefined context schemas. They impose structural biases and restrict context optimization to a narrow, intuition-bound design space. To address this, we introduce Meta Context Engineering (MCE), a bi-level framework that supersedes static CE heuristics by co-evolving CE skills and context artifacts. In MCE iterations, a meta-level agent refines engineering skills via agentic crossover, a deliberative search over the history of skills, their executions, and evaluations. A base-level agent executes these skills, learns from training rollouts, and optimizes context as flexible files and code. We evaluate MCE across five disparate domains under offline and online settings. MCE demonstrates consistent performance gains, achieving 5.6--53.8% relative improvement over state-of-the-art agentic CE methods (mean of 16.9%), while maintaining superior context adaptability, transferability, and efficiency in both context usage and training.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-29T11:22:02Z</published>
+    <arxiv:comment>46 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Haoran Ye</name>
+    </author>
+    <author>
+      <name>Xuning He</name>
+    </author>
+    <author>
+      <name>Vincent Arak</name>
+    </author>
+    <author>
+      <name>Haonan Dong</name>
+    </author>
+    <author>
+      <name>Guojie Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.04061v2</id>
+    <title>Enhancing business process execution with a context engine</title>
+    <updated>2025-09-18T20:05:49Z</updated>
+    <link href="https://arxiv.org/abs/2110.04061v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.04061v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Changes in workflow relevant data of business processes at run-time can hinder their completion or impact their profitability as they have been instantiated under different circumstances. The purpose of this paper is to propose a context engine to enhance a business process management (BPM) system's context-awareness. The generic architecture provides the flexibility to configure processes during initialization as well as to adapt running instances at decision gates or during execution due to significant context change. The paper discusses context-awareness as the conceptual background. The technological capabilities of business rules and complex event processing (CEP) are outlined in an architecture design. A reference process is proposed and discussed in an exemplary application. The results provide an improvement over the current situation of static variable instantiation of business processes with local information. The proposed architecture extends the well-known combination of business rules and BPM systems with a context engine based on CEP. The resulting architecture for a BPM system using a context engine is generic in nature and, hence, requires to be contextualized for situated implementations. Implementation success is dependent on the availability of context information and process compensation options. Practitioners receive advice on a reference architecture and technology choices for implementing systems, which can provide and monitor context information for business processes as well as intervene and adapt the execution. Currently, there is no multi-purpose non-proprietary context engine based on CEP or any other technology available for BPM, which facilitates the adaptation of processes at run-time due to changes in context variables. This paper will stimulate a debate between research and practice on suitable design and technology.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-08T12:09:34Z</published>
+    <arxiv:comment>This research and development project is funded by the German Federal Ministry of Education and Research (BMBF) within the framework concept "Innovations for Tomorrow's Production, Services, and Work" (Funding No. 02P17D160) and managed by the Project Management Agency Karlsruhe (PTKA). The author is responsible for the contents of this publication</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>Business Process Management Journal, 2019, Vol. 25 No. 6, pp. 1273-1290</arxiv:journal_ref>
+    <author>
+      <name>Christian Janiesch</name>
+    </author>
+    <author>
+      <name>Jörn Kuhlenkamp</name>
+    </author>
+    <arxiv:doi>10.1108/BPMJ-06-2017-0160</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1108/BPMJ-06-2017-0160" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.22431v6</id>
+    <title>Monadic Context Engineering</title>
+    <updated>2026-07-01T23:46:05Z</updated>
+    <link href="https://arxiv.org/abs/2512.22431v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.22431v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The proliferation of Large Language Models (LLMs) has catalyzed a shift towards autonomous agents capable of complex reasoning and tool use. However, current agent architectures are frequently constructed using imperative, ad hoc patterns. This results in brittle systems plagued by difficulties in state management, error handling, and concurrency. This paper introduces Monadic Context Engineering (MCE), a novel architectural paradigm leveraging the algebraic structures of Functors, Applicative Functors, and Monads to provide a formal foundation for agent design. MCE treats agent workflows as computational contexts where cross-cutting concerns, such as state propagation, short-circuiting error handling, and asynchronous execution, are managed intrinsically by the algebraic properties of the abstraction. We demonstrate how Monads enable robust sequential composition, how Applicatives provide a principled structure for parallel execution, and crucially, how Monad Transformers allow for the systematic composition of these capabilities. This layered approach enables developers to construct complex, resilient, and efficient AI agents from simple, independently verifiable components. We further extend this framework to describe Meta-Agents, which leverage MCE for generative orchestration, dynamically creating and managing sub-agent workflows through metaprogramming.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.FL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-27T01:52:06Z</published>
+    <arxiv:comment>We found some issues in the categorical foundations of this work, so we respectfully withdraw it</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yifan Zhang</name>
+    </author>
+    <author>
+      <name>Yang Yuan</name>
+    </author>
+    <author>
+      <name>Mengdi Wang</name>
+    </author>
+    <author>
+      <name>Andrew Chi-Chih Yao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.23336v2</id>
+    <title>DSBC : Data Science task Benchmarking with Context engineering</title>
+    <updated>2025-08-06T18:41:57Z</updated>
+    <link href="https://arxiv.org/abs/2507.23336v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.23336v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in large language models (LLMs) have significantly impacted data science workflows, giving rise to specialized data science agents designed to automate analytical tasks. Despite rapid adoption, systematic benchmarks evaluating the efficacy and limitations of these agents remain scarce. In this paper, we introduce a comprehensive benchmark specifically crafted to reflect real-world user interactions with data science agents by observing usage of our commercial applications. We evaluate three LLMs: Claude-4.0-Sonnet, Gemini-2.5-Flash, and OpenAI-o4-Mini across three approaches: zero-shot with context engineering, multi-step with context engineering, and with SmolAgent. Our benchmark assesses performance across a diverse set of eight data science task categories, additionally exploring the sensitivity of models to common prompting issues, such as data leakage and slightly ambiguous instructions. We further investigate the influence of temperature parameters on overall and task-specific outcomes for each model and approach. Our findings reveal distinct performance disparities among the evaluated models and methodologies, highlighting critical factors that affect practical deployment. The benchmark dataset and evaluation framework introduced herein aim to provide a foundation for future research of more robust and effective data science agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-31T08:32:37Z</published>
+    <arxiv:comment>32 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ram Mohan Rao Kadiyala</name>
+    </author>
+    <author>
+      <name>Siddhant Gupta</name>
+    </author>
+    <author>
+      <name>Jebish Purbey</name>
+    </author>
+    <author>
+      <name>Giulio Martini</name>
+    </author>
+    <author>
+      <name>Ali Shafique</name>
+    </author>
+    <author>
+      <name>Suman Debnath</name>
+    </author>
+    <author>
+      <name>Hamza Farooq</name>
+    </author>
+  </entry>
+</feed>

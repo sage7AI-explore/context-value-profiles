@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/T9OC6nF6e+C1jCYQ1T7/RAgvuMU</id>
+  <title>arXiv Query: search_query=all:Shapley AND (all:context OR all:prompt OR all:retrieval) AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:58:20Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:Shapley+AND+((all:context+OR+(all:prompt+OR+all:retrieval))+AND+all:LLM)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>44</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2312.15395v2</id>
+    <title>Prompt Valuation Based on Shapley Values</title>
+    <updated>2024-12-16T08:57:29Z</updated>
+    <link href="https://arxiv.org/abs/2312.15395v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.15395v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) excel on new tasks without additional training, simply by providing natural language prompts that demonstrate how the task should be performed. Prompt ensemble methods comprehensively harness the knowledge of LLMs while mitigating individual biases and errors and further enhancing performance. However, more prompts do not necessarily lead to better results, and not all prompts are beneficial. A small number of high-quality prompts often outperform many low-quality prompts. Currently, there is a lack of a suitable method for evaluating the impact of prompts on the results. In this paper, we utilize the Shapley value to fairly quantify the contributions of prompts, helping to identify beneficial or detrimental prompts, and potentially guiding prompt valuation in data markets. Through extensive experiments employing various ensemble methods and utility functions on diverse tasks, we validate the effectiveness of using the Shapley value method for prompts as it effectively distinguishes and quantifies the contributions of each prompt.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-24T03:37:11Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hanxi Liu</name>
+    </author>
+    <author>
+      <name>Xiaokai Mao</name>
+    </author>
+    <author>
+      <name>Haocheng Xia</name>
+    </author>
+    <author>
+      <name>Jian Lou</name>
+    </author>
+    <author>
+      <name>Jinfei Liu</name>
+    </author>
+    <author>
+      <name>Kui Ren</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.23842v5</id>
+    <title>Fair Document Valuation in LLM Summaries via Shapley Values</title>
+    <updated>2026-07-08T21:44:53Z</updated>
+    <link href="https://arxiv.org/abs/2505.23842v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.23842v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) increasingly power search engines and AI assistants that retrieve and summarize content from many sources. By serving answers directly, these systems obscure the original content creators' contributions, threatening the compensation that sustains a healthy content ecosystem. We frame this as a problem of fair document valuation and compensation, and propose a framework based on the Shapley value. Because exact Shapley computation is prohibitively expensive at scale, we develop Cluster Shapley, an approximation that groups semantically similar documents via LLM embeddings and computes Shapley values at the cluster level, with formal bounds on both the approximation error and the induced revenue-attribution error. On Amazon product review data, off-the-shelf approximations such as Monte Carlo sampling and Kernel SHAP perform suboptimally in LLM settings, whereas Cluster Shapley substantially improves the efficiency--accuracy frontier. Simple attribution heuristics (e.g., equal or relevance-based allocation), though computationally cheap, yield highly unfair outcomes. Our approach is agnostic to the exact LLM used, the summarization process used, and the evaluation procedure, which makes it broadly applicable to a variety of summarization settings.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-28T15:14:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zikun Ye</name>
+    </author>
+    <author>
+      <name>Hema Yoganarasimhan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.05261v2</id>
+    <title>TokenShapley: Token Level Context Attribution with Shapley Value</title>
+    <updated>2025-07-09T16:40:38Z</updated>
+    <link href="https://arxiv.org/abs/2507.05261v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.05261v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) demonstrate strong capabilities in in-context learning, but verifying the correctness of their generated responses remains a challenge. Prior work has explored attribution at the sentence level, but these methods fall short when users seek attribution for specific keywords within the response, such as numbers, years, or names. To address this limitation, we propose TokenShapley, a novel token-level attribution method that combines Shapley value-based data attribution with KNN-based retrieval techniques inspired by recent advances in KNN-augmented LLMs. By leveraging a precomputed datastore for contextual retrieval and computing Shapley values to quantify token importance, TokenShapley provides a fine-grained data attribution approach. Extensive evaluations on four benchmarks show that TokenShapley outperforms state-of-the-art baselines in token-level attribution, achieving an 11-23% improvement in accuracy.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-18T23:17:29Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yingtai Xiao</name>
+    </author>
+    <author>
+      <name>Yuqing Zhu</name>
+    </author>
+    <author>
+      <name>Sirat Samyoun</name>
+    </author>
+    <author>
+      <name>Wanrong Zhang</name>
+    </author>
+    <author>
+      <name>Jiachen T. Wang</name>
+    </author>
+    <author>
+      <name>Jian Du</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.09151v1</id>
+    <title>Interpretable Probability Estimation with LLMs via Shapley Reconstruction</title>
+    <updated>2026-01-14T04:45:36Z</updated>
+    <link href="https://arxiv.org/abs/2601.09151v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.09151v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) demonstrate potential to estimate the probability of uncertain events, by leveraging their extensive knowledge and reasoning capabilities. This ability can be applied to support intelligent decision-making across diverse fields, such as financial forecasting and preventive healthcare. However, directly prompting LLMs for probability estimation faces significant challenges: their outputs are often noisy, and the underlying predicting process is opaque. In this paper, we propose PRISM: Probability Reconstruction via Shapley Measures, a framework that brings transparency and precision to LLM-based probability estimation. PRISM decomposes an LLM's prediction by quantifying the marginal contribution of each input factor using Shapley values. These factor-level contributions are then aggregated to reconstruct a calibrated final estimate. In our experiments, we demonstrate PRISM improves predictive accuracy over direct prompting and other baselines, across multiple domains including finance, healthcare, and agriculture. Beyond performance, PRISM provides a transparent prediction pipeline: our case studies visualize how individual factors shape the final estimate, helping build trust in LLM-based decision support systems.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-14T04:45:36Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yang Nan</name>
+    </author>
+    <author>
+      <name>Qihao Wen</name>
+    </author>
+    <author>
+      <name>Jiahao Wang</name>
+    </author>
+    <author>
+      <name>Pengfei He</name>
+    </author>
+    <author>
+      <name>Ravi Tandon</name>
+    </author>
+    <author>
+      <name>Yong Ge</name>
+    </author>
+    <author>
+      <name>Han Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04202v3</id>
+    <title>TracLLM: A Generic Framework for Attributing Long Context LLMs</title>
+    <updated>2025-06-26T16:09:36Z</updated>
+    <link href="https://arxiv.org/abs/2506.04202v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.04202v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long context large language models (LLMs) are deployed in many real-world applications such as RAG, agent, and broad LLM-integrated applications. Given an instruction and a long context (e.g., documents, PDF files, webpages), a long context LLM can generate an output grounded in the provided context, aiming to provide more accurate, up-to-date, and verifiable outputs while reducing hallucinations and unsupported claims. This raises a research question: how to pinpoint the texts (e.g., sentences, passages, or paragraphs) in the context that contribute most to or are responsible for the generated output by an LLM? This process, which we call context traceback, has various real-world applications, such as 1) debugging LLM-based systems, 2) conducting post-attack forensic analysis for attacks (e.g., prompt injection attack, knowledge corruption attacks) to an LLM, and 3) highlighting knowledge sources to enhance the trust of users towards outputs generated by LLMs. When applied to context traceback for long context LLMs, existing feature attribution methods such as Shapley have sub-optimal performance and/or incur a large computational cost. In this work, we develop TracLLM, the first generic context traceback framework tailored to long context LLMs. Our framework can improve the effectiveness and efficiency of existing feature attribution methods. To improve the efficiency, we develop an informed search based algorithm in TracLLM. We also develop contribution score ensemble/denoising techniques to improve the accuracy of TracLLM. Our evaluation results show TracLLM can effectively identify texts in a long context that lead to the output of an LLM. Our code and data are at: https://github.com/Wang-Yanting/TracLLM.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-04T17:48:16Z</published>
+    <arxiv:comment>To appear in USENIX Security Symposium 2025. The code and data are at: https://github.com/Wang-Yanting/TracLLM</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yanting Wang</name>
+    </author>
+    <author>
+      <name>Wei Zou</name>
+    </author>
+    <author>
+      <name>Runpeng Geng</name>
+    </author>
+    <author>
+      <name>Jinyuan Jia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.06432v1</id>
+    <title>HiveMind: Contribution-Guided Online Prompt Optimization of LLM Multi-Agent Systems</title>
+    <updated>2025-12-06T13:41:16Z</updated>
+    <link href="https://arxiv.org/abs/2512.06432v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.06432v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in LLM-based multi-agent systems have demonstrated remarkable capabilities in complex decision-making scenarios such as financial trading and software engineering. However, evaluating each individual agent's effectiveness and online optimization of underperforming agents remain open challenges. To address these issues, we present HiveMind, a self-adaptive framework designed to optimize LLM multi-agent collaboration through contribution analysis. At its core, HiveMind introduces Contribution-Guided Online Prompt Optimization (CG-OPO), which autonomously refines agent prompts based on their quantified contributions. We first propose the Shapley value as a grounded metric to quantify each agent's contribution, thereby identifying underperforming agents in a principled manner for automated prompt refinement. To overcome the computational complexity of the classical Shapley value, we present DAG-Shapley, a novel and efficient attribution algorithm that leverages the inherent Directed Acyclic Graph structure of the agent workflow to axiomatically prune non-viable coalitions. By hierarchically reusing intermediate outputs of agents in the DAG, our method further reduces redundant computations, and achieving substantial cost savings without compromising the theoretical guarantees of Shapley values. Evaluated in a multi-agent stock-trading scenario, HiveMind achieves superior performance compared to static baselines. Notably, DAG-Shapley reduces LLM calls by over 80\% while maintaining attribution accuracy comparable to full Shapley values, establishing a new standard for efficient credit assignment and enabling scalable, real-world optimization of multi-agent collaboration.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-06T13:41:16Z</published>
+    <arxiv:comment>This paper was accepted to AAAI2026</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Yihan Xia</name>
+    </author>
+    <author>
+      <name>Taotao Wang</name>
+    </author>
+    <author>
+      <name>Shengli Zhang</name>
+    </author>
+    <author>
+      <name>Zhangyuhua Weng</name>
+    </author>
+    <author>
+      <name>Bin Cao</name>
+    </author>
+    <author>
+      <name>Soung Chang Liew</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.15765v4</id>
+    <title>Shapley-based Data Valuation for LLM Alignment via Sequential Preference Optimization</title>
+    <updated>2026-09-26T09:33:52Z</updated>
+    <link href="https://arxiv.org/abs/2512.15765v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.15765v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Data valuation is a natural framework for understanding which data sources matter most when aligning a Large Language Model (LLM) from multiple sources. The standard game-theoretic approach treats each source, or equivalently each preference dataset, as a player in a cooperative game and assigns it a contribution score through the Shapley value. In practice, however, Shapley-based valuation is computationally prohibitive because it requires aligning a separate model for every possible coalition of sources, i.e., an exponential number of alignments. We address this challenge for Direct Alignment Algorithms (DAAs), including IPO, which learn through log-policy ratios with respect to a reference policy. We show that, when a model is aligned sequentially source by source, exact optimization makes each stage contribute additively to the log-probability of a full response, up to a prompt-dependent normalization constant. This allows the log-probability assigned by any coalition to a fixed response to be reconstructed from the base policy and the policies trained on each source individually. This reduces the alignment cost of Shapley-based valuation from exponential to linear, since only one model per source needs to be trained to evaluate coalition scores. We test whether this theoretical property remains approximately valid under finite training across several base models and real-world data sources. We finally compute the Shapley values of these sources under multiple reward models, showing how their estimated contributions vary across evaluation criteria.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-12T10:13:54Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mélissa Tamine</name>
+    </author>
+    <author>
+      <name>Otmane Sakhi</name>
+    </author>
+    <author>
+      <name>Benjamin Heymann</name>
+    </author>
+    <author>
+      <name>Maxime Vono</name>
+    </author>
+    <author>
+      <name>Patrick Loiseau</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.24933v2</id>
+    <title>ADOPT: Adaptive Dependency-Guided Joint Prompt Optimization for Multi-Step LLM Pipelines</title>
+    <updated>2026-04-08T11:50:13Z</updated>
+    <link href="https://arxiv.org/abs/2512.24933v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.24933v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-step LLM pipelines can solve complex tasks, but jointly optimizing prompts across steps remains challenging due to missing step-level supervision and inter-step dependency. We propose ADOPT, an adaptive dependency-guided joint prompt optimization framework for multi-step LLM pipelines. ADOPT analyzes the dependency between each LLM step and the final output, constructs a global textual gradient from final-task errors, and decomposes it into step-level local textual gradients, providing more precise optimization signals for local prompt updates. It further decouples signal estimation from prompt updating, enabling flexible integration of single-prompt optimizers, and uses a Shapley-based strategy to adaptively allocate optimization resources to high-impact steps. Experiments on real-world datasets and structurally diverse pipelines demonstrate that ADOPT is effective and robust, consistently outperforming strong prompt optimization baselines.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-31T15:46:37Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Minjun Zhao</name>
+    </author>
+    <author>
+      <name>Xinyu Zhang</name>
+    </author>
+    <author>
+      <name>Shuai Zhang</name>
+    </author>
+    <author>
+      <name>Deyang Li</name>
+    </author>
+    <author>
+      <name>Ruifeng Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.01332v3</id>
+    <title>Explaining Large Language Models Decisions Using Shapley Values</title>
+    <updated>2024-11-12T01:06:22Z</updated>
+    <link href="https://arxiv.org/abs/2404.01332v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.01332v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The emergence of large language models (LLMs) has opened up exciting possibilities for simulating human behavior and cognitive processes, with potential applications in various domains, including marketing research and consumer behavior analysis. However, the validity of utilizing LLMs as stand-ins for human subjects remains uncertain due to glaring divergences that suggest fundamentally different underlying processes at play and the sensitivity of LLM responses to prompt variations. This paper presents a novel approach based on Shapley values from cooperative game theory to interpret LLM behavior and quantify the relative contribution of each prompt component to the model's output. Through two applications - a discrete choice experiment and an investigation of cognitive biases - we demonstrate how the Shapley value method can uncover what we term "token noise" effects, a phenomenon where LLM decisions are disproportionately influenced by tokens providing minimal informative content. This phenomenon raises concerns about the robustness and generalizability of insights obtained from LLMs in the context of human behavior simulation. Our model-agnostic approach extends its utility to proprietary LLMs, providing a valuable tool for practitioners and researchers to strategically optimize prompts and mitigate apparent cognitive biases. Our findings underscore the need for a more nuanced understanding of the factors driving LLM responses before relying on them as substitutes for human subjects in survey settings. We emphasize the importance of researchers reporting results conditioned on specific prompt templates and exercising caution when drawing parallels between human behavior and LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-29T22:49:43Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Behnam Mohammadi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.10114v2</id>
+    <title>TokenSHAP: Interpreting Large Language Models with Monte Carlo Shapley Value Estimation</title>
+    <updated>2024-07-22T08:59:07Z</updated>
+    <link href="https://arxiv.org/abs/2407.10114v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.10114v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As large language models (LLMs) become increasingly prevalent in critical applications, the need for interpretable AI has grown. We introduce TokenSHAP, a novel method for interpreting LLMs by attributing importance to individual tokens or substrings within input prompts. This approach adapts Shapley values from cooperative game theory to natural language processing, offering a rigorous framework for understanding how different parts of an input contribute to a model's response. TokenSHAP leverages Monte Carlo sampling for computational efficiency, providing interpretable, quantitative measures of token importance. We demonstrate its efficacy across diverse prompts and LLM architectures, showing consistent improvements over existing baselines in alignment with human judgments, faithfulness to model behavior, and consistency.
+  Our method's ability to capture nuanced interactions between tokens provides valuable insights into LLM behavior, enhancing model transparency, improving prompt engineering, and aiding in the development of more reliable AI systems. TokenSHAP represents a significant step towards the necessary interpretability for responsible AI deployment, contributing to the broader goal of creating more transparent, accountable, and trustworthy AI systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-14T08:07:50Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Roni Goldshmidt</name>
+    </author>
+    <author>
+      <name>Miriam Horovicz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.11013v2</id>
+    <title>PIAST: Rapid Prompting with In-context Augmentation for Scarce Training data</title>
+    <updated>2026-04-07T17:30:34Z</updated>
+    <link href="https://arxiv.org/abs/2512.11013v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.11013v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLMs are highly sensitive to prompt design, but handcrafting effective prompts is difficult and often requires intricate crafting of few-shot examples. We propose a fast automatic prompt construction algorithm that augments human instructions by generating a small set of few shot examples. Our method iteratively replaces/drops/keeps few-shot examples using Monte Carlo Shapley estimation of example utility. For faster execution, we use aggressive subsampling and a replay buffer for faster evaluations. Our method can be run using different compute time budgets. On a limited budget, we outperform existing automatic prompting methods on text simplification and GSM8K and obtain second best results on classification and summarization. With an extended, but still modest compute budget we set a new state of the art among automatic prompting methods on classification, simplification and GSM8K. Our results show that carefully constructed examples, rather than exhaustive instruction search, are the dominant lever for fast and data efficient prompt engineering. Our code is available at https://github.com/Batorskq/PIAST.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-11T16:55:30Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Pawel Batorski</name>
+    </author>
+    <author>
+      <name>Paul Swoboda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.04480v1</id>
+    <title>Source Attribution in Retrieval-Augmented Generation</title>
+    <updated>2025-07-06T17:36:45Z</updated>
+    <link href="https://arxiv.org/abs/2507.04480v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.04480v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While attribution methods, such as Shapley values, are widely used to explain the importance of features or training data in traditional machine learning, their application to Large Language Models (LLMs), particularly within Retrieval-Augmented Generation (RAG) systems, is nascent and challenging. The primary obstacle is the substantial computational cost, where each utility function evaluation involves an expensive LLM call, resulting in direct monetary and time expenses. This paper investigates the feasibility and effectiveness of adapting Shapley-based attribution to identify influential retrieved documents in RAG. We compare Shapley with more computationally tractable approximations and some existing attribution methods for LLM. Our work aims to: (1) systematically apply established attribution principles to the RAG document-level setting; (2) quantify how well SHAP approximations can mirror exact attributions while minimizing costly LLM interactions; and (3) evaluate their practical explainability in identifying critical documents, especially under complex inter-document relationships such as redundancy, complementarity, and synergy. This study seeks to bridge the gap between powerful attribution techniques and the practical constraints of LLM-based RAG systems, offering insights into achieving reliable and affordable RAG explainability.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-06T17:36:45Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ikhtiyor Nematov</name>
+    </author>
+    <author>
+      <name>Tarik Kalai</name>
+    </author>
+    <author>
+      <name>Elizaveta Kuzmenko</name>
+    </author>
+    <author>
+      <name>Gabriele Fugagnoli</name>
+    </author>
+    <author>
+      <name>Dimitris Sacharidis</name>
+    </author>
+    <author>
+      <name>Katja Hose</name>
+    </author>
+    <author>
+      <name>Tomer Sagi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.16561v1</id>
+    <title>SalaMAnder: Shapley-based Mathematical Expression Attribution and Metric for Chain-of-Thought Reasoning</title>
+    <updated>2025-09-20T07:38:58Z</updated>
+    <link href="https://arxiv.org/abs/2509.16561v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.16561v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chain-of-Thought (CoT) prompting enhances the math reasoning capability of large language models (LLMs) to a large margin. However, the mechanism underlying such improvements remains unexplored. In this paper, we present \textbf{SalaMAnder} (\textbf{S}h\textbf{a}p\textbf{l}ey-b\textbf{a}sed \textbf{M}athematical Expression \textbf{A}ttribution a\textbf{nd} M\textbf{e}t\textbf{r}ic), a theoretically grounded methodology as well as a mathematically rigorous evaluation metric for quantifying component-level contributions in few-shot CoT reasoning. Concretely, we leverage the Shapley value for mathematical expression attribution and develop an efficient stratified sampling algorithm that significantly reduces the computational complexity. Besides, we develop the \textbf{CoSP} (\textbf{C}ardinality \textbf{o}f \textbf{S}hapley \textbf{P}ositives) metric through covariance analysis. Comprehensive validation across popular LLM models and diverse mathematical benchmarks demonstrates that the CoSP metric within our SalaMAnder framework exhibits a robust monotonic correlation with model performance, not only providing theoretical explanations for the empirical success of existing few-shot CoT but also establishing mathematically rigorous principles for prompt construction optimization. Furthermore, we verify the reliability of the explanation, based on which we unify the insights of previous work.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-20T07:38:58Z</published>
+    <arxiv:comment>accpeted by EMNLP 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yue Xin</name>
+    </author>
+    <author>
+      <name>Chen Shen</name>
+    </author>
+    <author>
+      <name>Shaotian Yan</name>
+    </author>
+    <author>
+      <name>Xiaosong Yuan</name>
+    </author>
+    <author>
+      <name>Yaoming Wang</name>
+    </author>
+    <author>
+      <name>Xiaofeng Zhang</name>
+    </author>
+    <author>
+      <name>Chenxi Huang</name>
+    </author>
+    <author>
+      <name>Jieping Ye</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.07523v3</id>
+    <title>DemoShapley: Valuation of Demonstrations for In-Context Learning</title>
+    <updated>2025-11-21T21:39:00Z</updated>
+    <link href="https://arxiv.org/abs/2410.07523v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.07523v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) using in-context learning (ICL) excel in many tasks without task-specific fine-tuning. However, demonstration selection and ordering greatly impact ICL effectiveness. Focus on this issue, we propose DemoShapley, a Shapley-value based method that evaluates each demonstration's contribution by measuring its marginal effect across different prompt permutations. To further account for ICL's limited context windows and frequent low-shot settings, we introduce Beta-DemoShapley, a weighted extension that emphasizes the influence of smaller prompt sizes. Experiments on multiple benchmarks show that DemoShapley consistently outperforms existing influence-based selection strategies, while Beta-DemoShapley further improves performance in low-shot scenarios. Both methods also detect mislabeled data, enhance generalization to out-of-distribution tasks, and reduce demographic bias. Together, they provide a unified and robust framework for demonstration valuation in ICL.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-10T01:35:03Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shan Xie</name>
+    </author>
+    <author>
+      <name>Man Luo</name>
+    </author>
+    <author>
+      <name>Chadly Daniel Stern</name>
+    </author>
+    <author>
+      <name>Mengnan Du</name>
+    </author>
+    <author>
+      <name>Lu Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.17234v2</id>
+    <title>All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection and Mitigation in LLM Backtesting</title>
+    <updated>2026-05-25T04:53:29Z</updated>
+    <link href="https://arxiv.org/abs/2602.17234v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.17234v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Backtesting LLMs on resolved events assumes models reason only from pre-cutoff knowledge, yet pretrained models inevitably leak post-cutoff knowledge. We introduce a claim-level evaluation framework that decomposes prediction rationales into atomic claims and applies Shapley values to quantify each claim's decision impact, yielding \textbf{Shapley-DCLR} (\textbf{Shapley}-weighted \textbf{D}ecision-\textbf{C}ritical \textbf{L}eakage \textbf{R}ate) -- an interpretable metric measuring what fraction of decision-driving reasoning is contaminated. We further propose \textbf{TimeSPEC} (\textbf{Time}-\textbf{S}upervised \textbf{P}rediction with \textbf{E}xtracted \textbf{C}laims), an inference-time architecture that interleaves temporally-filtered retrieval with claim-level supervision, producing predictions grounded entirely in pre-cutoff evidence. Across three LLMs, the ablation experiments confirm retrieval and supervision are jointly necessary; and a three-task probe further illstrates that the performance cost of temporal enforcement scales with each task's reliance on post-cutoff information.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-19T10:28:00Z</published>
+    <arxiv:comment>8 pages plus appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zeyu Zhang</name>
+    </author>
+    <author>
+      <name>Ryan Chen</name>
+    </author>
+    <author>
+      <name>Bradly C. Stadie</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/WRie39PwUwtic5X5/fndE3C0miE</id>
+  <title>arXiv Query: search_query=all:context AND all:selection AND all:budget AND (all:LLM OR all:agent)&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:36Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:context+AND+(all:selection+AND+(all:budget+AND+(all:LLM+OR+all:agent)))&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>259</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.25992v2</id>
+    <title>ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs</title>
+    <updated>2026-08-30T20:09:33Z</updated>
+    <link href="https://arxiv.org/abs/2608.25992v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.25992v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRouter, an online progress-guided routing framework that adaptively selects LLM agents across workflow steps to preserve task-solving quality while adhering to time and cost budgets. ProgRouter introduces a multi-view task progress scorer that combines coarse workflow outcome regimes with fine-grained signals on subtask completion, progress trends, and workflow state quality. Then, a dual-path task progress predictor and an adaptive meta-gating mechanism estimate the progress gain for each candidate routed LLM. ProgRouter makes online step-wise routing decisions that balance progress gain, task time budgets, and long-term operating cost efficiency. Experiments on HumanEval Plus, MBPP, MATH-500, and ASQA, spanning agentic code generation, mathematical reasoning, and retrieval-augmented long-form question answering, demonstrate that ProgRouter reduces the operating cost relative to key baselines while maintaining strong task-solving performance.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-26T16:42:02Z</published>
+    <arxiv:comment>Accepted in Findings of the Association for Computational Linguistics: EMNLP 2026. Index Terms: Collaborative agentic workflows, LLM agent orchestration, Quality-cost trade-off, Task progress prediction, Online decision-making</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Songyuan Li</name>
+    </author>
+    <author>
+      <name>Ahmed M. Abdelmoniem</name>
+    </author>
+    <author>
+      <name>Shiqiang Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20047v2</id>
+    <title>PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents</title>
+    <updated>2026-09-03T08:04:27Z</updated>
+    <link href="https://arxiv.org/abs/2606.20047v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20047v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conversational and tool-using LLM agents operate over a context window that fills from several directions simultaneously. As a session proceeds, the agent accumulates user and assistant turns, entries drawn from a persistent memory store, and often largest of all, the verbatim outputs of tool calls such as file reads, search results, and API responses. Once the cumulative context exceeds the model's token budget, the framework must decide what to keep.
+  The prevailing mechanism is recency truncation, sometimes paired with periodic summarization. This is topic-blind: a fact established early in a session is discarded simply because it is old, even when the current user query is about exactly that fact; conversely, verbose but irrelevant recent material is retained. Agents that must recall information across many turns, the defining case for memory, are precisely where recency truncation fails.
+  Existing alternatives sit outside the agent's assembly step. Retrieval augmented generation fetches external documents into the prompt but does not arbitrate the agent's \emph{already-present} pooled context. Context-compression methods reduce token count by rewriting or pruning text, but operate query-blind and lossily. Neither treats memory entries, conversation turns, and tool outputs as a single candidate pool to be selected from by relevance at the moment the prompt is assembled.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T10:22:57Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Manu Ghulyani</name>
+    </author>
+    <author>
+      <name>Arunabh Singh</name>
+    </author>
+    <author>
+      <name>Karan Bharadwaj</name>
+    </author>
+    <author>
+      <name>Ankit Nath</name>
+    </author>
+    <author>
+      <name>Suranjan Goswami</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.05232v1</id>
+    <title>Substrate-Aware AI Agents: Execution Context as a First-Class Input</title>
+    <updated>2026-09-04T14:57:17Z</updated>
+    <link href="https://arxiv.org/abs/2609.05232v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.05232v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous AI agents increasingly select actions in environments whose memory, execution-time, runtime, compute, and operational constraints determine what counts as a suitable plan. We call the absence of this execution context from an agent's planning state substrate blindness. We test this general proposition through numerical code generation, where selected implementation choices and operational consequences are directly observable. Three frontier model configurations--Anthropic Claude Opus 5, OpenAI GPT-5.6-Sol, and Google Gemini 3.7 Flash--generate code for a high-dimensional pairwise Euclidean-distance task either from the task alone or with a 128 MB RAM and 10.0 s wall-time contract. Contract disclosure reduced measured peak process memory in 13 of 14 executable index-aligned task-only versus contract-disclosed comparisons and reduced mean wall time in all three cohorts, making execution up to 3.1x faster. Across the audited corpus, disclosure produced structural code changes including bounded blocking, float32 retention, upper-triangle traversal, and in-place or memory-mapped buffers. At a tighter 96 MB contract, independently sampled contract-disclosed cohorts achieved correct-and-within-budget outcomes of 4/5 for Claude Opus 5, 5/5 for GPT-5.6-Sol, and 3/5 for Gemini 3.7 Flash, compared with task-only outcomes of 0/5, 1/5, and 0/5; cohort mean MaxRSS and wall time were 49-74% and 35-64% lower than their task-only references. These results establish a controlled proof of concept for substrate-aware agent planning: a minimal execution contract induces proactive structural adaptation in generated programs, shifting computation away from unconstrained allocations and substantially improving observed resource-time profiles before execution.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T14:57:17Z</published>
+    <arxiv:comment>8 pages, 3 figures. Reproducibility artifacts and source-linked evaluation code: https://github.com/manu2/Context-Aware-Agent-Experiment</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Manu Agrawal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00011v2</id>
+    <title>SkillSelect-Serve: QoS-Aware Budgeted Skill Service Recommendation for LLM Agents</title>
+    <updated>2026-07-14T05:16:20Z</updated>
+    <link href="https://arxiv.org/abs/2607.00011v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.00011v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reusable agent skills are emerging as a service-oriented capability layer for Large Language Model (LLM) agents. Unlike plain retrieval items, a skill exposes functional capabilities, input-output assumptions, tool dependencies, context cost, and risk metadata. Selecting skills is particularly challenging for small LLM agents, which can load only a few capability units under restricted context, tool availability, and risk tolerance. Existing fixed Top-k methods rank skills by textual relevance and overlook requirement satisfaction, deliverability, and operational constraints. We present SkillSelect-Serve, a QoS-aware, budget-constrained Skill Service recommendation framework. Raw skills are profiled as structured Skill Services, the task is converted into a structured requirement object, and candidates discovered from a large-scale registry are ranked by a calibrated task-conditioned suitability estimator and packed by a constrained projection enforcing token-budget, aggregated-risk, and tool-availability constraints, using only deployment-observable features. On a registry of 35,353 skills with pooled multi-positive relevance judgments verified by two independent assessors, the unconstrained top-5 recommendation fits a realistic 4,000-token context for only 9.1% of tasks; the constrained projection restores 100% deliverability at a cost of only 1.14 points of hit rate, outperforming retrieve-and-rerank, budget truncation, and diversity-based selection under identical budgets. The same mechanism halves delivered risk exposure and eliminates the 44-81% tool-violation rates of tool-agnostic recommendation. At an identical three-service budget, hit rate improves from 0.8864 to 0.9091 over fixed Top-3 retrieval. The results support managing reusable agent skills as discoverable, comparable, and constraint-aware service units instead of plain retrievable documents.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T09:36:14Z</published>
+    <arxiv:comment>18 pages (14-page main text + appendices), 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Jingyuan Zheng</name>
+    </author>
+    <author>
+      <name>Dongjing Wang</name>
+    </author>
+    <author>
+      <name>Xin Zhang</name>
+    </author>
+    <author>
+      <name>Hao Chen</name>
+    </author>
+    <author>
+      <name>Youhuizi Li</name>
+    </author>
+    <author>
+      <name>Xudong Shen</name>
+    </author>
+    <author>
+      <name>Haiping Zhang</name>
+    </author>
+    <author>
+      <name>Butian Huang</name>
+    </author>
+    <author>
+      <name>Dongjin Yu</name>
+    </author>
+    <author>
+      <name>Guandong Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.29794v1</id>
+    <title>SkillsInjector: Dynamic Skill Context Construction for LLM Agents</title>
+    <updated>2026-05-28T11:44:32Z</updated>
+    <link href="https://arxiv.org/abs/2605.29794v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.29794v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents now draw on growing skill libraries to handle complex tasks. However, injecting more skills does not always improve task completion and can even degrade it. Existing methods still treat skill injection as a static step, selecting skills with fixed criteria, fixing the budget in advance, and leaving descriptions unchanged. We argue that this static treatment can undermine the utility of skills, because which skills are exposed, how many are included, and how they are presented all affect downstream performance. We propose SkillsInjector, a two-stage adaptive method that jointly addresses these decisions. First, a context planner learns execution-grounded skill preferences and admits an adaptive number of skills for each task. A set-aware renderer then tailors how selected descriptions are presented relative to their co-injected neighbors. Across tau2-bench, SkillsBench, and ALFWorld, SkillsInjector achieves the highest score, improving over the strongest baseline by 3.9, 6.1, and 7.3 percentage points, respectively. Ablation studies show that skill selection, adaptive budgeting, and set-aware rendering each contribute to the gain. These results show that skill-augmented agents benefit from optimizing the injected context itself. Code will be released upon publication</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T11:44:32Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yanchao Li</name>
+    </author>
+    <author>
+      <name>Wanhao Liu</name>
+    </author>
+    <author>
+      <name>Ben Gao</name>
+    </author>
+    <author>
+      <name>Jiaqing Xie</name>
+    </author>
+    <author>
+      <name>Zhehong Ai</name>
+    </author>
+    <author>
+      <name>Na Zou</name>
+    </author>
+    <author>
+      <name>Yuqiang Li</name>
+    </author>
+    <author>
+      <name>Tianfan Fu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.17545v2</id>
+    <title>Retain or Consolidate? Budget-Dependent Operator Selection for Language Agent Memory</title>
+    <updated>2026-07-21T02:05:36Z</updated>
+    <link href="https://arxiv.org/abs/2607.17545v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.17545v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language agents depend on memory across interactions. However, the limited context windows of large language models (LLMs) and their inference costs constrain how much memory can be used at once. Existing systems mainly follow two strategies: memory retention and memory consolidation. Retention keeps raw records and preserves exact details, but relevant evidence may not fit under a tight budget; consolidation compresses and combines records, improving coverage per token but risking the loss of query-critical details. Neither strategy is universally preferable. This raises two central questions: when should consolidation replace retention, and which operator -- Merge, Abstract, or Rewrite -- should be selected? We formalize this decision by decomposing each operator's utility into a coverage effect on evidence omitted by retention and a signed replacement effect on raw evidence that already fits. Their balance explains why the preferred action changes with relative budget pressure. We implement this mechanism with Offline Abstraction-Safety (OAS), a lightweight learner that estimates action utilities from pre-generation features with held-out harm calibration. The public LongMemEval and LoCoMo benchmarks show the same budget-dependent pattern. On LongMemEval, consolidation improves absolute accuracy by up to 48% under tight budgets, whereas retention is preferable under loose budgets; LoCoMo replicates this crossover at a smaller budget, consistent with its shorter evidence. On both datasets, cross-note abstraction and merging generally outperform local rewriting when compression is necessary.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-20T04:43:47Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Qingcan Kang</name>
+    </author>
+    <author>
+      <name>Mingyang Liu</name>
+    </author>
+    <author>
+      <name>Shixiong Kai</name>
+    </author>
+    <author>
+      <name>Kaichao Liang</name>
+    </author>
+    <author>
+      <name>Zhentao Tang</name>
+    </author>
+    <author>
+      <name>Yuqi Cui</name>
+    </author>
+    <author>
+      <name>Tao Zhong</name>
+    </author>
+    <author>
+      <name>Mingxuan Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.04903v3</id>
+    <title>RCR-Router: Efficient Role-Aware Context Routing for Multi-Agent LLM Systems with Structured Memory</title>
+    <updated>2025-08-12T16:29:05Z</updated>
+    <link href="https://arxiv.org/abs/2508.04903v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.04903v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multi-agent large language model (LLM) systems have shown strong potential in complex reasoning and collaborative decision-making tasks. However, most existing coordination schemes rely on static or full-context routing strategies, which lead to excessive token consumption, redundant memory exposure, and limited adaptability across interaction rounds. We introduce RCR-Router, a modular and role-aware context routing framework designed to enable efficient, adaptive collaboration in multi-agent LLMs. To our knowledge, this is the first routing approach that dynamically selects semantically relevant memory subsets for each agent based on its role and task stage, while adhering to a strict token budget. A lightweight scoring policy guides memory selection, and agent outputs are iteratively integrated into a shared memory store to facilitate progressive context refinement. To better evaluate model behavior, we further propose an Answer Quality Score metric that captures LLM-generated explanations beyond standard QA accuracy. Experiments on three multi-hop QA benchmarks -- HotPotQA, MuSiQue, and 2WikiMultihop -- demonstrate that RCR-Router reduces token usage (up to 30%) while improving or maintaining answer quality. These results highlight the importance of structured memory routing and output-aware evaluation in advancing scalable multi-agent LLM systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-06T21:59:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jun Liu</name>
+    </author>
+    <author>
+      <name>Zhenglun Kong</name>
+    </author>
+    <author>
+      <name>Changdi Yang</name>
+    </author>
+    <author>
+      <name>Fan Yang</name>
+    </author>
+    <author>
+      <name>Tianqi Li</name>
+    </author>
+    <author>
+      <name>Peiyan Dong</name>
+    </author>
+    <author>
+      <name>Joannah Nanjekye</name>
+    </author>
+    <author>
+      <name>Hao Tang</name>
+    </author>
+    <author>
+      <name>Geng Yuan</name>
+    </author>
+    <author>
+      <name>Wei Niu</name>
+    </author>
+    <author>
+      <name>Wenbin Zhang</name>
+    </author>
+    <author>
+      <name>Pu Zhao</name>
+    </author>
+    <author>
+      <name>Xue Lin</name>
+    </author>
+    <author>
+      <name>Dong Huang</name>
+    </author>
+    <author>
+      <name>Yanzhi Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.19993v2</id>
+    <title>Optimal Skill Selection for LLM Agents with Provable Bicriteria Guarantees</title>
+    <updated>2026-09-28T14:13:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.19993v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.19993v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Loading reusable skill documents into a bounded context window has become a primary way large language model (LLM) agents acquire task-specific capabilities, which makes skill selection a first-order determinant of task performance and token cost. Yet current agents score skills independently by semantic relevance and assemble the set by top-$k$ or greedy packing, with no quality guarantee or cost awareness on the selected set. Redundant or poorly chosen skills then waste scarce context tokens and can even degrade performance. In this paper, we present a theory-grounded and practical framework for budgeted skill selection. We give the first model of how skill sets shape execution outcomes, capturing complementary capability coverage and diminishing returns from redundancy through a monotone submodular benefit, while accounting for context degradation with a linear token penalty under a hard budget. Based on this model, we develop Best Prefix Selection (BPS), a polynomial-time algorithm, and prove, to our knowledge, the first performance guarantee for skill selection: a bicriteria $(1-1/e,1)$ approximation whose benefit coefficient is optimal in polynomial time. We construct a controlled testbed based on BigCodeBench to isolate the effect of skill selection on execution success. On it, BPS with a learned capability encoder reaches a success rate of 0.65, and the strongest baselines need at least 28% more tokens to reach 0.60.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-20T13:08:17Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yu Chen</name>
+    </author>
+    <author>
+      <name>Ruishuo Chen</name>
+    </author>
+    <author>
+      <name>Xun Wang</name>
+    </author>
+    <author>
+      <name>Zhuoran Li</name>
+    </author>
+    <author>
+      <name>Longbo Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.17670v1</id>
+    <title>Online Multi-LLM Selection via Contextual Bandits under Unstructured Context Evolution</title>
+    <updated>2025-06-21T10:01:46Z</updated>
+    <link href="https://arxiv.org/abs/2506.17670v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.17670v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) exhibit diverse response behaviors, costs, and strengths, making it challenging to select the most suitable LLM for a given user query. We study the problem of adaptive multi-LLM selection in an online setting, where the learner interacts with users through multi-step query refinement and must choose LLMs sequentially without access to offline datasets or model internals. A key challenge arises from unstructured context evolution: the prompt dynamically changes in response to previous model outputs via a black-box process, which cannot be simulated, modeled, or learned. To address this, we propose the first contextual bandit framework for sequential LLM selection under unstructured prompt dynamics. We formalize a notion of myopic regret and develop a LinUCB-based algorithm that provably achieves sublinear regret without relying on future context prediction. We further introduce budget-aware and positionally-aware (favoring early-stage satisfaction) extensions to accommodate variable query costs and user preferences for early high-quality responses. Our algorithms are theoretically grounded and require no offline fine-tuning or dataset-specific training. Experiments on diverse benchmarks demonstrate that our methods outperform existing LLM routing strategies in both accuracy and cost-efficiency, validating the power of contextual bandits for real-time, adaptive LLM selection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-21T10:01:46Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Manhin Poon</name>
+    </author>
+    <author>
+      <name>XiangXiang Dai</name>
+    </author>
+    <author>
+      <name>Xutong Liu</name>
+    </author>
+    <author>
+      <name>Fang Kong</name>
+    </author>
+    <author>
+      <name>John C. S. Lui</name>
+    </author>
+    <author>
+      <name>Jinhang Zuo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26130v1</id>
+    <title>Agents Don't Paginate: First-Chunk Selection for LLM Tool Responses</title>
+    <updated>2026-06-23T19:10:22Z</updated>
+    <link href="https://arxiv.org/abs/2608.26130v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26130v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Coding agents built on large language models (LLMs), such as Claude Code, Cursor, OpenAI Codex, GitHub Copilot, and Aider, receive tool responses that routinely exceed the agent's per-turn token budget. The standard remedy, pagination, is available in every protocol that produced these responses; yet across the corpus of session logs from a public Model Context Protocol middleware we observed no agent-initiated requests for a second chunk. The first chunk is what the agent reads, so we ask how often the gold item (the one the agent needs) is placed first in it: the precision-at-1 rate $p_1$.
+  In a controlled offline benchmark we treat first-chunk selection as a 0/1 knapsack and compare six value functions on 500 SWE-bench Verified tasks, then test whether $p_1$ matters with a single-turn file-localisation probe on five language models (4,800 LLM calls; not an end-to-end resolve-rate test). Two pre-registered hypotheses did not hold and are our main findings. The central one is negative: raising $p_1$ does not systematically raise downstream accuracy. Per-model deltas stay under three percentage points (p.p.), are not consistently signed, and no model is significant; the agent recovers the gold from anywhere in the chunk, so what reaches its answer is first-chunk inclusion, not the gold's rank within it. The second: adding four file-metadata signals to a keyword scorer hurts $p_1$ by 4.8 p.p. (paired significance test, $p = 0.001$).
+  A parameter-free keyword scorer does raise $p_1$, from a 24.2% baseline to 35.0% (+10.8 p.p., far beyond chance; $p = 3.9 \times 10^{-8}$), and to 35.8% with a fallback to the tool's native ordering when no keyword matches. But by our central finding this is a rank-1 gain, and rank-1 is the part that does not reach the agent's answer: downstream accuracy does not move.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T19:10:22Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tatiana Petrova</name>
+    </author>
+    <author>
+      <name>Andrei Mazniak</name>
+    </author>
+    <author>
+      <name>Radu State</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.13950v1</id>
+    <title>ToolFlood: Beyond Selection -- Hiding Valid Tools from LLM Agents via Semantic Covering</title>
+    <updated>2026-03-14T13:54:49Z</updated>
+    <link href="https://arxiv.org/abs/2603.13950v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.13950v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Model (LLM) agents increasingly use external tools for complex tasks and rely on embedding-based retrieval to select a small top-k subset for reasoning. As these systems scale, the robustness of this retrieval stage is underexplored, even though prior work has examined attacks on tool selection. This paper introduces ToolFlood, a retrieval-layer attack on tool-augmented LLM agents. Rather than altering which tool is chosen after retrieval, ToolFlood overwhelms retrieval itself by injecting a few attacker-controlled tools whose metadata is carefully placed by exploiting the geometry of embedding space. These tools semantically span many user queries, dominate the top-k results, and push all benign tools out of the agent's context.
+  ToolFlood uses a two-phase adversarial tool generation strategy. It first samples subsets of target queries and uses an LLM to iteratively generate diverse tool names and descriptions. It then runs an iterative greedy selection that chooses tools maximizing coverage of remaining queries in embedding space under a cosine-distance threshold, stopping when all queries are covered or a budget is reached. We provide theoretical analysis of retrieval saturation and show on standard benchmarks that ToolFlood achieves up to a 95% attack success rate with a low injection rate (1% in ToolBench). The code will be made publicly available at the following link: https://github.com/as1-prog/ToolFlood</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-14T13:54:49Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hussein Jawad</name>
+    </author>
+    <author>
+      <name>Nicolas J-B Brunel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21690v1</id>
+    <title>Context as an Environment: Programmatic Context Management for Long-Horizon Agents</title>
+    <updated>2026-08-21T23:39:19Z</updated>
+    <link href="https://arxiv.org/abs/2608.21690v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21690v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents increasingly take on long-running tasks whose history grows far beyond a single model context window. Existing approaches compress earlier interactions or extract selected information into fixed memory representations, committing to what to preserve before future needs are known. We present Scroll, a context manager that treats each agent session as an executable Session Environment. The environment is backed by an append-only Event Log and a sandboxed, persistent Python kernel. The kernel maintains a typed namespace across model calls, allowing tool outputs, retrieved history, and derived state to be bound to variables rather than serialized into the prompt at each call. Model-written code searches, materializes, and transforms session state through exec; only explicitly printed projections enter the model's working view for the next call. Context management thus becomes a programming task that inherits the improving coding abilities of LLMs, while the Event Log preserves lossless historical ground truth. As the working view approaches its budget, stale spans are evicted but remain recoverable: an eviction index keeps compact landmarks tied to exact Event Log addresses, so that the agent navigates directly to evicted regions instead of searching the full log. With Qwen3.8-Max as the backbone, Scroll achieves 94.8% on LongMemEval_S; 73.1% on BEAM_10M, surpassing the best published memory system by 5.1 points; and 86.7% on LOCA_256K, exceeding the best published long-horizon agent by 37.4 points.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T23:39:19Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yin Lin</name>
+    </author>
+    <author>
+      <name>Elaine Ang</name>
+    </author>
+    <author>
+      <name>Erkang Zhu</name>
+    </author>
+    <author>
+      <name>Bolin Ding</name>
+    </author>
+    <author>
+      <name>Jingren Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.37743v1</id>
+    <title>ContextRender: From Execution Dependencies to Agent Context</title>
+    <updated>2026-09-29T14:57:00Z</updated>
+    <link href="https://arxiv.org/abs/2609.37743v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.37743v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents performing long-horizon tasks accumulate tool results that later steps may need. Passing the full history to every invocation is costly even when it fits within the context window, while reducing it risks omitting needed information. Existing context management methods can overlook how earlier tool results are used in subsequent execution, leaving needed information out of context. We introduce ContextRender, which manages context through a persistent graph of execution dependencies. We develop Tool-Flow Analysis to track how later operations reuse information from earlier tool results, providing a signal called observed reuse. A renderer combines this signal with recency and semantic relevance to select results within a fixed history budget, retaining omitted results for later use. Across AppWorld and 8-objective QA with three execution models, ContextRender outperforms the evaluated context management baselines using a 6K history budget, well below the models' maximum context windows. Within this budget, it achieves task performance close to or above that of passing the full history while reducing mean inference cost by 10.2%-32.2% relative to Full history. Ablations show that observed reuse improves task performance and retention of results reused later.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T14:57:00Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Savini Kashmira</name>
+    </author>
+    <author>
+      <name>Jayanaka L. Dantanarayana</name>
+    </author>
+    <author>
+      <name>Lingjia Tang</name>
+    </author>
+    <author>
+      <name>Jason Mars</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.24882v1</id>
+    <title>Agent Retrieval Bench: Evaluating Repository Context Retrieval for Coding Agents</title>
+    <updated>2026-07-27T09:39:09Z</updated>
+    <link href="https://arxiv.org/abs/2607.24882v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.24882v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern coding agents are usually evaluated by whether they eventually produce a correct patch, but patch generation depends on an earlier context-acquisition stage: finding the repository files needed for the task. We introduce Agent Retrieval Bench, a file-level benchmark for this upstream retrieval problem. Samples are built from real coding-workflow signals and evaluated against frozen base-commit repositories, with relevance defined by what an agent needs next rather than direct query-file semantic similarity. The benchmark covers four positive-retrieval tasks: code2test, comment2context, trace2code, and edit2ripple; a fifth subset evaluates selective retrieval using natural evidence-backed no-gold cases and counterfactual wrong-repository controls. Agent Retrieval Bench contains 427 samples across 25 repositories: 345 positive examples, 50 natural no-gold examples, and 32 counterfactual controls. The corpus includes 308 base-commit snapshots, 392,000 files, and 7.9 million chunks. We evaluate lexical retrieval, RepoMap, open-source embeddings, selective abstention, and logged agent context selection. No single retrieval family dominates: Qwen3-Embedding-4B has the best sample-weighted MRR on positive samples, Qwen3-Embedding-8B the best Recall@20, and RepoMap the best budgeted context yield at 8K tokens, with task-level winners differing substantially. Selective thresholds calibrated with counterfactual controls do not improve selective success on natural no-gold cases, revealing a calibration gap. Logged trajectories also miss every gold file on 27-35 percent of samples. A controlled seed-intervention pilot finds that retrieval-derived initial context yields higher file F1 with less post-seed exploration than random non-gold context, while oracle gold context shows substantial remaining headroom.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-27T09:39:09Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Bowen Qin</name>
+    </author>
+    <author>
+      <name>Yi Xie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.06676v1</id>
+    <title>LKV: End-to-End Learning of Head-wise Budgets and Token Selection for LLM KV Cache Eviction</title>
+    <updated>2026-04-22T06:35:23Z</updated>
+    <link href="https://arxiv.org/abs/2605.06676v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.06676v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-context inference in Large Language Models (LLMs) is bottlenecked by the linear growth of Key-Value (KV) cache memory. Existing KV cache compression paradigms are fundamentally limited by heuristics: heuristic budgeting relies on statistical priors rather than task objectives, causing resource misallocation, while heuristic selection relies on coupled query-key interactions or static inductive biases (e.g., attention sinks). To address this limitation, we introduce LKV (Learned KV Eviction), which formulates KV compression as an end-to-end differentiable optimization problem. LKV integrates LKV-H to learn task-optimized global budgets, and LKV-T to derive intrinsic KV importance without materializing attention matrices. This design bypasses heuristic proxies, strictly aligning compression with task objectives. Extensive evaluations demonstrate that LKV achieves state-of-the-art performance on both LongBench and RULER benchmarks at high compression rates. In particular, on LongBench, LKV achieves near-lossless performance with only 15\% KV cache retention. Crucially, our analysis identifies learned budgeting as the dominant driver of fidelity, demonstrating that data-driven allocation is essential to overcome the limitations of hand-crafted heuristics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-22T06:35:23Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Enshuai Zhou</name>
+    </author>
+    <author>
+      <name>Yifan Hao</name>
+    </author>
+    <author>
+      <name>Chao Wang</name>
+    </author>
+    <author>
+      <name>Rui Zhang</name>
+    </author>
+    <author>
+      <name>Di Huang</name>
+    </author>
+    <author>
+      <name>Jiaming Guo</name>
+    </author>
+    <author>
+      <name>Xing Hu</name>
+    </author>
+    <author>
+      <name>Zidong Du</name>
+    </author>
+    <author>
+      <name>Qi Guo</name>
+    </author>
+    <author>
+      <name>Yunji Chen</name>
+    </author>
+  </entry>
+</feed>

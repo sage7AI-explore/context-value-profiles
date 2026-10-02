@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/3VUyYxOuUVPuXPDAXdSssSY2a3A</id>
+  <title>arXiv Query: search_query=all:"token budget" AND all:allocation AND all:LLM&amp;id_list=&amp;start=0&amp;max_results=15</title>
+  <updated>2026-10-02T15:57:59Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22token+budget%22+AND+(all:allocation+AND+all:LLM)&amp;start=0&amp;max_results=15&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>15</opensearch:itemsPerPage>
+  <opensearch:totalResults>52</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08441v1</id>
+    <title>DUET: Optimize Token-Budget Allocation for Reinforcement Learning with Verifiable Rewards</title>
+    <updated>2026-05-08T20:03:19Z</updated>
+    <link href="https://arxiv.org/abs/2605.08441v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08441v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning with verifiable rewards (RLVR) generates hundreds of thousands of tokens per training step, with rollout generation dominating the computational cost. The overall token budget can be controlled along two main dimensions: (i) deciding which prompts to allocate rollouts to, and (ii) deciding how long each rollout should be. Prior work has generally controlled only one of these dimensions at a time. We show that jointly tuning both decisions under a shared compute budget improves both reasoning quality and wall-clock training time. We instantiate this view as \textbf{DU}al-controlled tok\textbf{E}n alloca\textbf{T}ion (DUET), a computationally efficient layer over GRPO that uses a lightweight pre-rollout surrogate of prompt informativeness to set how many rollouts each prompt receives, and a marker-gated abort rule with importance reweighting to set when to stop them. On Qwen3-1.7B trained on MATH, DUET outperforms full-budget GRPO and the other three budget-aware baseline methods. DUET's advantage further generalizes to other benchmarks across math and coding, and is on par with the best baseline on the scientific Q\&amp;A domain, while also achieving a $1.62\times$ wall-clock speedup. More notably, using only 50\% of the token budget, DUET still outperforms all baseline methods at their full budget, achieving an even higher $2.51\times$ speedup over full-budget GRPO. We verify the high performance of DUET on other backbone LLMs, including Qwen3-4B and Llama-3.2-3B-Instruct. Notably, the gap between DUET and the strongest baseline \emph{widens} as the budget tightens, contrary to the usual pattern in which efficient methods trade off quality as compute decreases. More broadly, these results suggest that DUET budget-aware control strategies are valuable not only for accelerating training, but also for improving the quality of the learning signal.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-08T20:03:19Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Haoyu Hu</name>
+    </author>
+    <author>
+      <name>Xuandong Zhao</name>
+    </author>
+    <author>
+      <name>Xuhai "Orson'' Xu</name>
+    </author>
+    <author>
+      <name>Nori Jacoby</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.08075v1</id>
+    <title>Dual-Pool Token-Budget Routing for Cost-Efficient and Reliable LLM Serving</title>
+    <updated>2026-04-09T10:47:20Z</updated>
+    <link href="https://arxiv.org/abs/2604.08075v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.08075v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Production vLLM fleets typically provision each instance for the worst-case context length, leading to substantial KV-cache over-allocation and under-utilized concurrency. In practice, 80-95% of requests are short, yet are served under configurations optimized for long contexts, wasting 4-8$\times$ throughput capacity and triggering reliability issues such as OOM crashes, preemption, and request rejections. We identify a common root cause for these inefficiencies: configuration-traffic mismatch. We propose dual-pool token-budget routing, a lightweight dispatch mechanism that partitions a homogeneous fleet into two specialized pools: a high-throughput short-context pool and a high-capacity long-context pool. Each request is routed based on its estimated total token budget, computed using a per-category bytes-to-token ratio that is learned online via exponential moving average from usage.prompt_tokens feedback, eliminating the need for a tokenizer. We also develop a simple analytical model that predicts fleet-level cost savings from workload characteristics and measured throughput differences, enabling practitioners to estimate benefits prior to deployment. Evaluations on real-world traces from the Azure LLM Inference Dataset and LMSYS-Chat-1M, serving Llama-3-70B on A100 GPUs, show that our approach reduces GPU-hours by 31-42%, corresponding to \$2.86M annual savings at fleet scale, while lowering preemption rates by 5.4$\times$ and improving P99 TTFT by 6%. A case study with Qwen3-235B-A22B on AMD MI300X at 10,000 req/s projects \$15.4M in annual savings. The method incurs only O(1) dispatch overhead, adapts automatically to heterogeneous workloads, and composes seamlessly with existing optimizations such as PagedAttention, continuous batching, and prefill-decode disaggregation.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-09T10:47:20Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xunzhuo Liu</name>
+    </author>
+    <author>
+      <name>Bowei He</name>
+    </author>
+    <author>
+      <name>Xue Liu</name>
+    </author>
+    <author>
+      <name>Andy Luo</name>
+    </author>
+    <author>
+      <name>Haichen Zhang</name>
+    </author>
+    <author>
+      <name>Huamin Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.20035v2</id>
+    <title>Stage-adaptive Token Selection for Efficient Omni-modal LLMs</title>
+    <updated>2026-09-27T10:33:51Z</updated>
+    <link href="https://arxiv.org/abs/2605.20035v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.20035v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The unified audio-visual understanding capability of omni-modal large language models (om-LLMs) comes at the high cost of processing tens of thousands of visual and audio tokens throughout the LLM. To reduce the cost, training-free methods for om-LLM token selection are being actively developed, operating either pre-LLM or inner-LLM. Recognizing that the non-textual token redundancy varies across stages and LLM layers, we propose in this paper a novel stage-adaptive token selection (SEATS) method that operates in both pre-LLM and inner-LLM stages. Given an overall token budget measured by the token retention rate (TRR), SEATS performs top-down token budget allocation in an input-dependent manner. Specifically, a larger TRR is used for pre-LLM token selection, whilst within the LLM, all tokens are retained in shallow layers, increasingly decreased TRRs are applied in middle layers, and the non-textual tokens are fully removed in late layers. Extensive experiments on three representative om-LLMs and six benchmarks verify the viability of the proposed method. By retaining only 10\% of visual and audio tokens, SEATS preserves 94.9\% of the full-token performance on Qwen2.5-Omni while achieving a 9.3x FLOPs reduction and a 4.9x prefill speedup.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-19T15:55:16Z</published>
+    <arxiv:comment>Code Link: https://github.com/xxayt/SEATS</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zijie Xin</name>
+    </author>
+    <author>
+      <name>Jie Yang</name>
+    </author>
+    <author>
+      <name>Ruixiang Zhao</name>
+    </author>
+    <author>
+      <name>Tianyi Wang</name>
+    </author>
+    <author>
+      <name>Fengyun Rao</name>
+    </author>
+    <author>
+      <name>Jing Lyu</name>
+    </author>
+    <author>
+      <name>Xirong Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.11813v1</id>
+    <title>Task-Aware Reduction for Scalable LLM-Database Systems</title>
+    <updated>2025-10-13T18:10:03Z</updated>
+    <link href="https://arxiv.org/abs/2510.11813v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.11813v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are increasingly applied to data-intensive workflows, from database querying to developer observability. Yet the effectiveness of these systems is constrained by the volume, verbosity, and noise of real-world text-rich data such as logs, telemetry, and monitoring streams. Feeding such data directly into LLMs is costly, environmentally unsustainable, and often misaligned with task objectives. Parallel efforts in LLM efficiency have focused on model- or architecture-level optimizations, but the challenge of reducing upstream input verbosity remains underexplored. In this paper, we argue for treating the token budget of an LLM as an attention budget and elevating task-aware text reduction as a first-class design principle for language -- data systems. We position input-side reduction not as compression, but as attention allocation: prioritizing information most relevant to downstream tasks. We outline open research challenges for building benchmarks, designing adaptive reduction pipelines, and integrating token-budget--aware preprocessing into database and retrieval systems. Our vision is to channel scarce attention resources toward meaningful signals in noisy, data-intensive workflows, enabling scalable, accurate, and sustainable LLM--data integration.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-13T18:10:03Z</published>
+    <arxiv:comment>Preprint. Accepted for presentation at the Workshop on Language Models and Databases (LMD), co-located with CASCON 2025 (IEEE). The final version will appear in IEEE Xplore</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Marcus Emmanuel Barnes</name>
+    </author>
+    <author>
+      <name>Taher A. Ghaleb</name>
+    </author>
+    <author>
+      <name>Safwat Hassan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.24004v1</id>
+    <title>AgentSpec: Speculative Decoding for Batch Inference of LLM Agents</title>
+    <updated>2026-08-25T02:49:29Z</updated>
+    <link href="https://arxiv.org/abs/2608.24004v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.24004v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM)-based agent applications often incur high response time. Speculative decoding is a promising solution to improve the inference efficiency of LLM agents without impacting generation quality. However, state-of-the-art speculative decoding algorithms exhibit substantial speed degradation under large batch sizes, limiting their effectiveness to deploy in real-world agent applications. In this work, we first present a systematic analysis of speculative decoding for LLM agents and identify two dominant factors of speedup degradation: high rejection rate of speculative tokens, and under-utilization of dynamic token budgets.B ased on these observations, we propose AgentSpec, a speculative decoding algorithm that addresses the limitations of existing methods for LLM agents. AgentSpec incorporates structure-isolated drafting that constrains speculation to semantically coherent segments of the agent workflow, reducing the drafts of irrelevant semantic paths and achieving an extremely low rejection rate. Moreover, AgentSpec adopts redundancy-aware budget allocation that exploits agent-level information to better utilize the dynamically-free token budget during the agent inference. We implement and evaluate AgentSpec on five different workloads and four different models from four different LLM families in vLLM. Our results demonstrate the superiority of AgentSpec over state-of-the-arts.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T02:49:29Z</published>
+    <arxiv:comment>EMNLP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+    <author>
+      <name>Ziming Miao</name>
+    </author>
+    <author>
+      <name>Yi Zhu</name>
+    </author>
+    <author>
+      <name>Hui Shen</name>
+    </author>
+    <author>
+      <name>Zhongwei Wan</name>
+    </author>
+    <author>
+      <name>Fan Yang</name>
+    </author>
+    <author>
+      <name>Mi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.02780v3</id>
+    <title>Scaling-Aware Adapter for Structure-Grounded LLM Reasoning</title>
+    <updated>2026-05-22T13:41:52Z</updated>
+    <link href="https://arxiv.org/abs/2602.02780v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.02780v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are enabling reasoning over 2D and 3D structures, yet existing methods remain modality-specific and typically compress structural inputs through sequence-based tokenization or fixed-length query connectors. Such architectures either omit the geometric grounding requisite for mitigating structural hallucinations, or impose inflexible modality fusion bottlenecks that concurrently over-compress and suboptimally allocate structural tokens, thereby impeding the realization of generalized all-atom reasoning. We introduce Cuttlefish, a unified multimodal LLM that grounds language reasoning in geometric cues while scaling modality tokens with structural complexity. First, Scaling-Aware Patching leverages an instruction-conditioned gating mechanism to generate variable-size patches over structural graphs, adaptively scaling the query token budget with structural complexity to mitigate fixed-length connector bottlenecks. Second, Geometry Grounding Adapter refines these adaptive tokens via cross-attention to modality embeddings and injects the resulting modality tokens into the LLM, exposing explicit geometric cues to reduce structural hallucination. Experiments across interdisciplinary all-atom benchmarks demonstrate that Cuttlefish achieves superior performance in heterogeneous structure-grounded reasoning. Code: github.com/zihao-jing/Cuttlefish.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T20:35:44Z</published>
+    <arxiv:comment>Accepted by ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zihao Jing</name>
+    </author>
+    <author>
+      <name>Qiuhao Zeng</name>
+    </author>
+    <author>
+      <name>Ruiyi Fang</name>
+    </author>
+    <author>
+      <name>Yan Yi Li</name>
+    </author>
+    <author>
+      <name>Yan Sun</name>
+    </author>
+    <author>
+      <name>Boyu Wang</name>
+    </author>
+    <author>
+      <name>Pingzhao Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.11274v6</id>
+    <title>SelfBudgeter: Adaptive Token Allocation for Efficient LLM Reasoning</title>
+    <updated>2026-04-17T08:29:27Z</updated>
+    <link href="https://arxiv.org/abs/2505.11274v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.11274v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, large reasoning models demonstrate exceptional performance on various tasks. However, reasoning models always consume excessive tokens even for simple queries, leading to resource waste and prolonged user latency. To address this challenge, we propose SelfBudgeter - a self-adaptive reasoning strategy for efficient and controllable reasoning. Specifically, we first train the model to self-estimate the required reasoning budget based on the query. We then introduce budget-guided GRPO for reinforcement learning, which effectively maintains accuracy while reducing output length. Experimental results demonstrate that SelfBudgeter dynamically allocates budgets according to problem complexity, achieving an average response length compression of 61% on math reasoning tasks while maintaining accuracy. Furthermore, SelfBudgeter allows users to see how long generation will take and decide whether to continue or stop. Additionally, users can directly control the reasoning length by setting token budgets upfront.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-16T14:08:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zheng Li</name>
+    </author>
+    <author>
+      <name>Qingxiu Dong</name>
+    </author>
+    <author>
+      <name>Jingyuan Ma</name>
+    </author>
+    <author>
+      <name>Di Zhang</name>
+    </author>
+    <author>
+      <name>Kai Jia</name>
+    </author>
+    <author>
+      <name>Zhifang Sui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.18232v1</id>
+    <title>Contracting for LLM Delegation: Moral Hazard in Technology and Effort Choice</title>
+    <updated>2026-08-18T18:20:10Z</updated>
+    <link href="https://arxiv.org/abs/2608.18232v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.18232v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We extend the standard Principal-Agent framework to scenarios where the Agent selects from a suite of technologies, each characterized by a distinct cost-capability profile. This framework is increasingly critical in the era of Large Language Models (LLMs), where Agents choose both a model and an associated effort level (e.g., token budget). We model the relationship between output quality and effort as a concave, saturating function, which depends on the Agent's hidden two-dimensional action choice balancing technology selection and effort allocation. We derive the optimal linear contract for the Principal, demonstrating that the Agent's best response is characterized by a threshold reward share that triggers technology switching. Finally, we calibrate our model using open-weight LLM pairings across the MATH and MMLUPro benchmarks. We show that both Principal and Agent, when employing bandit algorithms to navigate this environment, converge to strategies that closely align with our theoretical equilibrium. These results suggest that simple linear contracts can effectively incentivize complex, technology-aware delegation in agentic workflows.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-18T18:20:10Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Nanda Kishore Sreenivas</name>
+    </author>
+    <author>
+      <name>Kate Larson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.01866v1</id>
+    <title>EdgeReasoning: Characterizing Reasoning LLM Deployment on Edge GPUs</title>
+    <updated>2025-10-21T04:18:25Z</updated>
+    <link href="https://arxiv.org/abs/2511.01866v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.01866v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Edge intelligence paradigm is increasingly demanded by the emerging autonomous systems, such as robotics. Beyond ensuring privacy-preserving operation and resilience in connectivity-limited environments, edge deployment offers significant energy and cost advantages over cloud-based solutions. However, deploying large language models (LLMs) for reasoning tasks on edge GPUs faces critical challenges from strict latency constraints and limited computational resources. To navigate these constraints, developers must balance multiple design factors - choosing reasoning versus non-reasoning architectures, selecting appropriate model sizes, allocating token budgets, and applying test-time scaling strategies - to meet target latency and optimize accuracy. Yet guidance on optimal combinations of these variables remains scarce. In this work, we present EdgeReasoning, a comprehensive study characterizing the deployment of reasoning LLMs on edge GPUs. We systematically quantify latency-accuracy tradeoffs across various LLM architectures and model sizes. We systematically evaluate prompt-based and model-tuning-based techniques for reducing reasoning token length while maintaining performance quality. We further profile test-time scaling methods with varying degrees of parallelism to maximize accuracy under strict latency budgets. Through these analyses, EdgeReasoning maps the Pareto frontier of achievable accuracy-latency configurations, offering systematic guidance for optimal edge deployment of reasoning LLMs.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-21T04:18:25Z</published>
+    <arxiv:comment>Published in the Proceedings of the 2025 IEEE International Symposium on Workload Characterization (IISWC 2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Benjamin Kubwimana</name>
+    </author>
+    <author>
+      <name>Qijing Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.10274v1</id>
+    <title>Queueing-Aware Optimization of Reasoning Tokens for Accuracy-Latency Trade-offs in LLM Servers</title>
+    <updated>2026-01-15T10:47:11Z</updated>
+    <link href="https://arxiv.org/abs/2601.10274v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.10274v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We consider a single large language model (LLM) server that serves a heterogeneous stream of queries belonging to $N$ distinct task types. Queries arrive according to a Poisson process, and each type occurs with a known prior probability. For each task type, the server allocates a fixed number of internal thinking tokens, which determines the computational effort devoted to that query. The token allocation induces an accuracy-latency trade-off: the service time follows an approximately affine function of the allocated tokens, while the probability of a correct response exhibits diminishing returns. Under a first-in, first-out (FIFO) service discipline, the system operates as an $M/G/1$ queue, and the mean system time depends on the first and second moments of the resulting service-time distribution. We formulate a constrained optimization problem that maximizes a weighted average accuracy objective penalized by the mean system time, subject to architectural token-budget constraints and queue-stability conditions. The objective function is shown to be strictly concave over the stability region, which ensures existence and uniqueness of the optimal token allocation. The first-order optimality conditions yield a coupled projected fixed-point characterization of the optimum, together with an iterative solution and an explicit sufficient condition for contraction. Moreover, a projected gradient method with a computable global step-size bound is developed to guarantee convergence beyond the contractive regime. Finally, integer-valued token allocations are attained via rounding of the continuous solution, and the resulting performance loss is evaluated in simulation results.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-15T10:47:11Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Emre Ozbas</name>
+    </author>
+    <author>
+      <name>Melih Bastopcu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.19780v1</id>
+    <title>Avoiding Overthinking and Underthinking: Curriculum-Aware Budget Scheduling for LLMs</title>
+    <updated>2026-03-29T18:31:09Z</updated>
+    <link href="https://arxiv.org/abs/2604.19780v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.19780v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Scaling test-time compute via extended reasoning has become a key paradigm for improving the capabilities of large language models (LLMs). However, existing approaches optimize reasoning under fixed or uniformly sampled token budgets, ignoring the fundamental mismatch between problem difficulty and allocated compute. This leads to overthinking on easy problems and underthinking on hard ones, resulting in suboptimal token efficiency across diverse reasoning scenarios. In this paper, we propose Budget-Adaptive Curriculum Reasoning (BCAE), a unified framework that jointly optimizes reasoning quality and token efficiency through three synergistic components: (1) a \emph{budget-conditioned unified policy} that embeds the token budget as a continuous conditioning signal, eliminating the need for decoupled thinking and summarization strategies; (2) a \emph{curriculum-aware budget scheduler} that adaptively shifts the training budget distribution from easy to hard problems based on real-time learning progress; and (3) a \emph{truncation-aware dense reward} mechanism that provides fine-grained credit assignment at intermediate reasoning steps via process-level verification. We further introduce \emph{Budget-Conditioned Advantage Estimation} (BCAE), a novel variance reduction technique that conditions the advantage baseline on the sampled budget, yielding more stable policy gradients. Experiments on mathematical reasoning benchmarks (MATH, GSM8K, AIME, and Minerva Math) demonstrate that BACR consistently outperforms other strong baselines across all token budgets, achieving up to 8.3\% accuracy improvement under tight budgets while reducing average token consumption by 34\% compared to unconstrained reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-29T18:31:09Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Amirul Rahman</name>
+    </author>
+    <author>
+      <name>Aisha Karim</name>
+    </author>
+    <author>
+      <name>Kenji Nakamura</name>
+    </author>
+    <author>
+      <name>Yi-Fan Ng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15778v1</id>
+    <title>Modularized Dynamic-Granularity Video LLM for Multi-Event Long Video Understanding</title>
+    <updated>2026-07-17T09:21:52Z</updated>
+    <link href="https://arxiv.org/abs/2607.15778v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15778v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Video Large Language Models (Video LLMs) have made significant advancements in various video understanding tasks. However, long-video scenarios remain challenging due to the tension between limited visual token budgets and the need to capture multiple key events. Existing approaches typically process long videos in two stages, i.e., i) select keyframes and ii) perform detailed perception, which exhibit limitations: they lack a modular mechanism for adaptive capacity allocation and self-correction, resulting in unreliable modeling. To tackle these challenges, we propose MoD-VLLM, a novel Modularized Dynamic-Granularity Video LLM framework for multi-event long video understanding, which unifies temporal grounding and semantic understanding iteratively and self-reflectively. Specifically, we propose a Positive-Negative Video Segments Grounding module and a Modularized Dynamic-Granularity Reflection module, which form a closed loop to progressively localize the question-related video segments. The grounding module instructs a Video LLM to distinguish relevant from irrelevant video segments based on the video question. The reflection module employs a modularized scheduler that dynamically selects fine-grained encoding for relevant positive segments to capture detailed perception and coarse-grained encoding for negative segments to maintain global context. We further propose a dynamic-granularity reinforcement learning strategy, allowing MoD-VLLM to learn optimal grounding policies and dynamic granularity visual representation jointly. Moreover, we propose MEventBench, a challenging Multi-Event Long Video Benchmark for complex long video reasoning. Extensive experiments on several long video understanding benchmarks and our MEventBench demonstrate that MoD-VLLM significantly outperforms state-of-the-art baselines.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T09:21:52Z</published>
+    <arxiv:comment>Accepted by 2026 IEEE International Conference on Multimedia and Expo (ICME 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Wei Feng</name>
+    </author>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+    <author>
+      <name>Yu-Wei Zhan</name>
+    </author>
+    <author>
+      <name>Yuwei Zhou</name>
+    </author>
+    <author>
+      <name>Wenwu Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.15309v1</id>
+    <title>When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis</title>
+    <updated>2026-09-14T09:57:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.15309v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.15309v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language model (LLM) agents allocate test-time compute adaptively as they revise solutions, use tools, explore alternatives, and decide when to stop. This test-time strategy makes it difficult to measure how agent performance scales. We study open-ended tasks that provide continuous scores for intermediate submissions, making progress observable throughout long trajectories. We propose Elo-per-token analysis, which tracks the best solution found at each token budget and uses a Bradley-Terry model to aggregate within-task orderings into Elo ratings across tasks with different score scales. We apply it to four general-purpose agents on four open-ended benchmarks, with sessions of up to 100M tokens, and to three feedback-driven LLM optimization harnesses in controlled single-task interventions. Independent sampling provides a theoretically characterized reference, for which Elo grows linearly with log compute. Against this reference, agents can initially convert tokens into Elo faster than independent sampling, but their marginal gains diminish and eventually fall below the reference. In contrast, the strongest historical human contestants improve superlinearly over contest time on shared AtCoder Heuristic Contest tasks, providing evidence of continual learning and substantial headroom after agents slow down. We define the scaling inflection point as the per-session budget where marginal Elo gains match the independent-sampling reference. Using this point as the per-session budget, we split 100M tokens across parallel sessions on FrontierCS Polyomino Packing, gaining +264 Elo over one long session and +355 over ten short sessions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-14T09:57:49Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Kaiyuan Liu</name>
+    </author>
+    <author>
+      <name>Qiuyang Mang</name>
+    </author>
+    <author>
+      <name>Bo Peng</name>
+    </author>
+    <author>
+      <name>Wenhao Chai</name>
+    </author>
+    <author>
+      <name>Hanchen Li</name>
+    </author>
+    <author>
+      <name>Shreyas Pimpalgaonkar</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+    <author>
+      <name>Alex Dimakis</name>
+    </author>
+    <author>
+      <name>Alvin Cheung</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.29664v1</id>
+    <title>To Think or Not to Think: Allocating Reasoning Where It Helps</title>
+    <updated>2026-08-30T03:50:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.29664v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.29664v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning (RL) has proven effective in enhancing the reasoning performance of large language models (LLMs), particularly in complex mathematical and programming tasks. However, this capability comes with systematic \textit{length misallocation}, in which models devote excessive reasoning to simple questions while terminating prematurely on harder ones, degrading inference efficiency with negligible accuracy improvement. Many length-adaptive methods mitigate this issue by allocating token budgets according to question difficulty, under the implicit assumption that harder questions benefit monotonically from extended reasoning. In contrast, we find that the effect of reasoning length on accuracy is concentrated on \textit{partially solvable} questions. Our further analysis reveals that explicit length rewards can produce unintended training dynamics. Motivated by these findings, we propose \textbf{CARE}---\textbf{C}ontrastive \textbf{A}ccuracy \textbf{R}eward \textbf{E}stimation---which compares the beneficial length adjustment per question from online sampled responses and applies adaptive length rewards within Group Relative Policy Optimization, with no extra hyperparameters or additional inference cost. Experiments across multiple reasoning benchmarks demonstrate that our method improves Pass@1 by up to \(4\%\) while simultaneously reducing reasoning length by \(37\%\), achieving higher token efficiency. Code will be available upon the acceptance of this paper.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-30T03:50:49Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhengdong He</name>
+    </author>
+    <author>
+      <name>Yunfan Zhou</name>
+    </author>
+    <author>
+      <name>Jianguo Yao</name>
+    </author>
+    <author>
+      <name>Haibing Guan</name>
+    </author>
+    <author>
+      <name>Xijun Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.19322v1</id>
+    <title>DynaTok: Temporally Adaptive and Positional Bias-Aware Token Compression for Video-LLMs</title>
+    <updated>2026-05-19T04:02:01Z</updated>
+    <link href="https://arxiv.org/abs/2605.19322v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.19322v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in Video Large Language Models (Video-LLMs) have greatly expanded multimodal reasoning capabilities. However, the massive number of visual tokens extracted from long video sequences incurs prohibitive computational costs, limiting their deployment in real-world scenarios. Existing training-free token compression methods select tokens based on attention magnitude as a proxy for semantic importance, but often overlook positional bias and rely only on short-term temporal locality, leading to redundant spatio-temporal coverage and inefficient token usage. We present DynaTok, a training-free, temporally adaptive and bias-aware token compression framework that allocates token budgets across both temporal and spatial dimensions. Through a lightweight exponential moving average (EMA) memory, the Temporal Budget Allocation (TBA) module dynamically assigns fewer tokens to redundant frames and more to novel frames, capturing long-term temporal variation. The Spatial Budget Allocation (SBA) module complements this by selecting spatially diverse and semantically important features using activation-based attention maps, while leveraging a spatial memory to reduce redundancy from previously selected regions and mitigate positional bias. DynaTok integrates seamlessly with existing Video-LLMs such as LLaVA-OneVision and LLaVA-Video without retraining, and effectively preserves semantic coverage under aggressive compression. Experiments on four representative VideoQA benchmarks-MVBench, LongVideoBench, MLVU, and VideoMME-show that DynaTok retains over 95% of baseline accuracy even with a 90% token reduction, surpassing recent training-free approaches. These results demonstrate that DynaTok provides a principled foundation for efficient and robust video reasoning, paving the way toward real-time streaming video understanding with future Video-LLMs.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-19T04:02:01Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Minyoung Park</name>
+    </author>
+    <author>
+      <name>Taehun Kong</name>
+    </author>
+    <author>
+      <name>Sangjun Ahn</name>
+    </author>
+  </entry>
+</feed>
