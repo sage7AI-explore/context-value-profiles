@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/U03OkoPPy2jXekTFJFY3C8TKctw</id>
+  <title>arXiv Query: search_query=&amp;id_list=2608.04562,2609.27276,2609.09115,2509.21359,2410.07523,2312.15395,2605.29794,2602.03783,2607.27250&amp;start=0&amp;max_results=20</title>
+  <updated>2026-10-02T17:37:03Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=20&amp;id_list=2608.04562,2609.27276,2609.09115,2509.21359,2410.07523,2312.15395,2605.29794,2602.03783,2607.27250" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21359v2</id>
+    <title>Influence Guided Context Selection for Effective Retrieval-Augmented Generation</title>
+    <updated>2025-10-24T08:50:27Z</updated>
+    <link href="https://arxiv.org/abs/2509.21359v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21359v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Retrieval-Augmented Generation (RAG) addresses large language model (LLM) hallucinations by grounding responses in external knowledge, but its effectiveness is compromised by poor-quality retrieved contexts containing irrelevant or noisy information. While existing approaches attempt to improve performance through context selection based on predefined context quality assessment metrics, they show limited gains over standard RAG. We attribute this limitation to their failure in holistically utilizing available information (query, context list, and generator) for comprehensive quality assessment. Inspired by recent advances in data selection, we reconceptualize context quality assessment as an inference-time data valuation problem and introduce the Contextual Influence Value (CI value). This novel metric quantifies context quality by measuring the performance degradation when removing each context from the list, effectively integrating query-aware relevance, list-aware uniqueness, and generator-aware alignment. Moreover, CI value eliminates complex selection hyperparameter tuning by simply retaining contexts with positive CI values. To address practical challenges of label dependency and computational overhead, we develop a parameterized surrogate model for CI value prediction during inference. The model employs a hierarchical architecture that captures both local query-context relevance and global inter-context interactions, trained through oracle CI value supervision and end-to-end generator feedback. Extensive experiments across 8 NLP tasks and multiple LLMs demonstrate that our context selection method significantly outperforms state-of-the-art baselines, effectively filtering poor-quality contexts while preserving critical information. Code is available at https://github.com/SJTU-DMTai/RAG-CSM.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-21T07:19:09Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiale Deng</name>
+    </author>
+    <author>
+      <name>Yanyan Shen</name>
+    </author>
+    <author>
+      <name>Ziyuan Pei</name>
+    </author>
+    <author>
+      <name>Youmin Chen</name>
+    </author>
+    <author>
+      <name>Linpeng Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.09115v1</id>
+    <title>MeClear: Cooperative Game-Theoretic Attribution and Risk-Aware Memory Clearance for Long-Horizon LLM Agents</title>
+    <updated>2026-09-08T17:46:00Z</updated>
+    <link href="https://arxiv.org/abs/2609.09115v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.09115v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long horizon Large Language Model (LLM) agents rely on external memory systems to preserve user preferences and task knowledge across extended interactions. Conventional retrieval mechanisms optimize semantic compatibility rather than downstream utility, frequently introducing outdated, misleading, or conflicting evidence into the active context. We present MeClear, a task conditioned memory clearance framework that identifies memories featuring negative downstream utility through cooperative attribution and selectively suppresses them from agent execution. MeClear combines Leave One Out screening with sampled cooperative Shapley attribution to distribute utility across interacting evidence, effectively resolving redundant conflict masking where single removal evaluations fail. Utilizing attribution rankings, MeClear executes a query scoped minimal clearance strategy over a nested filtration, verifying task recovery on the cleared context without permanently altering the persistent memory bank. Comprehensive experimental evaluations across ten long dialogue memory pools demonstrate that MeClear achieves a target recall of 85.9% and an overall task recovery rate of 82.3%, representing a 25.5 percentage point improvement over Leave One Out (LOO) baselines.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-08T17:46:00Z</published>
+    <arxiv:comment>15 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Boyu Yang</name>
+    </author>
+    <author>
+      <name>Jiazheng Sun</name>
+    </author>
+    <author>
+      <name>Zilong Lu</name>
+    </author>
+    <author>
+      <name>Zhi Qiu</name>
+    </author>
+    <author>
+      <name>Xin Peng</name>
+    </author>
+    <author>
+      <name>Jun Zheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.07523v3</id>
+    <title>DemoShapley: Valuation of Demonstrations for In-Context Learning</title>
+    <updated>2025-11-21T21:39:00Z</updated>
+    <link href="https://arxiv.org/abs/2410.07523v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.07523v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) using in-context learning (ICL) excel in many tasks without task-specific fine-tuning. However, demonstration selection and ordering greatly impact ICL effectiveness. Focus on this issue, we propose DemoShapley, a Shapley-value based method that evaluates each demonstration's contribution by measuring its marginal effect across different prompt permutations. To further account for ICL's limited context windows and frequent low-shot settings, we introduce Beta-DemoShapley, a weighted extension that emphasizes the influence of smaller prompt sizes. Experiments on multiple benchmarks show that DemoShapley consistently outperforms existing influence-based selection strategies, while Beta-DemoShapley further improves performance in low-shot scenarios. Both methods also detect mislabeled data, enhance generalization to out-of-distribution tasks, and reduce demographic bias. Together, they provide a unified and robust framework for demonstration valuation in ICL.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-10T01:35:03Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shan Xie</name>
+    </author>
+    <author>
+      <name>Man Luo</name>
+    </author>
+    <author>
+      <name>Chadly Daniel Stern</name>
+    </author>
+    <author>
+      <name>Mengnan Du</name>
+    </author>
+    <author>
+      <name>Lu Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.29794v1</id>
+    <title>SkillsInjector: Dynamic Skill Context Construction for LLM Agents</title>
+    <updated>2026-05-28T11:44:32Z</updated>
+    <link href="https://arxiv.org/abs/2605.29794v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.29794v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>LLM agents now draw on growing skill libraries to handle complex tasks. However, injecting more skills does not always improve task completion and can even degrade it. Existing methods still treat skill injection as a static step, selecting skills with fixed criteria, fixing the budget in advance, and leaving descriptions unchanged. We argue that this static treatment can undermine the utility of skills, because which skills are exposed, how many are included, and how they are presented all affect downstream performance. We propose SkillsInjector, a two-stage adaptive method that jointly addresses these decisions. First, a context planner learns execution-grounded skill preferences and admits an adaptive number of skills for each task. A set-aware renderer then tailors how selected descriptions are presented relative to their co-injected neighbors. Across tau2-bench, SkillsBench, and ALFWorld, SkillsInjector achieves the highest score, improving over the strongest baseline by 3.9, 6.1, and 7.3 percentage points, respectively. Ablation studies show that skill selection, adaptive budgeting, and set-aware rendering each contribute to the gain. These results show that skill-augmented agents benefit from optimizing the injected context itself. Code will be released upon publication</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T11:44:32Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yanchao Li</name>
+    </author>
+    <author>
+      <name>Wanhao Liu</name>
+    </author>
+    <author>
+      <name>Ben Gao</name>
+    </author>
+    <author>
+      <name>Jiaqing Xie</name>
+    </author>
+    <author>
+      <name>Zhehong Ai</name>
+    </author>
+    <author>
+      <name>Na Zou</name>
+    </author>
+    <author>
+      <name>Yuqiang Li</name>
+    </author>
+    <author>
+      <name>Tianfan Fu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27250v1</id>
+    <title>Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories</title>
+    <updated>2026-07-28T11:07:53Z</updated>
+    <link href="https://arxiv.org/abs/2607.27250v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27250v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Persistent context files (AGENTS.md, CLAUDE.md) are standard practice for guiding AI coding agents, yet evidence for their effectiveness is contradictory. We present a controlled ablation of context-injection strategy across two frontier agents (Claude Code and Codex), 17 real tasks from 3 repositories (15 shared + 2 Codex-only), and 288 evaluated runs with gold-test evaluation. Context strategy does not measurably move correctness on either agent (bounded to &lt;=10-15pp via equivalence testing). A failure-mode triage reveals why: agents fail on implementation skill---feature design, pattern selection, exact wiring---not missing repository knowledge that a context file could supply; a manipulation probe confirms the real AGENTS.md never converts a near-miss to a pass on either agent. We further show that borderline task difficulty is agent-specific (Spearman rho=0.75), offering a candidate explanation for prior contradictions: single-agent studies draw tasks from different agents' informative bands. We release all code, data, and analysis.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-28T11:07:53Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Prakhar Khatri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.03783v2</id>
+    <title>Efficient Estimation of Kernel Surrogate Models for Task Attribution</title>
+    <updated>2026-05-10T21:29:30Z</updated>
+    <link href="https://arxiv.org/abs/2602.03783v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.03783v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern AI agents such as large language models are trained on diverse tasks -- translation, code generation, mathematical reasoning, and text prediction -- simultaneously. A key question is how to quantify the influence of each individual training task on performance on a target task, a problem we refer to as task attribution. The direct approach, leave-one-out retraining, measures the effect of removing each task, but is computationally infeasible at scale. An alternative approach that builds surrogate models to predict the performance on a target task for any subset of training tasks has emerged in the recent literature. Prior work focuses on linear surrogate models, which capture first-order relationships but miss nonlinear interactions such as XOR-type effects. In this paper, we first consider a unified task-weighting framework for analyzing task-attribution methods and establish a new connection between linear surrogate models and influence functions via a second-order analysis. Then, we introduce kernel surrogate models, which more effectively represent second-order task interactions. To efficiently learn the kernel surrogate, we develop a gradient-based estimation procedure that leverages a first-order approximation of pretrained models; empirically, this yields accurate surrogate estimates with less than $2\%$ relative error without repeated retraining. Experiments across multiple settings -- including mathematical reasoning in transformers, in-context learning, and multi-objective reinforcement learning -- demonstrate the effectiveness of kernel surrogate models. They achieve a $25\%$ higher correlation with the leave-one-out ground truth than linear surrogates and influence-function baselines, enabling more accurate and scalable task attribution. When used for downstream data selection, kernel surrogate models further yield a $40\%$ improvement in the aforementioned settings.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-03T17:43:48Z</published>
+    <arxiv:comment>27 pages. Appeared in ICLR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhenshuo Zhang</name>
+    </author>
+    <author>
+      <name>Minxuan Duan</name>
+    </author>
+    <author>
+      <name>Hongyang R. Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.04562v1</id>
+    <title>What Is a Skill Worth? Structure-Aware Shapley Valuation of Agent Skills</title>
+    <updated>2026-08-05T07:56:26Z</updated>
+    <link href="https://arxiv.org/abs/2608.04562v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.04562v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agent skills are increasingly optimized by automated feedback loops, producing long structured artifacts whose internal value remains unclear. We study skill valuation: assigning credit to the internal units of a fixed skill, such as rules, examples, scripts, and heuristics, under a fixed agent and held-out task distribution. Skill valuation differs from data or prompt-span valuation because skill units are structured: they may depend on other units, belong to a document hierarchy, trigger agent behavior, and consume limited prompt context. We introduce SkillSV, a structure-aware Shapley-style framework for skill valuation. SkillSV compiles a skill into units, dependencies, and hierarchy, so that only valid counterfactual skills are evaluated. It uses paired deletion and length-neutral padding to separate content value from context cost, and estimates the resulting values with a rollout-budgeted estimator for noisy agent evaluations. On four agentic benchmarks, we assess the faithfulness, actionability, and explanation of SkillSV: it recovers unit interactions, preserves aggregate skill lift, and guides safe pruning and compression.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-05T07:56:26Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tao Li</name>
+    </author>
+    <author>
+      <name>Junfeng Liu</name>
+    </author>
+    <author>
+      <name>Qinghua Zhao</name>
+    </author>
+    <author>
+      <name>Yifan Li</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <author>
+      <name>Bo Shao</name>
+    </author>
+    <author>
+      <name>Xuejun Liu</name>
+    </author>
+    <author>
+      <name>Linjun Shou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.15395v2</id>
+    <title>Prompt Valuation Based on Shapley Values</title>
+    <updated>2024-12-16T08:57:29Z</updated>
+    <link href="https://arxiv.org/abs/2312.15395v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.15395v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) excel on new tasks without additional training, simply by providing natural language prompts that demonstrate how the task should be performed. Prompt ensemble methods comprehensively harness the knowledge of LLMs while mitigating individual biases and errors and further enhancing performance. However, more prompts do not necessarily lead to better results, and not all prompts are beneficial. A small number of high-quality prompts often outperform many low-quality prompts. Currently, there is a lack of a suitable method for evaluating the impact of prompts on the results. In this paper, we utilize the Shapley value to fairly quantify the contributions of prompts, helping to identify beneficial or detrimental prompts, and potentially guiding prompt valuation in data markets. Through extensive experiments employing various ensemble methods and utility functions on diverse tasks, we validate the effectiveness of using the Shapley value method for prompts as it effectively distinguishes and quantifies the contributions of each prompt.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-24T03:37:11Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hanxi Liu</name>
+    </author>
+    <author>
+      <name>Xiaokai Mao</name>
+    </author>
+    <author>
+      <name>Haocheng Xia</name>
+    </author>
+    <author>
+      <name>Jian Lou</name>
+    </author>
+    <author>
+      <name>Jinfei Liu</name>
+    </author>
+    <author>
+      <name>Kui Ren</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.27276v1</id>
+    <title>DRSR: Learning Set-Level Deletion Risk for Efficient Long-Horizon Agents</title>
+    <updated>2026-09-23T03:06:01Z</updated>
+    <link href="https://arxiv.org/abs/2609.27276v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.27276v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Long-horizon language-model agents accumulate reasoning traces, tool exchanges, and observations whose relevance changes with the current decision. Existing compression strategies often score historical units independently, but the safety of deleting several units is generally not determined by their singleton scores: redundant evidence, accumulated small effects, and the information that remains after deletion all matter. We introduce Direct Relational Set-Risk Pruning (DRSR), which formulates agent-history compression as risk-constrained selection over deletion sets. Offline, DRSR constructs exact counterfactual supervision by jointly deleting protocol-valid history Blocks and measuring the change in teacher-forced likelihood of the same recorded next output. A lightweight scorer then predicts set-level harm from online-visible relations between candidate history and the current pre-action state, together with deleted-retained and pairwise set structure. At deployment, DRSR evaluates a small set of structurally valid deletion candidates with the lightweight scorer and removes the largest feasible set under recency, protocol, budget, and learned-risk constraints, abstaining when no set is sufficiently safe. On WorkBuddyBench Full260, DRSR increases mean reward from 0.699 to 0.802 while reducing total model tokens by 20.820%. On the fixed Eval40 comparison, it obtains 0.794 reward at 1.211M tokens per task, using 35.850% fewer tokens than the uncompressed agent. Mechanistic analyses and ablations further show that decision-conditioned relations, retained-context information, pair interactions, and abstention each contribute to reliable pruning.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T03:06:01Z</published>
+    <arxiv:comment>34 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mingxuan Wang</name>
+    </author>
+    <author>
+      <name>Bo Wang</name>
+    </author>
+    <author>
+      <name>Fei Luo</name>
+    </author>
+    <author>
+      <name>Guorun Yao</name>
+    </author>
+    <author>
+      <name>Chao Ning</name>
+    </author>
+    <author>
+      <name>Yinglong Guo</name>
+    </author>
+    <author>
+      <name>Hongyue Chen</name>
+    </author>
+    <author>
+      <name>Yanbiao Ma</name>
+    </author>
+    <author>
+      <name>Jungong Han</name>
+    </author>
+  </entry>
+</feed>

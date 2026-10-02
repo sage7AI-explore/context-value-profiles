@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "refs" / "raw"
 RAW.mkdir(parents=True, exist_ok=True)
 NS = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
-API = "http://export.arxiv.org/api/query?"
+API = "https://export.arxiv.org/api/query?"
 
 ANCHORS = ["2606.20047","2609.00749","2609.37743","2510.04618","2607.25408","2609.34649","2310.03714","2605.26165","2411.15102","2507.13334","2607.22683","2609.13149","2608.21690","2406.12045","2409.00729","2403.12968","2307.03172","1809.09600","2108.00573","2410.10813"]
 SEARCHES = {

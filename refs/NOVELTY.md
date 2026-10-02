@@ -47,3 +47,30 @@ task-success value with pairwise interaction terms**, nor tests whether such typ
 small profiling model to larger models. The closest works estimate per-instance utility with judges (CICL), measure
 reliance on homogeneous passages (Laws of Context Allocation), or model complementarity with an assumed submodular
 coverage function while naming measured interaction terms as future work (Optimal Skill Selection). Kill criterion not met.
+
+## Additions from the independent novelty audit (refs/NOVELTY_AUDIT.md), abstracts read 2026-10-02
+- **SkillSV, What Is a Skill Worth? (2608.04562).** Structure-aware Shapley valuation of the *internal units of one fixed
+  skill* (rules, examples, scripts, heuristics) under a fixed agent and task distribution, respecting unit dependencies
+  and hierarchy; used for pruning. *Differs:* within one document and one agent, per skill; MCV profiles values per block
+  *type* across heterogeneous types, assembles (not prunes) under a budget, and tests cross-model transfer. Closest work;
+  we do not claim to be first to value context by removal cost.
+- **Influence-guided context selection / CI value (2509.21359).** Leave-one-out-style influence of retrieved passages for
+  RAG context selection. *Differs:* homogeneous passages, per query.
+- **DemoShapley (2410.07523), Prompt valuation with Shapley (2312.15395).** Shapley valuation of demonstrations / prompts.
+  *Differs:* one block type, per task.
+- **DRSR (2609.27276).** Set-level deletion risk for agent history, accounting for redundancy among deleted units.
+  *Differs:* history pruning only; no type-level profiles or transfer.
+- **MeClear (2609.09115).** Cooperative-game attribution to clear memories with negative downstream utility.
+  *Differs:* memories only, clearance rather than budgeted assembly.
+- **SkillsInjector (2605.29794).** Dynamic skill exposure, budget and description construction. *Differs:* skills only.
+- **Kernel surrogates for task attribution (2602.03783).** Surrogate models capturing second-order interactions for
+  training-task attribution. *Differs:* training tasks, not context; cited for the interaction-surrogate method.
+- **Do Context Files Help Coding Agents? (2607.27250).** Ablation finds AGENTS.md/CLAUDE.md-style context files do not
+  measurably move correctness. Cited as evidence that block value must be measured, and that it can be ~0.
+
+## Decision (2026-10-02, made autonomously under the user's "complete end to end" instruction; ASK gate not triggered)
+Kill criterion not met (audit verdict PROCEED-WITH-CHANGES). Claim repositioned to: **reusable, offline, type-level value
+profiles across heterogeneous block types, with cross-type interaction terms, transferable from a small to larger models,
+consumed by a dependency-aware exact compiler**. Per-instance valuation (SkillSV, CI value, DemoShapley, DRSR, MeClear) is
+related work and, where affordable, a baseline (online per-instance leave-one-out). Profiling adopts a length-neutral
+padding control (sensitivity analysis) following SkillSV's concern about length confounds.
