@@ -1,0 +1,4 @@
+# One regex per line for literal numbers allowed in paper/sections/*.tex (design constants, not results).
+# Add each with a comment explaining why it is not a result. Results ALWAYS come from \R... macros.
+(19|20)\d\d
+[1-9]

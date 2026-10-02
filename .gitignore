@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+# large regenerable artifacts (keep manifests + processed CSVs in git)
+data/raw/**/*.duckdb
+data/raw/**/*.parquet
+data/raw/downloads/
+results/raw/**/sandbox/
+logs/*.log
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/main.pdf

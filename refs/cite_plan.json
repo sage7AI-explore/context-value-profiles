@@ -1,0 +1,3 @@
+{
+ "_comment": "bibkey -> {doi | arxiv}. Fill in Phase 1, run scripts/fetch_refs.py --fetch-abstracts, READ every abstract, then scripts/fetch_refs.py."
+}
