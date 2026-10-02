@@ -57,7 +57,7 @@ def _done(path: Path, keyf) -> set:
     return {keyf(json.loads(l)) for l in path.read_text().splitlines() if l.strip()}
 
 
-def profile(model: str, family: str, limit: int | None, pad: bool, seed: int = 0) -> None:
+def profile(model: str, family: str, limit: int | None, pad: bool, seed: int = 0, lobo: int = 6) -> None:
     run = RAW / f"profile_{model.replace(':', '-')}"
     _manifest(run, {"cmd": "profile", "model": model, "family": family, "limit": limit, "pad": pad})
     out = run / "episodes.jsonl"
@@ -67,7 +67,7 @@ def profile(model: str, family: str, limit: int | None, pad: bool, seed: int = 0
     insts = load("dev", family)[:limit] if limit else load("dev", family)
     with httpx.Client() as http:
         for inst in insts:
-            for name, selection in conditions(inst, pad=pad).items():
+            for name, selection in conditions(inst, n_lobo=lobo, pad=pad).items():
                 if (inst.iid, name, seed) in done:
                     continue
                 prompt = render_condition(inst, name, selection, counter)
@@ -186,9 +186,10 @@ def main() -> None:
     ap.add_argument("--no-variants", action="store_true")
     ap.add_argument("--no-deps", action="store_true")
     ap.add_argument("--offset", type=int, default=0)
+    ap.add_argument("--lobo", type=int, default=6, help="leave-one-block-out samples per instance (0 = type level only)")
     a = ap.parse_args()
     if a.cmd == "profile":
-        profile(a.model, a.family, a.limit, a.pad)
+        profile(a.model, a.family, a.limit, a.pad, lobo=a.lobo)
     elif a.cmd == "fit":
         fit(a.model)
     else:
