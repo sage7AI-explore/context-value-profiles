@@ -107,20 +107,23 @@ def fit(model: str) -> None:
         print(family, "base", round(prof["base"], 3), {k: round(v["value"], 3) for k, v in prof["mcv"].items()})
 
 
-def _load_profile(model: str, family: str):
+def _load_profile(model: str, family: str, value_model_from: str | None = None):
+    """Type-level profile of ``model``; the instance-level block-value model comes from ``value_model_from`` when given
+    (shared between native and transferred conditions so that transfer tests isolate the type-level profile)."""
     stem = PROC / "profiles" / f"{model.replace(':', '-')}_{family}"
     prof = json.loads(stem.with_suffix(".json").read_text())
-    with stem.with_suffix(".pkl").open("rb") as fh:
+    vstem = PROC / "profiles" / f"{(value_model_from or model).replace(':', '-')}_{family}"
+    with vstem.with_suffix(".pkl").open("rb") as fh:
         vm = pickle.load(fh)
     return prof, vm
 
 
 def evaluate(model: str, family: str, policies: list, budgets: list, profile_model: str | None, limit: int | None,
              run_name: str, seed: int = 0, variants: bool = True, deps: bool = True, split: str = "test",
-             offset: int = 0) -> None:
+             offset: int = 0, value_model_from: str | None = None) -> None:
     run = RAW / run_name
     _manifest(run, {"cmd": "eval", "model": model, "family": family, "policies": policies, "budgets": budgets,
-                    "profile_model": profile_model, "limit": limit, "variants": variants, "deps": deps, "split": split})
+                    "profile_model": profile_model, "value_model_from": value_model_from, "limit": limit, "variants": variants, "deps": deps, "split": split})
     out = run / "episodes.jsonl"
     done = _done(out, lambda r: (r["iid"], r["policy"], r["budget"], r["seed"]))
     counter = TokenCounter(model)
@@ -130,7 +133,7 @@ def evaluate(model: str, family: str, policies: list, budgets: list, profile_mod
     with httpx.Client() as http:
         ctx = {"embedder": Embedder(ROOT / "results/cache/embeddings.sqlite", http), "variants": variants, "deps": deps}
         if profile_model:
-            ctx["profile"], ctx["value_model"] = _load_profile(profile_model, family)
+            ctx["profile"], ctx["value_model"] = _load_profile(profile_model, family, value_model_from)
         for inst in insts:  # interleave policies and budgets within each instance
             for budget in budgets:
                 for pol in policies:
@@ -153,7 +156,8 @@ def evaluate(model: str, family: str, policies: list, budgets: list, profile_mod
                     r = call(http, model, seed, prompt, cache)
                     ans = extract_answer(inst.checker, r["text"])
                     rec = {"run": run_name, "iid": inst.iid, "family": family, "model": model, "seed": seed,
-                           "policy": pol, "budget": b, "profile_model": profile_model, "status": "ok",
+                           "policy": pol, "budget": b, "profile_model": profile_model,
+                           "value_model_from": value_model_from, "status": "ok",
                            "success": success(inst.checker, ans, inst.gold), "answer": ans, "reply": r["text"][-600:],
                            "selection": plan.selection, "plan_tokens": plan.tokens,
                            "prompt_tokens_measured": counter.count(prompt), "ollama_prompt_tokens": r["prompt_tokens"],
@@ -186,6 +190,7 @@ def main() -> None:
     ap.add_argument("--no-variants", action="store_true")
     ap.add_argument("--no-deps", action="store_true")
     ap.add_argument("--offset", type=int, default=0)
+    ap.add_argument("--value-model-from")
     ap.add_argument("--lobo", type=int, default=6, help="leave-one-block-out samples per instance (0 = type level only)")
     a = ap.parse_args()
     if a.cmd == "profile":
@@ -195,7 +200,7 @@ def main() -> None:
     else:
         evaluate(a.model, a.family, a.policies.split(","), [int(x) for x in a.budgets.split(",")], a.profile_model,
                  a.limit, a.run or f"eval_{a.model.replace(':', '-')}", variants=not a.no_variants,
-                 deps=not a.no_deps, split=a.split, offset=a.offset)
+                 deps=not a.no_deps, split=a.split, offset=a.offset, value_model_from=a.value_model_from)
 
 
 if __name__ == "__main__":

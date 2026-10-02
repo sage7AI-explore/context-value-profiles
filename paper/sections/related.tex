@@ -1,2 +1,61 @@
-% BACKGROUND AND RELATED WORK — ~1.25-1.5 pages: only registry-verified refs whose abstracts were read
-% Numbers ONLY via \R... macros from generated/numbers.tex.
+% BACKGROUND AND RELATED WORK. Claims about prior work are limited to what each paper's abstract or full text states.
+
+\subsection{CONTEXT ENGINEERING AND ASSEMBLY}
+A survey formalizes context engineering as the discipline of retrieving, processing and managing the information supplied
+to a language model at inference time~\cite{cesurvey2025}. Agentic Context Engineering treats contexts as evolving
+playbooks that accumulate and refine strategies~\cite{ace2025}, and DSPy compiles declarative pipelines of language-model
+calls into optimized prompts~\cite{dspy2023}; both optimize the \emph{content} of context rather than selecting among
+existing blocks under a budget. Several 2026 systems assemble context for long-horizon agents. ContextPipe organizes
+assembly as a five-phase, database-style pipeline with a data-source catalog and a cache-aware optimizer, and notes that
+maximizing utility under a budget with precedence is a precedence-constrained knapsack that it deliberately does not
+search~\cite{contextpipe2026}. ContextRender selects earlier tool results using observed reuse in an execution-dependency
+graph together with recency and relevance~\cite{contextrender2026}. Context Assembly as the Controlled Variable frames the
+choice of template, demonstrations and retrieval as the variable a harness controls~\cite{controlledvar2026}; ContextEvo
+learns a context-management policy from long-horizon trajectories~\cite{contextevo2026}; programmatic context management
+treats context as an environment the agent manipulates~\cite{ctxenv2026}; and Imprompt treats prompts as a programmable
+control surface~\cite{imprompt2026}. These systems decide what enters context through rules, learned policies or
+relevance signals. None measures, ahead of time, what each kind of block is worth to task success.
+
+\subsection{SELECTION UNDER A TOKEN BUDGET}
+PACMS casts assembly-time selection as submodular maximum coverage under a knapsack constraint and solves it with a
+cost-aware greedy over pluggable selectors~\cite{pacms2026}. Budgeted skill selection has been formulated as regularized
+submodular maximization with provable bicriteria guarantees, modelling complementarity through coverage and
+diminishing returns; its authors name interaction terms learned from execution feedback as future
+work~\cite{skillselect2026}. In retrieval-augmented generation, budget allocation has been approached by calibrated
+decisions about how much to retrieve~\cite{knowbefore2026}, by a reader-context diagnostic for budget-constrained
+selection~\cite{recallnotenough2026}, by dependency-structured memory selection~\cite{contextweaver2026}, and by
+constructing knowledge-base context from historical usage for text-to-SQL~\cite{beyondharness2026}. Tool schemas compete
+with retrieved evidence for the same window, which motivates schema compression~\cite{toolschema2026}, and budget-tiered
+protocols evaluate memory strategies for local agents~\cite{budgetbench2026}. Long contexts are also used unevenly by
+models, which perform worse when relevant information sits in the middle~\cite{lostmiddle2024}.
+
+\subsection{COMPRESSION}
+LLMLingua-2 distils token-level compression into a small classifier that keeps the tokens a teacher marks as
+essential~\cite{llmlingua2_2024}, and COMI compresses context by a marginal-information-gain score that rewards relevance
+and penalizes redundancy~\cite{comi2026}. A pre-registered randomized trial of compression in production task orchestration
+shows that savings depend on how compression changes output length~\cite{compressiontrial2026}, and compressing the
+persistent instructions of tool-using agents traces reliability frontiers~\cite{controlcompression2026}. Compression keeps
+every block but shortens it; our compiler instead chooses which blocks, and which variant of each, to include.
+
+\subsection{VALUING CONTEXT BY COUNTERFACTUALS}
+Valuing a unit by what its removal costs has a long history in data valuation, e.g.\ Data Shapley~\cite{datashapley2019},
+and has been applied to demonstrations~\cite{demoshapley2024} and prompts~\cite{promptshapley2023}. For context,
+ContextCite attributes a generation to context sources with a surrogate model~\cite{contextcite2024} and AttriBoT
+approximates leave-one-out attribution efficiently~\cite{attribot2024}; both are post-hoc explanations of one output.
+Closer to assembly, influence-guided context selection uses leave-one-out influence of retrieved passages in
+RAG~\cite{civalue2025}; the Laws of Context Allocation replace relevance proxies with a causal leave-one-out probe of
+generative reliance~\cite{ctxalloc2026}; Decision-Aware Memory Cards rank candidate units by their estimated effect on the
+agent's next action using judges or surrogates~\cite{cicl2026}; DRSR learns set-level deletion risk for agent
+history~\cite{drsr2026}; MeClear clears memories with negative utility via cooperative attribution~\cite{meclear2026}; and
+SkillsInjector constructs skill context dynamically~\cite{skillsinjector2026}. The closest work, SkillSV, values the
+internal units of a single skill document with structure-aware Shapley values computed from agent rollouts, accounting for
+dependencies between units~\cite{skillsv2026}. Kernel surrogate models capture second-order interactions in task
+attribution~\cite{kernelsurrogate2026}. An ablation of persistent context files for coding agents found no measurable
+effect on correctness~\cite{ctxfiles2026}, a reminder that block value must be measured rather than assumed.
+
+\subsection{POSITIONING}
+All counterfactual methods above value \emph{one kind} of unit (passages, demonstrations, memories, history, or the parts
+of one skill), \emph{per instance}, for one model. We do not claim to be first to value context by its removal. Our
+contribution is a reusable, type-level value model across heterogeneous blocks (goal, instructions, tool schemas,
+documents, examples, history, notes) with cross-type interaction terms, a test of whether it transfers from a small
+profiling model to larger ones, and an exact dependency-aware compiler that uses it under a hard budget.
