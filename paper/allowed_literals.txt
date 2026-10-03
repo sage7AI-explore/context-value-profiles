@@ -2,3 +2,11 @@
 # Add each with a comment explaining why it is not a result. Results ALWAYS come from \R... macros.
 (19|20)\d\d
 [1-9]
+# interval endpoints in definitions, e.g. clipping to [0,1]
+0
+# confidence level of all intervals (a convention, not a result)
+95\\?%
+# license versions (CC BY-SA 4.0, Apache-2.0)
+[1-9]\.0
+# name of the 99th-percentile statistic (its value is a macro)
+99

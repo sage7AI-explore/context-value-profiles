@@ -1,0 +1,45 @@
+{
+ "n_instances": 20,
+ "base": 0.85,
+ "mcv": {
+  "example": {
+   "raw": -0.05,
+   "value": -0.03333333333333333,
+   "lo": -0.15,
+   "hi": 0.0,
+   "n": 20
+  },
+  "tool_schema": {
+   "raw": 0.8,
+   "value": 0.5333333333333333,
+   "lo": 0.6,
+   "hi": 0.95,
+   "n": 20
+  }
+ },
+ "short": {
+  "tool_schema": {
+   "raw": 0.25,
+   "value": 0.16666666666666666,
+   "lo": 0.05,
+   "hi": 0.45,
+   "n": 20
+  }
+ },
+ "interaction": {
+  "example|tool_schema": {
+   "raw": 0.0,
+   "value": 0.0,
+   "lo": -0.15,
+   "hi": 0.15,
+   "n": 20
+  }
+ },
+ "model": "qwen3:8b",
+ "family": "tool",
+ "value_model": {
+  "n": 0,
+  "coef": null,
+  "intercept": null
+ }
+}

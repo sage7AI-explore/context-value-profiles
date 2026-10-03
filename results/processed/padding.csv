@@ -1,0 +1,8 @@
+family,type,n,removal_effect,padded_effect
+facts,example,20,0.0,0.0
+facts,fact,20,0.5,0.45
+history,example,20,0.0,0.0
+history,history_turn,20,0.45,0.45
+history,note,20,0.0,0.0
+tool,example,20,0.0,0.0
+tool,tool_schema,20,0.9,0.9

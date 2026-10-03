@@ -1,2 +1,57 @@
-% INTRODUCTION — ~1.0 page: problem, why now, gap vs. closest work, contributions (bulleted), results preview via \R macros
-% Numbers ONLY via \R... macros from generated/numbers.tex.
+% INTRODUCTION. Numbers ONLY via \R... macros from generated/numbers.tex.
+An LLM agent's prompt is assembled, not written. Before each decision a harness collects tool schemas, retrieved
+documents, worked examples, notes and conversation history, and must fit them into a token budget set by latency, cost or
+the model's window~\cite{cesurvey2025}. What to keep is usually decided by heuristics: a relevance score against the
+goal, a coverage objective over candidate passages~\cite{pacms2026}, a compressor that deletes tokens~\cite{llmlingua2_2024},
+or fixed priorities written by an engineer. None of these asks the question a budgeted system actually faces:
+\emph{how much does this kind of context change task success for this model on this task family?} The answer is not
+obvious. Models use long contexts unevenly~\cite{lostmiddle2024}, and a block can be relevant to the goal yet add
+nothing the model needs, or be redundant with another block that is already included.
+
+This paper measures that quantity directly and uses it. A \emph{marginal context value (MCV) profile} records, for a
+(model, task family) pair, the expected drop in success when every block of a type is removed, the value of the type's
+short variant, and the pairwise interaction between types, each with a bootstrap interval. Profiles are estimated once,
+offline, by counterfactual ablation on development instances, with a length-neutral control that separates content from
+prompt length. An instance-level block-value model, trained on leave-one-block-out deltas from the same runs, ranks
+individual blocks. At inference time a compiler solves a budgeted selection program with dependencies, variants and
+interaction terms using CP-SAT and returns a certificate; it calls no model.
+
+Prior work values context in related ways but for other decisions: attribution methods explain one generation by
+ablating its sources~\cite{contextcite2024,attribot2024}, Shapley-style methods value demonstrations, prompts, data
+points or skills~\cite{demoshapley2024,promptshapley2023,datashapley2019,skillsv2026}, and recent context-allocation
+studies measure the causal effect of context in generative search~\cite{ctxalloc2026}. Section~\ref{sec:related}
+positions MCV profiles against these and against budgeted selectors. The distinguishing combination is a reusable,
+type-level, interval-reported value table measured per model and task family and compiled under a hard token budget.
+
+We evaluate the approach under a pre-registered protocol (hypotheses, margins, sample sizes and the method version fixed
+before any test run) on three task families: multi-hop question answering over HotpotQA documents with distractors,
+tool selection and argument filling over a \RNumTools-tool catalog built from BFCL, and recall of the latest value of a
+user attribute from \RNumSessions synthetic sessions. All models run locally (Qwen3-4B-Instruct for the main study,
+Qwen3-8B for transfer). We compare against six baselines, including LLMLingua-2 and a PACMS-style coverage selector.
+
+The results are mixed, and we report them as such. \textbf{The primary hypothesis failed:} MCV-compiled context did not
+achieve a higher area under the success--budget curve than the best baseline (embedding relevance) in any family. It was
+\RHOneHistoryDiff{} lower on history, where at the smallest budget the block-value model kept the session containing the
+answer in \RRecallOurs of plans, against \RRecallRel for relevance ranking. \textbf{The efficiency hypothesis held} in
+\RHOnebPass of three families. At an 8k budget the compiler, which leaves budget unused when no remaining block has
+positive value, used \RTokCutTool fewer prompt tokens than full context on tool use and \RTokCutHistory fewer on history
+with non-inferior success. On question answering it used \RTokCutFacts fewer, but non-inferiority was not shown.
+Interaction terms had no measurable effect. The profiles themselves were informative. Tool schemas and documents carry
+large value (\RMcvToolToolSchema and \RMcvFactsFact), while worked examples carry essentially none in all three families.
+A stale note is redundant with history (interaction \RIntHistoryHistoryTurnNote). The length-neutral control moved no
+value by more than \RPadDiffMax, and the type values of the 4B and 8B models were rank-correlated ($\rho=\RRho$).
+
+\textbf{Contributions.}
+\begin{itemize}
+\item \emph{MCV profiles:} a definition and estimator of per-(model, family) type values, short-variant values and
+pairwise interactions with shrinkage and bootstrap intervals, plus a length-neutral control (Sections~\ref{sec:problem}
+and~\ref{sec:design}).
+\item \emph{A certified budget compiler:} a CP-SAT program over blocks, variants, dependencies and type interactions
+that enforces the budget in the model's own tokenizer and leaves budget unused when context has no value
+(Section~\ref{sec:design}).
+\item \emph{A pre-registered, fully local evaluation} of eight context policies on three task families with measured
+token counts, paired tests and Holm correction. It includes a failed primary hypothesis, its diagnosed cause, and a
+profiling break-even analysis (Section~\ref{sec:eval}).
+\item \emph{An open artifact:} the \texttt{mcv} package, data adapters, logs of every model call, and the scripts that
+produce every number and figure in this paper from those logs.
+\end{itemize}

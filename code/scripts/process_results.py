@@ -24,6 +24,7 @@ BUDGETS = [1000, 2000, 4000, 8000]
 UNB = 10 ** 9
 BASELINES = ["B1", "B2", "B3", "B4", "B5"]
 N_BOOT = 10_000
+MARGIN = 0.05
 
 
 def load_eval(prefixes: tuple) -> pd.DataFrame:
@@ -36,6 +37,8 @@ def load_eval(prefixes: tuple) -> pd.DataFrame:
         return df
     df["policy_label"] = np.where((df["policy"] == "OURS") & (df["profile_model"] != df["model"]) & df["profile_model"].notna(),
                                   "OURS-T", df["policy"])
+    if "label" in df:  # run.py records OURS-T / OURS-native explicitly
+        df["policy_label"] = df["label"].fillna(df["policy_label"])
     return df
 
 
@@ -110,6 +113,28 @@ def compare(A: pd.DataFrame, a: str, b: str) -> dict | None:
             "dz": float(e / sd) if sd > 0 else np.nan}
 
 
+def h1b_tests(df: pd.DataFrame, budget: int = 8000) -> list:
+    """Non-inferiority of success(OURS@8k) vs B0 with margin MARGIN. p = one-sided paired bootstrap p-value for
+    H0: mean d <= -MARGIN, i.e. (#{bootstrap means <= -MARGIN} + 1) / (N_BOOT + 1); a shifted Wilcoxon is invalid for
+    binary outcomes with many ties."""
+    ok, out = df[df["status"] == "ok"], []
+    for (m, f), g in ok.groupby(["model", "family"]):
+        o = g[(g["policy_label"] == "OURS") & (g["budget"] == budget)].set_index("iid")
+        b = g[g["policy_label"] == "B0"].set_index("iid")
+        idx = o.index.intersection(b.index)
+        if len(idx) < 5:
+            continue
+        d = o.loc[idx, "success"].astype(float).values - b.loc[idx, "success"].astype(float).values
+        e, lo, hi = boot_mean(d)
+        bs = d[np.random.default_rng(0).integers(0, len(d), (N_BOOT, len(d)))].mean(1)
+        pw = float(((bs <= -MARGIN).sum() + 1) / (N_BOOT + 1))
+        sd = d.std(ddof=1)
+        out.append({"model": m, "family": f, "hyp": "H1b", "best_baseline": "B0", "a": "OURS@8k", "b": "B0", "n": len(idx),
+                    "diff": e, "lo": lo, "hi": hi, "p_wilcoxon": pw, "p_perm": np.nan, "dz": float(e / sd) if sd > 0 else np.nan,
+                    "tokens_a": o.loc[idx, "prompt_tokens_measured"].mean(), "tokens_b": b.loc[idx, "prompt_tokens_measured"].mean()})
+    return out
+
+
 def main(prefix_main: str = "main_", prefix_transfer: str = "transfer_") -> None:
     PROC.mkdir(parents=True, exist_ok=True)
     df = load_eval((prefix_main, prefix_transfer, "pilot_"))
@@ -117,7 +142,9 @@ def main(prefix_main: str = "main_", prefix_transfer: str = "transfer_") -> None
         print("no eval runs yet")
         return
     df["split_run"] = df["run"].str.split("_").str[0]
-    success_table(df).to_csv(PROC / "success.csv", index=False)
+    dev = df["run"].str.startswith("pilot")
+    success_table(df[~dev]).to_csv(PROC / "success.csv", index=False)
+    success_table(df[dev].assign(policy_label=df["run"] + ":" + df["policy_label"])).to_csv(PROC / "success_dev.csv", index=False)
     main_df = df[df["run"].str.startswith(prefix_main)]
     A = per_instance_aubc(main_df)
     A.to_csv(PROC / "aubc_per_instance.csv", index=False)
@@ -135,10 +162,12 @@ def main(prefix_main: str = "main_", prefix_transfer: str = "transfer_") -> None
             r = compare(g, "OURS", best)
             if r:
                 tests.append({"model": m, "family": f, "hyp": "H1", "best_baseline": best, **r})
-        if "OURS" in means and "OURS-A" in means:
-            r = compare(g, "OURS", "OURS-A")
-            if r:
-                tests.append({"model": m, "family": f, "hyp": "H2", "best_baseline": "", **r})
+    for m, g in A.groupby("model"):  # H2 pooled over families
+        g = g.assign(iid=g["family"] + "/" + g["iid"].astype(str))
+        r = compare(g, "OURS", "OURS-A")
+        if r:
+            tests.append({"model": m, "family": "pooled", "hyp": "H2", "best_baseline": "", **r})
+    tests += h1b_tests(main_df)
     T = pd.DataFrame(tests)
     if len(T):
         T["p_holm"] = holm(list(T["p_wilcoxon"]))

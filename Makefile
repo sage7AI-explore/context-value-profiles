@@ -9,7 +9,7 @@ env:            ## Phase 0
 	$(PY) scripts/record_env.py
 
 test:           ## Phase 2 (>= 85% coverage on core modules)
-	$(PY) -m pytest -q --cov=mcv --cov-report=term-missing
+	$(PY) -m pytest -q --cov=mcv --cov-report=term-missing --cov-report=json:../results/processed/coverage.json --junitxml=../results/processed/tests.xml
 
 data:           ## Phase 3: seeded generators/adapters -> data/processed (+ TEST.lock)
 	$(PY) -m mcv.data.build
@@ -19,6 +19,8 @@ experiments:    ## Phase 4
 
 results:        ## Phase 5: process raw logs; independent recomputation must match exactly
 	$(PY) scripts/process_results.py
+	$(PY) scripts/analyze_extra.py
+	$(PY) scripts/analyze_profiles.py
 	$(PY) scripts/recompute_metrics.py
 
 verify:         ## Phase 5 gate
@@ -26,6 +28,8 @@ verify:         ## Phase 5 gate
 
 figures:        ## Phase 6
 	$(PY) scripts/make_figures.py
+	$(PY) scripts/make_excerpts.py
+	$(PY) scripts/make_tables.py
 
 numbers:
 	$(PY) scripts/export_paper_numbers.py

@@ -1,2 +1,16 @@
-% CONCLUSION — ~0.25 page; then AI-assistance and artifact availability statements
-% Numbers ONLY via \R... macros from generated/numbers.tex.
+% CONCLUSION. Numbers ONLY via \R... macros.
+Marginal context value profiles measure, per model and task family, how much each kind of context changes success.
+A budget compiler can then act on them with certificates and millisecond latency. In a pre-registered local evaluation
+the compiled context did not beat embedding relevance in area under the success--budget curve, and it lost on history
+because its block-level ranker learned recency instead of relevance. It did reduce prompt tokens at a generous budget by
+\RTokCutTool on tool use and \RTokCutHistory on history without losing success, and its profiles exposed which context
+types were worth sending at all. We release the method, data adapters, logs and analysis so that the profiles, and the
+negative result, can be checked and extended.
+
+\textbf{Use of AI assistance.} An AI coding assistant was used to write and test code, run the experiments, and draft
+and edit text. All numbers in the paper are generated from the released logs by scripts, and every reference was
+verified against its DOI record. The author reviewed the content and is responsible for it.
+
+\textbf{Artifact availability.} The \texttt{mcv} package, data adapters (with the licenses of HotpotQA and BFCL),
+pre-registration, raw logs of every model call, and the scripts that regenerate all figures, tables and numbers with one
+command will be released under an open license with the preprint.

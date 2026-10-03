@@ -1,0 +1,1887 @@
+{
+ "RAubcFactsAdditive": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5433333333333333
+ },
+ "RAubcFactsAdditiveHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6366666666666667
+ },
+ "RAubcFactsAdditiveLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4483333333333333
+ },
+ "RAubcFactsCov": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5416666666666666
+ },
+ "RAubcFactsCovHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6283333333333334
+ },
+ "RAubcFactsCovLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4533333333333333
+ },
+ "RAubcFactsFull": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.58
+ },
+ "RAubcFactsFullHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.68
+ },
+ "RAubcFactsFullLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.48
+ },
+ "RAubcFactsLingua": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5555555555555556
+ },
+ "RAubcFactsLinguaHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.7055555555555555
+ },
+ "RAubcFactsLinguaLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4055555555555556
+ },
+ "RAubcFactsOurs": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.55
+ },
+ "RAubcFactsOursHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.645
+ },
+ "RAubcFactsOursLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.455
+ },
+ "RAubcFactsRel": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5750000000000001
+ },
+ "RAubcFactsRelHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6666666666666667
+ },
+ "RAubcFactsRelLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4800000000000001
+ },
+ "RAubcFactsTier": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5444444444444445
+ },
+ "RAubcFactsTierHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6944444444444444
+ },
+ "RAubcFactsTierLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.3944444444444445
+ },
+ "RAubcFactsTrunc": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5111111111111112
+ },
+ "RAubcFactsTruncHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.65
+ },
+ "RAubcFactsTruncLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.3722222222222223
+ },
+ "RAubcHistoryAdditive": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9366666666666668
+ },
+ "RAubcHistoryAdditiveHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9533333333333333
+ },
+ "RAubcHistoryAdditiveLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9183333333333332
+ },
+ "RAubcHistoryCov": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8166666666666665
+ },
+ "RAubcHistoryCovHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8566666666666667
+ },
+ "RAubcHistoryCovLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.7733333333333333
+ },
+ "RAubcHistoryFull": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 1.0
+ },
+ "RAubcHistoryFullHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 1.0
+ },
+ "RAubcHistoryFullLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 1.0
+ },
+ "RAubcHistoryLingua": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9222222222222224
+ },
+ "RAubcHistoryLinguaHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.95
+ },
+ "RAubcHistoryLinguaLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8944444444444443
+ },
+ "RAubcHistoryOurs": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9366666666666664
+ },
+ "RAubcHistoryOursHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9533333333333336
+ },
+ "RAubcHistoryOursLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9183333333333332
+ },
+ "RAubcHistoryRel": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.99
+ },
+ "RAubcHistoryRelHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9966666666666668
+ },
+ "RAubcHistoryRelLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9816666666666668
+ },
+ "RAubcHistoryTier": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.95
+ },
+ "RAubcHistoryTierHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9777777777777776
+ },
+ "RAubcHistoryTierLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9222222222222222
+ },
+ "RAubcHistoryTrunc": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.95
+ },
+ "RAubcHistoryTruncHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9777777777777776
+ },
+ "RAubcHistoryTruncLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9222222222222222
+ },
+ "RAubcToolAdditive": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.91
+ },
+ "RAubcToolAdditiveHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.96
+ },
+ "RAubcToolAdditiveLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.851625
+ },
+ "RAubcToolCov": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.82
+ },
+ "RAubcToolCovHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8783333333333333
+ },
+ "RAubcToolCovLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.7583333333333333
+ },
+ "RAubcToolFull": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9
+ },
+ "RAubcToolFullHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.95
+ },
+ "RAubcToolFullLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.84
+ },
+ "RAubcToolLingua": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4944444444444444
+ },
+ "RAubcToolLinguaHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5666666666666667
+ },
+ "RAubcToolLinguaLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.4222222222222222
+ },
+ "RAubcToolOurs": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9116666666666666
+ },
+ "RAubcToolOursHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9616666666666668
+ },
+ "RAubcToolOursLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8516666666666667
+ },
+ "RAubcToolRel": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.905
+ },
+ "RAubcToolRelHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.9566666666666666
+ },
+ "RAubcToolRelLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.8483333333333333
+ },
+ "RAubcToolTier": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6722222222222223
+ },
+ "RAubcToolTierHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.7555555555555554
+ },
+ "RAubcToolTierLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5833333333333334
+ },
+ "RAubcToolTrunc": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.6166666666666667
+ },
+ "RAubcToolTruncHi": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.7
+ },
+ "RAubcToolTruncLo": {
+  "fmt": "f3",
+  "source": "aubc.csv",
+  "value": 0.5277777777777778
+ },
+ "RBaseEightFacts": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 0.55
+ },
+ "RBaseEightHistory": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 1.0
+ },
+ "RBaseEightTool": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 0.85
+ },
+ "RBaseFourFacts": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 0.525
+ },
+ "RBaseFourHistory": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 1.0
+ },
+ "RBaseFourTool": {
+  "fmt": "pct0",
+  "source": "profiles.csv",
+  "value": 0.85
+ },
+ "RBreakEvenFacts": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 1015.9061714001966
+ },
+ "RBreakEvenHistory": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 5901.3910273427155
+ },
+ "RBreakEvenTool": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 931.2529544441592
+ },
+ "RBudgetedEpisodes": {
+  "fmt": "int",
+  "source": "success.csv",
+  "value": 6201
+ },
+ "RCoefLen": {
+  "fmt": "f2",
+  "source": "history value model",
+  "value": 0.13420904352271595
+ },
+ "RCoefRecency": {
+  "fmt": "f2",
+  "source": "history value model",
+  "value": 0.09508013368706149
+ },
+ "RCoefSim": {
+  "fmt": "f2",
+  "source": "history value model",
+  "value": 0.33702999813182843
+ },
+ "RCoverage": {
+  "fmt": "pct0",
+  "source": "coverage.json",
+  "value": 0.9563318777292577
+ },
+ "RCvModelFacts": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.06960630844045744
+ },
+ "RCvModelHistory": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.1488111728324781
+ },
+ "RCvModelTool": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.2678466557426712
+ },
+ "RCvNFacts": {
+  "fmt": "int",
+  "source": "value_model_cv.csv",
+  "value": 215
+ },
+ "RCvNHistory": {
+  "fmt": "int",
+  "source": "value_model_cv.csv",
+  "value": 219
+ },
+ "RCvNTool": {
+  "fmt": "int",
+  "source": "value_model_cv.csv",
+  "value": 217
+ },
+ "RCvNonzeroFacts": {
+  "fmt": "pct0",
+  "source": "value_model_cv.csv",
+  "value": 0.046511627906976744
+ },
+ "RCvNonzeroHistory": {
+  "fmt": "pct0",
+  "source": "value_model_cv.csv",
+  "value": 0.0502283105022831
+ },
+ "RCvNonzeroTool": {
+  "fmt": "pct0",
+  "source": "value_model_cv.csv",
+  "value": 0.041474654377880185
+ },
+ "RCvSimFacts": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.1734399106186104
+ },
+ "RCvSimHistory": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.27116702605029347
+ },
+ "RCvSimTool": {
+  "fmt": "f2",
+  "source": "value_model_cv.csv",
+  "value": 0.26785855671376624
+ },
+ "RDevAubcOne": {
+  "fmt": "f3",
+  "source": "pilot_dev_4b (OURS, mean over families)",
+  "value": 0.6333333333333334
+ },
+ "RDevAubcThree": {
+  "fmt": "f3",
+  "source": "pilot3_dev_4b (OURS, mean over families)",
+  "value": 0.7361111111111112
+ },
+ "RDevAubcTwo": {
+  "fmt": "f3",
+  "source": "pilot2_dev_4b (OURS, mean over families)",
+  "value": 0.7583333333333333
+ },
+ "RFactsGained": {
+  "fmt": "int",
+  "source": "facts 8k: OURS correct, B0 wrong",
+  "value": 2
+ },
+ "RFactsLost": {
+  "fmt": "int",
+  "source": "facts 8k: B0 correct, OURS wrong",
+  "value": 6
+ },
+ "RFactsLostGoldDropped": {
+  "fmt": "int",
+  "source": "facts 8k losses with a supporting paragraph removed",
+  "value": 2
+ },
+ "RFullTokFacts": {
+  "fmt": "int",
+  "source": "instances.jsonl (mean full-context tokens)",
+  "value": 2960.8333333333335
+ },
+ "RFullTokHistory": {
+  "fmt": "int",
+  "source": "instances.jsonl (mean full-context tokens)",
+  "value": 2717.62
+ },
+ "RFullTokTool": {
+  "fmt": "int",
+  "source": "instances.jsonl (mean full-context tokens)",
+  "value": 4234.763333333333
+ },
+ "RHOneFactsDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0249999999999999
+ },
+ "RHOneFactsHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0183333333333333
+ },
+ "RHOneFactsLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.07
+ },
+ "RHOneFactsP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 1.0
+ },
+ "RHOneHistoryDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0533333333333333
+ },
+ "RHOneHistoryHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0349999999999999
+ },
+ "RHOneHistoryLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0716666666666666
+ },
+ "RHOneHistoryP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 6.60660823543952e-05
+ },
+ "RHOneToolDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0066666666666666
+ },
+ "RHOneToolHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0266666666666666
+ },
+ "RHOneToolLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0116666666666666
+ },
+ "RHOneToolP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 1.0
+ },
+ "RHOnebFactsDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.04
+ },
+ "RHOnebFactsHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.01
+ },
+ "RHOnebFactsLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.1
+ },
+ "RHOnebFactsP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 1.0
+ },
+ "RHOnebHistoryDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0
+ },
+ "RHOnebHistoryHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0
+ },
+ "RHOnebHistoryLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0
+ },
+ "RHOnebHistoryP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0005999400059994
+ },
+ "RHOnebPass": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2
+ },
+ "RHOnebToolDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.01
+ },
+ "RHOnebToolHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.03
+ },
+ "RHOnebToolLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0
+ },
+ "RHOnebToolP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0005999400059994
+ },
+ "RHThreeVerdict": {
+  "fmt": "raw",
+  "source": "transfer runs: lower CI bound vs margin",
+  "value": "non-inferior"
+ },
+ "RHTwoPooledDiff": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0027777777777777
+ },
+ "RHTwoPooledHi": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0066666666666666
+ },
+ "RHTwoPooledLo": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": -0.0005555555555555
+ },
+ "RHTwoPooledP": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 1.0
+ },
+ "RIntFactsExampleFact": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.1
+ },
+ "RIntHistoryExampleHistoryTurn": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.0
+ },
+ "RIntHistoryExampleNote": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.0
+ },
+ "RIntHistoryHistoryTurnNote": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": -0.6
+ },
+ "RIntToolExampleToolSchema": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.025
+ },
+ "RLoc": {
+  "fmt": "int",
+  "source": "code/mcv non-blank lines",
+  "value": 1227
+ },
+ "RMainEpisodes": {
+  "fmt": "int",
+  "source": "main_4b + main_4b_weak",
+  "value": 6180
+ },
+ "RMargin": {
+  "fmt": "f2",
+  "source": "PLAN.md",
+  "value": 0.05
+ },
+ "RMaxOvershoot": {
+  "fmt": "int",
+  "source": "max measured prompt minus budget",
+  "value": 2
+ },
+ "RMcvEightFactsExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.0
+ },
+ "RMcvEightFactsFact": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.35
+ },
+ "RMcvEightHistoryExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.1
+ },
+ "RMcvEightHistoryHistoryTurn": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.45
+ },
+ "RMcvEightHistoryNote": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.05
+ },
+ "RMcvEightToolExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": -0.05
+ },
+ "RMcvEightToolToolSchema": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.8
+ },
+ "RMcvFactsExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.05
+ },
+ "RMcvFactsFact": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.35
+ },
+ "RMcvHistoryExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.0
+ },
+ "RMcvHistoryHistoryTurn": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.4
+ },
+ "RMcvHistoryNote": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.0
+ },
+ "RMcvToolExample": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": -0.025
+ },
+ "RMcvToolToolSchema": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.85
+ },
+ "RNBoot": {
+  "fmt": "int",
+  "source": "analysis",
+  "value": 10000
+ },
+ "RNDev": {
+  "fmt": "int",
+  "source": "instances.jsonl",
+  "value": 60
+ },
+ "RNFactsAdditive": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNFactsCov": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNFactsFull": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNFactsLingua": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNFactsOurs": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNFactsRel": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNFactsTier": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNFactsTrunc": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNHistoryAdditive": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNHistoryCov": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNHistoryFull": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNHistoryLingua": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNHistoryOurs": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNHistoryRel": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNHistoryTier": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNHistoryTrunc": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNLobo": {
+  "fmt": "int",
+  "source": "mcv/run.py --lobo default",
+  "value": 6
+ },
+ "RNMain": {
+  "fmt": "int",
+  "source": "experiments/run_all.sh --limit (main grid)",
+  "value": 100
+ },
+ "RNPerFamily": {
+  "fmt": "int",
+  "source": "mcv/data/build.py",
+  "value": 300
+ },
+ "RNProfEight": {
+  "fmt": "int",
+  "source": "profiles.csv",
+  "value": 20
+ },
+ "RNProfFour": {
+  "fmt": "int",
+  "source": "profiles.csv",
+  "value": 40
+ },
+ "RNTest": {
+  "fmt": "int",
+  "source": "instances.jsonl",
+  "value": 240
+ },
+ "RNToolAdditive": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNToolCov": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNToolFull": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNToolLingua": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNToolOurs": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNToolRel": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 100
+ },
+ "RNToolTier": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNToolTrunc": {
+  "fmt": "int",
+  "source": "aubc.csv",
+  "value": 30
+ },
+ "RNTransfer": {
+  "fmt": "int",
+  "source": "experiments/run_all.sh --limit (transfer)",
+  "value": 40
+ },
+ "RNWeak": {
+  "fmt": "int",
+  "source": "experiments/run_all.sh --limit (weak baselines)",
+  "value": 30
+ },
+ "RNZero": {
+  "fmt": "int",
+  "source": "mcv/profile/estimate.py",
+  "value": 10
+ },
+ "RNumCtx": {
+  "fmt": "int",
+  "source": "mcv/agent/loop.py",
+  "value": 16384
+ },
+ "RNumDocs": {
+  "fmt": "int",
+  "source": "instances.jsonl",
+  "value": 20
+ },
+ "RNumPredict": {
+  "fmt": "int",
+  "source": "mcv/agent/loop.py num_predict",
+  "value": 96
+ },
+ "RNumSessions": {
+  "fmt": "int",
+  "source": "instances.jsonl",
+  "value": 24
+ },
+ "RNumTools": {
+  "fmt": "int",
+  "source": "instances.jsonl",
+  "value": 30
+ },
+ "ROllamaVersion": {
+  "fmt": "raw",
+  "source": "ENVIRONMENT.md",
+  "value": "0.35.0"
+ },
+ "ROverBudget": {
+  "fmt": "int",
+  "source": "success.csv (budgeted episodes with measured prompt > budget)",
+  "value": 34
+ },
+ "RPadDiffMax": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.04999999999999999
+ },
+ "RPadFactsExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RPadFactsFact": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.45
+ },
+ "RPadHistoryExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RPadHistoryHistoryTurn": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.45
+ },
+ "RPadHistoryNote": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RPadN": {
+  "fmt": "int",
+  "source": "padding.csv",
+  "value": 20
+ },
+ "RPadToolExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RPadToolToolSchema": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.9
+ },
+ "RPlanMedianMs": {
+  "fmt": "f1",
+  "source": "plan_seconds",
+  "value": 6.920583517057821
+ },
+ "RPowerFacts": {
+  "fmt": "pct0",
+  "source": "PLAN.md power analysis (facts, n = 100)",
+  "value": 0.58
+ },
+ "RProfCallsFacts": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 440
+ },
+ "RProfCallsHistory": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 560
+ },
+ "RProfCallsTool": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 440
+ },
+ "RProfCallsTotal": {
+  "fmt": "int",
+  "source": "cost.csv",
+  "value": 1440.0
+ },
+ "RProfHours": {
+  "fmt": "f1",
+  "source": "cost.csv",
+  "value": 2.95941806807878
+ },
+ "RRecallAdditive": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.64
+ },
+ "RRecallCov": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.2
+ },
+ "RRecallLingua": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.0
+ },
+ "RRecallOurs": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.64
+ },
+ "RRecallRel": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.94
+ },
+ "RRecallTier": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.43333333333333335
+ },
+ "RRecallTrunc": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.43333333333333335
+ },
+ "RRemFactsExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RRemFactsFact": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.5
+ },
+ "RRemHistoryExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RRemHistoryHistoryTurn": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.45
+ },
+ "RRemHistoryNote": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RRemToolExample": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.0
+ },
+ "RRemToolToolSchema": {
+  "fmt": "f2",
+  "source": "padding.csv",
+  "value": 0.9
+ },
+ "RRho": {
+  "fmt": "f2",
+  "source": "fidelity.csv",
+  "value": 0.8829187134416479
+ },
+ "RRhoN": {
+  "fmt": "int",
+  "source": "fidelity.csv",
+  "value": 7
+ },
+ "RScale": {
+  "fmt": "int",
+  "source": "mcv/compile/knapsack.py",
+  "value": 10000
+ },
+ "RSesoi": {
+  "fmt": "f2",
+  "source": "PLAN.md power analysis (smallest effect of interest)",
+  "value": 0.05
+ },
+ "RShortFactsFact": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.125
+ },
+ "RShortHistoryHistoryTurn": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": -0.025
+ },
+ "RShortToolToolSchema": {
+  "fmt": "f2",
+  "source": "profiles.csv",
+  "value": 0.3
+ },
+ "RSolveFallback": {
+  "fmt": "int",
+  "source": "certificates",
+  "value": 0
+ },
+ "RSolveMaxMs": {
+  "fmt": "int",
+  "source": "certificates",
+  "value": 357.26695897756144
+ },
+ "RSolveMedianMs": {
+  "fmt": "f1",
+  "source": "certificates",
+  "value": 2.2721459972672164
+ },
+ "RSolveNinetyNineMs": {
+  "fmt": "f1",
+  "source": "certificates",
+  "value": 22.289022083859766
+ },
+ "RSolveOptimal": {
+  "fmt": "pct1",
+  "source": "certificates",
+  "value": 1.0
+ },
+ "RSolves": {
+  "fmt": "int",
+  "source": "certificates",
+  "value": 2400
+ },
+ "RSsDraws": {
+  "fmt": "int",
+  "source": "analyze_profiles.py",
+  "value": 300
+ },
+ "RSsMaeFive": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.08742857142857142
+ },
+ "RSsMaeTen": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.06019047619047619
+ },
+ "RSsMaeThirty": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.019015873015873017
+ },
+ "RSsMaeTwenty": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.03226190476190476
+ },
+ "RSsRhoFive": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.9045340337332909
+ },
+ "RSsRhoTen": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.9349469900084572
+ },
+ "RSsRhoThirty": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.9908673886137246
+ },
+ "RSsRhoTwenty": {
+  "fmt": "f2",
+  "source": "profile_sample_size.csv",
+  "value": 0.9723448696087955
+ },
+ "RSsTopFive": {
+  "fmt": "pct0",
+  "source": "profile_sample_size.csv",
+  "value": 0.74
+ },
+ "RSsTopTen": {
+  "fmt": "pct0",
+  "source": "profile_sample_size.csv",
+  "value": 0.92
+ },
+ "RSsTopThirty": {
+  "fmt": "pct0",
+  "source": "profile_sample_size.csv",
+  "value": 1.0
+ },
+ "RSsTopTwenty": {
+  "fmt": "pct0",
+  "source": "profile_sample_size.csv",
+  "value": 0.9933333333333333
+ },
+ "RStatusNotOk": {
+  "fmt": "int",
+  "source": "main runs",
+  "value": 0
+ },
+ "RSucFactsAdditiveEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucFactsAdditiveFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucFactsAdditiveOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.5
+ },
+ "RSucFactsAdditiveTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.57
+ },
+ "RSucFactsCovEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.58
+ },
+ "RSucFactsCovFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.58
+ },
+ "RSucFactsCovOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.45
+ },
+ "RSucFactsCovTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.53
+ },
+ "RSucFactsLinguaEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsLinguaFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsLinguaOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.3666666666666666
+ },
+ "RSucFactsLinguaTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.5333333333333333
+ },
+ "RSucFactsOursEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucFactsOursFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucFactsOursOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucFactsOursTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.57
+ },
+ "RSucFactsRelEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.58
+ },
+ "RSucFactsRelFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.58
+ },
+ "RSucFactsRelOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.57
+ },
+ "RSucFactsRelTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.57
+ },
+ "RSucFactsTierEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsTierFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsTierOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.3
+ },
+ "RSucFactsTierTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.5333333333333333
+ },
+ "RSucFactsTruncEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsTruncFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.6333333333333333
+ },
+ "RSucFactsTruncOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.2333333333333333
+ },
+ "RSucFactsTruncTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.4666666666666667
+ },
+ "RSucFullFacts": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 0.58
+ },
+ "RSucFullHistory": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 1.0
+ },
+ "RSucFullTool": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 0.9
+ },
+ "RSucGivenNoGoldOurs": {
+  "fmt": "pct0",
+  "source": "history_recall.csv",
+  "value": 0.0
+ },
+ "RSucHistoryAdditiveEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryAdditiveFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryAdditiveOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.64
+ },
+ "RSucHistoryAdditiveTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.99
+ },
+ "RSucHistoryCovEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryCovFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryCovOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.54
+ },
+ "RSucHistoryCovTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.68
+ },
+ "RSucHistoryLinguaEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryLinguaFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryLinguaOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.5333333333333333
+ },
+ "RSucHistoryLinguaTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryOursEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryOursFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryOursOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.64
+ },
+ "RSucHistoryOursTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.99
+ },
+ "RSucHistoryRelEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryRelFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryRelOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.94
+ },
+ "RSucHistoryRelTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTierEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTierFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTierOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.7
+ },
+ "RSucHistoryTierTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTruncEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTruncFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucHistoryTruncOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.7
+ },
+ "RSucHistoryTruncTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 1.0
+ },
+ "RSucOursEightFacts": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 0.54
+ },
+ "RSucOursEightHistory": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 1.0
+ },
+ "RSucOursEightTool": {
+  "fmt": "pct0",
+  "source": "h1b.csv",
+  "value": 0.91
+ },
+ "RSucToolAdditiveEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolAdditiveFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolAdditiveOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolAdditiveTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolCovEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9
+ },
+ "RSucToolCovFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.89
+ },
+ "RSucToolCovOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.62
+ },
+ "RSucToolCovTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.81
+ },
+ "RSucToolLinguaEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9666666666666668
+ },
+ "RSucToolLinguaFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.8333333333333334
+ },
+ "RSucToolLinguaOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.0
+ },
+ "RSucToolLinguaTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.1666666666666666
+ },
+ "RSucToolOursEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolOursFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolOursOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.92
+ },
+ "RSucToolOursTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolRelEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9
+ },
+ "RSucToolRelFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9
+ },
+ "RSucToolRelOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolRelTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.91
+ },
+ "RSucToolTierEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9666666666666668
+ },
+ "RSucToolTierFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9666666666666668
+ },
+ "RSucToolTierOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.2
+ },
+ "RSucToolTierTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.4666666666666667
+ },
+ "RSucToolTruncEight": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9666666666666668
+ },
+ "RSucToolTruncFour": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.9
+ },
+ "RSucToolTruncOne": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.0666666666666666
+ },
+ "RSucToolTruncTwo": {
+  "fmt": "pct0",
+  "source": "success.csv",
+  "value": 0.4333333333333333
+ },
+ "RTests": {
+  "fmt": "int",
+  "source": "tests.xml",
+  "value": 18
+ },
+ "RTimeLimit": {
+  "fmt": "f1",
+  "source": "mcv/compile/knapsack.py",
+  "value": 2.0
+ },
+ "RTokCutFacts": {
+  "fmt": "pct1",
+  "source": "h1b.csv",
+  "value": 0.30899702800876583
+ },
+ "RTokCutHistory": {
+  "fmt": "pct1",
+  "source": "h1b.csv",
+  "value": 0.06931767996466953
+ },
+ "RTokCutTool": {
+  "fmt": "pct1",
+  "source": "h1b.csv",
+  "value": 0.3492771843091562
+ },
+ "RTokFullFacts": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2997.99
+ },
+ "RTokFullHistory": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2717.2
+ },
+ "RTokFullTool": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 4239.67
+ },
+ "RTokOursFacts": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2071.62
+ },
+ "RTokOursHistory": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2528.85
+ },
+ "RTokOursTool": {
+  "fmt": "int",
+  "source": "h1b.csv",
+  "value": 2758.85
+ },
+ "RTrFactsNativeEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.625
+ },
+ "RTrFactsNativeTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.625
+ },
+ "RTrFactsRelEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.675
+ },
+ "RTrFactsRelTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.675
+ },
+ "RTrFactsTransferEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.625
+ },
+ "RTrFactsTransferTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.625
+ },
+ "RTrHistoryRelEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.975
+ },
+ "RTrHistoryRelTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.975
+ },
+ "RTrHistoryTransferEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 1.0
+ },
+ "RTrHistoryTransferTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 1.0
+ },
+ "RTrN": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 18
+ },
+ "RTransferDiff": {
+  "fmt": "f3",
+  "source": "transfer runs (pooled OURS-T minus OURS-native)",
+  "value": 0.0
+ },
+ "RTransferHi": {
+  "fmt": "f3",
+  "source": "transfer runs",
+  "value": 0.0
+ },
+ "RTransferLo": {
+  "fmt": "f3",
+  "source": "transfer runs",
+  "value": 0.0
+ },
+ "RTransferN": {
+  "fmt": "int",
+  "source": "transfer runs",
+  "value": 80
+ },
+ "RTransferSameSel": {
+  "fmt": "pct0",
+  "source": "transfer runs: identical selections OURS-T vs OURS-native",
+  "value": 0.7375
+ }
+}

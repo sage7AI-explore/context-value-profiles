@@ -20,7 +20,7 @@ P = ROOT / "paper"
 
 def strip_tex(s: str) -> str:
     s = re.sub(r"(?<!\\)%.*", "", s)                         # comments
-    s = re.sub(r"\\(cite[a-z]*|ref|label|eqref|autoref|input|include|url|href|includegraphics)(\[[^\]]*\])?\{[^}]*\}", "", s)
+    s = re.sub(r"\\(cite[a-z]*|ref|label|eqref|autoref|input|include|url|href|includegraphics|cmidrule\(lr\))(\[[^\]]*\])?\{[^}]*\}", "", s)
     s = re.sub(r"\\begin\{(equation|align)\*?\}.*?\\end\{\1\*?\}", "", s, flags=re.S)
     return s
 

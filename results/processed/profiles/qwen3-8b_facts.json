@@ -1,0 +1,45 @@
+{
+ "n_instances": 20,
+ "base": 0.55,
+ "mcv": {
+  "example": {
+   "raw": 0.0,
+   "value": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  },
+  "fact": {
+   "raw": 0.35,
+   "value": 0.23333333333333334,
+   "lo": 0.1,
+   "hi": 0.6,
+   "n": 20
+  }
+ },
+ "short": {
+  "fact": {
+   "raw": 0.2,
+   "value": 0.13333333333333333,
+   "lo": 0.0,
+   "hi": 0.45,
+   "n": 20
+  }
+ },
+ "interaction": {
+  "example|fact": {
+   "raw": 0.0,
+   "value": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n": 20
+  }
+ },
+ "model": "qwen3:8b",
+ "family": "facts",
+ "value_model": {
+  "n": 0,
+  "coef": null,
+  "intercept": null
+ }
+}

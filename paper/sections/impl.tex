@@ -11,6 +11,6 @@ Hugging Face tokenizer, and the measured token count of every rendered prompt is
 audited. Embedding-based baselines use the open nomic-embed-text model~\cite{nomicembed2024} through the same server.
 The compiler uses the CP-SAT solver of OR-Tools with a time limit per instance and a single worker for determinism.
 Every run writes JSON-lines logs of each call, selection and solver certificate, plus a manifest with the code commit,
-model digests and data hashes.\footnote{Software and data: Ollama 0.35; OR-Tools, scikit-learn, LLMLingua and PyTorch
+model digests and data hashes.\footnote{Software and data: Ollama \ROllamaVersion; OR-Tools, scikit-learn, LLMLingua and PyTorch
 versions pinned in \texttt{code/uv.lock}; HotpotQA (CC BY-SA 4.0) and BFCL v3 (Apache-2.0) as recorded in
 \texttt{data/LICENSES.md}.}
