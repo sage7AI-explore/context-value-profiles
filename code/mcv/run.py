@@ -86,6 +86,7 @@ def fit(model: str) -> None:
     """Estimate per-family profiles and fit block-value models from the profiling log of ``model``."""
     rows = [json.loads(l) for l in (RAW / f"profile_{model.replace(':', '-')}" / "episodes.jsonl").read_text().splitlines()]
     counter = TokenCounter(model)
+    embedder = Embedder(ROOT / "results/cache/embeddings.sqlite")
     outdir = PROC / "profiles"
     outdir.mkdir(parents=True, exist_ok=True)
     for family in sorted({r["family"] for r in rows}):
@@ -95,7 +96,7 @@ def fit(model: str) -> None:
         insts = {x.iid: x for x in load("dev", family)}
         X, y = [], []
         for t in lobo_targets(recs):
-            f = block_features(insts[t["iid"]], prof, counter)
+            f = block_features(insts[t["iid"]], prof, counter, embedder)
             X.append(f[t["block_id"]])
             y.append(t["delta"])
         vm = BlockValueModel().fit(X, y)

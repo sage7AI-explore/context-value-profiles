@@ -4,7 +4,8 @@ Type-level MCV says how much a *kind* of block is worth; selecting among many bl
 20 documents, 24 sessions) needs instance-level signal. We fit a ridge regression, on dev leave-one-block-out deltas,
 from cheap features to the block's marginal value. Features never use gold labels:
   type one-hot, type MCV (from the profile), lexical overlap with the goal (fraction of goal content words in the block),
-  BM25 rank of the block within its type (normalized), log token length, recency (history order, normalized).
+  BM25 rank of the block within its type (normalized), log token length, recency (history order, normalized), and the
+  embedding cosine similarity between block and goal (when an embedder is supplied; 0 otherwise).
 """
 from __future__ import annotations
 
@@ -44,8 +45,12 @@ def _bm25(query: list, docs: list, k1: float = 1.2, b: float = 0.75) -> list:
     return out
 
 
-def block_features(inst: Instance, profile: dict, counter) -> dict:
+def block_features(inst: Instance, profile: dict, counter, embedder=None) -> dict:
     """Return {block_id: feature vector (list)}."""
+    sims = {}
+    if embedder is not None:
+        E = embedder.embed([inst.goal_text()] + [b.text for b in inst.blocks])
+        sims = {b.id: float(E[1 + i] @ E[0]) for i, b in enumerate(inst.blocks)}
     q = words(inst.goal_text())
     qs = set(q)
     feats = {}
@@ -62,7 +67,8 @@ def block_features(inst: Instance, profile: dict, counter) -> dict:
             recency = (b.meta.get("order", 0) / max(1, len(bs) - 1)) if t == BlockType.HISTORY_TURN else 0.0
             mcv = profile.get("mcv", {}).get(t.value, {}).get("value", 0.0)
             onehot = [1.0 if t.value == x else 0.0 for x in TYPES]
-            feats[b.id] = onehot + [mcv, overlap, 1.0 - rank, math.log1p(counter.block_cost(b)) / 10, recency]
+            feats[b.id] = onehot + [mcv, overlap, 1.0 - rank, math.log1p(counter.block_cost(b)) / 10, recency,
+                                    sims.get(b.id, 0.0)]
     return feats
 
 

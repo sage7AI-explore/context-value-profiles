@@ -186,9 +186,9 @@ def llmlingua2(inst, counter, budget, ctx=None) -> Plan:
     return plan
 
 
-def mcv_values(inst: Instance, counter, profile: dict, value_model, short_ok: bool = True) -> dict:
+def mcv_values(inst: Instance, counter, profile: dict, value_model, short_ok: bool = True, embedder=None) -> dict:
     from mcv.profile.features import block_features
-    feats = block_features(inst, profile, counter)
+    feats = block_features(inst, profile, counter, embedder)
     ids = list(feats)
     pred = value_model.predict([feats[i] for i in ids])
     vals = {}
@@ -214,7 +214,8 @@ def interactions(profile: dict, min_abs: float = 0.0) -> dict:
 
 def ours(inst, counter, budget, ctx, additive: bool = False) -> Plan:
     prof = ctx["profile"]
-    vals = mcv_values(inst, counter, prof, ctx["value_model"], short_ok=ctx.get("variants", True))
+    vals = mcv_values(inst, counter, prof, ctx["value_model"], short_ok=ctx.get("variants", True),
+                      embedder=ctx.get("embedder"))
     return compile_plan(inst, counter, budget, vals, {} if additive else interactions(prof),
                         use_variants=ctx.get("variants", True), use_deps=ctx.get("deps", True))
 

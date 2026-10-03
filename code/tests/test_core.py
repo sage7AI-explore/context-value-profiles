@@ -221,7 +221,9 @@ def test_estimator_recovers_known_effects():
 def test_features_and_value_model():
     x, c = inst(), FakeCounter()
     f = block_features(x, {"mcv": {"fact": {"value": 0.4}}}, c)
-    assert set(f) == {b.id for b in x.blocks} and f["f0"][len(f["f0"]) - 4] > f["f1"][len(f["f1"]) - 4]
+    assert set(f) == {b.id for b in x.blocks} and f["f0"][len(f["f0"]) - 5] > f["f1"][len(f["f1"]) - 5]
+    fe = block_features(x, {}, c, FakeEmbedder())
+    assert len(fe["f0"]) == len(f["f0"]) and fe["f0"][-1] != 0.0
     assert _bm25(["seine"], [["seine"], ["spree"]])[0] > 0 and _bm25(["x"], []) == []
     vm = BlockValueModel().fit([f["f0"], f["f1"]] * 3, [1.0, 0.0] * 3)
     assert vm.fitted and vm.predict([f["f0"]])[0] > vm.predict([f["f1"]])[0]
