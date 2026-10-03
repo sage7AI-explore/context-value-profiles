@@ -187,33 +187,19 @@ def llmlingua2(inst, counter, budget, ctx=None) -> Plan:
 
 
 def mcv_values(inst: Instance, counter, profile: dict, value_model, short_ok: bool = True, embedder=None) -> dict:
-    """Block values: the type's measured MCV apportioned across that type's blocks.
-
-    v_b = MCV(type_b) * softmax_{b' in type_b}(z_b'), where z is the block-value model's prediction standardized within
-    the type. Types with non-positive MCV get zero value; mandatory blocks are forced by the compiler regardless.
-    A short variant's value is v_b scaled by the type's measured short/full ratio (clipped to [0, 1]).
-    """
     from mcv.profile.features import block_features
     feats = block_features(inst, profile, counter, embedder)
     ids = list(feats)
-    pred = dict(zip(ids, value_model.predict([feats[i] for i in ids])))
-    by_type: dict = {}
-    for i in ids:
-        by_type.setdefault(inst.by_id()[i].type.value, []).append(i)
+    pred = value_model.predict([feats[i] for i in ids])
     vals = {}
-    for t, members in by_type.items():
-        m = profile.get("mcv", {}).get(t, {}).get("value", 0.0)
-        z = np.array([pred[i] for i in members], float)
-        z = (z - z.mean()) / z.std() if z.std() > 1e-12 else np.zeros_like(z)
-        share = np.exp(z) / np.exp(z).sum()
-        for i, w in zip(members, share):
-            v = max(m, 0.0) * float(w)
-            vals[i] = {"full": v}
-            b = inst.by_id()[i]
-            if short_ok and "short" in b.variants:
-                sv = profile.get("short", {}).get(t, {}).get("value", 0.0)
-                ratio = float(np.clip(sv / m, 0.0, 1.0)) if m > 1e-9 else 0.0
-                vals[i]["short"] = v * ratio
+    for i, v in zip(ids, pred):
+        b = inst.by_id()[i]
+        vals[i] = {"full": float(v)}
+        if short_ok and "short" in b.variants:
+            m = profile["mcv"].get(b.type.value, {}).get("value", 0.0)
+            sv = profile["short"].get(b.type.value, {}).get("value", 0.0)
+            ratio = float(np.clip(sv / m, 0.0, 1.0)) if m > 1e-9 else 0.0
+            vals[i]["short"] = float(v) * ratio
     return vals
 
 
