@@ -22,7 +22,7 @@ import httpx
 
 from mcv.agent.loop import Cache, call, extract_answer
 from mcv.compile.knapsack import BudgetError
-from mcv.compile.policies import POLICIES, Embedder, prompt_for
+from mcv.compile.policies import get_policy, POLICIES, Embedder, prompt_for
 from mcv.data.build import load
 from mcv.eval.metrics import success
 from mcv.ir.blocks import TokenCounter
@@ -145,7 +145,7 @@ def evaluate(model: str, family: str, policies: list, budgets: list, profile_mod
                         continue
                     t0 = time.perf_counter()
                     try:
-                        plan = POLICIES[pol](inst, counter, b, ctx)
+                        plan = get_policy(pol)(inst, counter, b, ctx)
                     except BudgetError as e:
                         rec = {"iid": inst.iid, "policy": pol, "budget": b, "seed": seed, "status": "budget_error",
                                "error": str(e)}

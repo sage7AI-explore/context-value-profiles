@@ -10,6 +10,10 @@ the target model's tokenizer.
   B5  tiers         fixed type priorities (tools > facts > examples > notes > history newest-first)
   OURS-A            MCV compiler, additive values only
   OURS              MCV compiler with type-pair interaction terms
+  B2S@tau           relevance with a stopping rule: like B2, but blocks with cosine < tau are never added
+  HYB@tau           hybrid (post-hoc addendum): the type profile admits only types whose MCV interval excludes zero;
+                    embedding relevance ranks blocks within admitted types (value = cosine - tau, so blocks below tau
+                    are never worth sending); the CP-SAT compiler enforces budget, dependencies and variants
 """
 from __future__ import annotations
 
@@ -218,6 +222,52 @@ def ours(inst, counter, budget, ctx, additive: bool = False) -> Plan:
                       embedder=ctx.get("embedder"))
     return compile_plan(inst, counter, budget, vals, {} if additive else interactions(prof),
                         use_variants=ctx.get("variants", True), use_deps=ctx.get("deps", True))
+
+
+def _goal_sims(inst: Instance, ctx, blocks: list) -> np.ndarray:
+    E = ctx["embedder"].embed([inst.goal_text()] + [b.text for b in blocks])
+    return E[1:] @ E[0]
+
+
+def relevance_stop(inst, counter, budget, ctx, tau: float) -> Plan:
+    opt = [b for b in inst.blocks if b.id not in inst.mandatory_ids()]
+    sims = _goal_sims(inst, ctx, opt)
+    order = [opt[i] for i in np.argsort(-sims, kind="stable") if sims[i] >= tau]
+    return _fill(inst, counter, budget, order)
+
+
+def admitted_types(profile: dict) -> set:
+    """Types whose measured MCV interval excludes zero (lower bootstrap bound > 0)."""
+    return {t for t, s in profile.get("mcv", {}).items() if s.get("lo", 0.0) > 0}
+
+
+def hybrid(inst, counter, budget, ctx, tau: float) -> Plan:
+    prof = ctx["profile"]
+    ok = admitted_types(prof)
+    opt = [b for b in inst.blocks if b.id not in inst.mandatory_ids()]
+    sims = _goal_sims(inst, ctx, opt)
+    vals = {}
+    for b, sim in zip(opt, sims):
+        if b.type.value not in ok or sim < tau:
+            vals[b.id] = {v: -1.0 for v in b.variants}  # never worth sending
+            continue
+        v = float(sim - tau) + 1e-3
+        vals[b.id] = {"full": v}
+        if "short" in b.variants:
+            m = prof["mcv"].get(b.type.value, {}).get("value", 0.0)
+            sv = prof.get("short", {}).get(b.type.value, {}).get("value", 0.0)
+            vals[b.id]["short"] = v * (float(np.clip(sv / m, 0.0, 1.0)) if m > 1e-9 else 0.0)
+    return compile_plan(inst, counter, budget, vals, {}, use_variants=ctx.get("variants", True),
+                        use_deps=ctx.get("deps", True))
+
+
+def get_policy(name: str):
+    """Resolve a policy name; parameterized policies are written NAME@tau (e.g. B2S@0.62)."""
+    if "@" in name:
+        base, tau = name.split("@")
+        fn = {"B2S": relevance_stop, "HYB": hybrid}[base]
+        return lambda i, c, b, x: fn(i, c, b, x, float(tau))
+    return POLICIES[name]
 
 
 def prompt_for(inst: Instance, plan: Plan) -> str:

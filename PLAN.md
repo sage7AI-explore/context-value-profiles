@@ -78,3 +78,31 @@ Within an instance, budgets and policies are interleaved; families run sequentia
   Wilcoxon is invalid for binary outcomes). The CI-based decision rule is unchanged.
 - 2026-10-03: exploratory, not pre-registered, analyses of existing logs: profiling sample size, block-value model
   cross-validation, failure excerpts. Labeled as exploratory in the paper.
+
+## ADDENDUM A (post-hoc; committed 2026-10-03 before any addendum run)
+Written AFTER the main study's test results were known; reported in the paper as a post-hoc, pre-specified follow-up,
+separate from the original hypotheses. Same model (qwen3:4b-instruct), decoding, renderer and checker (the
+pre-registered checker remains primary).
+
+**Policies.** B2S@tau: B2's relevance ranking, but blocks with goal cosine < tau are never added. HYB@tau: the 4B
+type profile admits only types whose MCV bootstrap lower bound is > 0 (facts: fact; history: history_turn; tool:
+tool_schema); within admitted types, block value = cosine - tau (blocks below tau are never sent); the CP-SAT
+compiler enforces budget, dependencies and short variants (no interaction terms).
+
+**Threshold grid** (results/processed/tau_grid.json): {no stop} plus the 30/50/70/85% quantiles of goal-block cosines
+over optional blocks of the 40 profiling dev instances per family:
+facts -1, 0.474, 0.546, 0.606, 0.656; history -1, 0.520, 0.541, 0.562, 0.582; tool -1, 0.501, 0.526, 0.554, 0.585.
+
+**Calibration (dev only).** Dev instances 41-60 per family (never used for profiling), budget 8k. For each family and
+policy, choose the tau with the lowest mean measured prompt tokens subject to success >= success(B0 on the same
+instances) - 0.05; ties go to the smaller tau. Applied mechanically by code/scripts/calibrate_tau.py.
+
+**Test.** First 100 test instances per family (as the main grid), budgets 1k/2k/4k/8k, calibrated B2S and HYB.
+
+**Hypotheses** (one Holm family of 9; same tests as the main study):
+- H6 (are MCV's savings specific to MCV?): at 8k, B2S success is non-inferior to B0 (margin 0.05, one-sided paired
+  bootstrap), per family. Also reported: paired token difference B2S@8k - OURS@8k with bootstrap CI.
+  Reading: if B2S is non-inferior with tokens <= OURS, MCV is not needed for the savings in that family.
+- H7 (hybrid selection): HYB has higher per-instance AUBC than B2 (Wilcoxon zsplit, positive mean), per family;
+  success requires >= 2 of 3 families. Also reported: HYB - OURS AUBC.
+- H8 (hybrid efficiency): at 8k, HYB success non-inferior to B0 (margin 0.05) with fewer mean tokens than B0, per family.

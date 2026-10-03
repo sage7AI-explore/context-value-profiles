@@ -289,3 +289,20 @@ def test_agent_call_and_cache(tmp_path):
     assert not r1["cached"] and r2["cached"] and http.calls == 1 and r1["key"] == r2["key"]
     assert extract_answer("qa", r1["text"]) == "Seine" and extract_answer("qa", "no tag\nlast line") == "last line"
     assert extract_answer("call", "{}") == "{}" and extract_answer("qa", "") is None
+
+
+def test_relevance_stop_and_hybrid():
+    x, c = inst(), FakeCounter()
+    ctx = {"embedder": FakeEmbedder()}
+    loose = P.get_policy("B2S@-1")(x, c, 10_000, ctx)
+    strict = P.get_policy("B2S@1.01")(x, c, 10_000, ctx)
+    assert set(loose.selection) == {b.id for b in x.blocks}          # no stop: everything fits
+    assert set(strict.selection) == set(x.mandatory_ids())             # threshold above any cosine: mandatory only
+    prof = {"mcv": {"fact": {"value": 0.4, "lo": 0.1}, "history_turn": {"value": 0.1, "lo": 0.0}},
+            "short": {"fact": {"value": 0.2}}}
+    assert P.admitted_types(prof) == {"fact"}
+    hyb = P.get_policy("HYB@-1")(x, c, 10_000, {**ctx, "profile": prof})
+    types = {x.by_id()[b].type.value for b in hyb.selection} - {"goal", "instructions"}
+    assert types == {"fact"} and hyb.certificate["status"] in ("OPTIMAL", "FEASIBLE")
+    with pytest.raises(KeyError):
+        P.get_policy("XYZ@0.5")
