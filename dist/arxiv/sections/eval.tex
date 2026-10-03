@@ -55,7 +55,7 @@ OURS (MCV + interactions) & \RAubcFactsOurs {\scriptsize[\RAubcFactsOursLo, \RAu
 \end{table*}
 
 \begin{figure*}[t]\centering
-\includegraphics[width=\textwidth]{../figures/fig2_success_budget.pdf}
+\includegraphics[width=\textwidth]{figures/fig2_success_budget.pdf}
 \caption{Success versus token budget on Qwen3-4B-Instruct (test). Bands: 95\% bootstrap CIs for B2 and OURS. The
 dashed line is full context. MCV additive and MCV with interactions overlap almost everywhere.}\label{fig:curves}
 \end{figure*}
@@ -126,14 +126,14 @@ removed a supporting paragraph; in the others the model changed its answer when 
 type-level profile cannot see.
 
 \begin{figure*}[t]\centering
-\includegraphics[width=\textwidth]{../figures/fig8_frontier.pdf}
+\includegraphics[width=\textwidth]{figures/fig8_frontier.pdf}
 \caption{Success against the prompt tokens actually sent (test, Qwen3-4B-Instruct; one point per budget, from 1k to 8k).
 Points further left at equal height are more efficient. At its largest budget MCV sits left of full context (star) and
 of B2 on tool use and history.}\label{fig:frontier}
 \end{figure*}
 
 \begin{figure*}[t]\centering
-\includegraphics[width=\textwidth]{../figures/fig5_composition.pdf}
+\includegraphics[width=\textwidth]{figures/fig5_composition.pdf}
 \caption{Mean prompt composition at the 8k budget (test, Qwen3-4B-Instruct). MCV leaves budget unused: it drops the
 profile note, most low-value documents and tool schemas, and some worked examples.}\label{fig:composition}
 \end{figure*}
@@ -172,7 +172,7 @@ The 8B model was profiled at type level on fewer instances, so its intervals are
 \end{table}
 
 \begin{figure*}[t]\centering
-\includegraphics[width=\textwidth]{../figures/fig3_profiles.pdf}
+\includegraphics[width=\textwidth]{figures/fig3_profiles.pdf}
 \caption{MCV profiles (development split): success drop when a type is removed, and pairwise interactions
 $I(\tau_1,\tau_2)$, for Qwen3-4B-Instruct (\RNProfFour instances) and Qwen3-8B (\RNProfEight instances), with 95\%
 bootstrap CIs.}\label{fig:profiles}
@@ -196,7 +196,7 @@ sent \RTrTokToolTransferEight prompt tokens against \RTrTokToolRelEight for rele
 against \RTrFactsTransferTwo at 2k). With \RNTransfer instances per family these 8B comparisons are descriptive.
 
 \begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{../figures/fig4_transfer.pdf}
+\includegraphics[width=\columnwidth]{figures/fig4_transfer.pdf}
 \caption{Transfer to Qwen3-8B (test, \RNTransfer instances per family): relevance ranking, MCV with the transferred 4B
 profile, and MCV with the native 8B profile, with 95\% CIs.}\label{fig:transfer}
 \end{figure}
@@ -232,7 +232,7 @@ needs on the order of ten to twenty instances per family, while the block-level 
 supervision than single-block deletions provide.
 
 \begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{../figures/fig7_sample_size.pdf}
+\includegraphics[width=\columnwidth]{figures/fig7_sample_size.pdf}
 \caption{Profile stability versus development instances (exploratory; subsamples of the 4B profiling logs). Band: the
 range of the middle four fifths of draws.}\label{fig:samplesize}
 \end{figure}
@@ -247,7 +247,7 @@ facts, given the 8k-budget savings above. The facts figure is conditional on acc
 \RBreakEvenHistory (Fig.~\ref{fig:breakeven}).
 
 \begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{../figures/fig6_breakeven.pdf}
+\includegraphics[width=\columnwidth]{figures/fig6_breakeven.pdf}
 \caption{Net prompt tokens saved at the 8k budget after paying for 4B profiling, as a function of queries served. Dots
 mark break-even.}\label{fig:breakeven}
 \end{figure}

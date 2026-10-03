@@ -1,0 +1,70 @@
+% DESIGN — must match code/mcv. Numbers only via \R macros.
+
+Figure~\ref{fig:arch} shows the pipeline: a typed block IR feeds an offline profiler that runs counterfactual ablations on
+a development split; the estimator turns outcomes into an MCV profile and an instance-level block-value model; at
+inference time the compiler solves a budgeted program over the blocks of each instance; the agent receives the rendered
+selection.
+
+\begin{figure}[t]\centering
+\includegraphics[width=\columnwidth]{figures/fig1_architecture.pdf}
+\caption{MCV profiles and the MCV compiler. Profiling happens once per (model, task family) on development data;
+compilation happens per instance and per budget without calling the language model (block embeddings are cached).}\label{fig:arch}
+\end{figure}
+
+\subsection{TYPED BLOCK IR AND RENDERING}
+Each instance is converted by a deterministic adapter into typed blocks with full and, where meaningful, short variants
+(a tool's name and description without its parameter schema; the first sentence of a document; the first sentence of a
+history session). Rendering is a pure function of the selection: blocks appear in a fixed type order (instructions, tool
+schemas, skill documents, examples, documents, notes, history in chronological order, and the goal last), so identical
+selections yield byte-identical prompts and every policy in Section~\ref{sec:eval} is evaluated through the same renderer.
+Token costs are measured with each model's own tokenizer.
+
+\subsection{PROFILING BY COUNTERFACTUAL ABLATION}
+For each development instance the profiler evaluates the full context and a set of ablations: every optional type
+removed in turn; every pair of optional types removed; each type rendered with its short variant; and a sample of
+single blocks removed (leave-one-block-out), which trains the instance-level model below. A length-neutral control
+replaces a removed type with filler text of approximately equal token length, separating the effect of content from the effect of
+prompt length. All runs use greedy decoding with a fixed seed and are cached by prompt hash, so repeated conditions cost
+nothing.
+
+\subsection{ESTIMATION}
+Type values, short-variant values and interaction terms are paired means over development instances (Definition~\ref{def:mcv}), each
+shrunk toward zero by $n/(n+n_0)$ for $n$ instances, which damps cells measured on few instances, and reported with
+paired percentile bootstrap intervals. Instance-level block values come from a ridge regression trained on the
+leave-one-block-out deltas. Its features never use gold labels: block type, the type's MCV, the fraction of the goal's
+content words that occur in the block, the block's BM25 rank within its type, log token length, for history its
+recency, and the cosine similarity between block and goal embeddings. A short variant's value is the full value scaled by the type's measured ratio
+$\mathrm{MCV}_{\mathrm{short}}(\tau)/\mathrm{MCV}(\tau)$, clipped to $[0,1]$.
+
+\subsection{THE MCV COMPILER}
+For instance $q$ and budget $B$ the compiler solves
+\begin{align*}
+\max\;&\textstyle\sum_{b,v}\hat v_{b,v}\,x_{b,v}+\sum_{\tau_1<\tau_2}I(\tau_1,\tau_2)\,y_{\tau_1\tau_2}\\
+\text{s.t.}\;&\textstyle\sum_v x_{b,v}\le 1,\quad \sum_v x_{b,v}=1\ \text{for mandatory } b,\\
+&\textstyle\sum_v x_{b,v}\le\sum_v x_{d,v}\ \ \forall d\in D_b,\\
+&\textstyle\sum_{b,v}c(b,v)\,x_{b,v}\le B,\\
+&z_\tau=\max_{b:\tau_b=\tau}\textstyle\sum_v x_{b,v},\quad y_{\tau_1\tau_2}=z_{\tau_1}z_{\tau_2},
+\end{align*}
+with binary variables, using the CP-SAT solver of OR-Tools under a time limit. Values are scaled to integers. The solver
+returns a certificate (status, objective, bound, time); if no feasible solution is found in time, a value-density greedy
+fills the budget and the certificate records the fallback. The additive objective never gains from a block with non-positive predicted value, so the compiler may leave budget
+unused: more context is not assumed to be better. With interaction terms, a block of low or negative individual value
+can still be selected when its type completes a positive interaction. The additive variant (OURS-A) drops
+the interaction terms.
+
+Table~\ref{tab:compile} shows one compiled plan from the test split: the predicted block values, the variant chosen for
+each block, and the certificate. The compiler takes the full schemas of the highest-value tools, falls back to the
+short variant (name and description only) for tools of moderate value where the full schema would not fit, and omits
+blocks whose predicted value is negative.
+
+\begin{table}[t]\centering\small
+\caption{A compiled plan (tool family, Qwen3-4B-Instruct profile, 1k budget): the highest-valued optional blocks, any
+other chosen blocks, and the two lowest-valued blocks, with predicted value $\hat v$ and the chosen variant.}\label{tab:compile}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{\input{generated/compile_example}}
+\end{table}
+
+\subsection{TRANSFER}
+A profile measured on a small model is applied unchanged to a larger one (OURS-T). Fidelity is reported as the rank
+correlation between the two models' type values and as the success difference between transferred and natively measured
+profiles; the instance-level block-value model is shared, so the comparison isolates the type-level profile.

@@ -1,0 +1,79 @@
+% accessstyle.sty -- IEEE Access-like layout for the AgenticAIPapers series (no IEEE logo, no journal metadata).
+% Use with \documentclass[journal]{IEEEtran} (IEEEtran.cls from CTAN, LPPL).
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{accessstyle}[2026/10/01 IEEE Access-like layout]
+
+\RequirePackage[paperwidth=8in,paperheight=10.875in,left=0.6in,right=0.6in,top=0.85in,bottom=0.8in,
+  columnsep=0.25in,headsep=0.25in,footskip=0.35in]{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}              % Latin Modern math + mono (installed)
+\renewcommand\rmdefault{ptm}       % Times body text
+\renewcommand\sfdefault{lmss}       % Latin Modern Sans: free, installed stand-in for the Formata headings
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{fancyhdr}
+\RequirePackage[hidelinks]{hyperref}
+
+\definecolor{accessblue}{RGB}{0,114,188}
+\hypersetup{colorlinks=true,linkcolor=accessblue,citecolor=accessblue,urlcolor=accessblue}
+
+% ---- headings: "I. INTRODUCTION" (blue bold sans caps), "A. SUBSECTION" (blue italic sans caps)
+\renewcommand\section{\@startsection{section}{1}{\z@}{-2.2ex plus -.6ex minus -.2ex}{0.6ex plus .2ex}%
+  {\normalfont\sffamily\bfseries\small\color{accessblue}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus -.5ex minus -.2ex}{0.4ex plus .1ex}%
+  {\normalfont\sffamily\bfseries\itshape\small\color{accessblue}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}{1.2ex plus .4ex}{0.2ex}%
+  {\normalfont\sffamily\itshape\small}}
+\renewcommand\paragraph[1]{\par\smallskip\noindent{\normalfont\bfseries #1}\hskip 0.5em}
+\renewcommand\thesectiondis{\Roman{section}.}
+\renewcommand\thesubsectiondis{\Alph{subsection}.}
+
+% ---- captions: "FIGURE 1." / "TABLE 1." in blue bold sans
+\renewcommand\figurename{FIGURE}
+\renewcommand\tablename{TABLE}
+\renewcommand\thetable{\arabic{table}}
+\long\def\@makecaption#1#2{\vskip 4pt\footnotesize
+  \setbox\@tempboxa\hbox{{\sffamily\bfseries\color{accessblue}#1.}\ #2}%
+  \ifdim\wd\@tempboxa>\hsize {\sffamily\bfseries\color{accessblue}#1.}\ #2\par
+  \else\hbox to\hsize{\box\@tempboxa\hfil}\fi\vskip 4pt}
+
+% ---- running header / footer
+\newcommand\accshorttitle{}
+\newcommand\accshortauthors{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\scriptsize\accshortauthors: \accshorttitle}
+\fancyfoot[C]{\sffamily\scriptsize\thepage}
+\renewcommand\headrulewidth{0.4pt}
+\fancypagestyle{firstpage}{\fancyhf{}\fancyfoot[C]{\sffamily\scriptsize\thepage}\renewcommand\headrulewidth{0pt}}
+
+% ---- front matter (full-width block): title, authors, affiliations, abstract, index terms
+\newcommand\acctitle[1]{\def\@acctitle{#1}}
+\newcommand\accauthors[1]{\def\@accauthors{#1}}
+\newcommand\accaffil[1]{\def\@accaffil{#1}}
+\newcommand\acccorresponding[1]{\def\@acccorr{#1}}
+\newcommand\accabstract[1]{\def\@accabstract{#1}}
+\newcommand\accindexterms[1]{\def\@accindex{#1}}
+\newcommand\accmaketitle{%
+  \twocolumn[{%
+    \vspace*{-0.2in}
+    {\raggedright\sffamily\bfseries\color{accessblue}\fontsize{22}{26}\selectfont\@acctitle\par}
+    \vspace{12pt}
+    {\raggedright\sffamily\bfseries\small\@accauthors\par}
+    \vspace{3pt}
+    {\raggedright\footnotesize\@accaffil\par}
+    \vspace{2pt}
+    {\raggedright\footnotesize Corresponding author: \@acccorr\par}
+    \vspace{14pt}
+    \hspace{0.3in}\begin{minipage}{\dimexpr\textwidth-0.3in\relax}
+      \normalsize\setlength{\parindent}{0pt}
+      {\sffamily\bfseries\color{accessblue}ABSTRACT}\enspace\@accabstract\par
+      \vspace{10pt}
+      {\sffamily\bfseries\color{accessblue}INDEX TERMS}\enspace\@accindex\par
+    \end{minipage}
+    \vspace{18pt}
+  }]
+  \thispagestyle{firstpage}}
+
+% ---- author biography (bold caps sans name lead-in)
+\newcommand\accbio[2]{\par\vspace{10pt}\noindent{\small{\sffamily\bfseries\MakeUppercase{#1}}\ #2\par}}
+\endinput

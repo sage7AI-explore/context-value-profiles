@@ -1,0 +1,48 @@
+% Paper template: IEEE Access-like layout shared across the AgenticAIPapers series (accessstyle.sty).
+% Numbers only via generated/numbers.tex; references only via the registry-built references.bib.
+\documentclass[journal]{IEEEtran}
+\usepackage{accessstyle}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,url,xspace,xcolor}
+\usepackage{tikz}
+\usepackage{cite}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\IfFileExists{generated/numbers.tex}{\input{generated/numbers.tex}}{}
+
+\renewcommand\accshortauthors{V. Sangaraju}
+\renewcommand\accshorttitle{Context That Pays}
+
+\acctitle{Context That Pays: Ablation-Calibrated Marginal Context Value Profiles for Budgeted Context Assembly}
+\accauthors{VENKATA SANGARAJU\textsuperscript{1}, (Member, IEEE)}
+\accaffil{\textsuperscript{1}Independent Researcher, Leander, TX 78641, USA}
+\acccorresponding{Venkata Sangaraju (sangaraju1988@gmail.com)}
+\accabstract{\input{sections/abstract}}
+\accindexterms{Context engineering, LLM agents, prompt assembly, token budgets, counterfactual ablation.}
+
+\begin{document}
+\accmaketitle
+
+\section{INTRODUCTION}\label{sec:intro}
+\input{sections/intro}
+\section{BACKGROUND AND RELATED WORK}\label{sec:related}
+\input{sections/related}
+\section{PROBLEM FORMULATION AND THREAT/FAILURE MODEL}\label{sec:problem}
+\input{sections/problem}
+\section{DESIGN}\label{sec:design}
+\input{sections/design}
+\section{IMPLEMENTATION}\label{sec:impl}
+\input{sections/impl}
+\section{EVALUATION}\label{sec:eval}
+\input{sections/eval}
+\section{DISCUSSION, LIMITATIONS AND THREATS TO VALIDITY}\label{sec:limits}
+\input{sections/limits}
+\section{CONCLUSION}\label{sec:conclusion}
+\input{sections/conclusion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\accbio{Venkata Sangaraju}{(Member, IEEE) is currently an Independent Researcher working on reliability and governance
+for enterprise artificial intelligence (AI) agents.}
+\end{document}
