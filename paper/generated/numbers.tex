@@ -82,6 +82,8 @@
 \newcommand{\RBreakEvenHistory}{5{,}901\xspace}  % cost.csv
 \newcommand{\RBreakEvenTool}{931\xspace}  % cost.csv
 \newcommand{\RBudgetedEpisodes}{6{,}201\xspace}  % success.csv
+\newcommand{\RBudgetedMain}{5{,}880\xspace}  % main runs, budgeted episodes
+\newcommand{\RCheckerFlips}{22\xspace}  % sensitivity_checker.py
 \newcommand{\RCoefLen}{0.13\xspace}  % history value model
 \newcommand{\RCoefRecency}{0.10\xspace}  % history value model
 \newcommand{\RCoefSim}{0.34\xspace}  % history value model
@@ -111,10 +113,11 @@
 \newcommand{\RHOneFactsHi}{0.018\xspace}  % tests.csv
 \newcommand{\RHOneFactsLo}{-0.070\xspace}  % tests.csv
 \newcommand{\RHOneFactsP}{1.000\xspace}  % tests.csv
+\newcommand{\RHOneHistoryAbs}{0.053\xspace}  % tests.csv
 \newcommand{\RHOneHistoryDiff}{-0.053\xspace}  % tests.csv
 \newcommand{\RHOneHistoryHi}{-0.035\xspace}  % tests.csv
 \newcommand{\RHOneHistoryLo}{-0.072\xspace}  % tests.csv
-\newcommand{\RHOneHistoryP}{0.000\xspace}  % tests.csv
+\newcommand{\RHOneHistoryP}{{<}0.001\xspace}  % tests.csv
 \newcommand{\RHOneToolDiff}{0.007\xspace}  % tests.csv
 \newcommand{\RHOneToolHi}{0.027\xspace}  % tests.csv
 \newcommand{\RHOneToolLo}{-0.012\xspace}  % tests.csv
@@ -126,17 +129,25 @@
 \newcommand{\RHOnebHistoryDiff}{0.000\xspace}  % tests.csv
 \newcommand{\RHOnebHistoryHi}{0.000\xspace}  % tests.csv
 \newcommand{\RHOnebHistoryLo}{0.000\xspace}  % tests.csv
-\newcommand{\RHOnebHistoryP}{0.001\xspace}  % tests.csv
+\newcommand{\RHOnebHistoryP}{{<}0.001\xspace}  % tests.csv
 \newcommand{\RHOnebPass}{2\xspace}  % h1b.csv
 \newcommand{\RHOnebToolDiff}{0.010\xspace}  % tests.csv
 \newcommand{\RHOnebToolHi}{0.030\xspace}  % tests.csv
 \newcommand{\RHOnebToolLo}{0.000\xspace}  % tests.csv
-\newcommand{\RHOnebToolP}{0.001\xspace}  % tests.csv
+\newcommand{\RHOnebToolP}{{<}0.001\xspace}  % tests.csv
 \newcommand{\RHThreeVerdict}{non-inferior\xspace}  % transfer runs: lower CI bound vs margin
 \newcommand{\RHTwoPooledDiff}{0.003\xspace}  % tests.csv
 \newcommand{\RHTwoPooledHi}{0.007\xspace}  % tests.csv
 \newcommand{\RHTwoPooledLo}{-0.001\xspace}  % tests.csv
 \newcommand{\RHTwoPooledP}{1.000\xspace}  % tests.csv
+\newcommand{\RHasExampleAdditiveFacts}{86\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasExampleAdditiveHistory}{15\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasExampleAdditiveTool}{55\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasExampleOursFacts}{100\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasExampleOursHistory}{15\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasExampleOursTool}{76\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasNoteAdditiveHistory}{49\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RHasNoteOursHistory}{0\%\xspace}  % selection diagnostics (main_4b)
 \newcommand{\RIntFactsExampleFact}{0.10\xspace}  % profiles.csv
 \newcommand{\RIntHistoryExampleHistoryTurn}{0.00\xspace}  % profiles.csv
 \newcommand{\RIntHistoryExampleNote}{0.00\xspace}  % profiles.csv
@@ -202,6 +213,7 @@
 \newcommand{\RNumTools}{30\xspace}  % instances.jsonl
 \newcommand{\ROllamaVersion}{0.35.0\xspace}  % ENVIRONMENT.md
 \newcommand{\ROverBudget}{34\xspace}  % success.csv (budgeted episodes with measured prompt > budget)
+\newcommand{\ROverBudgetMain}{34\xspace}  % main runs
 \newcommand{\RPadDiffMax}{0.05\xspace}  % padding.csv
 \newcommand{\RPadFactsExample}{0.00\xspace}  % padding.csv
 \newcommand{\RPadFactsFact}{0.45\xspace}  % padding.csv
@@ -235,6 +247,16 @@
 \newcommand{\RRho}{0.88\xspace}  % fidelity.csv
 \newcommand{\RRhoN}{7\xspace}  % fidelity.csv
 \newcommand{\RScale}{10{,}000\xspace}  % mcv/compile/knapsack.py
+\newcommand{\RSelDiffFacts}{30\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RSelDiffHistory}{50\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RSelDiffTool}{22\%\xspace}  % selection diagnostics (main_4b)
+\newcommand{\RSensHOneFacts}{-0.025\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHOneHistory}{-0.053\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHOneTool}{0.007\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHOnebFacts}{-0.040\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHOnebHistory}{0.000\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHOnebTool}{0.010\xspace}  % sensitivity_checker.py
+\newcommand{\RSensHTwo}{0.003\xspace}  % sensitivity_checker.py
 \newcommand{\RSesoi}{0.05\xspace}  % PLAN.md power analysis (smallest effect of interest)
 \newcommand{\RShortFactsFact}{0.12\xspace}  % profiles.csv
 \newcommand{\RShortHistoryHistoryTurn}{-0.03\xspace}  % profiles.csv
@@ -367,13 +389,14 @@
 \newcommand{\RTrFactsRelTwo}{68\%\xspace}  % transfer.csv
 \newcommand{\RTrFactsTransferEight}{62\%\xspace}  % transfer.csv
 \newcommand{\RTrFactsTransferTwo}{62\%\xspace}  % transfer.csv
+\newcommand{\RTrHistoryNativeTwo}{100\%\xspace}  % transfer.csv
 \newcommand{\RTrHistoryRelEight}{98\%\xspace}  % transfer.csv
 \newcommand{\RTrHistoryRelTwo}{98\%\xspace}  % transfer.csv
-\newcommand{\RTrHistoryTransferEight}{100\%\xspace}  % transfer.csv
+\newcommand{\RTrHistoryTransferEight}{98\%\xspace}  % transfer.csv
 \newcommand{\RTrHistoryTransferTwo}{100\%\xspace}  % transfer.csv
-\newcommand{\RTrN}{18\xspace}  % transfer.csv
+\newcommand{\RTrN}{1\xspace}  % transfer.csv
 \newcommand{\RTransferDiff}{0.000\xspace}  % transfer runs (pooled OURS-T minus OURS-native)
 \newcommand{\RTransferHi}{0.000\xspace}  % transfer runs
 \newcommand{\RTransferLo}{0.000\xspace}  % transfer runs
-\newcommand{\RTransferN}{80\xspace}  % transfer runs
-\newcommand{\RTransferSameSel}{74\%\xspace}  % transfer runs: identical selections OURS-T vs OURS-native
+\newcommand{\RTransferN}{81\xspace}  % transfer runs
+\newcommand{\RTransferSameSel}{73\%\xspace}  % transfer runs: identical selections OURS-T vs OURS-native

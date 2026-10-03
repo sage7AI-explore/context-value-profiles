@@ -60,7 +60,8 @@ def transfer() -> pd.DataFrame:
     parts = [jl(r) for r in ("transfer_8b", "transfer_8b_t", "transfer_8b_native")]
     df = pd.concat([p for p in parts if len(p)], ignore_index=True)
     df = df[df["status"] == "ok"].copy()
-    df["cond"] = np.where(df.policy == "B2", "B2", np.where(df["run"] == "transfer_8b_t", "OURS-T", "OURS-native"))
+    df["cond"] = np.where(df.policy == "B2", "B2", df["label"])
+    assert set(df["cond"]) <= {"B2", "OURS-T", "OURS-native"}, set(df["cond"])
     return df
 
 
@@ -159,6 +160,27 @@ def facts_losses(main: pd.DataFrame) -> dict:
             "gold_dropped": sum(any(g not in o.loc[i, "selection"] for g in gold[i]) for i in lost)}
 
 
+def selection_diagnostics(main: pd.DataFrame) -> dict:
+    """How often interaction terms change the selection; note and example inclusion at 8k."""
+    types = {x.iid: {b.id: b.type.value for b in x.blocks} for x in load("test")}
+    d = main[main.policy.isin(["OURS", "OURS-A"]) & (main.status == "ok")]
+    out = {}
+    key = lambda r: json.dumps(r, sort_keys=True)  # noqa: E731
+    for fam, g in d.groupby("family"):
+        F = FAM[fam]
+        a = g[g.policy == "OURS"].set_index(["iid", "budget"]).selection.map(key)
+        b = g[g.policy == "OURS-A"].set_index(["iid", "budget"]).selection.map(key)
+        idx = a.index.intersection(b.index)
+        out[f"RSelDiff{F}"] = float((a.loc[idx] != b.loc[idx]).mean())
+        for pol, nm in (("OURS", "Ours"), ("OURS-A", "Additive")):
+            e = g[(g.policy == pol) & (g.budget == 8000)]
+            has = lambda t: float(np.mean([any(types[i][k] == t for k in sel) for i, sel in zip(e.iid, e.selection)]))  # noqa: E731
+            out[f"RHasExample{nm}{F}"] = has("example")
+            if fam == "history":
+                out[f"RHasNote{nm}{F}"] = has("note")
+    return out
+
+
 def dev_aubc(df: pd.DataFrame) -> float:
     from mcv.eval.metrics import aubc
     d = df[(df.status == "ok") & (df.policy == "OURS")]
@@ -211,7 +233,8 @@ def main() -> None:
         put(k + "Diff", r["diff"], "f3", "tests.csv")
         put(k + "Lo", r.lo, "f3", "tests.csv")
         put(k + "Hi", r.hi, "f3", "tests.csv")
-        put(k + "P", r.p_holm, "f3", "tests.csv")
+        put(k + "P", r.p_holm, "p3", "tests.csv")
+    put("RHOneHistoryAbs", -float(tests[(tests.hyp == "H1") & (tests.family == "history")]["diff"].iloc[0]), "f3", "tests.csv")
     for _, r in h.iterrows():
         F = FAM[r.family]
         put(f"RTokOurs{F}", r.tokens_ours, "int", "h1b.csv")
@@ -250,8 +273,9 @@ def main() -> None:
     sub = S[(S.policy != "B0")]
     put("ROverBudget", int(sub.over_budget.sum()), "int", "success.csv (budgeted episodes with measured prompt > budget)")
     put("RBudgetedEpisodes", int(sub.n.sum()), "int", "success.csv")
-    ev = pd.concat([main_df, tr], ignore_index=True)
-    ev = ev[ev.policy != "B0"]
+    ev = main_df[main_df.policy != "B0"]
+    put("RBudgetedMain", len(ev), "int", "main runs, budgeted episodes")
+    put("ROverBudgetMain", int((ev.prompt_tokens_measured > ev.budget).sum()), "int", "main runs")
     put("RMaxOvershoot", int((ev.prompt_tokens_measured - ev.budget).max()), "int", "max measured prompt minus budget")
     put("RMainEpisodes", len(main_df), "int", "main_4b + main_4b_weak")
     put("RStatusNotOk", int((main_df.status != "ok").sum()), "int", "main runs")
@@ -268,6 +292,9 @@ def main() -> None:
     put("RFactsLost", fl["lost"], "int", "facts 8k: B0 correct, OURS wrong")
     put("RFactsGained", fl["gained"], "int", "facts 8k: OURS correct, B0 wrong")
     put("RFactsLostGoldDropped", fl["gold_dropped"], "int", "facts 8k losses with a supporting paragraph removed")
+    sd = selection_diagnostics(main_df)
+    for k, v in sd.items():
+        put(k, v, "pct0", "selection diagnostics (main_4b)")
     rec = recall_history(main_df)
     rec.to_csv(PROC / "history_recall.csv", index=False)
     for _, r in rec.iterrows():

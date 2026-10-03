@@ -68,3 +68,13 @@ Within an instance, budgets and policies are interleaved; families run sequentia
   blocks; pilot 3) rejected by the pre-stated rule (mean dev AUBC v2 0.758 > v3 0.736). All pilots are reported.
 - 2026-10-03 (fast plan, user-approved): mistral-nemo:12b dropped (H3 within the Qwen family only); 8B transfer reduced to
   40 instances per family and 2 budgets; one reviewer subagent instead of three.
+
+## Deviations after the test runs (disclosed in the paper)
+- 2026-10-03: transcript reading found that the tool checker compared list-valued arguments as JSON strings
+  ([-1, 2] vs [-1.0, 2.0]). The pre-registered checker remains primary; code/scripts/sensitivity_checker.py rescoring
+  all logged test answers with element-wise numeric comparison flips 22 episodes across all policies and changes no
+  hypothesis difference at three decimals.
+- 2026-10-03: H1b p-values use a one-sided paired bootstrap (the plan named no specific non-inferiority test; a shifted
+  Wilcoxon is invalid for binary outcomes). The CI-based decision rule is unchanged.
+- 2026-10-03: exploratory, not pre-registered, analyses of existing logs: profiling sample size, block-value model
+  cross-validation, failure excerpts. Labeled as exploratory in the paper.

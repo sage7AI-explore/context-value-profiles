@@ -2,10 +2,10 @@
 \subsection{WHAT THE RESULTS MEAN}
 The evidence separates two uses of measured context value. As a \emph{selector} the MCV compiler was no better than
 embedding relevance, and worse when its block-level ranking learned the wrong correlate. As a \emph{type-level
-budgeter and diagnostic} it was useful. It showed that worked examples were dead weight in every family, that a stale note
+budgeter and diagnostic} it was useful. It showed that worked examples had near-zero individual value on the 4B model, that a stale note
 was redundant, and that tool schemas lose most of their value when shortened. Acting on that, it cut prompt tokens
-substantially on tool use without losing success. The profile also stopped spending once no remaining block had
-positive value, which a fill-the-budget selector does not do. These findings suggest a hybrid in which relevance ranks
+substantially on tool use without losing success. The compiler also stopped spending once the remaining blocks added no predicted
+value, which a fill-the-budget selector does not do. These findings suggest a hybrid in which relevance ranks
 blocks within a type and the profile decides which types to include and when to stop. We did not test that hybrid, and
 we state it only as the design the data point to.
 
@@ -16,20 +16,25 @@ relevance directly as the within-type ranker, are natural fixes.
 
 \subsection{PRACTICAL GUIDANCE}
 For practitioners the results suggest a cheap procedure. Profile each (model, task family) on a small development set
-(ten to twenty instances sufficed here to rank types) using type removals and the length-neutral control. Remove types
-whose value interval sits at zero, such as the worked examples here, from the default prompt. Keep a strong relevance
+(ten to twenty instances sufficed here to rank types) using type removals and the length-neutral control. Consider
+removing types whose value interval sits at zero (here, worked examples on history and tool use) from the default
+prompt, after checking their interactions. Keep a strong relevance
 ranker for choosing blocks within a type. Stop adding context when the remaining types have no measured value rather than
 filling the budget. Re-profile when the model or the task family changes; the 4B-to-8B agreement observed here is
 encouraging but limited to one model family. Interaction terms can be omitted unless the profile shows a large
 interaction between two types that both carry value.
 
 \subsection{LIMITATIONS AND THREATS TO VALIDITY}
-\textbf{Construct validity.} Each instance is a single agent decision, not a multi-step trajectory; context value in
-long-horizon agents may compound across steps. Success is a deterministic check (answer match, AST-level call match),
+\textbf{Construct validity.} Each instance is a single agent decision, not a multi-step trajectory with a simulated
+user as in $\tau$-bench~\cite{taubench2024}; context value in long-horizon agents may compound across steps. Success is a deterministic check (answer match, AST-level call match),
 which misses partially correct outputs.
 \textbf{Internal validity.} B4 is our re-implementation of a PACMS-style objective, not the authors' code, and B3 uses one
 LLMLingua-2 checkpoint; both could be tuned further. Rendered prompts may exceed the budget by at most \RMaxOvershoot
-tokens because tokenization is not additive across block boundaries. Greedy decoding on Apple-silicon inference is not
+tokens because tokenization is not additive across block boundaries. Reading transcripts after the test runs revealed a defect in the tool checker: it compared list-valued arguments as
+strings, so an integer list failed against the same values written as floats. Rescoring all logged answers with
+element-wise numeric comparison changed \RCheckerFlips episodes, spread across all policies, and left the H1, H1b and H2
+mean paired differences unchanged at three decimals (for example H1 on tool use, \RSensHOneTool). We keep the
+pre-registered checker as primary. Greedy decoding on Apple-silicon inference is not
 guaranteed to be bitwise deterministic; caching makes every reported response reproducible from the logs, but a fresh
 rerun may differ slightly.
 \textbf{Statistical conclusion validity.} The pre-registered power analysis put power for a \RSesoi{} AUBC effect on facts at
@@ -38,5 +43,6 @@ about \RPowerFacts with \RNMain instances, so the null result on facts is weak e
 \RNTransfer instances per family and two budgets.
 \textbf{External validity.} Two models of one family (Qwen3, 4B and 8B) were tested; a third model from another family
 was planned and dropped for compute, so transfer across model families is untested. One task family (history) is
-synthetic, and HotpotQA and BFCL may overlap with pretraining data. Profiles are per (model, task family) and must be
+synthetic; HotpotQA is known to admit reasoning shortcuts that MuSiQue was built to remove~\cite{musique2022}; and
+HotpotQA and BFCL may overlap with pretraining data. Profiles are per (model, task family) and must be
 re-measured when either changes, at the profiling cost reported in Section~\ref{sec:eval}.

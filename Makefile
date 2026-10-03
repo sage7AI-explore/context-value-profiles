@@ -21,6 +21,7 @@ results:        ## Phase 5: process raw logs; independent recomputation must mat
 	$(PY) scripts/process_results.py
 	$(PY) scripts/analyze_extra.py
 	$(PY) scripts/analyze_profiles.py
+	$(PY) scripts/sensitivity_checker.py
 	$(PY) scripts/recompute_metrics.py
 
 verify:         ## Phase 5 gate
@@ -50,3 +51,6 @@ smoke:          ## 5-minute miniature of the full pipeline (implement in Phase 4
 
 clean-paper:
 	cd paper && rm -f *.aux *.bbl *.blg *.log *.out *.fls *.fdb_latexmk
+
+arxiv:          ## self-contained arXiv source package in dist/ (run after `make paper`)
+	$(PY) scripts/make_arxiv.py

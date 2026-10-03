@@ -7,7 +7,8 @@ questions (\RNumDocs documents, \RFullTokFacts tokens on average), two worked ex
 \emph{Tool}: a BFCL v3 call from the Gorilla project's benchmark~\cite{gorilla2023} (simple and multiple categories); the
 correct function or functions are mixed into a \RNumTools-tool catalog (\RFullTokTool tokens), and success is an
 AST-level match of the emitted call. \emph{History}: \RNumSessions synthetic chat sessions (\RFullTokHistory tokens)
-in which one user attribute is set and later updated; the agent must report the latest value, and in half of the
+in which one user attribute is set and later updated, a knowledge-update setting also probed by
+LongMemEval~\cite{longmemeval2024}; the agent must report the latest value, and in half of the
 instances a note restates the \emph{stale} value. Success checks are deterministic.
 
 \textbf{Models.} Qwen3-4B-Instruct is the main model and the profiling source; Qwen3-8B is the transfer target. Both run
@@ -27,9 +28,9 @@ OURS-A and OURS on the first \RNMain test instances per family; the weaker basel
 pilots) use the first \RNWeak. Following the pre-registration, H1 compares OURS with the best of B1--B5 per family; H1b
 tests, at 8k, that OURS uses fewer tokens than B0 and the best baseline with success non-inferior to B0 (margin
 \RMargin); H2 compares OURS with OURS-A pooled; H3 tests transfer. Intervals are paired percentile bootstraps
-(\RNBoot resamples); p-values are Wilcoxon signed-rank for H1 and H2 and a one-sided bootstrap for H1b; H1, H1b and H2
+(\RNBoot resamples); p-values are Wilcoxon signed-rank for H1 and H2 and a one-sided paired bootstrap for H1b (the plan fixed the CI rule but named no test; recorded as a deviation); H1, H1b and H2
 form one Holm family. All \RMainEpisodes main episodes completed. Block costs are summed in the model's tokenizer;
-rendered prompts exceeded the budget in \ROverBudget of \RBudgetedEpisodes budgeted episodes, by at most
+rendered prompts exceeded the budget in \ROverBudgetMain of \RBudgetedMain budgeted main-study episodes, by at most
 \RMaxOvershoot tokens, because tokens merge at block boundaries.
 
 \begin{table*}[t]\centering\small
@@ -84,13 +85,14 @@ in every family. OURS did not exceed it anywhere: the paired AUBC difference was
 indistinguishable from zero, and \RHOneHistoryDiff{} [\RHOneHistoryLo, \RHOneHistoryHi] on history, a significant
 \emph{loss} (Holm $p=\RHOneHistoryP$). H1 required a significant gain in two families; it fails.
 
-The MCV compiler did beat the other baselines by wide margins at small budgets. On tool use at 1k it reached
+On tool use the MCV compiler beat the non-relevance baselines by wide margins at small budgets: at 1k it reached
 \RSucToolOursOne success against \RSucToolLinguaOne for LLMLingua-2, \RSucToolTruncOne for truncation and
-\RSucToolCovOne for coverage, because it spends the budget on the tool schemas ranked most valuable and mostly drops
-examples. But relevance ranking does the same thing on these families. Once a block's value is dominated by
+\RSucToolCovOne for coverage, because it spends the budget on the tool schemas ranked most valuable and often drops
+examples. This advantage did not hold elsewhere: on history at 1k OURS (\RSucHistoryOursOne) trailed truncation
+(\RSucHistoryTruncOne) and tiers (\RSucHistoryTierOne). Relevance ranking also concentrates the budget on goal-related blocks. Once a block's value is dominated by
 whether it is about the goal, an embedding score already captures most of what the profile adds.
 
-\textbf{Diagnosis of the history loss.} The entire history gap arises at the 1k budget (at 2k and above both policies
+\textbf{Diagnosis of the history loss.} Almost all of the history gap arises at the 1k budget (at 2k and above both policies
 are at or near ceiling). There, success depends almost only on whether the session containing the latest update
 survives selection. OURS kept it in \RRecallOurs of plans and B2 in \RRecallRel; without that session OURS never
 answered correctly (\RSucGivenNoGoldOurs). The cause is the block-value model. Trained on leave-one-block-out deltas,
@@ -106,7 +108,7 @@ embedding similarity alone on history, \RCvModelFacts against \RCvSimFacts on fa
 tool use. The learned ranker was never better than its own similarity feature.
 
 \subsection{EFFICIENCY: H1b IS SUPPORTED IN TWO OF THREE FAMILIES}
-Because the compiler selects only blocks with positive predicted value, it leaves budget unused at 8k
+Because the compiler adds blocks only while they raise the predicted objective, it leaves budget unused at 8k
 (Figs.~\ref{fig:composition} and~\ref{fig:frontier}), whereas B2 fills the budget and so matches full context. On tool use OURS sent
 \RTokOursTool tokens instead of \RTokFullTool (\RTokCutTool fewer) with success \RSucOursEightTool against
 \RSucFullTool for full context (difference \RHOnebToolDiff, CI [\RHOnebToolLo, \RHOnebToolHi], Holm
@@ -127,26 +129,29 @@ of B2 on tool use and history.}\label{fig:frontier}
 
 \begin{figure*}[t]\centering
 \includegraphics[width=\textwidth]{../figures/fig5_composition.pdf}
-\caption{Mean prompt composition at the 8k budget (test, Qwen3-4B-Instruct). MCV leaves budget unused: it drops worked
-examples (near-zero value in every family), the stale note, and low-value documents and tool schemas.}\label{fig:composition}
+\caption{Mean prompt composition at the 8k budget (test, Qwen3-4B-Instruct). MCV leaves budget unused: it drops the stale
+note, most low-value documents and tool schemas, and some worked examples.}\label{fig:composition}
 \end{figure*}
 
 \subsection{INTERACTIONS: H2 HAS NO DETECTABLE EFFECT}
 Adding interaction terms changed pooled AUBC by \RHTwoPooledDiff{} [\RHTwoPooledLo, \RHTwoPooledHi] (Holm
 $p=\RHTwoPooledP$). This is a substantive finding about the profiles rather than a power problem. The only large
 interaction measured, the redundancy between history and the stale note (\RIntHistoryHistoryTurnNote), concerns a type
-whose own value is already near zero (\RMcvHistoryNote), so the additive compiler drops the note anyway. The other
-interactions were small (\RIntFactsExampleFact on facts, \RIntToolExampleToolSchema on tool use). Type-pair
-interactions add complexity to the program without changing its choices on these families.
+whose own value is already near zero (\RMcvHistoryNote). The interaction terms did change the plans: OURS and OURS-A
+selected different blocks in \RSelDiffFacts of facts, \RSelDiffHistory of history and \RSelDiffTool of tool plans.
+At 8k, OURS never included the stale note while OURS-A included it in \RHasNoteAdditiveHistory of history plans, and the
+positive example--document interaction (\RIntFactsExampleFact) made OURS keep an example in \RHasExampleOursFacts of
+facts plans against \RHasExampleAdditiveFacts for OURS-A. These changes concern low-value blocks and did not change
+success. On these families, type-pair interactions change what is sent but not whether the task succeeds.
 
 \subsection{WHAT THE PROFILES SAY}
-Fig.~\ref{fig:profiles} and Table~\ref{tab:profiles} show the profiles of both models. Three regularities hold across families and models. First,
+Fig.~\ref{fig:profiles} and Table~\ref{tab:profiles} show the profiles of both models. Three regularities hold across families. First,
 the value of context is concentrated: tool schemas (\RMcvToolToolSchema), documents (\RMcvFactsFact) and history
 sessions (\RMcvHistoryHistoryTurn) carry nearly all of it. Second, worked examples are worth close to nothing
-(\RMcvFactsExample, \RMcvHistoryExample, \RMcvToolExample on the 4B model), although every family's prompt
-includes them by default. Third, short variants are worth much less than full blocks for tool schemas
+on their own (\RMcvFactsExample, \RMcvHistoryExample, \RMcvToolExample on the 4B model; the 8B model valued them
+at \RMcvEightHistoryExample on history), although every family's prompt includes them by default. Third, short variants are worth much less than full blocks for tool schemas
 (\RShortToolToolSchema against \RMcvToolToolSchema), because the parameter schema matters for argument filling.
-The length-neutral control, which replaces a removed type with filler of equal token length (\RPadN instances per
+The length-neutral control, which replaces a removed type with filler of approximately equal token length (\RPadN instances per
 type), reproduced the removal effects: documents \RRemFactsFact by removal against \RPadFactsFact with padding, tool
 schemas \RRemToolToolSchema against \RPadToolToolSchema, history \RRemHistoryHistoryTurn against
 \RPadHistoryHistoryTurn. The measured values reflect content, not prompt length.
@@ -167,7 +172,8 @@ bootstrap CIs.}\label{fig:profiles}
 \end{figure*}
 
 \subsection{TRANSFER ACROSS MODEL SIZE (H3)}
-The 4B and 8B profiles rank the \RRhoN type values similarly (Spearman $\rho=\RRho$), and their magnitudes agree
+The 4B and 8B profiles rank the \RRhoN (family, type) values similarly (Spearman $\rho=\RRho$, pooled across families, so
+between-family differences contribute to the agreement), and their magnitudes agree
 closely (Fig.~\ref{fig:profiles}). On Qwen3-8B (first \RNTransfer test instances per family, budgets 2k and 8k),
 compiling with the transferred 4B profile and with the natively measured 8B profile gave a pooled success difference of
 \RTransferDiff{} [\RTransferLo, \RTransferHi] over \RTransferN paired episodes, so H3 non-inferiority holds
@@ -220,7 +226,7 @@ range of the middle four fifths of draws.}\label{fig:samplesize}
 \subsection{COST}
 \textbf{Compilation.} Over \RSolves compilations CP-SAT proved optimality in \RSolveOptimal of cases with no fallback
 (\RSolveFallback); median solve time was \RSolveMedianMs{} ms (99th percentile \RSolveNinetyNineMs{} ms, maximum
-\RSolveMaxMs{} ms), and end-to-end planning including feature computation took a median \RPlanMedianMs{} ms.
+\RSolveMaxMs{} ms), and end-to-end planning including feature computation (with cached block embeddings) took a median \RPlanMedianMs{} ms.
 \textbf{Profiling.} The 4B profile cost \RProfCallsTotal model calls (\RProfHours hours on a laptop). Measured in
 prompt tokens, profiling pays for itself after about \RBreakEvenTool queries on tool use and \RBreakEvenFacts on
 facts, given the 8k-budget savings above. History saves less per query and breaks even after about

@@ -409,6 +409,16 @@
   "source": "success.csv",
   "value": 6201
  },
+ "RBudgetedMain": {
+  "fmt": "int",
+  "source": "main runs, budgeted episodes",
+  "value": 5880
+ },
+ "RCheckerFlips": {
+  "fmt": "int",
+  "source": "sensitivity_checker.py",
+  "value": 22
+ },
  "RCoefLen": {
   "fmt": "f2",
   "source": "history value model",
@@ -550,9 +560,14 @@
   "value": -0.07
  },
  "RHOneFactsP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 1.0
+ },
+ "RHOneHistoryAbs": {
+  "fmt": "f3",
+  "source": "tests.csv",
+  "value": 0.0533333333333333
  },
  "RHOneHistoryDiff": {
   "fmt": "f3",
@@ -570,7 +585,7 @@
   "value": -0.0716666666666666
  },
  "RHOneHistoryP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 6.60660823543952e-05
  },
@@ -590,7 +605,7 @@
   "value": -0.0116666666666666
  },
  "RHOneToolP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 1.0
  },
@@ -610,7 +625,7 @@
   "value": -0.1
  },
  "RHOnebFactsP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 1.0
  },
@@ -630,7 +645,7 @@
   "value": 0.0
  },
  "RHOnebHistoryP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 0.0005999400059994
  },
@@ -655,7 +670,7 @@
   "value": 0.0
  },
  "RHOnebToolP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 0.0005999400059994
  },
@@ -680,9 +695,49 @@
   "value": -0.0005555555555555
  },
  "RHTwoPooledP": {
-  "fmt": "f3",
+  "fmt": "p3",
   "source": "tests.csv",
   "value": 1.0
+ },
+ "RHasExampleAdditiveFacts": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.86
+ },
+ "RHasExampleAdditiveHistory": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.15
+ },
+ "RHasExampleAdditiveTool": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.55
+ },
+ "RHasExampleOursFacts": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 1.0
+ },
+ "RHasExampleOursHistory": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.15
+ },
+ "RHasExampleOursTool": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.76
+ },
+ "RHasNoteAdditiveHistory": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.49
+ },
+ "RHasNoteOursHistory": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.0
  },
  "RIntFactsExampleFact": {
   "fmt": "f2",
@@ -1009,6 +1064,11 @@
   "source": "success.csv (budgeted episodes with measured prompt > budget)",
   "value": 34
  },
+ "ROverBudgetMain": {
+  "fmt": "int",
+  "source": "main runs",
+  "value": 34
+ },
  "RPadDiffMax": {
   "fmt": "f2",
   "source": "padding.csv",
@@ -1173,6 +1233,56 @@
   "fmt": "int",
   "source": "mcv/compile/knapsack.py",
   "value": 10000
+ },
+ "RSelDiffFacts": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.3025
+ },
+ "RSelDiffHistory": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.495
+ },
+ "RSelDiffTool": {
+  "fmt": "pct0",
+  "source": "selection diagnostics (main_4b)",
+  "value": 0.2225
+ },
+ "RSensHOneFacts": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": -0.024999999999999994
+ },
+ "RSensHOneHistory": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": -0.05333333333333332
+ },
+ "RSensHOneTool": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": 0.006666666666666667
+ },
+ "RSensHOnebFacts": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": -0.04
+ },
+ "RSensHOnebHistory": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": 0.0
+ },
+ "RSensHOnebTool": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": 0.01
+ },
+ "RSensHTwo": {
+  "fmt": "f3",
+  "source": "sensitivity_checker.py",
+  "value": 0.002777777777777777
  },
  "RSesoi": {
   "fmt": "f2",
@@ -1834,6 +1944,11 @@
   "source": "transfer.csv",
   "value": 0.625
  },
+ "RTrHistoryNativeTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 1.0
+ },
  "RTrHistoryRelEight": {
   "fmt": "pct0",
   "source": "transfer.csv",
@@ -1847,7 +1962,7 @@
  "RTrHistoryTransferEight": {
   "fmt": "pct0",
   "source": "transfer.csv",
-  "value": 1.0
+  "value": 0.975
  },
  "RTrHistoryTransferTwo": {
   "fmt": "pct0",
@@ -1857,7 +1972,7 @@
  "RTrN": {
   "fmt": "int",
   "source": "transfer.csv",
-  "value": 18
+  "value": 1
  },
  "RTransferDiff": {
   "fmt": "f3",
@@ -1877,11 +1992,11 @@
  "RTransferN": {
   "fmt": "int",
   "source": "transfer runs",
-  "value": 80
+  "value": 81
  },
  "RTransferSameSel": {
   "fmt": "pct0",
   "source": "transfer runs: identical selections OURS-T vs OURS-native",
-  "value": 0.7375
+  "value": 0.7283950617283951
  }
 }

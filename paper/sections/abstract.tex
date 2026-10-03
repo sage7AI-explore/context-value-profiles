@@ -4,13 +4,13 @@ what to keep, such as relevance scores, coverage objectives, compression and fix
 each kind of context changes task success. We introduce marginal context value (MCV) profiles: per model and task family,
 the expected success drop when a context type is removed, the value of its short variant, and pairwise type
 interactions. Each is estimated once by counterfactual ablation with bootstrap intervals and a length-neutral control. A
-CP-SAT compiler selects blocks under the budget, with dependencies and variants, in milliseconds and without model calls.
+CP-SAT compiler selects blocks under the budget, with dependencies and variants, in milliseconds without calling the language model.
 In a pre-registered, fully local evaluation on Qwen3-4B-Instruct (multi-hop QA over HotpotQA, BFCL tool calling,
 long-history recall) against six baselines including LLMLingua-2 and a coverage selector, the primary hypothesis failed.
-MCV did not exceed embedding relevance in area under the success--budget curve in any family, and lost by
-\RHOneHistoryDiff{} on history, where its block ranker favored recent over relevant sessions. The efficiency hypothesis
+MCV did not significantly exceed embedding relevance in area under the success--budget curve in any family, and trailed it by
+\RHOneHistoryAbs{} on history, where its block ranker favored recent over relevant sessions. The efficiency hypothesis
 held in two of three families: at an 8k budget MCV sent \RTokCutTool fewer prompt tokens on tool calling and
-\RTokCutHistory fewer on history with non-inferior success. Interaction terms had no effect. The profiles showed that
-worked examples carried near-zero value in every family, and Qwen3-4B and Qwen3-8B profiles agreed ($\rho=\RRho$);
+\RTokCutHistory fewer on history with non-inferior success. Interaction terms had no effect. The 4B profiles showed that
+worked examples carried near-zero individual value in every family, and Qwen3-4B and Qwen3-8B profiles agreed ($\rho=\RRho$);
 a transferred profile matched a natively measured one on Qwen3-8B. We release code, data adapters and logs of every
 model call.

@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 FMT = {"pct0": lambda v: f"{100 * v:.0f}\\%", "pct1": lambda v: f"{100 * v:.1f}\\%", "f1": lambda v: f"{v:.1f}",
        "f2": lambda v: f"{v:.2f}", "f3": lambda v: f"{v:.3f}", "int": lambda v: f"{int(round(v)):,}".replace(",", "{,}"),
-       "raw": str}
+       "raw": str, "p3": lambda v: "{<}0.001" if v < 0.001 else f"{v:.3f}"}
 
 
 def main() -> None:

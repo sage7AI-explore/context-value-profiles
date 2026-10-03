@@ -8,7 +8,7 @@ selection.
 \begin{figure}[t]\centering
 \includegraphics[width=\columnwidth]{../figures/fig1_architecture.pdf}
 \caption{MCV profiles and the MCV compiler. Profiling happens once per (model, task family) on development data;
-compilation happens per instance and per budget without model calls.}\label{fig:arch}
+compilation happens per instance and per budget without calling the language model (block embeddings are cached).}\label{fig:arch}
 \end{figure}
 
 \subsection{TYPED BLOCK IR AND RENDERING}
@@ -23,7 +23,7 @@ Token costs are measured with each model's own tokenizer.
 For each development instance the profiler evaluates the full context and a set of ablations: every optional type
 removed in turn; every pair of optional types removed; each type rendered with its short variant; and a sample of
 single blocks removed (leave-one-block-out), which trains the instance-level model below. A length-neutral control
-replaces a removed type with filler text of equal token length, separating the effect of content from the effect of
+replaces a removed type with filler text of approximately equal token length, separating the effect of content from the effect of
 prompt length. All runs use greedy decoding with a fixed seed and are cached by prompt hash, so repeated conditions cost
 nothing.
 
@@ -47,8 +47,9 @@ For instance $q$ and budget $B$ the compiler solves
 \end{align*}
 with binary variables, using the CP-SAT solver of OR-Tools under a time limit. Values are scaled to integers. The solver
 returns a certificate (status, objective, bound, time); if no feasible solution is found in time, a value-density greedy
-fills the budget and the certificate records the fallback. Blocks with non-positive predicted value are never selected,
-so the compiler may leave budget unused: more context is not assumed to be better. The additive variant (OURS-A) drops
+fills the budget and the certificate records the fallback. The additive objective never gains from a block with non-positive predicted value, so the compiler may leave budget
+unused: more context is not assumed to be better. With interaction terms, a block of low or negative individual value
+can still be selected when its type completes a positive interaction. The additive variant (OURS-A) drops
 the interaction terms.
 
 Table~\ref{tab:compile} shows one compiled plan from the test split: the predicted block values, the variant chosen for

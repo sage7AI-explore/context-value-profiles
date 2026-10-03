@@ -14,7 +14,7 @@ short variant, and the pairwise interaction between types, each with a bootstrap
 offline, by counterfactual ablation on development instances, with a length-neutral control that separates content from
 prompt length. An instance-level block-value model, trained on leave-one-block-out deltas from the same runs, ranks
 individual blocks. At inference time a compiler solves a budgeted selection program with dependencies, variants and
-interaction terms using CP-SAT and returns a certificate; it calls no model.
+interaction terms using CP-SAT and returns a certificate; it does not call the language model.
 
 Prior work values context in related ways but for other decisions: attribution methods explain one generation by
 ablating its sources~\cite{contextcite2024,attribot2024}, Shapley-style methods value demonstrations, prompts, data
@@ -31,13 +31,13 @@ Qwen3-8B for transfer). We compare against six baselines, including LLMLingua-2 
 
 The results are mixed, and we report them as such. \textbf{The primary hypothesis failed:} MCV-compiled context did not
 achieve a higher area under the success--budget curve than the best baseline (embedding relevance) in any family. It was
-\RHOneHistoryDiff{} lower on history, where at the smallest budget the block-value model kept the session containing the
+\RHOneHistoryAbs{} lower on history, where at the smallest budget the block-value model kept the session containing the
 answer in \RRecallOurs of plans, against \RRecallRel for relevance ranking. \textbf{The efficiency hypothesis held} in
-\RHOnebPass of three families. At an 8k budget the compiler, which leaves budget unused when no remaining block has
-positive value, used \RTokCutTool fewer prompt tokens than full context on tool use and \RTokCutHistory fewer on history
+\RHOnebPass of three families. At an 8k budget the compiler, which leaves budget unused when the remaining blocks add no
+predicted value, used \RTokCutTool fewer prompt tokens than full context on tool use and \RTokCutHistory fewer on history
 with non-inferior success. On question answering it used \RTokCutFacts fewer, but non-inferiority was not shown.
 Interaction terms had no measurable effect. The profiles themselves were informative. Tool schemas and documents carry
-large value (\RMcvToolToolSchema and \RMcvFactsFact), while worked examples carry essentially none in all three families.
+large value (\RMcvToolToolSchema and \RMcvFactsFact), while worked examples carry little value on their own in all three families.
 A stale note is redundant with history (interaction \RIntHistoryHistoryTurnNote). The length-neutral control moved no
 value by more than \RPadDiffMax, and the type values of the 4B and 8B models were rank-correlated ($\rho=\RRho$).
 
@@ -47,7 +47,7 @@ value by more than \RPadDiffMax, and the type values of the 4B and 8B models wer
 pairwise interactions with shrinkage and bootstrap intervals, plus a length-neutral control (Sections~\ref{sec:problem}
 and~\ref{sec:design}).
 \item \emph{A certified budget compiler:} a CP-SAT program over blocks, variants, dependencies and type interactions
-that enforces the budget in the model's own tokenizer and leaves budget unused when context has no value
+that enforces the budget in the model's own tokenizer and leaves budget unused when context has no predicted value
 (Section~\ref{sec:design}).
 \item \emph{A pre-registered, fully local evaluation} of eight context policies on three task families with measured
 token counts, paired tests and Holm correction. It includes a failed primary hypothesis, its diagnosed cause, and a
