@@ -44,6 +44,21 @@
   "source": "aubc.csv",
   "value": 0.48
  },
+ "RAubcFactsHyb": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.53
+ },
+ "RAubcFactsHybHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.63
+ },
+ "RAubcFactsHybLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.43
+ },
  "RAubcFactsLingua": {
   "fmt": "f3",
   "source": "aubc.csv",
@@ -88,6 +103,21 @@
   "fmt": "f3",
   "source": "aubc.csv",
   "value": 0.4800000000000001
+ },
+ "RAubcFactsStop": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.5216666666666666
+ },
+ "RAubcFactsStopHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.62
+ },
+ "RAubcFactsStopLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.42333333333333334
  },
  "RAubcFactsTier": {
   "fmt": "f3",
@@ -164,6 +194,21 @@
   "source": "aubc.csv",
   "value": 1.0
  },
+ "RAubcHistoryHyb": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.935
+ },
+ "RAubcHistoryHybHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.9766666666666667
+ },
+ "RAubcHistoryHybLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.8849999999999999
+ },
  "RAubcHistoryLingua": {
   "fmt": "f3",
   "source": "aubc.csv",
@@ -208,6 +253,21 @@
   "fmt": "f3",
   "source": "aubc.csv",
   "value": 0.9816666666666668
+ },
+ "RAubcHistoryStop": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.9366666666666665
+ },
+ "RAubcHistoryStopHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.9783333333333334
+ },
+ "RAubcHistoryStopLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.8866666666666666
  },
  "RAubcHistoryTier": {
   "fmt": "f3",
@@ -284,6 +344,21 @@
   "source": "aubc.csv",
   "value": 0.84
  },
+ "RAubcToolHyb": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.91
+ },
+ "RAubcToolHybHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.96
+ },
+ "RAubcToolHybLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.85
+ },
  "RAubcToolLingua": {
   "fmt": "f3",
   "source": "aubc.csv",
@@ -328,6 +403,21 @@
   "fmt": "f3",
   "source": "aubc.csv",
   "value": 0.8483333333333333
+ },
+ "RAubcToolStop": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.92
+ },
+ "RAubcToolStopHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.97
+ },
+ "RAubcToolStopLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.86
  },
  "RAubcToolTier": {
   "fmt": "f3",
@@ -544,6 +634,71 @@
   "source": "instances.jsonl (mean full-context tokens)",
   "value": 4234.763333333333
  },
+ "RHEightFactsDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.05
+ },
+ "RHEightFactsHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.04
+ },
+ "RHEightFactsLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.14
+ },
+ "RHEightFactsP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHEightHistoryDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.06
+ },
+ "RHEightHistoryHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.02
+ },
+ "RHEightHistoryLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.11
+ },
+ "RHEightHistoryP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHEightPass": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 1
+ },
+ "RHEightToolDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.01
+ },
+ "RHEightToolHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.05
+ },
+ "RHEightToolLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.02
+ },
+ "RHEightToolP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 0.0047995200479952005
+ },
  "RHOneFactsDiff": {
   "fmt": "f3",
   "source": "tests.csv",
@@ -674,6 +829,136 @@
   "source": "tests.csv",
   "value": 0.0005999400059994
  },
+ "RHSevenFactsDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.04499999999999999
+ },
+ "RHSevenFactsHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.04000000000000001
+ },
+ "RHSevenFactsLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.13166666666666665
+ },
+ "RHSevenFactsP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHSevenHistoryDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.055
+ },
+ "RHSevenHistoryHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.018333333333333333
+ },
+ "RHSevenHistoryLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.10000000000000002
+ },
+ "RHSevenHistoryP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHSevenToolDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.004999999999999999
+ },
+ "RHSevenToolHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.040041666666666066
+ },
+ "RHSevenToolLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.03
+ },
+ "RHSevenToolP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHSevenWins": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 0
+ },
+ "RHSixFactsDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.06
+ },
+ "RHSixFactsHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.03
+ },
+ "RHSixFactsLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.15
+ },
+ "RHSixFactsP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHSixHistoryDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.06
+ },
+ "RHSixHistoryHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.02
+ },
+ "RHSixHistoryLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": -0.11
+ },
+ "RHSixHistoryP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 1.0
+ },
+ "RHSixPass": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 1
+ },
+ "RHSixToolDiff": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.02
+ },
+ "RHSixToolHi": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.05
+ },
+ "RHSixToolLo": {
+  "fmt": "f3",
+  "source": "addendum_tests.csv",
+  "value": 0.0
+ },
+ "RHSixToolP": {
+  "fmt": "p3",
+  "source": "addendum_tests.csv",
+  "value": 0.0008999100089991002
+ },
  "RHThreeVerdict": {
   "fmt": "raw",
   "source": "transfer runs: lower CI bound vs margin",
@@ -739,6 +1024,56 @@
   "source": "selection diagnostics (main_4b)",
   "value": 0.0
  },
+ "RHybStopSame": {
+  "fmt": "pct0",
+  "source": "addendum_test (identical outcomes)",
+  "value": 0.9916666666666667
+ },
+ "RHybVsOursFacts": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.02
+ },
+ "RHybVsOursFactsHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.065
+ },
+ "RHybVsOursFactsLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.10666666666666666
+ },
+ "RHybVsOursHistory": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.0016666666666666785
+ },
+ "RHybVsOursHistoryHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.039999999999999994
+ },
+ "RHybVsOursHistoryLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.051666666666666666
+ },
+ "RHybVsOursTool": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.0016666666666666663
+ },
+ "RHybVsOursToolHi": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": 0.03666666666666667
+ },
+ "RHybVsOursToolLo": {
+  "fmt": "f3",
+  "source": "addendum",
+  "value": -0.04
+ },
  "RIntFactsExampleFact": {
   "fmt": "f2",
   "source": "profiles.csv",
@@ -767,7 +1102,7 @@
  "RLoc": {
   "fmt": "int",
   "source": "code/mcv non-blank lines",
-  "value": 1227
+  "value": 1267
  },
  "RMainEpisodes": {
   "fmt": "int",
@@ -854,10 +1189,20 @@
   "source": "profiles.csv",
   "value": 0.85
  },
+ "RNAddendumEpisodes": {
+  "fmt": "int",
+  "source": "addendum_test",
+  "value": 2400
+ },
  "RNBoot": {
   "fmt": "int",
   "source": "analysis",
   "value": 10000
+ },
+ "RNCalib": {
+  "fmt": "int",
+  "source": "addendum_calib instances per family",
+  "value": 20
  },
  "RNDev": {
   "fmt": "int",
@@ -1404,6 +1749,51 @@
   "source": "main runs",
   "value": 0
  },
+ "RStopMinusOursTokFacts": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1289.73
+ },
+ "RStopMinusOursTokFactsHi": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1200.84775
+ },
+ "RStopMinusOursTokFactsLo": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1381.8705
+ },
+ "RStopMinusOursTokHistory": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1229.96
+ },
+ "RStopMinusOursTokHistoryHi": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1135.7975
+ },
+ "RStopMinusOursTokHistoryLo": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1321.7605
+ },
+ "RStopMinusOursTokTool": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -2053.9
+ },
+ "RStopMinusOursTokToolHi": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -1946.849
+ },
+ "RStopMinusOursTokToolLo": {
+  "fmt": "int",
+  "source": "addendum",
+  "value": -2163.04
+ },
  "RSucFactsAdditiveEight": {
   "fmt": "pct0",
   "source": "success.csv",
@@ -1442,6 +1832,26 @@
  "RSucFactsCovTwo": {
   "fmt": "pct0",
   "source": "success.csv",
+  "value": 0.53
+ },
+ "RSucFactsHybEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.53
+ },
+ "RSucFactsHybFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.53
+ },
+ "RSucFactsHybOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.53
+ },
+ "RSucFactsHybTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
   "value": 0.53
  },
  "RSucFactsLinguaEight": {
@@ -1503,6 +1913,26 @@
   "fmt": "pct0",
   "source": "success.csv",
   "value": 0.57
+ },
+ "RSucFactsStopEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.52
+ },
+ "RSucFactsStopFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.52
+ },
+ "RSucFactsStopOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.53
+ },
+ "RSucFactsStopTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.52
  },
  "RSucFactsTierEight": {
   "fmt": "pct0",
@@ -1604,6 +2034,26 @@
   "source": "success.csv",
   "value": 0.68
  },
+ "RSucHistoryHybEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
+ },
+ "RSucHistoryHybFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
+ },
+ "RSucHistoryHybOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.91
+ },
+ "RSucHistoryHybTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
+ },
  "RSucHistoryLinguaEight": {
   "fmt": "pct0",
   "source": "success.csv",
@@ -1663,6 +2113,26 @@
   "fmt": "pct0",
   "source": "success.csv",
   "value": 1.0
+ },
+ "RSucHistoryStopEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
+ },
+ "RSucHistoryStopFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
+ },
+ "RSucHistoryStopOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.92
+ },
+ "RSucHistoryStopTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.94
  },
  "RSucHistoryTierEight": {
   "fmt": "pct0",
@@ -1759,6 +2229,26 @@
   "source": "success.csv",
   "value": 0.81
  },
+ "RSucToolHybEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.91
+ },
+ "RSucToolHybFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.91
+ },
+ "RSucToolHybOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.91
+ },
+ "RSucToolHybTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.91
+ },
  "RSucToolLinguaEight": {
   "fmt": "pct0",
   "source": "success.csv",
@@ -1819,6 +2309,26 @@
   "source": "success.csv",
   "value": 0.91
  },
+ "RSucToolStopEight": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.92
+ },
+ "RSucToolStopFour": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.92
+ },
+ "RSucToolStopOne": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.92
+ },
+ "RSucToolStopTwo": {
+  "fmt": "pct0",
+  "source": "addendum_success.csv",
+  "value": 0.92
+ },
  "RSucToolTierEight": {
   "fmt": "pct0",
   "source": "success.csv",
@@ -1859,6 +2369,36 @@
   "source": "success.csv",
   "value": 0.4333333333333333
  },
+ "RTauHybFacts": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.606
+ },
+ "RTauHybHistory": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.541
+ },
+ "RTauHybTool": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.585
+ },
+ "RTauStopFacts": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.606
+ },
+ "RTauStopHistory": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.541
+ },
+ "RTauStopTool": {
+  "fmt": "f3",
+  "source": "calibration.json",
+  "value": 0.585
+ },
  "RTests": {
   "fmt": "int",
   "source": "tests.xml",
@@ -1878,6 +2418,36 @@
   "fmt": "pct1",
   "source": "h1b.csv",
   "value": 0.06931767996466953
+ },
+ "RTokCutHybFacts": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.7523807617770573
+ },
+ "RTokCutHybHistory": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.554004121890181
+ },
+ "RTokCutHybTool": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.8563944835329165
+ },
+ "RTokCutStopFacts": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.7391952608247525
+ },
+ "RTokCutStopHistory": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.5219748270278226
+ },
+ "RTokCutStopTool": {
+  "fmt": "pct1",
+  "source": "addendum_tests.csv",
+  "value": 0.8337252663532775
  },
  "RTokCutTool": {
   "fmt": "pct1",
@@ -1899,6 +2469,21 @@
   "source": "h1b.csv",
   "value": 4239.67
  },
+ "RTokHybFacts": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 742.36
+ },
+ "RTokHybHistory": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 1211.86
+ },
+ "RTokHybTool": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 608.84
+ },
  "RTokOursFacts": {
   "fmt": "int",
   "source": "h1b.csv",
@@ -1913,6 +2498,21 @@
   "fmt": "int",
   "source": "h1b.csv",
   "value": 2758.85
+ },
+ "RTokStopFacts": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 781.89
+ },
+ "RTokStopHistory": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 1298.89
+ },
+ "RTokStopTool": {
+  "fmt": "int",
+  "source": "addendum_tests.csv",
+  "value": 704.95
  },
  "RTrFactsNativeEight": {
   "fmt": "pct0",

@@ -40,6 +40,11 @@ def holm(ps):
     return adj
 
 
+def add_cal_n() -> int:
+    c = jl("addendum_calib")
+    return c[c.family == "facts"].iid.nunique()
+
+
 def main() -> None:
     main_df = jl("main_4b")
     add = jl("addendum_test")
@@ -122,6 +127,9 @@ def main() -> None:
     for hyp, nm in (("H6", "Six"), ("H8", "Eight")):
         put(f"RH{nm}Pass", int((T[T.hyp == hyp].lo > -MARGIN).sum()), "int", "addendum_tests.csv")
     put("RNAddendumEpisodes", len(add), "int", "addendum_test")
+    piv = add.pivot_table(index=["family", "iid", "budget"], columns="policy", values="success", aggfunc="first")
+    put("RHybStopSame", float((piv["HYB"] == piv["B2S"]).mean()), "pct0", "addendum_test (identical outcomes)")
+    put("RNCalib", int(add_cal_n()), "int", "addendum_calib instances per family")
     (PROC / "numbers.json").write_text(json.dumps(num, indent=1, sort_keys=True))
     print(pd.DataFrame(rows).round(3).to_string(index=False))
     print(T.round(4).to_string(index=False))

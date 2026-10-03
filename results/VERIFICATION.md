@@ -1,6 +1,12 @@
 # Verification
 
 - [x] instances.jsonl matches TEST.lock
+- [x] addendum_calib: 660 rows, all on the dev split (0 violations)
+- [x] addendum_calib: expected 660 rows, got 660; statuses {'ok': 660}
+- [x] addendum_calib: all 2 manifest commit(s) descend from the pre-registration commit 6401964
+- [x] addendum_test: 2400 rows, all on the test split (0 violations)
+- [x] addendum_test: expected 2400 rows, got 2400; statuses {'ok': 2400}
+- [x] addendum_test: all 1 manifest commit(s) descend from the pre-registration commit 6401964
 - [x] main_4b: 5100 rows, all on the test split (0 violations)
 - [x] main_4b: expected 5100 rows, got 5100; statuses {'ok': 5100}
 - [x] main_4b: all 1 manifest commit(s) descend from the pre-registration commit 944b921
@@ -27,7 +33,7 @@
   - answer re-extracted from the logged reply: 50/50 identical
 - [x] tool: success re-derived from the logged answer for 50 sampled episodes: 50/50 agree
   - answer re-extracted from the logged reply: 50/50 identical
-- [x] tokenizer (qwen3:4b-instruct): Ollama prompt count minus HF count equals 8 (chat-template overhead) in 6180/6180 episodes; range [8, 8]
+- [x] tokenizer (qwen3:4b-instruct): Ollama prompt count minus HF count equals 8 (chat-template overhead) in 8580/8580 episodes; range [8, 8]
 - [x] tokenizer (qwen3:8b): Ollama prompt count minus HF count equals 16 (chat-template overhead) in 720/720 episodes; range [16, 16]
 - [x] independent recomputation: RESULT: MATCH
 

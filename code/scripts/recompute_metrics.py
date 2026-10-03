@@ -83,6 +83,13 @@ def main() -> int:
         b = int(row["budget"])
         v = [s[b] for (g, p, i), s in succ.items() if g == row["family"] and p == row["policy"] and b in s]
         check(f"success {row['family']}/{row['policy']}@{b}", sum(v) / len(v), float(row["success"]))
+    # addendum A: mean AUBC of calibrated B2S and HYB
+    add = defaultdict(dict)
+    for r in episodes(["addendum_test"]):
+        add[(r["family"], r["policy"].split("@")[0], r["iid"])][r["budget"]] = 1.0 if r["success"] else 0.0
+    for row in csv.DictReader((PROC / "addendum.csv").open()):
+        v = [area([s[b] for b in BUDGETS]) for (f, p, i), s in add.items() if f == row["family"] and p == row["policy"]]
+        check(f"addendum AUBC {row['family']}/{row['policy']}", sum(v) / len(v), float(row["aubc"]))
     out = ["# Independent recomputation", "", f"Checked {checked} quantities from results/raw against results/processed.",
            "", "RESULT: " + ("MATCH" if not problems else f"MISMATCH ({len(problems)})")] + [f"- {p}" for p in problems]
     (ROOT / "results" / "RECOMPUTE.md").write_text("\n".join(out) + "\n")

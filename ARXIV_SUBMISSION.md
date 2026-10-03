@@ -24,7 +24,7 @@
 | Title | Context That Pays: Ablation-Calibrated Marginal Context Value Profiles for Budgeted Context Assembly |
 | Authors | Venkata Sangaraju |
 | Abstract | contents of `dist/abstract.txt` |
-| Comments | 12 pages, 8 figures, 5 tables. Pre-registered; primary hypothesis not supported. Code and logs: <your repo URL> |
+| Comments | 12 pages, 7 figures, 6 tables. Pre-registered; primary hypothesis not supported; pre-specified post-hoc follow-up included. Code and logs: <your repo URL> |
 | Primary category | cs.CL (Computation and Language) |
 | Cross-lists | cs.AI, cs.LG |
 | License | CC BY 4.0 (most open; maximizes reuse and citation) |

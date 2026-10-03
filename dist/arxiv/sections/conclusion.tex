@@ -1,11 +1,12 @@
 % CONCLUSION. Numbers ONLY via \R... macros.
-Marginal context value profiles measure, per model and task family, how much each kind of context changes success.
-A budget compiler can then act on them with certificates and millisecond latency. In a pre-registered local evaluation
-the compiled context did not beat embedding relevance in area under the success--budget curve, and it lost on history
-because its block-level ranker learned recency instead of relevance. It did reduce prompt tokens at a non-binding budget (a hypothesis added before testing) by
-\RTokCutTool on tool use and \RTokCutHistory on history without losing success, and its profiles exposed which context
-types were worth sending at all. We release the method, data adapters, logs and analysis so that the profiles, and the
-negative result, can be checked and extended.
+We asked whether measuring how much each type of context contributes to task success can be reused for budgeted
+context assembly. In these experiments, measured context value was more useful for diagnosing which kinds of context
+matter than for ranking individual blocks. Embedding relevance remained difficult to beat at the instance level: neither
+the MCV compiler nor a hybrid built on the profile improved on it, and supervision from single-block deletions was too
+sparse to learn block value. Type-level ablations nevertheless exposed concentrated, redundant and low-value context,
+and the largest token savings came from deciding when to stop sending context. These results motivate context-assembly
+designs that keep type-level valuation and block-level relevance separate, and we release every log so that the
+negative results can be checked and extended.
 
 \textbf{Use of AI assistance.} An AI coding assistant was used to write and test code, run the experiments, and draft
 and edit text. All numbers in the paper are generated from the released logs by scripts, and every reference was

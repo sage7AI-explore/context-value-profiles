@@ -108,7 +108,7 @@ correlation between predicted and observed deltas was \RCvModelHistory for the r
 embedding similarity alone on history, \RCvModelFacts against \RCvSimFacts on facts, and \RCvModelTool for both on
 tool use. The learned ranker was never better than its own similarity feature.
 
-\subsection{EFFICIENCY: H1b IS SUPPORTED IN TWO OF THREE FAMILIES}
+\subsection{PRUNING: H1b IS SUPPORTED IN TWO OF THREE FAMILIES}
 Because the compiler adds blocks only while they raise the predicted objective, it leaves budget unused at 8k
 (Figs.~\ref{fig:composition} and~\ref{fig:frontier}), whereas B2 fills the budget and so matches full context. On tool use OURS sent
 \RTokOursTool tokens instead of \RTokFullTool (\RTokCutTool fewer) with success \RSucOursEightTool against
@@ -118,9 +118,9 @@ the saving coming from the examples, the note and a few low-value sessions. On f
 but success fell from \RSucFullFacts to \RSucOursEightFacts and the CI [\RHOnebFactsLo, \RHOnebFactsHi] crosses the
 margin, so non-inferiority is not shown there. Two families pass, as H1b required. Two caveats bound this result. Full contexts average \RFullTokFacts, \RFullTokHistory
 and \RFullTokTool tokens, so the 8k budget never binds (nor does 4k except on tool use). H1b therefore tests pruning of
-full context, not selection under a binding budget. We also did not evaluate a relevance baseline with a stopping
-rule (for example a similarity threshold), so the savings are not shown to require MCV. They come from the block-level
-values, which stop adding blocks once predicted value reaches zero. On facts, full context was right and
+full context, not selection under a binding budget. The savings come from the block-level values, which stop adding
+blocks once predicted value reaches zero; the follow-up below shows that relevance with a stopping rule achieves them
+without MCV. On facts, full context was right and
 OURS wrong on \RFactsLost instances, and the reverse held on \RFactsGained. Only \RFactsLostGoldDropped of those losses
 removed a supporting paragraph; in the others the model changed its answer when distractors were removed, an effect a
 type-level profile cannot see.
@@ -150,6 +150,51 @@ At 8k, OURS never included the note while OURS-A included it in \RHasNoteAdditiv
 positive example--document interaction (\RIntFactsExampleFact) made OURS keep an example in \RHasExampleOursFacts of
 facts plans against \RHasExampleAdditiveFacts for OURS-A. These changes concern low-value blocks and did not change
 success. On these families, type-pair interactions change what is sent but not whether the task succeeds.
+
+\subsection{POST-HOC FOLLOW-UP: STOPPING RULES AND A HYBRID}
+The results above leave two questions open: are the token savings specific to MCV, and does the three-level split of
+Section~\ref{sec:problem} help if each level uses the signal that worked? After the main results were known we
+pre-specified a follow-up (an addendum to the pre-registration, committed before any of its runs) with two policies.
+\emph{B2S} is relevance ranking with a stopping rule: blocks whose goal cosine falls below a threshold $\tau$ are never
+added. \emph{HYB} is a hybrid: the 4B profile admits only types whose MCV interval excludes zero (documents, history
+sessions, tool schemas), relevance ranks blocks within admitted types with value $\cos-\tau$, and the compiler applies the
+budget, dependencies and short variants. Each family's $\tau$ was chosen from a five-point grid on \RNCalib development
+instances not used for profiling, as the most token-saving value whose success at 8k stayed within \RMargin of full
+context. The same rule picked the same $\tau$ for both policies in every family. Both were run on the main test instances
+and budgets; H6 tests B2S and H8 tests HYB for non-inferiority to full context at 8k, H7 tests HYB against B2 in AUBC
+(one Holm family of nine tests).
+
+\begin{table}[t]\centering\small
+\caption{Post-hoc follow-up (test, Qwen3-4B-Instruct, \RNMain instances per family). AUBC; success and prompt-token
+reduction relative to full context at 8k. Non-inferiority margin \RMargin.}\label{tab:followup}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lccc@{}}\toprule
+ & Facts & History & Tool\\\midrule
+AUBC: B2 / OURS & \RAubcFactsRel{} / \RAubcFactsOurs & \RAubcHistoryRel{} / \RAubcHistoryOurs & \RAubcToolRel{} / \RAubcToolOurs\\
+AUBC: B2S / HYB & \RAubcFactsStop{} / \RAubcFactsHyb & \RAubcHistoryStop{} / \RAubcHistoryHyb & \RAubcToolStop{} / \RAubcToolHyb\\
+H7: HYB$-$B2 [CI] & \RHSevenFactsDiff{} {\scriptsize[\RHSevenFactsLo, \RHSevenFactsHi]} & \RHSevenHistoryDiff{} {\scriptsize[\RHSevenHistoryLo, \RHSevenHistoryHi]} & \RHSevenToolDiff{} {\scriptsize[\RHSevenToolLo, \RHSevenToolHi]}\\\midrule
+@8k success: B0 / OURS & \RSucFullFacts{} / \RSucOursEightFacts & \RSucFullHistory{} / \RSucOursEightHistory & \RSucFullTool{} / \RSucOursEightTool\\
+@8k success: B2S / HYB & \RSucFactsStopEight{} / \RSucFactsHybEight & \RSucHistoryStopEight{} / \RSucHistoryHybEight & \RSucToolStopEight{} / \RSucToolHybEight\\
+@8k tokens cut: OURS & \RTokCutFacts & \RTokCutHistory & \RTokCutTool\\
+@8k tokens cut: B2S / HYB & \RTokCutStopFacts{} / \RTokCutHybFacts & \RTokCutStopHistory{} / \RTokCutHybHistory & \RTokCutStopTool{} / \RTokCutHybTool\\
+H6: B2S$-$B0 [CI] & \RHSixFactsDiff{} {\scriptsize[\RHSixFactsLo, \RHSixFactsHi]} & \RHSixHistoryDiff{} {\scriptsize[\RHSixHistoryLo, \RHSixHistoryHi]} & \RHSixToolDiff{} {\scriptsize[\RHSixToolLo, \RHSixToolHi]}\\
+\bottomrule\end{tabular}}
+\end{table}
+
+Table~\ref{tab:followup} gives the results. \textbf{The hybrid did not improve selection.} HYB exceeded B2 in none of the
+three families (H7; Holm $p=\RHSevenFactsP$, \RHSevenHistoryP, \RHSevenToolP), and its AUBC was close to that of OURS
+(HYB$-$OURS: \RHybVsOursFacts, \RHybVsOursHistory, \RHybVsOursTool). \textbf{The type filter added nothing measurable here:} HYB and
+B2S produced the same outcome in \RHybStopSame of episodes, although B2S kept an example or the note in most of its plans. This
+is consistent with the profiles: the excluded types carry little value, so removing them saves some tokens
+(\RTokCutHybTool against \RTokCutStopTool on tool use) without changing outcomes. \textbf{The savings are not specific to MCV.} On tool use,
+relevance with a stopping rule was non-inferior to full context at 8k (H6, Holm $p=\RHSixToolP$) while removing
+\RTokCutStopTool of prompt tokens, against \RTokCutTool for OURS; HYB behaved alike (H8, $p=\RHEightToolP$). On facts and
+history the calibrated thresholds were too aggressive for the test set: they removed \RTokCutStopFacts and
+\RTokCutStopHistory of tokens, but success fell by \RHSixFactsDiff{} and \RHSixHistoryDiff{}, and non-inferiority was not
+shown. There, the more conservative OURS kept success at the cost of smaller savings. A threshold calibrated on
+\RNCalib instances is a coarse instrument, and the facts calibration curve was not monotone
+(\texttt{results/processed/calibration\_table.csv}).
 
 \subsection{WHAT THE PROFILES SAY}
 Fig.~\ref{fig:profiles} and Table~\ref{tab:profiles} show the profiles of both models. Three regularities hold across families. First,
@@ -244,13 +289,9 @@ range of the middle four fifths of draws.}\label{fig:samplesize}
 \textbf{Profiling.} The 4B profile cost \RProfCallsTotal model calls (\RProfHours hours on a laptop). Measured in
 prompt tokens, profiling pays for itself after about \RBreakEvenTool queries on tool use and \RBreakEvenFacts on
 facts, given the 8k-budget savings above. The facts figure is conditional on accepting that family's non-significant success loss. History saves less per query and breaks even after about
-\RBreakEvenHistory (Fig.~\ref{fig:breakeven}).
+\RBreakEvenHistory.
 
-\begin{figure}[t]\centering
-\includegraphics[width=\columnwidth]{../figures/fig6_breakeven.pdf}
-\caption{Net prompt tokens saved at the 8k budget after paying for 4B profiling, as a function of queries served. Dots
-mark break-even.}\label{fig:breakeven}
-\end{figure}
+
 
 \subsection{DEVELOPMENT HISTORY}
 The block-value model went through three versions on development data only. The first used lexical features (dev AUBC

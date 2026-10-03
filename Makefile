@@ -16,12 +16,14 @@ data:           ## Phase 3: seeded generators/adapters -> data/processed (+ TEST
 
 experiments:    ## Phase 4
 	./experiments/run_all.sh
+	./experiments/run_addendum.sh
 
 results:        ## Phase 5: process raw logs; independent recomputation must match exactly
 	$(PY) scripts/process_results.py
 	$(PY) scripts/analyze_extra.py
 	$(PY) scripts/analyze_profiles.py
 	$(PY) scripts/sensitivity_checker.py
+	$(PY) scripts/analyze_addendum.py
 	$(PY) scripts/recompute_metrics.py
 
 verify:         ## Phase 5 gate

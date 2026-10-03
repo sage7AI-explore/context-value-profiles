@@ -15,5 +15,11 @@
 6. **Profiles as a diagnostic:** tool schemas (0.85) and documents (0.35) carry the value, while examples carry little.
    A length-neutral control reproduces the removal effects. Profiles stabilize with 10–20 dev instances.
 7. **Cost:** 1,440 profiling calls (~3 h on a laptop); median CP-SAT solve 2.3 ms, all optimal.
-8. **Integrity:** independent recomputation MATCH (155 quantities); verification PASS; one checker defect found and
+8. **Integrity:** independent recomputation MATCH (161 quantities); verification PASS; one checker defect found and
    disclosed (22 episodes flipped, no hypothesis difference changed).
+9. **Post-hoc follow-up (Addendum A):**
+   - The hybrid (profile admits types, relevance ranks blocks) beat relevance in 0/3 families.
+   - Relevance with a dev-calibrated stopping rule pruned 83.4% of tokens on tool use with non-inferior success (MCV:
+     34.9%), so the savings are not specific to MCV.
+   - On facts and history the thresholds were too aggressive (success −6 points).
+   - HYB and B2S had the same outcome in about 99% of episodes.
