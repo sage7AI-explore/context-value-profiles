@@ -8,13 +8,17 @@ or fixed priorities written by an engineer. None of these asks the question a bu
 obvious. Models use long contexts unevenly~\cite{lostmiddle2024}, and a block can be relevant to the goal yet add
 nothing the model needs, or be redundant with another block that is already included.
 
-This paper measures that quantity directly and uses it. A \emph{marginal context value (MCV) profile} records, for a
-(model, task family) pair, the expected drop in success when every block of a type is removed, the value of the type's
-short variant, and the pairwise interaction between types, each with a bootstrap interval. Profiles are estimated once,
-offline, by counterfactual ablation on development instances, with a length-neutral control that separates content from
-prompt length. An instance-level block-value model, trained on leave-one-block-out deltas from the same runs, ranks
-individual blocks. At inference time a compiler solves a budgeted selection program with dependencies, variants and
-interaction terms using CP-SAT and returns a certificate; it does not call the language model.
+This paper asks: when context consists of heterogeneous types, can we measure how much each type contributes to task
+success, and can those measurements be reused for budgeted assembly? We separate three levels of the problem
+(Section~\ref{sec:problem}): \emph{type value} (which kinds of context matter for a model and task family),
+\emph{block relevance} (which particular blocks matter for an instance), and \emph{budget allocation} (what to send under a
+token limit, and when to stop). A \emph{marginal context value (MCV) profile} answers the first level. For a (model, task
+family) pair it records the measured drop in success when every block of a type is removed, the value of the type's
+short variant, and pairwise interactions between types, each with a bootstrap interval. Profiles are estimated once,
+offline, by counterfactual ablation on development instances, with a length-neutral control. For the second level we
+train a block-value model on leave-one-block-out deltas from the same runs. For the third, a CP-SAT compiler maximizes
+predicted value under the budget, dependencies and variants without calling the language model, and reports a
+certificate of optimality for that predicted objective.
 
 Prior work values context in related ways but for other decisions: attribution methods explain one generation by
 ablating its sources~\cite{contextcite2024,attribot2024}, Shapley-style methods value demonstrations, prompts, data

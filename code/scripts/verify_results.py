@@ -25,8 +25,9 @@ from mcv.eval.metrics import success  # noqa: E402
 
 RAW = ROOT / "results/raw"
 PREREG = "944b921"
+ADDENDUM = "6401964"  # addendum runs must descend from the addendum commit
 EXPECTED = {"main_4b": 3 * 100 * (1 + 4 * 4), "main_4b_weak": 3 * 30 * 3 * 4,
-            "transfer_8b": 3 * 40 * 2, "transfer_8b_t": 3 * 40 * 2, "transfer_8b_native": 3 * 40 * 2}
+            "addendum_test": 3 * 100 * 2 * 4, "addendum_calib": 3 * 20 * 11, "transfer_8b": 3 * 40 * 2, "transfer_8b_t": 3 * 40 * 2, "transfer_8b_native": 3 * 40 * 2}
 
 
 def rows(run):
@@ -48,19 +49,20 @@ def main() -> int:
     split = {k: v["split"] for k, v in inst.items()}
     for run in sorted(p.name for p in RAW.iterdir() if p.is_dir()):
         R = rows(run)
-        want = "dev" if run.startswith(("profile", "pilot")) else "test"
+        want = "dev" if run.startswith(("profile", "pilot", "addendum_calib")) else "test"
         bad = sum(split[r["iid"]] != want for r in R)
         item(bad == 0, f"{run}: {len(R)} rows, all on the {want} split ({bad} violations)")
         if run in EXPECTED:
             st = Counter(r["status"] for r in R)
             item(len(R) == EXPECTED[run] and set(st) == {"ok"}, f"{run}: expected {EXPECTED[run]} rows, got {len(R)}; "
                  f"statuses {dict(st)}")
-        if run.startswith(("main", "transfer")):
+        if run.startswith(("main", "transfer", "addendum")):
             commits = {json.loads(l)["git_commit"] for l in (RAW / run / "manifest.jsonl").read_text().splitlines() if l.strip()}
-            ok = all(subprocess.run(["git", "merge-base", "--is-ancestor", PREREG, c], cwd=ROOT).returncode == 0
+            ref = ADDENDUM if run.startswith("addendum") else PREREG
+            ok = all(subprocess.run(["git", "merge-base", "--is-ancestor", ref, c], cwd=ROOT).returncode == 0
                      for c in commits)
-            item(ok, f"{run}: all {len(commits)} manifest commit(s) descend from the pre-registration commit {PREREG}")
-    ev = [r for run in EXPECTED for r in rows(run)]
+            item(ok, f"{run}: all {len(commits)} manifest commit(s) descend from the pre-registration commit {ref}")
+    ev = [r for run in EXPECTED if not run.endswith("calib") for r in rows(run)]
     rng = random.Random(0)
     for fam in ("facts", "history", "tool"):
         sample = rng.sample([r for r in ev if r["family"] == fam], 50)

@@ -60,5 +60,7 @@ causal context allocation~\cite{ctxalloc2026} already select context by leave-on
 instance. Our
 contribution is a reusable, type-level value model across heterogeneous blocks (goal, instructions, tool schemas,
 documents, examples, history, notes) with cross-type interaction terms, a test of whether it transfers from a small
-profiling model to larger ones, and an exact dependency-aware compiler that uses it under a hard budget. The novelty is the reuse of type-level values
-across instances; in our evaluation this component did not improve selection over relevance ranking.
+profiling model to larger ones, and an exact dependency-aware compiler that uses it under a hard budget. The distinguishing element is reusable type-level value estimation across heterogeneous context classes,
+conditioned on model and task family, with uncertainty estimates, and compiled under explicit budget, dependency and
+variant constraints. We make no claim beyond that combination, and in our evaluation the type-level component did not
+by itself improve block selection over relevance ranking.
