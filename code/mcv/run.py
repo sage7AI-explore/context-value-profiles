@@ -159,6 +159,8 @@ def evaluate(model: str, family: str, policies: list, budgets: list, profile_mod
                     rec = {"run": run_name, "iid": inst.iid, "family": family, "model": model, "seed": seed,
                            "policy": pol, "budget": b, "profile_model": profile_model,
                            "value_model_from": value_model_from, "status": "ok",
+                           "label": ("OURS-native" if pol == "OURS" and value_model_from and profile_model == model
+                                     else "OURS-T" if pol == "OURS" and profile_model and profile_model != model else pol),
                            "success": success(inst.checker, ans, inst.gold), "answer": ans, "reply": r["text"][-600:],
                            "selection": plan.selection, "plan_tokens": plan.tokens,
                            "prompt_tokens_measured": counter.count(prompt), "ollama_prompt_tokens": r["prompt_tokens"],
