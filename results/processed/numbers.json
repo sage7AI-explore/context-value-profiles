@@ -407,7 +407,7 @@
  "RBudgetedEpisodes": {
   "fmt": "int",
   "source": "success.csv",
-  "value": 6201
+  "value": 6600
  },
  "RBudgetedMain": {
   "fmt": "int",
@@ -1062,7 +1062,7 @@
  "ROverBudget": {
   "fmt": "int",
   "source": "success.csv (budgeted episodes with measured prompt > budget)",
-  "value": 34
+  "value": 36
  },
  "ROverBudgetMain": {
   "fmt": "int",
@@ -1944,6 +1944,11 @@
   "source": "transfer.csv",
   "value": 0.625
  },
+ "RTrHistoryNativeEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.975
+ },
  "RTrHistoryNativeTwo": {
   "fmt": "pct0",
   "source": "transfer.csv",
@@ -1972,7 +1977,132 @@
  "RTrN": {
   "fmt": "int",
   "source": "transfer.csv",
-  "value": 1
+  "value": 40
+ },
+ "RTrTokFactsNativeEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2031.675
+ },
+ "RTrTokFactsNativeTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1847.375
+ },
+ "RTrTokFactsRelEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2980.675
+ },
+ "RTrTokFactsRelTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1965.45
+ },
+ "RTrTokFactsTransferEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2039.375
+ },
+ "RTrTokFactsTransferTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1850.4
+ },
+ "RTrTokHistoryNativeEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2569.875
+ },
+ "RTrTokHistoryNativeTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1985.325
+ },
+ "RTrTokHistoryRelEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2734.75
+ },
+ "RTrTokHistoryRelTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1968.425
+ },
+ "RTrTokHistoryTransferEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2527.0
+ },
+ "RTrTokHistoryTransferTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1970.525
+ },
+ "RTrTokToolNativeEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2491.175
+ },
+ "RTrTokToolNativeTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1850.2
+ },
+ "RTrTokToolRelEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 4231.775
+ },
+ "RTrTokToolRelTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1966.375
+ },
+ "RTrTokToolTransferEight": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 2820.7
+ },
+ "RTrTokToolTransferTwo": {
+  "fmt": "int",
+  "source": "transfer.csv",
+  "value": 1905.725
+ },
+ "RTrToolNativeEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.925
+ },
+ "RTrToolNativeTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.925
+ },
+ "RTrToolRelEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.9
+ },
+ "RTrToolRelTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.9
+ },
+ "RTrToolTransferEight": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.925
+ },
+ "RTrToolTransferTwo": {
+  "fmt": "pct0",
+  "source": "transfer.csv",
+  "value": 0.925
+ },
+ "RTransferAllEqual": {
+  "fmt": "pct0",
+  "source": "transfer runs",
+  "value": 1.0
  },
  "RTransferDiff": {
   "fmt": "f3",
@@ -1992,11 +2122,11 @@
  "RTransferN": {
   "fmt": "int",
   "source": "transfer runs",
-  "value": 81
+  "value": 240
  },
  "RTransferSameSel": {
   "fmt": "pct0",
   "source": "transfer runs: identical selections OURS-T vs OURS-native",
-  "value": 0.7283950617283951
+  "value": 0.3541666666666667
  }
 }

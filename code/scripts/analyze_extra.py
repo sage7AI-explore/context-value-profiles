@@ -322,6 +322,11 @@ def main() -> None:
     for r in T:
         put(f"RTr{FAM[r['family']]}{CN[r['cond']]}{BW[r['budget']]}", r["success"], "pct0", "transfer.csv")
     put("RTrN", int(min(r["n"] for r in T)), "int", "transfer.csv")
+    for r in T:
+        put(f"RTrTok{FAM[r['family']]}{CN[r['cond']]}{BW[r['budget']]}", r["tokens"], "int", "transfer.csv")
+    pe = tr[tr.cond.isin(["OURS-T", "OURS-native"])].pivot_table(index=["family", "budget", "iid"], columns="cond",
+                                                                values="success", aggfunc="first").astype(float)
+    put("RTransferAllEqual", float((pe["OURS-T"] == pe["OURS-native"]).mean()), "pct0", "transfer runs")
 
     # design constants (read from code / data where they live, so the paper cannot drift from the implementation)
     from mcv.agent import loop

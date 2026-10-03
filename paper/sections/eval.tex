@@ -177,9 +177,13 @@ between-family differences contribute to the agreement), and their magnitudes ag
 closely (Fig.~\ref{fig:profiles}). On Qwen3-8B (first \RNTransfer test instances per family, budgets 2k and 8k),
 compiling with the transferred 4B profile and with the natively measured 8B profile gave a pooled success difference of
 \RTransferDiff{} [\RTransferLo, \RTransferHi] over \RTransferN paired episodes, so H3 non-inferiority holds
-(Fig.~\ref{fig:transfer}). The two profiles produced identical selections in \RTransferSameSel of episodes. This is expected: both share
-the block-value model, and the type values that differ do so by less than the gap to the next type. Relevance ranking was
-again at least as accurate on facts (\RTrFactsRelTwo against \RTrFactsTransferTwo at 2k).
+(Fig.~\ref{fig:transfer}). The outcome was the same in \RTransferAllEqual of paired episodes, although the two profiles
+produced identical selections in only \RTransferSameSel. The differences involved tool schemas,
+history sessions and examples alike, yet never changed the outcome. This suggests that both profiles keep the blocks
+that decide success and differ only in blocks that do not. The efficiency pattern of the 4B study carried over. On tool use at 8k the transferred profile
+sent \RTrTokToolTransferEight prompt tokens against \RTrTokToolRelEight for relevance ranking, with success
+\RTrToolTransferEight against \RTrToolRelEight. Relevance ranking was again more accurate on facts (\RTrFactsRelTwo
+against \RTrFactsTransferTwo at 2k). With \RNTransfer instances per family these 8B comparisons are descriptive.
 
 \begin{figure}[t]\centering
 \includegraphics[width=\columnwidth]{../figures/fig4_transfer.pdf}
