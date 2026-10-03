@@ -184,7 +184,9 @@ def test_ours_policy_with_profile():
             "short": {"fact": {"value": 0.25}}, "interaction": {"note|history_turn": {"value": -0.2}}}
     vm = BlockValueModel()  # unfitted -> falls back to the type-MCV feature
     vals = P.mcv_values(x, c, prof, vm)
-    assert vals["f0"]["full"] == 0.5 and math.isclose(vals["f0"]["short"], 0.25)
+    # two fact blocks share the fact MCV (0.5) equally when the model has no signal; short = half of full
+    assert math.isclose(vals["f0"]["full"], 0.25) and math.isclose(vals["f0"]["short"], 0.125)
+    assert vals["ex0"]["full"] == 0.0 and math.isclose(vals["f0"]["full"] + vals["f1"]["full"], 0.5)
     plan = P.ours(x, c, 10_000, {"profile": prof, "value_model": vm})
     assert {"f0", "f1"} <= set(plan.selection)
     assert P.interactions(prof) == {("note", "history_turn"): -0.2}
