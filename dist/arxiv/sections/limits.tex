@@ -29,8 +29,7 @@ The results suggest a cheap procedure. Profile each (model, task family) on a sm
 instances sufficed here to rank types, judged from subsamples of the same \RNProfFour instances), using type removals and
 the length-neutral control. Use the profile to audit the default prompt: consider removing types whose value interval sits
 at zero (here, worked examples on history and tool use) after checking their interactions. Rank blocks by relevance, and
-calibrate a stopping threshold on held-out development data rather than filling the budget. Re-profile when the model or
-task family changes. Interaction terms can be omitted unless two valuable types interact strongly.
+calibrate a stopping threshold on held-out development data rather than filling the budget.
 
 \subsection{LIMITATIONS AND THREATS TO VALIDITY}
 \textbf{Construct validity.} Each instance is a single agent decision, not a multi-step trajectory with a simulated
@@ -47,8 +46,7 @@ guaranteed to be bitwise deterministic; caching makes every reported response re
 rerun may differ slightly.
 \textbf{Statistical conclusion validity.} The pre-registered power analysis put power for a \RSesoi{} AUBC effect on facts at
 about \RPowerFacts with \RNMain instances, so the null result on facts is weak evidence of no effect. The weaker baselines used
-\RNWeak instances; each scored below B2 in every family (Table~\ref{tab:main}), so B2 is the best baseline throughout. Transfer used
-\RNTransfer instances per family and two budgets. The follow-up (B2S, HYB) was specified after the main results were
+\RNWeak instances; each scored below B2 in every family (Table~\ref{tab:main}), so B2 is the best baseline throughout. The follow-up (B2S, HYB) was specified after the main results were
 known and reuses the same test instances; its thresholds were calibrated on \RNCalib development instances per family,
 which proved noisy.
 \textbf{External validity.} Two models of one family (Qwen3, 4B and 8B) were tested; a third model from another family

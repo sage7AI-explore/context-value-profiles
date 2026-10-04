@@ -195,8 +195,7 @@ relevance with a stopping rule was non-inferior to full context at 8k (H6, Holm 
 history the calibrated thresholds were too aggressive for the test set: they removed \RTokCutStopFacts and
 \RTokCutStopHistory of tokens, but success fell by \RHSixFactsDiff{} and \RHSixHistoryDiff{}, and non-inferiority was not
 shown. There, the more conservative OURS kept success at the cost of smaller savings. A threshold calibrated on
-\RNCalib instances is a coarse instrument, and the facts calibration curve was not monotone
-(\texttt{results/processed/calibration\_table.csv}).
+\RNCalib instances is a coarse instrument; the facts calibration curve was not even monotone.
 
 \subsection{WHAT THE PROFILES SAY}
 Fig.~\ref{fig:profiles} and Table~\ref{tab:profiles} show the profiles of both models. Three regularities hold across families. First,
