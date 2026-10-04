@@ -21,7 +21,7 @@
 | Field | Value |
 |---|---|
 | Upload | `dist/context-that-pays-arxiv.tar.gz` (choose "TeX source") |
-| Title | Context That Pays: Ablation-Calibrated Marginal Context Value Profiles for Budgeted Context Assembly |
+| Title | Context That Pays? Why Measured Context Value Failed to Beat Cosine Similarity in a Pre-Registered Test |
 | Authors | Venkata Sangaraju |
 | Abstract | contents of `dist/abstract.txt` |
 | Comments | 12 pages, 7 figures, 6 tables. Pre-registered; primary hypothesis not supported; pre-specified post-hoc follow-up included. Code and logs: <your repo URL> |
