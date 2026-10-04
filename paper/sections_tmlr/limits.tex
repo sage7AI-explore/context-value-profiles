@@ -1,0 +1,59 @@
+% DISCUSSION, LIMITATIONS AND THREATS TO VALIDITY. Numbers ONLY via \R... macros.
+\subsection{What the Results Mean}
+In these experiments measured context value was more useful for diagnosing which kinds of context matter than for
+choosing individual blocks. At the block level, embedding relevance was hard to beat: neither the MCV compiler nor the
+hybrid improved on it, and the learned block ranker was worse where it substituted recency for relevance. At the type
+level, the profiles exposed structure that relevance scores do not report: value concentrated in one or two types per
+family, worked examples with little individual value, a substitution between history and the note, and a large loss
+from shortening tool schemas. The token savings came from not sending context, and a relevance ranker with a stopping
+rule achieved them as well, so they are a property of stopping rather than of MCV.
+
+The block-level failure is informative about supervision. When many blocks are individually dispensable (one session of
+\RNumSessions, one document of \RNumDocs), single deletions rarely change the outcome, and a regression on those deltas
+learns proxies. Group or pairwise deletions, or relevance itself as the within-type ranker, are the natural fixes; the
+hybrid tested the latter and matched relevance with a stopping rule almost exactly.
+
+\subsection{Design Lesson and Future Work}
+The evidence suggests separating type-level valuation from instance-level relevance: a type profile decides which
+types deserve budget and flags low-value or redundant context; relevance ranks blocks within types; a stopping rule or
+constraint-aware compiler decides when more context is not worth sending. Our hybrid instantiated this pipeline and did
+not beat relevance on these families, where the excluded types already had little effect on outcomes. Whether the type
+level helps where low-value types are large, numerous or harmful remains untested. Three experiments would most
+strengthen these conclusions: (i) stopping thresholds calibrated on a larger development set, since our calibration on
+\RNCalib instances per family was too aggressive for facts and history; (ii) the same protocol on a model family other
+than Qwen, which would test whether profiles and the null selection result generalize; and (iii) tasks with binding
+budgets and long-horizon trajectories, where type-level allocation has more room to matter.
+
+\subsection{Practical Guidance}
+The results suggest a cheap procedure. Profile each (model, task family) on a small development set (ten to twenty
+instances sufficed here to rank types, judged from subsamples of the same \RNProfFour instances), using type removals and
+the length-neutral control. Use the profile to audit the default prompt: consider removing types whose value interval sits
+at zero (here, worked examples on history and tool use) after checking their interactions. Rank blocks by relevance, and
+calibrate a stopping threshold on held-out development data rather than filling the budget. Re-profile when the model or
+task family changes. Interaction terms can be omitted unless two valuable types interact strongly.
+
+\subsection{Limitations and Threats to Validity}
+\textbf{Construct validity.} Each instance is a single agent decision, not a multi-step trajectory with a simulated
+user as in $\tau$-bench~\citep{taubench2024}; context value in long-horizon agents may compound across steps. Success is a deterministic check (answer match, AST-level call match),
+which misses partially correct outputs.
+\textbf{Internal validity.} B4 is our re-implementation of a PACMS-style objective, not the authors' code, and B3 uses one
+LLMLingua-2 checkpoint; both could be tuned further. Rendered prompts may exceed the budget by at most \RMaxOvershoot
+tokens because tokenization is not additive across block boundaries. Reading transcripts after the test runs revealed a defect in the tool checker: it compared list-valued arguments as
+strings, so an integer list failed against the same values written as floats. Rescoring all logged answers with
+element-wise numeric comparison changed \RCheckerFlips episodes, spread across all policies, and left the H1, H1b and H2
+mean paired differences unchanged at three decimals (for example H1 on tool use, \RSensHOneTool). We keep the
+pre-registered checker as primary. Greedy decoding on Apple-silicon inference is not
+guaranteed to be bitwise deterministic; caching makes every reported response reproducible from the logs, but a fresh
+rerun may differ slightly.
+\textbf{Statistical conclusion validity.} The pre-registered power analysis put power for a \RSesoi{} AUBC effect on facts at
+about \RPowerFacts with \RNMain instances, so the null result on facts is weak evidence of no effect. The weaker baselines used
+\RNWeak instances; each scored below B2 in every family (Table~\ref{tab:main}), so B2 is the best baseline throughout. Transfer used
+\RNTransfer instances per family and two budgets. The follow-up (B2S, HYB) was specified after the main results were
+known and reuses the same test instances; its thresholds were calibrated on \RNCalib development instances per family,
+which proved noisy.
+\textbf{External validity.} Two models of one family (Qwen3, 4B and 8B) were tested; a third model from another family
+was planned and dropped for compute, so neither the profiles nor transfer are shown to generalize beyond Qwen3. Identical paired outcomes under transferred
+and native profiles, despite differing selections, cannot distinguish faithful transfer from compiler insensitivity. One task family (history) is
+synthetic; HotpotQA is known to admit reasoning shortcuts that MuSiQue was built to remove~\citep{musique2022}; and
+HotpotQA and BFCL may overlap with pretraining data. Profiles are per (model, task family) and must be
+re-measured when either changes, at the profiling cost reported in Section~\ref{sec:eval}.

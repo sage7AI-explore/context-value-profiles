@@ -1,0 +1,68 @@
+% INTRODUCTION. Numbers ONLY via \R... macros from generated/numbers.tex.
+An LLM agent's prompt is assembled, not written. Before each decision a harness collects tool schemas, retrieved
+documents, worked examples, notes and conversation history, and must fit them into a token budget set by latency, cost or
+the model's window~\citep{cesurvey2025}. What to keep is usually decided by heuristics: a relevance score against the
+goal, a coverage objective over candidate passages~\citep{pacms2026}, a compressor that deletes tokens~\citep{llmlingua2_2024},
+or fixed priorities written by an engineer. None of these asks the question a budgeted system actually faces:
+\emph{how much does this kind of context change task success for this model on this task family?} The answer is not
+obvious. Models use long contexts unevenly~\citep{lostmiddle2024}, and a block can be relevant to the goal yet add
+nothing the model needs, or be redundant with another block that is already included.
+
+This paper asks: when context consists of heterogeneous types, can we measure how much each type contributes to task
+success, and can those measurements be reused for budgeted assembly? We separate three levels of the problem
+(Section~\ref{sec:problem}): \emph{type value} (which kinds of context matter for a model and task family),
+\emph{block relevance} (which particular blocks matter for an instance), and \emph{budget allocation} (what to send under a
+token limit, and when to stop). A \emph{marginal context value (MCV) profile} answers the first level. For a (model, task
+family) pair it records the measured drop in success when every block of a type is removed, the value of the type's
+short variant, and pairwise interactions between types, each with a bootstrap interval. Profiles are estimated once,
+offline, by counterfactual ablation on development instances, with a length-neutral control. For the second level we
+train a block-value model on leave-one-block-out deltas from the same runs. For the third, a CP-SAT compiler maximizes
+predicted value under the budget, dependencies and variants without calling the language model, and reports a
+certificate of optimality for that predicted objective.
+
+Prior work values context in related ways but for other decisions: attribution methods explain one generation by
+ablating its sources~\citep{contextcite2024,attribot2024}, Shapley-style methods value demonstrations, prompts, data
+points or skills~\citep{demoshapley2024,promptshapley2023,datashapley2019,skillsv2026}, and recent context-allocation
+studies measure the causal effect of context in generative search~\citep{ctxalloc2026}. Section~\ref{sec:related}
+positions MCV profiles against these and against budgeted selectors. The distinguishing combination is a reusable,
+type-level, interval-reported value table measured per model and task family and compiled under a hard token budget.
+
+We evaluate the approach under a pre-registered protocol (hypotheses, margins, sample sizes and the method version fixed
+before any test run, recorded as a commit in the released repository; it was not deposited with an external registry) on three task families: multi-hop question answering over HotpotQA documents with distractors,
+tool selection and argument filling over a \RNumTools-tool catalog built from BFCL, and recall of the latest value of a
+user attribute from \RNumSessions synthetic sessions. All models run locally (Qwen3-4B-Instruct for the main study,
+Qwen3-8B for transfer). We compare against six baselines, including LLMLingua-2 and a PACMS-style coverage selector.
+
+The primary result is negative, and we lead with it. \textbf{MCV did not beat relevance at block selection:}
+MCV-compiled context did not significantly exceed embedding relevance (the best baseline) in area under the
+success--budget curve in any family, and was \RHOneHistoryAbs{} lower on history. The cause is at the block level. Single
+deletions rarely change the outcome, so the block-value model learned proxies such as recency and length. At the smallest
+history budget it kept the session holding the answer in \RRecallOurs of plans, against \RRecallRel for relevance.
+\textbf{Efficiency held, but is not specific to MCV.} The efficiency hypothesis, added after development pilots but before
+any test run, held in \RHOnebPass of three families: at an 8k budget, which full contexts never reach, MCV pruned
+\RTokCutTool of prompt tokens on tool use and \RTokCutHistory on history with non-inferior success. A pre-specified
+post-hoc follow-up showed that relevance with a calibrated stopping rule pruned more (\RTokCutStopTool on tool use, also
+non-inferior), and that a hybrid in which the profile admits types and relevance ranks blocks did not beat relevance.
+Interaction terms had no detectable effect. \textbf{As a diagnostic, the profiles were informative.} Tool schemas,
+documents and history carried most of the value (\RMcvToolToolSchema, \RMcvFactsFact, \RMcvHistoryHistoryTurn),
+worked examples little on their own, and shortened tool schemas lost most of theirs. History and the profile note
+substituted for each other (interaction \RIntHistoryHistoryTurnNote), and the length-neutral control moved no value by
+more than \RPadDiffMax. Qwen3-4B and Qwen3-8B type values were rank-correlated ($\rho=\RRho$), but outcome agreement under
+transferred and native profiles may reflect compiler insensitivity as much as transfer.
+
+\textbf{Contributions.}
+\begin{itemize}
+\item \emph{A three-level view of context assembly} (type value, block relevance, budget allocation), with evidence that
+the levels should not be served by one signal: measured type value was informative, while block selection was best served
+by embedding relevance (Sections~\ref{sec:problem} and~\ref{sec:eval}).
+\item \emph{MCV profiles as a reusable type-level diagnostic:} an estimator of per-(model, family) type values,
+short-variant values and interactions with shrinkage, bootstrap intervals and a length-neutral control, with measured
+stability (ten to twenty development instances in subsampling), cost and Qwen3-4B-to-8B agreement.
+\item \emph{A controlled, pre-registered evaluation} of ten context policies on three task families, including a failed
+primary hypothesis, a pre-specified follow-up, and evidence that leave-one-block-out deltas were too sparse to train a
+block ranker that improves on embedding similarity.
+\item \emph{A dependency- and variant-aware exact budget compiler} whose certificate is bounded to the predicted
+objective, not task success (Section~\ref{sec:design}).
+\item \emph{An open artifact:} code, data adapters, logs of every model call, and scripts that regenerate every number,
+table and figure.
+\end{itemize}

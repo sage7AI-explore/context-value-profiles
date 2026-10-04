@@ -56,3 +56,6 @@ clean-paper:
 
 arxiv:          ## self-contained arXiv source package in dist/ (run after `make paper`)
 	$(PY) scripts/make_arxiv.py
+
+tmlr:           ## TMLR versions: paper/main_tmlr.pdf (anonymous submission) + paper/main_tmlr_preprint.pdf
+	python3 ../tools/to_tmlr.py .

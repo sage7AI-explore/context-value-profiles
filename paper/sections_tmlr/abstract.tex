@@ -1,0 +1,18 @@
+% Numbers via \R macros only.
+LLM agents assemble prompts from heterogeneous context (tool schemas, documents, examples, notes, history) under a
+token budget. We separate three questions: which context types matter for a model and task family, which blocks matter
+for an instance, and what to send under a budget. Marginal context value (MCV) profiles address the first: measured
+success drops when a type is removed, short-variant values and type interactions, estimated offline by ablation with
+bootstrap intervals. A CP-SAT compiler optimizes predicted block values under budget, dependency and variant
+constraints; its certificate covers that objective, not task success. In a pre-registered local evaluation on
+Qwen3-4B-Instruct (HotpotQA, BFCL tool calling, synthetic history) the primary hypothesis failed: MCV did not
+significantly exceed embedding relevance in any family and trailed it by \RHOneHistoryAbs{} AUBC on history.
+Single-block deletions rarely changed outcomes, and the learned block ranker leaned on recency and length and never
+beat embedding similarity. At a non-binding 8k budget MCV pruned \RTokCutTool of prompt tokens on tool calling and
+\RTokCutHistory on history with non-inferior success. In a pre-specified post-hoc follow-up, relevance with a
+calibrated stopping rule pruned \RTokCutStopTool on tool calling with non-inferior success, so these savings are not
+specific to MCV, and a hybrid (profile admits types, relevance ranks blocks) beat relevance in no family. Interaction
+terms had no detectable effect. As diagnostics the profiles were informative: tool schemas, documents and history
+carried most of the value, worked examples little individual value, and shortened tool schemas lost most of theirs. 4B
+and 8B type values were rank-correlated ($\rho=\RRho$, \RRhoN pairs), and transferred and native profiles gave
+identical paired outcomes, consistent with transfer or with compiler insensitivity. Code and all logs are released.
