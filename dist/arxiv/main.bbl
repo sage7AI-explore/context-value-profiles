@@ -216,13 +216,13 @@ D.~Wu, H.~Wang, W.~Yu, Y.~Zhang, K.-W. Chang, and D.~Yu, ``{LongMemEval:
   preprint arXiv:2410.10813, 2024.
 
 \bibitem{taubench2024}
-S.~Yao, N.~Shinn, P.~Razavi, and K.~Narasimhan, ``{\$τ\$-bench: A Benchmark
+S.~Yao, N.~Shinn, P.~Razavi, and K.~Narasimhan, ``{$\tau$-bench: A Benchmark
   for Tool-Agent-User Interaction in Real-World Domains},'' arXiv preprint
   arXiv:2406.12045, 2024.
 
 \bibitem{musique2022}
-H.~Trivedi, N.~Balasubramanian, T.~Khot, and A.~Sabharwal, ``{♫ MuSiQue:
-  Multihop Questions via Single-hop Question Composition},'' \emph{Transactions
-  of the Association for Computational Linguistics}, 2022.
+H.~Trivedi, N.~Balasubramanian, T.~Khot, and A.~Sabharwal, ``{MuSiQue: Multihop
+  Questions via Single-hop Question Composition},'' \emph{Transactions of the
+  Association for Computational Linguistics}, 2022.
 
 \end{thebibliography}
