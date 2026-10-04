@@ -1,4 +1,4 @@
-# Context That Pays: Ablation-Calibrated Marginal Context Value Profiles for Budgeted Context Assembly
+# Context That Pays? Why Measured Context Value Failed to Beat Cosine Similarity in a Pre-Registered Test
 
 Venkata Sangaraju (Independent Researcher) and Sudhir Vissa (SAGE7 AI)
 

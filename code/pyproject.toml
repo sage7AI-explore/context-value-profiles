@@ -1,7 +1,7 @@
 [project]
 name = "mcv"
 version = "0.0.1"
-description = "Context That Pays: Ablation-Calibrated Marginal Context Value Profiles for Budgeted Context Assembly"
+description = "Context That Pays? Why Measured Context Value Failed to Beat Cosine Similarity in a Pre-Registered Test"
 requires-python = ">=3.12,<3.13"
 license = {text = "MIT"}
 # Versions are pinned by uv.lock after the first `uv lock`. Add/remove deps as the build requires; record why in README.
