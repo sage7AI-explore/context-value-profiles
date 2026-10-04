@@ -24,6 +24,7 @@ results:        ## Phase 5: process raw logs; independent recomputation must mat
 	$(PY) scripts/analyze_profiles.py
 	$(PY) scripts/sensitivity_checker.py
 	$(PY) scripts/analyze_addendum.py
+	$(PY) scripts/analyze_note_fallback.py
 	$(PY) scripts/recompute_metrics.py
 
 verify:         ## Phase 5 gate

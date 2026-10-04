@@ -1374,6 +1374,26 @@
   "source": "mcv/profile/estimate.py",
   "value": 10
  },
+ "RNoteInOursOne": {
+  "fmt": "pct0",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 0.0
+ },
+ "RNoteInRelOne": {
+  "fmt": "pct0",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 1.0
+ },
+ "RNoteRescueN": {
+  "fmt": "int",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 59
+ },
+ "RNoteRescueRate": {
+  "fmt": "pct0",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 0.847457627118644
+ },
  "RNumCtx": {
   "fmt": "int",
   "source": "mcv/agent/loop.py",
@@ -1403,6 +1423,16 @@
   "fmt": "raw",
   "source": "ENVIRONMENT.md",
   "value": "0.35.0"
+ },
+ "ROursFailCurrentNote": {
+  "fmt": "int",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 18
+ },
+ "ROursFailHistOne": {
+  "fmt": "int",
+  "source": "note_fallback.csv (exploratory)",
+  "value": 36
  },
  "ROverBudget": {
   "fmt": "int",
@@ -1593,6 +1623,21 @@
   "fmt": "pct0",
   "source": "selection diagnostics (main_4b)",
   "value": 0.2225
+ },
+ "RSelOutcomeDiffFacts": {
+  "fmt": "pct1",
+  "source": "main_4b (OURS vs OURS-A outcome differs)",
+  "value": 0.02
+ },
+ "RSelOutcomeDiffHistory": {
+  "fmt": "pct1",
+  "source": "main_4b (OURS vs OURS-A outcome differs)",
+  "value": 0.005
+ },
+ "RSelOutcomeDiffTool": {
+  "fmt": "pct1",
+  "source": "main_4b (OURS vs OURS-A outcome differs)",
+  "value": 0.0025
  },
  "RSensHOneFacts": {
   "fmt": "f3",

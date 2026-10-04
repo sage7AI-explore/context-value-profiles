@@ -21,6 +21,10 @@ def main() -> None:
     for name, spec in sorted(nums.items()):
         assert re.fullmatch(r"R[A-Za-z]+", name), f"bad macro name {name}"
         out.append(f"\\newcommand{{\\{name}}}{{{FMT[spec.get('fmt', 'raw')](spec['value'])}\\xspace}}  % {spec.get('source', '')}")
+        if spec.get("fmt") == "p3":  # relation-carrying twin for prose: $p\\<name>Rel$ -> "p < 0.001" / "p = 0.393"
+            v = spec["value"]
+            rel = "{<}\\,0.001" if v < 0.001 else f"{{=}}\\,{v:.3f}"
+            out.append(f"\\newcommand{{\\{name}Rel}}{{{rel}\\xspace}}  % {spec.get('source', '')}")
     (ROOT / "paper" / "generated").mkdir(parents=True, exist_ok=True)
     (ROOT / "paper" / "generated" / "numbers.tex").write_text("\\RequirePackage{xspace}\n" + "\n".join(out) + "\n")
     print(len(nums), "macros")

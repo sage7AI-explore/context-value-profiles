@@ -44,6 +44,9 @@ def tex_escape(s: str) -> str:
     s = unicodedata.normalize("NFC", re.sub(r"\s+", " ", s)).strip()
     for a, b in [("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_"), ("#", r"\#"), ("$", r"\$")]:
         s = s.replace(a, b)
+    # Registry titles sometimes carry TeX math ("$\\tau$-bench", which the escape above turns into "\\$τ\\$") or
+    # decorative symbols ("♫ MuSiQue") that pdfLaTeX cannot typeset. Map them to plain TeX.
+    s = s.replace(r"\$τ\$", r"$\tau$").replace("τ", r"$\tau$").replace("♫", "").strip()
     return s
 
 
