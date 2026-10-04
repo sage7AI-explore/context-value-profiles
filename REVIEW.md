@@ -6,7 +6,7 @@
 | No hand-typed result numbers | PASS | `check_paper.py` scans sections: every number is a `\R` macro from `results/processed/numbers.json`; tables and excerpts are generated (`paper/generated/`) |
 | Real references only, DOI-resolving, abstracts read | PASS | `refs/VERIFY_REPORT.md`: 42/42 Crossref/DataCite + doi.org; `refs/abstracts/` |
 | Local and free only | PASS | Ollama 0.35.0 (qwen3:4b-instruct, qwen3:8b, nomic-embed-text); no paid API |
-| Pre-registration before test | PASS | `PLAN.md` commit 944b921 precedes all test manifests (`results/VERIFICATION.md`) |
+| Pre-registration before test | PASS | `PLAN.md` commit 4c6491b (originally 944b921; see COMMIT_MAP.md) precedes all test manifests (`results/VERIFICATION.md`) |
 | Honest reporting | PASS | H1 failure in the abstract; deviations in `PLAN.md` and the paper; `results/FAILED_RUNS.md` |
 | Independent recomputation | MATCH | `results/RECOMPUTE.md` (161 quantities, incl. addendum) |
 | Audit + reviewer | Done | `results/AUDIT.md` (16 issues fixed), `results/REVIEWS.md` (13 text requests addressed) |

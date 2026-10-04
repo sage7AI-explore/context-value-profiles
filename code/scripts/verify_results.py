@@ -24,8 +24,8 @@ from mcv.agent.loop import extract_answer  # noqa: E402
 from mcv.eval.metrics import success  # noqa: E402
 
 RAW = ROOT / "results/raw"
-PREREG = "944b921"
-ADDENDUM = "6401964"  # addendum runs must descend from the addendum commit
+PREREG = "4c6491b"  # rewritten hash of original 944b921 (see COMMIT_MAP.md)
+ADDENDUM = "2691500"  # rewritten hash of original 6401964 (see COMMIT_MAP.md)
 EXPECTED = {"main_4b": 3 * 100 * (1 + 4 * 4), "main_4b_weak": 3 * 30 * 3 * 4,
             "addendum_test": 3 * 100 * 2 * 4, "addendum_calib": 3 * 20 * 11, "transfer_8b": 3 * 40 * 2, "transfer_8b_t": 3 * 40 * 2, "transfer_8b_native": 3 * 40 * 2}
 
@@ -57,7 +57,8 @@ def main() -> int:
             item(len(R) == EXPECTED[run] and set(st) == {"ok"}, f"{run}: expected {EXPECTED[run]} rows, got {len(R)}; "
                  f"statuses {dict(st)}")
         if run.startswith(("main", "transfer", "addendum")):
-            commits = {json.loads(l)["git_commit"] for l in (RAW / run / "manifest.jsonl").read_text().splitlines() if l.strip()}
+            cmap = json.loads((ROOT / "results/commit_map.json").read_text()) if (ROOT / "results/commit_map.json").exists() else {}
+            commits = {cmap.get(c, c) for c in (json.loads(l)["git_commit"] for l in (RAW / run / "manifest.jsonl").read_text().splitlines() if l.strip())}
             ref = ADDENDUM if run.startswith("addendum") else PREREG
             ok = all(subprocess.run(["git", "merge-base", "--is-ancestor", ref, c], cwd=ROOT).returncode == 0
                      for c in commits)

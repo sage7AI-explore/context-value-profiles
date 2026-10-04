@@ -23,3 +23,8 @@ paper/main.pdf
 data/raw/hotpot_distractor_validation.jsonl
 results/cache/
 dist/tmlr_supplement.zip
+
+# private planning / outreach files (never publish)
+PROMPT.md
+IDEA.md
+ENDORSEMENT_REQUESTS.md
