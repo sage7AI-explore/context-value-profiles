@@ -6,6 +6,14 @@ date, so the pre-registration timestamps stand. Commit hashes changed, while the
 were left untouched and still record the original hashes. This table maps them; `code/scripts/verify_results.py`
 uses it to check that every test run descends from the pre-registration commit.
 
+## Files removed by the rewrite, and references to them
+- `PROMPT.md`: the private project brief used to set up and run this study (task description, rules, required
+  checks). `PLAN.md` (the pre-registration, deliberately left unedited) says that H1 is "as specified in PROMPT.md". The
+  full hypothesis it refers to, H1, is stated in `PLAN.md` itself under "Hypotheses", so nothing needed to evaluate the
+  pre-registration is missing.
+- `IDEA.md`: the private idea note with an internal novelty assessment; the public novelty analysis is in
+  `refs/NOVELTY.md` and `refs/NOVELTY_AUDIT.md` (which also mentions `IDEA.md` as one of its inputs).
+
 | original | rewritten | committed | message |
 |---|---|---|---|
 | `4ebcad3bc493` | `e47447cc5582` | 2026-10-02T10:56:28-05:00 | Scaffold as provided (Paper 03: MCV profiles) |
