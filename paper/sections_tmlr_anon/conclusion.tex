@@ -1,0 +1,18 @@
+% CONCLUSION. Numbers ONLY via \R... macros.
+We asked whether measuring how much each type of context contributes to task success can be reused for budgeted
+context assembly. In these experiments, measured context value was more useful for diagnosing which kinds of context
+matter than for ranking individual blocks. Embedding relevance remained difficult to beat at the instance level: neither
+the MCV compiler nor a hybrid built on the profile improved on it, and supervision from single-block deletions was too
+sparse to learn block value. Type-level ablations nevertheless exposed concentrated, redundant and low-value context,
+and the largest token savings came from deciding when to stop sending context. These results motivate context-assembly
+designs that keep type-level valuation and block-level relevance separate, and we release every log so that the
+negative results can be checked and extended.
+
+\textbf{Use of AI assistance.} An AI coding assistant was used to write and test code, run the experiments, and draft
+and edit text. All numbers in the paper are generated from the released logs by scripts, and every reference was
+verified against its DOI record. The authors reviewed the content and are responsible for it.
+
+\textbf{Artifact availability.} The code, data adapters, pre-registration, logs of every model call, and scripts that
+regenerate all results with one command are available at
+an anonymized repository provided as supplementary material (code under the MIT license; data under the licenses of
+their sources).

@@ -1,0 +1,54 @@
+% PROBLEM FORMULATION. Numbers only via \R macros.
+
+\subsection{Blocks, Budgets and Value}
+\begin{definition}[Typed context block]\label{def:block}
+A block $b=(\tau_b,\{x_b^v\}_v,D_b)$ has a type $\tau_b$ from a fixed set $\mathcal{T}$ (goal, instructions, tool schema,
+skill document, fact, example, history turn, note), one or more textual variants $x_b^v$ (\emph{full} and optionally
+\emph{short}), and a set $D_b$ of blocks it depends on. Its cost $c_m(b,v)$ is the number of tokens of its rendered variant
+under model $m$'s tokenizer.
+\end{definition}
+
+An instance $q$ of a task family $f$ is a set of blocks $\mathcal{B}_q$ together with a deterministic success check. A
+\emph{selection} $S$ assigns to each block either a variant or nothing; it is \emph{admissible} under budget $B$ if every
+mandatory block (goal and instructions) is included, every included block's dependencies are included, at most one
+variant per block is chosen, and $\sum_{b\in S} c_m(b,S(b))\le B$. A fixed, documented renderer turns $S$ into one prompt,
+so success $Y_m(q,S)\in\{0,1\}$ is a function of the selection and the model's decoding.
+
+\begin{definition}[Marginal context value profile]\label{def:mcv}
+For model $m$ and family $f$, the MCV of type $\tau$ is
+$\mathrm{MCV}(\tau)=\mathbb{E}_q\big[Y_m(q,\mathcal{B}_q)-Y_m(q,\mathcal{B}_q\setminus\tau)\big]$,
+the expected loss in success when every block of type $\tau$ is removed from the full context. The pairwise interaction
+of types $\tau_1,\tau_2$ is
+$I(\tau_1,\tau_2)=\mathbb{E}_q\big[Y(\mathcal{B})-Y(\mathcal{B}\setminus\tau_1)-Y(\mathcal{B}\setminus\tau_2)+
+Y(\mathcal{B}\setminus\{\tau_1,\tau_2\})\big]$,
+positive when the two types are complements and negative when they are redundant or in conflict. The short-variant value
+$\mathrm{MCV}_{\mathrm{short}}(\tau)=\mathbb{E}_q\big[Y(\mathcal{B}^{\tau\to\mathrm{short}})-Y(\mathcal{B}\setminus\tau)\big]$
+is the gain in success from rendering type $\tau$ short rather than removing it, so
+$\mathrm{MCV}_{\mathrm{short}}(\tau)/\mathrm{MCV}(\tau)$ is the share of the type's value that the short variant retains.
+A profile is the table of these quantities with confidence intervals. All three are local quantities: they are measured
+by removing types from the \emph{full} context, and a type that is redundant there can still matter when the context
+that substitutes for it is not sent (Section~\ref{sec:eval}).
+\end{definition}
+
+\subsection{Three Levels of the Assembly Problem}
+Budgeted context assembly combines three questions that need not share one signal.
+\emph{Level 1, type value:} which kinds of context matter for this model and task family? This is
+$\mathrm{MCV}(\tau)$, a \emph{measured} quantity: an average over development instances of an observed change in success.
+\emph{Level 2, block relevance:} which particular documents, tools or sessions matter for this instance? Instances
+contain many blocks of one type (dozens of tool schemas or documents), so a type value cannot answer this; it needs a
+\emph{predicted} per-block value $\hat v_{b,v}$, here either a learned block-value model or embedding similarity to the
+goal. \emph{Level 3, budget allocation:} given these estimates, what should be sent under budget $B$, and when is more
+context not worth sending? The compiler answers Level 3 by maximizing $\sum \hat v_{b,v}$ (plus measured type
+interactions) subject to admissibility. This is a knapsack with dependency constraints, variant choice and pairwise
+type-presence terms; it is NP-hard in general, and with negative interactions the objective is not submodular, so greedy
+guarantees for coverage objectives~\citep{pacms2026,skillselect2026} do not apply. A recurring finding of
+Section~\ref{sec:eval} is that a signal that is informative at Level 1 need not be informative at Level 2.
+
+\subsection{What Is and Is Not Guaranteed}
+Given its inputs, the compiler returns an admissible selection that is optimal for the predicted objective whenever the
+solver reports optimality, and it fails loudly if the mandatory blocks alone exceed the budget; it never silently
+truncates. Admissibility is defined on the sum of block costs; because tokenization is not additive across block
+boundaries, the rendered prompt can differ from that sum by a few tokens (Section~\ref{sec:eval} reports the overshoot). Nothing guarantees that predicted value equals realized success: profiles are estimated from finite ablations
+on a development split, block values are predicted from features, and transfer to another model is an empirical
+question. The solver's certificate is therefore a statement about the predicted objective under the constraints, never a
+statement about task success. These are exactly the claims Section~\ref{sec:eval} tests.

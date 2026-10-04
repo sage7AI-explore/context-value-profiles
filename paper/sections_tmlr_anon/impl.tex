@@ -1,0 +1,17 @@
+% IMPLEMENTATION. Numbers only via \R macros.
+The reference implementation is an open-source Python package (import name \texttt{mcv}, not published on PyPI, where
+that name belongs to an unrelated project; \RLoc{} lines; MIT license), with unit tests
+covering the edge cases the design must handle: budgets smaller than the mandatory blocks (which raise an error rather than
+truncating), dependency cycles and unknown dependencies, zero-value blocks, deterministic rendering order, the solver's
+timeout path, and estimator recovery of known effects (\RTests{} tests, \RCoverage{} line coverage of the core
+modules). Models run locally through Ollama with greedy decoding, a fixed seed and a fixed context window, so that the
+model is never reloaded between conditions; models answer in a strict text protocol (a JSON call for tools, an
+\texttt{ANSWER:} line otherwise) parsed by the harness. Responses are cached by a hash of (model, seed, decoding options,
+prompt), so a prompt produced by several policies is answered once and the reuse is logged. Token costs use each model's
+Hugging Face tokenizer, and the measured token count of every rendered prompt is logged so that budget compliance can be
+audited. Embedding-based baselines use the open nomic-embed-text model~\citep{nomicembed2024} through the same server.
+The compiler uses the CP-SAT solver of OR-Tools with a time limit per instance and a single worker for determinism.
+Every run writes JSON-lines logs of each call, selection and solver certificate, plus a manifest with the code commit,
+model digests and data hashes.\footnote{Software and data: Ollama \ROllamaVersion; OR-Tools, scikit-learn, LLMLingua and PyTorch
+versions pinned in \texttt{code/uv.lock}; HotpotQA (CC BY-SA 4.0) and BFCL v3 (Apache-2.0) as recorded in
+\texttt{data/LICENSES.md}.}

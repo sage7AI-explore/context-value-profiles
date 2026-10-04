@@ -1,0 +1,16 @@
+% Numbers via \R macros only.
+LLM agents assemble prompts from heterogeneous context (tool schemas, documents, examples, notes, history) under a
+token budget. We separate three questions: which context types matter for a model and task family, which blocks matter
+for an instance, and what to send under a budget. Marginal context value (MCV) profiles answer the first: the measured
+drop in success when a type is removed or shortened, plus pairwise type interactions, estimated offline by ablation with
+bootstrap intervals. A CP-SAT compiler maximizes predicted value under budget, dependency
+and variant constraints. In a pre-registered evaluation on Qwen3-4B-Instruct (HotpotQA, BFCL tool calling, synthetic
+history) the primary hypothesis failed: MCV-compiled context never significantly beat embedding relevance and trailed it
+by \RHOneHistoryAbs{} AUBC on history. Two causes combined. Single-block deletions were too sparse to train a block
+ranker, which fell back on recency and length; and a note valued at zero because history duplicates it in the full
+context was dropped at small budgets, where it could still supply the answer. At a non-binding 8k budget MCV pruned
+\RTokCutTool of tool-calling tokens with non-inferior success, but a post-hoc relevance ranker with a calibrated stopping
+rule pruned \RTokCutStopTool, so the savings come from stopping, not from MCV. Neither a hybrid (profile admits types,
+relevance ranks blocks) nor interaction terms improved selection. As diagnostics the
+profiles were informative: value concentrated in tool schemas, documents and history, worked examples were worth little, and
+shortened tool schemas lost most of their value. Code, pre-registration and all logs are released.
