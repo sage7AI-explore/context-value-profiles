@@ -1,5 +1,6 @@
 % IMPLEMENTATION. Numbers only via \R macros.
-The reference implementation is the open-source Python package \texttt{mcv} (\RLoc{} lines; MIT license), with unit tests
+The reference implementation is an open-source Python package (import name \texttt{mcv}, not published on PyPI, where
+that name belongs to an unrelated project; \RLoc{} lines; MIT license), with unit tests
 covering the edge cases the design must handle: budgets smaller than the mandatory blocks (which raise an error rather than
 truncating), dependency cycles and unknown dependencies, zero-value blocks, deterministic rendering order, the solver's
 timeout path, and estimator recovery of known effects (\RTests{} tests, \RCoverage{} line coverage of the core

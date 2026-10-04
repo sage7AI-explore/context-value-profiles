@@ -27,16 +27,20 @@ studies measure the causal effect of context in generative search~\citep{ctxallo
 type-level, interval-reported value table measured per model and task family and compiled under a hard token budget.
 
 We evaluate the approach under a pre-registered protocol (hypotheses, margins, sample sizes and the method version fixed
-before any test run, recorded as a commit in the released repository; it was not deposited with an external registry) on three task families: multi-hop question answering over HotpotQA documents with distractors,
+before any test run, recorded as a commit in the released repository, whose run manifests name the commit each run descends from; it was not
+deposited with an external registry) on three task families: multi-hop question answering over HotpotQA documents with distractors,
 tool selection and argument filling over a \RNumTools-tool catalog built from BFCL, and recall of the latest value of a
 user attribute from \RNumSessions synthetic sessions. All models run locally (Qwen3-4B-Instruct for the main study,
 Qwen3-8B for transfer). We compare against six baselines, including LLMLingua-2 and a PACMS-style coverage selector.
 
 The primary result is negative, and we lead with it. \textbf{MCV did not beat relevance at block selection:}
 MCV-compiled context did not significantly exceed embedding relevance (the best baseline) in area under the
-success--budget curve in any family, and was \RHOneHistoryAbs{} lower on history. The cause is at the block level. Single
-deletions rarely change the outcome, so the block-value model learned proxies such as recency and length. At the smallest
-history budget it kept the session holding the answer in \RRecallOurs of plans, against \RRecallRel for relevance.
+success--budget curve in any family, and was \RHOneHistoryAbs{} lower on history. Two causes combine there. Single
+deletions rarely change the outcome, so the block-value model learned proxies such as recency and length; at the smallest
+history budget it kept the session holding the answer in \RRecallOurs of plans, against \RRecallRel for relevance. And the
+profile, measured by removal from the full context, valued a note that duplicates history at zero, so the compiler dropped
+the fallback that would have answered when that session was missing. Type values are local to the context in which they
+are measured.
 \textbf{Efficiency held, but is not specific to MCV.} The efficiency hypothesis, added after development pilots but before
 any test run, held in \RHOnebPass of three families: at an 8k budget, which full contexts never reach, MCV pruned
 \RTokCutTool of prompt tokens on tool use and \RTokCutHistory on history with non-inferior success. A pre-specified
@@ -58,8 +62,9 @@ by embedding relevance (Sections~\ref{sec:problem} and~\ref{sec:eval}).
 short-variant values and interactions with shrinkage, bootstrap intervals and a length-neutral control, with measured
 stability (ten to twenty development instances in subsampling), cost and Qwen3-4B-to-8B agreement.
 \item \emph{A controlled, pre-registered evaluation} of ten context policies on three task families, including a failed
-primary hypothesis, a pre-specified follow-up, and evidence that leave-one-block-out deltas were too sparse to train a
-block ranker that improves on embedding similarity.
+primary hypothesis, a pre-specified follow-up, evidence that leave-one-block-out deltas were too sparse to train a
+block ranker that improves on embedding similarity, and evidence that full-context type values mislead allocation at small
+budgets for types that are redundant only in the presence of others.
 \item \emph{A dependency- and variant-aware exact budget compiler} whose certificate is bounded to the predicted
 objective, not task success (Section~\ref{sec:design}).
 \item \emph{An open artifact:} code, data adapters, logs of every model call, and scripts that regenerate every number,

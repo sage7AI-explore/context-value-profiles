@@ -12,12 +12,15 @@ other chosen blocks, and the two lowest-valued blocks, with predicted value $\ha
 \end{table}
 
 \section{Success Against Prompt Tokens}\label{app:frontier}
+% Frontier figure: kept in the TMLR build (appendix), omitted from the 12-page IEEE build.
+\ifdefined\IEEEaccessbuild\else
 \begin{figure}[t]\centering
 \includegraphics[width= 0.88\linewidth]{../figures/fig8_frontier.pdf}
 \caption{Success against the prompt tokens actually sent (test, Qwen3-4B-Instruct; one point per budget, from 1k to 8k).
 Points further left at equal height are more efficient. At its largest budget MCV sits left of full context (star) and
 of B2 on tool use and history.}\label{fig:frontier}
 \end{figure}
+\fi
 
 \section{Full MCV Profiles}\label{app:profiles}
 \begin{table}[t]\centering\small
@@ -36,8 +39,9 @@ profile, and MCV with the native 8B profile, with 95\% CIs.}\label{fig:transfer}
 \end{figure}
 
 \section{Failure Analysis}\label{app:failures}
-We read the transcripts of failed episodes in each family; Table~\ref{tab:excerpts} shows one representative case per
-failure mode, extracted verbatim from the logs by a script. \emph{History at small budgets:} when the compiler drops the
+We read the transcripts of failed episodes in each family\ifdefined\IEEEaccessbuild{} (representative cases per failure
+mode are extracted verbatim from the logs by a script in the released repository)\else; Table~\ref{tab:excerpts} shows one representative case per
+failure mode, extracted verbatim from the logs by a script\fi. \emph{History at small budgets:} when the compiler drops the
 session holding the update, the model does not guess. It reports that no conversation mentions the attribute, so these
 failures are abstentions rather than hallucinations. When B2 keeps the same session, the answer is correct.
 \emph{Compression of identifiers:} LLMLingua-2 deletes the underscores and reorders words in function and parameter
@@ -49,11 +53,13 @@ year rather than a title, or added detail that the exact-match checker rejects. 
 behavior in ways a value table indexed by type cannot predict, and in these cases the change was harmful.
 
 
+\ifdefined\IEEEaccessbuild\else
 \begin{table}[t]\centering\small
 \caption{Representative failures (test split, Qwen3-4B-Instruct), extracted verbatim from the logs. Long texts are
 truncated.}\label{tab:excerpts}
 \input{generated/excerpts}
 \end{table}
+\fi
 
 \section{How Much Profiling Is Needed?}\label{app:samplesize}
 Profiling cost scales with the number of development instances, so we asked, again as an exploratory analysis of the
@@ -73,7 +79,10 @@ range of the middle four fifths of draws.}\label{fig:samplesize}
 \end{figure}
 
 \section{Development History}\label{app:devhistory}
+\ifdefined\IEEEaccessbuild\else
+\subsection{Development History}
 The block-value model went through three versions on development data only. The first used lexical features (dev AUBC
 \RDevAubcOne); the second added embedding similarity (\RDevAubcTwo); the third, which apportioned type value across
 blocks, scored \RDevAubcThree and was rejected by the rule fixed before it ran. The second version was frozen and
 pre-registered before any test run. All three pilots, and a crashed pilot run, are in the released logs.
+\fi
