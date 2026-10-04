@@ -125,12 +125,14 @@ OURS wrong on \RFactsLost instances, and the reverse held on \RFactsGained. Only
 removed a supporting paragraph; in the others the model changed its answer when distractors were removed, an effect a
 type-level profile cannot see.
 
+%TMLR-APPENDIX app:frontier | Success Against Prompt Tokens | 
 \begin{figure*}[t]\centering
 \includegraphics[width=\textwidth]{../figures/fig8_frontier.pdf}
 \caption{Success against the prompt tokens actually sent (test, Qwen3-4B-Instruct; one point per budget, from 1k to 8k).
 Points further left at equal height are more efficient. At its largest budget MCV sits left of full context (star) and
 of B2 on tool use and history.}\label{fig:frontier}
 \end{figure*}
+%TMLR-APPENDIX-END
 
 \begin{figure*}[t]\centering
 \includegraphics[width=\textwidth]{../figures/fig5_composition.pdf}
@@ -208,6 +210,7 @@ type), reproduced the removal effects: documents \RRemFactsFact by removal again
 schemas \RRemToolToolSchema against \RPadToolToolSchema, history \RRemHistoryHistoryTurn against
 \RPadHistoryHistoryTurn. The measured values reflect content, not prompt length.
 
+%TMLR-APPENDIX app:profiles | Full MCV Profiles | 
 \begin{table}[t]\centering\small
 \caption{MCV profiles on the development split: unshrunk paired means with 95\% bootstrap CIs. Rows are type values
 (success drop on removal), short-variant values (gain of the short variant over removal) and pairwise interactions.
@@ -215,6 +218,7 @@ The 8B model was profiled at type level on fewer instances, so its intervals are
 \setlength{\tabcolsep}{3pt}
 \resizebox{\columnwidth}{!}{\input{generated/profile_table}}
 \end{table}
+%TMLR-APPENDIX-END
 
 \begin{figure*}[t]\centering
 \includegraphics[width=\textwidth]{../figures/fig3_profiles.pdf}
@@ -240,12 +244,15 @@ sent \RTrTokToolTransferEight prompt tokens against \RTrTokToolRelEight for rele
 \RTrToolTransferEight against \RTrToolRelEight. Relevance ranking was again more accurate on facts (\RTrFactsRelTwo
 against \RTrFactsTransferTwo at 2k). With \RNTransfer instances per family these 8B comparisons are descriptive.
 
+%TMLR-APPENDIX app:transferfig | Transfer Results by Family | 
 \begin{figure}[t]\centering
 \includegraphics[width=\columnwidth]{../figures/fig4_transfer.pdf}
 \caption{Transfer to Qwen3-8B (test, \RNTransfer instances per family): relevance ranking, MCV with the transferred 4B
 profile, and MCV with the native 8B profile, with 95\% CIs.}\label{fig:transfer}
 \end{figure}
+%TMLR-APPENDIX-END
 
+%TMLR-APPENDIX app:failures | Failure Analysis | \textbf{Failure analysis.} Transcripts show three failure modes: abstentions when the session holding an update is dropped, identifiers corrupted by LLMLingua-2 compression, and answer changes on facts even when all evidence was kept (Appendix~\ref{app:failures}).
 \subsection{FAILURE ANALYSIS}
 We read the transcripts of failed episodes in each family; Table~\ref{tab:excerpts} shows one representative case per
 failure mode, extracted verbatim from the logs by a script. \emph{History at small budgets:} when the compiler drops the
@@ -259,12 +266,15 @@ were kept and only distractors were removed, yet the model's answer changed: it 
 year rather than a title, or added detail that the exact-match checker rejects. Removing context changes the model's
 behavior in ways a value table indexed by type cannot predict, and in these cases the change was harmful.
 
+
 \begin{table*}[t]\centering\small
 \caption{Representative failures (test split, Qwen3-4B-Instruct), extracted verbatim from the logs. Long texts are
 truncated.}\label{tab:excerpts}
 \input{generated/excerpts}
 \end{table*}
+%TMLR-APPENDIX-END
 
+%TMLR-APPENDIX app:samplesize | How Much Profiling Is Needed? | \textbf{Profiling sample size.} In an exploratory subsampling analysis the type-level profile stabilized with ten to twenty development instances per family (Appendix~\ref{app:samplesize}).
 \subsection{HOW MUCH PROFILING IS NEEDED?}
 Profiling cost scales with the number of development instances, so we asked, again as an exploratory analysis of the
 existing logs, how quickly the type-level profile stabilizes. We re-estimated the 4B profiles from random subsets of
@@ -281,6 +291,7 @@ supervision than single-block deletions provide.
 \caption{Profile stability versus development instances (exploratory; subsamples of the 4B profiling logs). Band: the
 range of the middle four fifths of draws.}\label{fig:samplesize}
 \end{figure}
+%TMLR-APPENDIX-END
 
 \subsection{COST}
 \textbf{Compilation.} Over \RSolves compilations CP-SAT proved optimality in \RSolveOptimal of cases with no fallback
@@ -293,8 +304,10 @@ facts, given the 8k-budget savings above. The facts figure is conditional on acc
 
 
 
+%TMLR-APPENDIX app:devhistory | Development History | \textbf{Development history.} The block-value model went through three development versions before the method was frozen and pre-registered; all are reported in Appendix~\ref{app:devhistory}.
 \subsection{DEVELOPMENT HISTORY}
 The block-value model went through three versions on development data only. The first used lexical features (dev AUBC
 \RDevAubcOne); the second added embedding similarity (\RDevAubcTwo); the third, which apportioned type value across
 blocks, scored \RDevAubcThree and was rejected by the rule fixed before it ran. The second version was frozen and
 pre-registered before any test run. All three pilots, and a crashed pilot run, are in the released logs.
+%TMLR-APPENDIX-END

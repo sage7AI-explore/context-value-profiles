@@ -42,6 +42,17 @@
 \section{Conclusion}\label{sec:conclusion}
 \input{sections_tmlr/conclusion}
 
+\subsubsection*{Broader Impact Statement}
+This work studies how much each kind of context contributes to an LLM agent's task success and how to send less of it.
+Sending fewer prompt tokens can lower inference cost and energy use. The main risk is that pruning can remove information
+an agent needs, such as constraints or safety instructions. In our implementation, instructions and the goal are
+mandatory blocks that no policy may drop, and we recommend that deployments mark any safety-relevant context as
+mandatory in the same way. All experiments ran on local open-weight models. The data are public benchmarks used under
+their licenses (HotpotQA, CC BY-SA 4.0; BFCL, Apache-2.0) and synthetic conversation histories that contain no personal
+data. No human subjects were involved.
+
 \bibliography{references}
 \bibliographystyle{tmlr}
+\appendix
+\input{sections_tmlr/appendix_tmlr}
 \end{document}

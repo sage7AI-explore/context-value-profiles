@@ -22,3 +22,4 @@ paper/*.fdb_latexmk
 paper/main.pdf
 data/raw/hotpot_distractor_validation.jsonl
 results/cache/
+dist/tmlr_supplement.zip

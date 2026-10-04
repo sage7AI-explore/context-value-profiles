@@ -52,6 +52,7 @@ unused: more context is not assumed to be better. With interaction terms, a bloc
 can still be selected when its type completes a positive interaction. The additive variant (OURS-A) drops
 the interaction terms.
 
+%TMLR-APPENDIX app:compile | A Compiled Plan | Appendix~\ref{app:compile} shows one compiled plan with its predicted block values, chosen variants and certificate.
 Table~\ref{tab:compile} shows one compiled plan from the test split: the predicted block values, the variant chosen for
 each block, and the certificate. The compiler takes the full schemas of the highest-value tools, falls back to the
 short variant (name and description only) for tools of moderate value where the full schema would not fit, and omits
@@ -63,6 +64,7 @@ other chosen blocks, and the two lowest-valued blocks, with predicted value $\ha
 \setlength{\tabcolsep}{3pt}
 \resizebox{\columnwidth}{!}{\input{generated/compile_example}}
 \end{table}
+%TMLR-APPENDIX-END
 
 \subsection{TRANSFER}
 A profile measured on a small model is applied unchanged to a larger one (OURS-T). Fidelity is reported as the rank
